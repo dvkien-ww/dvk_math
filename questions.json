@@ -2514,5 +2514,6 @@
     "correct": "9",
     "explain": "Ta có $s = \\sqrt{h^2+3^2}$ và $\\sin\\alpha = \\frac{h}{s} = \\frac{h}{\\sqrt{h^2+9}}$. Thay vào công thức, $I(h) = k \\frac{h}{(h^2+9)^{3/2}}$. Đạo hàm $I'(h) = k \\frac{1 \\cdot (h^2+9)^{3/2} - h \\cdot \\frac{3}{2}(h^2+9)^{1/2} \\cdot 2h}{(h^2+9)^3} = k \\frac{h^2+9 - 3h^2}{(h^2+9)^{5/2}} = k \\frac{9 - 2h^2}{(h^2+9)^{5/2}}$. Cho $I'(h) = 0 \\Leftrightarrow 9 - 2h^2 = 0 \\Leftrightarrow h = \\frac{3}{\\sqrt{2}}$. Vậy $h_0 = \\frac{3}{\\sqrt{2}}$, suy ra $h_0^2 = 4,5$. Giá trị $2h_0^2 = 2 \\times 4,5 = 9$."
   }
-  
+
+
 ]
