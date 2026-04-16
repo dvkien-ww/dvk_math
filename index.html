@@ -1,243 +1,73 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hệ Thống Ôn Tập Toán - DVK Math</title>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <style>
-        :root {
-            --primary: #4c6ef5;
-            --success: #69db7c;
-            --bg: #f5f6fa;
-        }
-        body { font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: var(--bg); display: flex; height: 100vh; overflow: hidden; }
-        
-        /* Cấu hình màn hình setup */
-        #setup-screen { position: fixed; inset: 0; background: white; z-index: 100; display: flex; align-items: center; justify-content: center; }
-        .setup-card { background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 400px; text-align: center; }
-        select, button { width: 100%; padding: 12px; margin: 10px 0; border-radius: 8px; border: 1px solid #ddd; font-size: 16px; }
-        .time-group { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
-        .btn-time { background: var(--primary); color: white; border: none; cursor: pointer; font-weight: bold; }
-        .btn-time:hover { opacity: 0.9; }
-
-        /* Giao diện làm bài */
-        #sidebar { width: 220px; background: white; border-right: 1px solid #ddd; padding: 15px; overflow-y: auto; }
-        #main { flex: 1; padding: 30px; overflow-y: auto; position: relative; }
-        .q-box { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 20px; }
-        .q-num { padding: 10px; text-align: center; background: #eee; border-radius: 6px; cursor: pointer; transition: 0.2s; }
-        .q-num.answered { background: var(--success); color: white; }
-        .q-num.current { border: 2px solid var(--primary); font-weight: bold; }
-        
-        .question-card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
-        .options { margin-top: 15px; }
-        .option-item { display: block; padding: 12px; border: 1px solid #eee; margin-bottom: 8px; border-radius: 8px; cursor: pointer; }
-        .option-item:hover { background: #f8f9fa; }
-        .option-item input { margin-right: 10px; }
-        
-        #timer { font-size: 20px; font-weight: bold; color: #e03131; margin-bottom: 20px; text-align: right; }
-        .nav-btns { display: flex; justify-content: space-between; margin-top: 20px; }
-        .btn { padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; }
-        .btn-prev { background: #dee2e6; }
-        .btn-next { background: var(--primary); color: white; }
-        .btn-submit { background: #fa5252; color: white; width: 100%; margin-top: 20px; }
-        
-        .hidden { display: none !important; }
-    </style>
-</head>
-<body>
-
-<div id="setup-screen">
-    <div class="setup-card">
-        <h2>DVK MATH - LUYỆN THI</h2>
-        <p>Chọn cấu hình bài kiểm tra</p>
-        
-        <select id="grade-select" onchange="loadChapters()">
-            <option value="">-- Chọn Khối Lớp --</option>
-            <option value="10">Lớp 10</option>
-            <option value="11">Lớp 11</option>
-            <option value="12">Lớp 12</option>
-        </select>
-
-        <select id="chapter-select">
-            <option value="">-- Chọn Chương --</option>
-        </select>
-
-        <p style="margin-top:20px; font-weight:bold">Chọn thời gian làm bài:</p>
-        <div class="time-group">
-            <button class="btn-time" onclick="initQuiz(45)">45'</button>
-            <button class="btn-time" onclick="initQuiz(60)">60'</button>
-            <button class="btn-time" onclick="initQuiz(90)">90'</button>
-        </div>
-        <small>(Hệ thống sẽ tự trộn câu hỏi theo tỉ lệ cấu trúc)</small>
-    </div>
-</div>
-
-<div id="sidebar">
-    <h3>Câu hỏi</h3>
-    <div id="qbox" class="q-box"></div>
-    <button class="btn btn-submit" onclick="finishQuiz()">NỘP BÀI</button>
-</div>
-
-<div id="main">
-    <div id="timer">00:00</div>
-    <div id="quiz-container">
-        <div id="question-display" class="question-card">
-            </div>
-        <div class="nav-btns">
-            <button class="btn btn-prev" onclick="changeQ(-1)">Câu trước</button>
-            <button class="btn btn-next" onclick="changeQ(1)">Câu sau</button>
-        </div>
-    </div>
-</div>
-
-<script>
-let allData = [];
-let currentQuestions = [];
-let userAnswers = [];
-let currentIndex = 0;
-let timeLeft = 0;
-let timerInterval;
-
-// 1. Tải dữ liệu ban đầu
-fetch('questions.json')
-    .then(res => res.json())
-    .then(data => {
-        allData = data;
-    });
-
-// 2. Load danh sách chương dựa trên lớp
-function loadChapters() {
-    const grade = document.getElementById('grade-select').value;
-    const chapterSelect = document.getElementById('chapter-select');
-    chapterSelect.innerHTML = '<option value="">-- Chọn Chương --</option>';
-    
-    const chapters = [...new Set(allData.filter(q => q.grade == grade).map(q => q.chapter))];
-    chapters.forEach(c => {
-        if(c) chapterSelect.innerHTML += `<option value="${c}">${c}</option>`;
-    });
-}
-
-// 3. Khởi tạo bài thi
-function initQuiz(minutes) {
-    const grade = document.getElementById('grade-select').value;
-    const chapter = document.getElementById('chapter-select').value;
-    
-    if(!grade || !chapter) {
-        alert("Vui lòng chọn đầy đủ Lớp và Chương!");
-        return;
-    }
-
-    // Lọc pool câu hỏi
-    const pool = allData.filter(q => q.grade == grade && q.chapter == chapter);
-    
-    // Cấu hình số lượng theo yêu cầu của bạn
-    let config = { tn: 8, ds: 2, tln: 4 };
-    if(minutes === 60) config = { tn: 12, ds: 3, tln: 6 };
-    if(minutes === 90) config = { tn: 16, ds: 4, tln: 8 };
-
-    // Trộn và lấy câu hỏi
-    const shuffle = (arr) => arr.sort(() => Math.random() - 0.5);
-    currentQuestions = [
-        ...shuffle(pool.filter(q => q.type === "TN")).slice(0, config.tn),
-        ...shuffle(pool.filter(q => q.type === "DS")).slice(0, config.ds),
-        ...shuffle(pool.filter(q => q.type === "TLN")).slice(0, config.tln)
-    ];
-
-    if(currentQuestions.length === 0) {
-        alert("Không tìm thấy câu hỏi phù hợp trong chương này!");
-        return;
-    }
-
-    userAnswers = new Array(currentQuestions.length).fill(null);
-    timeLeft = minutes * 60;
-    document.getElementById('setup-screen').classList.add('hidden');
-    
-    startTimer();
-    renderQuestion();
-    renderSidebar();
-}
-
-// 4. Quản lý đồng hồ
-function startTimer() {
-    timerInterval = setInterval(() => {
-        timeLeft--;
-        let m = Math.floor(timeLeft / 60);
-        let s = timeLeft % 60;
-        document.getElementById('timer').innerText = `${m}:${s < 10 ? '0'+s : s}`;
-        if(timeLeft <= 0) finishQuiz();
-    }, 1000);
-}
-
-// 5. Hiển thị câu hỏi
-function renderQuestion() {
-    const q = currentQuestions[currentIndex];
-    let html = `<h4>Câu ${currentIndex + 1} [${q.type}]</h4><p>${q.q}</p>`;
-
-    if(q.type === "TN") {
-        html += `<div class="options">` + q.choices.map((c, i) => `
-            <label class="option-item">
-                <input type="radio" name="q" ${userAnswers[currentIndex] === i ? 'checked' : ''} onclick="saveAns(${i})"> ${c}
-            </label>
-        `).join('') + `</div>`;
-    } 
-    else if(q.type === "DS") {
-        html += `<table style="width:100%">` + Object.keys(q.items).map(k => `
-            <tr>
-                <td>${k}. ${q.items[k]}</td>
-                <td>
-                    <button onclick="saveDS('${k}', true)" style="background:${userAnswers[currentIndex]?.[k] === true ? '#69db7c' : ''}">Đúng</button>
-                    <button onclick="saveDS('${k}', false)" style="background:${userAnswers[currentIndex]?.[k] === false ? '#fa5252' : ''}">Sai</button>
-                </td>
-            </tr>
-        `).join('') + `</table>`;
-    }
-    else if(q.type === "TLN") {
-        html += `<input type="text" placeholder="Nhập đáp án số..." value="${userAnswers[currentIndex] || ''}" oninput="saveAns(this.value)" style="width:100%; padding:10px">`;
-    }
-
-    document.getElementById('question-display').innerHTML = html;
-    if(window.MathJax) MathJax.typesetPromise();
-    renderSidebar();
-}
-
-// 6. Lưu đáp án
-window.saveAns = (val) => {
-    userAnswers[currentIndex] = val;
-    renderSidebar();
-};
-
-window.saveDS = (key, val) => {
-    if(!userAnswers[currentIndex]) userAnswers[currentIndex] = {};
-    userAnswers[currentIndex][key] = val;
-    renderQuestion();
-};
-
-// 7. Điều hướng
-window.changeQ = (step) => {
-    currentIndex = Math.max(0, Math.min(currentQuestions.length - 1, currentIndex + step));
-    renderQuestion();
-};
-
-window.goto = (i) => {
-    currentIndex = i;
-    renderQuestion();
-};
-
-function renderSidebar() {
-    const box = document.getElementById('qbox');
-    box.innerHTML = currentQuestions.map((_, i) => `
-        <div class="q-num ${i === currentIndex ? 'current' : ''} ${userAnswers[i] !== null ? 'answered' : ''}" onclick="goto(${i})">${i+1}</div>
-    `).join('');
-}
-
-// 8. Kết thúc
-function finishQuiz() {
-    clearInterval(timerInterval);
-    alert("Hết giờ hoặc bạn đã nộp bài! Hệ thống đang chấm điểm...");
-    // Ở đây bạn có thể thêm logic chấm điểm như file cũ của bạn
-    location.reload(); 
-}
-</script>
-</body>
-</html>
+[
+  {
+    "grade": "10",
+    "chapter": "Hàm số, đồ thị và ứng dụng",
+    "type": "TN",
+    "q": "Cho hàm số $y = f(x)$ có đồ thị như hình vẽ. Hàm số đồng biến trên khoảng nào dưới đây?",
+    "choices": ["A. $(1; +\infty)$", "B. $(-\infty; 1)$", "C. $(-1; 1)$", "D. $(0; 1)$"],
+    "correct": 0
+  },
+  {
+    "grade": "10",
+    "chapter": "Hàm số, đồ thị và ứng dụng",
+    "type": "DS",
+    "q": "Cho hàm số bậc hai $y = ax^2 + bx + c$ có đồ thị là một parabol $(P)$ đi qua ba điểm $A(0;1), B(1;0), C(-1;4)$. Xét các mệnh đề sau:",
+    "items": {
+      "a": "Hàm số đã cho là $y = x^2 - 2x + 1$.",
+      "b": "Đỉnh của parabol là $I(1; 0)$.",
+      "c": "Parabol $(P)$ có trục đối xứng là $x = 1$.",
+      "d": "Hàm số đạt giá trị nhỏ nhất bằng $0$ tại $x = 1$."
+    },
+    "correct": { "a": true, "b": true, "c": true, "d": true }
+  },
+  {
+    "grade": "10",
+    "chapter": "Phương pháp tọa độ trong mặt phẳng",
+    "type": "TLN",
+    "q": "Trong mặt phẳng $Oxy$, cho đường tròn $(C): (x-1)^2 + (y+2)^2 = 25$. Tìm bán kính $R$ của đường tròn đã cho.",
+    "correct": "5"
+  },
+  {
+    "grade": "11",
+    "chapter": "Hàm số mũ và hàm số lôgarit",
+    "type": "TN",
+    "q": "Nghiệm của phương trình $3^{x-1} = 9$ là:",
+    "choices": ["A. $x = 2$", "B. $x = 3$", "C. $x = 4$", "D. $x = 1$"],
+    "correct": 1
+  },
+  {
+    "grade": "11",
+    "chapter": "Quan hệ vuông góc trong không gian",
+    "type": "DS",
+    "q": "Cho hình chóp $S.ABC$ có đáy $ABC$ là tam giác vuông tại $B$, $SA \perp (ABC)$. Xét các mệnh đề sau:",
+    "items": {
+      "a": "$BC \perp (SAB)$.",
+      "b": "$AC \perp (SAB)$.",
+      "c": "$AB$ là hình chiếu vuông góc của $SB$ lên mặt phẳng $(ABC)$.",
+      "d": "Tam giác $SBC$ vuông tại $B$."
+    },
+    "correct": { "a": true, "b": false, "c": true, "d": true }
+  },
+  {
+    "grade": "11",
+    "chapter": "Xác suất",
+    "type": "TLN",
+    "q": "Gieo một con xúc xắc cân đối và đồng chất. Tính xác suất để mặt xuất hiện có số chấm là số nguyên tố.",
+    "correct": "0.5"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "q": "Cho hàm số $y=f(x)$ có đạo hàm $f'(x) = x(x-1)^2$. Số điểm cực trị của hàm số đã cho là:",
+    "choices": ["A. 1", "B. 2", "C. 3", "D. 0"],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và phương pháp tọa độ trong không gian",
+    "type": "TLN",
+    "q": "Trong không gian $Oxyz$, cho điểm $A(1; 2; 3)$ và $B(3; 2; 1)$. Tìm tọa độ trung điểm $M$ của đoạn thẳng $AB$. Nhập tổng $x_M + y_M + z_M$.",
+    "correct": "6"
+  }
+]
