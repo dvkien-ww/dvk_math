@@ -1,12 +1,15 @@
 [
   {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm",
     "type": "TN",
     "q": "1 + 1 = ?",
     "choices": ["A. 1", "B. 2", "C. 3", "D. 4"],
     "correct": 1
   },
-
   {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm",
     "type": "DS",
     "q": "Xét các mệnh đề sau:",
     "items": {
@@ -15,15 +18,11 @@
       "c": "3 > 1",
       "d": "5 là số chẵn"
     },
-    "correct": {
-      "a": true,
-      "b": false,
-      "c": true,
-      "d": false
-    }
+    "correct": { "a": true, "b": false, "c": true, "d": false }
   },
-
   {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm",
     "type": "TLN",
     "q": "Giải phương trình x + 1 = 2",
     "correct": "1"
