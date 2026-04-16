@@ -1,48 +1,121 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Quiz Pro</title>
-  <style>
-    body { font-family: Arial; text-align: center; }
-    button { margin: 5px; padding: 10px; }
-    .selected { background-color: lightblue; }
-  </style>
+<meta charset="UTF-8">
+<title>App Thi Hoàn Chỉnh</title>
+
+<style>
+body {
+  font-family: Arial;
+  display: flex;
+}
+
+/* Sidebar */
+#sidebar {
+  width: 150px;
+  border-right: 1px solid #ccc;
+  padding: 10px;
+}
+
+.q-btn {
+  display: block;
+  margin: 5px 0;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.answered {
+  background: lightgreen;
+}
+
+.current {
+  border: 2px solid blue;
+}
+
+/* Main */
+#main {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+button {
+  margin: 5px;
+  padding: 10px;
+}
+
+.selected {
+  background: lightblue;
+}
+</style>
 </head>
 
 <body>
 
-<h2 id="timer">Time: 60</h2>
-<h2 id="question"></h2>
-<div id="answers"></div>
-<button onclick="next()">Câu tiếp</button>
+<!-- Sidebar -->
+<div id="sidebar"></div>
+
+<!-- Main -->
+<div id="main">
+  <h2 id="timer">Time: 60</h2>
+  <h3 id="progress"></h3>
+  <h2 id="question"></h2>
+  <div id="answers"></div>
+
+  <button onclick="prev()">← Trước</button>
+  <button onclick="next()">Tiếp →</button>
+  <br><br>
+  <button onclick="submitQuiz()">NỘP BÀI</button>
+</div>
 
 <script>
 const questions = [
   { q: "1 + 1 = ?", a: ["1","2","3"], correct: 1 },
   { q: "2 + 2 = ?", a: ["2","3","4"], correct: 2 },
-  { q: "3 + 3 = ?", a: ["5","6","7"], correct: 1 }
+  { q: "3 + 3 = ?", a: ["5","6","7"], correct: 1 },
+  { q: "4 + 4 = ?", a: ["6","7","8"], correct: 2 }
 ];
 
-// 🔀 random câu hỏi
 questions.sort(() => Math.random() - 0.5);
 
 let current = 0;
-let score = 0;
-let answered = false;
+let answers = new Array(questions.length).fill(null);
 
-// ⏱️ TIMER
+// TIMER
 let time = 60;
 const timer = setInterval(() => {
   time--;
   document.getElementById("timer").innerText = "Time: " + time;
-  if (time <= 0) finish();
+  if (time <= 0) submitQuiz();
 }, 1000);
 
+// Sidebar
+function renderSidebar() {
+  const sidebar = document.getElementById("sidebar");
+  sidebar.innerHTML = "";
+
+  questions.forEach((_, i) => {
+    const btn = document.createElement("div");
+    btn.innerText = "Câu " + (i+1);
+    btn.classList.add("q-btn");
+
+    if (answers[i] !== null) btn.classList.add("answered");
+    if (i === current) btn.classList.add("current");
+
+    btn.onclick = () => {
+      current = i;
+      loadQuestion();
+    };
+
+    sidebar.appendChild(btn);
+  });
+}
+
 function loadQuestion() {
-  answered = false;
   const q = questions[current];
   document.getElementById("question").innerText = q.q;
+  document.getElementById("progress").innerText =
+    "Câu " + (current+1) + "/" + questions.length;
 
   const answersDiv = document.getElementById("answers");
   answersDiv.innerHTML = "";
@@ -51,38 +124,43 @@ function loadQuestion() {
     const btn = document.createElement("button");
     btn.innerText = ans;
 
-    btn.onclick = () => {
-      if (answered) return;
-      answered = true;
+    if (answers[current] === i) {
+      btn.classList.add("selected");
+    }
 
-      if (i === q.correct) {
-        score++;
-        btn.style.backgroundColor = "green";
-      } else {
-        btn.style.backgroundColor = "red";
-      }
+    btn.onclick = () => {
+      answers[current] = i;
+      loadQuestion();
     };
 
     answersDiv.appendChild(btn);
   });
+
+  renderSidebar();
 }
 
 function next() {
-  if (!answered) {
-    alert("Chọn đáp án đã!");
-    return;
-  }
-
-  current++;
-  if (current < questions.length) {
+  if (current < questions.length - 1) {
+    current++;
     loadQuestion();
-  } else {
-    finish();
   }
 }
 
-function finish() {
+function prev() {
+  if (current > 0) {
+    current--;
+    loadQuestion();
+  }
+}
+
+function submitQuiz() {
   clearInterval(timer);
+
+  let score = 0;
+  questions.forEach((q, i) => {
+    if (answers[i] === q.correct) score++;
+  });
+
   document.body.innerHTML =
     "<h1>Kết quả</h1>" +
     "<p>Điểm: " + score + "/" + questions.length + "</p>";
