@@ -2513,6 +2513,306 @@
     "q": "Một bóng đèn được treo ngay phía trên tâm của một chiếc bàn tròn có bán kính $3$ m. Cường độ sáng $I$ tại mép bàn được tính bởi công thức $I = k \\frac{\\sin \\alpha}{s^2}$, trong đó $k$ là hằng số dương, $s$ là khoảng cách từ bóng đèn đến mép bàn, và $\\alpha$ là góc tạo bởi tia sáng và mặt bàn. Bóng đèn cần treo ở độ cao $h$ (m) so với mặt bàn bằng bao nhiêu để cường độ sáng tại mép bàn là lớn nhất? Gọi $h_0$ là độ cao tối ưu đó, tính giá trị của biểu thức $2h_0^2$.",
     "correct": "9",
     "explain": "Ta có $s = \\sqrt{h^2+3^2}$ và $\\sin\\alpha = \\frac{h}{s} = \\frac{h}{\\sqrt{h^2+9}}$. Thay vào công thức, $I(h) = k \\frac{h}{(h^2+9)^{3/2}}$. Đạo hàm $I'(h) = k \\frac{1 \\cdot (h^2+9)^{3/2} - h \\cdot \\frac{3}{2}(h^2+9)^{1/2} \\cdot 2h}{(h^2+9)^3} = k \\frac{h^2+9 - 3h^2}{(h^2+9)^{5/2}} = k \\frac{9 - 2h^2}{(h^2+9)^{5/2}}$. Cho $I'(h) = 0 \\Leftrightarrow 9 - 2h^2 = 0 \\Leftrightarrow h = \\frac{3}{\\sqrt{2}}$. Vậy $h_0 = \\frac{3}{\\sqrt{2}}$, suy ra $h_0^2 = 4,5$. Giá trị $2h_0^2 = 2 \\times 4,5 = 9$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "TN",
+    "level": 1,
+    "q": "Trong không gian, hai vectơ được gọi là bằng nhau nếu chúng thỏa mãn điều kiện nào sau đây?",
+    "choices": [
+      "A. Có cùng độ dài và cùng phương.",
+      "B. Có cùng độ dài và cùng hướng.",
+      "C. Có cùng điểm đầu và điểm cuối.",
+      "D. Cùng nằm trên một mặt phẳng và có cùng độ dài."
+    ],
+    "correct": 1,
+    "explain": "Theo định nghĩa về vectơ trong không gian, hai vectơ bằng nhau nếu chúng có cùng độ dài và cùng hướng."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho ba điểm $A, B, C$ bất kì trong không gian. Đẳng thức nào sau đây luôn đúng?",
+    "choices": [
+      "A. $\\vec{AB} + \\vec{BC} = \\vec{CA}$.",
+      "B. $\\vec{AB} + \\vec{CB} = \\vec{AC}$.",
+      "C. $\\vec{AB} + \\vec{BC} = \\vec{AC}$.",
+      "D. $\\vec{BA} + \\vec{BC} = \\vec{AC}$."
+    ],
+    "correct": 2,
+    "explain": "Theo quy tắc ba điểm (quy tắc tam giác) đối với phép cộng vectơ trong không gian, với ba điểm $A, B, C$ bất kì ta luôn có $\\vec{AB} + \\vec{BC} = \\vec{AC}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "TN",
+    "level": 1,
+    "q": "Trong không gian, cho hình bình hành $ABCD$. Mệnh đề nào dưới đây là đúng?",
+    "choices": [
+      "A. $\\vec{AB} + \\vec{AD} = \\vec{AC}$.",
+      "B. $\\vec{AB} + \\vec{AD} = \\vec{BD}$.",
+      "C. $\\vec{AB} + \\vec{BC} = \\vec{AD}$.",
+      "D. $\\vec{AB} - \\vec{AD} = \\vec{AC}$."
+    ],
+    "correct": 0,
+    "explain": "Theo quy tắc hình bình hành, nếu $ABCD$ là hình bình hành thì tổng hai vectơ cạnh chung gốc bằng vectơ đường chéo xuất phát từ gốc đó: $\\vec{AB} + \\vec{AD} = \\vec{AC}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hình hộp $ABCD.A'B'C'D'$. Đẳng thức nào sau đây biểu diễn quy tắc hình hộp?",
+    "choices": [
+      "A. $\\vec{AB} + \\vec{AD} + \\vec{AA'} = \\vec{AC}$.",
+      "B. $\\vec{AB} + \\vec{AD} + \\vec{AA'} = \\vec{AC'}$.",
+      "C. $\\vec{AB} + \\vec{AD} + \\vec{AC} = \\vec{AA'}$.",
+      "D. $\\vec{AB} + \\vec{AA'} + \\vec{A'C'} = \\vec{AD}$."
+    ],
+    "correct": 1,
+    "explain": "Theo quy tắc hình hộp, tổng ba vectơ cạnh xuất phát từ một đỉnh bằng vectơ đường chéo xuất phát từ đỉnh đó. Vậy $\\vec{AB} + \\vec{AD} + \\vec{AA'} = \\vec{AC'}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho ba điểm $A, B, C$ bất kì trong không gian. Đẳng thức nào dưới đây biểu diễn quy tắc phép trừ hai vectơ?",
+    "choices": [
+      "A. $\\vec{AB} - \\vec{AC} = \\vec{BC}$.",
+      "B. $\\vec{AB} - \\vec{AC} = \\vec{CB}$.",
+      "C. $\\vec{BA} - \\vec{CA} = \\vec{BC}$.",
+      "D. $\\vec{AC} - \\vec{AB} = \\vec{BC}$."
+    ],
+    "correct": 1,
+    "explain": "Theo quy tắc phép trừ hai vectơ có cùng điểm đầu, ta có $\\vec{AB} - \\vec{AC} = \\vec{CB}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "TN",
+    "level": 1,
+    "q": "Trong không gian, điều kiện cần và đủ để điểm $I$ là trung điểm của đoạn thẳng $AB$ là:",
+    "choices": [
+      "A. $\\vec{IA} = \\vec{IB}$.",
+      "B. $\\vec{IA} + \\vec{IB} = \\vec{0}$.",
+      "C. $\\vec{IA} - \\vec{IB} = \\vec{0}$.",
+      "D. $\\vec{AI} + \\vec{BI} = \\vec{AB}$."
+    ],
+    "correct": 1,
+    "explain": "Điểm $I$ là trung điểm của đoạn thẳng $AB$ khi và chỉ khi hai vectơ $\\vec{IA}$ và $\\vec{IB}$ là hai vectơ đối nhau, tức là $\\vec{IA} + \\vec{IB} = \\vec{0}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "TN",
+    "level": 1,
+    "q": "Tích vô hướng của hai vectơ $\\vec{a}$ và $\\vec{b}$ khác $\\vec{0}$ trong không gian được định nghĩa bằng công thức nào?",
+    "choices": [
+      "A. $\\vec{a} \\cdot \\vec{b} = |\\vec{a}| \\cdot |\\vec{b}| \\cdot \\sin(\\vec{a}, \\vec{b})$.",
+      "B. $\\vec{a} \\cdot \\vec{b} = |\\vec{a}| \\cdot |\\vec{b}| \\cdot \\cos(\\vec{a}, \\vec{b})$.",
+      "C. $\\vec{a} \\cdot \\vec{b} = |\\vec{a} \\cdot \\vec{b}| \\cdot \\cos(\\vec{a}, \\vec{b})$.",
+      "D. $\\vec{a} \\cdot \\vec{b} = |\\vec{a}| + |\\vec{b}|$."
+    ],
+    "correct": 1,
+    "explain": "Định nghĩa tích vô hướng của hai vectơ trong không gian: $\\vec{a} \\cdot \\vec{b} = |\\vec{a}| \\cdot |\\vec{b}| \\cdot \\cos(\\vec{a}, \\vec{b})$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hai vectơ $\\vec{a}$ và $\\vec{b}$ khác $\\vec{0}$ trong không gian. Hai vectơ này vuông góc với nhau khi và chỉ khi:",
+    "choices": [
+      "A. $\\vec{a} \\cdot \\vec{b} = 1$.",
+      "B. $\\vec{a} \\cdot \\vec{b} > 0$.",
+      "C. $\\vec{a} \\cdot \\vec{b} < 0$.",
+      "D. $\\vec{a} \\cdot \\vec{b} = 0$."
+    ],
+    "correct": 3,
+    "explain": "Hai vectơ khác vectơ-không vuông góc với nhau khi góc giữa chúng bằng $90^\\circ$. Do $\\cos 90^\\circ = 0$, ta có $\\vec{a} \\cdot \\vec{b} = 0$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hình lăng trụ đứng $ABC.A'B'C'$. Vectơ nào sau đây bằng vectơ $\\vec{AA'}$?",
+    "choices": [
+      "A. $\\vec{BB'}$.",
+      "B. $\\vec{B'B}$.",
+      "C. $\\vec{BC}$.",
+      "D. $\\vec{A'A}$."
+    ],
+    "correct": 0,
+    "explain": "Trong hình lăng trụ, các cạnh bên song song và bằng nhau, đồng thời hướng từ đáy dưới lên đáy trên là như nhau. Do đó tứ giác $ABB'A'$ là hình bình hành, suy ra $\\vec{AA'} = \\vec{BB'}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho điểm $G$ là trọng tâm của tam giác $ABC$ trong không gian, và $M$ là một điểm bất kì. Đẳng thức nào sau đây đúng?",
+    "choices": [
+      "A. $\\vec{MA} + \\vec{MB} + \\vec{MC} = \\vec{MG}$.",
+      "B. $\\vec{MA} + \\vec{MB} + \\vec{MC} = 2\\vec{MG}$.",
+      "C. $\\vec{MA} + \\vec{MB} + \\vec{MC} = 3\\vec{MG}$.",
+      "D. $\\vec{MA} + \\vec{MB} + \\vec{MC} = 4\\vec{MG}$."
+    ],
+    "correct": 2,
+    "explain": "Vì $G$ là trọng tâm $\\Delta ABC$ nên $\\vec{GA} + \\vec{GB} + \\vec{GC} = \\vec{0}$. Chèn điểm $G$ vào vế trái ta có: $(\\vec{MG} + \\vec{GA}) + (\\vec{MG} + \\vec{GB}) + (\\vec{MG} + \\vec{GC}) = 3\\vec{MG} + (\\vec{GA} + \\vec{GB} + \\vec{GC}) = 3\\vec{MG}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hình hộp $ABCD.A'B'C'D'$. Vectơ tổng $\\vec{AB} + \\vec{B'C'} + \\vec{DD'}$ bằng vectơ nào dưới đây?",
+    "choices": [
+      "A. $\\vec{AC}$.",
+      "B. $\\vec{AC'}$.",
+      "C. $\\vec{AD'}$.",
+      "D. $\\vec{A'C}$."
+    ],
+    "correct": 1,
+    "explain": "Trong hình hộp, ta có $\\vec{B'C'} = \\vec{BC}$ và $\\vec{DD'} = \\vec{CC'}$. Do đó: $\\vec{AB} + \\vec{B'C'} + \\vec{DD'} = \\vec{AB} + \\vec{BC} + \\vec{CC'}$. Áp dụng quy tắc tam giác liên tiếp, ta được $\\vec{AC} + \\vec{CC'} = \\vec{AC'}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hình chóp $S.ABCD$ có đáy $ABCD$ là hình bình hành. Đẳng thức vectơ nào sau đây đúng?",
+    "choices": [
+      "A. $\\vec{SA} + \\vec{SC} = \\vec{SB} + \\vec{SD}$.",
+      "B. $\\vec{SA} + \\vec{SB} = \\vec{SC} + \\vec{SD}$.",
+      "C. $\\vec{SA} + \\vec{SD} = \\vec{SB} + \\vec{SC}$.",
+      "D. $\\vec{SA} - \\vec{SB} = \\vec{SC} - \\vec{SD}$."
+    ],
+    "correct": 0,
+    "explain": "Gọi $O$ là tâm hình bình hành $ABCD$, suy ra $O$ là trung điểm của $AC$ và $BD$. Theo tính chất trung điểm, $\\vec{SA} + \\vec{SC} = 2\\vec{SO}$ và $\\vec{SB} + \\vec{SD} = 2\\vec{SO}$. Từ đó suy ra $\\vec{SA} + \\vec{SC} = \\vec{SB} + \\vec{SD}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho tứ diện $ABCD$. Lấy $G$ là trọng tâm của tam giác $BCD$. Khẳng định nào sau đây là sai?",
+    "choices": [
+      "A. $\\vec{BG} + \\vec{CG} + \\vec{DG} = \\vec{0}$.",
+      "B. $\\vec{AB} + \\vec{AC} + \\vec{AD} = 3\\vec{AG}$.",
+      "C. $\\vec{BC} + \\vec{BD} = 3\\vec{BG}$.",
+      "D. $\\vec{GB} + \\vec{GC} + \\vec{GD} = \\vec{0}$."
+    ],
+    "correct": 2,
+    "explain": "Vì $G$ là trọng tâm $\\Delta BCD$ nên $\\vec{GB} + \\vec{GC} + \\vec{GD} = \\vec{0}$ (D đúng), suy ra $\\vec{BG} + \\vec{CG} + \\vec{DG} = \\vec{0}$ (A đúng). Với điểm $A$ bất kì, $\\vec{AB} + \\vec{AC} + \\vec{AD} = 3\\vec{AG}$ (B đúng). Khẳng định C sai vì tổng $\\vec{BC} + \\vec{BD}$ không bằng $3\\vec{BG}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hình hộp $ABCD.A'B'C'D'$. Đặt $\\vec{AB} = \\vec{a}$, $\\vec{AD} = \\vec{b}$, $\\vec{AA'} = \\vec{c}$. Hãy biểu diễn vectơ $\\vec{BD'}$ theo các vectơ $\\vec{a}, \\vec{b}, \\vec{c}$.",
+    "choices": [
+      "A. $\\vec{BD'} = \\vec{a} + \\vec{b} + \\vec{c}$.",
+      "B. $\\vec{BD'} = -\\vec{a} + \\vec{b} + \\vec{c}$.",
+      "C. $\\vec{BD'} = \\vec{a} - \\vec{b} + \\vec{c}$.",
+      "D. $\\vec{BD'} = -\\vec{a} - \\vec{b} + \\vec{c}$."
+    ],
+    "correct": 1,
+    "explain": "Ta có $\\vec{BD'} = \\vec{BA} + \\vec{AD} + \\vec{DD'}$. Vì $\\vec{BA} = -\\vec{AB} = -\\vec{a}$, $\\vec{AD} = \\vec{b}$, và $\\vec{DD'} = \\vec{AA'} = \\vec{c}$. Do đó $\\vec{BD'} = -\\vec{a} + \\vec{b} + \\vec{c}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho tứ diện đều $ABCD$ có độ dài cạnh bằng $a$. Tính tích vô hướng $\\vec{AB} \\cdot \\vec{AC}$.",
+    "choices": [
+      "A. $\\frac{a^2}{2}$.",
+      "B. $a^2$.",
+      "C. $\\frac{a^2 \\sqrt{3}}{2}$.",
+      "D. $-\\frac{a^2}{2}$."
+    ],
+    "correct": 0,
+    "explain": "Do $ABCD$ là tứ diện đều nên các mặt là tam giác đều. Tam giác $ABC$ đều nên góc $\\widehat{BAC} = 60^\\circ$. Ta có: $\\vec{AB} \\cdot \\vec{AC} = |\\vec{AB}| \\cdot |\\vec{AC}| \\cdot \\cos 60^\\circ = a \\cdot a \\cdot \\frac{1}{2} = \\frac{a^2}{2}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hình lập phương $ABCD.A'B'C'D'$. Góc giữa hai vectơ $\\vec{AC}$ và $\\vec{DA'}$ bằng bao nhiêu?",
+    "choices": [
+      "A. $45^\\circ$.",
+      "B. $60^\\circ$.",
+      "C. $90^\\circ$.",
+      "D. $120^\\circ$."
+    ],
+    "correct": 3,
+    "explain": "Nhận thấy $\\vec{DA'} = \\vec{CB'}$. Góc giữa $\\vec{AC}$ và $\\vec{DA'}$ chính là góc giữa $\\vec{AC}$ và $\\vec{CB'}$. Xét tam giác $AB'C$, các cạnh $AC$, $CB'$, $AB'$ đều là đường chéo của các mặt hình lập phương nên bằng nhau, tam giác $AB'C$ đều. Góc $\\widehat{ACB'} = 60^\\circ$. Do đó góc giữa hai vectơ $\\vec{CA}$ và $\\vec{CB'}$ là $60^\\circ$. Suy ra góc giữa $\\vec{AC}$ và $\\vec{CB'}$ là $180^\\circ - 60^\\circ = 120^\\circ$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho tứ diện $ABCD$. Gọi $M, N$ lần lượt là trung điểm của các cạnh $AB$ và $CD$. Mệnh đề nào sau đây đúng?",
+    "choices": [
+      "A. $\\vec{MN} = \\frac{1}{2}(\\vec{AD} + \\vec{CB})$.",
+      "B. $\\vec{MN} = \\frac{1}{2}(\\vec{AC} + \\vec{BD})$.",
+      "C. $\\vec{MN} = \\frac{1}{2}(\\vec{AB} + \\vec{CD})$.",
+      "D. $\\vec{MN} = \\frac{1}{2}(\\vec{AD} + \\vec{BC})$."
+    ],
+    "correct": 3,
+    "explain": "Theo quy tắc ba điểm, ta có $\\vec{MN} = \\vec{MA} + \\vec{AD} + \\vec{DN}$ và $\\vec{MN} = \\vec{MB} + \\vec{BC} + \\vec{CN}$. Cộng vế theo vế ta được: $2\\vec{MN} = (\\vec{MA} + \\vec{MB}) + (\\vec{AD} + \\vec{BC}) + (\\vec{DN} + \\vec{CN})$. Do $M, N$ là trung điểm nên $\\vec{MA} + \\vec{MB} = \\vec{0}$ và $\\vec{DN} + \\vec{CN} = \\vec{0}$. Suy ra $2\\vec{MN} = \\vec{AD} + \\vec{BC} \\Leftrightarrow \\vec{MN} = \\frac{1}{2}(\\vec{AD} + \\vec{BC})$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hình lập phương $ABCD.A'B'C'D'$. Tích vô hướng $\\vec{AB} \\cdot \\vec{B'C'}$ bằng bao nhiêu?",
+    "choices": [
+      "A. $a^2$.",
+      "B. $0$.",
+      "C. $-a^2$.",
+      "D. $2a^2$."
+    ],
+    "correct": 1,
+    "explain": "Trong hình lập phương, ta có $\\vec{B'C'} = \\vec{BC}$. Do mặt đáy $ABCD$ là hình vuông nên $AB \\perp BC$, suy ra $\\vec{AB} \\perp \\vec{BC}$. Vậy tích vô hướng $\\vec{AB} \\cdot \\vec{B'C'} = \\vec{AB} \\cdot \\vec{BC} = 0$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho tứ diện đều $ABCD$ có cạnh bằng $a$. Góc giữa hai đường thẳng $AB$ và $CD$ bằng bao nhiêu?",
+    "choices": [
+      "A. $30^\\circ$.",
+      "B. $45^\\circ$.",
+      "C. $60^\\circ$.",
+      "D. $90^\\circ$."
+    ],
+    "correct": 3,
+    "explain": "Xét tích vô hướng $\\vec{AB} \\cdot \\vec{CD} = \\vec{AB} \\cdot (\\vec{AD} - \\vec{AC}) = \\vec{AB} \\cdot \\vec{AD} - \\vec{AB} \\cdot \\vec{AC}$. Vì $ABCD$ là tứ diện đều nên $\\vec{AB} \\cdot \\vec{AD} = a \\cdot a \\cdot \\cos 60^\\circ = \\frac{a^2}{2}$ và $\\vec{AB} \\cdot \\vec{AC} = a \\cdot a \\cdot \\cos 60^\\circ = \\frac{a^2}{2}$. Suy ra $\\vec{AB} \\cdot \\vec{CD} = \\frac{a^2}{2} - \\frac{a^2}{2} = 0$. Vậy hai đường thẳng vuông góc với nhau, góc bằng $90^\\circ$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hình chóp $S.ABC$. Lấy điểm $M$ trên cạnh $SA$ sao cho $SM = 2AM$. Khẳng định nào sau đây là biểu diễn đúng của vectơ $\\vec{SM}$ qua $\\vec{SA}$?",
+    "choices": [
+      "A. $\\vec{SM} = \\frac{2}{3}\\vec{SA}$.",
+      "B. $\\vec{SM} = \\frac{1}{3}\\vec{SA}$.",
+      "C. $\\vec{SM} = 2\\vec{SA}$.",
+      "D. $\\vec{SM} = \\frac{1}{2}\\vec{SA}$."
+    ],
+    "correct": 0,
+    "explain": "Do điểm $M$ nằm trên đoạn thẳng $SA$ nên hai vectơ $\\vec{SM}$ và $\\vec{SA}$ cùng hướng. Mặt khác, vì $SM = 2AM$ nên $SA = SM + AM = SM + \\frac{1}{2}SM = \\frac{3}{2}SM$, suy ra độ dài $SM = \\frac{2}{3}SA$. Từ đó ta có đẳng thức vectơ $\\vec{SM} = \\frac{2}{3}\\vec{SA}$."
   }
 
 
