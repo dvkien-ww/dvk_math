@@ -1,42 +1,5 @@
 [
   {
-    "grade": "10",
-    "chapter": "Hàm số, đồ thị và ứng dụng",
-    "type": "TN",
-    "level": 1,
-    "q": "Tập xác định của hàm số $y = \\frac{1}{x-2}$ là:",
-    "choices": ["A. $\\mathbb{R}$", "B. $\\mathbb{R} \\setminus \\{2\\}$", "C. $(2; +\\infty)$", "D. $[2; +\\infty)$"],
-    "correct": 1
-  },
-  {
-    "grade": "10",
-    "chapter": "Hàm số, đồ thị và ứng dụng",
-    "type": "DS",
-    "level": 0,
-    "q": "Cho hàm số bậc hai $y = x^2 - 4x + 3$. Xét các mệnh đề sau:",
-    "items": {
-      "a": "Đồ thị hàm số có đỉnh $I(2; -1)$.",
-      "b": "Hàm số nghịch biến trên khoảng $(2; +\\infty)$.",
-      "c": "Đồ thị cắt trục tung tại điểm $A(0; 3)$.",
-      "d": "Trục đối xứng là đường thẳng $x = 2$."
-    },
-    "correct": { "a": true, "b": false, "c": true, "d": true }
-  },
-  {
-    "grade": "11",
-    "chapter": "Quan hệ vuông góc trong không gian",
-    "type": "DS",
-    "level": 0,
-    "q": "Cho hình chóp $S.ABCD$ có $SA \\perp (ABCD)$ và đáy $ABCD$ là hình vuông. Xét các mệnh đề sau:",
-    "items": {
-      "a": "$BC \\perp (SAB)$.",
-      "b": "$BD \\perp SC$.",
-      "c": "$CD \\perp (SAD)$.",
-      "d": "$AC \\perp (SBD)$."
-    },
-    "correct": { "a": true, "b": true, "c": true, "d": false }
-  },
-  {
     "grade": "12",
     "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TN",
@@ -68,38 +31,74 @@
     "grade": "12",
     "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "DS",
-    "level": 0,
     "q": "Cho hàm số $y = \\frac{x^2 - x - 1}{x - 2}$. Xét tính đúng sai của các mệnh đề sau:",
     "items": {
       "a": "Đạo hàm của hàm số là $y' = \\frac{x^2 - 4x + 3}{(x-2)^2}$.",
       "b": "Hàm số đạt cực đại tại $x = 1$ và đạt cực tiểu tại $x = 3$.",
-      "c": "Đồ thị hàm số có tiệm cận đứng là đường thẳng $x = 2$ và tiệm cận xiên là đường thẳng $y = x + 1$.",
-      "d": "Giao điểm của đồ thị hàm số với trục tung là điểm có toạ độ $(0; -1)$."
+      "c": "Đồ thị hàm số có tiệm cận đứng là $x = 2$ và tiệm cận xiên là $y = x + 1$.",
+      "d": "Giao điểm của đồ thị hàm số với trục tung là điểm $(0; -1)$."
     },
-    "correct": { "a": true, "b": true, "c": true, "d": false }
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    }
   },
   {
     "grade": "12",
     "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TLN",
     "level": 3,
-    "q": "Cho hàm số $y = \\frac{x^2 - 2x + 9}{x - 2}$. Gọi $y_{CĐ}$ và $y_{CT}$ lần lượt là giá trị cực đại và giá trị cực tiểu của hàm số. Tính tổng $S = y_{CĐ} + y_{CT}$.",
-    "correct": "4"
+    "q": "Cho hàm số $y = x^3 - 6x^2 + 9x + 30$. Tìm giá trị cực tiểu của hàm số.",
+    "correct": "30"
   },
   {
     "grade": "12",
     "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TLN",
     "level": 4,
-    "q": "Lợi nhuận của một công ty khi sản xuất $x$ sản phẩm được cho bởi $P(x) = -0,3x^3 + 36x^2 + 1800x - 48000$. Công ty cần sản xuất bao nhiêu sản phẩm để lợi nhuận đạt mức lớn nhất?",
+    "q": "Bỏ qua sức cản không khí, độ cao (mét) của một vật được phóng thẳng đứng được cho bởi $h(t) = 2 + 24,5t - 4,9t^2$. Tại thời điểm $t$ bằng bao nhiêu thì vật đạt độ cao lớn nhất?",
+    "correct": "2.5"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 5,
+    "q": "Lợi nhuận của một công ty khi sản xuất $x$ sản phẩm là $P(x) = -0,3x^3 + 36x^2 + 1800x - 48000$. Công ty cần sản xuất bao nhiêu sản phẩm để lợi nhuận đạt mức lớn nhất?",
     "correct": "100"
   },
   {
-    "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
-    "type": "TLN",
-    "level": 4,
-    "q": "Bỏ qua sức cản không khí, độ cao (mét) của một vật được phóng thẳng đứng lên trên được cho bởi công thức $h(t) = 2 + 24,5t - 4,9t^2$, với $t$ (giây) là thời gian. Tại thời điểm $t$ bằng bao nhiêu thì vật đạt độ cao lớn nhất?",
-    "correct": "2.5"
+    "grade": "10",
+    "chapter": "Hàm số, đồ thị và ứng dụng",
+    "type": "TN",
+    "level": 1,
+    "q": "Tập xác định của hàm số $y = \\frac{1}{x-2}$ là:",
+    "choices": [
+      "A. $\\mathbb{R}$",
+      "B. $\\mathbb{R} \\setminus \\{2\\}$",
+      "C. $(2; +\\infty)$",
+      "D. $[2; +\\infty)$"
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "11",
+    "chapter": "Quan hệ vuông góc trong không gian",
+    "type": "DS",
+    "q": "Cho hình chóp $S.ABCD$ có $SA \\perp (ABCD)$ và đáy $ABCD$ là hình vuông. Xét tính đúng sai:",
+    "items": {
+      "a": "$BC \\perp (SAB)$.",
+      "b": "$BD \\perp SC$.",
+      "c": "$CD \\perp (SAD)$.",
+      "d": "$AC \\perp (SBD)$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    }
   }
 ]
