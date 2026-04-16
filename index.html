@@ -28,15 +28,20 @@
         .q-circle.done { background: var(--success); color: white; }
 
         .question-paper { background: white; padding: 35px; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); min-height: 400px; line-height: 1.8; }
-        /* Tăng margin-bottom cho badge để đẩy nội dung xuống */
         .type-badge { display: inline-block; padding: 6px 16px; border-radius: 20px; background: #e7f5ff; color: var(--primary); font-size: 13px; font-weight: bold; margin-bottom: 25px; }
         
         .option-item { display: flex; align-items: center; padding: 15px; border: 1px solid #dee2e6; border-radius: 10px; margin-bottom: 10px; cursor: pointer; }
         .option-item:hover { background: #f8f9fa; }
         .option-item input { margin-right: 15px; }
+        
+        /* Class tạo khoảng cách 3 space giữa ký hiệu A. B. và nội dung */
+        .opt-label { font-weight: bold; margin-right: 1.5rem; display: inline-block; min-width: 25px; }
 
         .ds-table { width: 100%; margin-top: 25px; border-collapse: collapse; }
         .ds-table td { padding: 15px 12px; border-bottom: 1px solid #eee; }
+        /* Khoảng cách cho các ý a, b, c, d trong phần Đúng Sai */
+        .ds-label { font-weight: bold; margin-right: 1.5rem; }
+
         .ds-btn { padding: 8px 18px; border: 1px solid #ddd; border-radius: 6px; cursor: pointer; margin-left: 5px; font-weight: bold; }
         .ds-btn.selected-t { background: var(--success); color: white; border-color: var(--success); }
         .ds-btn.selected-f { background: var(--danger); color: white; border-color: var(--danger); }
@@ -47,8 +52,6 @@
         .btn-finish { background: var(--danger); color: white; margin-top: auto; width: 100%; padding: 15px; font-size: 16px; }
         
         .hidden { display: none !important; }
-        
-        /* CSS cho input trả lời ngắn */
         .tln-input { width: 100%; max-width: 300px; padding: 12px; margin-top: 20px; border: 2px solid var(--primary); border-radius: 8px; font-size: 16px; outline: none; }
     </style>
 </head>
@@ -58,24 +61,20 @@
     <div class="setup-card">
         <h1>DVK MATH</h1>
         <p>THPT Hoàng Hoa Thám - Đà Nẵng</p>
-        
         <select id="grade-sel" onchange="updateChapters()">
             <option value="">-- Chọn Khối Lớp --</option>
             <option value="10">Lớp 10</option>
             <option value="11">Lớp 11</option>
             <option value="12">Lớp 12</option>
         </select>
-
         <select id="chapter-sel">
             <option value="">-- Chọn Chương học --</option>
         </select>
-
         <div class="time-grid">
             <button class="time-btn" onclick="selectTime(45, this)">45 Phút</button>
             <button class="time-btn" onclick="selectTime(60, this)">60 Phút</button>
             <button class="time-btn" onclick="selectTime(90, this)">90 Phút</button>
         </div>
-
         <button class="btn-start" style="background:var(--primary); color:white; font-weight:bold; margin-top:25px; cursor:pointer;" onclick="startQuiz()">BẮT ĐẦU</button>
     </div>
 </div>
@@ -123,22 +122,17 @@
         const grade = document.getElementById('grade-sel').value;
         const chapter = document.getElementById('chapter-sel').value;
         if(!grade || !chapter || !selectedMinutes) return alert("Vui lòng chọn đầy đủ thông tin!");
-
         const pool = allQuestions.filter(q => q.grade == grade && q.chapter == chapter);
         let counts = { TN: 8, DS: 2, TLN: 4 };
         if(selectedMinutes == 60) counts = { TN: 12, DS: 3, TLN: 6 };
         if(selectedMinutes == 90) counts = { TN: 16, DS: 4, TLN: 8 };
-
         const pick = (t, n) => pool.filter(q => q.type === t).sort(() => 0.5 - Math.random()).slice(0, n);
         examSet = [...pick('TN', counts.TN), ...pick('DS', counts.DS), ...pick('TLN', counts.TLN)];
-        
         if(examSet.length === 0) return alert("Không có câu hỏi cho chương này!");
-
         answers = new Array(examSet.length).fill(null);
         document.getElementById('setup-screen').classList.add('hidden');
         document.getElementById('sidebar').classList.remove('hidden');
         document.getElementById('main-content').classList.remove('hidden');
-        
         initTimer(selectedMinutes * 60);
         showQuestion();
     }
@@ -146,36 +140,39 @@
     function showQuestion() {
         const q = examSet[currentIdx];
         const paper = document.getElementById('paper');
+        const labels = ["A.", "B.", "C.", "D."];
         
-        // Thêm <br><br><br> (tương đương 3 space theo chiều dọc) sau phần Badge
         let html = `<div class="type-badge">PHẦN ${q.type === 'TN' ? 'I: TRẮC NGHIỆM' : q.type === 'DS' ? 'II: ĐÚNG - SAI' : 'III: TRẢ LỜI NGẮN'}</div>`;
         html += `<br><br><br>`; 
-        html += `<div style="font-size:1.15rem; font-weight:500;">Câu ${currentIdx + 1}: ${q.q}</div>`;
+        html += `<div style="font-size:1.15rem; font-weight:500; margin-bottom:20px;">Câu ${currentIdx + 1}: ${q.q}</div>`;
 
         if(q.type === 'TN') {
-            html += `<div style="margin-top:30px">` + q.choices.map((c, i) => `
+            html += `<div>` + q.choices.map((c, i) => {
+                // Tách chữ "A." ra khỏi nội dung để chèn khoảng trống
+                let content = c.replace(/^[A-D]\.\s*/, ''); 
+                return `
                 <div class="option-item" onclick="saveTN(${i})">
                     <input type="radio" name="opt" ${answers[currentIdx] === i ? 'checked' : ''}> 
-                    <span>${c}</span>
+                    <span class="opt-label">${labels[i]}</span>
+                    <span>${content}</span>
                 </div>
-            `).join('') + `</div>`;
+            `}).join('') + `</div>`;
         } else if(q.type === 'DS') {
             html += `<table class="ds-table">` + Object.keys(q.items).map(k => `
                 <tr>
-                    <td><strong>${k}.</strong> ${q.items[k]}</td>
-                    <td align="right">
+                    <td><span class="ds-label">${k}.</span>${q.items[k]}</td>
+                    <td align="right" style="min-width:160px">
                         <button class="ds-btn ${answers[currentIdx]?.[k] === true ? 'selected-t' : ''}" onclick="saveDS('${k}', true)">Đúng</button>
                         <button class="ds-btn ${answers[currentIdx]?.[k] === false ? 'selected-f' : ''}" onclick="saveDS('${k}', false)">Sai</button>
                     </td>
                 </tr>
             `).join('') + `</table>`;
         } else if(q.type === 'TLN') {
-            html += `<input type="text" class="tln-input" placeholder="Nhập đáp án số hoặc văn bản ngắn..." value="${answers[currentIdx] || ''}" oninput="saveTLN(this.value)">`;
+            html += `<input type="text" class="tln-input" placeholder="Nhập đáp án..." value="${answers[currentIdx] || ''}" oninput="saveTLN(this.value)">`;
         }
 
         paper.innerHTML = html;
         renderSidebar();
-        
         if (typeof renderMathInElement === 'function') {
             renderMathInElement(paper, {
                 delimiters: [
@@ -194,12 +191,10 @@
         showQuestion();
     }
     function saveTLN(v) { answers[currentIdx] = v; renderSidebar(); }
-
     function move(s) {
         currentIdx = Math.max(0, Math.min(examSet.length - 1, currentIdx + s));
         showQuestion();
     }
-
     function renderSidebar() {
         const grid = document.getElementById('q-grid');
         grid.innerHTML = examSet.map((_, i) => {
@@ -208,21 +203,16 @@
             return `<div class="q-circle ${statusClass}" onclick="currentIdx=${i};showQuestion()">${i+1}</div>`;
         }).join('');
     }
-
     function initTimer(sec) {
         timer = setInterval(() => {
             sec--;
             let m = Math.floor(sec/60), s = sec%60;
             document.getElementById('timer').innerText = `${m}:${s<10?'0'+s:s}`;
-            if(sec<=0) { clearInterval(timer); alert("Hết thời gian làm bài!"); location.reload(); }
+            if(sec<=0) { clearInterval(timer); alert("Hết giờ!"); location.reload(); }
         }, 1000);
     }
-
     function confirmFinish() {
-        if(confirm("Bạn có chắc chắn muốn nộp bài?")) {
-            alert("Bài làm đã được ghi nhận!");
-            location.reload();
-        }
+        if(confirm("Nộp bài?")) location.reload();
     }
 </script>
 </body>
