@@ -918,11 +918,7 @@
       "c": true,
       "d": true
     }
-  }
-]
-Dưới đây là hệ thống 20 câu hỏi Trắc nghiệm Trả lời ngắn (TLN) mức độ 3 (Vận dụng), tập trung chuyên sâu vào Bài 1 Chương 1: Ứng dụng đạo hàm để tìm khoảng đơn điệu, cực trị và giải quyết các bài toán tối ưu thực tế.
-Các câu hỏi được định dạng chuẩn xác theo cấu trúc JSON mà hệ thống yêu cầu.
-[
+  },
   {
     "grade": "12",
     "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
