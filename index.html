@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DVK Math SEED - Ma trận 3:3:2:2</title>
+    <title>DVK Math SEED - Hệ thống luyện đề chuẩn hóa</title>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
 
     <style>
-        :root { --primary: #4c6ef5; --success: #40c057; --danger: #fa5252; --warning: #fab005; --bg: #f8f9fa; }
+        :root { --primary: #4c6ef5; --success: #40c057; --danger: #fa5252; --bg: #f8f9fa; }
         body { font-family: 'Segoe UI', system-ui, sans-serif; margin: 0; background: var(--bg); display: flex; height: 100vh; overflow: hidden; }
         
         #setup-screen { position: fixed; inset: 0; background: white; z-index: 1000; display: flex; align-items: center; justify-content: center; }
         .setup-card { background: white; padding: 40px; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); width: 100%; max-width: 450px; text-align: center; }
-        select, .btn-start { width: 100%; padding: 14px; margin: 12px 0; border-radius: 10px; border: 2px solid #eee; font-size: 16px; }
-        .time-btn { padding: 12px; border: 2px solid #eee; border-radius: 10px; cursor: pointer; background: white; font-weight: 600; }
+        select, .btn-start { width: 100%; padding: 14px; margin: 12px 0; border-radius: 10px; border: 2px solid #eee; font-size: 16px; outline: none; }
+        .time-btn { padding: 12px; border: 2px solid #eee; border-radius: 10px; cursor: pointer; background: white; font-weight: 600; transition: 0.3s; }
         .time-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
 
         #sidebar { width: 260px; background: white; border-right: 1px solid #e9ecef; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; }
         #main-content { flex: 1; padding: 40px; overflow-y: auto; position: relative; }
         .q-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 20px; }
-        .q-circle { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; background: #f1f3f5; border-radius: 8px; cursor: pointer; font-weight: 600; }
+        .q-circle { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; background: #f1f3f5; border-radius: 8px; cursor: pointer; font-weight: 600; transition: 0.2s; }
         .q-circle.active { border: 2px solid var(--primary); color: var(--primary); }
         .q-circle.done { background: var(--success); color: white; }
 
@@ -30,15 +30,16 @@
         .badge-row { display: flex; gap: 10px; margin-bottom: 25px; }
         .type-badge { padding: 6px 16px; border-radius: 20px; background: #e7f5ff; color: var(--primary); font-size: 12px; font-weight: bold; }
         .level-badge { padding: 6px 16px; border-radius: 20px; font-size: 11px; font-weight: bold; color: white; text-transform: uppercase; }
-        .lvl-1 { background: #adb5bd; } .lvl-2 { background: #5c7cfa; } .lvl-3 { background: #f59f00; } .lvl-4 { background: #e03131; }
+        .lvl-0 { background: #6741d9; } .lvl-1 { background: #adb5bd; } .lvl-2 { background: #5c7cfa; } .lvl-3 { background: #f59f00; } .lvl-4 { background: #e03131; }
 
-        .q-image { max-width: 100%; height: auto; display: block; margin: 20px auto; border: 1px solid #eee; border-radius: 8px; }
-        .option-item { display: flex; align-items: center; padding: 15px; border: 1px solid #dee2e6; border-radius: 10px; margin-bottom: 10px; cursor: pointer; }
-        .opt-label { font-weight: bold; margin-right: 2rem; display: inline-block; min-width: 30px; }
+        .option-item { display: flex; align-items: center; padding: 15px; border: 1px solid #dee2e6; border-radius: 10px; margin-bottom: 10px; cursor: pointer; transition: 0.2s; }
+        .option-item:hover { background: #f8f9fa; }
+        /* Khoảng cách 3 space giữa nhãn và nội dung */
+        .opt-label { font-weight: bold; margin-right: 1.5rem; display: inline-block; min-width: 35px; }
 
-        .ds-table { width: 100%; margin-top: 25px; border-collapse: collapse; }
-        .ds-table td { padding: 15px 12px; border-bottom: 1px solid #eee; }
-        .ds-label { font-weight: bold; margin-right: 2rem; display: inline-block; min-width: 25px; }
+        .ds-table { width: 100%; margin-top: 20px; border-collapse: collapse; }
+        .ds-table td { padding: 12px; border-bottom: 1px solid #eee; }
+        .ds-row-label { font-weight: bold; margin-right: 1.5rem; display: inline-block; }
         .ds-btn { padding: 8px 18px; border: 1px solid #ddd; border-radius: 6px; cursor: pointer; margin-left: 5px; font-weight: bold; }
         .ds-btn.selected-t { background: var(--success); color: white; border-color: var(--success); }
         .ds-btn.selected-f { background: var(--danger); color: white; border-color: var(--danger); }
@@ -59,63 +60,79 @@
 
 <div id="setup-screen">
     <div class="setup-card">
-        <h1>DVK MATH SEED</h1>
-        <p>Ma trận đề 3:3:2:2 (HS Hạt giống)</p>
+        <h1 style="color: var(--primary); margin-bottom: 5px;">DVK MATH SEED</h1>
+        <p style="color: #666; margin-bottom: 30px;">Hệ thống tạo đề chuẩn ma trận 3:3:2:2</p>
+        
         <select id="grade-sel" onchange="updateChapters()">
             <option value="">-- Chọn Khối Lớp --</option>
             <option value="10">Lớp 10</option>
             <option value="11">Lớp 11</option>
             <option value="12">Lớp 12</option>
         </select>
-        <select id="chapter-sel"><option value="">-- Chọn Chương --</option></select>
-        <div class="time-grid" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-top: 15px;">
+        
+        <select id="chapter-sel">
+            <option value="">-- Chọn Chương --</option>
+        </select>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-top: 10px;">
             <button class="time-btn" onclick="selectTime(45, this)">45 Phút</button>
             <button class="time-btn" onclick="selectTime(60, this)">60 Phút</button>
             <button class="time-btn" onclick="selectTime(90, this)">90 Phút</button>
         </div>
-        <button class="btn-start" style="background:var(--primary); color:white; font-weight:bold; margin-top:25px; cursor:pointer;" onclick="startQuiz()">BẮT ĐẦU</button>
+
+        <button class="btn-start" style="background: var(--primary); color: white; font-weight: bold; margin-top: 30px; cursor: pointer;" onclick="startQuiz()">BẮT ĐẦU LÀM BÀI</button>
     </div>
 </div>
 
 <div id="sidebar" class="hidden">
-    <h3 style="margin:0 0 15px 0">Danh sách câu</h3>
+    <h3 style="margin-top: 0;">Phiếu trả lời</h3>
     <div class="q-grid" id="q-grid"></div>
-    <button class="btn btn-finish" onclick="confirmFinish()">NỘP BÀI</button>
+    <button class="btn btn-finish" onclick="confirmFinish()">NỘP BÀI BẢO LƯU</button>
 </div>
 
 <div id="main-content" class="hidden">
     <div id="timer">00:00</div>
     <div class="question-paper" id="paper"></div>
     <div class="nav-footer">
-        <button class="btn" style="background:#dee2e6" onclick="move(-1)">← Trước</button>
-        <button class="btn" style="background:var(--primary); color:white" onclick="move(1)">Tiếp →</button>
+        <button class="btn" style="background: #e9ecef" onclick="move(-1)">Câu trước</button>
+        <button class="btn" style="background: var(--primary); color: white" onclick="move(1)">Câu tiếp theo</button>
     </div>
 </div>
 
 <div id="result-screen">
-    <h1>KẾT QUẢ TỔNG KẾT</h1>
-    <p class="score-big" id="final-score">0.0 / 0.0</p>
-    <p id="score-stats" style="font-size: 1.2rem; color: #666;"></p>
+    <h1>KẾT QUẢ BÀI LÀM</h1>
+    <p class="score-big" id="final-score">0.00</p>
+    <p id="score-stats" style="font-size: 1.1rem; color: #666; margin-bottom: 30px;"></p>
     <table class="result-table" id="result-detail">
-        <thead><tr style="background:#f8f9fa"><th>Câu</th><th>Loại</th><th>Mức độ</th><th>Điểm số</th></tr></thead>
+        <thead>
+            <tr style="background: #f8f9fa">
+                <th>Câu</th>
+                <th>Phần</th>
+                <th>Mức độ</th>
+                <th>Kết quả</th>
+            </tr>
+        </thead>
         <tbody></tbody>
     </table>
-    <button class="btn" style="background:var(--primary); color:white; margin-bottom: 50px;" onclick="location.reload()">LÀM ĐỀ MỚI</button>
+    <button class="btn" style="background: var(--primary); color: white; margin-bottom: 50px;" onclick="location.reload()">LÀM ĐỀ KHÁC</button>
 </div>
 
 <script>
     let allQuestions = [], examSet = [], answers = [], currentIdx = 0, selectedMinutes = 0, timer;
     const labels = ["A.", "B.", "C.", "D."];
-    const lvlNames = ["Mix", "Nhận biết", "Thông hiểu", "Vận dụng", "THÁCH THỨC"];
+    const lvlNames = ["Tổng hợp", "Nhận biết", "Thông hiểu", "Vận dụng", "Thách thức"];
 
-    fetch('questions.json').then(r => r.json()).then(data => { allQuestions = data; });
+    // Tải dữ liệu
+    fetch('questions.json').then(r => r.json()).then(data => { 
+        allQuestions = data; 
+    }).catch(err => alert("Lỗi tải file questions.json!"));
 
     function updateChapters() {
         const grade = document.getElementById('grade-sel').value;
         const sel = document.getElementById('chapter-sel');
-        sel.innerHTML = '<option value="">-- Chọn Chương học --</option>';
+        sel.innerHTML = '<option value="">-- Chọn Chương --</option>';
         const chapters = [...new Set(allQuestions.filter(q => q.grade == grade).map(q => q.chapter))];
-        chapters.forEach(c => { if(c) sel.innerHTML += `<option value="${c}">${c}</option>`; });
+        chapters.sort().forEach(c => { if(c) sel.innerHTML += `<option value="${c}">${c}</option>`; });
     }
 
     function selectTime(m, btn) {
@@ -127,31 +144,30 @@
     function startQuiz() {
         const grade = document.getElementById('grade-sel').value;
         const chapter = document.getElementById('chapter-sel').value;
-        if(!grade || !chapter || !selectedMinutes) return alert("Thiếu thông tin!");
+        if(!grade || !chapter || !selectedMinutes) return alert("Vui lòng chọn đầy đủ thông tin!");
         
         const pool = allQuestions.filter(q => q.grade == grade && q.chapter == chapter);
         const shuffle = (arr) => arr.sort(() => 0.5 - Math.random());
 
-        // Ma trận: TN (M1+M2), DS (Mix), TLN (M3+M4)
-        let cfg = { tn1: 4, tn2: 4, ds: 2, tln3: 2, tln4: 2 };
+        // Cấu hình số lượng theo ma trận 3:3:2:2
+        let cfg = { tn1: 4, tn2: 4, ds: 2, tln3: 2, tln4: 2 }; // 45p
         if(selectedMinutes == 60) cfg = { tn1: 6, tn2: 6, ds: 3, tln3: 3, tln4: 3 };
         if(selectedMinutes == 90) cfg = { tn1: 8, tn2: 8, ds: 4, tln3: 4, tln4: 4 };
 
-        const pick = (t, l, n) => shuffle(pool.filter(q => q.type === t && q.level == l)).slice(0, n);
-        
-        const tn1 = pick('TN', 1, cfg.tn1);
-        const tn2 = pick('TN', 2, cfg.tn2);
+        const tn1 = shuffle(pool.filter(q => q.type === 'TN' && q.level == 1)).slice(0, cfg.tn1);
+        const tn2 = shuffle(pool.filter(q => q.type === 'TN' && q.level == 2)).slice(0, cfg.tn2);
         const ds = shuffle(pool.filter(q => q.type === 'DS')).slice(0, cfg.ds);
-        const tln3 = pick('TLN', 3, cfg.tln3);
-        const tln4 = pick('TLN', 4, cfg.tln4);
+        const tln3 = shuffle(pool.filter(q => q.type === 'TLN' && q.level == 3)).slice(0, cfg.tln3);
+        const tln4 = shuffle(pool.filter(q => q.type === 'TLN' && q.level == 4)).slice(0, cfg.tln4);
 
         examSet = [...tn1, ...tn2, ...ds, ...tln3, ...tln4];
-        if(examSet.length === 0) return alert("Không đủ dữ liệu câu hỏi!");
+        if(examSet.length === 0) return alert("Không tìm thấy câu hỏi phù hợp trong kho dữ liệu!");
         
         answers = new Array(examSet.length).fill(null);
         document.getElementById('setup-screen').style.display = 'none';
         document.getElementById('sidebar').classList.remove('hidden');
         document.getElementById('main-content').classList.remove('hidden');
+        
         initTimer(selectedMinutes * 60);
         showQuestion();
     }
@@ -159,63 +175,129 @@
     function showQuestion() {
         const q = examSet[currentIdx], paper = document.getElementById('paper');
         const level = q.level || 0;
+        
         let html = `<div class="badge-row">
                         <div class="type-badge">PHẦN ${q.type === 'TN' ? 'I' : q.type === 'DS' ? 'II' : 'III'}</div>
                         <div class="level-badge lvl-${level}">${lvlNames[level]}</div>
-                    </div><br><br><br>`;
-        if(q.image) html += `<img src="${q.image}" class="q-image">`;
-        html += `<div style="font-size:1.15rem; font-weight:500; margin-bottom:25px;">Câu ${currentIdx + 1}: ${q.q}</div>`;
+                    </div>`;
+        
+        if(q.image) html += `<img src="${q.image}" style="max-width:100%; margin:20px 0; border-radius:8px;">`;
+        
+        html += `<div style="font-size:1.2rem; font-weight:500; margin-bottom:30px;">Câu ${currentIdx + 1}: ${q.q}</div>`;
 
         if(q.type === 'TN') {
-            html += `<div>` + q.choices.map((c, i) => {
-                let content = c.replace(/^[A-D]\.\s*/, '');
+            html += `<div style="display: flex; flex-direction: column; gap: 10px;">` + q.choices.map((c, i) => {
+                let cleanText = c.replace(/^[A-D]\.\s*/, '');
                 return `<div class="option-item" onclick="saveTN(${i})">
-                    <input type="radio" ${answers[currentIdx] === i ? 'checked' : ''}>
-                    <span class="opt-label">${labels[i]}</span><span>${content}</span></div>`
+                    <input type="radio" name="q${currentIdx}" ${answers[currentIdx] === i ? 'checked' : ''} style="margin-right:15px">
+                    <span class="opt-label">${labels[i]}</span><span>${cleanText}</span>
+                </div>`
             }).join('') + `</div>`;
         } else if(q.type === 'DS') {
             html += `<table class="ds-table">` + Object.keys(q.items).map(k => `
-                <tr><td><span class="ds-label">${k}.</span>${q.items[k]}</td>
-                <td align="right"><button class="ds-btn ${answers[currentIdx]?.[k] === true ? 'selected-t' : ''}" onclick="saveDS('${k}', true)">Đúng</button>
-                <button class="ds-btn ${answers[currentIdx]?.[k] === false ? 'selected-f' : ''}" onclick="saveDS('${k}', false)">Sai</button></td></tr>`).join('') + `</table>`;
+                <tr>
+                    <td><span class="ds-row-label">${k}.</span>${q.items[k]}</td>
+                    <td style="width:160px; text-align:right;">
+                        <button class="ds-btn ${answers[currentIdx]?.[k] === true ? 'selected-t' : ''}" onclick="saveDS('${k}', true)">Đúng</button>
+                        <button class="ds-btn ${answers[currentIdx]?.[k] === false ? 'selected-f' : ''}" onclick="saveDS('${k}', false)">Sai</button>
+                    </td>
+                </tr>`).join('') + `</table>`;
         } else if(q.type === 'TLN') {
-            html += `<input type="text" class="btn-start" style="border:2px solid var(--primary); width:300px" placeholder="Đáp án..." value="${answers[currentIdx] || ''}" oninput="saveTLN(this.value)">`;
+            html += `<div style="margin-top:20px;">
+                <p style="font-style:italic; font-size:0.9rem; color:#666;">Nhập đáp án số hoặc biểu thức ngắn gọn:</p>
+                <input type="text" class="btn-start" style="border:2px solid var(--primary); width:100%; max-width:400px; text-align:center;" 
+                    placeholder="Nhập kết quả tại đây..." value="${answers[currentIdx] || ''}" oninput="saveTLN(this.value)">
+            </div>`;
         }
+
         paper.innerHTML = html;
         renderSidebar();
-        if (typeof renderMathInElement === 'function') renderMathInElement(paper, { delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}], throwOnError: false });
+        
+        // Render Toán
+        if (typeof renderMathInElement === 'function') {
+            renderMathInElement(paper, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false}
+                ],
+                throwOnError: false
+            });
+        }
     }
 
     function saveTN(i) { answers[currentIdx] = i; showQuestion(); }
-    function saveDS(k, v) { if(!answers[currentIdx]) answers[currentIdx] = {}; answers[currentIdx][k] = v; showQuestion(); }
+    function saveDS(k, v) { 
+        if(!answers[currentIdx]) answers[currentIdx] = {}; 
+        answers[currentIdx][k] = v; 
+        showQuestion(); 
+    }
     function saveTLN(v) { answers[currentIdx] = v; renderSidebar(); }
-    function move(s) { currentIdx = Math.max(0, Math.min(examSet.length - 1, currentIdx + s)); showQuestion(); }
-    function renderSidebar() { document.getElementById('q-grid').innerHTML = examSet.map((_, i) => `<div class="q-circle ${i === currentIdx ? 'active' : ''} ${answers[i] !== null ? 'done' : ''}" onclick="currentIdx=${i};showQuestion()">${i+1}</div>`).join(''); }
-    function initTimer(sec) { timer = setInterval(() => { sec--; let m = Math.floor(sec/60), s = sec%60; document.getElementById('timer').innerText = `${m}:${s<10?'0'+s:s}`; if(sec<=0) confirmFinish(); }, 1000); }
+
+    function move(s) { 
+        currentIdx = Math.max(0, Math.min(examSet.length - 1, currentIdx + s)); 
+        showQuestion(); 
+    }
+
+    function renderSidebar() {
+        document.getElementById('q-grid').innerHTML = examSet.map((_, i) => {
+            let status = '';
+            if(answers[i] !== null) {
+                if(typeof answers[i] === 'object') {
+                    if(Object.keys(answers[i]).length === 4) status = 'done';
+                } else if(String(answers[i]).trim() !== '') {
+                    status = 'done';
+                }
+            }
+            return `<div class="q-circle ${i === currentIdx ? 'active' : ''} ${status}" onclick="currentIdx=${i};showQuestion()">${i+1}</div>`;
+        }).join('');
+    }
+
+    function initTimer(sec) {
+        timer = setInterval(() => {
+            sec--;
+            let m = Math.floor(sec/60), s = sec%60;
+            document.getElementById('timer').innerText = `${m}:${s<10?'0'+s:s}`;
+            if(sec <= 0) { clearInterval(timer); confirmFinish(); }
+        }, 1000);
+    }
 
     function confirmFinish() {
-        if(!confirm("Nộp bài?")) return;
+        if(!confirm("Bạn có chắc chắn muốn nộp bài để xem kết quả?")) return;
         clearInterval(timer);
-        let achieved = 0, total = 0, exact = 0;
+        
+        let totalScore = 0, achieved = 0, countCorrect = 0;
         const tbody = document.querySelector("#result-detail tbody");
         tbody.innerHTML = "";
+
         examSet.forEach((q, i) => {
-            let max = (q.type === "TN") ? 0.25 : (q.type === "DS" ? 1.0 : 0.5);
-            total += max;
-            let score = 0;
-            if(q.type === "TN") { if(answers[i] === q.correct) score = 0.25; }
+            let maxP = (q.type === "TN") ? 0.25 : (q.type === "DS" ? 1.0 : 0.5);
+            let s = 0;
+            
+            if(q.type === "TN") { if(answers[i] === q.correct) s = 0.25; }
             else if(q.type === "DS") {
-                let m = 0; ["a","b","c","d"].forEach(k => { if(answers[i]?.[k] === q.correct[k]) m++; });
-                score = (m===1)?0.1 : (m===2)?0.25 : (m===3)?0.5 : (m===4)?1.0 : 0;
-            } else if(q.type === "TLN") { if(String(answers[i]||'').trim() === String(q.correct)) score = 0.5; }
-            achieved += score; if(score === max) exact++;
-            tbody.innerHTML += `<tr><td>${i+1}</td><td>${q.type}</td><td>${lvlNames[q.level||0]}</td><td style="color:${score>0?(score===max?'green':'orange'):'red'}">${score.toFixed(2)} / ${max.toFixed(2)}</td></tr>`;
+                let m = 0;
+                ["a","b","c","d"].forEach(k => { if(answers[i]?.[k] === q.correct[k]) m++; });
+                if(m===1) s=0.1; else if(m===2) s=0.25; else if(m===3) s=0.5; else if(m===4) s=1.0;
+            } else if(q.type === "TLN") {
+                if(String(answers[i]||'').trim() === String(q.correct)) s = 0.5;
+            }
+
+            totalScore += maxP; achieved += s;
+            if(s === maxP) countCorrect++;
+
+            tbody.innerHTML += `<tr>
+                <td>${i+1}</td>
+                <td>Phần ${q.type === 'TN'?'I':q.type === 'DS'?'II':'III'}</td>
+                <td>${lvlNames[q.level||0]}</td>
+                <td style="font-weight:bold; color:${s===maxP?'green':s>0?'orange':'red'}">${s.toFixed(2)} / ${maxP.toFixed(2)}</td>
+            </tr>`;
         });
+
         document.getElementById('sidebar').classList.add('hidden');
         document.getElementById('main-content').classList.add('hidden');
         document.getElementById('result-screen').style.display = 'block';
-        document.getElementById('final-score').innerText = `${achieved.toFixed(2)} / ${total.toFixed(2)}`;
-        document.getElementById('score-stats').innerText = `Chính xác tuyệt đối: ${exact} / ${examSet.length} câu`;
+        document.getElementById('final-score').innerText = achieved.toFixed(2) + " / " + totalScore.toFixed(2);
+        document.getElementById('score-stats').innerText = `Hoàn thành đúng tuyệt đối ${countCorrect} trên tổng số ${examSet.length} câu hỏi.`;
     }
 </script>
 </body>
