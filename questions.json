@@ -1201,7 +1201,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TN",
     "level": 1,
     "q": "Một vật chuyển động theo quy luật $s(t) = -t^3 + 6t^2$, với $t$ (giây) là thời gian, $s$ (mét) là quãng đường. Vận tốc tức thời của vật tại thời điểm $t$ được tính bằng công thức nào?",
@@ -1216,7 +1216,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TN",
     "level": 1,
     "q": "Giả sử chi phí (nghìn đồng) để sản xuất $x$ sản phẩm được cho bởi hàm số $C(x) = 1000 + 20x - 0,1x^2$. Hàm chi phí biên $C'(x)$ là:",
@@ -1231,7 +1231,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TN",
     "level": 1,
     "q": "Một chất điểm chuyển động có phương trình vận tốc $v(t) = 3t^2 - 2t$ (m/s). Gia tốc tức thời của chất điểm tại thời điểm $t = 2$ (s) là:",
@@ -1246,7 +1246,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TN",
     "level": 1,
     "q": "Sự lây lan của một loại virus được mô hình hóa bởi hàm số $N(t) = -t^3 + 12t^2$, trong đó $N$ là số người nhiễm bệnh và $t$ là thời gian (tuần). Hàm số biểu diễn tốc độ truyền bệnh tại thời điểm $t$ là:",
@@ -1261,7 +1261,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TN",
     "level": 1,
     "q": "Cho hàm số doanh thu $R(x)$ và hàm số chi phí $C(x)$ khi sản xuất và bán ra $x$ sản phẩm. Hàm lợi nhuận $P(x)$ được tính bởi công thức nào dưới đây?",
@@ -1276,7 +1276,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TN",
     "level": 1,
     "q": "Nhiệt độ $T$ ($^\\circ\\text{C}$) của một phòng lạnh sau $t$ phút kể từ khi bật máy điều hòa được cho bởi công thức $T(t) = 28 - 0,5t$. Tốc độ thay đổi nhiệt độ của phòng tại thời điểm $t$ là:",
@@ -1291,7 +1291,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TN",
     "level": 1,
     "q": "Số dân của một thị trấn sau $t$ năm kể từ năm 2000 được mô tả bởi hàm số $N(t) = \\frac{25t + 10}{t + 5}$ (nghìn người). Số dân của thị trấn này vào năm 2000 là:",
@@ -1306,7 +1306,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TN",
     "level": 1,
     "q": "Một vật chuyển động có phương trình quãng đường $s(t) = 2t^3 - 3t^2 + t$ (mét). Vận tốc của vật tại thời điểm ban đầu ($t = 0$) là:",
@@ -1321,7 +1321,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TN",
     "level": 1,
     "q": "Hàm chi phí trung bình $\\overline{C}(x)$ để sản xuất $x$ sản phẩm được xác định từ hàm tổng chi phí $C(x)$ theo công thức nào dưới đây?",
@@ -1336,7 +1336,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TN",
     "level": 1,
     "q": "Cho hàm lợi nhuận $P(x) = -x^2 + 100x - 50$ (nghìn đồng) khi bán $x$ sản phẩm. Lợi nhuận biên tại mức sản xuất $x = 10$ là:",
@@ -1351,7 +1351,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TN",
     "level": 2,
     "q": "Một vật được phóng thẳng đứng lên trên từ mặt đất với phương trình độ cao $h(t) = 20t - 5t^2$, trong đó $t$ (giây) là thời gian và $h$ (mét) là khoảng cách tới mặt đất. Độ cao lớn nhất mà vật có thể đạt được là:",
@@ -1366,7 +1366,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TN",
     "level": 2,
     "q": "Sự lây lan của một loại bệnh được mô hình hóa bởi hàm số $f(t) = 45t^2 - t^3$ ($0 \\le t \\le 25$), trong đó $f(t)$ là số người nhiễm bệnh kể từ ngày đầu tiên đến ngày thứ $t$. Tốc độ truyền bệnh lớn nhất vào ngày thứ mấy?",
@@ -1381,7 +1381,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TN",
     "level": 2,
     "q": "Một cơ sở sản xuất có hàm tổng chi phí $C(x) = 400 + 4x + 0,01x^2$ (triệu đồng) khi sản xuất $x$ sản phẩm ($x > 0$). Chi phí trung bình cho mỗi sản phẩm đạt giá trị nhỏ nhất khi số lượng sản phẩm $x$ bằng bao nhiêu?",
@@ -1396,7 +1396,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TN",
     "level": 2,
     "q": "Khi nuôi cá trong hồ, trọng lượng trung bình của mỗi con cá sau một vụ phụ thuộc vào mật độ cá $n$ (số con/đơn vị diện tích) bởi công thức $P(n) = 480 - 20n$ (gam). Để tổng trọng lượng cá thu hoạch trên mỗi đơn vị diện tích là lớn nhất, ta cần thả bao nhiêu con cá?",
@@ -1411,7 +1411,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TN",
     "level": 2,
     "q": "Nồng độ $C$ của một loại thuốc trong máu sau $t$ giờ tiêm vào cơ thể được cho bởi công thức $C(t) = \\frac{t}{t^2 + 1}$ (mg/L). Nồng độ thuốc trong máu đạt mức cao nhất sau bao nhiêu giờ?",
@@ -1426,7 +1426,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TN",
     "level": 2,
     "q": "Một nhà máy sản xuất độc quyền một loại sản phẩm. Biết hàm doanh thu $R(x) = 2000x - x^2$ và hàm chi phí $C(x) = x^2 + 1440x + 50$ (đơn vị: nghìn đồng), với $x$ là số lượng sản phẩm. Lợi nhuận của nhà máy đạt giá trị lớn nhất khi sản xuất bao nhiêu sản phẩm?",
@@ -1441,7 +1441,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TN",
     "level": 2,
     "q": "Một chất điểm chuyển động theo phương trình $s(t) = -\\frac{1}{3}t^3 + 6t^2$, trong đó $t$ (giây) là khoảng thời gian tính từ lúc bắt đầu và $s$ (mét) là quãng đường. Tại thời điểm vật đạt vận tốc lớn nhất, gia tốc của vật bằng bao nhiêu?",
@@ -1456,7 +1456,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TN",
     "level": 2,
     "q": "Dân số của một thị trấn sau $t$ năm kể từ năm 2000 được mô tả bởi hàm số $N(t) = \\frac{25t + 10}{t + 5}$ (nghìn người). Khẳng định nào sau đây là đúng về sự phát triển dân số của thị trấn này khi thời gian trôi qua đủ lâu ($t \\to +\\infty$)?",
@@ -1471,7 +1471,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TN",
     "level": 2,
     "q": "Một khách sạn có 50 phòng. Hiện tại, nếu giá cho thuê là 400 nghìn đồng/phòng/ngày thì cả 50 phòng đều được thuê hết. Cứ mỗi lần tăng giá thêm 20 nghìn đồng/phòng thì sẽ có thêm 2 phòng bị bỏ trống. Để doanh thu trong ngày là lớn nhất, khách sạn cần đặt giá phòng mới là bao nhiêu?",
@@ -1486,7 +1486,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TN",
     "level": 2,
     "q": "Năng lượng tiêu hao $E(v)$ của một loài cá khi bơi ngược dòng nước với vận tốc $v$ (km/h) được cho bởi công thức $E(v) = c \\frac{v^3}{v - 6}$ ($v > 6$), trong đó $c > 0$ là một hằng số. Vận tốc $v$ để năng lượng tiêu hao là ít nhất bằng:",
@@ -1634,7 +1634,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "DS",
     "q": "Ông An muốn xây một cái bể chứa nước lớn dạng một khối hộp chữ nhật không nắp có thể tích bằng $288 \\, \\text{m}^3$. Đáy bể là hình chữ nhật có chiều dài gấp đôi chiều rộng. Giá thuê nhân công để xây bể là $500.000$ đồng/m$^2$. Gọi chiều rộng đáy bể là $x$ (m) ($x > 0$), và $h$ (m) là chiều cao của bể. Xét tính đúng sai của các mệnh đề:",
     "items": {
@@ -1672,7 +1672,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "DS",
     "q": "Sự lây lan của một loại virus ở một địa phương có thể được mô hình hoá bằng hàm số $N(t) = -t^3 + 12t^2$ với $0 \\le t \\le 12$, trong đó $N$ là số người bị nhiễm bệnh (tính bằng trăm người) và $t$ là thời gian (tuần). Xét tính đúng sai của các mệnh đề sau:",
     "items": {
@@ -1767,7 +1767,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "DS",
     "q": "Để loại bỏ $p\\%$ chất gây ô nhiễm khỏi khí thải nhà máy, người ta ước tính chi phí cần bỏ ra là $C(p) = \\frac{300p}{100 - p}$ (triệu đồng). Xét tính đúng sai của các mệnh đề sau:",
     "items": {
@@ -1881,7 +1881,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "DS",
     "q": "Một chất điểm chuyển động theo phương trình $s(t) = -t^3 + 6t^2$, trong đó $t$ (giây) là khoảng thời gian từ lúc bắt đầu, $s$ (mét) là quãng đường đi được. Xét tính đúng sai của các mệnh đề sau:",
     "items": {
@@ -1900,7 +1900,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "DS",
     "q": "Một xưởng sản xuất có hàm tổng chi phí là $C(x) = 0,01x^2 + 4x + 400$ (nghìn đồng), trong đó $x$ là số lượng sản phẩm. Giả sử xưởng bán hết sản phẩm với giá cố định là $20$ nghìn đồng/sản phẩm. Xét tính đúng sai của các mệnh đề sau:",
     "items": {
@@ -1919,7 +1919,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "DS",
     "q": "Sự lây lan của một loại virus được mô hình hoá bằng hàm số $N(t) = \\frac{5000}{1 + 4e^{-0,5t}}$, trong đó $N(t)$ là số người nhiễm bệnh và $t$ là thời gian (tính bằng tháng) kể từ khi phát hiện ca bệnh đầu tiên. Xét tính đúng sai của các mệnh đề sau:",
     "items": {
@@ -1938,7 +1938,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "DS",
     "q": "Người ta muốn cắt một tấm bìa hình vuông cạnh $12$ cm để làm một chiếc hộp không nắp. Bằng cách cắt ở bốn góc bốn hình vuông nhỏ bằng nhau cạnh là $x$ (cm) và gấp lên, thể tích của hộp được tạo thành kí hiệu là $V(x)$. Xét tính đúng sai của các mệnh đề sau:",
     "items": {
@@ -1957,7 +1957,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "DS",
     "q": "Nồng độ $C(t)$ (mg/L) của một loại thuốc trong máu sau $t$ phút tiêm vào cơ thể được tính theo công thức $C(t) = \\frac{30t}{t^2+2}$ (với $t \\ge 0$). Xét tính đúng sai của các mệnh đề sau:",
     "items": {
@@ -2066,7 +2066,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TLN",
     "level": 5,
     "q": "Một doanh nghiệp độc quyền bán $x$ sản phẩm thu được tổng doanh thu là $f(x) = 2000x - x^2$ (chục nghìn đồng) và tốn chi phí sản xuất $g(x) = x^2 + 1440x + 50$. Nhà nước đánh thuế phụ thu $t$ (chục nghìn đồng) trên mỗi sản phẩm bán ra. Tìm mức thuế $t$ để nhà nước thu được TỔNG SỐ TIỀN THUẾ từ doanh nghiệp này là lớn nhất.",
@@ -2075,7 +2075,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TLN",
     "level": 5,
     "q": "Hai con tàu thủy cùng ở trên một vĩ tuyến và cách nhau 5 hải lý. Tàu A di chuyển thẳng hướng Nam với vận tốc 6 hải lý/giờ. Cùng lúc, tàu B di chuyển hướng thẳng về VỊ TRÍ BAN ĐẦU của tàu A với vận tốc 7 hải lý/giờ. Biết thời gian để khoảng cách giữa hai con tàu là ngắn nhất có dạng phân số tối giản $\\frac{a}{b}$ (giờ). Tính tổng $a + b$.",
@@ -2084,7 +2084,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TLN",
     "level": 5,
     "q": "Công ty dầu khí muốn làm một đường ống dẫn từ vị trí $A$ trên bờ biển đến giàn khoan $B$ trên biển. Biết khoảng cách ngắn nhất từ $B$ vào bờ biển là $BH = 6$ km và $AH = 9$ km. Chi phí làm đường ống trên đất liền là $50.000$ USD/km và trên biển là $130.000$ USD/km. Công ty dự định nối ống từ $A$ thẳng đến một điểm $C$ trên bờ đoạn $AH$, rồi nối từ $C$ thẳng ra $B$. Tính độ dài đoạn $AC$ (km) để tổng chi phí là thấp nhất.",
@@ -2102,7 +2102,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TLN",
     "level": 5,
     "q": "Một con thuyền đang bị trôi dạt trên một dòng sông chảy thẳng về phía Bắc với tốc độ $5$ km/h. Thuyền khởi động động cơ và cố gắng di chuyển thẳng về một bến cảng $A$ nằm cách điểm xuất phát $1000$ km về phía Đông. Động cơ thuyền có khả năng chạy với tốc độ định mức $20$ km/h. Do tác động của dòng nước, quỹ đạo thực tế của thuyền tạo thành hàm tọa độ $x(t) = 20t$ và $y(t) = 5t$. Tại thời điểm khoảng cách từ thuyền đến bến $A$ là ngắn nhất, hoành độ của thuyền được viết dưới dạng phân số tối giản $\\frac{a}{b}$. Tính $a - b$.",
@@ -2201,7 +2201,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TLN",
     "level": 5,
     "q": "Một người chèo thuyền xuất phát từ điểm $A$ trên bờ một con sông thẳng rộng $3$ km, muốn đến điểm $B$ nằm trên bờ đối diện và cách điểm đối diện của $A$ một khoảng $8$ km xuôi dòng. Biết vận tốc chèo thuyền là $6$ km/h và vận tốc chạy bộ trên bờ là $10$ km/h. Để thời gian di chuyển là ngắn nhất, người đó cần cập bờ tại một điểm $C$ cách điểm đối diện của $A$ bao nhiêu km?",
@@ -2210,7 +2210,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TLN",
     "level": 5,
     "q": "Một công ty muốn làm một đường ống dẫn từ vị trí $A$ trên bờ biển đến giàn khoan $B$ trên biển. Khoảng cách ngắn nhất từ $B$ vào bờ biển là $BH = 6$ km và $AH = 9$ km. Chi phí làm đường ống trên đất liền là $50$ nghìn USD/km và trên biển là $130$ nghìn USD/km. Công ty dự định nối ống từ $A$ thẳng đến một điểm $C$ trên bờ đoạn $AH$, rồi nối từ $C$ thẳng ra $B$. Tính độ dài đoạn $AC$ (km) để tổng chi phí là thấp nhất.",
@@ -2219,7 +2219,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TLN",
     "level": 5,
     "q": "Một ông chủ nhà muốn làm một cái thang để nó đứng dưới đất vươn qua một hàng rào và tựa vào ngôi nhà. Biết hàng rào cao $8$ mét được đặt song song và cách bức tường của ngôi nhà một khoảng bằng $1$ mét. Bình phương chiều dài ngắn nhất của cây thang là bao nhiêu (mét vuông)?",
@@ -2228,7 +2228,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TLN",
     "level": 5,
     "q": "Một doanh nghiệp độc quyền bán $x$ sản phẩm thu được tổng doanh thu là $f(x) = 2000x - x^2$ (chục nghìn đồng) và tốn chi phí sản xuất $g(x) = x^2 + 1440x + 50$. Nhà nước đánh thuế phụ thu $t$ (chục nghìn đồng) trên mỗi sản phẩm bán ra. Tìm mức thuế $t$ để nhà nước thu được TỔNG SỐ TIỀN THUẾ từ doanh nghiệp này là lớn nhất.",
@@ -2336,7 +2336,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TLN",
     "level": 5,
     "q": "Hàm chi phí trung bình để sản xuất $x$ trăm sản phẩm của một nhà máy là $f(x) = \\frac{3x^2 + 4x + 10}{x}$ (triệu đồng). Đồ thị hàm số $f(x)$ có tiệm cận xiên là đường thẳng $\\Delta$. Mức sản xuất $x$ bằng bao nhiêu (trăm sản phẩm) để khoảng cách từ điểm biểu diễn chi phí trung bình trên đồ thị đến đường tiệm cận xiên $\\Delta$ bằng $\\frac{\\sqrt{10}}{10}$?",
@@ -2345,7 +2345,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TLN",
     "level": 5,
     "q": "Sự phát triển dân số của một loài sinh vật tuân theo mô hình logistic $P(t) = \\frac{a}{2 + 3e^{-0.5t}}$, trong đó $t$ là thời gian (năm). Biết rằng đường tiệm cận ngang của đồ thị hàm số biểu thị sức chứa tối đa của môi trường và bằng $5000$ cá thể. Quần thể sinh vật tại thời điểm ban đầu ($t = 0$) có bao nhiêu cá thể?",
@@ -2363,7 +2363,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TLN",
     "level": 5,
     "q": "Theo Thuyết tương đối hẹp, khối lượng tương đối tính của một hạt di chuyển với vận tốc $v$ được cho bởi $m(v) = \\frac{m_0}{\\sqrt{1 - v^2/c^2}}$, trong đó $m_0$ là khối lượng nghỉ, $c$ là vận tốc ánh sáng. Biết động năng của hạt là $K(v) = (m(v) - m_0)c^2$. Để động năng bằng 3 lần năng lượng nghỉ ($3m_0c^2$), tỉ số $\\left(\\frac{v}{c}\\right)^2$ có dạng phân số tối giản $\\frac{a}{b}$. Tính $a + b$.",
@@ -2471,7 +2471,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TLN",
     "level": 5,
     "q": "Một hòn đảo ở vị trí $A$ cách bờ biển thẳng $3$ km. Một người chèo thuyền từ $A$ vào bờ tại điểm $M$, sau đó đi bộ dọc theo bờ biển đến điểm $B$ cách điểm gần nhất trên bờ của $A$ (gọi là $H$) một khoảng $8$ km. Biết vận tốc chèo thuyền là $6$ km/h và vận tốc đi bộ là $10$ km/h. Để thời gian di chuyển từ $A$ đến $B$ là ngắn nhất, khoảng cách $HM$ bằng bao nhiêu km? (Viết kết quả dưới dạng số thập phân).",
@@ -2480,7 +2480,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TLN",
     "level": 5,
     "q": "Năng lượng tiêu hao $E(v)$ của một loài cá khi bơi ngược dòng nước với vận tốc $v$ (km/h) được cho bởi công thức $E(v) = c \\frac{v^3}{v - 4}$ ($v > 4$), trong đó $c > 0$ là một hằng số. Vận tốc $v$ để năng lượng tiêu hao là ít nhất bằng bao nhiêu km/h?",
@@ -2489,7 +2489,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TLN",
     "level": 5,
     "q": "Cần xây một bể chứa nước không nắp dạng khối hộp chữ nhật có thể tích $V = 36 \\text{ m}^3$. Biết đáy bể là một hình chữ nhật có chiều dài gấp đôi chiều rộng. Hỏi chiều cao của bể bằng bao nhiêu mét để tổng diện tích bề mặt (gồm đáy và các mặt xung quanh) là nhỏ nhất?",
@@ -2498,7 +2498,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TLN",
     "level": 5,
     "q": "Một cái thang được dựng đứng dưới đất vươn qua một bức tường rào để tựa vào một tòa nhà. Biết tường rào cao $27$ mét và cách tòa nhà một khoảng $8$ mét. Gọi $L$ là chiều dài ngắn nhất của cái thang có thể đặt được như vậy. Giá trị của biểu thức $L^2$ bằng bao nhiêu?",
@@ -2507,7 +2507,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TLN",
     "level": 5,
     "q": "Một bóng đèn được treo ngay phía trên tâm của một chiếc bàn tròn có bán kính $3$ m. Cường độ sáng $I$ tại mép bàn được tính bởi công thức $I = k \\frac{\\sin \\alpha}{s^2}$, trong đó $k$ là hằng số dương, $s$ là khoảng cách từ bóng đèn đến mép bàn, và $\\alpha$ là góc tạo bởi tia sáng và mặt bàn. Bóng đèn cần treo ở độ cao $h$ (m) so với mặt bàn bằng bao nhiêu để cường độ sáng tại mép bàn là lớn nhất? Gọi $h_0$ là độ cao tối ưu đó, tính giá trị của biểu thức $2h_0^2$.",
