@@ -1,5 +1,5 @@
 [
-  {
+   {
     "grade": "12",
     "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TN",
@@ -1217,7 +1217,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TLN",
     "level": 5,
     "q": "Để loại bỏ $x\\%$ chất gây ô nhiễm môi trường từ khí thải của một nhà máy, người ta ước tính chi phí cần bỏ ra (triệu đồng) được mô hình hoá bởi hàm số $C(x) = \\frac{ax+b}{-x+d}$ với $0 \\le x < 100$. Biết đồ thị hàm số $C(x)$ đi qua gốc tọa độ, có đường tiệm cận đứng là $x = 100$ và đường tiệm cận ngang là $y = -200$. Tính chi phí chênh lệch (đơn vị: tỉ đồng) phải bỏ ra để loại bỏ $99\\%$ so với khi loại bỏ $90\\%$ chất gây ô nhiễm.",
@@ -1225,7 +1225,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TLN",
     "level": 5,
     "q": "Một nhà sản xuất hộp kim loại hình trụ có nắp đậy muốn thiết kế hộp sao cho thể tích chứa luôn bằng $V$ (không đổi). Biết rằng vật liệu để làm nắp và đáy hộp có cấu tạo đặc biệt nên chi phí sản xuất trên mỗi đơn vị diện tích cao gấp đôi chi phí sản xuất phần mặt xung quanh. Để chi phí vật liệu là thấp nhất, tỉ số $\\frac{h}{r}$ (với $h$ là chiều cao, $r$ là bán kính đáy của hình trụ) phải bằng bao nhiêu?",
@@ -1238,5 +1238,2248 @@
     "level": 5,
     "q": "Quãng đường $s(t)$ (tính bằng mét) một vật đi được sau thời gian $t$ (tính bằng giây) được mô tả bởi một hàm số bậc ba $s(t) = at^3 + bt^2 + ct + d$. Biết đồ thị hàm số $s(t)$ đi qua gốc tọa độ và các điểm $(4; \\frac{8}{3})$, $(8; \\frac{112}{3})$, $(10; \\frac{260}{3})$. Hỏi trong $10$ giây đầu tiên kể từ lúc xuất phát, khoảng thời gian mà vật chuyển động nhanh dần (vận tốc tăng) kéo dài trong bao nhiêu giây?",
     "correct": "8"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = f(x)$ liên tục trên đoạn $\\left[a; b\\right]$. Khẳng định nào sau đây là đúng?",
+    "choices": [
+      "A. Hàm số luôn có giá trị lớn nhất và giá trị nhỏ nhất trên đoạn $\\left[a; b\\right]$.",
+      "B. Hàm số chỉ có giá trị lớn nhất, không có giá trị nhỏ nhất trên đoạn $\\left[a; b\\right]$.",
+      "C. Hàm số chỉ đạt giá trị lớn nhất tại các đầu mút $a$ hoặc $b$.",
+      "D. Hàm số luôn đạt giá trị lớn nhất và giá trị nhỏ nhất tại các điểm cực trị."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = f(x)$ xác định, liên tục trên đoạn $\\left[-1; 3\\right]$ và có giá trị lớn nhất là $M$, giá trị nhỏ nhất là $m$. Mệnh đề nào sau đây đúng?",
+    "choices": [
+      "A. $m \\le f(x) \\le M, \\forall x \\in \\left[-1; 3\\right]$.",
+      "B. $f(x) > M, \\forall x \\in \\left[-1; 3\\right]$.",
+      "C. $f(x) < m, \\forall x \\in \\left[-1; 3\\right]$.",
+      "D. $f(x) = M, \\forall x \\in \\left[-1; 3\\right]$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = f(x)$ luôn đồng biến trên đoạn $\\left[a; b\\right]$. Giá trị lớn nhất của hàm số trên đoạn $\\left[a; b\\right]$ bằng:",
+    "choices": [
+      "A. $f(a)$.",
+      "B. $f(b)$.",
+      "C. $f\\left(\\frac{a+b}{2}\\right)$.",
+      "D. $f(a) + f(b)$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = f(x)$ luôn nghịch biến trên đoạn $\\left[-2; 5\\right]$. Giá trị nhỏ nhất của hàm số trên đoạn $\\left[-2; 5\\right]$ bằng:",
+    "choices": [
+      "A. $f(-2)$.",
+      "B. $f(0)$.",
+      "C. $f(5)$.",
+      "D. $f(3)$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = f(x)$ có bảng biến thiên trên đoạn $\\left[-2; 2\\right]$ cho thấy $f(x)$ tăng từ $-1$ đến $4$, rồi giảm xuống $1$. Giá trị lớn nhất của hàm số trên đoạn $\\left[-2; 2\\right]$ là:",
+    "choices": [
+      "A. $-1$.",
+      "B. $1$.",
+      "C. $4$.",
+      "D. $2$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = f(x)$ liên tục trên $\\mathbb{R}$ và có đạo hàm $f'(x) > 0$ trên $(-\\infty; 1)$, $f'(x) < 0$ trên $(1; +\\infty)$. Giá trị lớn nhất của hàm số $f(x)$ trên $\\mathbb{R}$ là:",
+    "choices": [
+      "A. $f(0)$.",
+      "B. $f(1)$.",
+      "C. $f(2)$.",
+      "D. Không tồn tại."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Giá trị lớn nhất của hàm số $y = 3x - 1$ trên đoạn $\\left[0; 2\\right]$ là:",
+    "choices": [
+      "A. $-1$.",
+      "B. $0$.",
+      "C. $2$.",
+      "D. $5$."
+    ],
+    "correct": 3
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Giá trị nhỏ nhất của hàm số $y = -2x + 5$ trên đoạn $\\left[1; 4\\right]$ là:",
+    "choices": [
+      "A. $3$.",
+      "B. $-3$.",
+      "C. $5$.",
+      "D. $1$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Hàm số $y = x^2 - 4x + 3$ đạt giá trị nhỏ nhất trên đoạn $\\left[0; 4\\right]$ tại điểm $x$ bằng:",
+    "choices": [
+      "A. $x = 0$.",
+      "B. $x = 2$.",
+      "C. $x = 4$.",
+      "D. $x = 1$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Giá trị nhỏ nhất của hàm số $y = x^2 - 4x + 3$ trên đoạn $\\left[0; 4\\right]$ là:",
+    "choices": [
+      "A. $3$.",
+      "B. $-1$.",
+      "C. $0$.",
+      "D. $1$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Giá trị lớn nhất của hàm số $y = \\frac{x+1}{x-2}$ trên đoạn $\\left[3; 5\\right]$ là:",
+    "choices": [
+      "A. $4$.",
+      "B. $2$.",
+      "C. $\\frac{1}{2}$.",
+      "D. $3$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Giá trị nhỏ nhất của hàm số $y = \\frac{2x-1}{x+1}$ trên đoạn $\\left[0; 2\\right]$ là:",
+    "choices": [
+      "A. $1$.",
+      "B. $-1$.",
+      "C. $3$.",
+      "D. $\\frac{1}{2}$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Tìm giá trị lớn nhất của hàm số $y = x^3 - 3x$ trên đoạn $\\left[0; 2\\right]$.",
+    "choices": [
+      "A. $0$.",
+      "B. $-2$.",
+      "C. $2$.",
+      "D. $3$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Tìm giá trị nhỏ nhất của hàm số $y = x^3 - 3x$ trên đoạn $\\left[0; 2\\right]$.",
+    "choices": [
+      "A. $0$.",
+      "B. $-2$.",
+      "C. $2$.",
+      "D. $-3$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Hàm số $y = x^4 - 2x^2 + 3$ đạt giá trị nhỏ nhất trên đoạn $\\left[0; 2\\right]$ tại điểm nào sau đây?",
+    "choices": [
+      "A. $x = 0$.",
+      "B. $x = 1$.",
+      "C. $x = 2$.",
+      "D. $x = -1$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Giá trị lớn nhất của hàm số $y = x^4 - 2x^2 + 3$ trên đoạn $\\left[0; 2\\right]$ bằng:",
+    "choices": [
+      "A. $3$.",
+      "B. $2$.",
+      "C. $11$.",
+      "D. $8$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = \\sqrt{x}$. Giá trị lớn nhất của hàm số trên đoạn $\\left[1; 9\\right]$ là:",
+    "choices": [
+      "A. $1$.",
+      "B. $3$.",
+      "C. $9$.",
+      "D. $8$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = \\sqrt{x-1}$. Giá trị nhỏ nhất của hàm số trên đoạn $\\left[1; 5\\right]$ là:",
+    "choices": [
+      "A. $0$.",
+      "B. $2$.",
+      "C. $1$.",
+      "D. $4$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Giá trị nhỏ nhất của hàm số $y = \\frac{x}{x+1}$ trên đoạn $\\left[1; 3\\right]$ bằng:",
+    "choices": [
+      "A. $\\frac{1}{2}$.",
+      "B. $\\frac{3}{4}$.",
+      "C. $1$.",
+      "D. $\\frac{2}{3}$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Gọi $M$ và $m$ lần lượt là giá trị lớn nhất và giá trị nhỏ nhất của hàm số $y = x^2 - 2x$ trên đoạn $\\left[-1; 2\\right]$. Tính giá trị của biểu thức $M + m$.",
+    "choices": [
+      "A. $2$.",
+      "B. $3$.",
+      "C. $-1$.",
+      "D. $4$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Tiệm cận ngang của đồ thị hàm số $y = \\frac{2x-1}{x+1}$ là đường thẳng có phương trình:",
+    "choices": [
+      "A. $x = 2$.",
+      "B. $x = -1$.",
+      "C. $y = 2$.",
+      "D. $y = -1$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Đường tiệm cận đứng của đồ thị hàm số $y = \\frac{3x+1}{x-2}$ là:",
+    "choices": [
+      "A. $x = 2$.",
+      "B. $y = 2$.",
+      "C. $x = 3$.",
+      "D. $y = 3$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Tiệm cận ngang của đồ thị hàm số $y = \\frac{x-1}{-x+2}$ là đường thẳng có phương trình:",
+    "choices": [
+      "A. $x = 2$.",
+      "B. $y = -1$.",
+      "C. $y = 1$.",
+      "D. $x = -1$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = f(x)$ có $\\lim_{x \\to +\\infty} f(x) = 2$ và $\\lim_{x \\to -\\infty} f(x) = -1$. Khẳng định nào sau đây đúng?",
+    "choices": [
+      "A. Đồ thị hàm số có tiệm cận ngang $y = 2$ và tiệm cận đứng $x = -1$.",
+      "B. Đồ thị hàm số có hai tiệm cận đứng là các đường thẳng $x = 2$ và $x = -1$.",
+      "C. Đồ thị hàm số không có tiệm cận ngang.",
+      "D. Đồ thị hàm số có hai tiệm cận ngang là các đường thẳng $y = 2$ và $y = -1$."
+    ],
+    "correct": 3
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = f(x)$ có $\\lim_{x \\to 1^+} f(x) = +\\infty$ và $\\lim_{x \\to 1^-} f(x) = -\\infty$. Khẳng định nào sau đây đúng?",
+    "choices": [
+      "A. Đường thẳng $y = 1$ là tiệm cận ngang của đồ thị hàm số.",
+      "B. Đường thẳng $x = 1$ là tiệm cận đứng của đồ thị hàm số.",
+      "C. Đường thẳng $x = 1$ là tiệm cận ngang của đồ thị hàm số.",
+      "D. Đường thẳng $y = 1$ là tiệm cận đứng của đồ thị hàm số."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Đường tiệm cận xiên của đồ thị hàm số $y = \\frac{x^2+2x-2}{x+2}$ là đường thẳng:",
+    "choices": [
+      "A. $y = x+2$.",
+      "B. $y = -2$.",
+      "C. $y = x$.",
+      "D. $y = 1$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Đồ thị hàm số $y = \\frac{2x+3}{x-1}$ có giao điểm hai đường tiệm cận là điểm $I$. Tọa độ của điểm $I$ là:",
+    "choices": [
+      "A. $(1; 2)$.",
+      "B. $(2; 1)$.",
+      "C. $(-1; 2)$.",
+      "D. $(1; 3)$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Tiệm cận ngang của đồ thị hàm số $y = \\frac{1-3x}{x+2}$ là đường thẳng có phương trình:",
+    "choices": [
+      "A. $x = -2$.",
+      "B. $y = 1$.",
+      "C. $x = -3$.",
+      "D. $y = -3$."
+    ],
+    "correct": 3
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Đồ thị của hàm số nào dưới đây có tiệm cận đứng là đường thẳng $x = -1$?",
+    "choices": [
+      "A. $y = \\frac{x+1}{x-1}$.",
+      "B. $y = \\frac{x-1}{x-2}$.",
+      "C. $y = \\frac{2x-1}{x+1}$.",
+      "D. $y = \\frac{3x}{x+2}$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Đồ thị của hàm số nào dưới đây có tiệm cận ngang là đường thẳng $y = 2$?",
+    "choices": [
+      "A. $y = \\frac{2x+1}{x-1}$.",
+      "B. $y = \\frac{x+2}{x-1}$.",
+      "C. $y = \\frac{3x-1}{x-2}$.",
+      "D. $y = \\frac{x}{2x+1}$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Tiệm cận ngang của đồ thị hàm số $y = \\frac{2025}{x-1}$ là đường thẳng:",
+    "choices": [
+      "A. $y = 2025$.",
+      "B. $y = 0$.",
+      "C. $x = 1$.",
+      "D. $x = 0$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = f(x)$ có bảng biến thiên cho biết $\\lim_{x \\to -\\infty} y = 3$ và $\\lim_{x \\to 2^-} y = +\\infty$. Khẳng định nào sau đây đúng?",
+    "choices": [
+      "A. Đồ thị hàm số có tiệm cận ngang $x = 3$ và tiệm cận đứng $y = 2$.",
+      "B. Đồ thị hàm số có tiệm cận ngang $y = 2$ và tiệm cận đứng $x = 3$.",
+      "C. Đồ thị hàm số có tiệm cận đứng $x = 3$ và không có tiệm cận ngang.",
+      "D. Đồ thị hàm số có tiệm cận ngang $y = 3$ và tiệm cận đứng $x = 2$."
+    ],
+    "correct": 3
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Đường thẳng $x = 2$ là tiệm cận đứng của đồ thị hàm số nào sau đây?",
+    "choices": [
+      "A. $y = \\frac{x-2}{x+1}$.",
+      "B. $y = \\frac{x+1}{x-2}$.",
+      "C. $y = \\frac{2x}{x+2}$.",
+      "D. $y = \\frac{x+2}{x-1}$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Đường thẳng $y = -2$ là tiệm cận ngang của đồ thị hàm số nào sau đây?",
+    "choices": [
+      "A. $y = \\frac{x-2}{x+1}$.",
+      "B. $y = \\frac{2x-1}{x+2}$.",
+      "C. $y = \\frac{-2x+3}{x-1}$.",
+      "D. $y = \\frac{1}{-2x+3}$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Đồ thị hàm số $y = \\frac{x^2-3x+2}{x+1}$ có đường tiệm cận xiên là đường thẳng:",
+    "choices": [
+      "A. $y = x - 4$.",
+      "B. $y = x - 2$.",
+      "C. $y = x + 1$.",
+      "D. $y = x - 3$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Tiệm cận xiên của đồ thị hàm số $y = \\frac{2x^2-x+3}{x-1}$ có hệ số góc bằng:",
+    "choices": [
+      "A. $1$.",
+      "B. $-1$.",
+      "C. $2$.",
+      "D. $-2$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Số đường tiệm cận đứng của đồ thị hàm số $y = \\frac{1}{x^2-1}$ là:",
+    "choices": [
+      "A. $0$.",
+      "B. $1$.",
+      "C. $3$.",
+      "D. $2$."
+    ],
+    "correct": 3
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = f(x)$ xác định trên $\\mathbb{R} \\setminus \\{1\\}$ và có $\\lim_{x \\to 1^+} f(x) = +\\infty$. Khẳng định nào sau đây đúng?",
+    "choices": [
+      "A. Đường thẳng $x = 1$ là tiệm cận ngang của đồ thị hàm số.",
+      "B. Đường thẳng $y = 1$ là tiệm cận đứng của đồ thị hàm số.",
+      "C. Đường thẳng $y = 1$ là tiệm cận ngang của đồ thị hàm số.",
+      "D. Đường thẳng $x = 1$ là tiệm cận đứng của đồ thị hàm số."
+    ],
+    "correct": 3
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = f(x) = x + 1 + \\frac{2}{x-2}$. Khẳng định nào sau đây đúng?",
+    "choices": [
+      "A. Đồ thị hàm số có tiệm cận ngang là đường thẳng $y = x+1$.",
+      "B. Đồ thị hàm số có tiệm cận xiên là đường thẳng $y = x+1$.",
+      "C. Đồ thị hàm số có tiệm cận đứng là đường thẳng $x = -2$.",
+      "D. Đồ thị hàm số không có tiệm cận xiên."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = \\frac{3x-2}{-x+1}$. Tọa độ giao điểm của hai đường tiệm cận của đồ thị hàm số này là:",
+    "choices": [
+      "A. $(1; -3)$.",
+      "B. $(-1; 3)$.",
+      "C. $(1; 3)$.",
+      "D. $(-3; 1)$."
+    ],
+    "correct": 0
+  },
+{
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = f(x)$ có bảng xét dấu đạo hàm như sau: $f'(x) > 0$ trên khoảng $(-\\infty; 1)$ và $(3; +\\infty)$; $f'(x) < 0$ trên khoảng $(1; 3)$. Hàm số đã cho nghịch biến trên khoảng nào dưới đây?",
+    "choices": [
+      "A. $(-\\infty; 1)$.",
+      "B. $(1; 3)$.",
+      "C. $(3; +\\infty)$.",
+      "D. $(-1; 3)$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Đồ thị hàm số $y = x^3 - 3x + 2$ cắt trục tung tại điểm có tung độ bằng:",
+    "choices": [
+      "A. $0$.",
+      "B. $-3$.",
+      "C. $2$.",
+      "D. $1$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Đồ thị hàm số $y = \\frac{2x - 1}{x + 1}$ giao với trục hoành tại điểm có hoành độ là:",
+    "choices": [
+      "A. $x = \\frac{1}{2}$.",
+      "B. $x = -1$.",
+      "C. $x = 2$.",
+      "D. $x = -\\frac{1}{2}$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Đường cong trong hình vẽ có dạng hình chữ \"N\" ngược (đi xuống, đi lên, rồi đi xuống) là đồ thị của hàm số nào dưới đây?",
+    "choices": [
+      "A. $y = x^3 - 3x^2 + 1$.",
+      "B. $y = -x^3 + 3x^2 + 1$.",
+      "C. $y = x^4 - 2x^2 + 1$.",
+      "D. $y = \\frac{x+1}{x-1}$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Giao điểm của hai đường tiệm cận của đồ thị hàm số $y = \\frac{2x - 3}{x + 1}$ là điểm $I$. Tọa độ của điểm $I$ là:",
+    "choices": [
+      "A. $I(-1; 2)$.",
+      "B. $I(2; -1)$.",
+      "C. $I(1; 2)$.",
+      "D. $I(-1; -3)$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = ax^3 + bx^2 + cx + d$ có đồ thị là đường cong. Biết nhánh cuối cùng bên phải của đồ thị hướng lên trên. Khẳng định nào sau đây đúng về dấu của hệ số $a$?",
+    "choices": [
+      "A. $a < 0$.",
+      "B. $a > 0$.",
+      "C. $a = 0$.",
+      "D. $a \\le 0$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = f(x)$ có đồ thị như hình vẽ. Biết đồ thị có điểm cực đại là $(0; 2)$ và điểm cực tiểu là $(2; -2)$. Phương trình $f(x) = 0$ có bao nhiêu nghiệm phân biệt?",
+    "choices": [
+      "A. $1$.",
+      "B. $2$.",
+      "C. $3$.",
+      "D. $0$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Đồ thị hàm số $y = \\frac{x^2 - 3x + 2}{x - 1}$ cắt trục tung tại điểm có tọa độ là:",
+    "choices": [
+      "A. $(0; 2)$.",
+      "B. $(0; -2)$.",
+      "C. $(2; 0)$.",
+      "D. $(1; 0)$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = f(x)$ có bảng biến thiên: $x$ đi từ $-\\infty$ đến $1$, $y$ tăng từ $-\\infty$ đến $3$; $x$ đi từ $1$ đến $+\\infty$, $y$ giảm từ $3$ đến $-\\infty$. Tọa độ điểm cực đại của đồ thị hàm số là:",
+    "choices": [
+      "A. $(3; 1)$.",
+      "B. $x = 1$.",
+      "C. $(1; 3)$.",
+      "D. $y = 3$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Hàm số nào dưới đây có đồ thị nhận đường thẳng $x = 2$ làm tiệm cận đứng?",
+    "choices": [
+      "A. $y = \\frac{2x - 1}{x + 2}$.",
+      "B. $y = \\frac{x + 1}{x - 2}$.",
+      "C. $y = \\frac{x - 2}{x + 1}$.",
+      "D. $y = x^3 - 3x^2 + 2$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = \\frac{ax + b}{cx + d} \\ (c \\ne 0)$ có đồ thị là đường cong. Biết đường tiệm cận ngang của đồ thị nằm phía trên trục hoành. Khẳng định nào sau đây đúng?",
+    "choices": [
+      "A. $\\frac{a}{c} > 0$.",
+      "B. $\\frac{a}{c} < 0$.",
+      "C. $\\frac{b}{d} > 0$.",
+      "D. $-\\frac{d}{c} > 0$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Số giao điểm của đồ thị hàm số $y = x^3 - 3x^2$ với trục hoành là:",
+    "choices": [
+      "A. $1$.",
+      "B. $2$.",
+      "C. $3$.",
+      "D. $0$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho bảng biến thiên của hàm số $y = f(x)$ xác định trên $\\mathbb{R} \\setminus \\{-1\\}$, biết $\\lim_{x \\to -\\infty} f(x) = 2$ và $\\lim_{x \\to +\\infty} f(x) = 2$. Đường tiệm cận ngang của đồ thị hàm số là:",
+    "choices": [
+      "A. $y = 2$.",
+      "B. $x = 2$.",
+      "C. $y = -1$.",
+      "D. $x = -1$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Tâm đối xứng của đồ thị hàm số $y = x^3 - 3x^2 + 2$ có hoành độ là nghiệm của phương trình nào dưới đây?",
+    "choices": [
+      "A. $y' = 0$.",
+      "B. $y'' = 0$.",
+      "C. $y = 0$.",
+      "D. $y' > 0$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Bảng biến thiên có $\\lim_{x \\to 2^+} y = +\\infty$ và $\\lim_{x \\to 2^-} y = -\\infty$. Đồ thị hàm số có đường tiệm cận đứng là:",
+    "choices": [
+      "A. $x = 2$.",
+      "B. $y = 2$.",
+      "C. $x = -2$.",
+      "D. $y = -2$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Đồ thị hàm số $y = \\frac{2x + 1}{x - 1}$ đi qua điểm nào dưới đây?",
+    "choices": [
+      "A. $M(0; 1)$.",
+      "B. $N(2; 5)$.",
+      "C. $P(1; 3)$.",
+      "D. $Q(-1; 0)$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Khẳng định nào sau đây là đúng về tính đơn điệu của hàm số $y = \\frac{x - 2}{x + 1}$?",
+    "choices": [
+      "A. Hàm số đồng biến trên $\\mathbb{R}$.",
+      "B. Hàm số nghịch biến trên từng khoảng xác định.",
+      "C. Hàm số đồng biến trên từng khoảng xác định.",
+      "D. Hàm số nghịch biến trên $\\mathbb{R} \\setminus \\{-1\\}$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Trong quá trình khảo sát và vẽ đồ thị hàm số $y = f(x)$, ta giải phương trình $f'(x) = 0$ để tìm:",
+    "choices": [
+      "A. Các đường tiệm cận của đồ thị.",
+      "B. Các điểm giao với trục tung.",
+      "C. Các điểm cực trị (nếu có) của hàm số.",
+      "D. Giao điểm của hai đường tiệm cận."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = ax^3 + bx^2 + cx + d \\ (a \\ne 0)$. Biết đồ thị hàm số cắt trục tung tại điểm có tung độ âm. Khẳng định nào sau đây đúng?",
+    "choices": [
+      "A. $a < 0$.",
+      "B. $d < 0$.",
+      "C. $c < 0$.",
+      "D. $b < 0$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Đồ thị hàm phân thức bậc hai trên bậc nhất $y = \\frac{x^2 - x + 1}{x - 1}$ có đường tiệm cận xiên là:",
+    "choices": [
+      "A. $y = x - 1$.",
+      "B. $y = x$.",
+      "C. $y = x + 1$.",
+      "D. $y = -x$."
+    ],
+    "correct": 1
+  },
+ {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 1,
+    "q": "Nếu $s(t)$ là phương trình vị trí của một vật chuyển động trên một đường thẳng, thì vận tốc tức thời $v(t)$ của vật tại thời điểm $t$ được tính bằng công thức nào?",
+    "choices": [
+      "A. $v(t) = s'(t)$.",
+      "B. $v(t) = s''(t)$.",
+      "C. $v(t) = \\frac{s(t)}{t}$.",
+      "D. $v(t) = s(t) + t$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 1,
+    "q": "Nếu $v(t)$ là vận tốc của một vật chuyển động, thì gia tốc tức thời $a(t)$ của vật tại thời điểm $t$ được tính bằng công thức nào?",
+    "choices": [
+      "A. $a(t) = v(t)$.",
+      "B. $a(t) = v'(t)$.",
+      "C. $a(t) = v''(t)$.",
+      "D. $a(t) = \\frac{v(t)}{t}$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 1,
+    "q": "Trong kinh tế học, nếu $C(x)$ là hàm tổng chi phí để sản xuất $x$ đơn vị sản phẩm, thì hàm chi phí biên (marginal cost) được xác định bởi công thức nào?",
+    "choices": [
+      "A. $C''(x)$.",
+      "B. $\\frac{C(x)}{x}$.",
+      "C. $C'(x)$.",
+      "D. $C(x) - x$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 1,
+    "q": "Tốc độ thay đổi tức thời của một đại lượng $y = f(x)$ đối với $x$ tại điểm $x = x_0$ chính là:",
+    "choices": [
+      "A. Giá trị của hàm số $f(x_0)$.",
+      "B. Đạo hàm $f'(x_0)$.",
+      "C. Giới hạn $\\lim_{x \\to x_0} f(x)$.",
+      "D. Tỉ số $\\frac{f(x_0)}{x_0}$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 1,
+    "q": "Một vật chuyển động có phương trình $s(t) = t^2 + 3t$ (trong đó $s$ tính bằng mét, $t$ tính bằng giây). Phương trình vận tốc $v(t)$ của vật là:",
+    "choices": [
+      "A. $v(t) = 2t + 3$.",
+      "B. $v(t) = t + 3$.",
+      "C. $v(t) = 2t$.",
+      "D. $v(t) = \\frac{t^3}{3} + \\frac{3t^2}{2}$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 1,
+    "q": "Một vật chuyển động có phương trình vận tốc $v(t) = 3t^2 - 2t$ (m/s). Phương trình gia tốc $a(t)$ của vật là:",
+    "choices": [
+      "A. $a(t) = t^3 - t^2$.",
+      "B. $a(t) = 6t$.",
+      "C. $a(t) = 3t - 2$.",
+      "D. $a(t) = 6t - 2$."
+    ],
+    "correct": 3
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 1,
+    "q": "Giả sử $N(t)$ là số lượng cá thể của một quần thể sinh vật tại thời điểm $t$. Đạo hàm $N'(t)$ biểu thị đại lượng nào sau đây?",
+    "choices": [
+      "A. Số lượng cá thể sinh ra tại thời điểm $t$.",
+      "B. Tốc độ tăng trưởng tức thời của quần thể tại thời điểm $t$.",
+      "C. Tổng số cá thể của quần thể sau $t$ giờ.",
+      "D. Số lượng cá thể chết đi tại thời điểm $t$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 1,
+    "q": "Trong kinh tế học, lợi nhuận $P(x)$ thu được khi bán $x$ sản phẩm được tính bằng công thức nào nếu biết hàm doanh thu $R(x)$ và hàm chi phí $C(x)$?",
+    "choices": [
+      "A. $P(x) = R(x) + C(x)$.",
+      "B. $P(x) = \\frac{R(x)}{C(x)}$.",
+      "C. $P(x) = R(x) - C(x)$.",
+      "D. $P(x) = C(x) - R(x)$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 1,
+    "q": "Một vật được phóng thẳng đứng lên trên với phương trình độ cao $h(t) = 20t - 5t^2$ ($h$ tính bằng mét, $t$ tính bằng giây). Vận tốc của vật tại thời điểm $t = 1$ giây là:",
+    "choices": [
+      "A. $15$ m/s.",
+      "B. $10$ m/s.",
+      "C. $20$ m/s.",
+      "D. $5$ m/s."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 1,
+    "q": "Hàm chi phí sản xuất $x$ sản phẩm là $C(x) = 100 + 5x + 0,1x^2$ (nghìn đồng). Hàm chi phí biên $C'(x)$ là:",
+    "choices": [
+      "A. $C'(x) = 5 + 0,1x$.",
+      "B. $C'(x) = 105 + 0,2x$.",
+      "C. $C'(x) = 5 + 0,2x$.",
+      "D. $C'(x) = 0,2x$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 1,
+    "q": "Sự lây lan của một loại virus được mô hình hoá bởi $N(t) = 10t^2 + 5t$, trong đó $N$ là số người nhiễm bệnh sau $t$ ngày. Hàm số biểu thị tốc độ lây lan của virus (tốc độ truyền bệnh) là:",
+    "choices": [
+      "A. $N'(t) = 20t + 5$.",
+      "B. $N'(t) = 10t + 5$.",
+      "C. $N'(t) = 20t$.",
+      "D. $N'(t) = 15t$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm doanh thu $R(x) = 500x - 2x^2$ (nghìn đồng) khi bán $x$ sản phẩm. Hàm doanh thu biên $R'(x)$ là:",
+    "choices": [
+      "A. $R'(x) = 500 - x$.",
+      "B. $R'(x) = 500 - 4x$.",
+      "C. $R'(x) = 500 - 2x$.",
+      "D. $R'(x) = 4x$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 1,
+    "q": "Trong các bài toán kinh tế, để tìm số lượng sản phẩm $x$ sao cho lợi nhuận $P(x)$ đạt cực đại, bước đầu tiên ta thường giải phương trình nào dưới đây?",
+    "choices": [
+      "A. $P(x) = 0$.",
+      "B. $P''(x) = 0$.",
+      "C. $P'(x) = 0$.",
+      "D. $P(x) = 1$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 1,
+    "q": "Nếu $C(t)$ là nồng độ của một chất tham gia phản ứng hoá học tại thời điểm $t$, thì tốc độ phản ứng tức thời tại thời điểm $t$ được biểu thị bởi:",
+    "choices": [
+      "A. $C(t)$.",
+      "B. $\\lim_{t \\to 0} C(t)$.",
+      "C. $C'(t)$.",
+      "D. $C''(t)$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 1,
+    "q": "Hàm chi phí trung bình để sản xuất $x$ sản phẩm, kí hiệu là $\\overline{C}(x)$, được tính theo hàm tổng chi phí $C(x)$ bằng công thức nào?",
+    "choices": [
+      "A. $\\overline{C}(x) = \\frac{C(x)}{x}$.",
+      "B. $\\overline{C}(x) = C'(x)$.",
+      "C. $\\overline{C}(x) = C(x) - x$.",
+      "D. $\\overline{C}(x) = x \\cdot C(x)$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 1,
+    "q": "Một chất điểm chuyển động có phương trình $s(t) = 2t^3 - 3t^2 + t$. Gia tốc của chất điểm tại thời điểm $t=1$ là:",
+    "choices": [
+      "A. $0$.",
+      "B. $6$.",
+      "C. $12$.",
+      "D. $1$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 1,
+    "q": "Một vật rơi tự do có phương trình chuyển động $s(t) = \\frac{1}{2}gt^2$ (với $g$ là gia tốc trọng trường). Phương trình vận tốc tức thời của vật tại thời điểm $t$ là:",
+    "choices": [
+      "A. $v(t) = \\frac{1}{2}gt$.",
+      "B. $v(t) = g$.",
+      "C. $v(t) = gt$.",
+      "D. $v(t) = gt^2$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm lợi nhuận $P(x) = -x^2 + 10x - 5$. Lợi nhuận biên tại mức sản xuất $x = 3$ là:",
+    "choices": [
+      "A. $4$.",
+      "B. $16$.",
+      "C. $10$.",
+      "D. $-6$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 1,
+    "q": "Một hồ chứa nước đang bị rò rỉ. Thể tích nước còn lại trong hồ sau $t$ giờ là $V(t) = 1000 - 10t^2$ (lít). Tốc độ thay đổi thể tích nước tại thời điểm $t = 2$ giờ là:",
+    "choices": [
+      "A. $-20$ lít/giờ.",
+      "B. $-40$ lít/giờ.",
+      "C. $960$ lít/giờ.",
+      "D. $40$ lít/giờ."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 1,
+    "q": "Trong các bài toán thực tế, khi cần tối ưu hóa (tìm giá trị lớn nhất, giá trị nhỏ nhất) của một đại lượng được biểu diễn bởi hàm số $y = f(x)$, ta áp dụng công cụ toán học chủ yếu nào ở lớp 12?",
+    "choices": [
+      "A. Hình học không gian.",
+      "B. Phương pháp tọa độ.",
+      "C. Đạo hàm và bảng biến thiên.",
+      "D. Cấp số cộng và cấp số nhân."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 2,
+    "q": "Một chất điểm chuyển động theo phương trình $s(t) = t^3 - 3t^2 + 5t$ (trong đó $t$ tính bằng giây, $s$ tính bằng mét). Gia tốc của chất điểm bằng $0$ tại thời điểm nào?",
+    "choices": [
+      "A. $t = 1$ (s).",
+      "B. $t = 2$ (s).",
+      "C. $t = 3$ (s).",
+      "D. $t = 0$ (s)."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 2,
+    "q": "Một vật được phóng thẳng đứng lên trên với phương trình độ cao $h(t) = 20t - 5t^2$ ($h$ tính bằng mét, $t$ tính bằng giây). Độ cao lớn nhất mà vật đạt được là bao nhiêu?",
+    "choices": [
+      "A. $10\\text{ m}$.",
+      "B. $15\\text{ m}$.",
+      "C. $20\\text{ m}$.",
+      "D. $25\\text{ m}$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 2,
+    "q": "Chi phí (nghìn đồng) để sản xuất $x$ sản phẩm được cho bởi hàm số $C(x) = 1000 + 20x - 0,1x^2$. Tính chi phí biên tại mức sản xuất $x = 50$.",
+    "choices": [
+      "A. $10$.",
+      "B. $20$.",
+      "C. $30$.",
+      "D. $0$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 2,
+    "q": "Hàm cầu đối với một loại sản phẩm là $p(x) = 100 - 0,5x$, trong đó $p$ là giá bán (nghìn đồng) và $x$ là số lượng sản phẩm. Doanh nghiệp cần bán bao nhiêu sản phẩm để doanh thu đạt mức lớn nhất?",
+    "choices": [
+      "A. $50$.",
+      "B. $100$.",
+      "C. $150$.",
+      "D. $200$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 2,
+    "q": "Sự lây lan của một dịch bệnh được mô hình hoá bởi hàm số $N(t) = -t^3 + 12t^2$ (trong đó $N$ là số người nhiễm bệnh tính bằng trăm người, $t$ là thời gian tính bằng tuần). Tốc độ truyền bệnh đạt mức lớn nhất vào tuần thứ mấy?",
+    "choices": [
+      "A. Tuần thứ 2.",
+      "B. Tuần thứ 4.",
+      "C. Tuần thứ 6.",
+      "D. Tuần thứ 8."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 2,
+    "q": "Một nhà máy có hàm tổng chi phí là $C(x) = 400 + 4x + 0,01x^2$ (triệu đồng) khi sản xuất $x$ sản phẩm. Cần sản xuất bao nhiêu sản phẩm để chi phí trung bình trên mỗi sản phẩm là thấp nhất?",
+    "choices": [
+      "A. $100$.",
+      "B. $200$.",
+      "C. $300$.",
+      "D. $400$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 2,
+    "q": "Biết hàm doanh thu khi bán $x$ sản phẩm là $R(x) = 50x$ và hàm chi phí sản xuất là $C(x) = 0,01x^2 + 10x + 100$. Lợi nhuận lớn nhất đạt được khi sản xuất bao nhiêu sản phẩm?",
+    "choices": [
+      "A. $1000$.",
+      "B. $1500$.",
+      "C. $2000$.",
+      "D. $2500$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 2,
+    "q": "Một chất điểm chuyển động có phương trình $s(t) = \\frac{1}{3}t^3 - 2t^2 + 3t$ (với $t > 0$). Trong khoảng thời gian nào dưới đây thì chất điểm chuyển động theo chiều âm (vận tốc mang dấu âm)?",
+    "choices": [
+      "A. $(0; 1)$.",
+      "B. $(1; 3)$.",
+      "C. $(3; +\\infty)$.",
+      "D. $(0; 3)$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 2,
+    "q": "Chi phí trung bình để sản xuất $x$ sản phẩm của một cơ sở được ước tính bởi hàm số $\\overline{C}(x) = \\frac{120x + 500}{x + 5}$ (nghìn đồng). Khi quy mô sản xuất ngày càng lớn (tức là $x \\to +\\infty$), chi phí trung bình cho mỗi sản phẩm sẽ tiến gần đến mức nào?",
+    "choices": [
+      "A. $500\\text{ nghìn đồng}$." ,
+      "B. $120\\text{ nghìn đồng}$.",
+      "C. $100\\text{ nghìn đồng}$.",
+      "D. $0\\text{ đồng}$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 2,
+    "q": "Khi nuôi cá thí nghiệm, trọng lượng trung bình của mỗi con cá sau một vụ thu hoạch phụ thuộc vào số lượng cá $n$ thả trên mỗi đơn vị diện tích mặt hồ bởi công thức $P(n) = 480 - 20n$ (gam). Để tổng trọng lượng cá thu hoạch trên mỗi đơn vị diện tích lớn nhất, cần thả bao nhiêu con cá?",
+    "choices": [
+      "A. $10$.",
+      "B. $12$.",
+      "C. $14$.",
+      "D. $24$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 2,
+    "q": "Nồng độ $C$ của một loại thuốc trong máu sau $t$ giờ tiêm vào cơ thể được cho bởi công thức $C(t) = \\frac{t}{t^2 + 1}$ (mg/L). Nồng độ thuốc trong máu đạt mức cao nhất sau bao nhiêu giờ?",
+    "choices": [
+      "A. $0,5\\text{ giờ}$.",
+      "B. $1\\text{ giờ}$.",
+      "C. $2\\text{ giờ}$.",
+      "D. $1,5\\text{ giờ}$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 2,
+    "q": "Nhiệt độ $T$ ($^\\circ\\text{F}$) của một bệnh nhân trong cơn sốt kéo dài 12 giờ được xác định bởi hàm số $T(t) = -0,1t^2 + 1,2t + 98,6$ với $0 \\le t \\le 12$. Nhiệt độ lớn nhất của người bệnh trong thời gian này là:",
+    "choices": [
+      "A. $102,2^\\circ\\text{F}$.",
+      "B. $100,4^\\circ\\text{F}$.",
+      "C. $98,6^\\circ\\text{F}$.",
+      "D. $104,0^\\circ\\text{F}$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 2,
+    "q": "Sau khi phát hiện bệnh dịch, số người nhiễm bệnh tính đến ngày thứ $t$ là $f(t) = 45t^2 - t^3$. Đạo hàm $f'(t)$ biểu thị tốc độ truyền bệnh (người/ngày). Hỏi từ ngày thứ mấy trở đi thì tốc độ truyền bệnh bắt đầu giảm?",
+    "choices": [
+      "A. Ngày thứ 10.",
+      "B. Ngày thứ 15.",
+      "C. Ngày thứ 20.",
+      "D. Ngày thứ 25."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 2,
+    "q": "Từ một miếng bìa carton hình vuông có cạnh $12\\text{ cm}$, người ta cắt bốn hình vuông nhỏ bằng nhau ở bốn góc, mỗi hình vuông có độ dài cạnh là $x\\text{ cm}$ ($0 < x < 6$). Sau đó gấp phần còn lại lên để tạo thành một cái hộp không nắp. Thể tích $V$ của hộp được tính bởi hàm số nào dưới đây?",
+    "choices": [
+      "A. $V(x) = x(12 - x)^2$.",
+      "B. $V(x) = x(12 - 2x)^2$.",
+      "C. $V(x) = x^2(12 - 2x)$.",
+      "D. $V(x) = x(6 - x)^2$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 2,
+    "q": "Dựa vào hàm số $V(x) = x(12 - 2x)^2$ ở câu trên, giá trị của $x$ để thể tích chiếc hộp đạt lớn nhất là:",
+    "choices": [
+      "A. $1\\text{ cm}$.",
+      "B. $2\\text{ cm}$.",
+      "C. $3\\text{ cm}$.",
+      "D. $4\\text{ cm}$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 2,
+    "q": "Độ giảm huyết áp của một bệnh nhân được tính bởi công thức $G(x) = 0,025x^2(30 - x)$, trong đó $x$ (mg) là liều lượng thuốc tiêm. Để huyết áp giảm nhiều nhất thì liều lượng thuốc cần tiêm là:",
+    "choices": [
+      "A. $10\\text{ mg}$.",
+      "B. $15\\text{ mg}$.",
+      "C. $20\\text{ mg}$.",
+      "D. $25\\text{ mg}$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 2,
+    "q": "Công suất $P$ (đơn vị W) của một mạch điện được cung cấp bởi một nguồn pin $12\\text{V}$ được cho bởi công thức $P(I) = 12I - 0,5I^2$, với $I$ là cường độ dòng điện (A). Cường độ dòng điện $I$ bằng bao nhiêu để mạch đạt công suất tối đa?",
+    "choices": [
+      "A. $6\\text{ A}$.",
+      "B. $12\\text{ A}$.",
+      "C. $24\\text{ A}$.",
+      "D. $10\\text{ A}$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 2,
+    "q": "Một khách sạn có 50 phòng. Hiện tại giá thuê là $400.000$ VNĐ/phòng/ngày thì cả 50 phòng đều có khách. Giám đốc thống kê được cứ tăng giá thêm $20.000$ VNĐ thì sẽ có 2 phòng bị bỏ trống. Để thu nhập mỗi ngày là lớn nhất, giám đốc cần đặt giá phòng mới là bao nhiêu?",
+    "choices": [
+      "A. $400.000\\text{ VNĐ}$.",
+      "B. $450.000\\text{ VNĐ}$.",
+      "C. $500.000\\text{ VNĐ}$.",
+      "D. $420.000\\text{ VNĐ}$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 2,
+    "q": "Năng lượng tiêu hao $E(v)$ của một loài cá khi bơi ngược dòng nước với vận tốc $v$ (km/h) được cho bởi $E(v) = c \\frac{v^3}{v - 6}$ ($v > 6, c > 0$). Vận tốc $v$ để năng lượng tiêu hao là thấp nhất bằng:",
+    "choices": [
+      "A. $6\\text{ km/h}$.",
+      "B. $9\\text{ km/h}$.",
+      "C. $12\\text{ km/h}$.",
+      "D. $15\\text{ km/h}$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 2,
+    "q": "Để loại bỏ $x\\%$ chất gây ô nhiễm môi trường từ khí thải nhà máy, chi phí cần bỏ ra được tính bằng $C(x) = \\frac{10x}{100 - x}$ (triệu đồng) với $0 \\le x < 100$. Chi phí cần thiết để loại bỏ được $50\\%$ chất gây ô nhiễm là:",
+    "choices": [
+      "A. $5\\text{ triệu đồng}$.",
+      "B. $10\\text{ triệu đồng}$.",
+      "C. $15\\text{ triệu đồng}$.",
+      "D. $20\\text{ triệu đồng}$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hàm số $y = x^3 - 3x^2 + 2$. Tọa độ tâm đối xứng của đồ thị hàm số là:",
+    "choices": [
+      "A. $(0; 2)$",
+      "B. $(1; 2)$",
+      "C. $(1; 0)$",
+      "D. $(2; -2)$"
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hàm số $y = \\frac{2x-1}{x+1}$. Tọa độ giao điểm của hai đường tiệm cận của đồ thị hàm số là:",
+    "choices": [
+      "A. $(1; 2)$",
+      "B. $(2; -1)$",
+      "C. $(-1; -1)$",
+      "D. $(-1; 2)$"
+    ],
+    "correct": 3
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Biết rằng đồ thị hàm số $y = x^3 - 3x^2 + 2x - 1$ cắt đồ thị hàm số $y = x^2 - 3x + 1$ tại hai điểm phân biệt $A, B$. Tính độ dài đoạn thẳng $AB$.",
+    "choices": [
+      "A. $\\sqrt{2}$",
+      "B. $1$",
+      "C. $2$",
+      "D. $3$"
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hàm số $y = \\frac{x^2 - 2x + 2}{x - 1}$. Giao điểm của hai đường tiệm cận của đồ thị hàm số là điểm $I(a; b)$. Tính $a + b$.",
+    "choices": [
+      "A. $1$",
+      "B. $2$",
+      "C. $0$",
+      "D. $-1$"
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hàm số $y = \\frac{2x+1}{x-1}$. Gọi $M$ là giao điểm của đồ thị với trục tung, $N$ là giao điểm của đồ thị với trục hoành. Hệ số góc của đường thẳng $MN$ là:",
+    "choices": [
+      "A. $2$",
+      "B. $\\frac{1}{2}$",
+      "C. $-2$",
+      "D. $-\\frac{1}{2}$"
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Có bao nhiêu giá trị nguyên của tham số $m$ để đồ thị hàm số $y = x^3 - 3x + m$ cắt trục hoành tại 3 điểm phân biệt?",
+    "choices": [
+      "A. $2$",
+      "B. $3$",
+      "C. $4$",
+      "D. $5$"
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hàm số $y = \\frac{ax+b}{cx-1}$ có đồ thị đi qua điểm $A(2; 3)$ và giao điểm của hai đường tiệm cận là $I(1; 2)$. Tính giá trị biểu thức $P = a + b + c$.",
+    "choices": [
+      "A. $2$",
+      "B. $3$",
+      "C. $1$",
+      "D. $0$"
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Biết đường thẳng $y = -x + m$ cắt đồ thị hàm số $y = \\frac{2x+1}{x+1}$ tại hai điểm phân biệt $A, B$. Tìm tất cả các giá trị của tham số $m$ để đồ thị luôn có hai giao điểm.",
+    "choices": [
+      "A. $m > 0$",
+      "B. $m < 0$",
+      "C. $m \\neq -1$",
+      "D. Với mọi $m \\in \\mathbb{R}$"
+    ],
+    "correct": 3
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hàm số $y = \\frac{x^2 - x + 1}{x - 1}$. Khẳng định nào sau đây là sai?",
+    "choices": [
+      "A. Đồ thị hàm số cắt trục hoành tại hai điểm phân biệt.",
+      "B. Tâm đối xứng của đồ thị hàm số là điểm $I(1; 1)$.",
+      "C. Đồ thị hàm số có tiệm cận xiên là đường thẳng $y = x$.",
+      "D. Đồ thị hàm số đi qua điểm $(0; -1)$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Đồ thị hàm số $y = \\frac{x-2}{x^2-4}$ có tất cả bao nhiêu đường tiệm cận (đứng và ngang)?",
+    "choices": [
+      "A. $1$",
+      "B. $2$",
+      "C. $3$",
+      "D. $4$"
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Gọi $M, N$ là các giao điểm của đường thẳng $y = x - 2$ và đường cong $y = \\frac{2x-1}{x-1}$. Hoành độ trung điểm $I$ của đoạn thẳng $MN$ là:",
+    "choices": [
+      "A. $\\frac{3}{2}$",
+      "B. $-\\frac{5}{2}$",
+      "C. $\\frac{5}{2}$",
+      "D. $5$"
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hàm số $y = -x^3 + 3x^2 + 1$ có đồ thị $(C)$. Phương trình tiếp tuyến của $(C)$ tại điểm có hoành độ $x_0 = 1$ là:",
+    "choices": [
+      "A. $y = 3x - 3$",
+      "B. $y = 3x + 3$",
+      "C. $y = 3x$",
+      "D. $y = -3x + 6$"
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Hàm số $y = ax^3 + bx^2 + cx + d$ có đồ thị đi qua gốc tọa độ $O(0;0)$, đạt cực tiểu tại $A(1; -1)$ và cực đại tại $B(-1; 3)$. Giá trị của biểu thức $a+b+c+d$ là:",
+    "choices": [
+      "A. $1$",
+      "B. $0$",
+      "C. $2$",
+      "D. $-1$"
+    ],
+    "correct": 3
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hàm số $y = \\frac{2x+1}{x-1}$ có đồ thị $(C)$. Điểm $M \\in (C)$ có hoành độ $x=2$. Phương trình tiếp tuyến của $(C)$ tại $M$ là:",
+    "choices": [
+      "A. $y = -3x + 11$",
+      "B. $y = -3x - 1$",
+      "C. $y = 3x - 1$",
+      "D. $y = 3x + 11$"
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hàm số $y = f(x)$ xác định và liên tục trên $\\mathbb{R}$ có bảng biến thiên: $x$ đi từ $-\\infty \\to 0 \\to 2 \\to +\\infty$; $f(x)$ đi từ $-\\infty \\to 3 \\to -1 \\to +\\infty$. Phương trình $f(x) - 2 = 0$ có bao nhiêu nghiệm phân biệt?",
+    "choices": [
+      "A. $1$",
+      "B. $3$",
+      "C. $2$",
+      "D. $4$"
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hàm số $y = \\frac{x^2 - x + 2}{x - 1}$. Phương trình đường thẳng đi qua hai điểm cực trị của đồ thị hàm số đã cho là:",
+    "choices": [
+      "A. $y = 2x - 1$",
+      "B. $y = x - 1$",
+      "C. $y = -x + 2$",
+      "D. $y = 2x + 1$"
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Biết đồ thị hàm số $y = \\frac{x+m}{x-2}$ đi qua điểm $A(1; -2)$. Khẳng định nào sau đây đúng về giao điểm của đồ thị hàm số với trục tung?",
+    "choices": [
+      "A. Đồ thị cắt trục tung tại điểm $(0; -\\frac{1}{2})$.",
+      "B. Đồ thị cắt trục tung tại điểm $(0; \\frac{1}{2})$.",
+      "C. Đồ thị cắt trục tung tại điểm $(0; 1)$.",
+      "D. Đồ thị cắt trục hoành tại điểm $(0; -\\frac{1}{2})$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Đồ thị hàm số $y = x^3 - 3x^2 + 2x$ cắt trục hoành tại bao nhiêu điểm phân biệt?",
+    "choices": [
+      "A. $1$",
+      "B. $3$",
+      "C. $2$",
+      "D. $0$"
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Biết đồ thị hàm số $y = ax^3 + bx^2 + cx + d \\ (a \\ne 0)$ có hai điểm cực trị nằm về hai phía của trục tung. Khẳng định nào sau đây đúng?",
+    "choices": [
+      "A. $a$ và $c$ trái dấu.",
+      "B. $a$ và $c$ cùng dấu.",
+      "C. $b$ và $d$ trái dấu.",
+      "D. $b$ và $c$ cùng dấu."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hàm số $y = \\frac{x^2 - 2x + 3}{x + 1}$. Đồ thị hàm số có một đường tiệm cận xiên $y = ax + b$. Tính $a \\cdot b$.",
+    "choices": [
+      "A. $3$",
+      "B. $1$",
+      "C. $-1$",
+      "D. $-3$"
+    ],
+    "correct": 3
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Đồ thị hàm số $y = \\frac{2x^2 - 3x + 5}{x + 1}$ có đường tiệm cận xiên là:",
+    "choices": [
+      "A. $y = 2x - 5$.",
+      "B. $y = 2x + 1$.",
+      "C. $y = 2x - 1$.",
+      "D. $y = x - 5$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Tổng số đường tiệm cận đứng và tiệm cận ngang của đồ thị hàm số $y = \\frac{x^2 - 4}{x^2 - 3x + 2}$ là:",
+    "choices": [
+      "A. $1$.",
+      "B. $2$.",
+      "C. $3$.",
+      "D. $4$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Giao điểm $I$ của hai đường tiệm cận của đồ thị hàm số $y = \\frac{x^2 - 2x + 2}{x - 1}$ có tọa độ là:",
+    "choices": [
+      "A. $(1; 1)$.",
+      "B. $(1; 0)$.",
+      "C. $(1; 2)$.",
+      "D. $(-1; 0)$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Đồ thị hàm số $y = \\frac{x + 1}{\\sqrt{4x^2 + 1}}$ có bao nhiêu đường tiệm cận ngang?",
+    "choices": [
+      "A. $0$.",
+      "B. $1$.",
+      "C. $2$.",
+      "D. $3$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Có bao nhiêu giá trị thực của tham số $m$ để đồ thị hàm số $y = \\frac{x - 1}{x^2 - 3x + m}$ có đúng một đường tiệm cận đứng?",
+    "choices": [
+      "A. $0$.",
+      "B. $1$.",
+      "C. $2$.",
+      "D. Vô số."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hàm số $y = f(x)$ liên tục trên $\\mathbb{R} \\setminus \\{1\\}$ thỏa mãn $\\lim_{x \\to +\\infty} [f(x) - (3x + 2)] = 0$ và $\\lim_{x \\to 1^-} f(x) = +\\infty$. Khẳng định nào sau đây đúng?",
+    "choices": [
+      "A. Đồ thị hàm số có tiệm cận đứng $x = 1$ và tiệm cận ngang $y = 3x + 2$.",
+      "B. Đồ thị hàm số có tiệm cận đứng $y = 1$ và tiệm cận xiên $y = 3x + 2$.",
+      "C. Đồ thị hàm số có tiệm cận đứng $x = 1$ và tiệm cận xiên $y = 3x + 2$.",
+      "D. Đồ thị hàm số có tiệm cận ngang $y = 1$ và tiệm cận xiên $y = 3x + 2$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Tính diện tích hình phẳng giới hạn bởi đường tiệm cận xiên của đồ thị hàm số $y = \\frac{x^2 + 2x - 1}{x - 1}$ và các trục tọa độ.",
+    "choices": [
+      "A. $\\frac{9}{2}$.",
+      "B. $3$.",
+      "C. $9$.",
+      "D. $\\frac{3}{2}$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Biết đồ thị hàm số $y = \\frac{ax + 1}{x - 2}$ có đường tiệm cận ngang là $y = 3$. Giá trị của $a$ bằng:",
+    "choices": [
+      "A. $-2$.",
+      "B. $2$.",
+      "C. $3$.",
+      "D. $-3$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Giao điểm của hai đường tiệm cận của đồ thị hàm số $y = \\frac{x^2 - 2x + 3}{x + 1}$ nằm trên đường thẳng nào dưới đây?",
+    "choices": [
+      "A. $y = 2x - 2$.",
+      "B. $y = 4x$.",
+      "C. $x + y + 5 = 0$.",
+      "D. $x - y = 0$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Tích khoảng cách từ một điểm $M$ bất kì trên đồ thị hàm số $y = \\frac{2x + 1}{x - 1}$ đến hai đường tiệm cận của đồ thị đó bằng:",
+    "choices": [
+      "A. $1$.",
+      "B. $2$.",
+      "C. $3$.",
+      "D. $4$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Gọi $S$ là diện tích hình chữ nhật tạo bởi hai đường tiệm cận của đồ thị hàm số $y = \\frac{3x - 2}{x + 1}$ và hai trục tọa độ. Tính $S$.",
+    "choices": [
+      "A. $S = 2$.",
+      "B. $S = 3$.",
+      "C. $S = 4$.",
+      "D. $S = 6$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Tìm tất cả các giá trị của tham số $m$ để đồ thị hàm số $y = \\frac{x^2 + mx - 1}{x - 1}$ có tiệm cận xiên đi qua điểm $A(1; 5)$.",
+    "choices": [
+      "A. $m = 1$.",
+      "B. $m = 2$.",
+      "C. $m = 3$.",
+      "D. $m = 4$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Biết hai đường tiệm cận của đồ thị hàm số $y = \\frac{mx + 1}{x - 2}$ cùng với hai trục tọa độ tạo thành một hình chữ nhật có diện tích bằng $8$. Giá trị dương của $m$ là:",
+    "choices": [
+      "A. $m = 2$.",
+      "B. $m = 4$.",
+      "C. $m = 8$.",
+      "D. $m = 16$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Khẳng định nào sau đây đúng về các đường tiệm cận của đồ thị hàm số $y = \\frac{\\sqrt{x^2 - 4}}{x - 2}$?",
+    "choices": [
+      "A. Đồ thị có 2 tiệm cận ngang và 1 tiệm cận đứng.",
+      "B. Đồ thị có 1 tiệm cận ngang và 1 tiệm cận đứng.",
+      "C. Đồ thị có 2 tiệm cận ngang và 2 tiệm cận đứng.",
+      "D. Đồ thị không có tiệm cận đứng, có 2 tiệm cận ngang."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Đường tiệm cận xiên của đồ thị hàm số $y = \\frac{-x^2 + 3x - 1}{x - 2}$ vuông góc với đường thẳng nào dưới đây?",
+    "choices": [
+      "A. $y = x + 1$.",
+      "B. $y = -x + 3$.",
+      "C. $y = 2x - 1$.",
+      "D. $y = -\\frac{1}{2}x + 2$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Khoảng cách từ gốc tọa độ $O$ đến giao điểm hai đường tiệm cận của đồ thị hàm số $y = \\frac{2x^2 - x + 1}{x - 1}$ bằng:",
+    "choices": [
+      "A. $\\sqrt{5}$.",
+      "B. $\\sqrt{10}$.",
+      "C. $2\\sqrt{2}$.",
+      "D. $3$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Đồ thị hàm số $y = \\frac{2x - 3}{x^2 - 3x + 2}$ có bao nhiêu đường tiệm cận?",
+    "choices": [
+      "A. $1$.",
+      "B. $2$.",
+      "C. $3$.",
+      "D. $4$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Có bao nhiêu giá trị nguyên của $m \\in [-5; 5]$ để đồ thị hàm số $y = \\frac{x - 2}{x^2 - mx + 1}$ có đúng hai đường tiệm cận đứng?",
+    "choices": [
+      "A. $8$.",
+      "B. $7$.",
+      "C. $6$.",
+      "D. $9$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Tâm đối xứng của đồ thị hàm số $y = \\frac{x^2 - 3x + 5}{x + 1}$ là điểm $I$. Tung độ của điểm $I$ bằng:",
+    "choices": [
+      "A. $-1$.",
+      "B. $-4$.",
+      "C. $-5$.",
+      "D. $5$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Đường tiệm cận xiên của đồ thị hàm số $y = \\frac{-3x^2 - 30x - 51}{3x + 6}$ có phương trình là:",
+    "choices": [
+      "A. $y = -x - 8$.",
+      "B. $y = -x - 12$.",
+      "C. $y = x - 6$.",
+      "D. $y = 3x + 6$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Giá trị nhỏ nhất của hàm số $y = x + \\frac{4}{x}$ trên đoạn $\\left[1; 3\\right]$ bằng:",
+    "choices": [
+      "A. $5$.",
+      "B. $4$.",
+      "C. $\\frac{13}{3}$.",
+      "D. $2$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Gọi $M, m$ lần lượt là giá trị lớn nhất và giá trị nhỏ nhất của hàm số $y = x^3 - 3x^2 - 9x + 35$ trên đoạn $\\left[-4; 4\\right]$. Tính tổng $M + m$.",
+    "choices": [
+      "A. $1$.",
+      "B. $-1$.",
+      "C. $0$.",
+      "D. $7$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Giá trị lớn nhất của hàm số $y = x^4 - 2x^2 + 3$ trên đoạn $\\left[0; 2\\right]$ bằng:",
+    "choices": [
+      "A. $3$.",
+      "B. $2$.",
+      "C. $11$.",
+      "D. $8$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Giá trị lớn nhất của hàm số $y = \\sqrt{4 - x^2}$ trên tập xác định của nó bằng:",
+    "choices": [
+      "A. $0$.",
+      "B. $2$.",
+      "C. $4$.",
+      "D. $\\sqrt{2}$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Giá trị lớn nhất của hàm số $y = (x - 1)e^x$ trên đoạn $\\left[0; 2\\right]$ là:",
+    "choices": [
+      "A. $-1$.",
+      "B. $e^2$.",
+      "C. $e$.",
+      "D. $0$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Giá trị lớn nhất của hàm số $y = x \\ln x$ trên đoạn $\\left[1; e\\right]$ bằng:",
+    "choices": [
+      "A. $e$.",
+      "B. $\\frac{1}{e}$.",
+      "C. $0$.",
+      "D. $-\\frac{1}{e}$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Gọi $M$ là giá trị lớn nhất của hàm số $y = \\sin x + \\cos x$ trên đoạn $\\left[0; \\pi\\right]$. Khẳng định nào sau đây đúng?",
+    "choices": [
+      "A. $M = 1$.",
+      "B. $M = \\sqrt{2}$.",
+      "C. $M = 2$.",
+      "D. $M = -1$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Tìm tất cả các giá trị của tham số thực $m$ để hàm số $y = \\frac{x+m}{x-1}$ có giá trị nhỏ nhất trên đoạn $\\left[2; 4\\right]$ bằng $3$.",
+    "choices": [
+      "A. $m = 1$.",
+      "B. $m = -1$.",
+      "C. $m = 5$.",
+      "D. $m = 3$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hàm số $y = \\frac{x+1}{x-2}$. Gọi $M$ và $m$ lần lượt là giá trị lớn nhất và giá trị nhỏ nhất của hàm số trên đoạn $\\left[3; 5\\right]$. Tính $M + m$.",
+    "choices": [
+      "A. $2$.",
+      "B. $4$.",
+      "C. $6$.",
+      "D. $8$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Hàm số $y = x^3 - 3x$ đạt giá trị nhỏ nhất trên đoạn $\\left[0; 3\\right]$ tại điểm $x_0$. Giá trị của $x_0$ là:",
+    "choices": [
+      "A. $x_0 = 0$.",
+      "B. $x_0 = 1$.",
+      "C. $x_0 = 3$.",
+      "D. $x_0 = -1$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TN",
+    "level": 2,
+    "q": "Một vật được phóng thẳng đứng lên trên từ mặt đất với độ cao $h(t) = 20t - 5t^2$ (tính bằng mét), trong đó $t$ là thời gian tính bằng giây. Độ cao lớn nhất mà vật đạt được là:",
+    "choices": [
+      "A. $10$ m.",
+      "B. $15$ m.",
+      "C. $20$ m.",
+      "D. $25$ m."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Biết giá trị lớn nhất của hàm số $y = x^3 - 3x + m$ trên đoạn $\\left[0; 2\\right]$ bằng $5$. Giá trị của tham số $m$ là:",
+    "choices": [
+      "A. $m = 1$.",
+      "B. $m = 3$.",
+      "C. $m = 5$.",
+      "D. $m = 7$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Giá trị lớn nhất của hàm số $y = x + \\sqrt{4 - x^2}$ bằng:",
+    "choices": [
+      "A. $2$.",
+      "B. $2\\sqrt{2}$.",
+      "C. $4$.",
+      "D. $\\sqrt{2}$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Gọi $M, m$ lần lượt là giá trị lớn nhất, giá trị nhỏ nhất của hàm số $y = \\frac{x^2+3}{x-1}$ trên đoạn $\\left[2; 4\\right]$. Tính $M + m$.",
+    "choices": [
+      "A. $13$.",
+      "B. $6$.",
+      "C. $7$.",
+      "D. $\\frac{19}{3}$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Giá trị nhỏ nhất của hàm số $y = \\frac{1}{3}x^3 - x^2 - 3x + 1$ trên đoạn $\\left[0; 3\\right]$ là:",
+    "choices": [
+      "A. $1$.",
+      "B. $-8$.",
+      "C. $0$.",
+      "D. $-9$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hàm số $y = \\frac{x-m^2}{x+1}$ với $m$ là tham số thực. Tìm tất cả các giá trị của $m$ để giá trị lớn nhất của hàm số trên đoạn $\\left[0; 1\\right]$ bằng $0$.",
+    "choices": [
+      "A. $m = 0$.",
+      "B. $m = \\pm 1$.",
+      "C. $m = \\pm 2$.",
+      "D. $m = 1$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Giá trị lớn nhất của hàm số $y = |x^2 - 2x - 3|$ trên đoạn $\\left[0; 4\\right]$ là:",
+    "choices": [
+      "A. $3$.",
+      "B. $4$.",
+      "C. $5$.",
+      "D. $0$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Khẳng định nào sau đây đúng khi nói về giá trị lớn nhất, giá trị nhỏ nhất của hàm số $y = x^2 - 4x + 5$ trên khoảng $(0; 3)$?",
+    "choices": [
+      "A. Hàm số có giá trị nhỏ nhất bằng $1$, không có giá trị lớn nhất.",
+      "B. Hàm số có giá trị nhỏ nhất bằng $2$, giá trị lớn nhất bằng $5$.",
+      "C. Hàm số có giá trị nhỏ nhất bằng $1$, giá trị lớn nhất bằng $5$.",
+      "D. Hàm số không có giá trị lớn nhất và không có giá trị nhỏ nhất."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Giá trị nhỏ nhất của hàm số $y = e^{x^2 - 2x}$ trên đoạn $\\left[0; 2\\right]$ bằng:",
+    "choices": [
+      "A. $1$.",
+      "B. $e$.",
+      "C. $\\frac{1}{e}$.",
+      "D. $\\frac{1}{e^2}$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Giá trị lớn nhất của hàm số $y = \\sqrt{2x} - x$ trên đoạn $\\left[0; 2\\right]$ bằng:",
+    "choices": [
+      "A. $0$.",
+      "B. $1$.",
+      "C. $\\frac{1}{2}$.",
+      "D. $\\sqrt{2} - 1$."
+    ],
+    "correct": 2
   }
+	
+]
+
 ]
