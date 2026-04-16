@@ -2814,7 +2814,6 @@
     "correct": 0,
     "explain": "Do điểm $M$ nằm trên đoạn thẳng $SA$ nên hai vectơ $\\vec{SM}$ và $\\vec{SA}$ cùng hướng. Mặt khác, vì $SM = 2AM$ nên $SA = SM + AM = SM + \\frac{1}{2}SM = \\frac{3}{2}SM$, suy ra độ dài $SM = \\frac{2}{3}SA$. Từ đó ta có đẳng thức vectơ $\\vec{SM} = \\frac{2}{3}\\vec{SA}$."
   },
- 
   {
     "grade": "12",
     "chapter": "Vectơ và hệ trục tọa độ trong không gian",
@@ -3115,7 +3114,7 @@
     "correct": 0,
     "explain": "Tọa độ vectơ $\\vec{BC} = (x_C - x_B; y_C - y_B; z_C - z_B) = (1 - 0; -1 - 2; 2 - 1) = (1; -3; 1)$."
   },
-   {
+  {
     "grade": "12",
     "chapter": "Vectơ và hệ trục tọa độ trong không gian",
     "type": "TN",
@@ -3701,7 +3700,6 @@
     },
     "explain": "a) (Mức 1) Đúng. $\\vec{AB} = (1; -3; 4) \\Rightarrow AB = \\sqrt{1^2+(-3)^2+4^2} = \\sqrt{26}$.\nb) (Mức 2) Đúng. Theo công thức tọa độ vectơ, $\\vec{MA} = (x_A - x_M; y_A - y_M; z_A - z_M) = (1-x; 2-y; -1-0)$.\nc) (Mức 3) Đúng. Gọi $I$ là trung điểm $AB \\Rightarrow I(1.5; 0.5; 1)$. Ta có $P = MA^2 + MB^2 = 2MI^2 + AB^2/2$. $P$ nhỏ nhất khi $MI$ ngắn nhất, tức $M$ là hình chiếu của $I$ lên $(Oxy) \\Rightarrow M(1.5; 0.5; 0)$.\nd) (Mức 4) Sai. Ba điểm thẳng hàng khi $\\vec{AM} = k\\vec{AB} \\Leftrightarrow (x-1; y-2; 1) = k(1; -3; 4) \\Rightarrow k=1/4$. Từ đó suy ra $x = 5/4, y = 5/4$. Vậy tồn tại chính xác điểm $M(5/4; 5/4; 0)$ thuộc mặt phẳng $(Oxy)$."
   },
- 
   {
     "grade": "12",
     "chapter": "Vectơ và hệ trục tọa độ trong không gian",
@@ -3837,7 +3835,6 @@
     "correct": "4",
     "explain": "Gọi $I$ là điểm thỏa mãn $3\\vec{IA} - 2\\vec{IB} + \\vec{IC} + 4\\vec{ID} = \\vec{0}$. Điểm $I$ luôn tồn tại và cố định do tổng các hệ số $3 - 2 + 1 + 4 = 6 \\ne 0$. \nChèn điểm $I$ vào biểu thức vectơ ban đầu: $3(\\vec{MI}+\\vec{IA}) - 2(\\vec{MI}+\\vec{IB}) + (\\vec{MI}+\\vec{IC}) + 4(\\vec{MI}+\\vec{ID}) = (3-2+1+4)\\vec{MI} + (3\\vec{IA} - 2\\vec{IB} + \\vec{IC} + 4\\vec{ID}) = 6\\vec{MI} + \\vec{0} = 6\\vec{MI}$. \nTheo giả thiết, $|6\\vec{MI}| = 24 \\Leftrightarrow 6MI = 24 \\Leftrightarrow MI = 4$. \nVậy tập hợp các điểm $M$ là mặt cầu tâm $I$, bán kính $R = 4$."
   },
- 
   {
     "grade": "12",
     "chapter": "Vectơ và hệ trục tọa độ trong không gian",
@@ -3973,7 +3970,6 @@
     "correct": "11",
     "explain": "Phương trình chuyển động của thiết bị thứ nhất là $P_1(1 + 2t; t; 2 + t)$. Phương trình chuyển động của thiết bị thứ hai là $P_2(-1 + t; 3 - t; 2t)$. Khoảng cách giữa chúng được tính bởi bình phương $d(t)^2 = P_1 P_2^2$. Ta có vectơ $\\vec{P_1 P_2} = (-2 - t; 3 - 2t; -2 + t)$. Tính bình phương độ dài: $d^2 = (-2 - t)^2 + (3 - 2t)^2 + (-2 + t)^2 = (t^2 + 4t + 4) + (4t^2 - 12t + 9) + (t^2 - 4t + 4) = 6t^2 - 12t + 17$. Xét hàm số $f(t) = 6t^2 - 12t + 17 = 6(t^2 - 2t + 1) + 11 = 6(t - 1)^2 + 11$. Vậy $f(t)$ đạt giá trị nhỏ nhất bằng 11 khi $t = 1$. Bình phương khoảng cách nhỏ nhất bằng 11."
   },
- 
   {
     "grade": "12",
     "chapter": "Vectơ và hệ trục tọa độ trong không gian",
@@ -4109,6 +4105,4 @@
     "correct": "13",
     "explain": "Tia laser phản xạ trên mặt phẳng $(Oxy)$ (tức là mặt phẳng $z=0$). Gọi $E'$ là điểm đối xứng của $E(5; 4; 4)$ qua mặt phẳng $(Oxy)$, ta có $E'(5; 4; -4)$. Do tính chất của tia phản xạ, đường đi thực tế của ánh sáng từ $S$ đến $E$ qua gương bằng khoảng cách thẳng từ $S$ đến $E'$ (tức là $SM + ME = SM + ME' = SE'$). Quãng đường tia sáng đi là $SE' = \\sqrt{(5-1)^2 + (4-1)^2 + (-4-8)^2} = \\sqrt{4^2 + 3^2 + (-12)^2} = \\sqrt{16 + 9 + 144} = \\sqrt{169} = 13$."
   }
-
-
 ]
