@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DVK MATH - Hệ thống luyện đề chuyên sâu</title>
+    <title>DVK MATH - Thầy Dương Văn Kiên</title>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
 
     <style>
-        :root { --primary: #4c6ef5; --success: #40c057; --danger: #fa5252; --warning: #fab005; --bg: #f8f9fa; }
+        :root { --primary: #1a73e8; --success: #34a853; --danger: #ea4335; --warning: #fbbc04; --bg: #f8f9fa; }
         body { font-family: 'Segoe UI', system-ui, sans-serif; margin: 0; background: var(--bg); display: flex; height: 100vh; overflow: hidden; }
         
         /* Màn hình Setup */
@@ -44,13 +44,13 @@
         .ds-btn.selected-t { background: var(--success); color: white; border-color: var(--success); }
         .ds-btn.selected-f { background: var(--danger); color: white; border-color: var(--danger); }
 
-        /* Đồng hồ & Nút điều hướng */
+        /* Điều hướng */
         #timer { font-size: 24px; font-weight: 800; color: var(--danger); position: absolute; top: 30px; right: 40px; }
         .nav-footer { display: flex; justify-content: space-between; margin-top: 30px; }
         .btn { padding: 12px 25px; border-radius: 10px; border: none; cursor: pointer; font-weight: 600; }
         .btn-finish { background: var(--danger); color: white; margin-top: auto; width: 100%; padding: 15px; font-size: 16px; }
 
-        /* Màn hình kết quả & Lời giải */
+        /* Kết quả & Lời giải */
         #result-screen { display: none; padding: 40px; text-align: center; overflow-y: auto; height: 100vh; background: white; width: 100%; }
         .score-big { font-size: 4rem; font-weight: 900; color: var(--primary); margin: 0; }
         .result-table { width: 100%; max-width: 900px; margin: 30px auto; border-collapse: collapse; text-align: left; }
@@ -66,8 +66,8 @@
 
 <div id="setup-screen">
     <div class="setup-card">
-        <h1 style="color: var(--primary); margin: 0;">DVK MATH SEED</h1>
-        <p style="color: #666; margin-bottom: 30px;">Hệ thống luyện đề HS Hạt giống</p>
+        <h1 style="color: var(--primary); margin: 0; font-size: 2.5rem;">DVK MATH</h1>
+        <p style="color: #666; margin-bottom: 30px; font-weight: 500;">Hệ thống luyện đề Toán _ Thầy Dương Văn Kiên</p>
         
         <select id="grade-sel" onchange="updateChapters()">
             <option value="">-- Chọn Khối Lớp --</option>
@@ -89,7 +89,7 @@
 </div>
 
 <div id="sidebar" class="hidden">
-    <h3 style="margin-top: 0;">Tiến trình bài làm</h3>
+    <h3 style="margin-top: 0;">Tiến độ bài làm</h3>
     <div class="q-grid" id="q-grid"></div>
     <button class="btn btn-finish" onclick="confirmFinish()">NỘP BÀI & XEM GIẢI</button>
 </div>
@@ -104,9 +104,9 @@
 </div>
 
 <div id="result-screen">
-    <h1>KẾT QUẢ TỔNG KẾT</h1>
+    <h1 style="color: var(--primary);">KẾT QUẢ TỔNG KẾT</h1>
     <p class="score-big" id="final-score">0.00</p>
-    <p style="color: #666; margin-bottom: 20px;">(Nhấn vào từng câu dưới đây để xem lời giải chi tiết)</p>
+    <p style="color: #666; margin-bottom: 20px;">(Nhấn vào từng câu để xem lời giải chi tiết của Thầy Kiên)</p>
     
     <table class="result-table" id="result-detail">
         <thead>
@@ -146,12 +146,12 @@
     function startQuiz() {
         const grade = document.getElementById('grade-sel').value;
         const chapter = document.getElementById('chapter-sel').value;
-        if(!grade || !chapter || !selectedMinutes) return alert("Vui lòng chọn đủ thông tin!");
+        if(!grade || !chapter || !selectedMinutes) return alert("Vui lòng chọn đầy đủ thông tin!");
         
         const pool = allQuestions.filter(q => q.grade == grade && q.chapter == chapter);
         const shuffle = (arr) => arr.sort(() => 0.5 - Math.random());
 
-        // Ma trận 3:3:2:1:1
+        // Ma trận 3:3:2:1:1 (M1-M2-M3-M4-M5)
         let cfg = { tn1: 4, tn2: 4, ds: 2, tln3: 2, tln4: 1, tln5: 1 }; 
         if(selectedMinutes == 60) cfg = { tn1: 6, tn2: 6, ds: 3, tln3: 3, tln4: 2, tln5: 1 };
         if(selectedMinutes == 90) cfg = { tn1: 8, tn2: 8, ds: 4, tln3: 4, tln4: 2, tln5: 2 };
@@ -166,7 +166,7 @@
         const tln5 = pick('TLN', 5, cfg.tln5);
 
         examSet = [...tn1, ...tn2, ...ds, ...tln3, ...tln4, ...tln5];
-        if(examSet.length === 0) return alert("Kho dữ bộ câu hỏi chưa đủ để tạo đề theo ma trận này!");
+        if(examSet.length === 0) return alert("Kho dữ liệu chưa đủ câu hỏi để tạo đề!");
         
         answers = new Array(examSet.length).fill(null);
         document.getElementById('setup-screen').style.display = 'none';
@@ -259,7 +259,7 @@
                             <strong>Câu hỏi:</strong> ${q.q}<br>
                             <strong style="color:var(--success)">Đáp án đúng:</strong> ${getCorrectStr(q)}<br>
                             <hr style="border:0; border-top:1px solid #ddd; margin:10px 0;">
-                            <strong>Lời giải chi tiết:</strong> ${q.explain || "Giáo viên chưa cập nhật lời giải cho câu này."}
+                            <strong>Hướng dẫn giải:</strong> ${q.explain || "Thầy Kiên chưa cập nhật lời giải cho câu này."}
                         </div>
                     </td>
                 </tr>`;
