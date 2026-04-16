@@ -63,14 +63,6 @@
     "q": "Gieo một con xúc xắc cân đối. Tính xác suất để mặt xuất hiện có số chấm là số lẻ (nhập dưới dạng số thập phân).",
     "correct": "0.5"
   },
-  {
-    "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
-    "type": "TN",
-    "q": "Cho hàm số $y=f(x)$ có $f'(x) = x-1$. Hàm số đồng biến trên khoảng nào?",
-    "choices": ["A. $(1; +\\infty)$", "B. $(-\\infty; 1)$", "C. $\\mathbb{R}$", "D. $(0; +\\infty)$"],
-    "correct": 0
-  },
     {
     "grade": "12",
     "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
@@ -756,28 +748,28 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TLN",
     "q": "Bỏ qua sức cản không khí, độ cao (mét) của một vật được phóng thẳng đứng lên trên được cho bởi công thức $h(t) = 2 + 24,5t - 4,9t^2$, với $t$ (giây) là thời gian. Tại thời điểm $t$ bằng bao nhiêu thì vật đạt độ cao lớn nhất?",
     "correct": "2.5"
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TLN",
     "q": "Với công thức độ cao $h(t) = 2 + 24,5t - 4,9t^2$, hãy tính độ cao lớn nhất (theo mét) mà vật đó đạt được.",
     "correct": "32.625"
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TLN",
     "q": "Hàm doanh thu từ tiền bán vé của một sân vận động được mô hình hóa bởi hàm số $R(p) = -300p^2 + 57000p$, trong đó $p$ (nghìn đồng) là giá bán mỗi vé. Cần đặt giá vé $p$ bằng bao nhiêu nghìn đồng để doanh thu lớn nhất?",
     "correct": "95"
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TLN",
     "q": "Hàm chi phí biên để sản xuất $x$ đơn vị hàng hóa là $C'(x) = 300 - 5x + 0,375x^2$ (nghìn đồng). Tính chi phí biên tại $x = 200$.",
     "correct": "14300"
@@ -812,7 +804,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "type": "TLN",
     "q": "Lợi nhuận của một công ty khi sản xuất $x$ sản phẩm được cho bởi $P(x) = -0,3x^3 + 36x^2 + 1800x - 48000$. Công ty cần sản xuất bao nhiêu sản phẩm để lợi nhuận đạt mức lớn nhất?",
     "correct": "100"
