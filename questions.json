@@ -2813,6 +2813,309 @@
     ],
     "correct": 0,
     "explain": "Do điểm $M$ nằm trên đoạn thẳng $SA$ nên hai vectơ $\\vec{SM}$ và $\\vec{SA}$ cùng hướng. Mặt khác, vì $SM = 2AM$ nên $SA = SM + AM = SM + \\frac{1}{2}SM = \\frac{3}{2}SM$, suy ra độ dài $SM = \\frac{2}{3}SA$. Từ đó ta có đẳng thức vectơ $\\vec{SM} = \\frac{2}{3}\\vec{SA}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "DS",
+    "q": "Cho hình hộp $ABCD.A'B'C'D'$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "$\\vec{AB} + \\vec{AD} + \\vec{AA'} = \\vec{AC'}$.",
+      "b": "$\\vec{AB} + \\vec{B'C'} + \\vec{DD'} = \\vec{AC'}$.",
+      "c": "$\\vec{AC'} + \\vec{CA} + \\vec{D'C'} = \\vec{D'D}$.",
+      "d": "Nếu hình hộp là hình lập phương thì $\\vec{AC'} \\cdot \\vec{BD} = 0$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    },
+    "explain": "a) (Mức 1) Đúng theo quy tắc hình hộp.\nb) (Mức 2) Đúng vì $\\vec{B'C'} = \\vec{AD}$ và $\\vec{DD'} = \\vec{AA'}$, tổng trở thành $\\vec{AB} + \\vec{AD} + \\vec{AA'} = \\vec{AC'}$.\nc) (Mức 3) Sai. $\\vec{AC'} + \\vec{CA} = \\vec{CC'}$, tiếp tục cộng $\\vec{CC'} + \\vec{D'C'} \\ne \\vec{D'D}$.\nd) (Mức 4) Đúng. $\\vec{AC'} \\cdot \\vec{BD} = (\\vec{AC} + \\vec{CC'}) \\cdot \\vec{BD} = \\vec{AC} \\cdot \\vec{BD} + \\vec{CC'} \\cdot \\vec{BD} = 0 + 0 = 0$ (vì hai đường chéo hình vuông vuông góc và cạnh bên vuông góc với mặt đáy)."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "DS",
+    "q": "Cho tứ diện $ABCD$. Gọi $M, N$ lần lượt là trung điểm của $AB$ và $CD$, $G$ là trọng tâm tứ diện. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "$\\vec{MA} + \\vec{MB} = \\vec{0}$.",
+      "b": "$\\vec{MN} = \\frac{1}{2}(\\vec{AD} + \\vec{BC})$.",
+      "c": "$\\vec{GA} + \\vec{GB} + \\vec{GC} + \\vec{GD} = \\vec{0}$.",
+      "d": "Nếu $ABCD$ là tứ diện đều cạnh $a$ thì $\\vec{AB} \\cdot \\vec{CD} = \\frac{a^2}{2}$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) (Mức 1) Đúng do $M$ là trung điểm của $AB$.\nb) (Mức 2) Đúng. Áp dụng phân tích $\\vec{MN} = \\vec{MA} + \\vec{AD} + \\vec{DN}$ và $\\vec{MN} = \\vec{MB} + \\vec{BC} + \\vec{CN}$, cộng lại ta được $2\\vec{MN} = \\vec{AD} + \\vec{BC}$.\nc) (Mức 3) Đúng, đây là tính chất trọng tâm của tứ diện.\nd) (Mức 4) Sai. Trong tứ diện đều, các cặp cạnh đối diện vuông góc với nhau, do đó $\\vec{AB} \\cdot \\vec{CD} = 0$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "DS",
+    "q": "Cho hình lăng trụ tam giác $ABC.A'B'C'$. Lấy điểm $M$ sao cho $\\vec{AM} = \\frac{1}{2}\\vec{A'B'}$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "$\\vec{AA'} + \\vec{A'B'} = \\vec{AB'}$.",
+      "b": "Hai vectơ $\\vec{AB}$ và $\\vec{A'B'}$ cùng hướng.",
+      "c": "Hai vectơ $\\vec{AM}$ và $\\vec{A'B'}$ là hai vectơ cùng phương.",
+      "d": "$\\vec{CB} + \\vec{CC'} + \\vec{A'M} = \\vec{C'B'}$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) (Mức 1) Đúng theo quy tắc ba điểm.\nb) (Mức 2) Đúng do tính chất của lăng trụ, $AB // A'B'$ và cùng chiều.\nc) (Mức 3) Đúng vì $\\vec{AM}$ được biểu diễn tỉ lệ thuận với $\\vec{A'B'}$.\nd) (Mức 4) Sai. Ta có $\\vec{CB} + \\vec{CC'} = \\vec{CB'}$. Sau đó $\\vec{CB'} + \\vec{A'M} = \\vec{C'A'} + \\frac{1}{2}\\vec{A'B'}$, không thể bằng $\\vec{C'B'}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "DS",
+    "q": "Cho tứ diện đều $ABCD$ cạnh $a$. Lấy các điểm $M, N$ thỏa mãn $\\vec{AM} = \\frac{1}{3}\\vec{AB}$ và $\\vec{AN} = \\frac{1}{3}\\vec{AD}$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "$\\vec{AB} \\cdot \\vec{AC} = \\frac{a^2}{2}$.",
+      "b": "$\\vec{MN} = \\frac{1}{3}\\vec{BD}$.",
+      "c": "$\\vec{CD} \\cdot \\vec{MN} = 0$.",
+      "d": "Độ dài đoạn thẳng $CM$ bằng $\\frac{a\\sqrt{7}}{3}$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    },
+    "explain": "a) (Mức 1) Đúng. $\\vec{AB} \\cdot \\vec{AC} = a \\cdot a \\cdot \\cos 60^\\circ = \\frac{a^2}{2}$.\nb) (Mức 2) Đúng. $\\vec{MN} = \\vec{AN} - \\vec{AM} = \\frac{1}{3}\\vec{AD} - \\frac{1}{3}\\vec{AB} = \\frac{1}{3}(\\vec{AD} - \\vec{AB}) = \\frac{1}{3}\\vec{BD}$.\nc) (Mức 3) Sai. $\\vec{CD} \\cdot \\vec{MN} = \\vec{CD} \\cdot \\frac{1}{3}\\vec{BD} = \\frac{1}{3} a \\cdot a \\cdot \\cos 120^\\circ = -\\frac{a^2}{6} \\ne 0$.\nd) (Mức 4) Đúng. Áp dụng định lý hàm cosin trong $\\Delta AMC$ với góc $\\widehat{MAC} = 60^\\circ$, ta có $CM^2 = a^2 + (a/3)^2 - 2a(a/3)\\cos 60^\\circ = \\frac{7a^2}{9} \\Rightarrow CM = \\frac{a\\sqrt{7}}{3}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "DS",
+    "q": "Cho hình chóp $S.ABCD$ có đáy $ABCD$ là hình bình hành tâm $O$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "$\\vec{OA} + \\vec{OC} = \\vec{0}$.",
+      "b": "$\\vec{SA} + \\vec{SC} = 2\\vec{SO}$.",
+      "c": "$\\vec{SA} + \\vec{SB} + \\vec{SC} + \\vec{SD} = \\vec{0}$.",
+      "d": "Đặt $\\vec{SA} = \\vec{a}, \\vec{SB} = \\vec{b}, \\vec{SC} = \\vec{c}$, ta có $\\vec{SD} = \\vec{a} - \\vec{b} + \\vec{c}$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    },
+    "explain": "a) (Mức 1) Đúng vì $O$ là trung điểm của $AC$.\nb) (Mức 2) Đúng theo quy tắc trung điểm trong không gian.\nc) (Mức 3) Sai. $\\vec{SA} + \\vec{SB} + \\vec{SC} + \\vec{SD} = 2\\vec{SO} + 2\\vec{SO} = 4\\vec{SO}$.\nd) (Mức 4) Đúng. Vì $\\vec{SA} + \\vec{SC} = \\vec{SB} + \\vec{SD} \\Rightarrow \\vec{SD} = \\vec{SA} - \\vec{SB} + \\vec{SC} = \\vec{a} - \\vec{b} + \\vec{c}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "DS",
+    "q": "Trong không gian $Oxyz$, cho điểm $M$ thoả mãn $\\vec{OM} = 2\\vec{i} - 3\\vec{j} + 4\\vec{k}$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Tọa độ của điểm $M$ là $(2; -3; 4)$.",
+      "b": "Hình chiếu vuông góc của $M$ trên mặt phẳng $(Oxy)$ là điểm $(2; -3; 0)$.",
+      "c": "Điểm đối xứng của $M$ qua mặt phẳng $(Oxz)$ là $M_1(2; 3; 4)$.",
+      "d": "Khoảng cách từ điểm $M$ đến trục $Oy$ bằng $5$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) (Mức 1) Đúng, tọa độ của $M$ là hệ số tương ứng của các vectơ đơn vị $\\vec{i}, \\vec{j}, \\vec{k}$.\nb) (Mức 2) Đúng. Chiếu lên $(Oxy)$ thì cao độ $z=0$, hoành độ và tung độ giữ nguyên.\nc) (Mức 3) Đúng. Đối xứng qua $(Oxz)$ thì tung độ $y$ đổi dấu, các tọa độ khác giữ nguyên: $M_1(2; 3; 4)$.\nd) (Mức 4) Sai. Khoảng cách từ $M$ đến trục $Oy$ bằng $\\sqrt{x^2 + z^2} = \\sqrt{2^2 + 4^2} = \\sqrt{20} = 2\\sqrt{5}$. Khoảng cách đến $Ox$ mới bằng $5$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "DS",
+    "q": "Trong không gian $Oxyz$, cho vectơ $\\vec{u} = -3\\vec{i} + \\vec{j}$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Tọa độ của vectơ $\\vec{u}$ là $(-3; 1; 0)$.",
+      "b": "Vectơ $\\vec{u}$ nằm trong mặt phẳng $(Oxy)$.",
+      "c": "Nếu điểm $N$ thoả mãn $\\vec{ON} = \\vec{u}$ thì $N$ thuộc mặt phẳng $(Oxz)$.",
+      "d": "Hình chiếu vuông góc của điểm $N$ (với $\\vec{ON} = \\vec{u}$) lên trục $Oy$ là điểm $K(0; 1; 0)$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    },
+    "explain": "a) (Mức 1) Đúng. $\\vec{u} = -3\\vec{i} + 1\\vec{j} + 0\\vec{k} \\Rightarrow \\vec{u} = (-3; 1; 0)$.\nb) (Mức 2) Đúng. Vectơ có cao độ bằng 0 luôn nằm trong hoặc song song với mặt phẳng $(Oxy)$.\nc) (Mức 3) Sai. $N(-3; 1; 0)$, vì tung độ $y = 1 \\ne 0$ nên $N$ không nằm trong mặt phẳng $(Oxz)$.\nd) (Mức 4) Đúng. Hình chiếu của $N(-3; 1; 0)$ lên trục $Oy$ là điểm $K(0; 1; 0)$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "DS",
+    "q": "Cho hệ trục toạ độ $Oxyz$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Vectơ đơn vị $\\vec{i}$ trên trục $Ox$ có toạ độ là $(1; 0; 0)$.",
+      "b": "Mặt phẳng $(Oxy)$ có phương trình là $z = 0$.",
+      "c": "Điểm $A(0; -2; 0)$ nằm trên trục $Oz$.",
+      "d": "Tập hợp các điểm $M(x; y; z)$ thỏa mãn $x^2 + y^2 = 0$ là trục $Oz$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    },
+    "explain": "a) (Mức 1) Đúng theo định nghĩa.\nb) (Mức 2) Đúng. Mọi điểm nằm trên $(Oxy)$ đều có cao độ bằng 0.\nc) (Mức 3) Sai. Điểm $A$ có tung độ khác 0, hoành độ và cao độ bằng 0 nên $A$ nằm trên trục $Oy$, không phải $Oz$.\nd) (Mức 4) Đúng. $x^2 + y^2 = 0 \\Leftrightarrow x=0$ và $y=0$. Tập hợp các điểm có toạ độ $(0; 0; z)$ chính là trục $Oz$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "DS",
+    "q": "Trong không gian $Oxyz$, cho điểm $A(2; 4; -5)$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Hình chiếu vuông góc của $A$ lên mặt phẳng $(Oyz)$ là $A_1(0; 4; -5)$.",
+      "b": "Điểm đối xứng của $A$ qua gốc tọa độ $O$ là $A_2(-2; -4; 5)$.",
+      "c": "Hình chiếu vuông góc của $A$ lên trục $Oz$ là $A_3(0; 0; -5)$.",
+      "d": "Điểm đối xứng của $A$ qua trục $Ox$ là $A_4(2; 4; 5)$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) (Mức 1) Đúng. Chiếu lên $(Oyz)$ thì hoành độ $x=0$.\nb) (Mức 2) Đúng. Đối xứng qua $O(0;0;0)$ thì đổi dấu tất cả tọa độ.\nc) (Mức 3) Đúng. Chiếu lên trục $Oz$ thì chỉ giữ lại cao độ, hoành độ và tung độ bằng 0.\nd) (Mức 4) Sai. Điểm đối xứng qua trục $Ox$ giữ nguyên hoành độ, đổi dấu tung độ và cao độ. Tọa độ đúng là $(2; -4; 5)$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "DS",
+    "q": "Cho hình hộp chữ nhật $OABC.O'A'B'C'$ có đỉnh $O$ trùng với gốc tọa độ. Biết $A \\in Ox, C \\in Oy, O' \\in Oz$ và $OA = 2, OC = 3, OO' = 4$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Tọa độ điểm $A$ là $(2; 0; 0)$.",
+      "b": "Tọa độ điểm $B$ là $(2; 3; 0)$.",
+      "c": "Tọa độ điểm $B'$ là $(2; 3; 4)$.",
+      "d": "Tọa độ điểm $C'$ là $(0; 3; 0)$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) (Mức 1) Đúng. Vì $A \\in Ox$ và $OA=2$ (phía dương) nên $A(2;0;0)$.\nb) (Mức 2) Đúng. Hình chữ nhật đáy $OABC$ nằm trong mp $(Oxy)$ nên $B$ có hoành độ bằng $x_A=2$ và tung độ bằng $y_C=3$.\nc) (Mức 3) Đúng. $B'$ nằm ngay trên $B$ với cao độ $z=OO'=4$.\nd) (Mức 4) Sai. $C'$ nằm trên $C$ (thuộc trục $Oy$) với cao độ 4, nên tọa độ $C'$ là $(0; 3; 4)$, không phải $(0; 3; 0)$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "DS",
+    "q": "Trong không gian $Oxyz$, cho hai điểm $A(1; 2; -1)$ và $B(3; -2; 5)$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Tọa độ trung điểm $M$ của đoạn thẳng $AB$ là $(2; 0; 2)$.",
+      "b": "Tọa độ vectơ $\\vec{AB}$ là $(2; -4; 6)$.",
+      "c": "Độ dài đoạn thẳng $AB$ bằng $2\\sqrt{14}$.",
+      "d": "Điểm $C$ trên trục $Ox$ sao cho tam giác $ABC$ vuông tại $C$ có tọa độ là $(4; 0; 0)$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) (Mức 1) Đúng. $M = \\left(\\frac{1+3}{2}; \\frac{2-2}{2}; \\frac{-1+5}{2}\\right) = (2; 0; 2)$.\nb) (Mức 2) Đúng. $\\vec{AB} = (3-1; -2-2; 5-(-1)) = (2; -4; 6)$.\nc) (Mức 3) Đúng. $AB = \\sqrt{2^2 + (-4)^2 + 6^2} = \\sqrt{4+16+36} = \\sqrt{56} = 2\\sqrt{14}$.\nd) (Mức 4) Sai. Nếu $C(x; 0; 0) \\in Ox$, tam giác vuông tại $C \\Leftrightarrow \\vec{CA} \\cdot \\vec{CB} = 0$. $\\vec{CA} = (1-x; 2; -1)$, $\\vec{CB} = (3-x; -2; 5)$. Suy ra $(1-x)(3-x) - 4 - 5 = 0 \\Leftrightarrow x^2 - 4x - 6 = 0 \\Leftrightarrow x = 2 \\pm \\sqrt{10}$. Điểm $(4;0;0)$ không thỏa mãn."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "DS",
+    "q": "Trong không gian $Oxyz$, cho hai vectơ $\\vec{u} = (2; -1; 2)$ và $\\vec{v} = (1; 2; -2)$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Độ dài của vectơ $\\vec{u}$ là $|\\vec{u}| = 3$.",
+      "b": "Tích vô hướng của $\\vec{u}$ và $\\vec{v}$ là $\\vec{u} \\cdot \\vec{v} = -4$.",
+      "c": "Hai vectơ $\\vec{u}$ và $\\vec{v}$ vuông góc với nhau.",
+      "d": "Côsin góc giữa hai vectơ $\\vec{u}$ và $\\vec{v}$ bằng $-\\frac{4}{9}$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    },
+    "explain": "a) (Mức 1) Đúng. $|\\vec{u}| = \\sqrt{2^2 + (-1)^2 + 2^2} = \\sqrt{9} = 3$.\nb) (Mức 2) Đúng. $\\vec{u} \\cdot \\vec{v} = 2(1) + (-1)(2) + 2(-2) = -4$.\nc) (Mức 3) Sai. Hai vectơ vuông góc khi tích vô hướng bằng 0, ở đây tích vô hướng bằng -4.\nd) (Mức 4) Đúng. $|\\vec{v}| = \\sqrt{1^2 + 2^2 + (-2)^2} = 3$. Côsin góc là $\\frac{\\vec{u} \\cdot \\vec{v}}{|\\vec{u}| \\cdot |\\vec{v}|} = \\frac{-4}{3 \\cdot 3} = -\\frac{4}{9}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "DS",
+    "q": "Trong không gian $Oxyz$, cho tam giác $ABC$ có $A(1; -2; 3)$, $B(0; 4; 1)$, $C(2; 1; 5)$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Tọa độ trọng tâm $G$ của tam giác $ABC$ là $(1; 1; 3)$.",
+      "b": "Tọa độ vectơ $\\vec{AB} = (-1; 6; -2)$.",
+      "c": "Tam giác $ABC$ là tam giác cân tại $A$.",
+      "d": "Tọa độ điểm $D$ để tứ giác $ABCD$ là hình bình hành là $D(3; -5; 7)$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    },
+    "explain": "a) (Mức 1) Đúng. $G\\left( \\frac{1+0+2}{3}; \\frac{-2+4+1}{3}; \\frac{3+1+5}{3} \\right) = (1; 1; 3)$.\nb) (Mức 2) Đúng. $\\vec{AB} = (0-1; 4-(-2); 1-3) = (-1; 6; -2)$.\nc) (Mức 3) Sai. Ta có $\\vec{AC} = (1; 3; 2) \\Rightarrow AC = \\sqrt{1^2+3^2+2^2} = \\sqrt{14}$. Trong khi $AB = \\sqrt{(-1)^2+6^2+(-2)^2} = \\sqrt{41}$. Độ dài $AB \\ne AC$.\nd) (Mức 4) Đúng. Để $ABCD$ là hình bình hành thì $\\vec{AD} = \\vec{BC}$. $\\vec{BC} = (2; -3; 4)$. Gọi $D(x;y;z)$, ta có $(x-1; y+2; z-3) = (2; -3; 4) \\Rightarrow x=3, y=-5, z=7$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "DS",
+    "q": "Cho ba vectơ $\\vec{a} = (1; m; 2)$, $\\vec{b} = (m-1; 2; 1)$, $\\vec{c} = (1; 1; 1)$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Khi $m = 1$, ta có $\\vec{a} = (1; 1; 2)$.",
+      "b": "Khi $m = 3$, tích vô hướng $\\vec{a} \\cdot \\vec{b} = 10$.",
+      "c": "Vectơ $\\vec{a}$ vuông góc với $\\vec{b}$ khi $m = -1$.",
+      "d": "Tồn tại đúng hai giá trị của $m$ để $|\\vec{a}| = \\sqrt{14}$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    },
+    "explain": "a) (Mức 1) Đúng. Thay trực tiếp $m=1$ vào $\\vec{a}$.\nb) (Mức 2) Đúng. $m=3 \\Rightarrow \\vec{a}=(1;3;2), \\vec{b}=(2;2;1)$. $\\vec{a} \\cdot \\vec{b} = 1\\times 2 + 3\\times 2 + 2\\times 1 = 10$.\nc) (Mức 3) Sai. $\\vec{a} \\cdot \\vec{b} = 1(m-1) + 2m + 2 = 3m+1$. Khi $m=-1$, $\\vec{a} \\cdot \\vec{b} = -2 \\ne 0$.\nd) (Mức 4) Đúng. $|\\vec{a}| = \\sqrt{1^2+m^2+2^2} = \\sqrt{m^2+5}$. Đặt bằng $\\sqrt{14} \\Rightarrow m^2+5=14 \\Rightarrow m^2=9 \\Rightarrow m=\\pm 3$. Có đúng 2 giá trị."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "DS",
+    "q": "Trong không gian $Oxyz$, cho hai điểm $A(1; 2; -1)$, $B(2; -1; 3)$. Lấy điểm $M(x; y; 0)$ trên mặt phẳng $(Oxy)$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Độ dài đoạn thẳng $AB$ là $\\sqrt{26}$.",
+      "b": "Tọa độ vectơ $\\vec{MA} = (1-x; 2-y; -1)$.",
+      "c": "Biểu thức $P = MA^2 + MB^2$ đạt giá trị nhỏ nhất khi $M(1,5; 0,5; 0)$.",
+      "d": "Không tồn tại điểm $M \\in (Oxy)$ nào sao cho ba điểm $A, B, M$ thẳng hàng."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) (Mức 1) Đúng. $\\vec{AB} = (1; -3; 4) \\Rightarrow AB = \\sqrt{1^2+(-3)^2+4^2} = \\sqrt{26}$.\nb) (Mức 2) Đúng. Theo công thức tọa độ vectơ, $\\vec{MA} = (x_A - x_M; y_A - y_M; z_A - z_M) = (1-x; 2-y; -1-0)$.\nc) (Mức 3) Đúng. Gọi $I$ là trung điểm $AB \\Rightarrow I(1.5; 0.5; 1)$. Ta có $P = MA^2 + MB^2 = 2MI^2 + AB^2/2$. $P$ nhỏ nhất khi $MI$ ngắn nhất, tức $M$ là hình chiếu của $I$ lên $(Oxy) \\Rightarrow M(1.5; 0.5; 0)$.\nd) (Mức 4) Sai. Ba điểm thẳng hàng khi $\\vec{AM} = k\\vec{AB} \\Leftrightarrow (x-1; y-2; 1) = k(1; -3; 4) \\Rightarrow k=1/4$. Từ đó suy ra $x = 5/4, y = 5/4$. Vậy tồn tại chính xác điểm $M(5/4; 5/4; 0)$ thuộc mặt phẳng $(Oxy)$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "TLN",
+    "level": 3,
+    "q": "Cho hình hộp $ABCD.A'B'C'D'$ có các cạnh $AB=3, AD=4, AA'=12$ và đôi một vuông góc với nhau. Tính độ dài của vectơ tổng $\\vec{u} = \\vec{AB} + \\vec{AD} + \\vec{AA'}$.",
+    "correct": "13",
+    "explain": "Theo quy tắc hình hộp, $\\vec{AB} + \\vec{AD} + \\vec{AA'} = \\vec{AC'}$. Vì các cạnh đôi một vuông góc nên hình hộp này là hình hộp chữ nhật. Độ dài đường chéo $AC' = \\sqrt{AB^2 + AD^2 + AA'^2} = \\sqrt{3^2 + 4^2 + 12^2} = \\sqrt{9 + 16 + 144} = \\sqrt{169} = 13$. Do đó, độ dài của vectơ tổng là $13$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
+    "type": "TLN",
+    "level": 3,
+    "q": "Cho tứ diện đều $ABCD$ có độ dài cạnh bằng $6$. Tính giá trị của tích vô hướng $\\vec{AB} \\cdot \\vec{AC}$.",
+    "correct": "18",
+    "explain": "Do $ABCD$ là tứ diện đều nên các mặt là tam giác đều. Tam giác $ABC$ đều nên góc giữa hai vectơ $\\vec{AB}$ và $\\vec{AC}$ là $\\widehat{BAC} = 60^\\circ$. Ta có: $\\vec{AB} \\cdot \\vec{AC} = |\\vec{AB}| \\cdot |\\vec{AC}| \\cdot \\cos 60^\\circ = 6 \\cdot 6 \\cdot \\frac{1}{2} = 18$."
   }
 
 
