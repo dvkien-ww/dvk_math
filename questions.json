@@ -2614,7 +2614,7 @@
       "A. $\\vec{a} \\cdot \\vec{b} = |\\vec{a}| \\cdot |\\vec{b}| \\cdot \\sin(\\vec{a}, \\vec{b})$.",
       "B. $\\vec{a} \\cdot \\vec{b} = |\\vec{a}| \\cdot |\\vec{b}| \\cdot \\cos(\\vec{a}, \\vec{b})$.",
       "C. $\\vec{a} \\cdot \\vec{b} = |\\vec{a} \\cdot \\vec{b}| \\cdot \\cos(\\vec{a}, \\vec{b})$.",
-      "D. $\\vec{a} \\cdot \\vec{b} = |\\vec{a}| + |\\vec{b}|$."
+      "D. $\\vec{a} \\cdot \\vec{b} = |\\vec{a}| + |\\vec{b}|$. "
     ],
     "correct": 1,
     "explain": "Định nghĩa tích vô hướng của hai vectơ trong không gian: $\\vec{a} \\cdot \\vec{b} = |\\vec{a}| \\cdot |\\vec{b}| \\cdot \\cos(\\vec{a}, \\vec{b})$."
@@ -2677,7 +2677,7 @@
       "D. $\\vec{A'C}$."
     ],
     "correct": 1,
-    "explain": "Trong hình hộp, ta có $\\vec{B'C'} = \\vec{BC}$ và $\\vec{DD'} = \\vec{CC'}$. Do đó: $\\vec{AB} + \\vec{B'C'} + \\vec{DD'} = \\vec{AB} + \\vec{BC} + \\vec{CC'}$. Áp dụng quy tắc tam giác liên tiếp, ta được $\\vec{AC} + \\vec{CC'} = \\vec{AC'}$."
+    "explain": "Trong hình hộp, ta có $\\vec{B'C'} = \\vec{BC}$ và $\\vec{DD'} = \\vec{CC'}$. Do đó: $\\vec{AB} + \\vec{BC} + \\vec{CC'} = \\vec{AC'}$."
   },
   {
     "grade": "12",
