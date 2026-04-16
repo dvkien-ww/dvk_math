@@ -1,294 +1,243 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-<meta charset="UTF-8">
-<title>DVK Math</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ Thống Ôn Tập Toán - DVK Math</title>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary: #4c6ef5;
+            --success: #69db7c;
+            --bg: #f5f6fa;
+        }
+        body { font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: var(--bg); display: flex; height: 100vh; overflow: hidden; }
+        
+        /* Cấu hình màn hình setup */
+        #setup-screen { position: fixed; inset: 0; background: white; z-index: 100; display: flex; align-items: center; justify-content: center; }
+        .setup-card { background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 400px; text-align: center; }
+        select, button { width: 100%; padding: 12px; margin: 10px 0; border-radius: 8px; border: 1px solid #ddd; font-size: 16px; }
+        .time-group { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+        .btn-time { background: var(--primary); color: white; border: none; cursor: pointer; font-weight: bold; }
+        .btn-time:hover { opacity: 0.9; }
 
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-<style>
-body {
-  font-family: "Segoe UI", Arial;
-  margin: 0;
-  display: flex;
-  background: #f5f6fa;
-}
-
-/* SIDEBAR */
-#sidebar {
-  width: 180px;
-  background: white;
-  border-right: 1px solid #ddd;
-  padding: 10px;
-}
-
-.q-box {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 8px;
-}
-
-.q-num {
-  padding: 8px;
-  text-align: center;
-  border-radius: 6px;
-  background: #eee;
-  cursor: pointer;
-}
-
-.q-num.answered {
-  background: #69db7c;
-  color: white;
-}
-
-.q-num.current {
-  border: 2px solid #4c6ef5;
-}
-
-/* MAIN */
-#main {
-  flex: 1;
-  padding: 20px;
-}
-
-.section {
-  background: white;
-  border-radius: 12px;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.section-title {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-/* TN */
-.tn-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-.tn-option {
-  display: flex;
-  align-items: center;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 12px;
-  cursor: pointer;
-}
-
-.tn-option.selected {
-  border: 2px solid #4c6ef5;
-  background: #e7edff;
-}
-
-.radio {
-  width: 16px;
-  height: 16px;
-  border: 2px solid #888;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.tn-option.selected .radio {
-  border: 5px solid #4c6ef5;
-}
-
-/* DS */
-.ds-item {
-  display: flex;
-  justify-content: space-between;
-  background: #fafafa;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 8px 0;
-}
-
-.ds-buttons button {
-  margin-left: 5px;
-}
-
-.selected-btn {
-  background: #4c6ef5;
-  color: white;
-}
-
-/* NAV */
-.nav button {
-  padding: 10px 15px;
-  margin-right: 10px;
-  background: #4c6ef5;
-  color: white;
-  border: none;
-  border-radius: 8px;
-}
-</style>
+        /* Giao diện làm bài */
+        #sidebar { width: 220px; background: white; border-right: 1px solid #ddd; padding: 15px; overflow-y: auto; }
+        #main { flex: 1; padding: 30px; overflow-y: auto; position: relative; }
+        .q-box { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 20px; }
+        .q-num { padding: 10px; text-align: center; background: #eee; border-radius: 6px; cursor: pointer; transition: 0.2s; }
+        .q-num.answered { background: var(--success); color: white; }
+        .q-num.current { border: 2px solid var(--primary); font-weight: bold; }
+        
+        .question-card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .options { margin-top: 15px; }
+        .option-item { display: block; padding: 12px; border: 1px solid #eee; margin-bottom: 8px; border-radius: 8px; cursor: pointer; }
+        .option-item:hover { background: #f8f9fa; }
+        .option-item input { margin-right: 10px; }
+        
+        #timer { font-size: 20px; font-weight: bold; color: #e03131; margin-bottom: 20px; text-align: right; }
+        .nav-btns { display: flex; justify-content: space-between; margin-top: 20px; }
+        .btn { padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; }
+        .btn-prev { background: #dee2e6; }
+        .btn-next { background: var(--primary); color: white; }
+        .btn-submit { background: #fa5252; color: white; width: 100%; margin-top: 20px; }
+        
+        .hidden { display: none !important; }
+    </style>
 </head>
-
 <body>
 
+<div id="setup-screen">
+    <div class="setup-card">
+        <h2>DVK MATH - LUYỆN THI</h2>
+        <p>Chọn cấu hình bài kiểm tra</p>
+        
+        <select id="grade-select" onchange="loadChapters()">
+            <option value="">-- Chọn Khối Lớp --</option>
+            <option value="10">Lớp 10</option>
+            <option value="11">Lớp 11</option>
+            <option value="12">Lớp 12</option>
+        </select>
+
+        <select id="chapter-select">
+            <option value="">-- Chọn Chương --</option>
+        </select>
+
+        <p style="margin-top:20px; font-weight:bold">Chọn thời gian làm bài:</p>
+        <div class="time-group">
+            <button class="btn-time" onclick="initQuiz(45)">45'</button>
+            <button class="btn-time" onclick="initQuiz(60)">60'</button>
+            <button class="btn-time" onclick="initQuiz(90)">90'</button>
+        </div>
+        <small>(Hệ thống sẽ tự trộn câu hỏi theo tỉ lệ cấu trúc)</small>
+    </div>
+</div>
+
 <div id="sidebar">
-  <h3>Câu hỏi</h3>
-  <div class="q-box" id="qbox"></div>
+    <h3>Câu hỏi</h3>
+    <div id="qbox" class="q-box"></div>
+    <button class="btn btn-submit" onclick="finishQuiz()">NỘP BÀI</button>
 </div>
 
 <div id="main">
-  <h3 id="timer">Time: 600</h3>
-  <div id="exam"></div>
-
-  <div class="nav">
-    <button onclick="prev()">←</button>
-    <button onclick="next()">→</button>
-    <button onclick="submitQuiz()">Nộp bài</button>
-  </div>
+    <div id="timer">00:00</div>
+    <div id="quiz-container">
+        <div id="question-display" class="question-card">
+            </div>
+        <div class="nav-btns">
+            <button class="btn btn-prev" onclick="changeQ(-1)">Câu trước</button>
+            <button class="btn btn-next" onclick="changeQ(1)">Câu sau</button>
+        </div>
+    </div>
 </div>
 
 <script>
-let questions=[], answers=[], current=0;
+let allData = [];
+let currentQuestions = [];
+let userAnswers = [];
+let currentIndex = 0;
+let timeLeft = 0;
+let timerInterval;
 
-// LOAD
-fetch("questions.json")
-.then(r=>r.json())
-.then(data=>{
-  let TN=data.filter(q=>q.type==="TN");
-  let DS=data.filter(q=>q.type==="DS");
-  let TLN=data.filter(q=>q.type==="TLN");
-
-  TN.sort(()=>Math.random()-0.5);
-  DS.sort(()=>Math.random()-0.5);
-  TLN.sort(()=>Math.random()-0.5);
-
-  TN=TN.slice(0,12);
-  DS=DS.slice(0,2);
-  TLN=TLN.slice(0,4);
-
-  questions=[...TN,...DS,...TLN];
-  questions.sort(()=>Math.random()-0.5);
-
-  answers=new Array(questions.length).fill(null);
-
-  loadQuestion();
-});
-
-// TIMER
-let time=600;
-setInterval(()=>{
-  time--;
-  document.getElementById("timer").innerText="Time: "+time;
-  if(time<=0) submitQuiz();
-},1000);
-
-// LOAD QUESTION
-function loadQuestion(){
-  const q=questions[current];
-  let html="";
-
-  if(q.type==="TN"){
-    html+=`<div class="section">
-    <div class="section-title">Phần I</div>
-    <b>Câu ${current+1}:</b> ${q.q}
-    <div class="tn-grid">`;
-
-    q.choices.forEach((c,i)=>{
-      let sel=answers[current]===i?"selected":"";
-      html+=`<div class="tn-option ${sel}" onclick="selectTN(${i})">
-        <div class="radio"></div>${c}</div>`;
+// 1. Tải dữ liệu ban đầu
+fetch('questions.json')
+    .then(res => res.json())
+    .then(data => {
+        allData = data;
     });
 
-    html+=`</div></div>`;
-  }
-
-  if(q.type==="DS"){
-    html+=`<div class="section">
-    <div class="section-title">Phần II</div>
-    <b>Câu ${current+1}:</b> ${q.q}`;
-
-    ["a","b","c","d"].forEach(k=>{
-      let val=answers[current]?.[k];
-      html+=`<div class="ds-item">
-        ${k}) ${q.items[k]}
-        <div class="ds-buttons">
-          <button class="${val===true?'selected-btn':''}" onclick="selectDS('${k}',true)">Đ</button>
-          <button class="${val===false?'selected-btn':''}" onclick="selectDS('${k}',false)">S</button>
-        </div>
-      </div>`;
+// 2. Load danh sách chương dựa trên lớp
+function loadChapters() {
+    const grade = document.getElementById('grade-select').value;
+    const chapterSelect = document.getElementById('chapter-select');
+    chapterSelect.innerHTML = '<option value="">-- Chọn Chương --</option>';
+    
+    const chapters = [...new Set(allData.filter(q => q.grade == grade).map(q => q.chapter))];
+    chapters.forEach(c => {
+        if(c) chapterSelect.innerHTML += `<option value="${c}">${c}</option>`;
     });
-
-    html+=`</div>`;
-  }
-
-  if(q.type==="TLN"){
-    html+=`<div class="section">
-    <div class="section-title">Phần III</div>
-    <b>Câu ${current+1}:</b> ${q.q}<br>
-    <input maxlength="4" value="${answers[current]||''}" oninput="selectTLN(this.value)">
-    </div>`;
-  }
-
-  document.getElementById("exam").innerHTML=html;
-  renderSidebar();
-
-  if(window.MathJax) MathJax.typesetPromise();
 }
 
-// SIDEBAR
-function renderSidebar(){
-  let box=document.getElementById("qbox");
-  box.innerHTML="";
-
-  questions.forEach((_,i)=>{
-    let cls="q-num";
-    if(answers[i]!=null) cls+=" answered";
-    if(i===current) cls+=" current";
-
-    box.innerHTML+=`<div class="${cls}" onclick="goto(${i})">${i+1}</div>`;
-  });
-}
-
-// SELECT
-function selectTN(i){answers[current]=i;loadQuestion();}
-function selectDS(k,v){
-  if(!answers[current]) answers[current]={};
-  answers[current][k]=v;
-  loadQuestion();
-}
-function selectTLN(v){answers[current]=v.trim();}
-
-// NAV
-function next(){if(current<questions.length-1){current++;loadQuestion();}}
-function prev(){if(current>0){current--;loadQuestion();}}
-function goto(i){current=i;loadQuestion();}
-
-// SUBMIT
-function submitQuiz(){
-  let score=0;
-
-  questions.forEach((q,i)=>{
-    if(q.type==="TN" && answers[i]===q.correct) score++;
-
-    if(q.type==="DS"){
-      let ok=true;
-      for(let k of ["a","b","c","d"]){
-        if(answers[i]?.[k]!==q.correct[k]) ok=false;
-      }
-      if(ok) score++;
+// 3. Khởi tạo bài thi
+function initQuiz(minutes) {
+    const grade = document.getElementById('grade-select').value;
+    const chapter = document.getElementById('chapter-select').value;
+    
+    if(!grade || !chapter) {
+        alert("Vui lòng chọn đầy đủ Lớp và Chương!");
+        return;
     }
 
-    if(q.type==="TLN"){
-      if(Array.isArray(q.correct)){
-        if(q.correct.includes(answers[i])) score++;
-      } else {
-        if(answers[i]===q.correct) score++;
-      }
-    }
-  });
+    // Lọc pool câu hỏi
+    const pool = allData.filter(q => q.grade == grade && q.chapter == chapter);
+    
+    // Cấu hình số lượng theo yêu cầu của bạn
+    let config = { tn: 8, ds: 2, tln: 4 };
+    if(minutes === 60) config = { tn: 12, ds: 3, tln: 6 };
+    if(minutes === 90) config = { tn: 16, ds: 4, tln: 8 };
 
-  document.body.innerHTML=`<h1>Kết quả</h1><p>${score}/${questions.length}</p>`;
+    // Trộn và lấy câu hỏi
+    const shuffle = (arr) => arr.sort(() => Math.random() - 0.5);
+    currentQuestions = [
+        ...shuffle(pool.filter(q => q.type === "TN")).slice(0, config.tn),
+        ...shuffle(pool.filter(q => q.type === "DS")).slice(0, config.ds),
+        ...shuffle(pool.filter(q => q.type === "TLN")).slice(0, config.tln)
+    ];
+
+    if(currentQuestions.length === 0) {
+        alert("Không tìm thấy câu hỏi phù hợp trong chương này!");
+        return;
+    }
+
+    userAnswers = new Array(currentQuestions.length).fill(null);
+    timeLeft = minutes * 60;
+    document.getElementById('setup-screen').classList.add('hidden');
+    
+    startTimer();
+    renderQuestion();
+    renderSidebar();
+}
+
+// 4. Quản lý đồng hồ
+function startTimer() {
+    timerInterval = setInterval(() => {
+        timeLeft--;
+        let m = Math.floor(timeLeft / 60);
+        let s = timeLeft % 60;
+        document.getElementById('timer').innerText = `${m}:${s < 10 ? '0'+s : s}`;
+        if(timeLeft <= 0) finishQuiz();
+    }, 1000);
+}
+
+// 5. Hiển thị câu hỏi
+function renderQuestion() {
+    const q = currentQuestions[currentIndex];
+    let html = `<h4>Câu ${currentIndex + 1} [${q.type}]</h4><p>${q.q}</p>`;
+
+    if(q.type === "TN") {
+        html += `<div class="options">` + q.choices.map((c, i) => `
+            <label class="option-item">
+                <input type="radio" name="q" ${userAnswers[currentIndex] === i ? 'checked' : ''} onclick="saveAns(${i})"> ${c}
+            </label>
+        `).join('') + `</div>`;
+    } 
+    else if(q.type === "DS") {
+        html += `<table style="width:100%">` + Object.keys(q.items).map(k => `
+            <tr>
+                <td>${k}. ${q.items[k]}</td>
+                <td>
+                    <button onclick="saveDS('${k}', true)" style="background:${userAnswers[currentIndex]?.[k] === true ? '#69db7c' : ''}">Đúng</button>
+                    <button onclick="saveDS('${k}', false)" style="background:${userAnswers[currentIndex]?.[k] === false ? '#fa5252' : ''}">Sai</button>
+                </td>
+            </tr>
+        `).join('') + `</table>`;
+    }
+    else if(q.type === "TLN") {
+        html += `<input type="text" placeholder="Nhập đáp án số..." value="${userAnswers[currentIndex] || ''}" oninput="saveAns(this.value)" style="width:100%; padding:10px">`;
+    }
+
+    document.getElementById('question-display').innerHTML = html;
+    if(window.MathJax) MathJax.typesetPromise();
+    renderSidebar();
+}
+
+// 6. Lưu đáp án
+window.saveAns = (val) => {
+    userAnswers[currentIndex] = val;
+    renderSidebar();
+};
+
+window.saveDS = (key, val) => {
+    if(!userAnswers[currentIndex]) userAnswers[currentIndex] = {};
+    userAnswers[currentIndex][key] = val;
+    renderQuestion();
+};
+
+// 7. Điều hướng
+window.changeQ = (step) => {
+    currentIndex = Math.max(0, Math.min(currentQuestions.length - 1, currentIndex + step));
+    renderQuestion();
+};
+
+window.goto = (i) => {
+    currentIndex = i;
+    renderQuestion();
+};
+
+function renderSidebar() {
+    const box = document.getElementById('qbox');
+    box.innerHTML = currentQuestions.map((_, i) => `
+        <div class="q-num ${i === currentIndex ? 'current' : ''} ${userAnswers[i] !== null ? 'answered' : ''}" onclick="goto(${i})">${i+1}</div>
+    `).join('');
+}
+
+// 8. Kết thúc
+function finishQuiz() {
+    clearInterval(timerInterval);
+    alert("Hết giờ hoặc bạn đã nộp bài! Hệ thống đang chấm điểm...");
+    // Ở đây bạn có thể thêm logic chấm điểm như file cũ của bạn
+    location.reload(); 
 }
 </script>
-
 </body>
 </html>
