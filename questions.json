@@ -2513,6 +2513,126 @@
     "q": "Một bóng đèn được treo ngay phía trên tâm của một chiếc bàn tròn có bán kính $3$ m. Cường độ sáng $I$ tại mép bàn được tính bởi công thức $I = k \\frac{\\sin \\alpha}{s^2}$, trong đó $k$ là hằng số dương, $s$ là khoảng cách từ bóng đèn đến mép bàn, và $\\alpha$ là góc tạo bởi tia sáng và mặt bàn. Bóng đèn cần treo ở độ cao $h$ (m) so với mặt bàn bằng bao nhiêu để cường độ sáng tại mép bàn là lớn nhất? Gọi $h_0$ là độ cao tối ưu đó, tính giá trị của biểu thức $2h_0^2$.",
     "correct": "9",
     "explain": "Ta có $s = \\sqrt{h^2+3^2}$ và $\\sin\\alpha = \\frac{h}{s} = \\frac{h}{\\sqrt{h^2+9}}$. Thay vào công thức, $I(h) = k \\frac{h}{(h^2+9)^{3/2}}$. Đạo hàm $I'(h) = k \\frac{1 \\cdot (h^2+9)^{3/2} - h \\cdot \\frac{3}{2}(h^2+9)^{1/2} \\cdot 2h}{(h^2+9)^3} = k \\frac{h^2+9 - 3h^2}{(h^2+9)^{5/2}} = k \\frac{9 - 2h^2}{(h^2+9)^{5/2}}$. Cho $I'(h) = 0 \\Leftrightarrow 9 - 2h^2 = 0 \\Leftrightarrow h = \\frac{3}{\\sqrt{2}}$. Vậy $h_0 = \\frac{3}{\\sqrt{2}}$, suy ra $h_0^2 = 4,5$. Giá trị $2h_0^2 = 2 \\times 4,5 = 9$."
+  },
+    {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = f(x)$ có đạo hàm trên khoảng $(a; b)$. Phát biểu nào dưới đây là đúng?",
+    "choices": [
+      "A. Nếu $f'(x) > 0$ với mọi $x \\in (a; b)$ thì hàm số $y = f(x)$ đồng biến trên khoảng $(a; b)$.",
+      "B. Nếu $f'(x) < 0$ với mọi $x \\in (a; b)$ thì hàm số $y = f(x)$ đồng biến trên khoảng $(a; b)$.",
+      "C. Nếu $f'(x) > 0$ với mọi $x \\in (a; b)$ thì hàm số $y = f(x)$ nghịch biến trên khoảng $(a; b)$.",
+      "D. Nếu $f'(x) \\ge 0$ với mọi $x \\in (a; b)$ thì hàm số $y = f(x)$ nghịch biến trên khoảng $(a; b)$."
+    ],
+    "correct": 0,
+    "explain": "Theo định lí về tính đơn điệu của hàm số: Giả sử hàm số $y = f(x)$ có đạo hàm trên khoảng $(a; b)$. Nếu $f'(x) > 0$ với mọi $x \\in (a; b)$ thì hàm số đồng biến trên khoảng $(a; b)$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Giả sử hàm số $y = f(x)$ liên tục trên khoảng $(a; b)$ chứa điểm $x_0$ và có đạo hàm trên các khoảng $(a; x_0)$ và $(x_0; b)$. Nếu $f'(x)$ đổi dấu từ âm sang dương khi $x$ đi qua $x_0$ thì:",
+    "choices": [
+      "A. $x_0$ là một điểm cực đại của hàm số.",
+      "B. $x_0$ là một điểm cực tiểu của hàm số.",
+      "C. $x_0$ không phải là điểm cực trị của hàm số.",
+      "D. Hàm số không xác định tại $x_0$."
+    ],
+    "correct": 1,
+    "explain": "Theo quy tắc tìm cực trị: Nếu $f'(x) < 0$ trên khoảng $(a; x_0)$ và $f'(x) > 0$ trên khoảng $(x_0; b)$ (tức là $f'(x)$ đổi dấu từ âm $(-)$ sang dương $(+)$ khi qua $x_0$) thì $x_0$ là một điểm cực tiểu của hàm số."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Hàm số nào dưới đây không có cực trị?",
+    "choices": [
+      "A. $y = x^4$.",
+      "B. $y = |x|$.",
+      "C. $y = -x^3 + x$.",
+      "D. $y = \\frac{2x - 1}{x + 1}$."
+    ],
+    "correct": 3,
+    "explain": "Xét hàm số $y = \\frac{2x - 1}{x + 1}$, tập xác định $D = \\mathbb{R} \\setminus \\{-1\\}$. Đạo hàm $y' = \\frac{3}{(x+1)^2} > 0$ với mọi $x \\in D$. Do $y'$ mang một dấu trên từng khoảng xác định (không đổi dấu) nên hàm số không có cực trị. Các hàm số còn lại đều có cực trị."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Khẳng định nào sau đây đúng về tính đơn điệu của hàm số $y = -x^3 + 3x^2 - 3x + 2$?",
+    "choices": [
+      "A. Hàm số đồng biến trên $\\mathbb{R}$.",
+      "B. Hàm số nghịch biến trên $\\mathbb{R}$.",
+      "C. Hàm số đồng biến trên khoảng $(1; +\\infty)$.",
+      "D. Hàm số nghịch biến trên khoảng $(-\\infty; 1)$."
+    ],
+    "correct": 1,
+    "explain": "Tập xác định $D = \\mathbb{R}$. Đạo hàm $y' = -3x^2 + 6x - 3 = -3(x^2 - 2x + 1) = -3(x - 1)^2 \\le 0$ với mọi $x \\in \\mathbb{R}$. Dấu bằng chỉ xảy ra tại một điểm $x = 1$. Do đó hàm số nghịch biến trên $\\mathbb{R}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = f(x)$ có đạo hàm $f'(x)$ thỏa mãn: $f'(x) > 0$ trên khoảng $(-\\infty; -1)$ và $(2; +\\infty)$; $f'(x) < 0$ trên khoảng $(-1; 2)$. Hàm số đã cho đạt cực đại tại điểm nào?",
+    "choices": [
+      "A. $x = -1$.",
+      "B. $x = 2$.",
+      "C. $x = 0$.",
+      "D. $x = 1$."
+    ],
+    "correct": 0,
+    "explain": "Dựa vào dấu của đạo hàm, $f'(x)$ đổi dấu từ dương $(+)$ sang âm $(-)$ khi $x$ đi qua điểm $x = -1$. Do đó, hàm số đạt cực đại tại $x = -1$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Điểm cực tiểu của đồ thị hàm số $y = x^3 + 6x^2 + 9x - 2$ có tọa độ là:",
+    "choices": [
+      "A. $(-1; -6)$.",
+      "B. $(-3; -2)$.",
+      "C. $(1; 14)$.",
+      "D. $(-1; -2)$."
+    ],
+    "correct": 0,
+    "explain": "Đạo hàm $y' = 3x^2 + 12x + 9$. Cho $y' = 0 \\Leftrightarrow x = -1$ hoặc $x = -3$. Bảng biến thiên cho thấy $y'$ đổi dấu từ âm sang dương khi qua $x = -1$ nên hàm số đạt cực tiểu tại $x = -1$. Tung độ cực tiểu $y(-1) = -1 + 6 - 9 - 2 = -6$. Tọa độ điểm cực tiểu của đồ thị là $A(-1; -6)$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Hàm số $y = \\frac{x-1}{x-2}$ nghịch biến trên khoảng nào dưới đây?",
+    "choices": [
+      "A. $\\mathbb{R} \\setminus \\{2\\}$.",
+      "B. $(-\\infty; 2) \\cup (2; +\\infty)$.",
+      "C. $(-\\infty; 2)$ và $(2; +\\infty)$.",
+      "D. $\\mathbb{R}$."
+    ],
+    "correct": 2,
+    "explain": "Tập xác định $D = \\mathbb{R} \\setminus \\{2\\}$. Đạo hàm $y' = \\frac{1 \\cdot (-2) - (-1) \\cdot 1}{(x-2)^2} = \\frac{-1}{(x-2)^2} < 0, \\forall x \\ne 2$. Vậy hàm số nghịch biến trên các khoảng $(-\\infty; 2)$ và $(2; +\\infty)$. (Lưu ý: Không dùng kí hiệu hợp $\\cup$ để kết luận khoảng đơn điệu)."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Hàm số $y = -\\frac{2x^3}{3} + x^2 + 7$ đồng biến trên khoảng nào trong các khoảng sau đây?",
+    "choices": [
+      "A. $(-\\infty; 0)$.",
+      "B. $(0; +\\infty)$.",
+      "C. $(0; 1)$.",
+      "D. $(1; +\\infty)$."
+    ],
+    "correct": 2,
+    "explain": "Đạo hàm $y' = -2x^2 + 2x$. Cho $y' = 0 \\Leftrightarrow x = 0$ hoặc $x = 1$. Lập bảng xét dấu, ta có $y' > 0 \\Leftrightarrow 0 < x < 1$. Vậy hàm số đồng biến trên khoảng $(0; 1)$."
   }
 
 
