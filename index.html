@@ -2,71 +2,115 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>DVK Math - Thi Online</title>
+<title>DVK Math</title>
+
+<!-- MathJax (LaTeX) -->
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
 body {
-  font-family: Arial;
-  display: flex;
+  font-family: "Segoe UI", Arial;
+  background: #f5f6fa;
+  margin: 0;
 }
 
-#sidebar {
-  width: 150px;
-  border-right: 1px solid #ccc;
-  padding: 10px;
+#container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
 }
 
-.q-btn {
+.section {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.question {
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+.answers button {
   display: block;
-  margin: 5px 0;
-  padding: 5px;
+  width: 100%;
+  text-align: left;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: #fafafa;
   cursor: pointer;
 }
 
-.answered {
-  background: lightgreen;
-}
-
-.current {
-  border: 2px solid blue;
-}
-
-#main {
-  flex: 1;
-  padding: 20px;
-  text-align: center;
-}
-
-button {
-  margin: 5px;
-  padding: 10px;
+.answers button:hover {
+  background: #eef3ff;
 }
 
 .selected {
-  background: lightblue;
+  background: #dbe4ff !important;
+  border: 1px solid #4c6ef5 !important;
+}
+
+.ds-row {
+  margin: 10px 0;
+}
+
+.ds-row button {
+  margin-left: 10px;
 }
 
 input {
-  padding: 8px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
   margin-top: 10px;
+}
+
+#timer {
+  text-align: right;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.nav {
+  margin-top: 20px;
+}
+
+.nav button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #4c6ef5;
+  color: white;
+  cursor: pointer;
 }
 </style>
 </head>
 
 <body>
 
-<div id="sidebar"></div>
+<div id="container">
 
-<div id="main">
-  <h2 id="timer">Time: 600</h2>
-  <h3 id="progress"></h3>
-  <h2 id="question"></h2>
-  <div id="answers"></div>
+  <div id="timer">Time: 600</div>
 
-  <button onclick="prev()">← Trước</button>
-  <button onclick="next()">Tiếp →</button>
-  <br><br>
-  <button onclick="submitQuiz()">NỘP BÀI</button>
+  <div id="exam"></div>
+
+  <div class="nav">
+    <button onclick="prev()">← Trước</button>
+    <button onclick="next()">Tiếp →</button>
+    <button onclick="submitQuiz()">Nộp bài</button>
+  </div>
+
 </div>
 
 <script>
@@ -78,6 +122,7 @@ let answers = [];
 fetch("questions.json")
   .then(res => res.json())
   .then(data => {
+
     let TN = data.filter(q => q.type === "TN");
     let DS = data.filter(q => q.type === "DS");
     let TLN = data.filter(q => q.type === "TLN");
@@ -109,99 +154,76 @@ const timer = setInterval(() => {
 // LOAD QUESTION
 function loadQuestion() {
   const q = questions[current];
+  const exam = document.getElementById("exam");
 
-  document.getElementById("question").innerText = q.q;
-  document.getElementById("progress").innerText =
-    "Câu " + (current + 1) + "/" + questions.length;
-
-  const answersDiv = document.getElementById("answers");
-  answersDiv.innerHTML = "";
+  let html = "";
 
   // TN
   if (q.type === "TN") {
-    q.choices.forEach((choice, i) => {
-      const btn = document.createElement("button");
-      btn.innerText = choice;
+    html += `<div class="section">
+      <div class="section-title">Phần I. Trắc nghiệm</div>
+      <div class="question"><b>Câu ${current+1}:</b> ${q.q}</div>
+      <div class="answers">`;
 
-      if (answers[current] === i) {
-        btn.classList.add("selected");
-      }
-
-      btn.onclick = () => {
-        answers[current] = i;
-        loadQuestion();
-      };
-
-      answersDiv.appendChild(btn);
+    q.choices.forEach((c, i) => {
+      let sel = answers[current] === i ? "selected" : "";
+      html += `<button class="${sel}" onclick="selectTN(${i})">${c}</button>`;
     });
+
+    html += `</div></div>`;
   }
 
   // DS
   if (q.type === "DS") {
+    html += `<div class="section">
+      <div class="section-title">Phần II. Đúng/Sai</div>
+      <div class="question"><b>Câu ${current+1}:</b> ${q.q}</div>`;
+
     ["a","b","c","d"].forEach(k => {
-      const div = document.createElement("div");
-      div.innerHTML = "<b>" + k + ")</b> " + q.items[k];
-
-      ["Đúng", "Sai"].forEach((ans, i) => {
-        const btn = document.createElement("button");
-        btn.innerText = ans;
-
-        if (answers[current]?.[k] === (i === 0)) {
-          btn.classList.add("selected");
-        }
-
-        btn.onclick = () => {
-          if (!answers[current]) answers[current] = {};
-          answers[current][k] = (i === 0);
-          loadQuestion();
-        };
-
-        div.appendChild(btn);
-      });
-
-      answersDiv.appendChild(div);
+      html += `<div class="ds-row">
+        <b>${k})</b> ${q.items[k]}
+        <button onclick="selectDS('${k}',true)">Đúng</button>
+        <button onclick="selectDS('${k}',false)">Sai</button>
+      </div>`;
     });
+
+    html += `</div>`;
   }
 
   // TLN
   if (q.type === "TLN") {
-    const input = document.createElement("input");
-    input.placeholder = "Nhập số (≤4 ký tự)";
-    input.maxLength = 4;
-
-    input.value = answers[current] || "";
-
-    input.oninput = (e) => {
-      let val = e.target.value.replace(/\s/g, "");
-      answers[current] = val;
-    };
-
-    answersDiv.appendChild(input);
+    html += `<div class="section">
+      <div class="section-title">Phần III. Trả lời ngắn</div>
+      <div class="question"><b>Câu ${current+1}:</b> ${q.q}</div>
+      <input maxlength="4"
+        value="${answers[current] || ""}"
+        placeholder="Nhập đáp án..."
+        oninput="selectTLN(this.value)">
+    </div>`;
   }
 
-  renderSidebar();
+  exam.innerHTML = html;
+
+  // render LaTeX
+  if (window.MathJax) {
+    MathJax.typesetPromise();
+  }
 }
 
-// SIDEBAR
-function renderSidebar() {
-  const sidebar = document.getElementById("sidebar");
-  sidebar.innerHTML = "";
+// SELECT
+function selectTN(i) {
+  answers[current] = i;
+  loadQuestion();
+}
 
-  questions.forEach((_, i) => {
-    const btn = document.createElement("div");
-    btn.innerText = i + 1;
-    btn.classList.add("q-btn");
+function selectDS(k,val) {
+  if (!answers[current]) answers[current] = {};
+  answers[current][k] = val;
+  loadQuestion();
+}
 
-    if (answers[i] !== null) btn.classList.add("answered");
-    if (i === current) btn.classList.add("current");
-
-    btn.onclick = () => {
-      current = i;
-      loadQuestion();
-    };
-
-    sidebar.appendChild(btn);
-  });
+function selectTLN(val) {
+  answers[current] = val.replace(/\s/g,"");
 }
 
 // NAV
@@ -222,22 +244,16 @@ function prev() {
 // SUBMIT
 function submitQuiz() {
   clearInterval(timer);
-
   let score = 0;
 
-  questions.forEach((q, i) => {
+  questions.forEach((q,i) => {
 
-    if (q.type === "TN") {
-      if (answers[i] === q.correct) score++;
-    }
+    if (q.type === "TN" && answers[i] === q.correct) score++;
 
     if (q.type === "DS") {
       let ok = true;
       for (let k of ["a","b","c","d"]) {
-        if (answers[i]?.[k] !== q.correct[k]) {
-          ok = false;
-          break;
-        }
+        if (answers[i]?.[k] !== q.correct[k]) ok = false;
       }
       if (ok) score++;
     }
@@ -253,8 +269,7 @@ function submitQuiz() {
   });
 
   document.body.innerHTML =
-    "<h1>Kết quả</h1>" +
-    "<p>Điểm: " + score + "/" + questions.length + "</p>";
+    "<h1>Kết quả</h1><p>Điểm: " + score + "/" + questions.length + "</p>";
 }
 </script>
 
