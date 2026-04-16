@@ -4,19 +4,50 @@
 <meta charset="UTF-8">
 <title>DVK Math</title>
 
-<!-- MathJax (LaTeX) -->
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
 body {
   font-family: "Segoe UI", Arial;
-  background: #f5f6fa;
   margin: 0;
+  display: flex;
+  background: #f5f6fa;
 }
 
-#container {
-  max-width: 900px;
-  margin: auto;
+/* SIDEBAR */
+#sidebar {
+  width: 180px;
+  background: white;
+  border-right: 1px solid #ddd;
+  padding: 10px;
+}
+
+.q-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.q-num {
+  padding: 8px;
+  text-align: center;
+  border-radius: 6px;
+  background: #eee;
+  cursor: pointer;
+}
+
+.q-num.answered {
+  background: #69db7c;
+  color: white;
+}
+
+.q-num.current {
+  border: 2px solid #4c6ef5;
+}
+
+/* MAIN */
+#main {
+  flex: 1;
   padding: 20px;
 }
 
@@ -25,251 +56,237 @@ body {
   border-radius: 12px;
   padding: 20px;
   margin-bottom: 20px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .section-title {
-  font-weight: 600;
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.question {
-  margin: 15px 0;
-  font-size: 16px;
-}
-
-.answers button {
-  display: block;
-  width: 100%;
-  text-align: left;
-  padding: 12px;
-  margin: 8px 0;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-  background: #fafafa;
-  cursor: pointer;
-}
-
-.answers button:hover {
-  background: #eef3ff;
-}
-
-.selected {
-  background: #dbe4ff !important;
-  border: 1px solid #4c6ef5 !important;
-}
-
-.ds-row {
-  margin: 10px 0;
-}
-
-.ds-row button {
-  margin-left: 10px;
-}
-
-input {
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  margin-top: 10px;
-}
-
-#timer {
-  text-align: right;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.nav {
-  margin-top: 20px;
+/* TN */
+.tn-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
 
-.nav button {
-  padding: 10px 20px;
+.tn-option {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.tn-option.selected {
+  border: 2px solid #4c6ef5;
+  background: #e7edff;
+}
+
+.radio {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #888;
+  border-radius: 50%;
   margin-right: 10px;
-  border-radius: 8px;
-  border: none;
+}
+
+.tn-option.selected .radio {
+  border: 5px solid #4c6ef5;
+}
+
+/* DS */
+.ds-item {
+  display: flex;
+  justify-content: space-between;
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+.ds-buttons button {
+  margin-left: 5px;
+}
+
+.selected-btn {
   background: #4c6ef5;
   color: white;
-  cursor: pointer;
+}
+
+/* NAV */
+.nav button {
+  padding: 10px 15px;
+  margin-right: 10px;
+  background: #4c6ef5;
+  color: white;
+  border: none;
+  border-radius: 8px;
 }
 </style>
 </head>
 
 <body>
 
-<div id="container">
+<div id="sidebar">
+  <h3>Câu hỏi</h3>
+  <div class="q-box" id="qbox"></div>
+</div>
 
-  <div id="timer">Time: 600</div>
-
+<div id="main">
+  <h3 id="timer">Time: 600</h3>
   <div id="exam"></div>
 
   <div class="nav">
-    <button onclick="prev()">← Trước</button>
-    <button onclick="next()">Tiếp →</button>
+    <button onclick="prev()">←</button>
+    <button onclick="next()">→</button>
     <button onclick="submitQuiz()">Nộp bài</button>
   </div>
-
 </div>
 
 <script>
-let questions = [];
-let current = 0;
-let answers = [];
+let questions=[], answers=[], current=0;
 
-// LOAD JSON
+// LOAD
 fetch("questions.json")
-  .then(res => res.json())
-  .then(data => {
+.then(r=>r.json())
+.then(data=>{
+  let TN=data.filter(q=>q.type==="TN");
+  let DS=data.filter(q=>q.type==="DS");
+  let TLN=data.filter(q=>q.type==="TLN");
 
-    let TN = data.filter(q => q.type === "TN");
-    let DS = data.filter(q => q.type === "DS");
-    let TLN = data.filter(q => q.type === "TLN");
+  TN.sort(()=>Math.random()-0.5);
+  DS.sort(()=>Math.random()-0.5);
+  TLN.sort(()=>Math.random()-0.5);
 
-    TN.sort(() => Math.random() - 0.5);
-    DS.sort(() => Math.random() - 0.5);
-    TLN.sort(() => Math.random() - 0.5);
+  TN=TN.slice(0,12);
+  DS=DS.slice(0,2);
+  TLN=TLN.slice(0,4);
 
-    TN = TN.slice(0, 12);
-    DS = DS.slice(0, 2);
-    TLN = TLN.slice(0, 4);
+  questions=[...TN,...DS,...TLN];
+  questions.sort(()=>Math.random()-0.5);
 
-    questions = [...TN, ...DS, ...TLN];
-    questions.sort(() => Math.random() - 0.5);
+  answers=new Array(questions.length).fill(null);
 
-    answers = new Array(questions.length).fill(null);
-
-    loadQuestion();
-  });
+  loadQuestion();
+});
 
 // TIMER
-let time = 600;
-const timer = setInterval(() => {
+let time=600;
+setInterval(()=>{
   time--;
-  document.getElementById("timer").innerText = "Time: " + time;
-  if (time <= 0) submitQuiz();
-}, 1000);
+  document.getElementById("timer").innerText="Time: "+time;
+  if(time<=0) submitQuiz();
+},1000);
 
 // LOAD QUESTION
-function loadQuestion() {
-  const q = questions[current];
-  const exam = document.getElementById("exam");
+function loadQuestion(){
+  const q=questions[current];
+  let html="";
 
-  let html = "";
+  if(q.type==="TN"){
+    html+=`<div class="section">
+    <div class="section-title">Phần I</div>
+    <b>Câu ${current+1}:</b> ${q.q}
+    <div class="tn-grid">`;
 
-  // TN
-  if (q.type === "TN") {
-    html += `<div class="section">
-      <div class="section-title">Phần I. Trắc nghiệm</div>
-      <div class="question"><b>Câu ${current+1}:</b> ${q.q}</div>
-      <div class="answers">`;
-
-    q.choices.forEach((c, i) => {
-      let sel = answers[current] === i ? "selected" : "";
-      html += `<button class="${sel}" onclick="selectTN(${i})">${c}</button>`;
+    q.choices.forEach((c,i)=>{
+      let sel=answers[current]===i?"selected":"";
+      html+=`<div class="tn-option ${sel}" onclick="selectTN(${i})">
+        <div class="radio"></div>${c}</div>`;
     });
 
-    html += `</div></div>`;
+    html+=`</div></div>`;
   }
 
-  // DS
-  if (q.type === "DS") {
-    html += `<div class="section">
-      <div class="section-title">Phần II. Đúng/Sai</div>
-      <div class="question"><b>Câu ${current+1}:</b> ${q.q}</div>`;
+  if(q.type==="DS"){
+    html+=`<div class="section">
+    <div class="section-title">Phần II</div>
+    <b>Câu ${current+1}:</b> ${q.q}`;
 
-    ["a","b","c","d"].forEach(k => {
-      html += `<div class="ds-row">
-        <b>${k})</b> ${q.items[k]}
-        <button onclick="selectDS('${k}',true)">Đúng</button>
-        <button onclick="selectDS('${k}',false)">Sai</button>
+    ["a","b","c","d"].forEach(k=>{
+      let val=answers[current]?.[k];
+      html+=`<div class="ds-item">
+        ${k}) ${q.items[k]}
+        <div class="ds-buttons">
+          <button class="${val===true?'selected-btn':''}" onclick="selectDS('${k}',true)">Đ</button>
+          <button class="${val===false?'selected-btn':''}" onclick="selectDS('${k}',false)">S</button>
+        </div>
       </div>`;
     });
 
-    html += `</div>`;
+    html+=`</div>`;
   }
 
-  // TLN
-  if (q.type === "TLN") {
-    html += `<div class="section">
-      <div class="section-title">Phần III. Trả lời ngắn</div>
-      <div class="question"><b>Câu ${current+1}:</b> ${q.q}</div>
-      <input maxlength="4"
-        value="${answers[current] || ""}"
-        placeholder="Nhập đáp án..."
-        oninput="selectTLN(this.value)">
+  if(q.type==="TLN"){
+    html+=`<div class="section">
+    <div class="section-title">Phần III</div>
+    <b>Câu ${current+1}:</b> ${q.q}<br>
+    <input maxlength="4" value="${answers[current]||''}" oninput="selectTLN(this.value)">
     </div>`;
   }
 
-  exam.innerHTML = html;
+  document.getElementById("exam").innerHTML=html;
+  renderSidebar();
 
-  // render LaTeX
-  if (window.MathJax) {
-    MathJax.typesetPromise();
-  }
+  if(window.MathJax) MathJax.typesetPromise();
+}
+
+// SIDEBAR
+function renderSidebar(){
+  let box=document.getElementById("qbox");
+  box.innerHTML="";
+
+  questions.forEach((_,i)=>{
+    let cls="q-num";
+    if(answers[i]!=null) cls+=" answered";
+    if(i===current) cls+=" current";
+
+    box.innerHTML+=`<div class="${cls}" onclick="goto(${i})">${i+1}</div>`;
+  });
 }
 
 // SELECT
-function selectTN(i) {
-  answers[current] = i;
+function selectTN(i){answers[current]=i;loadQuestion();}
+function selectDS(k,v){
+  if(!answers[current]) answers[current]={};
+  answers[current][k]=v;
   loadQuestion();
 }
-
-function selectDS(k,val) {
-  if (!answers[current]) answers[current] = {};
-  answers[current][k] = val;
-  loadQuestion();
-}
-
-function selectTLN(val) {
-  answers[current] = val.replace(/\s/g,"");
-}
+function selectTLN(v){answers[current]=v.trim();}
 
 // NAV
-function next() {
-  if (current < questions.length - 1) {
-    current++;
-    loadQuestion();
-  }
-}
-
-function prev() {
-  if (current > 0) {
-    current--;
-    loadQuestion();
-  }
-}
+function next(){if(current<questions.length-1){current++;loadQuestion();}}
+function prev(){if(current>0){current--;loadQuestion();}}
+function goto(i){current=i;loadQuestion();}
 
 // SUBMIT
-function submitQuiz() {
-  clearInterval(timer);
-  let score = 0;
+function submitQuiz(){
+  let score=0;
 
-  questions.forEach((q,i) => {
+  questions.forEach((q,i)=>{
+    if(q.type==="TN" && answers[i]===q.correct) score++;
 
-    if (q.type === "TN" && answers[i] === q.correct) score++;
-
-    if (q.type === "DS") {
-      let ok = true;
-      for (let k of ["a","b","c","d"]) {
-        if (answers[i]?.[k] !== q.correct[k]) ok = false;
+    if(q.type==="DS"){
+      let ok=true;
+      for(let k of ["a","b","c","d"]){
+        if(answers[i]?.[k]!==q.correct[k]) ok=false;
       }
-      if (ok) score++;
+      if(ok) score++;
     }
 
-    if (q.type === "TLN") {
-      if (Array.isArray(q.correct)) {
-        if (q.correct.includes(answers[i])) score++;
+    if(q.type==="TLN"){
+      if(Array.isArray(q.correct)){
+        if(q.correct.includes(answers[i])) score++;
       } else {
-        if (answers[i] === q.correct) score++;
+        if(answers[i]===q.correct) score++;
       }
     }
-
   });
 
-  document.body.innerHTML =
-    "<h1>Kết quả</h1><p>Điểm: " + score + "/" + questions.length + "</p>";
+  document.body.innerHTML=`<h1>Kết quả</h1><p>${score}/${questions.length}</p>`;
 }
 </script>
 
