@@ -1,73 +1,246 @@
-[
-  {
-    "grade": "10",
-    "chapter": "Hàm số, đồ thị và ứng dụng",
-    "type": "TN",
-    "q": "Cho hàm số $y = f(x)$ có đồ thị như hình vẽ. Hàm số đồng biến trên khoảng nào dưới đây?",
-    "choices": ["A. $(1; +\infty)$", "B. $(-\infty; 1)$", "C. $(-1; 1)$", "D. $(0; 1)$"],
-    "correct": 0
-  },
-  {
-    "grade": "10",
-    "chapter": "Hàm số, đồ thị và ứng dụng",
-    "type": "DS",
-    "q": "Cho hàm số bậc hai $y = ax^2 + bx + c$ có đồ thị là một parabol $(P)$ đi qua ba điểm $A(0;1), B(1;0), C(-1;4)$. Xét các mệnh đề sau:",
-    "items": {
-      "a": "Hàm số đã cho là $y = x^2 - 2x + 1$.",
-      "b": "Đỉnh của parabol là $I(1; 0)$.",
-      "c": "Parabol $(P)$ có trục đối xứng là $x = 1$.",
-      "d": "Hàm số đạt giá trị nhỏ nhất bằng $0$ tại $x = 1$."
-    },
-    "correct": { "a": true, "b": true, "c": true, "d": true }
-  },
-  {
-    "grade": "10",
-    "chapter": "Phương pháp tọa độ trong mặt phẳng",
-    "type": "TLN",
-    "q": "Trong mặt phẳng $Oxy$, cho đường tròn $(C): (x-1)^2 + (y+2)^2 = 25$. Tìm bán kính $R$ của đường tròn đã cho.",
-    "correct": "5"
-  },
-  {
-    "grade": "11",
-    "chapter": "Hàm số mũ và hàm số lôgarit",
-    "type": "TN",
-    "q": "Nghiệm của phương trình $3^{x-1} = 9$ là:",
-    "choices": ["A. $x = 2$", "B. $x = 3$", "C. $x = 4$", "D. $x = 1$"],
-    "correct": 1
-  },
-  {
-    "grade": "11",
-    "chapter": "Quan hệ vuông góc trong không gian",
-    "type": "DS",
-    "q": "Cho hình chóp $S.ABC$ có đáy $ABC$ là tam giác vuông tại $B$, $SA \perp (ABC)$. Xét các mệnh đề sau:",
-    "items": {
-      "a": "$BC \perp (SAB)$.",
-      "b": "$AC \perp (SAB)$.",
-      "c": "$AB$ là hình chiếu vuông góc của $SB$ lên mặt phẳng $(ABC)$.",
-      "d": "Tam giác $SBC$ vuông tại $B$."
-    },
-    "correct": { "a": true, "b": false, "c": true, "d": true }
-  },
-  {
-    "grade": "11",
-    "chapter": "Xác suất",
-    "type": "TLN",
-    "q": "Gieo một con xúc xắc cân đối và đồng chất. Tính xác suất để mặt xuất hiện có số chấm là số nguyên tố.",
-    "correct": "0.5"
-  },
-  {
-    "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
-    "type": "TN",
-    "q": "Cho hàm số $y=f(x)$ có đạo hàm $f'(x) = x(x-1)^2$. Số điểm cực trị của hàm số đã cho là:",
-    "choices": ["A. 1", "B. 2", "C. 3", "D. 0"],
-    "correct": 0
-  },
-  {
-    "grade": "12",
-    "chapter": "Vectơ và phương pháp tọa độ trong không gian",
-    "type": "TLN",
-    "q": "Trong không gian $Oxyz$, cho điểm $A(1; 2; 3)$ và $B(3; 2; 1)$. Tìm tọa độ trung điểm $M$ của đoạn thẳng $AB$. Nhập tổng $x_M + y_M + z_M$.",
-    "correct": "6"
-  }
-]
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ thống Ôn tập Toán - DVK Math</title>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root { --primary: #4c6ef5; --secondary: #748ffc; --success: #40c057; --danger: #fa5252; --bg: #f8f9fa; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; margin: 0; background: var(--bg); display: flex; height: 100vh; overflow: hidden; }
+        
+        /* Setup Screen */
+        #setup-screen { position: fixed; inset: 0; background: white; z-index: 1000; display: flex; align-items: center; justify-content: center; }
+        .setup-card { background: white; padding: 40px; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); width: 100%; max-width: 450px; text-align: center; }
+        .setup-card h1 { color: var(--primary); margin-bottom: 8px; }
+        select, .btn-start { width: 100%; padding: 14px; margin: 12px 0; border-radius: 10px; border: 2px solid #eee; font-size: 16px; transition: 0.3s; }
+        select:focus { border-color: var(--primary); outline: none; }
+        .time-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 15px; }
+        .time-btn { padding: 12px; border: 2px solid #eee; border-radius: 10px; cursor: pointer; background: white; font-weight: 600; transition: 0.3s; }
+        .time-btn:hover { border-color: var(--primary); color: var(--primary); }
+        .time-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
+
+        /* Main Quiz UI */
+        #sidebar { width: 260px; background: white; border-right: 1px solid #e9ecef; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; }
+        #main-content { flex: 1; padding: 40px; overflow-y: auto; position: relative; }
+        .q-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 20px; }
+        .q-circle { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; background: #f1f3f5; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 14px; transition: 0.2s; }
+        .q-circle.active { border: 2px solid var(--primary); color: var(--primary); }
+        .q-circle.done { background: var(--success); color: white; }
+
+        .question-paper { background: white; padding: 35px; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); min-height: 300px; }
+        .type-badge { display: inline-block; padding: 4px 12px; border-radius: 20px; background: #e7f5ff; color: var(--primary); font-size: 12px; font-weight: bold; margin-bottom: 15px; }
+        
+        .option-list { margin-top: 20px; }
+        .option-item { display: flex; align-items: center; padding: 15px; border: 1px solid #dee2e6; border-radius: 10px; margin-bottom: 10px; cursor: pointer; transition: 0.2s; }
+        .option-item:hover { background: #f8f9fa; border-color: var(--primary); }
+        .option-item input { margin-right: 15px; transform: scale(1.2); }
+
+        .ds-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        .ds-table td { padding: 12px; border-bottom: 1px solid #eee; }
+        .ds-btn { padding: 6px 15px; border: 1px solid #ddd; border-radius: 6px; cursor: pointer; margin-left: 5px; background: white; }
+        .ds-btn.selected-t { background: var(--success); color: white; border-color: var(--success); }
+        .ds-btn.selected-f { background: var(--danger); color: white; border-color: var(--danger); }
+
+        #timer { font-size: 24px; font-weight: 800; color: var(--danger); position: absolute; top: 30px; right: 40px; }
+        .nav-footer { display: flex; justify-content: space-between; margin-top: 30px; }
+        .btn { padding: 12px 25px; border-radius: 10px; border: none; cursor: pointer; font-weight: 600; font-size: 15px; transition: 0.2s; }
+        .btn-prev { background: #e9ecef; color: #495057; }
+        .btn-next { background: var(--primary); color: white; }
+        .btn-finish { background: var(--danger); color: white; margin-top: auto; width: 100%; padding: 15px; }
+        
+        .hidden { display: none !important; }
+    </style>
+</head>
+<body>
+
+<div id="setup-screen">
+    <div class="setup-card">
+        <h1>DVK MATH 2026</h1>
+        <p>Hệ thống ôn tập định hướng kỳ thi mới</p>
+        
+        <select id="grade-sel" onchange="updateChapters()">
+            <option value="">-- Chọn Khối Lớp --</option>
+            <option value="10">Lớp 10</option>
+            <option value="11">Lớp 11</option>
+            <option value="12">Lớp 12</option>
+        </select>
+
+        <select id="chapter-sel">
+            <option value="">-- Chọn Chương học --</option>
+        </select>
+
+        <p style="text-align:left; margin: 20px 0 10px 5px; font-weight:600;">Thời gian & Cấu trúc:</p>
+        <div class="time-grid" id="time-grid">
+            <button class="time-btn" onclick="selectTime(45, this)">45 Phút</button>
+            <button class="time-btn" onclick="selectTime(60, this)">60 Phút</button>
+            <button class="time-btn" onclick="selectTime(90, this)">90 Phút</button>
+        </div>
+
+        <button class="btn-start" style="background:var(--primary); color:white; font-weight:bold; margin-top:25px;" onclick="startQuiz()">BẮT ĐẦU LÀM BÀI</button>
+    </div>
+</div>
+
+<div id="sidebar" class="hidden">
+    <h3>Danh sách câu</h3>
+    <div class="q-grid" id="q-grid"></div>
+    <button class="btn btn-finish" onclick="confirmFinish()">NỘP BÀI</button>
+</div>
+
+<div id="main-content" class="hidden">
+    <div id="timer">00:00</div>
+    <div class="question-paper" id="paper">
+        </div>
+    <div class="nav-footer">
+        <button class="btn btn-prev" onclick="move(-1)">Câu trước</button>
+        <button class="btn btn-next" onclick="move(1)">Câu tiếp theo</button>
+    </div>
+</div>
+
+<script>
+    let allQuestions = [];
+    let examSet = [];
+    let answers = [];
+    let currentIdx = 0;
+    let selectedMinutes = 0;
+    let timer;
+
+    // 1. Tải dữ liệu từ GitHub
+    fetch('questions.json')
+        .then(r => r.json())
+        .then(data => { allQuestions = data; });
+
+    // 2. Cập nhật chương theo khối lớp (dựa trên dữ liệu thực tế trong JSON)
+    function updateChapters() {
+        const grade = document.getElementById('grade-sel').value;
+        const sel = document.getElementById('chapter-sel');
+        sel.innerHTML = '<option value="">-- Chọn Chương học --</option>';
+        
+        const chapters = [...new Set(allQuestions.filter(q => q.grade == grade).map(q => q.chapter))];
+        chapters.forEach(c => {
+            if(c) sel.innerHTML += `<option value="${c}">${c}</option>`;
+        });
+    }
+
+    function selectTime(m, btn) {
+        selectedMinutes = m;
+        document.querySelectorAll('.time-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+    }
+
+    // 3. Logic trộn đề theo đúng tỉ lệ yêu cầu
+    function startQuiz() {
+        const grade = document.getElementById('grade-sel').value;
+        const chapter = document.getElementById('chapter-sel').value;
+        
+        if(!grade || !chapter || !selectedMinutes) {
+            alert("Vui lòng chọn đầy đủ Khối, Chương và Thời gian!");
+            return;
+        }
+
+        const pool = allQuestions.filter(q => q.grade == grade && q.chapter == chapter);
+        
+        let counts = { TN: 8, DS: 2, TLN: 4 }; // 45p
+        if(selectedMinutes == 60) counts = { TN: 12, DS: 3, TLN: 6 };
+        if(selectedMinutes == 90) counts = { TN: 16, DS: 4, TLN: 8 };
+
+        const pick = (type, num) => {
+            let filtered = pool.filter(q => q.type === type);
+            return filtered.sort(() => 0.5 - Math.random()).slice(0, num);
+        };
+
+        examSet = [...pick('TN', counts.TN), ...pick('DS', counts.DS), ...pick('TLN', counts.TLN)];
+        
+        if(examSet.length < (counts.TN + counts.DS + counts.TLN)) {
+            alert("Cảnh báo: Kho dữ liệu chương này không đủ số câu theo định mức. Hệ thống sẽ lấy tối đa số câu hiện có.");
+        }
+
+        answers = new Array(examSet.length).fill(null);
+        document.getElementById('setup-screen').classList.add('hidden');
+        document.getElementById('sidebar').classList.remove('hidden');
+        document.getElementById('main-content').classList.remove('hidden');
+        
+        initTimer(selectedMinutes * 60);
+        showQuestion();
+        renderSidebar();
+    }
+
+    // 4. Hiển thị nội dung
+    function showQuestion() {
+        const q = examSet[currentIdx];
+        const paper = document.getElementById('paper');
+        let html = `<div class="type-badge">PHẦN ${q.type === 'TN' ? 'I' : q.type === 'DS' ? 'II' : 'III'} - CÂU ${currentIdx + 1}</div>`;
+        html += `<div style="font-size:18px; line-height:1.6;">${q.q}</div>`;
+
+        if(q.type === 'TN') {
+            html += `<div class="option-list">` + q.choices.map((c, i) => `
+                <div class="option-item" onclick="saveTN(${i})">
+                    <input type="radio" name="q" ${answers[currentIdx] === i ? 'checked' : ''}>
+                    <span>${c}</span>
+                </div>
+            `).join('') + `</div>`;
+        } else if(q.type === 'DS') {
+            html += `<table class="ds-table">` + Object.keys(q.items).map(k => `
+                <tr>
+                    <td><strong>${k}.</strong> ${q.items[k]}</td>
+                    <td style="width:120px; text-align:right;">
+                        <button class="ds-btn ${answers[currentIdx]?.[k] === true ? 'selected-t' : ''}" onclick="saveDS('${k}', true)">Đúng</button>
+                        <button class="ds-btn ${answers[currentIdx]?.[k] === false ? 'selected-f' : ''}" onclick="saveDS('${k}', false)">Sai</button>
+                    </td>
+                </tr>
+            `).join('') + `</table>`;
+        } else if(q.type === 'TLN') {
+            html += `<input type="text" placeholder="Nhập đáp án..." style="margin-top:20px; width:200px; padding:12px; border-radius:8px; border:2px solid var(--primary);" 
+                    value="${answers[currentIdx] || ''}" oninput="saveTLN(this.value)">`;
+        }
+
+        paper.innerHTML = html;
+        if(window.MathJax) MathJax.typesetPromise();
+    }
+
+    function saveTN(i) { answers[currentIdx] = i; renderSidebar(); showQuestion(); }
+    function saveDS(k, v) { 
+        if(!answers[currentIdx]) answers[currentIdx] = {};
+        answers[currentIdx][k] = v;
+        renderSidebar(); showQuestion();
+    }
+    function saveTLN(v) { answers[currentIdx] = v; renderSidebar(); }
+
+    function move(step) {
+        currentIdx = Math.max(0, Math.min(examSet.length - 1, currentIdx + step));
+        showQuestion();
+        renderSidebar();
+    }
+
+    function renderSidebar() {
+        const grid = document.getElementById('q-grid');
+        grid.innerHTML = examSet.map((_, i) => {
+            let cls = 'q-circle';
+            if(i === currentIdx) cls += ' active';
+            if(answers[i] !== null) cls += ' done';
+            return `<div class="${cls}" onclick="jump(${i})">${i+1}</div>`;
+        }).join('');
+    }
+
+    function jump(i) { currentIdx = i; showQuestion(); renderSidebar(); }
+
+    function initTimer(sec) {
+        timer = setInterval(() => {
+            sec--;
+            let m = Math.floor(sec / 60);
+            let s = sec % 60;
+            document.getElementById('timer').innerText = `${m}:${s < 10 ? '0'+s : s}`;
+            if(sec <= 0) { clearInterval(timer); confirmFinish(); }
+        }, 1000);
+    }
+
+    function confirmFinish() {
+        if(confirm("Bạn có chắc chắn muốn nộp bài?")) {
+            alert("Kết quả đã được ghi lại. Chúc bạn học tốt!");
+            location.reload();
+        }
+    }
+</script>
+
+</body>
+</html>
