@@ -70,5 +70,767 @@
     "q": "Cho hàm số $y=f(x)$ có $f'(x) = x-1$. Hàm số đồng biến trên khoảng nào?",
     "choices": ["A. $(1; +\\infty)$", "B. $(-\\infty; 1)$", "C. $\\mathbb{R}$", "D. $(0; +\\infty)$"],
     "correct": 0
+  },
+    {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "q": "Cho hàm số $y = f(x)$ có đạo hàm trên khoảng $(a; b)$. Phát biểu nào dưới đây là đúng?",
+    "choices": [
+      "A. Nếu $f'(x) \\ge 0$ với mọi $x$ thuộc $(a; b)$ thì hàm số $y = f(x)$ đồng biến trên $(a; b)$.",
+      "B. Nếu $f'(x) > 0$ với mọi $x$ thuộc $(a; b)$ thì hàm số $y = f(x)$ đồng biến trên $(a; b)$.",
+      "C. Hàm số $y = f(x)$ đồng biến trên $(a; b)$ khi và chỉ khi $f'(x) \\ge 0$ với mọi $x$ thuộc $(a; b)$.",
+      "D. Hàm số $y = f(x)$ đồng biến trên $(a; b)$ khi và chỉ khi $f'(x) > 0$ với mọi $x$ thuộc $(a; b)$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "q": "Hàm số nào sau đây nghịch biến trên $\\mathbb{R}$?",
+    "choices": [
+      "A. $y = -x^3 + 3x^2 - 9x$.",
+      "B. $y = -x^3 + x + 1$.",
+      "C. $y = \\frac{x-1}{x-2}$.",
+      "D. $y = 2x^2 + 3x + 2$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "q": "Hàm số nào dưới đây không có cực trị?",
+    "choices": [
+      "A. $y = |x|$.",
+      "B. $y = x^4$.",
+      "C. $y = -x^3 + x$.",
+      "D. $y = \\frac{2x-1}{x+1}$."
+    ],
+    "correct": 3
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "q": "Giá trị cực tiểu của hàm số $y = x^2 \\ln x$ là:",
+    "choices": [
+      "A. $\\frac{1}{e}$.",
+      "B. $-\\frac{1}{e}$.",
+      "C. $-\\frac{1}{2e}$.",
+      "D. $\\frac{1}{2e}$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "q": "Giá trị lớn nhất của hàm số $y = (x-2)^2 e^x$ trên đoạn $\\left[1; 3\\right]$ là:",
+    "choices": [
+      "A. $0$.",
+      "B. $e^3$.",
+      "C. $e^4$.",
+      "D. $e$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "q": "Cho hàm số $y = f(x)$ thoả mãn: $\\lim_{x \\to 2^-} f(x) = 1$; $\\lim_{x \\to 2^+} f(x) = 1$; $\\lim_{x \\to -\\infty} f(x) = 2$ và $\\lim_{x \\to +\\infty} f(x) = 2$. Khẳng định nào sau đây là đúng?",
+    "choices": [
+      "A. Đường thẳng $x = 2$ là tiệm cận đứng của đồ thị hàm số.",
+      "B. Đường thẳng $y = 2$ là tiệm cận ngang của đồ thị hàm số.",
+      "C. Đường thẳng $y = 1$ là tiệm cận ngang của đồ thị hàm số.",
+      "D. Đường thẳng $x = 2$ là tiệm cận ngang của đồ thị hàm số."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "q": "Tiệm cận xiên của đồ thị hàm số $y = \\frac{x^2+2x-2}{x+2}$ là:",
+    "choices": [
+      "A. $y = -2$.",
+      "B. $y = 1$.",
+      "C. $y = x + 2$.",
+      "D. $y = x$."
+    ],
+    "correct": 3
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "q": "Cho hàm số $y = f(x)$ xác định trên $\\mathbb{R} \\setminus \\{1; 3\\}$, có $\\lim_{x \\to -\\infty} f(x) = 1$, $\\lim_{x \\to 1^-} f(x) = -1$, $\\lim_{x \\to 1^+} f(x) = 7$, $\\lim_{x \\to 3^-} f(x) = +\\infty$, $\\lim_{x \\to 3^+} f(x) = -\\infty$, $\\lim_{x \\to +\\infty} f(x) = -1$. Khẳng định nào sau đây là sai?",
+    "choices": [
+      "A. Đường thẳng $y = 1$ là tiệm cận ngang của đồ thị hàm số đã cho.",
+      "B. Đường thẳng $y = -1$ là tiệm cận ngang của đồ thị hàm số đã cho.",
+      "C. Đường thẳng $x = 3$ là tiệm cận đứng của đồ thị hàm số đã cho.",
+      "D. Đường thẳng $x = 1$ là tiệm cận đứng của đồ thị hàm số đã cho."
+    ],
+    "correct": 3
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "q": "Cho hàm số $y = \\frac{x-2}{x+1}$. Mệnh đề nào sau đây đúng?",
+    "choices": [
+      "A. Hàm số nghịch biến trên khoảng $(-\\infty; -1)$.",
+      "B. Hàm số đồng biến trên các khoảng $(-\\infty; -1)$ và $(-1; +\\infty)$.",
+      "C. Hàm số đồng biến trên $\\mathbb{R} \\setminus \\{-1\\}$.",
+      "D. Hàm số nghịch biến trên khoảng $(-1; +\\infty)$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "q": "Điểm cực đại của đồ thị hàm số $y = x^3 - 6x^2 + 9x + 30$ có toạ độ là:",
+    "choices": [
+      "A. $(1; 34)$.",
+      "B. $(3; 30)$.",
+      "C. $(34; 1)$.",
+      "D. $(30; 3)$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "q": "Cho hàm số $y = \\frac{x+1}{x-1}$. Khẳng định nào sau đây là đúng?",
+    "choices": [
+      "A. Hàm số có một điểm cực đại và một điểm cực tiểu.",
+      "B. Hàm số đạt cực đại tại $x = 1$.",
+      "C. Hàm số không có cực trị.",
+      "D. Hàm số đạt cực tiểu tại $x = -1$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "q": "Hàm số $y = -x^2 + 2x + 3$ đồng biến trên khoảng nào dưới đây?",
+    "choices": [
+      "A. $(1; +\\infty)$.",
+      "B. $(-\\infty; 1)$.",
+      "C. $(-\\infty; 2)$.",
+      "D. $(2; +\\infty)$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "q": "Gọi $M, m$ lần lượt là giá trị lớn nhất và giá trị nhỏ nhất của hàm số $y = \\sqrt{1-x^2}$. Tính $M + m$.",
+    "choices": [
+      "A. $1$.",
+      "B. $2$.",
+      "C. $0$.",
+      "D. $-1$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "q": "Giá trị nhỏ nhất của hàm số $y = x^4 - 4x^2 + 3$ trên đoạn $\\left[0; 4\\right]$ là:",
+    "choices": [
+      "A. $3$.",
+      "B. $-1$.",
+      "C. $195$.",
+      "D. $0$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "q": "Tiệm cận ngang của đồ thị hàm số $y = \\frac{2x-1}{x-1}$ là đường thẳng có phương trình:",
+    "choices": [
+      "A. $x = 1$.",
+      "B. $y = -1$.",
+      "C. $y = 2$.",
+      "D. $x = 2$."
+    ],
+    "correct": 2
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "q": "Đồ thị hàm số $y = \\frac{3-x}{x+2}$ có đường tiệm cận đứng là:",
+    "choices": [
+      "A. $x = -2$.",
+      "B. $y = -1$.",
+      "C. $x = 3$.",
+      "D. $y = 3$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "q": "Đường tiệm cận xiên của đồ thị hàm số $y = \\frac{x^2-x+2}{x+1}$ đi qua điểm nào dưới đây?",
+    "choices": [
+      "A. $(0; 2)$.",
+      "B. $(1; -1)$.",
+      "C. $(2; 1)$.",
+      "D. $(-1; 3)$."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "q": "Đồ thị hàm số $y = -x^3 + 3x^2 - 4$ có tâm đối xứng là điểm $I$. Toạ độ của điểm $I$ là:",
+    "choices": [
+      "A. $(1; -2)$.",
+      "B. $(0; -4)$.",
+      "C. $(2; 0)$.",
+      "D. $(-1; 0)$."
+    ],
+    "correct": 0
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "q": "Một vật được phóng thẳng đứng lên trên từ độ cao $2$ m với vận tốc ban đầu là $24,5$ m/s. Bỏ qua sức cản của không khí, độ cao $h$ (mét) của vật sau $t$ (giây) được cho bởi công thức $h(t) = 2 + 24,5t - 4,9t^2$. Tại thời điểm nào thì vật đạt độ cao lớn nhất?",
+    "choices": [
+      "A. $t = 2$ (giây).",
+      "B. $t = 2,5$ (giây).",
+      "C. $t = 4,9$ (giây).",
+      "D. $t = 5$ (giây)."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "q": "Giả sử một điện trở $8 \\ \\Omega$ được mắc song song với một biến trở $x \\ (\\Omega)$. Điện trở tương đương $R$ của mạch được tính theo công thức $R(x) = \\frac{8x}{x+8}$ với $x > 0$. Khẳng định nào sau đây đúng khi nói về sự biến thiên của điện trở tương đương $R$ theo $x$?",
+    "choices": [
+      "A. Điện trở $R$ luôn giảm khi $x$ tăng.",
+      "B. Điện trở $R$ luôn tăng khi $x$ tăng nhưng không bao giờ vượt quá $8 \\ \\Omega$.",
+      "C. Điện trở $R$ có thể vượt quá $8 \\ \\Omega$ nếu $x$ đủ lớn.",
+      "D. Điện trở $R$ đạt giá trị lớn nhất bằng $8 \\ \\Omega$ tại một điểm $x$ xác định."
+    ],
+    "correct": 1
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Cho hàm số $y = f(x)$ có đạo hàm trên khoảng $K$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Nếu $f'(x) > 0$ với mọi $x \\in K$ thì hàm số đồng biến trên khoảng $K$.",
+      "b": "Nếu hàm số đồng biến trên $K$ thì $f'(x) > 0$ với mọi $x \\in K$.",
+      "c": "Nếu $f'(x) < 0$ với mọi $x \\in K$ thì hàm số nghịch biến trên khoảng $K$.",
+      "d": "Nếu $f'(x) = 0$ với mọi $x \\in K$ thì hàm số không đổi trên khoảng $K$."
+    },
+    "correct": {
+      "a": true,
+      "b": false,
+      "c": true,
+      "d": true
+    }
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Cho hàm số $y = x^2 - 4x + 2$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Đạo hàm của hàm số là $y' = 2x - 4$.",
+      "b": "Hàm số đồng biến trên khoảng $(-\\infty; 2)$.",
+      "c": "Hàm số nghịch biến trên khoảng $(-\\infty; 2)$.",
+      "d": "Hàm số đồng biến trên khoảng $(2; +\\infty)$."
+    },
+    "correct": {
+      "a": true,
+      "b": false,
+      "c": true,
+      "d": true
+    }
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Cho hàm số $y = f(x)$ liên tục trên khoảng $(a; b)$ chứa điểm $x_0$ và có đạo hàm trên các khoảng $(a; x_0)$ và $(x_0; b)$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Nếu $f'(x) < 0$ với $x \\in (a; x_0)$ và $f'(x) > 0$ với $x \\in (x_0; b)$ thì $x_0$ là điểm cực tiểu của hàm số.",
+      "b": "Nếu $f'(x) > 0$ với $x \\in (a; x_0)$ và $f'(x) < 0$ với $x \\in (x_0; b)$ thì $x_0$ là điểm cực đại của hàm số.",
+      "c": "Điểm cực trị của hàm số bắt buộc phải là điểm mà tại đó đạo hàm bằng $0$.",
+      "d": "Nếu $f'(x)$ không đổi dấu khi $x$ qua $x_0$ thì $x_0$ không phải là điểm cực trị của hàm số."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    }
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Cho hàm số $y = x^3 - 6x^2 + 9x + 30$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Tập xác định của hàm số là $\\mathbb{R}$.",
+      "b": "Phương trình $y' = 0$ có hai nghiệm phân biệt là $x = 1$ và $x = 3$.",
+      "c": "Hàm số đạt cực đại tại $x = 3$.",
+      "d": "Giá trị cực đại của hàm số là $34$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    }
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Cho hàm số $y = x^4 - 4x^2 + 3$ xét trên đoạn $[0; 4]$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Đạo hàm $y' = 4x^3 - 8x$.",
+      "b": "Trên khoảng $(0; 4)$, phương trình $y' = 0$ chỉ có một nghiệm duy nhất là $x = \\sqrt{2}$.",
+      "c": "Giá trị nhỏ nhất của hàm số trên đoạn $[0; 4]$ là $3$.",
+      "d": "Giá trị lớn nhất của hàm số trên đoạn $[0; 4]$ là $195$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    }
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Cho hàm số $y = \\frac{3x - 2}{x + 1}$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Tập xác định của hàm số là $D = \\mathbb{R} \\setminus \\{-1\\}$.",
+      "b": "Vì $\\lim_{x \\to +\\infty} y = 3$ nên đồ thị hàm số có tiệm cận ngang là đường thẳng $y = 3$.",
+      "c": "Vì $\\lim_{x \\to -1^+} y = -\\infty$ nên đồ thị hàm số có tiệm cận đứng là đường thẳng $x = -1$.",
+      "d": "Đồ thị hàm số đã cho có tiệm cận xiên."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    }
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Cho hàm số $y = \\frac{x^2 - x + 2}{x + 1}$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Đồ thị hàm số có một tiệm cận đứng là đường thẳng $x = -1$.",
+      "b": "Hàm số có thể được viết lại dưới dạng $y = x - 2 + \\frac{4}{x+1}$.",
+      "c": "Đồ thị hàm số có một đường tiệm cận ngang.",
+      "d": "Đồ thị hàm số có tiệm cận xiên là đường thẳng $y = x - 2$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    }
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Cho hàm số $y = f(x)$ xác định trên $\\mathbb{R} \\setminus \\{1; 3\\}$ và có các giới hạn: $\\lim_{x \\to -\\infty} f(x) = 1$, $\\lim_{x \\to 1^-} f(x) = -1$, $\\lim_{x \\to 1^+} f(x) = 7$, $\\lim_{x \\to 3^+} f(x) = +\\infty$, $\\lim_{x \\to +\\infty} f(x) = -1$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Đường thẳng $y = 1$ là một tiệm cận ngang của đồ thị hàm số.",
+      "b": "Đường thẳng $y = -1$ là một tiệm cận ngang của đồ thị hàm số.",
+      "c": "Đường thẳng $x = 3$ là một tiệm cận đứng của đồ thị hàm số.",
+      "d": "Đường thẳng $x = 1$ là một tiệm cận đứng của đồ thị hàm số."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    }
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Bỏ qua sức cản của không khí, độ cao (mét) của một vật được phóng thẳng đứng lên trên từ điểm cách mặt đất 2m với vận tốc ban đầu $24,5$ m/s là $h(t) = 2 + 24,5t - 4,9t^2$ (trong đó $t$ là thời gian tính bằng giây). Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Vận tốc của vật tại thời điểm $t$ là hàm số $v(t) = 24,5 - 9,8t$ (m/s).",
+      "b": "Vận tốc của vật sau $2$ giây là $4,9$ m/s.",
+      "c": "Vật đạt độ cao lớn nhất tại thời điểm $t = 5$ giây.",
+      "d": "Độ cao lớn nhất mà vật đạt được là $32,625$ m."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    }
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Cho hàm số $y = \\frac{x+1}{x-2}$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Tập xác định của hàm số là $D = \\mathbb{R} \\setminus \\{2\\}$.",
+      "b": "Đạo hàm $y' = \\frac{-3}{(x-2)^2} < 0$ với mọi $x \\ne 2$.",
+      "c": "Hàm số nghịch biến trên khoảng $(-\\infty; 2) \\cup (2; +\\infty)$.",
+      "d": "Đồ thị hàm số nhận giao điểm $I(2; 1)$ của hai đường tiệm cận làm tâm đối xứng."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    }
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Cho hàm số $y = \\frac{x^2 - x - 1}{x - 2}$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Đạo hàm của hàm số là $y' = \\frac{x^2 - 4x + 3}{(x-2)^2}$.",
+      "b": "Hàm số đạt cực đại tại $x = 1$ và đạt cực tiểu tại $x = 3$.",
+      "c": "Đồ thị hàm số có tiệm cận đứng là đường thẳng $x = 2$ và tiệm cận xiên là đường thẳng $y = x + 1$.",
+      "d": "Giao điểm của đồ thị hàm số với trục tung là điểm có toạ độ $(0; -1)$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    }
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Cho hàm số $y = x^3 - 3x - 1$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Hàm số đạt cực đại tại $x = -1$ và giá trị cực đại là $1$.",
+      "b": "Hàm số đạt cực tiểu tại $x = 1$ và giá trị cực tiểu là $-3$.",
+      "c": "Hàm số đồng biến trên khoảng $(-1; 1)$.",
+      "d": "Phương trình $x^3 - 3x - 1 = 0$ có đúng 3 nghiệm thực phân biệt."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    }
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Một sân vận động có sức chứa 55000 khán giả. Với giá vé 100 nghìn đồng, trung bình có 27000 khán giả. Cứ giảm giá vé 10 nghìn đồng thì có thêm 3000 khán giả. Gọi $p$ là giá vé (nghìn đồng). Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Số lượng khán giả $x$ theo giá vé $p$ là một hàm số bậc nhất $x = -300p + 57000$.",
+      "b": "Hàm số biểu diễn doanh thu từ tiền bán vé là $R(p) = -300p^2 + 57000p$.",
+      "c": "Đạo hàm của hàm doanh thu là $R'(p) = -600p + 57000$.",
+      "d": "Ban tổ chức sẽ đạt doanh thu lớn nhất khi bán vé với giá 90 nghìn đồng."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    }
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Sự lây lan của một loại virus được mô hình hoá bằng hàm số $N(t) = -t^3 + 12t^2$ (với $0 \\le t \\le 12$), trong đó $N$ là số người bị nhiễm bệnh (tính bằng trăm người) và $t$ là thời gian (tuần). Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Sau 12 tuần, số người nhiễm bệnh trở về $0$ người.",
+      "b": "Đạo hàm $N'(t) = -3t^2 + 24t$ biểu thị tốc độ lây lan của virus.",
+      "c": "Tốc độ lây lan lớn nhất của virus xảy ra vào tuần thứ 4.",
+      "d": "Số người nhiễm bệnh tối đa tại địa phương đó là $256$ trăm người."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": true
+    }
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Cho hàm số $y=f(x)$ có đạo hàm $f'(x) = x(x-1)^2(x-2)$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Hàm số nghịch biến trên khoảng $(0; 2)$.",
+      "b": "Hàm số đạt cực đại tại $x = 2$.",
+      "c": "Hàm số đạt cực đại tại $x = 0$.",
+      "d": "Hàm số đã cho có đúng 3 điểm cực trị."
+    },
+    "correct": {
+      "a": true,
+      "b": false,
+      "c": true,
+      "d": false
+    }
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Từ một tấm bìa carton hình vuông có cạnh $60\\text{ cm}$, người ta cắt bốn hình vuông bằng nhau ở bốn góc rồi gập thành một chiếc hộp không nắp. Gọi $x\\text{ (cm)}$ là độ dài cạnh của các hình vuông nhỏ được cắt bỏ. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Điều kiện của $x$ là $0 < x < 60$.",
+      "b": "Thể tích của chiếc hộp được tính bởi hàm số $V(x) = (60 - 2x)^2 \\cdot x$.",
+      "c": "Đạo hàm của hàm thể tích là $V'(x) = 12x^2 - 480x + 3600$.",
+      "d": "Thể tích hộp đạt giá trị lớn nhất khi cắt bỏ các hình vuông nhỏ có cạnh $x = 10\\text{ cm}$."
+    },
+    "correct": {
+      "a": false,
+      "b": true,
+      "c": true,
+      "d": true
+    }
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Cho hàm số $y = -x^3 + 3x^2 - 4$. Xét tính đúng sai của các mệnh đề sau liên quan đến đồ thị hàm số:",
+    "items": {
+      "a": "Giới hạn $\\lim_{x \\to -\\infty} y = +\\infty$ và $\\lim_{x \\to +\\infty} y = -\\infty$.",
+      "b": "Điểm cực đại của đồ thị hàm số có toạ độ là $(2; 0)$.",
+      "c": "Đồ thị hàm số cắt trục tung tại điểm có toạ độ $(0; 4)$.",
+      "d": "Tâm đối xứng của đồ thị hàm số là điểm $I(1; -2)$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    }
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Cho hàm số $y = \\sqrt{1 - x^2}$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Tập xác định của hàm số là đoạn $[-1; 1]$.",
+      "b": "Đạo hàm của hàm số là $y' = \\frac{x}{\\sqrt{1 - x^2}}$ với $x \\in (-1; 1)$.",
+      "c": "Giá trị nhỏ nhất của hàm số trên tập xác định bằng $0$.",
+      "d": "Giá trị lớn nhất của hàm số trên tập xác định bằng $1$."
+    },
+    "correct": {
+      "a": true,
+      "b": false,
+      "c": true,
+      "d": true
+    }
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Dân số của một thị trấn sau $t$ năm kể từ năm 2000 được mô tả bởi hàm số $N(t) = \\frac{25t + 10}{t + 5}$ ($t \\ge 0$), trong đó $N(t)$ được tính bằng nghìn người. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Dân số của thị trấn vào năm 2000 là $2000$ người.",
+      "b": "Đạo hàm của hàm số là $N'(t) = \\frac{115}{(t+5)^2}$.",
+      "c": "Dân số của thị trấn luôn giảm theo thời gian.",
+      "d": "Theo mô hình này, dân số của thị trấn sẽ không bao giờ vượt quá $25000$ người."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    }
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Giả sử chi phí $C(x)$ (tính bằng nghìn đồng) để sản xuất $x$ đơn vị của một loại hàng hoá được cho bởi hàm số $C(x) = 30000 + 300x - 2,5x^2 + 0,125x^3$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Hàm chi phí biên là $C'(x) = 300 - 5x + 0,375x^2$.",
+      "b": "Chi phí biên tại $x = 200$ là $14300$ nghìn đồng.",
+      "c": "Về mặt ý nghĩa kinh tế, chi phí biên $C'(x)$ chính là chi phí trung bình để sản xuất mỗi sản phẩm.",
+      "d": "Chi phí để sản xuất riêng đơn vị hàng hoá thứ 201 xấp xỉ bằng chi phí biên tại $x = 200$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    }
+  },
+{
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "q": "Cho hàm số $y = x^3 - 6x^2 + 9x + 30$. Tìm hoành độ điểm cực đại của đồ thị hàm số.",
+    "correct": "1"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "q": "Cho hàm số $y = x^3 - 6x^2 + 9x + 30$. Tìm giá trị cực tiểu của hàm số.",
+    "correct": "30"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "q": "Cho hàm số $y = \\frac{x^2 - 2x + 9}{x - 2}$. Gọi $y_{CĐ}$ và $y_{CT}$ lần lượt là giá trị cực đại và giá trị cực tiểu của hàm số. Tính tổng $S = y_{CĐ} + y_{CT}$.",
+    "correct": "4"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "q": "Tìm giá trị lớn nhất của hàm số $y = \\sqrt{1 - x^2}$.",
+    "correct": "1"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "q": "Tìm giá trị nhỏ nhất của hàm số $y = x^4 - 4x^2 + 3$ trên đoạn $[0; 4]$.",
+    "correct": "-1"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "q": "Tìm giá trị lớn nhất của hàm số $y = x^4 - 4x^2 + 3$ trên đoạn $[0; 4]$.",
+    "correct": "195"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "q": "Đường tiệm cận ngang của đồ thị hàm số $y = \\frac{3x - 2}{x + 1}$ cắt trục tung tại điểm có tung độ bằng bao nhiêu?",
+    "correct": "3"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "q": "Đồ thị hàm số $y = \\frac{2x + 1}{x - 4}$ có một đường tiệm cận đứng là đường thẳng $x = c$. Tìm giá trị của $c$.",
+    "correct": "4"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "q": "Biết đường thẳng $y = ax + b$ là tiệm cận xiên của đồ thị hàm số $y = \\frac{x^2 - x + 2}{x + 1}$. Tính tổng $a + b$.",
+    "correct": "-1"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TLN",
+    "q": "Bỏ qua sức cản không khí, độ cao (mét) của một vật được phóng thẳng đứng lên trên được cho bởi công thức $h(t) = 2 + 24,5t - 4,9t^2$, với $t$ (giây) là thời gian. Tại thời điểm $t$ bằng bao nhiêu thì vật đạt độ cao lớn nhất?",
+    "correct": "2.5"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TLN",
+    "q": "Với công thức độ cao $h(t) = 2 + 24,5t - 4,9t^2$, hãy tính độ cao lớn nhất (theo mét) mà vật đó đạt được.",
+    "correct": "32.625"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TLN",
+    "q": "Hàm doanh thu từ tiền bán vé của một sân vận động được mô hình hóa bởi hàm số $R(p) = -300p^2 + 57000p$, trong đó $p$ (nghìn đồng) là giá bán mỗi vé. Cần đặt giá vé $p$ bằng bao nhiêu nghìn đồng để doanh thu lớn nhất?",
+    "correct": "95"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TLN",
+    "q": "Hàm chi phí biên để sản xuất $x$ đơn vị hàng hóa là $C'(x) = 300 - 5x + 0,375x^2$ (nghìn đồng). Tính chi phí biên tại $x = 200$.",
+    "correct": "14300"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "q": "Tìm hoành độ tâm đối xứng của đồ thị hàm số $y = -x^3 + 3x^2 - 4$.",
+    "correct": "1"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "q": "Tính giá trị nhỏ nhất của hàm số $y = x - 2 + \\frac{1}{x}$ trên khoảng $(0; +\\infty)$.",
+    "correct": "0"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "q": "Hàm số $y = \\frac{x^2 - x - 1}{x - 2}$ đạt cực tiểu tại $x = x_0$. Tìm $x_0$.",
+    "correct": "3"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "q": "Tìm giá trị cực đại của hàm số $y = \\frac{x^2 - x - 1}{x - 2}$.",
+    "correct": "1"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+    "type": "TLN",
+    "q": "Lợi nhuận của một công ty khi sản xuất $x$ sản phẩm được cho bởi $P(x) = -0,3x^3 + 36x^2 + 1800x - 48000$. Công ty cần sản xuất bao nhiêu sản phẩm để lợi nhuận đạt mức lớn nhất?",
+    "correct": "100"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "q": "Đồ thị hàm số $y = x^4 - 2x^2 - 1$ có tất cả bao nhiêu điểm cực trị?",
+    "correct": "3"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "q": "Đường tiệm cận xiên của đồ thị hàm số $y = \\frac{x^2 + x - 2}{x + 1}$ có hệ số góc bằng bao nhiêu?",
+    "correct": "1"
   }
+
+
 ]
