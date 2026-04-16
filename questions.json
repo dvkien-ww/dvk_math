@@ -3115,8 +3115,7 @@
     "correct": 0,
     "explain": "Tọa độ vectơ $\\vec{BC} = (x_C - x_B; y_C - y_B; z_C - z_B) = (1 - 0; -1 - 2; 2 - 1) = (1; -3; 1)$."
   },
- 
-  {
+   {
     "grade": "12",
     "chapter": "Vectơ và hệ trục tọa độ trong không gian",
     "type": "TN",
