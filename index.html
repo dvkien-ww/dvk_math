@@ -3,131 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DVK MATH SEED - Hệ thống luyện đề chuyên sâu</title>
+    <title>DVK MATH - Thầy Dương Văn Kiên</title>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
 
     <style>
-        :root { --primary: #4c6ef5; --success: #40c057; --danger: #fa5252; --warning: #fab005; --bg: #f8f9fa; }
-        body { font-family: 'Segoe UI', system-ui, sans-serif; margin: 0; background: var(--bg); display: flex; height: 100vh; overflow: hidden; }
+        :root { --primary: #1a73e8; --success: #34a853; --danger: #ea4335; --warning: #fbbc04; --bg: #f8f9fa; }
+        * { box-sizing: border-box; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; margin: 0; background: var(--bg); display: flex; flex-direction: row; height: 100vh; overflow: hidden; }
         
-        /* Màn hình Setup */
-        #setup-screen { position: fixed; inset: 0; background: white; z-index: 1000; display: flex; align-items: center; justify-content: center; }
-        .setup-card { background: white; padding: 40px; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); width: 100%; max-width: 450px; text-align: center; }
-        select, .btn-start { width: 100%; padding: 14px; margin: 12px 0; border-radius: 10px; border: 2px solid #eee; font-size: 16px; outline: none; }
-        .time-btn { padding: 12px; border: 2px solid #eee; border-radius: 10px; cursor: pointer; background: white; font-weight: 600; transition: 0.3s; }
+        /* Màn hình Đăng ký/Đăng nhập */
+        #auth-screen { position: fixed; inset: 0; background: var(--bg); z-index: 3000; display: flex; align-items: center; justify-content: center; padding: 20px; }
+        .auth-card { background: white; padding: 35px; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); width: 100%; max-width: 400px; text-align: center; }
+
+        /* Setup Screen & Dashboard */
+        #setup-screen { position: fixed; inset: 0; background: white; z-index: 2000; display: none; flex-direction: column; align-items: center; overflow-y: auto; padding: 40px 20px; }
+        .dashboard-section { width: 100%; max-width: 600px; background: #fff; border: 1px solid #eee; border-radius: 15px; padding: 20px; margin-bottom: 25px; }
+        .history-table { width: 100%; font-size: 13px; border-collapse: collapse; margin-top: 10px; }
+        .history-table th { text-align: left; color: #888; padding-bottom: 8px; border-bottom: 1px solid #eee; }
+        .history-table td { padding: 8px 0; border-bottom: 1px dashed #f0f0f0; }
+
+        .setup-card { background: white; padding: 30px; border-radius: 16px; border: 2px solid #f1f3f5; width: 100%; max-width: 500px; text-align: center; }
+        select, .input-style, .btn-start { width: 100%; padding: 12px; margin: 10px 0; border-radius: 10px; border: 2px solid #eee; font-size: 16px; outline: none; transition: 0.3s; }
+        select:focus, .input-style:focus { border-color: var(--primary); }
+        .time-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 10px; }
+        .time-btn { padding: 10px; border: 2px solid #eee; border-radius: 8px; cursor: pointer; background: white; font-weight: 600; }
         .time-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
 
-        /* Sidebar & Main Content */
-        #sidebar { width: 280px; background: white; border-right: 1px solid #e9ecef; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; }
-        #main-content { flex: 1; padding: 40px; overflow-y: auto; position: relative; }
-        .q-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 20px; }
-        .q-circle { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; background: #f1f3f5; border-radius: 8px; cursor: pointer; font-weight: 600; transition: 0.2s; }
+        /* Làm bài */
+        #sidebar { width: 280px; background: white; border-right: 1px solid #e9ecef; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; flex-shrink: 0; }
+        #main-content { flex: 1; padding: 20px; overflow-y: auto; position: relative; }
+        .q-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 20px; }
+        .q-circle { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; background: #f1f3f5; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 14px; }
         .q-circle.active { border: 2px solid var(--primary); color: var(--primary); }
         .q-circle.done { background: var(--success); color: white; }
 
-        /* Vùng hiển thị câu hỏi */
-        .question-paper { background: white; padding: 35px; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); min-height: 500px; line-height: 1.8; }
-        .badge-row { display: flex; gap: 10px; margin-bottom: 25px; }
-        .type-badge { padding: 6px 16px; border-radius: 20px; background: #f1f3f5; color: #495057; font-size: 12px; font-weight: bold; }
+        .question-paper { background: white; padding: 25px; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); min-height: 400px; line-height: 1.7; }
+        .option-item { display: flex; align-items: center; padding: 12px; border: 1px solid #dee2e6; border-radius: 10px; margin-bottom: 8px; cursor: pointer; }
+        .opt-label { font-weight: bold; margin-right: 1.5rem; min-width: 30px; display: inline-block; }
 
-        .option-item { display: flex; align-items: center; padding: 15px; border: 1px solid #dee2e6; border-radius: 10px; margin-bottom: 10px; cursor: pointer; transition: 0.2s; }
-        .option-item:hover { background: #f8f9fa; }
-        .opt-label { font-weight: bold; margin-right: 2rem; display: inline-block; min-width: 35px; }
-
-        .ds-table { width: 100%; margin-top: 20px; border-collapse: collapse; }
-        .ds-table td { padding: 12px; border-bottom: 1px solid #eee; }
-        .ds-row-label { font-weight: bold; margin-right: 2rem; display: inline-block; }
-        .ds-btn { padding: 8px 18px; border: 1px solid #ddd; border-radius: 6px; cursor: pointer; margin-left: 5px; font-weight: bold; }
+        .ds-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        .ds-btn-group { display: flex; gap: 4px; justify-content: flex-end; }
+        .ds-btn { padding: 6px 12px; border: 1px solid #ddd; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 12px; }
         .ds-btn.selected-t { background: var(--success); color: white; border-color: var(--success); }
         .ds-btn.selected-f { background: var(--danger); color: white; border-color: var(--danger); }
 
-        /* Đồng hồ & Nút điều hướng */
-        #timer { font-size: 24px; font-weight: 800; color: var(--danger); position: absolute; top: 30px; right: 40px; }
-        .nav-footer { display: flex; justify-content: space-between; margin-top: 30px; }
-        .btn { padding: 12px 25px; border-radius: 10px; border: none; cursor: pointer; font-weight: 600; }
-        .btn-finish { background: var(--danger); color: white; margin-top: auto; width: 100%; padding: 15px; font-size: 16px; }
+        #timer { font-size: 20px; font-weight: 800; color: var(--danger); margin-bottom: 15px; text-align: right; }
+        .nav-footer { display: flex; justify-content: space-between; margin-top: 25px; }
+        .btn { padding: 12px 20px; border-radius: 10px; border: none; cursor: pointer; font-weight: 600; transition: 0.2s; }
+        .btn:active { transform: scale(0.98); }
+        .btn-finish { background: var(--danger); color: white; margin-top: auto; width: 100%; padding: 15px; }
 
-        /* Màn hình kết quả & Lời giải */
-        #result-screen { display: none; padding: 40px; text-align: center; overflow-y: auto; height: 100vh; background: white; width: 100%; }
-        .score-big { font-size: 4rem; font-weight: 900; color: var(--primary); margin: 0; }
-        .result-table { width: 100%; max-width: 900px; margin: 30px auto; border-collapse: collapse; text-align: left; }
-        .result-table th, .result-table td { padding: 15px; border: 1px solid #eee; }
-        .result-row { cursor: pointer; transition: 0.2s; }
-        .result-row:hover { background: #f8f9fa !important; }
-        .explain-box { display: block; background: #fff9db; border-left: 5px solid var(--warning); padding: 20px; margin: 10px 0; border-radius: 8px; text-align: left; line-height: 1.6; }
-        
+        /* Mobile */
+        @media (max-width: 768px) {
+            body { flex-direction: column; overflow-y: auto; height: auto; }
+            #sidebar { width: 100%; order: 2; height: auto; }
+            #main-content { order: 1; padding: 15px; }
+            .q-grid { grid-template-columns: repeat(7, 1fr); }
+            #timer { position: static; text-align: center; }
+        }
+
+        #result-screen { display: none; padding: 20px; text-align: center; background: white; min-height: 100vh; width: 100%; overflow-y: auto; }
+        .explain-box { background: #fff9db; border-left: 4px solid var(--warning); padding: 15px; margin: 10px 0; border-radius: 8px; text-align: left; }
         .hidden { display: none !important; }
     </style>
 </head>
 <body>
 
+<div id="auth-screen">
+    <div class="auth-card">
+        <h1 style="color: var(--primary); margin: 0;">DVK MATH</h1>
+        <p style="color: #666; margin-bottom: 25px;">Hệ thống luyện đề Toán</p>
+        <input type="text" id="user-name" class="input-style" placeholder="Nhập Họ và Tên...">
+        <input type="text" id="user-class" class="input-style" placeholder="Nhập Lớp (VD: 12A1)...">
+        <button class="btn" style="background: var(--primary); color: white; width: 100%; margin-top: 10px;" onclick="handleAuth()">VÀO HỆ THỐNG</button>
+    </div>
+</div>
+
 <div id="setup-screen">
+    <h2 style="margin: 0; color: var(--primary);">Chào mừng, <span id="hello-name">...</span>!</h2>
+    <p style="color: #666; margin-bottom: 30px;">Chọn chương và thời gian để bắt đầu luyện tập</p>
+
+    <div class="dashboard-section">
+        <h3 style="margin-top: 0; font-size: 16px;">📊 Lịch sử luyện tập gần đây</h3>
+        <div id="history-container">
+            <table class="history-table">
+                <thead><tr><th>Chương</th><th>Điểm</th><th>Thời gian</th></tr></thead>
+                <tbody id="history-body"></tbody>
+            </table>
+        </div>
+    </div>
+
     <div class="setup-card">
-        <h1 style="color: var(--primary); margin: 0;">DVK MATH SEED</h1>
-        <p style="color: #666; margin-bottom: 30px;">Hệ thống luyện đề HS Hạt giống</p>
-        
         <select id="grade-sel" onchange="updateChapters()">
             <option value="">-- Chọn Khối Lớp --</option>
             <option value="10">Lớp 10</option>
             <option value="11">Lớp 11</option>
             <option value="12">Lớp 12</option>
         </select>
-        
         <select id="chapter-sel"><option value="">-- Chọn Chương --</option></select>
-
-        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-top: 10px;">
+        <div class="time-grid">
             <button class="time-btn" onclick="selectTime(45, this)">45 Phút</button>
             <button class="time-btn" onclick="selectTime(60, this)">60 Phút</button>
             <button class="time-btn" onclick="selectTime(90, this)">90 Phút</button>
         </div>
-
-        <button class="btn-start" style="background: var(--primary); color: white; font-weight: bold; margin-top: 30px; cursor: pointer;" onclick="startQuiz()">BẮT ĐẦU KIỂM TRA</button>
+        <button class="btn-start" style="background: var(--primary); color: white; font-weight: bold; margin-top: 25px; cursor: pointer;" onclick="startQuiz()">BẮT ĐẦU LÀM BÀI</button>
+        <button class="btn" style="background: transparent; color: #888; font-size: 12px; margin-top: 10px;" onclick="logout()">Đăng xuất (Đổi tài khoản)</button>
     </div>
 </div>
 
 <div id="sidebar" class="hidden">
-    <h3 style="margin-top: 0;">Tiến trình bài làm</h3>
+    <h3 style="margin-top: 0;">Tiến độ bài làm</h3>
     <div class="q-grid" id="q-grid"></div>
-    <button class="btn btn-finish" onclick="confirmFinish()">NỘP BÀI & XEM GIẢI</button>
+    <button class="btn btn-finish" onclick="confirmFinish()">NỘP BÀI</button>
 </div>
 
 <div id="main-content" class="hidden">
     <div id="timer">00:00</div>
     <div class="question-paper" id="paper"></div>
     <div class="nav-footer">
-        <button class="btn" style="background: #e9ecef" onclick="move(-1)">Câu trước</button>
-        <button class="btn" style="background: var(--primary); color: white" onclick="move(1)">Câu tiếp theo</button>
+        <button class="btn" style="background: #e9ecef" onclick="move(-1)">Trước</button>
+        <button class="btn" style="background: var(--primary); color: white" onclick="move(1)">Tiếp theo</button>
     </div>
 </div>
 
 <div id="result-screen">
-    <h1>KẾT QUẢ TỔNG KẾT</h1>
+    <h1 style="color: var(--primary);">KẾT QUẢ</h1>
     <p class="score-big" id="final-score">0.00</p>
-    <p style="color: #666; margin-bottom: 20px;">(Nhấn vào từng câu dưới đây để xem lời giải chi tiết)</p>
-    
-    <table class="result-table" id="result-detail">
-        <thead>
-            <tr style="background: #f8f9fa">
-                <th>Câu</th>
-                <th>Phần</th>
-                <th>Điểm số</th>
-            </tr>
-        </thead>
+    <p id="result-user-info" style="font-weight: 600; color: #444;"></p>
+    <p style="font-size: 0.85rem; color: #666;">(Chạm vào câu để xem giải thích chi tiết)</p>
+    <table class="result-table" id="result-detail" style="width: 100%; max-width: 800px; margin: 20px auto; border-collapse: collapse; text-align: left;">
+        <thead><tr style="background: #f8f9fa; border: 1px solid #eee;"><th style="padding:12px">Câu</th><th style="padding:12px">Phần</th><th style="padding:12px">Điểm</th></tr></thead>
         <tbody></tbody>
     </table>
-    
     <button class="btn" style="background: var(--primary); color: white; margin-bottom: 50px;" onclick="location.reload()">LÀM ĐỀ KHÁC</button>
 </div>
 
 <script>
     let allQuestions = [], examSet = [], answers = [], currentIdx = 0, selectedMinutes = 0, timer;
     const labels = ["A.", "B.", "C.", "D."];
+    let currentUser = JSON.parse(localStorage.getItem('dvk_user'));
 
-    // Load dữ liệu
-    fetch('questions.json').then(r => r.json()).then(data => { allQuestions = data; });
+    // Khởi tạo Auth
+    window.onload = () => {
+        if(currentUser) {
+            document.getElementById('auth-screen').style.display = 'none';
+            showSetup();
+        }
+        fetch('questions.json').then(r => r.json()).then(data => { allQuestions = data; });
+    };
+
+    function handleAuth() {
+        const name = document.getElementById('user-name').value.trim();
+        const uClass = document.getElementById('user-class').value.trim();
+        if(!name || !uClass) return alert("Vui lòng nhập đầy đủ thông tin!");
+        currentUser = { name, class: uClass };
+        localStorage.setItem('dvk_user', JSON.stringify(currentUser));
+        document.getElementById('auth-screen').style.display = 'none';
+        showSetup();
+    }
+
+    function showSetup() {
+        document.getElementById('setup-screen').style.display = 'flex';
+        document.getElementById('hello-name').innerText = currentUser.name;
+        renderHistory();
+    }
+
+    function renderHistory() {
+        const history = JSON.parse(localStorage.getItem('dvk_history') || '[]');
+        const body = document.getElementById('history-body');
+        body.innerHTML = history.length ? '' : '<tr><td colspan="3" style="text-align:center; color:#ccc; padding:20px;">Chưa có lịch sử làm bài</td></tr>';
+        history.reverse().slice(0, 5).forEach(h => {
+            body.innerHTML += `<tr><td>${h.chapter}</td><td><strong>${h.score}</strong></td><td style="color:#999">${h.date}</td></tr>`;
+        });
+    }
+
+    function logout() {
+        localStorage.removeItem('dvk_user');
+        location.reload();
+    }
 
     function updateChapters() {
         const grade = document.getElementById('grade-sel').value;
@@ -144,35 +200,21 @@
     }
 
     function startQuiz() {
-        const grade = document.getElementById('grade-sel').value;
         const chapter = document.getElementById('chapter-sel').value;
-        if(!grade || !chapter || !selectedMinutes) return alert("Vui lòng chọn đủ thông tin!");
+        if(!chapter || !selectedMinutes) return alert("Vui lòng chọn chương và thời gian!");
         
-        const pool = allQuestions.filter(q => q.grade == grade && q.chapter == chapter);
+        const pool = allQuestions.filter(q => q.grade == document.getElementById('grade-sel').value && q.chapter == chapter);
         const shuffle = (arr) => arr.sort(() => 0.5 - Math.random());
-
-        // Ma trận 3:3:2:1:1
-        let cfg = { tn1: 4, tn2: 4, ds: 2, tln3: 2, tln4: 1, tln5: 1 }; 
-        if(selectedMinutes == 60) cfg = { tn1: 6, tn2: 6, ds: 3, tln3: 3, tln4: 2, tln5: 1 };
-        if(selectedMinutes == 90) cfg = { tn1: 8, tn2: 8, ds: 4, tln3: 4, tln4: 2, tln5: 2 };
+        let cfg = (selectedMinutes == 45) ? { tn1: 4, tn2: 4, ds: 2, tln3: 2, tln4: 1, tln5: 1 } : (selectedMinutes == 60) ? { tn1: 6, tn2: 6, ds: 3, tln3: 3, tln4: 2, tln5: 1 } : { tn1: 8, tn2: 8, ds: 4, tln3: 4, tln4: 2, tln5: 2 };
 
         const pick = (t, l, n) => shuffle(pool.filter(q => q.type === t && q.level == l)).slice(0, n);
+        examSet = [...pick('TN', 1, cfg.tn1), ...pick('TN', 2, cfg.tn2), ...shuffle(pool.filter(q => q.type === 'DS')).slice(0, cfg.ds), ...pick('TLN', 3, cfg.tln3), ...pick('TLN', 4, cfg.tln4), ...pick('TLN', 5, cfg.tln5)];
         
-        const tn1 = pick('TN', 1, cfg.tn1);
-        const tn2 = pick('TN', 2, cfg.tn2);
-        const ds = shuffle(pool.filter(q => q.type === 'DS')).slice(0, cfg.ds);
-        const tln3 = pick('TLN', 3, cfg.tln3);
-        const tln4 = pick('TLN', 4, cfg.tln4);
-        const tln5 = pick('TLN', 5, cfg.tln5);
-
-        examSet = [...tn1, ...tn2, ...ds, ...tln3, ...tln4, ...tln5];
-        if(examSet.length === 0) return alert("Kho dữ bộ câu hỏi chưa đủ để tạo đề theo ma trận này!");
-        
+        if(examSet.length === 0) return alert("Chương này chưa đủ dữ liệu câu hỏi!");
         answers = new Array(examSet.length).fill(null);
         document.getElementById('setup-screen').style.display = 'none';
         document.getElementById('sidebar').classList.remove('hidden');
         document.getElementById('main-content').classList.remove('hidden');
-        
         initTimer(selectedMinutes * 60);
         showQuestion();
     }
@@ -180,29 +222,27 @@
     function showQuestion() {
         const q = examSet[currentIdx], paper = document.getElementById('paper');
         let html = `<div class="badge-row"><div class="type-badge">PHẦN ${q.type === 'TN' ? 'I' : q.type === 'DS' ? 'II' : 'III'}</div></div>`;
-        
-        if(q.image) html += `<img src="${q.image}" style="max-width:100%; margin:20px 0; border-radius:8px;">`;
-        html += `<div style="font-size:1.2rem; font-weight:500; margin-bottom:30px;">Câu ${currentIdx + 1}: ${q.q}</div>`;
+        if(q.image) html += `<img src="${q.image}" style="max-width:100%; margin-bottom:15px; border-radius:8px;">`;
+        html += `<div style="font-size:1.1rem; font-weight:500; margin-bottom:20px;">Câu ${currentIdx + 1}: ${q.q}</div>`;
 
         if(q.type === 'TN') {
-            html += `<div style="display:flex; flex-direction:column; gap:10px;">` + q.choices.map((c, i) => {
+            html += `<div style="display:flex; flex-direction:column; gap:8px;">` + q.choices.map((c, i) => {
                 let txt = c.replace(/^[A-D]\.\s*/, '');
                 return `<div class="option-item" onclick="saveTN(${i})">
-                    <input type="radio" name="q${currentIdx}" ${answers[currentIdx] === i ? 'checked' : ''} style="margin-right:15px">
+                    <input type="radio" name="q${currentIdx}" ${answers[currentIdx] === i ? 'checked' : ''} style="margin-right:12px">
                     <span class="opt-label">${labels[i]}</span><span>${txt}</span></div>`
             }).join('') + `</div>`;
         } else if(q.type === 'DS') {
-            html += `<table class="ds-table">` + Object.keys(q.items).map(k => `
-                <tr><td><span class="ds-row-label">${k}.</span>${q.items[k]}</td>
-                <td style="width:160px; text-align:right;">
-                    <button class="ds-btn ${answers[currentIdx]?.[k] === true ? 'selected-t' : ''}" onclick="saveDS('${k}', true)">Đúng</button>
-                    <button class="ds-btn ${answers[currentIdx]?.[k] === false ? 'selected-f' : ''}" onclick="saveDS('${k}', false)">Sai</button>
-                </td></tr>`).join('') + `</table>`;
+            html += `<table style="width:100%; border-collapse:collapse;">` + Object.keys(q.items).map(k => `
+                <tr><td style="padding:10px 0; border-bottom:1px solid #eee;"><strong>${k}.</strong> ${q.items[k]}</td>
+                <td align="right" style="min-width:110px; border-bottom:1px solid #eee;"><div class="ds-btn-group">
+                    <button class="ds-btn ${answers[currentIdx]?.[k] === true ? 'selected-t' : ''}" onclick="saveDS('${k}', true)">Đ</button>
+                    <button class="ds-btn ${answers[currentIdx]?.[k] === false ? 'selected-f' : ''}" onclick="saveDS('${k}', false)">S</button>
+                </div></td></tr>`).join('') + `</table>`;
         } else if(q.type === 'TLN') {
-            html += `<input type="text" class="btn-start" style="border:2px solid var(--primary); width:100%; max-width:400px; text-align:center;" 
+            html += `<input type="text" class="input-style" style="text-align:center; max-width:300px; display:block; margin: 0 auto; border:2px solid var(--primary);" 
                     placeholder="Nhập đáp án..." value="${answers[currentIdx] || ''}" oninput="saveTLN(this.value)">`;
         }
-
         paper.innerHTML = html;
         renderSidebar();
         if (window.renderMathInElement) renderMathInElement(paper, { delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}], throwOnError: false });
@@ -211,12 +251,11 @@
     function saveTN(i) { answers[currentIdx] = i; showQuestion(); }
     function saveDS(k, v) { if(!answers[currentIdx]) answers[currentIdx] = {}; answers[currentIdx][k] = v; showQuestion(); }
     function saveTLN(v) { answers[currentIdx] = v; renderSidebar(); }
-    function move(s) { currentIdx = Math.max(0, Math.min(examSet.length - 1, currentIdx + s)); showQuestion(); }
+    function move(s) { currentIdx = Math.max(0, Math.min(examSet.length - 1, currentIdx + s)); showQuestion(); window.scrollTo(0,0); }
 
     function renderSidebar() {
         document.getElementById('q-grid').innerHTML = examSet.map((_, i) => {
-            let status = (answers[i] !== null && (typeof answers[i] !== 'object' || (answers[i] !== '' && Object.keys(answers[i]||{}).length > 0))) ? 'done' : '';
-            if(examSet[i].type === 'DS' && (!answers[i] || Object.keys(answers[i]).length < 4)) status = ''; 
+            let status = (answers[i] !== null && (typeof answers[i] !== 'object' || Object.keys(answers[i]).length === 4)) ? 'done' : '';
             return `<div class="q-circle ${i === currentIdx ? 'active' : ''} ${status}" onclick="currentIdx=${i};showQuestion()">${i+1}</div>`;
         }).join('');
     }
@@ -226,7 +265,7 @@
             sec--;
             let m = Math.floor(sec/60), s = sec%60;
             document.getElementById('timer').innerText = `${m}:${s<10?'0'+s:s}`;
-            if(sec <= 0) { clearInterval(timer); confirmFinish(); }
+            if(sec <= 0) confirmFinish();
         }, 1000);
     }
 
@@ -244,31 +283,21 @@
                 let m = 0; ["a","b","c","d"].forEach(k => { if(answers[i]?.[k] === q.correct[k]) m++; });
                 s = (m===1)?0.1 : (m===2)?0.25 : (m===3)?0.5 : (m===4)?1.0 : 0;
             } else if(q.type === "TLN" && String(answers[i]||'').trim() === String(q.correct)) s = 0.5;
-            
-            total += maxP; achieved += s;
-
-            tbody.innerHTML += `
-                <tr class="result-row" onclick="toggleExplain(${i})">
-                    <td>${i+1}</td>
-                    <td>Phần ${q.type}</td>
-                    <td style="font-weight:bold; color:${s===maxP?'green':s>0?'orange':'red'}">${s.toFixed(2)} / ${maxP.toFixed(2)}</td>
-                </tr>
-                <tr id="ex-${i}" class="hidden">
-                    <td colspan="3">
-                        <div class="explain-box">
-                            <strong>Câu hỏi:</strong> ${q.q}<br>
-                            <strong style="color:var(--success)">Đáp án đúng:</strong> ${getCorrectStr(q)}<br>
-                            <hr style="border:0; border-top:1px solid #ddd; margin:10px 0;">
-                            <strong>Lời giải chi tiết:</strong> ${q.explain || "Giáo viên chưa cập nhật lời giải cho câu này."}
-                        </div>
-                    </td>
-                </tr>`;
+            achieved += s; total += maxP;
+            tbody.innerHTML += `<tr onclick="toggleExplain(${i})" style="cursor:pointer; border-bottom:1px solid #eee;"><td style="padding:12px">${i+1}</td><td style="padding:12px">${q.type}</td><td style="padding:12px; font-weight:bold; color:${s===maxP?'green':'red'}">${s.toFixed(2)}</td></tr>
+            <tr id="ex-${i}" class="hidden"><td colspan="3" style="padding:0 12px"><div class="explain-box"><strong>Đúng:</strong> ${getCorrectStr(q)}<br><br>${q.explain || "Chưa có giải thích."}</div></td></tr>`;
         });
+
+        // Lưu lịch sử
+        const history = JSON.parse(localStorage.getItem('dvk_history') || '[]');
+        history.push({ chapter: examSet[0].chapter, score: achieved.toFixed(2), date: new Date().toLocaleString('vi-VN', {hour:'2-digit', minute:'2-digit', day:'2-digit', month:'2-digit'}) });
+        localStorage.setItem('dvk_history', JSON.stringify(history));
 
         document.getElementById('sidebar').classList.add('hidden');
         document.getElementById('main-content').classList.add('hidden');
         document.getElementById('result-screen').style.display = 'block';
         document.getElementById('final-score').innerText = achieved.toFixed(2) + " / " + total.toFixed(2);
+        document.getElementById('result-user-info').innerText = `${currentUser.name} - Lớp ${currentUser.class}`;
     }
 
     function getCorrectStr(q) {
