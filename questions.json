@@ -2,6 +2,276 @@
   {
     "grade": "12",
     "chapter": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 3,
+    "q": "Một trạm y tế đo chiều cao (cm) của 50 học sinh và ghép nhóm thành các khoảng: $[140; 145), [145; 150), [150; 155), [155; 160), [160; 165)$. Tính khoảng biến thiên của mẫu số liệu ghép nhóm này.",
+    "correct": "25",
+    "explain": "Khoảng biến thiên của mẫu số liệu ghép nhóm bằng hiệu số giữa đầu mút phải của nhóm cuối cùng và đầu mút trái của nhóm đầu tiên. Ta có $R = 165 - 140 = 25$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 3,
+    "q": "Cho mẫu số liệu ghép nhóm về điểm thi của 40 học sinh: $[5; 10)$ có 4 bạn, $[10; 15)$ có 10 bạn, $[15; 20)$ có 16 bạn, $[20; 25)$ có 6 bạn, $[25; 30)$ có 4 bạn. Tính khoảng tứ phân vị $\\Delta_Q$ của mẫu số liệu này.",
+    "correct": "7",
+    "explain": "Cỡ mẫu $n=40$. Tứ phân vị thứ nhất $Q_1$ ở vị trí $10$, thuộc nhóm $[10; 15)$, $Q_1 = 10 + \\frac{10-4}{10} \\times 5 = 13$. Tứ phân vị thứ ba $Q_3$ ở vị trí $30$, thuộc nhóm $[15; 20)$, $Q_3 = 15 + \\frac{30-14}{16} \\times 5 = 20$. Khoảng tứ phân vị $\\Delta_Q = 20 - 13 = 7$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 3,
+    "q": "Bảng thống kê cân nặng của 100 người được chia thành các nhóm: $[0; 20)$ có 10 người, $[20; 40)$ có 20 người, $[40; 60)$ có 40 người, $[60; 80)$ có 20 người, $[80; 100)$ có 10 người. Khoảng tứ phân vị của mẫu số liệu ghép nhóm này bằng bao nhiêu?",
+    "correct": "30",
+    "explain": "Tứ phân vị $Q_1$ nằm ở vị trí 25, thuộc nhóm $[20; 40)$ vì tần số tích lũy nhóm 1 là 10. $Q_1 = 20 + \\frac{25-10}{20} \\times 20 = 35$. Tứ phân vị $Q_3$ nằm ở vị trí 75, thuộc nhóm $[60; 80)$ vì tần số tích lũy đến nhóm 3 là 70. $Q_3 = 60 + \\frac{75-70}{20} \\times 20 = 65$. Vậy $\\Delta_Q = 65 - 35 = 30$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 3,
+    "q": "Một mẫu số liệu ghép nhóm có tứ phân vị thứ nhất $Q_1 = 4.5$ và tứ phân vị thứ ba $Q_3 = 10.5$. Một giá trị $x$ được gọi là giá trị ngoại lệ phía trên nếu nó lớn hơn một ngưỡng giới hạn. Hãy tính giá trị ngưỡng giới hạn phía trên đó.",
+    "correct": "19.5",
+    "explain": "Khoảng tứ phân vị $\\Delta_Q = Q_3 - Q_1 = 10.5 - 4.5 = 6$. Ngưỡng trên để xác định giá trị ngoại lệ là $Q_3 + 1.5\\Delta_Q = 10.5 + 1.5 \\times 6 = 10.5 + 9 = 19.5$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 3,
+    "q": "Một mẫu số liệu được chia thành 4 nhóm $[0; 2), [2; 4), [4; 6), [6; 8)$ với tỉ lệ số lượng phần tử mỗi nhóm đều bằng $25\\%$. Tính khoảng tứ phân vị của mẫu số liệu ghép nhóm này.",
+    "correct": "4",
+    "explain": "Giả sử cỡ mẫu là $n$, tần số mỗi nhóm là $n/4$. Tứ phân vị thứ nhất nằm ở vị trí $25\\%$ (cuối nhóm 1), theo nội suy $Q_1 = 2$. Tứ phân vị thứ ba nằm ở vị trí $75\\%$ (cuối nhóm 3), theo nội suy $Q_3 = 6$. Khoảng tứ phân vị là $6 - 2 = 4$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 4,
+    "q": "Khảo sát thời gian tự học của 50 học sinh, ta có bảng tần số ghép nhóm: $[10; 20)$ có $x$ học sinh, $[20; 30)$ có $y$ học sinh, $[30; 40)$ có $z$ học sinh. Biết tứ phân vị thứ nhất $Q_1 = 15$ và tứ phân vị thứ ba $Q_3 = 33.75$. Tính giá trị của biểu thức $P = 2x + y - z$.",
+    "correct": "35",
+    "explain": "Vị trí $Q_1$ là $12.5$. Do $Q_1 = 15 \\in [10; 20)$ nên $15 = 10 + \\frac{12.5}{x} \\times 10 \\Rightarrow x = 25$. Vị trí $Q_3$ là $37.5$. Do $x+y < 50$ và $Q_3 = 33.75 \\in [30; 40)$ nên $33.75 = 30 + \\frac{37.5 - (x+y)}{z} \\times 10$. Suy ra $3.75z = 375 - 10x - 10y$. Mà $x+y+z=50 \\Rightarrow x+y=50-z$. Thay vào: $3.75z = 375 - 10(50-z) \Rightarrow 3.75z = -125 + 10z \Rightarrow 6.25z = 125 \Rightarrow z = 20$. Từ đó $y = 50 - 25 - 20 = 5$. Vậy $P = 2(25) + 5 - 20 = 35$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 4,
+    "q": "Bảng tần số tương đối của một mẫu số liệu ghép nhóm về độ tuổi như sau: nhóm $[0; 5)$ chiếm $20\\%$, nhóm $[5; 10)$ chiếm $40\\%$, nhóm $[10; 15)$ chiếm $30\\%$, nhóm $[15; 20)$ chiếm $10\\%$. Khoảng tứ phân vị $\\Delta_Q$ của mẫu số liệu này bằng bao nhiêu?",
+    "correct": "6.875",
+    "explain": "Sử dụng tần số tương đối tích lũy: $cf_1=20\\%, cf_2=60\\%, cf_3=90\\%, cf_4=100\\%$. Vị trí $Q_1$ là $25\\%$, nằm ở nhóm $[5; 10)$. $Q_1 = 5 + \\frac{25 - 20}{40} \\times 5 = 5 + 0.625 = 5.625$. Vị trí $Q_3$ là $75\\%$, nằm ở nhóm $[10; 15)$. $Q_3 = 10 + \\frac{75 - 60}{30} \\times 5 = 10 + 2.5 = 12.5$. Khoảng tứ phân vị là $12.5 - 5.625 = 6.875$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 4,
+    "q": "Khảo sát thu nhập của 100 công nhân, ta có bảng số liệu: nhóm $[0; 10)$ có 15 người, $[10; 20)$ có 20 người, $[20; 30)$ có 30 người, $[30; 40)$ có 20 người, $[40; 50)$ có 15 người. Hãy tìm ngưỡng giới hạn phía dưới để xác định giá trị ngoại lệ của mẫu số liệu ghép nhóm này.",
+    "correct": "-15",
+    "explain": "Tứ phân vị $Q_1$ ở vị trí 25, thuộc nhóm $[10; 20)$. $Q_1 = 10 + \\frac{25-15}{20} \\times 10 = 15$. Tứ phân vị $Q_3$ ở vị trí 75, thuộc nhóm $[30; 40)$ (tần số tích lũy đến nhóm 3 là 65). $Q_3 = 30 + \\frac{75-65}{20} \\times 10 = 35$. Khoảng tứ phân vị $\\Delta_Q = 35 - 15 = 20$. Ngưỡng dưới bằng $Q_1 - 1.5\\Delta_Q = 15 - 1.5 \\times 20 = -15$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 4,
+    "q": "Một mẫu số liệu ghép nhóm gồm 3 nhóm có độ dài bằng nhau là 10, bắt đầu từ 0 (tức là $[0; 10), [10; 20), [20; 30)$). Biết rằng tần số của các nhóm lập thành một cấp số nhân với công bội $q = 2$. Khoảng tứ phân vị $\\Delta_Q$ của mẫu số liệu ghép nhóm này bằng bao nhiêu?",
+    "correct": "11.875",
+    "explain": "Gọi tần số nhóm đầu là $a$, các nhóm tiếp theo là $2a, 4a$. Cỡ mẫu $n = 7a$. Vị trí $Q_1 = 1.75a$, thuộc nhóm $[10; 20)$. $Q_1 = 10 + \\frac{1.75a - a}{2a} \\times 10 = 13.75$. Vị trí $Q_3 = 5.25a$, thuộc nhóm $[20; 30)$ (tần số tích lũy trước đó là $3a$). $Q_3 = 20 + \\frac{5.25a - 3a}{4a} \\times 10 = 20 + 5.625 = 25.625$. Khoảng tứ phân vị $\\Delta_Q = 25.625 - 13.75 = 11.875$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 4,
+    "q": "Mẫu số liệu gốc có khoảng tứ phân vị là $14.2$. Nếu áp dụng phép biến đổi: nhân mỗi số liệu với $2$ rồi cộng thêm $5$, ta thu được mẫu số liệu mới. Khoảng tứ phân vị của mẫu số liệu (được ghép nhóm theo cách tịnh tiến tương ứng) mới bằng bao nhiêu?",
+    "correct": "28.4",
+    "explain": "Khi thực hiện phép biến đổi tuyến tính $y_i = ax_i + b$ (với $a > 0$), độ phân tán cũng giãn ra $a$ lần. Tứ phân vị mới sẽ là $Q_1' = aQ_1 + b$ và $Q_3' = aQ_3 + b$. Do đó, khoảng tứ phân vị mới là $\\Delta_Q' = Q_3' - Q_1' = a(Q_3 - Q_1) = 2 \\times 14.2 = 28.4$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 5,
+    "q": "Bảng thống kê khối lượng của 120 quả cam: $[0; 10)$ có 20 quả, $[10; 20)$ có 40 quả, $[20; 30)$ có 40 quả, $[30; 40)$ có 20 quả. Ban đầu, khoảng tứ phân vị của mẫu số liệu này là $\\Delta_{Q1}$. Sau đó, người ta gộp nhóm lại thành hai nhóm lớn: $[0; 20)$ và $[20; 40)$ và tính được khoảng tứ phân vị mới là $\\Delta_{Q2}$. Tính giá trị chênh lệch $\\Delta_{Q2} - \\Delta_{Q1}$.",
+    "correct": "5",
+    "explain": "Ban đầu, $n=120$. $Q_1$ ở vị trí 30 thuộc $[10; 20)$, $Q_1 = 10 + \\frac{30-20}{40} \\times 10 = 12.5$. $Q_3$ ở vị trí 90 thuộc $[20; 30)$, $Q_3 = 20 + \\frac{90-60}{40} \\times 10 = 27.5$. Do đó $\\Delta_{Q1} = 15$. Sau khi dồn nhóm, ta có $[0; 20)$ tần số 60 và $[20; 40)$ tần số 60. $Q_1$ ở vị trí 30 thuộc $[0; 20)$, $Q_1 = 0 + \\frac{30}{60} \\times 20 = 10$. $Q_3$ ở vị trí 90 thuộc $[20; 40)$, $Q_3 = 20 + \\frac{90-60}{60} \\times 20 = 30$. $\\Delta_{Q2} = 30 - 10 = 20$. Chênh lệch là $20 - 15 = 5$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 5,
+    "q": "Một cửa hàng thống kê độ tuổi của 100 khách hàng thành 3 nhóm: $[0; 30)$ có $x$ người, $[30; 60)$ có $40$ người, $[60; 90)$ có $y$ người (với $x, y \\in \\mathbb{N}, x+y=60$). Giá trị lớn nhất có thể đạt được của khoảng tứ phân vị của mẫu số liệu ghép nhóm này là bao nhiêu?",
+    "correct": "40",
+    "explain": "Hàm $\\Delta_Q$ theo $x$. Với $25 \\le x \\le 35$, $Q_1$ nằm trong nhóm $[0; 30)$ và $Q_3$ nằm trong nhóm $[60; 90)$. Ta có $Q_1 = \\frac{25}{x} \\times 30 = \\frac{750}{x}$ và $Q_3 = 60 + \\frac{75 - x - 40}{60-x} \\times 30 = 60 + \\frac{35-x}{60-x} \\times 30$. Khảo sát hàm số $f(x) = 60 + 30\\frac{35-x}{60-x} - \\frac{750}{x}$, ta tìm được cực đại tại $x = 30$. Khi $x=30$, $Q_1 = 25$ và $Q_3 = 65$, dẫn tới $\\Delta_Q = 40$. Các trường hợp khác $x < 25$ hoặc $x > 35$ cho kết quả nhỏ hơn."
+  },
+  {
+    "grade": "12",
+    "chapter": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 5,
+    "q": "Trong cùng điều kiện của bài toán trước (100 khách hàng chia làm 3 nhóm $[0; 30)$ có $x$ người, $[30; 60)$ có $40$ người, $[60; 90)$ có $y$ người, $x+y=60$). Giá trị nhỏ nhất có thể đạt được của khoảng tứ phân vị của mẫu số liệu ghép nhóm này là bao nhiêu?",
+    "correct": "28.75",
+    "explain": "Tương tự, xét $\\Delta_Q(x)$. Khi $x=0$, $y=60$, $Q_1$ ở vị trí 25 thuộc nhóm $[30; 60)$, $Q_1 = 30 + \\frac{25}{40} \\times 30 = 48.75$. $Q_3$ ở vị trí 75 thuộc nhóm $[60; 90)$, $Q_3 = 60 + \\frac{75-40}{60} \\times 30 = 77.5$. $\\Delta_Q = 77.5 - 48.75 = 28.75$. Hàm số này đạt giá trị nhỏ nhất tại các biên $x=0$ hoặc $x=60$ mang lại $\\Delta_Q = 28.75$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 5,
+    "q": "Một mẫu số liệu ghép nhóm có tổng tần số là 100, chia làm 3 nhóm $[0; 10), [10; 20), [20; 30)$ với tần số tương ứng lần lượt là $x, y, z$. Biết tứ phân vị thứ nhất $Q_1 = 6.25$ và tứ phân vị thứ ba $Q_3 = 23.75$. Tính giá trị của biểu thức $K = \\frac{x \\cdot y \\cdot z}{1000}$.",
+    "correct": "32",
+    "explain": "Do $Q_1 = 6.25 \\in [0; 10)$ nên $0 + \\frac{25}{x} \\times 10 = 6.25 \\Rightarrow x = 40$. Lại có $Q_3 = 23.75 \\in [20; 30)$ nên $20 + \\frac{75 - x - y}{z} \\times 10 = 23.75$. Suy ra $\\frac{75 - (100-z)}{z} = 0.375 \\Rightarrow \\frac{z - 25}{z} = 0.375 \\Rightarrow 0.625z = 25 \\Rightarrow z = 40$. Từ đó $y = 100 - 40 - 40 = 20$. Vậy $K = \\frac{40 \\times 20 \\times 40}{1000} = 32$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 5,
+    "q": "Người ta vẽ đường gấp khúc tần số tích lũy cho một mẫu số liệu ghép nhóm có cỡ mẫu $n=100$. Các điểm trên mặt phẳng tọa độ xác định đường gấp khúc lần lượt là $(0; 0), (10; 15), (20; 55), (30; a), (40; 100)$. Biết khoảng tứ phân vị của mẫu số liệu này là $15.5$. Tìm giá trị của tham số $a$.",
+    "correct": "80",
+    "explain": "Các điểm tần số tích lũy tại các đầu mút nhóm là: $cf(10)=15, cf(20)=55, cf(30)=a$. Cỡ mẫu $n=100$. $Q_1$ ở vị trí 25, thuộc nhóm $[10; 20)$. $Q_1 = 10 + \\frac{25-15}{55-15} \\times 10 = 12.5$. Vì khoảng tứ phân vị $\\Delta_Q = 15.5$, nên $Q_3 = 12.5 + 15.5 = 28$. Do $Q_3 = 28 \\in [20; 30)$, ta có $Q_3 = 20 + \\frac{75-55}{a-55} \\times 10 = 28 \\Rightarrow \\frac{200}{a-55} = 8 \\Rightarrow a-55 = 25 \\Rightarrow a = 80$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 3,
+    "q": "Cho mẫu số liệu ghép nhóm về thời gian hoàn thành một sản phẩm (phút) của 20 công nhân gồm 3 nhóm: $[0; 10)$ có 5 người, $[10; 20)$ có 10 người, $[20; 30)$ có 5 người. Tính phương sai của mẫu số liệu ghép nhóm này.",
+    "correct": "50",
+    "explain": "Các giá trị đại diện lần lượt là $c_1=5, c_2=15, c_3=25$. Số trung bình $\\bar{x} = \\frac{5 \\times 5 + 10 \\times 15 + 5 \\times 25}{20} = \\frac{25 + 150 + 125}{20} = 15$. Phương sai $s^2 = \\frac{5(5-15)^2 + 10(15-15)^2 + 5(25-15)^2}{20} = \\frac{500 + 0 + 500}{20} = 50$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 3,
+    "q": "Một mẫu số liệu ghép nhóm có cỡ mẫu $n=50$, số trung bình $\\bar{x}=10$. Biết rằng trung bình của các bình phương giá trị đại diện (có trọng số) là $\\frac{1}{n}\\sum_{i=1}^k n_i c_i^2 = 104$. Tính độ lệch chuẩn của mẫu số liệu này.",
+    "correct": "2",
+    "explain": "Áp dụng công thức tính nhanh phương sai: $s^2 = \\frac{1}{n}\\sum n_i c_i^2 - \\bar{x}^2 = 104 - 10^2 = 104 - 100 = 4$. Độ lệch chuẩn là $s = \\sqrt{s^2} = \\sqrt{4} = 2$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 3,
+    "q": "Khảo sát điểm thi của 40 học sinh, ta có bảng tần số ghép nhóm với 2 nhóm: $[4; 6)$ có 20 học sinh, $[6; 8)$ có 20 học sinh. Tính phương sai của mẫu số liệu ghép nhóm này.",
+    "correct": "1",
+    "explain": "Giá trị đại diện là $c_1=5$ và $c_2=7$. Số trung bình $\\bar{x} = \\frac{20 \\times 5 + 20 \\times 7}{40} = 6$. Phương sai $s^2 = \\frac{20(5-6)^2 + 20(7-6)^2}{40} = \\frac{20(1) + 20(1)}{40} = \\frac{40}{40} = 1$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 3,
+    "q": "Phương sai của một mẫu số liệu ghép nhóm đo chiều cao cây giống là $12.5$. Nếu người ta áp dụng một loại phân bón làm cho chiều cao của mỗi cây trong toàn bộ mẫu tăng đúng gấp đôi, thì phương sai của mẫu số liệu mới (được ghép nhóm theo cách tương ứng) sẽ bằng bao nhiêu?",
+    "correct": "50",
+    "explain": "Khi nhân mỗi giá trị của mẫu số liệu với một hằng số $k > 0$, phương sai của mẫu số liệu mới sẽ gấp $k^2$ lần phương sai cũ. Ở đây $k=2$, nên $s_{moi}^2 = 2^2 \\times 12.5 = 4 \\times 12.5 = 50$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 3,
+    "q": "Cho một mẫu số liệu ghép nhóm có hai nhóm là $[10; 20)$ với tần số 10 và $[20; 30)$ với tần số $m$. Biết số trung bình của mẫu số liệu là $\\bar{x} = 21$. Tính phương sai của mẫu số liệu này.",
+    "correct": "24",
+    "explain": "Giá trị đại diện $c_1=15, c_2=25$. Ta có phương trình số trung bình: $\\frac{10 \\times 15 + m \\times 25}{10 + m} = 21 \\Rightarrow 150 + 25m = 210 + 21m \\Rightarrow 4m = 60 \\Rightarrow m = 15$. Khi đó $n = 25$. Phương sai $s^2 = \\frac{10(15-21)^2 + 15(25-21)^2}{25} = \\frac{10(36) + 15(16)}{25} = \\frac{360 + 240}{25} = \\frac{600}{25} = 24$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 4,
+    "q": "Khảo sát tuổi thọ linh kiện ở hai phân xưởng. Phân xưởng A có $n_A = 20$ linh kiện, trung bình $\\bar{x}_A = 5$, phương sai $s_A^2 = 4$. Phân xưởng B có $n_B = 30$ linh kiện, trung bình $\\bar{x}_B = 10$, phương sai $s_B^2 = 9$. Nếu gộp chung toàn bộ 50 linh kiện này lại, phương sai của mẫu số liệu gộp chung là bao nhiêu?",
+    "correct": "13",
+    "explain": "Số trung bình chung $\\bar{x} = \\frac{20 \\times 5 + 30 \\times 10}{50} = 8$. Tổng các bình phương giá trị đại diện của nhóm A: $S_A = 20(s_A^2 + \\bar{x}_A^2) = 20(4 + 25) = 580$. Tổng các bình phương của nhóm B: $S_B = 30(s_B^2 + \\bar{x}_B^2) = 30(9 + 100) = 3270$. Phương sai gộp: $s^2 = \\frac{S_A + S_B}{50} - \\bar{x}^2 = \\frac{580 + 3270}{50} - 8^2 = \\frac{3850}{50} - 64 = 77 - 64 = 13$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 4,
+    "q": "Một mẫu số liệu ghép nhóm có $n=100$, phân bố vào 3 nhóm có giá trị đại diện lần lượt là $c_1=10, c_2=20, c_3=30$ với các tần số tương ứng là $x, y, z$. Biết rằng số trung bình của mẫu là $\\bar{x}=20$. Tìm giá trị lớn nhất có thể có của phương sai $s^2$ đối với mẫu số liệu này.",
+    "correct": "100",
+    "explain": "Ta có $x+y+z=100$ và $\\frac{10x + 20y + 30z}{100} = 20 \\Rightarrow x + 2y + 3z = 200$. Thay $y = 100-x-z$ vào, ta được $x + 2(100-x-z) + 3z = 200 \\Rightarrow 200 - x + z = 200 \\Rightarrow x=z$. Khi đó phương sai $s^2 = \\frac{x(10-20)^2 + y(20-20)^2 + z(30-20)^2}{100} = \\frac{100x + 0 + 100x}{100} = 2x$. Vì $y = 100 - 2x \\ge 0$ nên $x \\le 50$. Do đó $s^2_{max} = 2(50) = 100$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 4,
+    "q": "Cho mẫu số liệu ghép nhóm gồm 3 nhóm: $[0; 2)$ có tần số 5, $[2; 4)$ có tần số $m$, và $[4; 6)$ có tần số 5. Tìm giá trị của $m$ để phương sai của mẫu số liệu này bằng $1.6$.",
+    "correct": "15",
+    "explain": "Giá trị đại diện: $c_1=1, c_2=3, c_3=5$. Dữ liệu đối xứng nên số trung bình $\\bar{x} = 3$. Phương sai $s^2 = \\frac{5(1-3)^2 + m(3-3)^2 + 5(5-3)^2}{5+m+5} = \\frac{20 + 0 + 20}{10+m} = \\frac{40}{10+m}$. Theo bài ra, $\\frac{40}{10+m} = 1.6 \\Rightarrow 10+m = 25 \\Rightarrow m = 15$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 4,
+    "q": "Một mẫu số liệu ghép nhóm có cỡ mẫu $n=20$, số trung bình $\\bar{x} = 10$ và phương sai $s^2 = 4$. Sau đó, người ta phát hiện có một sai sót: một giá trị đại diện bị ghi nhầm là $12$, thực chất nó thuộc nhóm có giá trị đại diện là $8$. Hãy tính lại phương sai chính xác của mẫu số liệu này.",
+    "correct": "3.96",
+    "explain": "Tổng các giá trị đại diện ban đầu: $S_1 = 20 \\times 10 = 200$. Tổng mới: $S_1' = 200 - 12 + 8 = 196$. Số trung bình mới: $\\bar{x}' = 196/20 = 9.8$. Tổng các bình phương ban đầu: $S_2 = 20(s^2 + \\bar{x}^2) = 20(4 + 100) = 2080$. Tổng các bình phương mới: $S_2' = 2080 - 12^2 + 8^2 = 2080 - 144 + 64 = 2000$. Phương sai mới: $s'^2 = \\frac{S_2'}{n} - (\\bar{x}')^2 = \\frac{2000}{20} - 9.8^2 = 100 - 96.04 = 3.96$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 4,
+    "q": "Khảo sát điểm thi của hai lớp. Lớp A có phân bố: $[0; 10)$ tần số 10, $[10; 20)$ tần số 10. Lớp B có phân bố: $[0; 10)$ tần số 10, $[10; 20)$ tần số 20, $[20; 30)$ tần số 10. Gọi $s_A^2$ và $s_B^2$ lần lượt là phương sai của mẫu số liệu lớp A và lớp B. Tính tỉ số $K = \\frac{s_B^2}{s_A^2}$.",
+    "correct": "2",
+    "explain": "Lớp A: $c_1=5, c_2=15$. $\\bar{x}_A = 10$. $s_A^2 = \\frac{10(5-10)^2 + 10(15-10)^2}{20} = \\frac{250 + 250}{20} = 25$. Lớp B: $c_1=5, c_2=15, c_3=25$. $\\bar{x}_B = \\frac{10 \\times 5 + 20 \\times 15 + 10 \\times 25}{40} = \\frac{50 + 300 + 250}{40} = 15$. $s_B^2 = \\frac{10(5-15)^2 + 20(15-15)^2 + 10(25-15)^2}{40} = \\frac{1000 + 0 + 1000}{40} = 50$. Tỉ số $K = 50 / 25 = 2$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 5,
+    "q": "Một mẫu số liệu được chia thành 5 nhóm có độ dài bằng nhau là 2, với các nhóm bắt đầu từ 0 (tức là $[0; 2), [2; 4), \\dots, [8; 10)$). Tần số của nhóm thứ $i$ được cho bởi quy luật $n_i = i$ (với $i=1, 2, 3, 4, 5$). Gọi $s^2$ là phương sai của mẫu số liệu ghép nhóm này. Tính giá trị của biểu thức $9s^2$.",
+    "correct": "56",
+    "explain": "Các giá trị đại diện là $1, 3, 5, 7, 9$. Tần số tương ứng $1, 2, 3, 4, 5$. Tổng tần số $n = 15$. Tổng $n_i c_i = 1(1) + 2(3) + 3(5) + 4(7) + 5(9) = 1 + 6 + 15 + 28 + 45 = 95$. Trung bình $\\bar{x} = 95/15 = 19/3$. Tổng $n_i c_i^2 = 1(1) + 2(9) + 3(25) + 4(49) + 5(81) = 1 + 18 + 75 + 196 + 405 = 695$. Phương sai $s^2 = \\frac{695}{15} - \\left(\\frac{19}{3}\\right)^2 = \\frac{139}{3} - \\frac{361}{9} = \\frac{417 - 361}{9} = \\frac{56}{9}$. Vậy $9s^2 = 56$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 5,
+    "q": "Một công ty phân tích mẫu số liệu ghép nhóm có $n=40$, $\\bar{x}=10$, và phương sai $s^2=15$. Để cải thiện độ chính xác, họ thu thập thêm một nhóm dữ liệu mới có giá trị đại diện là 10 với tần số $m$. Tính toán lại thấy phương sai của toàn bộ mẫu số liệu gộp chung là 12. Tìm số lượng $m$ dữ liệu mới được thêm vào.",
+    "correct": "10",
+    "explain": "Với dữ liệu ban đầu: Tổng các bình phương giá trị đại diện $S = 40(15 + 10^2) = 4600$. Dữ liệu mới thêm có giá trị đại diện $c=10$, do đó trung bình mẫu gộp không đổi, vẫn là $\\bar{x} = 10$. Tổng bình phương gộp: $S' = 4600 + m(10^2) = 4600 + 100m$. Phương sai gộp $s_{moi}^2 = \\frac{4600 + 100m}{40 + m} - 100$. Theo bài ra $s_{moi}^2 = 12$, nên $\\frac{4600 + 100m}{40+m} - 100 = 12 \\Rightarrow 4600 + 100m - 4000 - 100m = 12(40+m) \\Rightarrow 600 = 480 + 12m \\Rightarrow 12m = 120 \\Rightarrow m = 10$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 5,
+    "q": "Một mẫu số liệu ghép nhóm có 3 nhóm với giá trị đại diện là $c_1=2, c_2=4, c_3=6$. Tần số của các nhóm tương ứng là $x, y, x$ (đối xứng). Biết cỡ mẫu là $n=100$ và phương sai của mẫu số liệu là $s^2 = 3.2$. Tìm tần số $y$ của nhóm thứ hai.",
+    "correct": "20",
+    "explain": "Do tần số đối xứng nên số trung bình $\\bar{x} = 4$. Cỡ mẫu $n = 2x+y = 100$. Phương sai $s^2 = \\frac{x(2-4)^2 + y(4-4)^2 + x(6-4)^2}{100} = \\frac{4x + 0 + 4x}{100} = \\frac{8x}{100} = 0.08x$. Giả thiết cho $s^2 = 3.2 \\Rightarrow 0.08x = 3.2 \\Rightarrow x = 40$. Suy ra $y = 100 - 2x = 100 - 80 = 20$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 5,
+    "q": "Giả sử một tập dữ liệu có kích thước $n=100$ được phân nhóm vào 5 khoảng: $[0; 2), [2; 4), [4; 6), [6; 8), [8; 10]$. Phương sai lớn nhất có thể đạt được đối với mẫu số liệu ghép nhóm này bằng bao nhiêu?",
+    "correct": "16",
+    "explain": "Các giá trị đại diện là $c_1=1, c_2=3, c_3=5, c_4=7, c_5=9$. Để phương sai đạt giá trị cực đại, tất cả dữ liệu phải dồn về hai đầu mút xa nhất cách đều trung bình (phân cực tối đa). Tức là $n_1 = 50, n_5 = 50$, các $n_i$ khác bằng 0. Khi đó $\\bar{x} = \\frac{50 \\times 1 + 50 \\times 9}{100} = 5$. Phương sai $s_{max}^2 = \\frac{50(1-5)^2 + 50(9-5)^2}{100} = \\frac{50 \\times 16 + 50 \\times 16}{100} = 16$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 5,
+    "q": "Một mẫu số liệu được ghép thành 3 nhóm kề nhau có độ dài nhóm đều bằng $d$ ($d>0$). Tần số của 3 nhóm lần lượt tỉ lệ với $1, 2, 1$. Người ta tính được phương sai của mẫu số liệu ghép nhóm này là $18$. Hãy tính độ dài $d$ của mỗi nhóm.",
+    "correct": "6",
+    "explain": "Gọi giá trị đại diện của nhóm 2 là $a$. Khi đó giá trị đại diện của 3 nhóm là $a-d, a, a+d$. Vì tần số tỉ lệ $1, 2, 1$ (cấu trúc đối xứng) nên số trung bình $\\bar{x} = a$. Giả sử cỡ mẫu là $n=4$ với tần số thực tế là $1, 2, 1$. Phương sai $s^2 = \\frac{1(a-d-a)^2 + 2(a-a)^2 + 1(a+d-a)^2}{4} = \\frac{(-d)^2 + 0 + d^2}{4} = \\frac{2d^2}{4} = 0.5d^2$. Theo đề bài $0.5d^2 = 18 \\Rightarrow d^2 = 36$. Do $d>0$ nên $d=6$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
     "type": "DS",
     "q": "Xét các phát biểu sau về khoảng biến thiên và khoảng tứ phân vị của mẫu số liệu ghép nhóm:",
     "items": {
