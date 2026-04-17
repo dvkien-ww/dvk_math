@@ -1,7 +1,7 @@
 [
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 3,
     "q": "Trong không gian $Oxyz$, mặt cầu $(S)$ có tâm $I(1; -2; 3)$ và tiếp xúc với mặt phẳng $(P): 2x - 2y + z + 3 = 0$. Gọi $R$ là bán kính của mặt cầu $(S)$. Tính giá trị của $R^2$.",
@@ -10,7 +10,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 3,
     "q": "Trong không gian $Oxyz$, cho hai điểm $A(2; -1; 4)$ và $B(4; 3; 0)$. Gọi $(S)$ là mặt cầu nhận đoạn thẳng $AB$ làm đường kính. Tính bình phương bán kính của mặt cầu $(S)$.",
@@ -19,7 +19,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 3,
     "q": "Trong không gian $Oxyz$, viết phương trình mặt cầu $(S)$ đi qua bốn điểm $O(0; 0; 0), A(4; 0; 0), B(0; -2; 0)$ và $C(0; 0; 6)$. Tâm $I$ của mặt cầu có toạ độ là $(a; b; c)$. Tính tổng $a+b+c$.",
@@ -28,7 +28,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 3,
     "q": "Trong không gian $Oxyz$, cho phương trình $x^2 + y^2 + z^2 - 2x + 4y - 6z + m = 0$. Tìm giá trị của tham số $m$ để phương trình trên là phương trình của một mặt cầu có bán kính $R = 5$.",
@@ -37,7 +37,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 3,
     "q": "Trong không gian $Oxyz$, mặt cầu $(S)$ có tâm $I(-1; 2; 0)$ cắt trục $Ox$ tại hai điểm $A, B$ sao cho độ dài đoạn thẳng $AB = 6$. Tính bình phương bán kính của mặt cầu $(S)$.",
@@ -46,7 +46,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 4,
     "q": "Trong không gian $Oxyz$, cho mặt cầu $(S): (x-1)^2 + (y-2)^2 + (z-2)^2 = 9$ và điểm $M(4; 2; 6)$. Tìm khoảng cách ngắn nhất từ điểm $M$ đến một điểm bất kỳ nằm trên mặt cầu $(S)$.",
@@ -55,7 +55,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 4,
     "q": "Trong không gian $Oxyz$, cho mặt phẳng $(P): 2x - y + 2z - 10 = 0$ cắt mặt cầu $(S): (x-1)^2 + (y+1)^2 + (z-2)^2 = 25$ theo giao tuyến là một đường tròn $(C)$. Ký hiệu diện tích của hình tròn $(C)$ là $A$. Tính giá trị của biểu thức $\\frac{A}{\\pi}$.",
@@ -64,7 +64,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 4,
     "q": "Trong không gian $Oxyz$, một đường thẳng $\\Delta$ đi qua điểm $M(1; 2; -1)$ cắt mặt cầu $(S): x^2 + y^2 + z^2 - 4x - 2y + 2z - 3 = 0$ tại hai điểm $A, B$ sao cho độ dài đoạn thẳng $AB$ đạt giá trị lớn nhất. Tính độ dài lớn nhất đó.",
@@ -73,7 +73,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 4,
     "q": "Trong không gian $Oxyz$, cho ba điểm $A(1; 0; 0), B(0; 2; 0)$ và $C(0; 0; 3)$. Gọi $(S)$ là mặt cầu ngoại tiếp tứ diện $OABC$. Tính bình phương khoảng cách từ gốc toạ độ $O$ đến tâm của mặt cầu $(S)$ (nhập đáp án dưới dạng số thập phân).",
@@ -82,7 +82,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 4,
     "q": "Trong không gian $Oxyz$, xét mặt cầu $(S): (x-1)^2 + (y-2)^2 + (z-3)^2 = 25$ và đường thẳng $d: \\begin{cases} x = 1 + t \\\\ y = 2 \\\\ z = 0 \\end{cases}$. Gọi $(P)$ là mặt phẳng chứa $d$ và cắt $(S)$ theo một đường tròn có bán kính nhỏ nhất. Tính bình phương bán kính nhỏ nhất đó.",
@@ -91,7 +91,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 5,
     "q": "Trong không gian $Oxyz$, cho hai điểm $A(3; -2; 4)$ và $B(5; 0; 2)$. Điểm $M$ di động trên mặt cầu $(S): x^2+y^2+z^2-4x-2y-4z-7=0$. Giá trị lớn nhất của biểu thức $P = MA^2 + MB^2$ bằng bao nhiêu?",
@@ -100,7 +100,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 5,
     "q": "Một hệ thống radar đặt tại gốc tọa độ $O(0; 0; 0)$ có bán kính quét tối đa là $130$ km. Một máy bay bay ngang qua vùng phủ sóng của radar theo quỹ đạo là đường thẳng $d: \\begin{cases} x = 120 \\\\ y = 5t \\\\ z = 0 \\end{cases}$ (với $t$ tính bằng phút, khoảng cách tính bằng km). Thời gian máy bay nằm trong vùng phủ sóng của radar là bao nhiêu phút?",
@@ -109,7 +109,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 5,
     "q": "Trong phòng thí nghiệm, một vật thể có hình dạng mặt cầu $(S): (x-1)^2 + (y-2)^2 + (z-3)^2 = 9$ được đặt lơ lửng. Một nguồn sáng điểm đặt tại $S(1; 2; 8)$ chiếu xuống mặt phẳng nền $(P): z = 0$. Bóng đen của vật thể in trên mặt nền có diện tích là $A$. Tính $\\frac{A}{\\pi}$.",
@@ -118,7 +118,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 5,
     "q": "Trong không gian $Oxyz$, xét điểm $M(a; b; c)$ di động trên mặt cầu $(S): x^2 + y^2 + z^2 - 4x - 4y - 4z = 0$. Biểu thức $a + 2b + 2c$ đạt giá trị lớn nhất bằng $m + n\\sqrt{3}$ (với $m, n$ là các số nguyên dương). Tính giá trị của $m + n$.",
@@ -127,7 +127,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 5,
     "q": "Trong không gian $Oxyz$, cho hai mặt cầu $(S_1): (x-1)^2 + y^2 + z^2 = 4$ và $(S_2): (x-5)^2 + y^2 + z^2 = 1$. Từ điểm $M$ bất kỳ trên $(S_1)$, kẻ một tiếp tuyến đến mặt cầu $(S_2)$ với độ dài đoạn tiếp tuyến là $d$. Tìm giá trị nhỏ nhất của $d^2$.",
@@ -136,7 +136,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 3,
     "q": "Trong không gian $Oxyz$, giao điểm $M$ của hai đường thẳng $d_1: \\begin{cases} x = 1 + t \\\\ y = 2 - t \\\\ z = 3 \\end{cases}$ và $d_2: \\begin{cases} x = 2 + 2s \\\\ y = 1 + s \\\\ z = 3 - s \\end{cases}$ có toạ độ là $(a; b; c)$. Tính $a+b+c$.",
@@ -145,7 +145,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 3,
     "q": "Trong không gian $Oxyz$, tính số đo góc $\\alpha$ (theo đơn vị độ) giữa đường thẳng $d: \\begin{cases} x = 1 + t \\\\ y = 2 - t \\\\ z = 3 + \\sqrt{2}t \\end{cases}$ và mặt phẳng $(P): x + y + \\sqrt{2}z - 5 = 0$.",
@@ -154,7 +154,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 3,
     "q": "Trong không gian $Oxyz$, hai đường thẳng chéo nhau $d_1: \\frac{x}{1} = \\frac{y}{0} = \\frac{z}{0}$ và $d_2: \\frac{x}{0} = \\frac{y-3}{1} = \\frac{z-4}{0}$ có khoảng cách bằng bao nhiêu?",
@@ -163,7 +163,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 3,
     "q": "Trong không gian $Oxyz$, cho điểm $M(5; 5; 5)$ và mặt phẳng $(P): x + y + z - 3 = 0$. Gọi $H(a; b; c)$ là hình chiếu vuông góc của $M$ lên mặt phẳng $(P)$. Tính giá trị của biểu thức $a^2 + b^2 + c^2$.",
@@ -172,7 +172,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 3,
     "q": "Trong không gian $Oxyz$, cho điểm $A(1; 2; 3)$ và đường thẳng $d: \\begin{cases} x = t \\\\ y = 1 + t \\\\ z = 1 - t \\end{cases}$. Gọi $A'(a; b; c)$ là điểm đối xứng của $A$ qua đường thẳng $d$. Tính tổng $a+b+c$.",
@@ -181,7 +181,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 4,
     "q": "Một flycam và một khinh khí cầu đang di chuyển trên hai quỹ đạo đường thẳng chéo nhau là $d_1: \\frac{x-1}{2}=\\frac{y-2}{1}=\\frac{z-1}{2}$ và $d_2: \\frac{x+1}{1}=\\frac{y}{2}=\\frac{z}{-2}$. Gọi $d$ là khoảng cách ngắn nhất giữa hai quỹ đạo bay này. Tính giá trị của $3d$.",
@@ -191,7 +191,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 4,
     "q": "Trong không gian $Oxyz$, một đường thẳng $\\Delta$ cắt hai đường thẳng $d_1: \\begin{cases} x = 1+t \\\\ y = t \\\\ z = 1-t \\end{cases}$ và $d_2: \\begin{cases} x = 2s \\\\ y = 1-s \\\\ z = s \\end{cases}$, đồng thời $\\Delta$ song song với vectơ $\\vec{u}=(1; 2; 3)$. Biết giao điểm của $\\Delta$ và $d_1$ là điểm $A(a; b; c)$. Tính giá trị của biểu thức $3(a+b+c)$.",
@@ -200,7 +200,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 4,
     "q": "Một tia sáng được phát ra từ điểm $A(1; 2; 3)$, chiếu tới mặt phẳng gương $(Oxy)$ (phương trình $z=0$) tại điểm $M$, sau đó phản xạ và đi qua điểm $B(2; 4; 5)$. Coi tia sáng đi theo đường thẳng, tính tổng hoành độ và tung độ của điểm $M$ (nhập đáp án dưới dạng số thập phân).",
@@ -209,7 +209,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 4,
     "q": "Trong không gian $Oxyz$, cho hai điểm $A(1; 1; 1), B(3; -1; 5)$ và mặt phẳng $(P): x+y+z-3=0$. Tìm điểm $M$ thuộc $(P)$ sao cho biểu thức $MA^2 + MB^2$ đạt giá trị nhỏ nhất. Tính giá trị $3(x_M - y_M)$.",
@@ -218,7 +218,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 4,
     "q": "Khi gắn hệ tọa độ $Oxyz$ vào một căn nhà, giả sử nền nhà là mặt phẳng $(Oxy)$. Mái nhà là một mặt phẳng đi qua ba điểm $A(1; 0; 3), B(5; 0; 1)$ và $C(5; 9; 1)$. Góc giữa mái nhà và nền nhà bằng $\\alpha$ độ. Làm tròn $\\alpha$ đến số nguyên gần nhất, giá trị đó bằng bao nhiêu?",
@@ -227,7 +227,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 5,
     "q": "Một hệ thống phòng thủ laser đặt trên một máy bay tại vị trí $P(14; 20; 10)$. Tia laser được bắn đi theo hướng của vectơ $\\vec{v} = (-1; -3; -2)$ và phản xạ hoàn toàn khi chạm mặt đất (mặt phẳng $z=0$). Sau khi phản xạ, tia laser bắn trúng một mục tiêu bay hở ở bức tường $x=0$ tại điểm $T$. Tính tổng tung độ và cao độ của mục tiêu $T$ ($y_T + z_T$).",
@@ -236,7 +236,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 5,
     "q": "Trong thiết kế một cánh đồng điện mặt trời, một tấm pin được đặt trên mặt phẳng $(P): x + 2y + 3z - 6 = 0$. Một cây cột chống đứng thẳng vuông góc với mặt đất (cùng phương với trục $Oz$) có gốc tại điểm $A(1; 1; 0)$ và đỉnh là $B(1; 1; 4)$. Ánh nắng mặt trời chiếu song song theo vectơ chỉ phương $\\vec{u} = (-1; -1; -2)$ tạo ra bóng của đỉnh $B$ là điểm $B'$ trên mặt phẳng tấm pin $(P)$. Tính tổng toạ độ $x_{B'} + y_{B'} + z_{B'}$.",
@@ -245,7 +245,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 5,
     "q": "Một robot di chuyển trên mặt sàn phẳng $(Oxy)$ (có $z=0$) thực hiện nhiệm vụ lấy đồ. Robot xuất phát từ một điểm tự do $M$ trên mặt sàn, nhặt đồ tại kệ $A(1; 2; 3)$ sau đó đưa đồ về giỏ tại kệ $B(3; 4; 5)$. Hệ thống muốn tối ưu hóa lộ trình bằng cách chọn điểm xuất phát $M$ sao cho tổng quãng đường $MA + MB$ là nhỏ nhất. Tính bình phương của giá trị quãng đường nhỏ nhất đó.",
@@ -254,7 +254,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 5,
     "q": "Khi khắc phục hậu quả thiên tai, một đội cứu hộ đào một đường hầm nhỏ thẳng tắp xuyên vào lòng núi đá. Điểm bắt đầu đào có toạ độ $A(2; 0; -9)$ và mũi khoan đi theo vectơ chỉ phương $\\vec{u} = (5; 3; -1)$. Bề mặt sườn núi được mô hình hóa bằng mặt phẳng $(P): x + 2y - 2z - 9 = 0$. Khi mũi khoan đi được một quãng đường chính xác bằng $3\\sqrt{35}$ mét, mũi khoan chạm tới điểm $M$ bên trong lòng núi. Tính khoảng cách từ điểm $M$ ra đến bề mặt sườn núi (mặt phẳng $P$) theo đường chim bay (gắn giá trị bằng mét, làm tròn với 3d). Nếu $d$ là khoảng cách đó, hãy tính $3d$.",
@@ -263,7 +263,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 5,
     "q": "Một hệ thống phòng không giả lập ghi nhận một mục tiêu bay trên đường thẳng ngang với phương trình $d: \\begin{cases} x = t \\\\ y = t \\\\ z = 10 \\end{cases}$ (với $t \\ge 0$ là thời gian tính bằng giây, toạ độ bằng km). Tại thời điểm $t=0$, một tên lửa đánh chặn được phóng từ bệ phóng tại $M(5; -5; 0)$. Tên lửa bay theo một đường thẳng với tốc độ không đổi gấp đúng 2 lần tốc độ của mục tiêu bay. Hãy xác định thời điểm $t$ (giây) mà tên lửa có thể bắn hạ mục tiêu.",
@@ -272,7 +272,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 3,
     "q": "Trong không gian $Oxyz$, cho điểm $A(1; -2; 0)$ và mặt phẳng $(P): 3x - 4y - 2 = 0$. Gọi $(Q)$ là mặt phẳng đi qua $A$ và song song với $(P)$. Tính khoảng cách giữa hai mặt phẳng $(P)$ và $(Q)$ (nhập đáp án dưới dạng số thập phân).",
@@ -281,7 +281,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 3,
     "q": "Trong không gian $Oxyz$, mặt phẳng $(P)$ đi qua ba điểm $A(2; 0; 0), B(0; -3; 0), C(0; 0; 4)$. Thể tích khối tứ diện $OABC$ bằng bao nhiêu?",
@@ -290,7 +290,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 3,
     "q": "Trong không gian $Oxyz$, mặt phẳng trung trực của đoạn thẳng $AB$ với $A(1; 2; 3)$ và $B(3; 4; -1)$ cắt trục $Ox$ tại điểm $M(a; 0; 0)$. Tính $a$.",
@@ -299,7 +299,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 3,
     "q": "Trong không gian $Oxyz$, gọi $(P)$ là mặt phẳng đi qua $A(1; 1; 1)$, đồng thời vuông góc với cả hai mặt phẳng $(Q): x + y - z - 2 = 0$ và $(R): x - y + z - 1 = 0$. Phương trình $(P)$ có dạng $ax + by + cz + d = 0$ với $a=0, b>0$. Tính tỉ số $\\frac{c}{b}$.",
@@ -308,7 +308,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 3,
     "q": "Trong không gian $Oxyz$, cho mặt phẳng $(P): 2x - y + 2z + m = 0$ và $(Q): 2x - y + 2z - 5 = 0$. Biết khoảng cách giữa hai mặt phẳng $(P)$ và $(Q)$ bằng 3. Có hai giá trị của $m$ là $m_1, m_2$. Tính tổng $m_1 + m_2$.",
@@ -317,7 +317,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 4,
     "q": "Trong không gian $Oxyz$, cho ba điểm $A(1; 0; 0), B(0; 2; 0), C(0; 0; 3)$. Gọi $(P)$ là mặt phẳng đi qua $A, B, C$. Mặt cầu $(S)$ có tâm $I(1; 2; 3)$ tiếp xúc với mặt phẳng $(P)$. Khẳng định bán kính của mặt cầu $(S)$ là $R$, tính giá trị của $49R^2$.",
@@ -326,7 +326,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 4,
     "q": "Trong không gian $Oxyz$, cho mặt phẳng $(P): x + 2y - 2z + 14 = 0$ và mặt cầu $(S): (x-1)^2 + (y+1)^2 + (z-2)^2 = 25$. Mặt phẳng $(P)$ cắt mặt cầu $(S)$ theo một đường tròn $(C)$. Tính bán kính $r$ của đường tròn $(C)$.",
@@ -335,7 +335,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 4,
     "q": "Trong không gian $Oxyz$, mặt phẳng $(P): ax + by + cz - 9 = 0$ đi qua hai điểm $A(3; 0; 3)$ và $B(-1; 4; 1)$ sao cho khoảng cách từ gốc toạ độ $O$ đến mặt phẳng $(P)$ đạt giá trị lớn nhất. Tính giá trị $a+b+c$.",
@@ -344,7 +344,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 4,
     "q": "Trong không gian $Oxyz$, gắn hệ tọa độ sao cho các đỉnh của hình lập phương $ABCD.A'B'C'D'$ cạnh bằng 2 có tọa độ là $A(0;0;0)$, $B(2;0;0)$, $D(0;2;0)$, $A'(0;0;2)$. Gọi $M, N$ lần lượt là trung điểm của $A'B'$ và $BC$. Mặt phẳng $(D'MN)$ cắt trục $Ox$ tại điểm có hoành độ $x_0$. Tính $x_0$ (nhập đáp án dưới dạng số thập phân).",
@@ -353,7 +353,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 4,
     "q": "Trong không gian $Oxyz$, cho điểm $M(2; 1; 5.5)$ và mặt phẳng $(P): 2x - y + 2z - 5 = 0$. Gọi $H(a; b; c)$ là hình chiếu vuông góc của $M$ lên mặt phẳng $(P)$. Tính tổng $a+b+c$ (nhập đáp án dưới dạng số thập phân).",
@@ -362,7 +362,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 5,
     "q": "Trong không gian $Oxyz$, có bao nhiêu mặt phẳng đi qua điểm $M(1; 2; 3)$ và cắt ba trục tọa độ tại ba điểm phân biệt cách đều gốc tọa độ $O$?",
@@ -371,7 +371,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 5,
     "q": "Trong không gian $Oxyz$, cho ba điểm $A(a; 0; 0), B(0; b; 0), C(0; 0; c)$ với $a, b, c > 0$ sao cho $\\frac{1}{a} + \\frac{2}{b} + \\frac{3}{c} = 1$. Mặt phẳng $(ABC)$ luôn đi qua một điểm cố định $M(x_0; y_0; z_0)$. Tính $x_0 + y_0 + z_0$.",
@@ -380,7 +380,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 5,
     "q": "Mặt phẳng $(P)$ đi qua điểm $M(1; 2; 3)$ và cắt các tia $Ox, Oy, Oz$ lần lượt tại $A, B, C$ sao cho thể tích tứ diện $OABC$ đạt giá trị nhỏ nhất. Tính khoảng cách từ gốc tọa độ $O$ đến mặt phẳng $(P)$ (làm tròn kết quả đến hai chữ số thập phân).",
@@ -389,7 +389,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 5,
     "q": "Trong không gian $Oxyz$, mặt phẳng $(P)$ cắt các tia $Ox, Oy, Oz$ lần lượt tại $A(a;0;0), B(0;b;0), C(0;0;c)$ với $a,b,c>0$ sao cho $a+b+c = 36$. Biết mặt phẳng $(P)$ luôn đi qua điểm $M(1; 4; 9)$. Tính thể tích khối tứ diện $OABC$.",
@@ -398,7 +398,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 5,
     "q": "Trong không gian $Oxyz$, có một mặt cầu $(S)$ tiếp xúc với cả hai mặt phẳng $(P): x + 2y - 2z + 1 = 0$ và $(Q): x + 2y - 2z - 5 = 0$, đồng thời tâm $I$ của $(S)$ nằm trên tia $Ox$. Tính hoành độ tâm $I$ của mặt cầu $(S)$.",
@@ -407,7 +407,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 3,
     "q": "Trong không gian $Oxyz$, cho đường thẳng $d: \\frac{x-1}{2} = \\frac{y+1}{-1} = \\frac{z-2}{1}$. Gọi $M(a; b; c)$ là giao điểm của $d$ với mặt phẳng $(Oxy)$. Tính tổng $a+b+c$.",
@@ -416,7 +416,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 3,
     "q": "Trong không gian $Oxyz$, đường thẳng $\\Delta$ đi qua điểm $A(3; 2; -1)$ và song song với hai mặt phẳng $(P): x - y + 2z - 1 = 0$ và $(Q): 2x + y - z + 3 = 0$. Biết $\\Delta$ cắt mặt phẳng tọa độ $(Oyz)$ tại điểm $M(0; y_0; z_0)$. Tính $y_0 + z_0$.",
@@ -425,7 +425,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 3,
     "q": "Tính góc (theo độ) giữa hai đường thẳng $d_1: \\frac{x-1}{1} = \\frac{y+2}{\\sqrt{2}} = \\frac{z}{-1}$ và $d_2: \\frac{x}{1} = \\frac{y-1}{0} = \\frac{z+1}{-1}$.",
@@ -434,7 +434,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 3,
     "q": "Tìm tham số $m$ để đường thẳng $d_1: \\frac{x-1}{2} = \\frac{y+1}{m} = \\frac{z-2}{1}$ cắt đường thẳng $d_2: \\frac{x+1}{1} = \\frac{y-1}{2} = \\frac{z}{-1}$ (nhập đáp án dưới dạng số thập phân).",
@@ -443,7 +443,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 3,
     "q": "Trong không gian $Oxyz$, cho điểm $A(1; -3; 2)$ và đường thẳng $d: \\frac{x-1}{2} = \\frac{y+1}{1} = \\frac{z}{-2}$. Khoảng cách từ $A$ đến đường thẳng $d$ bằng bao nhiêu?",
@@ -452,7 +452,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 4,
     "q": "Trong không gian $Oxyz$, cho hai đường thẳng $d_1: \\frac{x-1}{2} = \\frac{y}{1} = \\frac{z+1}{-1}$ và $d_2: \\frac{x}{1} = \\frac{y-2}{-1} = \\frac{z-1}{1}$. Đường vuông góc chung của $d_1$ và $d_2$ cắt $d_1, d_2$ lần lượt tại $A$ và $B$. Tính $AB^2$.",
@@ -461,7 +461,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 4,
     "q": "Gọi $\\Delta$ là hình chiếu vuông góc của đường thẳng $d: \\frac{x-1}{1} = \\frac{y+1}{2} = \\frac{z-2}{-1}$ lên mặt phẳng $(P): x + y + z - 3 = 0$. Vectơ chỉ phương của $\\Delta$ có dạng $\\vec{u} = (a; 1; c)$. Tính $a-c$ (nhập đáp án dạng số thập phân).",
@@ -470,7 +470,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 4,
     "q": "Trong không gian $Oxyz$, cho điểm $A(2; 1; 3)$ và đường thẳng $d: \\frac{x}{1} = \\frac{y-1}{-1} = \\frac{z-1}{2}$. Gọi $A'(a; b; c)$ là điểm đối xứng của $A$ qua đường thẳng $d$. Tính tổng $a+b+c$.",
@@ -479,7 +479,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 4,
     "q": "Trong không gian $Oxyz$, đường thẳng $\\Delta$ đi qua điểm $M(1; 1; 1)$, cắt đường thẳng $d_1: \\frac{x-1}{1} = \\frac{y}{2} = \\frac{z+1}{1}$ và vuông góc với đường thẳng $d_2: \\frac{x}{-1} = \\frac{y+1}{1} = \\frac{z}{1}$. Biết $\\Delta$ có vectơ chỉ phương $\\vec{u} = (1; a; b)$, tính $a+b$.",
@@ -488,7 +488,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 4,
     "q": "Trong không gian $Oxyz$, cho hai đường thẳng cắt nhau $d_1: \\frac{x}{1} = \\frac{y-1}{2} = \\frac{z+1}{2}$ và $d_2: \\frac{x}{2} = \\frac{y-1}{1} = \\frac{z+1}{-2}$. Gọi $\\Delta$ là một trong hai đường phân giác của góc tạo bởi $d_1$ và $d_2$. Biết $\\Delta$ có vectơ chỉ phương dạng $\\vec{u} = (a; b; 1)$, tính tổng $a+b$.",
@@ -497,7 +497,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 5,
     "q": "Trong không gian $Oxyz$, cho hai đường thẳng chéo nhau $d_1: \\begin{cases} x = t \\\\ y = 0 \\\\ z = t \\end{cases}$ và $d_2: \\begin{cases} x = -1+s \\\\ y = -2+s \\\\ z = 1 \\end{cases}$. Gọi $A \\in d_1, B \\in d_2$ sao cho khoảng cách $AB$ đạt giá trị nhỏ nhất. Tính hoành độ của điểm $A$.",
@@ -506,7 +506,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 5,
     "q": "Một tia sáng xuất phát từ $A(1; 2; 3)$ chiếu đến mặt phẳng gương $(P): x + y + z - 3 = 0$ tại điểm $M$, rồi phản xạ và đi qua điểm $B(3; 2; 1)$. Tính tung độ của điểm $M$.",
@@ -515,7 +515,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 5,
     "q": "Trong không gian $Oxyz$, cho ba đường thẳng $d_1: \\frac{x-1}{1} = \\frac{y}{2} = \\frac{z-1}{1}$, $d_2: \\frac{x}{1} = \\frac{y-2}{-1} = \\frac{z}{2}$ và $d_3: \\begin{cases} x = t \\\\ y = t \\\\ z = 1 \\end{cases}$. Đường thẳng $\\Delta$ cắt cả $d_1, d_2$ và song song với $d_3$. Biết $\\Delta$ cắt $d_1$ tại điểm $M(a; b; c)$. Tính tổng $a+b+c$.",
@@ -524,7 +524,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 5,
     "q": "Trong không gian $Oxyz$, cho điểm $A(3; 2; -1)$ và đường thẳng $d: \\frac{x-1}{1} = \\frac{y}{2} = \\frac{z+1}{-1}$. Gọi $\\Delta$ là đường thẳng đi qua $A$, cắt và vuông góc với $d$. Biết $\\Delta$ cắt mặt phẳng $(Oxy)$ tại điểm $M(x_0; y_0; 0)$. Tính $x_0 + y_0$.",
@@ -533,7 +533,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 5,
     "q": "Trong không gian $Oxyz$, một con ong bay từ điểm $A(1; 1; 1)$ đến điểm $B(4; 3; 1)$ nhưng trên đường đi phải chạm vào một nhụy hoa nằm trên đường thẳng $d: \\begin{cases} x = t \\\\ y = 0 \\\\ z = 1 \\end{cases}$. Quãng đường bay ngắn nhất của con ong là bao nhiêu?",
@@ -542,7 +542,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "DS",
     "q": "Trong không gian $Oxyz$, cho mặt phẳng $(P): 2x - y + 2z - 4 = 0$ và điểm $A(1; 0; 2)$. Xét tính đúng sai của các mệnh đề sau:",
     "items": {
@@ -561,7 +561,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "DS",
     "q": "Trong không gian $Oxyz$, cho ba điểm $A(2; 0; 0), B(0; -3; 0), C(0; 0; 4)$. Đánh giá tính đúng sai của các phát biểu sau:",
     "items": {
@@ -580,7 +580,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "DS",
     "q": "Trong không gian $Oxyz$, cho đoạn thẳng $AB$ với $A(1; 2; 3)$ và $B(3; 0; 1)$. Gọi $(P)$ là mặt phẳng trung trực của đoạn thẳng $AB$.",
     "items": {
@@ -599,7 +599,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "DS",
     "q": "Trong không gian $Oxyz$, cho hai mặt phẳng $(P): x + 2y - mz - 1 = 0$ và $(Q): 2x + 4y + 2z + 5 = 0$. Xét tính đúng sai của các khẳng định sau:",
     "items": {
@@ -618,7 +618,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "DS",
     "q": "Xét mặt phẳng $(P)$ đi qua hai điểm $A(1; 0; 1), B(2; 1; 2)$ và vuông góc với mặt phẳng $(Q): x + 2y + 3z - 4 = 0$.",
     "items": {
@@ -637,7 +637,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "DS",
     "q": "Trong không gian $Oxyz$, cho đường thẳng $d: \\frac{x-1}{2} = \\frac{y+2}{1} = \\frac{z}{-1}$.",
     "items": {
@@ -656,7 +656,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "DS",
     "q": "Trong không gian $Oxyz$, cho đường thẳng $\\Delta$ đi qua hai điểm $A(1; 2; -1)$ và $B(2; 0; 1)$.",
     "items": {
@@ -675,7 +675,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "DS",
     "q": "Xét vị trí tương đối giữa đường thẳng $d: \\frac{x-1}{1} = \\frac{y-2}{2} = \\frac{z-3}{1}$ và mặt phẳng $(P): x + y - 3z + 6 = 0$.",
     "items": {
@@ -694,7 +694,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "DS",
     "q": "Trong không gian $Oxyz$, cho hai đường thẳng $d_1: \\begin{cases} x = 1 + t \\\\ y = 2 - t \\\\ z = 3t \\end{cases}$ và $d_2: \\begin{cases} x = 2 + 2t' \\\\ y = 1 - 2t' \\\\ z = 3 + 6t' \\end{cases}$.",
     "items": {
@@ -713,7 +713,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "DS",
     "q": "Cho hình chiếu vuông góc $H$ của điểm $M(2; 1; -1)$ lên đường thẳng $d: \\frac{x-1}{2} = \\frac{y+1}{1} = \\frac{z}{-1}$. Đánh giá tính đúng sai của các phát biểu sau:",
     "items": {
@@ -732,7 +732,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "DS",
     "q": "Trong không gian $Oxyz$, xét mặt phẳng $(P): 2x - y + 2z - 5 = 0$ và điểm $M(1; 2; 3)$.",
     "items": {
@@ -751,7 +751,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "DS",
     "q": "Trong không gian $Oxyz$, cho hai đường thẳng $d_1: \\frac{x-1}{1} = \\frac{y}{-1} = \\frac{z-2}{1}$ và $d_2: \\frac{x}{2} = \\frac{y-1}{1} = \\frac{z}{1}$.",
     "items": {
@@ -770,7 +770,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "DS",
     "q": "Trong không gian $Oxyz$, cho mặt phẳng $(P): x + y - z + 2 = 0$ và $(Q): x - y + 2z - 1 = 0$.",
     "items": {
@@ -789,7 +789,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "DS",
     "q": "Tính toán liên quan đến góc giữa đường thẳng $d: \\frac{x+1}{2} = \\frac{y-1}{1} = \\frac{z}{-1}$ và mặt phẳng $(P): 2x - y + 2z + 3 = 0$.",
     "items": {
@@ -808,7 +808,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "DS",
     "q": "Xét bài toán tính khoảng cách từ điểm $M(2; -1; 3)$ đến đường thẳng $\\Delta: \\begin{cases} x = 1 + t \\\\ y = -1 - t \\\\ z = 2t \\end{cases}$.",
     "items": {
@@ -827,7 +827,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "DS",
     "q": "Trong không gian $Oxyz$, cho phương trình $x^2 + y^2 + z^2 - 2x + 4y - 6z + m = 0$ (1).",
     "items": {
@@ -846,7 +846,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "DS",
     "q": "Trong không gian $Oxyz$, cho mặt cầu $(S)$ có phương trình $(x-1)^2 + (y+2)^2 + z^2 = 9$ và mặt phẳng $(P): 2x + 2y - z + 5 = 0$.",
     "items": {
@@ -865,7 +865,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "DS",
     "q": "Trong không gian $Oxyz$, cho hai điểm $A(1; 1; -2)$ và $B(3; -1; 4)$. Gọi $(S)$ là mặt cầu nhận đoạn thẳng $AB$ làm đường kính.",
     "items": {
@@ -884,7 +884,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "DS",
     "q": "Trong không gian $Oxyz$, cho mặt cầu $(S)$ đi qua ba điểm $A(2; 0; 0), B(0; 4; 0), C(0; 0; -2)$ và có tâm $I$ thuộc mặt phẳng tọa độ $(Oxy)$.",
     "items": {
@@ -903,7 +903,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "DS",
     "q": "Trong không gian $Oxyz$, cho mặt cầu $(S): (x-1)^2 + y^2 + (z+2)^2 = 9$ và đường thẳng $\\Delta: \\begin{cases} x = 1 + 2t \\\\ y = 2 - t \\\\ z = -2 + 2t \\end{cases}$. Xét tính đúng sai của các khẳng định:",
     "items": {
@@ -1522,7 +1522,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 1,
     "q": "Trong không gian $Oxyz$, cho mặt phẳng $(P): 2x - 3y + 4z - 1 = 0$. Một vectơ pháp tuyến của mặt phẳng $(P)$ có tọa độ là:",
@@ -1537,7 +1537,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 1,
     "q": "Trong không gian $Oxyz$, mặt phẳng $(Oxy)$ có một vectơ pháp tuyến là:",
@@ -1552,7 +1552,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 1,
     "q": "Trong không gian $Oxyz$, điểm nào dưới đây thuộc mặt phẳng $(P): x - 2y + z - 3 = 0$?",
@@ -1567,7 +1567,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 1,
     "q": "Trong không gian $Oxyz$, phương trình mặt phẳng đi qua gốc tọa độ $O$ và có vectơ pháp tuyến $\\\\vec{n} = (1; 2; 3)$ là:",
@@ -1582,7 +1582,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 1,
     "q": "Trong không gian $Oxyz$, cho hai mặt phẳng $(P): x + y - z + 1 = 0$ và $(Q): 2x + 2y - 2z + 5 = 0$. Mệnh đề nào sau đây đúng?",
@@ -1597,7 +1597,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 1,
     "q": "Trong không gian $Oxyz$, mặt phẳng $(Oyz)$ có phương trình là:",
@@ -1612,7 +1612,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 1,
     "q": "Trong không gian $Oxyz$, khoảng cách từ điểm $M(x_0; y_0; z_0)$ đến mặt phẳng $(P): Ax + By + Cz + D = 0$ được tính bằng công thức:",
@@ -1627,7 +1627,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 1,
     "q": "Trong không gian $Oxyz$, hai mặt phẳng $(P_1): A_1x + B_1y + C_1z + D_1 = 0$ và $(P_2): A_2x + B_2y + C_2z + D_2 = 0$ vuông góc với nhau khi và chỉ khi:",
@@ -1642,7 +1642,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 1,
     "q": "Trong không gian $Oxyz$, phương trình mặt phẳng đi qua $A(1; 0; 0)$ và có vectơ pháp tuyến $\\\\vec{n} = (1; 0; 0)$ là:",
@@ -1657,7 +1657,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 1,
     "q": "Trong không gian $Oxyz$, cho mặt phẳng $(P): 2x - y = 0$. Vectơ nào sau đây là một vectơ pháp tuyến của $(P)$?",
@@ -1672,7 +1672,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 2,
     "q": "Trong không gian $Oxyz$, phương trình mặt phẳng đi qua điểm $M(1; 2; 3)$ và song song với mặt phẳng $(P): 2x - y + z - 1 = 0$ là:",
@@ -1687,7 +1687,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 2,
     "q": "Trong không gian $Oxyz$, phương trình mặt phẳng đi qua ba điểm $A(1; 0; 0)$, $B(0; 2; 0)$ và $C(0; 0; 3)$ là:",
@@ -1702,7 +1702,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 2,
     "q": "Trong không gian $Oxyz$, khoảng cách từ điểm $M(1; 1; 1)$ đến mặt phẳng $(P): 2x + 2y - z + 1 = 0$ bằng:",
@@ -1717,7 +1717,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 2,
     "q": "Trong không gian $Oxyz$, phương trình mặt phẳng trung trực của đoạn thẳng $AB$ với $A(1; 2; 1)$ và $B(3; 0; 5)$ là:",
@@ -1732,7 +1732,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 2,
     "q": "Trong không gian $Oxyz$, côsin của góc giữa hai mặt phẳng $(P): x + y + z = 0$ và $(Q): x - y + 2z = 0$ bằng:",
@@ -1747,7 +1747,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 2,
     "q": "Trong không gian $Oxyz$, tìm giá trị của tham số $m$ để hai mặt phẳng $(P): 2x + my + 3z - 5 = 0$ và $(Q): 4x - 8y + 6z + 2 = 0$ song song với nhau.",
@@ -1762,7 +1762,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 2,
     "q": "Trong không gian $Oxyz$, phương trình mặt phẳng đi qua điểm $A(2; -1; 5)$ và song song với mặt phẳng tọa độ $(Oxy)$ là:",
@@ -1777,7 +1777,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 2,
     "q": "Trong không gian $Oxyz$, khoảng cách giữa hai mặt phẳng song song $(P): x + 2y - 2z + 1 = 0$ và $(Q): x + 2y - 2z - 5 = 0$ bằng:",
@@ -1792,7 +1792,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 2,
     "q": "Trong không gian $Oxyz$, phương trình mặt phẳng đi qua điểm $M(1; -1; 2)$ và chứa trục $Ox$ là:",
@@ -1807,7 +1807,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 2,
     "q": "Trong không gian $Oxyz$, phương trình mặt phẳng đi qua ba điểm $A(1; 1; 1)$, $B(2; 0; 1)$ và $C(1; -1; 2)$ là:",
@@ -1822,7 +1822,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 1,
     "q": "Trong không gian $Oxyz$, đường thẳng $d: \\\\left\\\\{ \\\\begin{matrix} x = 1 + 2t \\\\\\\\ y = -t \\\\\\\\ z = 3 + 4t \\\\end{matrix} \\\\right.$ có một vectơ chỉ phương là:",
@@ -1837,7 +1837,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 1,
     "q": "Trong không gian $Oxyz$, đường thẳng $d: \\\\frac{x-1}{2} = \\\\frac{y+2}{-3} = \\\\frac{z}{1}$ có một vectơ chỉ phương là:",
@@ -1852,7 +1852,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 1,
     "q": "Trong không gian $Oxyz$, điểm nào dưới đây thuộc đường thẳng $d: \\\\left\\\\{ \\\\begin{matrix} x = 1 - t \\\\\\\\ y = 2 + t \\\\\\\\ z = -3 \\\\end{matrix} \\\\right.$?",
@@ -1867,7 +1867,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 1,
     "q": "Trong không gian $Oxyz$, phương trình đường thẳng đi qua điểm $M(1; 2; 3)$ và có vectơ chỉ phương $\\\\vec{u} = (4; 5; 6)$ là:",
@@ -1882,7 +1882,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 1,
     "q": "Trong không gian $Oxyz$, trục $Ox$ có một vectơ chỉ phương là:",
@@ -1897,7 +1897,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 1,
     "q": "Trong không gian $Oxyz$, đường thẳng đi qua hai điểm $A(1; 2; 3)$ và $B(2; 2; 3)$ có một vectơ chỉ phương là:",
@@ -1912,7 +1912,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 1,
     "q": "Trong không gian $Oxyz$, điểm nào sau đây thuộc đường thẳng $d: \\\\frac{x-1}{2} = \\\\frac{y}{1} = \\\\frac{z+1}{-2}$?",
@@ -1927,7 +1927,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 1,
     "q": "Trong không gian $Oxyz$, trục $Oy$ có phương trình tham số là:",
@@ -1942,7 +1942,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 1,
     "q": "Trong không gian $Oxyz$, phương trình đường thẳng đi qua gốc tọa độ $O$ và có vectơ chỉ phương $\\\\vec{u} = (1; 1; 1)$ là:",
@@ -1957,7 +1957,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 1,
     "q": "Trong không gian $Oxyz$, cho đường thẳng $d$ có phương trình $\\\\frac{x-2}{3} = \\\\frac{y+1}{-1} = \\\\frac{z-4}{2}$. Phương trình tham số của $d$ là:",
@@ -1972,7 +1972,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 2,
     "q": "Trong không gian $Oxyz$, phương trình đường thẳng đi qua điểm $A(1; -1; 2)$ và vuông góc với mặt phẳng $(P): 2x - y + 3z - 1 = 0$ là:",
@@ -1987,7 +1987,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 2,
     "q": "Trong không gian $Oxyz$, giao điểm của đường thẳng $d: \\\\left\\\\{ \\\\begin{matrix} x = 1 + t \\\\\\\\ y = 2 - t \\\\\\\\ z = t \\\\end{matrix} \\\\right.$ và mặt phẳng $(P): x + y + z - 4 = 0$ có tọa độ là:",
@@ -2002,7 +2002,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 2,
     "q": "Trong không gian $Oxyz$, phương trình đường thẳng đi qua $A(1; 0; 1)$ và song song với đường thẳng $d: \\\\frac{x-1}{2} = \\\\frac{y}{1} = \\\\frac{z+1}{-2}$ là:",
@@ -2017,7 +2017,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 2,
     "q": "Trong không gian $Oxyz$, góc giữa hai đường thẳng $d_1: \\\\left\\\\{ \\\\begin{matrix} x = t \\\\\\\\ y = 1 - t \\\\\\\\ z = 2 \\\\end{matrix} \\\\right.$ và $d_2: \\\\left\\\\{ \\\\begin{matrix} x = 1 \\\\\\\\ y = t' \\\\\\\\ z = -t' \\\\end{matrix} \\\\right.$ bằng:",
@@ -2032,7 +2032,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 2,
     "q": "Trong không gian $Oxyz$, tìm tham số $m$ để đường thẳng $d: \\\\left\\\\{ \\\\begin{matrix} x = 1 + mt \\\\\\\\ y = 2 - t \\\\\\\\ z = 1 + 2t \\\\end{matrix} \\\\right.$ vuông góc với mặt phẳng $(P): 2x - y + 2z + 1 = 0$.",
@@ -2047,7 +2047,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 2,
     "q": "Trong không gian $Oxyz$, giao điểm của đường thẳng $d: \\\\left\\\\{ \\\\begin{matrix} x = t \\\\\\\\ y = 1 + t \\\\\\\\ z = 2 - t \\\\end{matrix} \\\\right.$ và mặt phẳng $(Oxy)$ có tọa độ là:",
@@ -2062,7 +2062,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 2,
     "q": "Trong không gian $Oxyz$, vị trí tương đối của hai đường thẳng $d_1: \\\\left\\\\{ \\\\begin{matrix} x = 1 + t \\\\\\\\ y = 2 + t \\\\\\\\ z = 3 - t \\\\end{matrix} \\\\right.$ và $d_2: \\\\left\\\\{ \\\\begin{matrix} x = 2 + 2t' \\\\\\\\ y = 4 + 2t' \\\\\\\\ z = 2 - 2t' \\\\end{matrix} \\\\right.$ là:",
@@ -2077,7 +2077,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 2,
     "q": "Trong không gian $Oxyz$, khoảng cách từ điểm $A(2; 1; 1)$ đến đường thẳng $d: \\\\left\\\\{ \\\\begin{matrix} x = 1 \\\\\\\\ y = t \\\\\\\\ z = t \\\\end{matrix} \\\\right.$ bằng:",
@@ -2092,7 +2092,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 2,
     "q": "Trong không gian $Oxyz$, tìm tham số $m$ để hai đường thẳng $d_1: \\\\left\\\\{ \\\\begin{matrix} x = 1 + t \\\\\\\\ y = 2 + t \\\\\\\\ z = 3 + t \\\\end{matrix} \\\\right.$ và $d_2: \\\\left\\\\{ \\\\begin{matrix} x = m - t' \\\\\\\\ y = 1 + 2t' \\\\\\\\ z = 2 - t' \\\\end{matrix} \\\\right.$ cắt nhau.",
@@ -2107,7 +2107,7 @@
   },
   {
     "grade": "12",
-    "chapter": "Phương pháp toạ độ trong không gian",
+    "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TN",
     "level": 2,
     "q": "Trong không gian $Oxyz$, đường thẳng $d$ là giao tuyến của hai mặt phẳng $(P): x + y - z = 0$ và $(Q): x - y + z - 2 = 0$ có một vectơ chỉ phương là:",
@@ -8876,5 +8876,4 @@
     "explain": "Ta có $s = \\sqrt{h^2+3^2}$ và $\\sin\\alpha = \\frac{h}{s} = \\frac{h}{\\sqrt{h^2+9}}$. Thay vào công thức, $I(h) = k \\frac{h}{(h^2+9)^{3/2}}$. Đạo hàm $I'(h) = k \\frac{1 \\cdot (h^2+9)^{3/2} - h \\cdot \\frac{3}{2}(h^2+9)^{1/2} \\cdot 2h}{(h^2+9)^3} = k \\frac{h^2+9 - 3h^2}{(h^2+9)^{5/2}} = k \\frac{9 - 2h^2}{(h^2+9)^{5/2}}$. Cho $I'(h) = 0 \\Leftrightarrow 9 - 2h^2 = 0 \\Leftrightarrow h = \\frac{3}{\\sqrt{2}}$. Vậy $h_0 = \\frac{3}{\\sqrt{2}}$, suy ra $h_0^2 = 4,5$. Giá trị $2h_0^2 = 2 \\times 4,5 = 9$."
   }
 ]
-
 
