@@ -1,6 +1,1596 @@
 [
   {
     "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 3,
+    "q": "Tính diện tích hình phẳng giới hạn bởi đồ thị hàm số $y = x^2 - 4x + 3$ và đường thẳng $y = x - 1$ (nhập đáp án dưới dạng số thập phân).",
+    "correct": "4.5",
+    "explain": "Phương trình hoành độ giao điểm: $x^2 - 4x + 3 = x - 1 \\Leftrightarrow x^2 - 5x + 4 = 0 \\Leftrightarrow x = 1$ hoặc $x = 4$. Diện tích $S = \\int_1^4 |x^2 - 5x + 4| dx$. Trên đoạn $[1; 4]$, $x^2 - 5x + 4 \\le 0$ nên $S = \\int_1^4 (-x^2 + 5x - 4) dx = \\left(-\\frac{x^3}{3} + \\frac{5x^2}{2} - 4x\\right) \\bigg|_1^4$. Tại $x=4$, ta được $-\\frac{64}{3} + 40 - 16 = \\frac{8}{3}$. Tại $x=1$, ta được $-\\frac{1}{3} + \\frac{5}{2} - 4 = -\\frac{11}{6}$. Vậy $S = \\frac{8}{3} - \\left(-\\frac{11}{6}\\right) = \\frac{27}{6} = 4.5$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 3,
+    "q": "Thể tích khối tròn xoay sinh ra khi cho hình phẳng giới hạn bởi đồ thị $y = \\sqrt{x} e^x$, trục hoành và hai đường thẳng $x=1, x=2$ quay quanh trục $Ox$ có dạng $V = \\pi(a e^4 + b e^2)$. Tính tổng $a+b$ (nhập đáp án dưới dạng số thập phân).",
+    "correct": "0.5",
+    "explain": "Thể tích $V = \\pi \\int_1^2 (\\sqrt{x} e^x)^2 dx = \\pi \\int_1^2 x e^{2x} dx$. Áp dụng tích phân từng phần: đặt $u=x \\Rightarrow du=dx$ và $dv=e^{2x}dx \\Rightarrow v=\\frac{1}{2}e^{2x}$. Ta có $\\int_1^2 x e^{2x} dx = \\frac{1}{2} x e^{2x} \\big|_1^2 - \\int_1^2 \\frac{1}{2} e^{2x} dx = \\left( e^4 - \\frac{1}{2} e^2 \\right) - \\frac{1}{4} e^{2x} \\big|_1^2 = e^4 - \\frac{1}{2} e^2 - \\frac{1}{4}(e^4 - e^2) = \\frac{3}{4} e^4 - \\frac{1}{4} e^2$. Suy ra $a = 0.75, b = -0.25$. Tổng $a+b = 0.5$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 3,
+    "q": "Một vật chuyển động có phương trình gia tốc là $a(t) = 3t^2 + t$ (m/s^2). Biết vận tốc ban đầu của vật tại thời điểm $t=0$ là $2$ m/s. Gọi $S$ là quãng đường vật đi được trong 2 giây đầu tiên. Tính giá trị của $3S$.",
+    "correct": "28",
+    "explain": "Vận tốc của vật là nguyên hàm của gia tốc: $v(t) = \\int (3t^2 + t) dt = t^3 + \\frac{t^2}{2} + C$. Vì $v(0) = 2$ nên $C = 2$. Suy ra $v(t) = t^3 + \\frac{t^2}{2} + 2$. Quãng đường vật đi được trong 2 giây đầu: $S = \\int_0^2 \\left(t^3 + \\frac{t^2}{2} + 2\\right) dt = \\left(\\frac{t^4}{4} + \\frac{t^3}{6} + 2t\\right) \\bigg|_0^2 = \\frac{16}{4} + \\frac{8}{6} + 4 = 4 + \\frac{4}{3} + 4 = \\frac{28}{3}$ (m). Vậy $3S = 28$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 3,
+    "q": "Lợi nhuận biên của một nhà máy khi sản xuất một loại sản phẩm được ước lượng bởi công thức $P'(x) = 17 - 0.04x$ (triệu đồng/sản phẩm). Tính số tiền lợi nhuận tăng thêm (triệu đồng) khi nhà máy tăng mức bán từ 100 sản phẩm lên 200 sản phẩm.",
+    "correct": "1100",
+    "explain": "Sự thay đổi lợi nhuận được tính bằng tích phân của lợi nhuận biên: $\\Delta P = \\int_{100}^{200} (17 - 0.04x) dx = \\left(17x - 0.02x^2\\right) \\bigg|_{100}^{200}$. Thay cận trên: $17(200) - 0.02(200^2) = 3400 - 800 = 2600$. Thay cận dưới: $17(100) - 0.02(100^2) = 1700 - 200 = 1500$. Lợi nhuận tăng thêm là $2600 - 1500 = 1100$ (triệu đồng)."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 3,
+    "q": "Tốc độ xả nước của một hồ chứa tại thời điểm $t$ (phút) là $v(t) = 10t + 500$ (m^3/phút). Hỏi trong 40 phút đầu tiên, hồ chứa đã xả ra một lượng nước có thể tích là bao nhiêu mét khối?",
+    "correct": "28000",
+    "explain": "Thể tích nước xả ra là tích phân của tốc độ xả nước theo thời gian: $V = \\int_0^{40} (10t + 500) dt = \\left(5t^2 + 500t\\right) \\bigg|_0^{40} = 5(40^2) + 500(40) = 5(1600) + 20000 = 8000 + 20000 = 28000$ (m^3)."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 4,
+    "q": "Biết diện tích hình phẳng giới hạn bởi đường parabol $y = x^2$ và đường thẳng $y = mx$ ($m > 0$) có giá trị bằng $4.5$. Tìm giá trị của tham số $m$.",
+    "correct": "3",
+    "explain": "Phương trình hoành độ giao điểm: $x^2 = mx \\Leftrightarrow x = 0$ hoặc $x = m$. Trên đoạn $[0; m]$, ta có $mx \\ge x^2$. Diện tích hình phẳng là $S = \\int_0^m (mx - x^2) dx = \\left(\\frac{mx^2}{2} - \\frac{x^3}{3}\\right) \\bigg|_0^m = \\frac{m^3}{2} - \\frac{m^3}{3} = \\frac{m^3}{6}$. Theo đề bài, $\\frac{m^3}{6} = 4.5 = \\frac{9}{2} \\Leftrightarrow m^3 = 27 \\Leftrightarrow m = 3$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 4,
+    "q": "Cho hình phẳng $(H)$ giới hạn bởi parabol $y = -x^2 + 4x$ và trục hoành. Đường thẳng $y = mx$ (với $0 < m < 4$) chia $(H)$ thành hai phần. Biết phần diện tích nằm phía trên đường thẳng $y = mx$ bằng $\\frac{1}{8}$ diện tích toàn bộ của $(H)$. Tìm giá trị của $m$.",
+    "correct": "2",
+    "explain": "Diện tích toàn bộ của $(H)$ là $S_H = \\int_0^4 (-x^2 + 4x) dx = \\left(-\\frac{x^3}{3} + 2x^2\\right) \\bigg|_0^4 = \\frac{32}{3}$. Phần hình phẳng phía trên đường thẳng được giới hạn bởi $y = -x^2 + 4x$ và $y = mx$. Hoành độ giao điểm là nghiệm của $-x^2 + 4x = mx \\Leftrightarrow x(4 - m - x) = 0 \\Leftrightarrow x=0, x=4-m$. Diện tích phần này là $S_1 = \\int_0^{4-m} (-x^2 + (4-m)x) dx = \\frac{(4-m)^3}{6}$. Theo giả thiết, $\\frac{(4-m)^3}{6} = \\frac{1}{8} \\times \\frac{32}{3} = \\frac{4}{3} \\Leftrightarrow (4-m)^3 = 8 \\Leftrightarrow 4-m = 2 \\Leftrightarrow m = 2$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 4,
+    "q": "Một hình phẳng $(H)$ được giới hạn bởi đồ thị $y = \\sqrt{x}$, trục hoành và đường thẳng $x = 4$. Đường thẳng $x = k$ ($0 < k < 4$) chia $(H)$ thành hai phần. Khi quay quanh trục $Ox$, hai phần hình phẳng này tạo ra hai khối tròn xoay có thể tích bằng nhau. Tính giá trị của $k^2$.",
+    "correct": "8",
+    "explain": "Thể tích khối tròn xoay sinh ra bởi toàn bộ $(H)$ là $V = \\pi \\int_0^4 (\\sqrt{x})^2 dx = \\pi \\int_0^4 x dx = \\pi \\left(\\frac{x^2}{2}\\right) \\bigg|_0^4 = 8\\pi$. Thể tích phần thứ nhất (từ $x=0$ đến $x=k$) là $V_1 = \\pi \\int_0^k x dx = \\frac{\\pi k^2}{2}$. Vì đường thẳng $x=k$ chia thành hai khối có thể tích bằng nhau nên $V_1 = \\frac{V}{2} = 4\\pi$. Suy ra $\\frac{\\pi k^2}{2} = 4\\pi \\Leftrightarrow k^2 = 8$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 4,
+    "q": "Một chất điểm A xuất phát từ O chuyển động thẳng với vận tốc $v_1(t) = 2t$ (m/s). Hai giây sau, chất điểm B cũng xuất phát từ O chuyển động cùng hướng với A với gia tốc $a = 4$ m/s^2 (vận tốc ban đầu của B bằng 0). Kể từ lúc A xuất phát, sau $t$ giây thì B đuổi kịp A. Biết $t$ có dạng $a + b\\sqrt{2}$ (với $a, b \\in \\mathbb{Z}$). Tính $a+b$.",
+    "correct": "6",
+    "explain": "Quãng đường A đi được sau $t$ giây: $S_A(t) = \\int_0^t 2x dx = t^2$. B xuất phát trễ 2 giây, thời gian đi của B là $t-2$ (với $t \\ge 2$). Vận tốc của B là $v_2(t) = \\int_2^t 4 dx = 4(t-2)$. Quãng đường B đi được: $S_B(t) = \\int_2^t 4(x-2) dx = 2(t-2)^2$. B đuổi kịp A khi $S_A = S_B \\Leftrightarrow t^2 = 2(t-2)^2 \\Leftrightarrow t^2 = 2t^2 - 8t + 8 \\Leftrightarrow t^2 - 8t + 8 = 0$. Nghiệm phương trình là $t = 4 \\pm \\sqrt{16-8} = 4 \\pm 2\\sqrt{2}$. Do $B$ xuất phát ở $t=2$ nên ta phải có $t > 2$, nghiệm $4 - 2\\sqrt{2} \\approx 1.17$ bị loại. Vậy $t = 4 + 2\\sqrt{2}$. Suy ra $a=4, b=2 \\Rightarrow a+b=6$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 4,
+    "q": "Một giọt nước thủy tinh có hình dạng khối tròn xoay được tạo thành khi cho hình phẳng giới hạn bởi đường cong $y = x \\sqrt{4-x}$ ($0 \\le x \\le 4$) và trục $Ox$ quay quanh trục $Ox$. Thể tích của giọt nước là $\\frac{a \\pi}{b}$ với $a, b \\in \\mathbb{Z}^+$ và phân số $\\frac{a}{b}$ tối giản. Tính $a+b$.",
+    "correct": "67",
+    "explain": "Thể tích khối tròn xoay: $V = \\pi \\int_0^4 (x\\sqrt{4-x})^2 dx = \\pi \\int_0^4 x^2(4-x) dx = \\pi \\int_0^4 (4x^2 - x^3) dx$. Tính nguyên hàm: $V = \\pi \\left(\\frac{4x^3}{3} - \\frac{x^4}{4}\\right) \\bigg|_0^4 = \\pi \\left( \\frac{256}{3} - 64 \\right) = \\pi \\left( \\frac{256 - 192}{3} \\right) = \\frac{64\\pi}{3}$. Suy ra $a = 64, b = 3$. Vậy $a+b = 64+3=67$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 5,
+    "q": "Cho hàm số $f(x)$ liên tục trên đoạn $[0; 1]$ thỏa mãn $0 \\le f(x) \\le 1$ với mọi $x \\in [0; 1]$ và $\\int_0^1 f(x) dx = \\frac{1}{3}$. Gọi $M$ là giá trị lớn nhất của tích phân $\\int_0^1 x^2 f(x) dx$. Tính giá trị của $81M$.",
+    "correct": "19",
+    "explain": "Để tối đa hóa $\\int_0^1 x^2 f(x) dx$ với điều kiện $\\int_0^1 f(x) dx = \\frac{1}{3}$ và hàm bị chặn bởi 1, ta cần dồn 'khối lượng' của hàm $f(x)$ vào những vị trí $x$ lớn nhất có thể. Tức là ta chọn $f(x) = 1$ trên đoạn $[1-a; 1]$ và $f(x) = 0$ trên đoạn $[0; 1-a)$. Để $\\int_0^1 f(x) dx = a = \\frac{1}{3}$, ta chọn $f(x)=1$ trên $[\\frac{2}{3}; 1]$. Khi đó giá trị lớn nhất $M = \\int_{\\frac{2}{3}}^1 x^2 \\cdot 1 dx = \\frac{x^3}{3} \\bigg|_{\\frac{2}{3}}^1 = \\frac{1}{3} \\left(1 - \\frac{8}{27}\\right) = \\frac{19}{81}$. Suy ra $81M = 19$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 5,
+    "q": "Tính thể tích $V$ của phần vật thể giới hạn bởi hai mặt phẳng $x=0$ và $x=3$, biết rằng thiết diện của vật thể bị cắt bởi mặt phẳng vuông góc với trục $Ox$ tại điểm có hoành độ $x$ ($0 \\le x \\le 3$) là một hình chữ nhật có hai kích thước là $x$ và $2\\sqrt{9-x^2}$.",
+    "correct": "18",
+    "explain": "Diện tích thiết diện tại điểm $x$ là $S(x) = x \\cdot 2\\sqrt{9-x^2}$. Thể tích của vật thể được tính bằng: $V = \\int_0^3 S(x) dx = \\int_0^3 2x\\sqrt{9-x^2} dx$. Đặt $u = 9-x^2 \\Rightarrow du = -2xdx$. Khi $x=0 \\Rightarrow u=9$; $x=3 \\Rightarrow u=0$. Tích phân trở thành $V = \\int_9^0 -\\sqrt{u} du = \\int_0^9 u^{1/2} du = \\frac{2}{3}u^{3/2} \\bigg|_0^9 = \\frac{2}{3}(\\sqrt{9})^3 = \\frac{2}{3} \\cdot 27 = 18$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 5,
+    "q": "Cho hàm số $y=f(x)$ liên tục, đồng biến trên $\\mathbb{R}$ và thỏa mãn phương trình $f(x) + f^3(x) = x$ với mọi $x$. Tính tích phân $I = \\int_0^2 f(x) dx$ (nhập đáp án dưới dạng số thập phân).",
+    "correct": "1.25",
+    "explain": "Từ giả thiết ta xác định được các cận: Khi $x=0 \\Rightarrow f(0) + f^3(0) = 0 \\Rightarrow f(0) = 0$. Khi $x=2 \\Rightarrow f(2) + f^3(2) = 2 \\Rightarrow f(2) = 1$. Thực hiện đổi biến số, đặt $y = f(x) \\Rightarrow x = y + y^3$. Lấy vi phân hai vế ta được $dx = (1 + 3y^2) dy$. Cận biến đổi thành từ $y=0$ đến $y=1$. Tích phân trở thành $I = \\int_0^1 y(1 + 3y^2) dy = \\int_0^1 (y + 3y^3) dy = \\left(\\frac{y^2}{2} + \\frac{3y^4}{4}\\right) \\bigg|_0^1 = \\frac{1}{2} + \\frac{3}{4} = \\frac{5}{4} = 1.25$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 5,
+    "q": "Cho hàm số $f(x)$ liên tục trên đoạn $[0; 1]$ thỏa mãn đồng thời $\\int_0^1 x^2 f(x) dx = 0.6$ và $\\int_0^1 [f(x)]^2 dx = 1.8$. Tính giá trị của $I = \\int_0^1 f(x) dx$.",
+    "correct": "1",
+    "explain": "Nhận xét rằng $\\int_0^1 x^4 dx = \\frac{1}{5} = 0.2$. Ta xét biểu thức tích phân của một bình phương hoàn hảo: $\\int_0^1 [f(x) - 3x^2]^2 dx = \\int_0^1 [f(x)]^2 dx - 6\\int_0^1 x^2 f(x) dx + 9\\int_0^1 x^4 dx$. Thay các giá trị vào: $1.8 - 6(0.6) + 9(0.2) = 1.8 - 3.6 + 1.8 = 0$. Vì tích phân của hàm không âm bằng 0 nên hàm dưới dấu tích phân phải đồng nhất bằng 0. Vậy $f(x) = 3x^2$. Từ đó, $I = \\int_0^1 3x^2 dx = x^3 \\big|_0^1 = 1$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 5,
+    "q": "Một bồn chứa có hình dạng là khối tròn xoay sinh ra khi quay hình phẳng giới hạn bởi đường cong $y = \\sqrt{\\frac{3}{\\pi}} x$, trục $Ox$ và đường thẳng $x = 3$ (đơn vị đo là mét) quanh trục $Ox$. Bồn đang chứa đầy nước. Người ta dùng máy bơm hút nước ra khỏi bồn với lưu lượng $v(t) = 3t^2$ ($m^3$/phút). Hỏi sau bao nhiêu phút thì máy bơm hút hết nước trong bồn?",
+    "correct": "3",
+    "explain": "Thể tích của bồn chứa nước là: $V = \\pi \\int_0^3 \\left(\\sqrt{\\frac{3}{\\pi}} x\\right)^2 dx = \\pi \\int_0^3 \\frac{3}{\\pi} x^2 dx = 3 \\int_0^3 x^2 dx = x^3 \\big|_0^3 = 27$ ($m^3$). Lượng nước được hút ra sau $T$ phút là: $V_{hut} = \\int_0^T 3t^2 dt = t^3 \\big|_0^T = T^3$. Bơm hết nước khi $V_{hut} = V \\Leftrightarrow T^3 = 27 \\Leftrightarrow T = 3$. Vậy cần 3 phút để hút hết nước."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 3,
+    "q": "Cho $\\int_1^5 f(x) dx = 10$ và $\\int_1^5 g(x) dx = -4$. Tính giá trị của biểu thức $I = \\int_1^5 [2f(x) - 3g(x) + 4] dx$.",
+    "correct": "48",
+    "explain": "Áp dụng tính chất tuyến tính của tích phân: $I = 2\\int_1^5 f(x) dx - 3\\int_1^5 g(x) dx + \\int_1^5 4 dx = 2(10) - 3(-4) + 4(5 - 1) = 20 + 12 + 16 = 48$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 3,
+    "q": "Tính giá trị của biểu thức $6I$, biết $I = \\int_0^3 |x^2 - 3x + 2| dx$.",
+    "correct": "11",
+    "explain": "Ta có $x^2-3x+2=0 \\Leftrightarrow x=1, x=2$. Xét dấu trên $[0; 3]$, ta tách tích phân: $I = \\int_0^1 (x^2-3x+2) dx - \\int_1^2 (x^2-3x+2) dx + \\int_2^3 (x^2-3x+2) dx$. Ta có $\\int (x^2-3x+2) dx = \\frac{x^3}{3} - \\frac{3x^2}{2} + 2x$. Tính tại các điểm: $F(0)=0, F(1)=\\frac{5}{6}, F(2)=\\frac{2}{3}, F(3)=\\frac{3}{2}$. Vậy $I = (F(1)-F(0)) - (F(2)-F(1)) + (F(3)-F(2)) = \\frac{5}{6} - (\\frac{2}{3} - \\frac{5}{6}) + (\\frac{3}{2} - \\frac{2}{3}) = \\frac{5}{6} + \\frac{1}{6} + \\frac{5}{6} = \\frac{11}{6}$. Suy ra $6I = 11$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 3,
+    "q": "Cho hàm số $f(x)$ liên tục trên $\\mathbb{R}$ thỏa mãn $f(x) = \\begin{cases} 2x^2 + 1 & \\text{khi } x \\ge 1 \\\\ 4x - 1 & \\text{khi } x < 1 \\end{cases}$. Tính giá trị của biểu thức $3I$, với $I = \\int_0^2 f(x) dx$.",
+    "correct": "20",
+    "explain": "Tách tích phân tại điểm $x=1$: $I = \\int_0^1 (4x - 1) dx + \\int_1^2 (2x^2 + 1) dx$. Ta có $\\int_0^1 (4x - 1) dx = (2x^2 - x) \\big|_0^1 = 1$. Lại có $\\int_1^2 (2x^2 + 1) dx = (\\frac{2x^3}{3} + x) \\big|_1^2 = (\\frac{16}{3} + 2) - (\\frac{2}{3} + 1) = \\frac{14}{3} + 1 = \\frac{17}{3}$. Tổng $I = 1 + \\frac{17}{3} = \\frac{20}{3}$. Vậy $3I = 20$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 3,
+    "q": "Cho $\\int_0^6 f(x) dx = 12$. Tính $I = \\int_0^2 f(3x) dx$.",
+    "correct": "4",
+    "explain": "Sử dụng phương pháp đổi biến số, đặt $t = 3x \\Rightarrow dt = 3dx \\Rightarrow dx = \\frac{dt}{3}$. Đổi cận: khi $x=0 \\Rightarrow t=0$, khi $x=2 \\Rightarrow t=6$. Thay vào ta được $I = \\int_0^6 f(t) \\frac{dt}{3} = \\frac{1}{3} \\int_0^6 f(x) dx = \\frac{1}{3} \\times 12 = 4$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 3,
+    "q": "Cho hàm số $f(x)$ liên tục trên $\\mathbb{R}$ và $\\int_0^{\\frac{\\pi}{2}} f(\\sin x) \\cos x dx = 5$. Tính $I = \\int_0^1 f(x) dx$.",
+    "correct": "5",
+    "explain": "Xét tích phân đầu tiên, đặt $t = \\sin x \\Rightarrow dt = \\cos x dx$. Đổi cận: $x = 0 \\Rightarrow t = 0$, $x = \\frac{\\pi}{2} \\Rightarrow t = 1$. Tích phân trở thành $\\int_0^1 f(t) dt = 5$. Do tích phân không phụ thuộc vào biến số, nên $I = \\int_0^1 f(x) dx = 5$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 4,
+    "q": "Cho hàm số $f(x)$ liên tục trên $\\mathbb{R}$ thỏa mãn $f(x) + f(-x) = x^2 + 2$ với mọi $x \\in \\mathbb{R}$. Tính giá trị của biểu thức $3I$, với $I = \\int_{-2}^2 f(x) dx$.",
+    "correct": "20",
+    "explain": "Lấy tích phân hai vế từ $-2$ đến $2$, ta có $\\int_{-2}^2 f(x) dx + \\int_{-2}^2 f(-x) dx = \\int_{-2}^2 (x^2 + 2) dx$. Đặt $t = -x \\Rightarrow dt = -dx$, ta dễ dàng chứng minh được $\\int_{-2}^2 f(-x) dx = \\int_{-2}^2 f(x) dx = I$. Vế phải $\\int_{-2}^2 (x^2 + 2) dx = (\\frac{x^3}{3} + 2x) \\big|_{-2}^2 = (\\frac{8}{3} + 4) - (-\\frac{8}{3} - 4) = \\frac{40}{3}$. Vậy $2I = \\frac{40}{3} \\Rightarrow I = \\frac{20}{3}$. Suy ra $3I = 20$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 4,
+    "q": "Tính tích phân $I = \\int_1^e x^2 \\ln x dx$. Biết $I = \\frac{a e^3 + b}{c}$ với $a, b, c$ là các số nguyên dương và phân số $\\frac{a}{c}$ tối giản. Tính $S = a + b + c$.",
+    "correct": "12",
+    "explain": "Sử dụng tích phân từng phần: Đặt $u = \\ln x \\Rightarrow du = \\frac{dx}{x}$ và $dv = x^2 dx \\Rightarrow v = \\frac{x^3}{3}$. Ta có $I = \\frac{x^3}{3} \\ln x \\big|_1^e - \\int_1^e \\frac{x^2}{3} dx = \\frac{e^3}{3} \\ln e - 0 - \\frac{x^3}{9} \\big|_1^e = \\frac{e^3}{3} - (\\frac{e^3}{9} - \\frac{1}{9}) = \\frac{2e^3 + 1}{9}$. Đối chiếu với giả thiết, ta được $a=2, b=1, c=9$. Tổng $S = 2 + 1 + 9 = 12$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 4,
+    "q": "Cho $\\int_0^1 \\frac{x}{x^2+3x+2} dx = a \\ln 2 + b \\ln 3$, với $a, b \\in \\mathbb{Z}$. Tính giá trị của biểu thức $P = a^2 + b^2$.",
+    "correct": "13",
+    "explain": "Mẫu số phân tích được thành $(x+1)(x+2)$. Đồng nhất thức: $\\frac{x}{(x+1)(x+2)} = \\frac{A}{x+1} + \\frac{B}{x+2} \\Rightarrow A(x+2) + B(x+1) = x \\Rightarrow A = -1, B = 2$. Khi đó $\\int_0^1 (\\frac{-1}{x+1} + \\frac{2}{x+2}) dx = (-\\ln|x+1| + 2\\ln|x+2|) \\big|_0^1 = (-\\ln 2 + 2\\ln 3) - (-\\ln 1 + 2\\ln 2) = -3\\ln 2 + 2\\ln 3$. Suy ra $a = -3, b = 2$. Vậy $P = (-3)^2 + 2^2 = 9 + 4 = 13$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 4,
+    "q": "Cho $\\int_0^{\\frac{\\pi}{4}} \\ln(1 + \\tan x) dx = \\frac{\\pi}{a} \\ln b$ với $a, b$ là các số nguyên dương. Tính tổng $S = a+b$.",
+    "correct": "10",
+    "explain": "Đặt $x = \\frac{\\pi}{4} - t \\Rightarrow dx = -dt$. Khi đó $I = \\int_0^{\\frac{\\pi}{4}} \\ln(1 + \\tan(\\frac{\\pi}{4} - t)) dt = \\int_0^{\\frac{\\pi}{4}} \\ln(1 + \\frac{1 - \\tan t}{1 + \\tan t}) dt = \\int_0^{\\frac{\\pi}{4}} \\ln(\\frac{2}{1 + \\tan t}) dt = \\int_0^{\\frac{\\pi}{4}} \\ln 2 dt - \\int_0^{\\frac{\\pi}{4}} \\ln(1 + \\tan t) dt$. Ta có $I = \\frac{\\pi}{4}\\ln 2 - I \\Rightarrow 2I = \\frac{\\pi}{4}\\ln 2 \\Rightarrow I = \\frac{\\pi}{8}\\ln 2$. Từ đó $a=8, b=2$. Tổng $S = 8+2=10$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 4,
+    "q": "Cho hàm số $f(x)$ có đạo hàm liên tục trên đoạn $[0; 2]$, thỏa mãn $f(2) = 3$ và $\\int_0^2 x f'(x) dx = 2$. Tính tích phân $I = \\int_0^2 f(x) dx$.",
+    "correct": "4",
+    "explain": "Áp dụng công thức tích phân từng phần: Đặt $u=x \\Rightarrow du=dx$ và $dv=f'(x)dx \\Rightarrow v=f(x)$. Ta có $\\int_0^2 x f'(x) dx = x f(x) \\big|_0^2 - \\int_0^2 f(x) dx = 2f(2) - I$. Thay các giá trị đã biết: $2 = 2(3) - I \\Rightarrow 2 = 6 - I \\Rightarrow I = 4$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 5,
+    "q": "Hàm số $y=f(x)$ có đạo hàm liên tục trên đoạn $[0; 1]$ thỏa mãn $f(1) = 1$ và $\\int_0^1 [f'(x)]^2 dx + \\int_0^1 4x f(x) dx = \\frac{9}{5}$. Tính $I = \\int_0^1 f(x) dx$ (nhập đáp án dưới dạng số thập phân).",
+    "correct": "0.75",
+    "explain": "Tích phân từng phần: $\\int_0^1 4x f(x) dx = 2x^2 f(x) \\big|_0^1 - \\int_0^1 2x^2 f'(x) dx = 2(1)(1) - \\int_0^1 2x^2 f'(x) dx = 2 - \\int_0^1 2x^2 f'(x) dx$. Thay vào phương trình gốc, ta có: $\\int_0^1 [f'(x)]^2 dx - \\int_0^1 2x^2 f'(x) dx + 2 = \\frac{9}{5} \\Rightarrow \\int_0^1 [ (f'(x))^2 - 2x^2 f'(x) ] dx = -\\frac{1}{5}$. Cộng thêm $\\int_0^1 x^4 dx = \\frac{1}{5}$ vào hai vế, ta được $\\int_0^1 [f'(x) - x^2]^2 dx = 0$. Vì hàm dưới dấu tích phân không âm và liên tục nên $f'(x) = x^2 \\Rightarrow f(x) = \\frac{x^3}{3} + C$. Do $f(1)=1 \\Rightarrow C = \\frac{2}{3}$. Vậy $f(x) = \\frac{x^3}{3} + \\frac{2}{3}$. Khi đó $I = \\int_0^1 (\\frac{x^3}{3} + \\frac{2}{3}) dx = \\frac{x^4}{12} \\big|_0^1 + \\frac{2}{3} = \\frac{1}{12} + \\frac{8}{12} = \\frac{9}{12} = 0.75$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 5,
+    "q": "Cho hàm số $f(x)$ liên tục trên $\\mathbb{R}$ và thỏa mãn $f(x) f(4-x) = 1$ với mọi $x$. Tính tích phân $I = \\int_0^4 \\frac{2026}{1 + f(x)} dx$.",
+    "correct": "4052",
+    "explain": "Đặt $t = 4-x \\Rightarrow dx = -dt$. Khi đó $I = \\int_0^4 \\frac{2026}{1 + f(4-t)} dt = \\int_0^4 \\frac{2026}{1 + f(4-x)} dx$. Do $f(x) f(4-x) = 1$ nên $f(4-x) = \\frac{1}{f(x)}$. Thay vào, $I = \\int_0^4 \\frac{2026}{1 + \\frac{1}{f(x)}} dx = \\int_0^4 \\frac{2026 f(x)}{f(x) + 1} dx$. Cộng hai biểu thức của $I$, ta được $2I = \\int_0^4 (\\frac{2026}{1 + f(x)} + \\frac{2026 f(x)}{1 + f(x)}) dx = \\int_0^4 2026 \\frac{1 + f(x)}{1 + f(x)} dx = \\int_0^4 2026 dx = 2026 \\times 4 = 8104$. Suy ra $I = 4052$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 5,
+    "q": "Cho hàm số $y=f(x)$ liên tục trên đoạn $[0; 1]$ thỏa mãn $f(x) + x f(x^2) = 3x^2 + x^4$ với mọi $x \\in [0; 1]$. Tính $I = \\int_0^1 f(x) dx$ (nhập đáp án dưới dạng số thập phân).",
+    "correct": "0.8",
+    "explain": "Lấy tích phân hai vế trên đoạn $[0; 1]$, ta được: $\\int_0^1 f(x) dx + \\int_0^1 x f(x^2) dx = \\int_0^1 (3x^2 + x^4) dx$. Tính vế phải: $\\int_0^1 (3x^2 + x^4) dx = (x^3 + \\frac{x^5}{5}) \\big|_0^1 = 1 + \\frac{1}{5} = \\frac{6}{5}$. Tính tích phân $\\int_0^1 x f(x^2) dx$, đặt $t = x^2 \\Rightarrow dt = 2x dx \\Rightarrow x dx = \\frac{1}{2} dt$, nên $\\int_0^1 x f(x^2) dx = \\frac{1}{2} \\int_0^1 f(t) dt = \\frac{1}{2} I$. Vậy phương trình trở thành $I + \\frac{1}{2} I = \\frac{6}{5} \\Rightarrow \\frac{3}{2} I = \\frac{6}{5} \\Rightarrow I = \\frac{6}{5} \\times \\frac{2}{3} = \\frac{4}{5} = 0.8$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 5,
+    "q": "Biết $I = \\int_0^{\\pi} \\frac{x \\sin x}{1 + \\cos^2 x} dx = \\frac{\\pi^2}{a}$. Tìm giá trị của $a$.",
+    "correct": "4",
+    "explain": "Đặt $x = \\pi - t \\Rightarrow dx = -dt$. Ta có $I = \\int_0^{\\pi} \\frac{(\\pi - t) \\sin(\\pi - t)}{1 + \\cos^2(\\pi - t)} dt = \\int_0^{\\pi} \\frac{\\pi \\sin t - t \\sin t}{1 + \\cos^2 t} dt = \\pi \\int_0^{\\pi} \\frac{\\sin x}{1 + \\cos^2 x} dx - I$. Từ đó $2I = \\pi \\int_0^{\\pi} \\frac{\\sin x}{1 + \\cos^2 x} dx$. Tính $J = \\int_0^{\\pi} \\frac{\\sin x}{1 + \\cos^2 x} dx$, đặt $u = \\cos x \\Rightarrow du = -\\sin x dx$, cận biến đổi thành $1 \\to -1$. $J = \\int_1^{-1} \\frac{-du}{1 + u^2} = \\int_{-1}^1 \\frac{du}{1 + u^2} = \\arctan(u) \\big|_{-1}^1 = \\frac{\\pi}{4} - (-\\frac{\\pi}{4}) = \\frac{\\pi}{2}$. Vậy $2I = \\pi \\times \\frac{\\pi}{2} = \\frac{\\pi^2}{2} \\Rightarrow I = \\frac{\\pi^2}{4}$. Suy ra $a = 4$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 5,
+    "q": "Cho hàm số $f(x)$ liên tục trên $\\mathbb{R}$ và thỏa mãn $\\int_0^{x^2} f(t) dt = x \\cos(\\pi x)$ với mọi $x \\ge 0$. Tính $f(4)$ (nhập đáp án dưới dạng số thập phân).",
+    "correct": "0.25",
+    "explain": "Lấy đạo hàm hai vế phương trình theo biến $x$, ta có: $\\frac{d}{dx} \\left( \\int_0^{x^2} f(t) dt \\right) = f(x^2) \\cdot (x^2)' = 2x f(x^2)$. Đạo hàm vế phải: $(x \\cos(\\pi x))' = \\cos(\\pi x) - \\pi x \\sin(\\pi x)$. Vậy $2x f(x^2) = \\cos(\\pi x) - \\pi x \\sin(\\pi x)$. Để tính $f(4)$, ta chọn $x = 2$ (vì $x \\ge 0$ nên $x^2 = 4 \\Rightarrow x = 2$). Thay $x=2$ vào, ta được $2(2) f(4) = \\cos(2\\pi) - \\pi(2) \\sin(2\\pi) \\Rightarrow 4 f(4) = 1 - 0 = 1 \\Rightarrow f(4) = 0.25$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 3,
+    "q": "Gọi $F(x)$ là một nguyên hàm của hàm số $f(x) = x\\\\sqrt{x^2+1}$ thỏa mãn $F(0) = 1$. Tính giá trị của biểu thức $3F(\\\\sqrt{3})$.",
+    "correct": "10",
+    "explain": "Ta có $\\\\int x\\\\sqrt{x^2+1} dx = \\\\frac{1}{2}\\\\int (x^2+1)^{\\\\frac{1}{2}} d(x^2+1) = \\\\frac{1}{3}(x^2+1)^{\\\\frac{3}{2}} + C$. Do $F(0) = 1$ nên $\\\\frac{1}{3}(1)^{\\\\frac{3}{2}} + C = 1 \\\\Rightarrow C = \\\\frac{2}{3}$. Vậy $F(x) = \\\\frac{1}{3}(x^2+1)^{\\\\frac{3}{2}} + \\\\frac{2}{3}$. Khi đó $F(\\\\sqrt{3}) = \\\\frac{1}{3}(3+1)^{\\\\frac{3}{2}} + \\\\frac{2}{3} = \\\\frac{8}{3} + \\\\frac{2}{3} = \\\\frac{10}{3}$. Suy ra $3F(\\\\sqrt{3}) = 10$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 3,
+    "q": "Cho hàm số $f(x) = \\\\frac{2x+3}{x-1}$ xác định trên khoảng $(1; +\\\\infty)$. Biết $F(x)$ là một nguyên hàm của $f(x)$ thỏa mãn $F(2) = 4$. Biết $F(e+1) = ae + b$ (với $a, b \\\\in \\\\mathbb{Z}$). Tính $a+b$.",
+    "correct": "9",
+    "explain": "Ta có $f(x) = \\\\frac{2(x-1)+5}{x-1} = 2 + \\\\frac{5}{x-1}$. Suy ra $F(x) = \\\\int (2 + \\\\frac{5}{x-1}) dx = 2x + 5\\\\ln(x-1) + C$ (do $x>1$). Vì $F(2) = 4 \\\\Rightarrow 2(2) + 5\\\\ln(1) + C = 4 \\\\Rightarrow C = 0$. Vậy $F(x) = 2x + 5\\\\ln(x-1)$. Khi đó $F(e+1) = 2(e+1) + 5\\\\ln(e) = 2e + 2 + 5 = 2e + 7$. Từ đó $a=2, b=7$ nên $a+b=9$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 3,
+    "q": "Biết $F(x)$ là một nguyên hàm của hàm số $f(x) = \\\\cos x \\\\sin^2 x$ thỏa mãn $F(\\\\frac{\\\\pi}{2}) = 1$. Tính giá trị của biểu thức $3F(\\\\frac{\\\\pi}{6})$ (nhập đáp án dưới dạng số thập phân).",
+    "correct": "2.125",
+    "explain": "Ta có $\\\\int \\\\cos x \\\\sin^2 x dx = \\\\int \\\\sin^2 x d(\\\\sin x) = \\\\frac{1}{3}\\\\sin^3 x + C$. Do $F(\\\\frac{\\\\pi}{2}) = 1 \\\\Rightarrow \\\\frac{1}{3}(1)^3 + C = 1 \\\\Rightarrow C = \\\\frac{2}{3}$. Vậy $F(x) = \\\\frac{1}{3}\\\\sin^3 x + \\\\frac{2}{3}$. Khi đó $F(\\\\frac{\\\\pi}{6}) = \\\\frac{1}{3}(\\\\frac{1}{2})^3 + \\\\frac{2}{3} = \\\\frac{1}{24} + \\\\frac{16}{24} = \\\\frac{17}{24}$. Giá trị cần tìm là $3 \\\\times \\\\frac{17}{24} = \\\\frac{17}{8} = 2.125$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 3,
+    "q": "Biết $F(x)$ là nguyên hàm của hàm số $f(x) = x e^x$ thỏa mãn đồ thị hàm số $y=F(x)$ đi qua điểm có tọa độ $(0; 0)$. Tính giá trị của $F(1)$.",
+    "correct": "1",
+    "explain": "Sử dụng phương pháp nguyên hàm từng phần: Đặt $u=x \\\\Rightarrow du=dx$ và $dv=e^x dx \\\\Rightarrow v=e^x$. Khi đó $F(x) = x e^x - \\\\int e^x dx = x e^x - e^x + C = (x-1)e^x + C$. Đồ thị đi qua gốc tọa độ $(0; 0)$ nên $F(0) = 0 \\\\Rightarrow (0-1)e^0 + C = 0 \\\\Rightarrow -1 + C = 0 \\\\Rightarrow C = 1$. Vậy $F(x) = (x-1)e^x + 1$. Từ đó $F(1) = (1-1)e^1 + 1 = 1$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 3,
+    "q": "Biết rằng hàm số $F(x) = e^{2x}(ax+b)$ (với $a, b \\\\in \\\\mathbb{R}$) là một nguyên hàm của hàm số $f(x) = e^{2x}(4x+6)$. Tính tổng $a+b$.",
+    "correct": "4",
+    "explain": "Vì $F(x)$ là nguyên hàm của $f(x)$ nên $F'(x) = f(x)$. Ta tính đạo hàm $F'(x) = 2e^{2x}(ax+b) + e^{2x}(a) = e^{2x}(2ax + 2b + a)$. Đồng nhất hệ số với $f(x) = e^{2x}(4x+6)$, ta có: $2a = 4$ và $2b+a = 6$. Từ phương trình đầu suy ra $a=2$. Thế vào phương trình sau ta được $2b+2=6 \\\\Rightarrow 2b=4 \\\\Rightarrow b=2$. Vậy $a+b = 2+2 = 4$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 4,
+    "q": "Cho hàm số $f(x)$ nhận giá trị dương và có đạo hàm liên tục trên $\\\\mathbb{R}$ thỏa mãn $f'(x) = \\\\frac{x}{f(x)}$ và $f(0) = 2$. Tính giá trị của $f(\\\\sqrt{5})$.",
+    "correct": "3",
+    "explain": "Biến đổi giả thiết ta được $f(x) f'(x) = x$. Lấy nguyên hàm hai vế: $\\\\int f(x) f'(x) dx = \\\\int x dx \\\\Rightarrow \\\\frac{1}{2}[f(x)]^2 = \\\\frac{1}{2}x^2 + C \\\\Rightarrow [f(x)]^2 = x^2 + 2C$. Tại $x=0$, $f(0) = 2 \\\\Rightarrow 2^2 = 0 + 2C \\\\Rightarrow 2C = 4$. Do đó $[f(x)]^2 = x^2 + 4$. Vì $f(x)>0$ nên $f(x) = \\\\sqrt{x^2+4}$. Tính $f(\\\\sqrt{5}) = \\\\sqrt{(\\\\sqrt{5})^2+4} = \\\\sqrt{5+4} = 3$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 4,
+    "q": "Cho $F(x)$ là một nguyên hàm của hàm số $f(x) = \\\\frac{1}{x^2-3x+2}$ trên khoảng $(2; +\\\\infty)$. Biết $F(3) = 0$, tính giá trị của biểu thức $3e^{F(4)}$.",
+    "correct": "4",
+    "explain": "Phân tích mẫu thức: $x^2-3x+2 = (x-1)(x-2)$. Ta có $f(x) = \\\\frac{1}{x-2} - \\\\frac{1}{x-1}$. Suy ra $F(x) = \\\\int (\\\\frac{1}{x-2} - \\\\frac{1}{x-1}) dx = \\\\ln|x-2| - \\\\ln|x-1| + C = \\\\ln\\\\left|\\\\frac{x-2}{x-1}\\\\right| + C$. Do $x>2$, $F(x) = \\\\ln(\\\\frac{x-2}{x-1}) + C$. Với $F(3) = 0 \\\\Rightarrow \\\\ln(\\\\frac{1}{2}) + C = 0 \\\\Rightarrow C = \\\\ln 2$. Vậy $F(x) = \\\\ln(\\\\frac{x-2}{x-1}) + \\\\ln 2 = \\\\ln(\\\\frac{2x-4}{x-1})$. Khi đó $F(4) = \\\\ln(\\\\frac{4}{3})$. Suy ra $3e^{F(4)} = 3e^{\\\\ln(4/3)} = 3 \\\\times \\\\frac{4}{3} = 4$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 4,
+    "q": "Biết $F(x) = e^x(ax^2+bx+c)$ là một nguyên hàm của hàm số $f(x) = e^x(x^2-2x+2)$ trên $\\\\mathbb{R}$. Tính tổng $S = a+b+c$.",
+    "correct": "3",
+    "explain": "Đạo hàm $F'(x) = e^x(ax^2+bx+c) + e^x(2ax+b) = e^x[ax^2 + (2a+b)x + (b+c)]$. Đồng nhất với $f(x) = e^x(x^2-2x+2)$, ta có hệ phương trình: $a=1$; $2a+b=-2 \\\\Rightarrow 2(1)+b=-2 \\\\Rightarrow b=-4$; $b+c=2 \\\\Rightarrow -4+c=2 \\\\Rightarrow c=6$. Tổng $S = a+b+c = 1 + (-4) + 6 = 3$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 4,
+    "q": "Biết $F(x)$ là nguyên hàm của hàm số $f(x) = \\\\frac{\\\\ln x}{x^2}$ trên $(0; +\\\\infty)$ thỏa mãn $F(1) = 0$. Giả sử $F(e) = a + \\\\frac{b}{e}$ với $a, b \\\\in \\\\mathbb{Z}$. Tính $a-b$.",
+    "correct": "3",
+    "explain": "Dùng nguyên hàm từng phần: Đặt $u = \\\\ln x \\\\Rightarrow du = \\\\frac{1}{x}dx$; $dv = \\\\frac{1}{x^2}dx \\\\Rightarrow v = -\\\\frac{1}{x}$. Khi đó $F(x) = -\\\\frac{\\\\ln x}{x} - \\\\int (-\\\\frac{1}{x^2})dx = -\\\\frac{\\\\ln x}{x} - \\\\frac{1}{x} + C$. Vì $F(1) = 0 \\\\Rightarrow 0 - 1 + C = 0 \\\\Rightarrow C=1$. Vậy $F(x) = -\\\\frac{\\\\ln x}{x} - \\\\frac{1}{x} + 1$. Ta có $F(e) = -\\\\frac{1}{e} - \\\\frac{1}{e} + 1 = 1 - \\\\frac{2}{e}$. Từ đó suy ra $a=1, b=-2$. Giá trị $a-b = 1 - (-2) = 3$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 4,
+    "q": "Gọi $F(x)$ là nguyên hàm của hàm số $f(x) = \\\\sin^4 x - \\\\cos^4 x$ thỏa mãn đồ thị $y=F(x)$ đi qua điểm $(0; 0)$. Tính giá trị của $F(-\\\\frac{\\\\pi}{4})$ (nhập đáp án dưới dạng số thập phân).",
+    "correct": "0.5",
+    "explain": "Biến đổi lượng giác: $f(x) = (\\\\sin^2 x - \\\\cos^2 x)(\\\\sin^2 x + \\\\cos^2 x) = (\\\\sin^2 x - \\\\cos^2 x) \\\\times 1 = -\\\\cos 2x$. Nguyên hàm $F(x) = \\\\int -\\\\cos 2x dx = -\\\\frac{1}{2}\\\\sin 2x + C$. Do $F(0) = 0 \\\\Rightarrow -\\\\frac{1}{2}\\\\sin 0 + C = 0 \\\\Rightarrow C = 0$. Vậy $F(x) = -\\\\frac{1}{2}\\\\sin 2x$. Giá trị $F(-\\\\frac{\\\\pi}{4}) = -\\\\frac{1}{2}\\\\sin(-\\\\frac{\\\\pi}{2}) = -\\\\frac{1}{2}(-1) = 0.5$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 5,
+    "q": "Hàm số $f(x)$ liên tục và có đạo hàm trên $(0; +\\\\infty)$ thỏa mãn $x^2 f'(x) + 2x f(x) = 4x^3$ và $f(1) = 2$. Tính giá trị của $f(2)$ (nhập đáp án dưới dạng số thập phân).",
+    "correct": "4.25",
+    "explain": "Ta nhận thấy vế trái chính là đạo hàm của một tích: $x^2 f'(x) + 2x f(x) = (x^2 f(x))'$. Suy ra $(x^2 f(x))' = 4x^3$. Lấy nguyên hàm hai vế, ta được $x^2 f(x) = \\\\int 4x^3 dx = x^4 + C$. Tại $x=1$, $1^2 \\\\cdot f(1) = 1^4 + C \\\\Rightarrow 2 = 1 + C \\\\Rightarrow C=1$. Vậy $x^2 f(x) = x^4 + 1 \\\\Rightarrow f(x) = x^2 + \\\\frac{1}{x^2}$. Giá trị $f(2) = 2^2 + \\\\frac{1}{2^2} = 4 + 0.25 = 4.25$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 5,
+    "q": "Hàm số $f(x)$ có đạo hàm liên tục trên $\\\\mathbb{R}$ thỏa mãn phương trình $f'(x) - f(x) = x e^x$ và $f(0) = 1$. Tính giá trị biểu thức $\\\\frac{f(2)}{e^2}$.",
+    "correct": "3",
+    "explain": "Nhân cả hai vế của phương trình với nhân tử tích phân $e^{-x}$, ta được $e^{-x}f'(x) - e^{-x}f(x) = x$. Vế trái là đạo hàm của một tích: $(e^{-x}f(x))' = x$. Lấy nguyên hàm hai vế: $e^{-x}f(x) = \\\\int x dx = \\\\frac{1}{2}x^2 + C$. Với $x=0$, $e^0 f(0) = 0 + C \\\\Rightarrow C=1$ (do $f(0)=1$). Vậy $e^{-x}f(x) = \\\\frac{1}{2}x^2 + 1 \\\\Rightarrow f(x) = e^x(\\\\frac{1}{2}x^2+1)$. Tính $\\\\frac{f(2)}{e^2} = \\\\frac{1}{2}(2^2) + 1 = 2 + 1 = 3$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 5,
+    "q": "Cho hàm số $f(x)$ xác định, có đạo hàm trên $\\\\mathbb{R}$ thỏa mãn $f(0) = -1$ và $f'(x) = [f(x)]^2$ với mọi $x$. Tính giá trị của $f(3)$ (nhập đáp án dưới dạng số thập phân).",
+    "correct": "-0.25",
+    "explain": "Từ giả thiết $f'(x) = [f(x)]^2$, chia hai vế cho $[f(x)]^2$ ta được $\\\\frac{f'(x)}{[f(x)]^2} = 1$. Lấy nguyên hàm hai vế: $\\\\int \\\\frac{f'(x)}{[f(x)]^2} dx = \\\\int 1 dx \\\\Rightarrow -\\\\frac{1}{f(x)} = x + C$. Với $x=0$, ta có $-\\\\frac{1}{f(0)} = 0 + C \\\\Rightarrow -\\\\frac{1}{-1} = C \\\\Rightarrow C=1$. Vậy $-\\\\frac{1}{f(x)} = x+1 \\\\Rightarrow f(x) = -\\\\frac{1}{x+1}$. Khi đó $f(3) = -\\\\frac{1}{3+1} = -0.25$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 5,
+    "q": "Cho hàm số $f(x)$ liên tục, nhận giá trị dương trên $\\\\mathbb{R}$ và thỏa mãn điều kiện $f(x)f'(x) = \\\\frac{x}{\\\\sqrt{x^2+1}}$ cùng $f(0)=1$. Tính bình phương giá trị của hàm số tại $x=2\\\\sqrt{2}$, tức là tính $[f(2\\\\sqrt{2})]^2$.",
+    "correct": "5",
+    "explain": "Từ $f(x)f'(x) = \\\\frac{x}{\\\\sqrt{x^2+1}}$, lấy nguyên hàm hai vế ta được $\\\\int f(x)f'(x) dx = \\\\int \\\\frac{x}{\\\\sqrt{x^2+1}} dx \\\\Rightarrow \\\\frac{1}{2}[f(x)]^2 = \\\\sqrt{x^2+1} + C$. Tại $x=0$, $\\\\frac{1}{2}[f(0)]^2 = \\\\sqrt{0+1} + C \\\\Rightarrow \\\\frac{1}{2}(1) = 1 + C \\\\Rightarrow C = -\\\\frac{1}{2}$. Do đó $\\\\frac{1}{2}[f(x)]^2 = \\\\sqrt{x^2+1} - \\\\frac{1}{2} \\\\Rightarrow [f(x)]^2 = 2\\\\sqrt{x^2+1} - 1$. Với $x=2\\\\sqrt{2}$, ta có $[f(2\\\\sqrt{2})]^2 = 2\\\\sqrt{8+1} - 1 = 2(3) - 1 = 5$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TLN",
+    "level": 5,
+    "q": "Cho hàm số $f(x)$ có đạo hàm liên tục trên khoảng $(-\\\\frac{\\\\pi}{2}; \\\\frac{\\\\pi}{2})$ thỏa mãn $f'(x) + f(x)\\\\tan x = \\\\cos^2 x$ và $f(0) = 0$. Tính giá trị của $f(\\\\frac{\\\\pi}{4})$ (nhập đáp án dưới dạng số thập phân).",
+    "correct": "0.5",
+    "explain": "Nhân hai vế phương trình với $\\\\frac{1}{\\\\cos x}$, ta được $\\\\frac{f'(x)}{\\\\cos x} + f(x)\\\\frac{\\\\sin x}{\\\\cos^2 x} = \\\\cos x$. Vế trái chính là đạo hàm của thương số: $\\\\left( \\\\frac{f(x)}{\\\\cos x} \\\\right)' = \\\\cos x$. Lấy nguyên hàm hai vế: $\\\\frac{f(x)}{\\\\cos x} = \\\\int \\\\cos x dx = \\\\sin x + C$. Với $x=0$, $\\\\frac{f(0)}{\\\\cos 0} = \\\\sin 0 + C \\\\Rightarrow 0 = 0 + C \\\\Rightarrow C=0$. Suy ra $\\\\frac{f(x)}{\\\\cos x} = \\\\sin x \\\\Rightarrow f(x) = \\\\sin x \\\\cos x = \\\\frac{1}{2}\\\\sin 2x$. Tính $f(\\\\frac{\\\\pi}{4}) = \\\\frac{1}{2}\\\\sin(\\\\frac{\\\\pi}{2}) = 0.5$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "DS",
+    "q": "Cho hàm số $f(x) = 3x^2 - 2x$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Họ tất cả các nguyên hàm của $f(x)$ là $\\int f(x) dx = x^3 - x^2 + C$.",
+      "b": "Gọi $F(x)$ là một nguyên hàm của $f(x)$ thỏa mãn $F(1) = 2$. Khi đó $F(x) = x^3 - x^2 + 2$.",
+      "c": "Điểm cực đại của đồ thị hàm số $y = F(x)$ (với $F(x)$ tìm được ở ý b) nằm trên trục hoành.",
+      "d": "Phương trình $F(x) = 0$ (với $F(x)$ tìm được ở ý b) có đúng một nghiệm thực duy nhất."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    },
+    "explain": "a) (Mức 1) Đúng theo bảng nguyên hàm cơ bản. b) (Mức 2) Đúng. Ta có $F(x) = x^3 - x^2 + C$. Vì $F(1)=2 \\Rightarrow 1 - 1 + C = 2 \\Rightarrow C = 2$. Vậy $F(x) = x^3 - x^2 + 2$. c) (Mức 3) Sai. Ta có $F'(x) = f(x) = 3x^2 - 2x = 0 \\Rightarrow x = 0$ hoặc $x = \\frac{2}{3}$. Điểm cực đại đạt tại $x = 0$, tung độ cực đại là $F(0) = 2 \\neq 0$, nên không nằm trên trục hoành. d) (Mức 4) Đúng. Đồ thị $F(x)$ có cực đại là $(0; 2)$ và cực tiểu là $(\\frac{2}{3}; \\frac{50}{27})$. Vì cả hai giá trị cực trị đều dương và hệ số $a=1>0$, đồ thị chỉ cắt trục hoành tại 1 điểm duy nhất (bên trái $x=0$)."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "DS",
+    "q": "Cho hàm số $f(x) = e^x + \\frac{1}{x}$ xác định trên khoảng $(0; +\\infty)$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Họ nguyên hàm của hàm số $f(x)$ trên $(0; +\\infty)$ là $e^x + \\ln x + C$.",
+      "b": "Nguyên hàm $F(x)$ của $f(x)$ đi qua điểm $A(1; e)$ là $F(x) = e^x + \\ln x$.",
+      "c": "Hàm số $F(x) = e^x + \\ln x$ luôn đồng biến trên khoảng $(0; +\\infty)$.",
+      "d": "Tồn tại tiếp tuyến của đồ thị hàm số $y = F(x)$ song song với trục hoành."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) (Mức 1) Đúng do $x > 0$ nên $\\int \\frac{1}{x} dx = \\ln|x| + C = \\ln x + C$. b) (Mức 2) Đúng. $F(x) = e^x + \\ln x + C$. $F(1) = e \\Rightarrow e^1 + \\ln 1 + C = e \\Rightarrow C = 0$. c) (Mức 3) Đúng. Đạo hàm $F'(x) = f(x) = e^x + \\frac{1}{x} > 0$ với mọi $x > 0$. d) (Mức 4) Sai. Tiếp tuyến song song trục hoành khi $F'(x) = 0 \\Leftrightarrow e^x + \\frac{1}{x} = 0$. Phương trình này vô nghiệm trên $(0; +\\infty)$ vì vế trái luôn dương."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "DS",
+    "q": "Cho hàm số $f(x) = \\sin 2x$. Xét tính đúng sai của các khẳng định sau:",
+    "items": {
+      "a": "Một nguyên hàm của $f(x)$ là $-\\frac{1}{2}\\cos 2x$.",
+      "b": "Họ nguyên hàm của hàm số $g(x) = f(x)\\cos 2x$ là $-\\frac{1}{8}\\cos 4x + C$.",
+      "c": "Gọi $F(x)$ là nguyên hàm của $f(x)$ thỏa mãn $F(0) = 0$. Khi đó $F(\\frac{\\pi}{4}) = \\frac{1}{2}$.",
+      "d": "Gọi $F(x)$ là nguyên hàm của $f(x)$ thỏa mãn $F(0) = 0$. Giá trị lớn nhất của $F(x)$ trên $\\mathbb{R}$ bằng 2."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) (Mức 1) Đúng theo công thức mở rộng. b) (Mức 2) Đúng. $g(x) = \\sin 2x \\cos 2x = \\frac{1}{2}\\sin 4x$. $\\int g(x) dx = \\frac{1}{2}(-\\frac{1}{4}\\cos 4x) + C = -\\frac{1}{8}\\cos 4x + C$. c) (Mức 3) Đúng. $F(x) = -\\frac{1}{2}\\cos 2x + C$. $F(0) = -\\frac{1}{2} + C = 0 \\Rightarrow C = \\frac{1}{2}$. Ta có $F(x) = -\\frac{1}{2}\\cos 2x + \\frac{1}{2}$. Thay $x = \\frac{\\pi}{4} \\Rightarrow F(\\frac{\\pi}{4}) = -\\frac{1}{2}\\cos\\frac{\\pi}{2} + \\frac{1}{2} = \\frac{1}{2}$. d) (Mức 4) Sai. Vì $\\cos 2x \\ge -1$, nên $F(x) = \\frac{1}{2} - \\frac{1}{2}\\cos 2x \\le \\frac{1}{2} - \\frac{1}{2}(-1) = 1$. Giá trị lớn nhất bằng 1, không phải 2."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "DS",
+    "q": "Cho hàm số $f(x) = \\frac{2x - 1}{x + 1}$ xác định trên khoảng $(-1; +\\infty)$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Biến đổi $f(x)$ ta được $f(x) = 2 - \\frac{3}{x + 1}$.",
+      "b": "Họ nguyên hàm của $f(x)$ trên $(-1; +\\infty)$ là $2x - 3\\ln(x + 1) + C$.",
+      "c": "Gọi $F(x)$ là một nguyên hàm của $f(x)$. Hàm số $F(x)$ có một điểm cực đại trên khoảng $(-1; +\\infty)$.",
+      "d": "Biết $F(0) = 1$, phương trình $F(x) = 2x$ có nghiệm duy nhất trên khoảng $(-1; +\\infty)$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    },
+    "explain": "a) (Mức 1) Đúng. $\\frac{2x-1}{x+1} = \\frac{2(x+1)-3}{x+1} = 2 - \\frac{3}{x+1}$. b) (Mức 2) Đúng, vì $x>-1$ nên $|x+1|=x+1$. c) (Mức 3) Sai. Đạo hàm $F'(x) = f(x) = \\frac{2x-1}{x+1}$. $F'(x)=0 \\Leftrightarrow x=1/2$. Qua $x=1/2$, $F'(x)$ đổi dấu từ âm sang dương, nên $x=1/2$ là điểm cực tiểu, không phải cực đại. d) (Mức 4) Đúng. $F(x) = 2x - 3\\ln(x+1) + C$. $F(0)=1 \\Rightarrow 0 - 3(0) + C = 1 \\Rightarrow C=1$. Phươn trình $F(x)=2x \\Leftrightarrow 2x - 3\\ln(x+1) + 1 = 2x \\Leftrightarrow \\ln(x+1) = \\frac{1}{3} \\Leftrightarrow x = e^{1/3} - 1$ (thỏa mãn $x>-1$). Có đúng 1 nghiệm."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "DS",
+    "q": "Giả sử hàm số $f(x)$ liên tục trên $\\mathbb{R}$, có $f'(x) = 4x^3 - 2x$ và $f(1) = 0$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Công thức của hàm số là $f(x) = x^4 - x^2$.",
+      "b": "Họ nguyên hàm của $f(x)$ là $\\frac{x^5}{5} - \\frac{x^3}{3} + C$.",
+      "c": "Đồ thị hàm số $y = f(x)$ cắt trục hoành tại đúng 3 điểm phân biệt.",
+      "d": "Gọi $F(x)$ là một nguyên hàm của $f(x)$. Giá trị nhỏ nhất của $F(x)$ trên $\\mathbb{R}$ đạt được tại $x = 0$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) (Mức 1) Đúng. $f(x) = \\int (4x^3 - 2x) dx = x^4 - x^2 + C$. Do $f(1)=0 \\Rightarrow 1 - 1 + C = 0 \\Rightarrow C=0$. b) (Mức 2) Đúng theo công thức cơ bản. c) (Mức 3) Đúng. $x^4 - x^2 = 0 \\Leftrightarrow x^2(x^2-1) = 0 \\Leftrightarrow x=0, x=1, x=-1$. d) (Mức 4) Sai. Ta có $F'(x) = f(x) = x^2(x^2-1)$. Bảng xét dấu $F'(x)$ cho thấy $F'(x) < 0$ trên $(-1; 1)$ (trừ $x=0$) và $F'(x) > 0$ trên $(-\\infty; -1)$ và $(1; +\\infty)$. Vậy $F(x)$ đạt cực tiểu tại $x = 1$ và $x = -1$ (giá trị bằng nhau do $f(x)$ chẵn), còn $x=0$ không phải là điểm cực tiểu."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "DS",
+    "q": "Biết $\\int_1^3 f(x) dx = 4$ và $\\int_1^3 g(x) dx = -2$. Xét tính đúng sai của các khẳng định sau:",
+    "items": {
+      "a": "$\\int_1^3 [f(x) + g(x)] dx = 2$.",
+      "b": "$\\int_1^3 [2f(x) - 3g(x)] dx = 14$.",
+      "c": "$\\int_1^3 f(x)g(x) dx = -8$.",
+      "d": "Nếu $f(x) = ax + b$ thì giá trị của biểu thức $2a + b$ bằng 2."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    },
+    "explain": "a) (Mức 1) Đúng. Tính chất tổng: $4 + (-2) = 2$. b) (Mức 2) Đúng. $2(4) - 3(-2) = 8 + 6 = 14$. c) (Mức 3) Sai. Tích phân của một tích không bằng tích các tích phân. d) (Mức 4) Đúng. $\\int_1^3 (ax+b) dx = (\\frac{a}{2}x^2 + bx)|_1^3 = (\\frac{9a}{2} + 3b) - (\\frac{a}{2} + b) = 4a + 2b$. Theo giả thiết $4a + 2b = 4 \\Rightarrow 2a + b = 2$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "DS",
+    "q": "Xét tích phân $I = \\int_0^1 (2x + 1)^2 dx$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Khai triển biểu thức dưới dấu tích phân ta được $(2x+1)^2 = 4x^2 + 4x + 1$.",
+      "b": "Giá trị của tích phân $I = \\frac{13}{3}$.",
+      "c": "Ta có thể tính $I$ bằng cách bình phương tích phân: $I = \\left( \\int_0^1 (2x+1) dx \\right)^2$.",
+      "d": "Tồn tại số thực $c \\in (0; 1)$ sao cho giá trị của hàm số $f(x) = (2x+1)^2$ tại $x=c$ bằng chính xác $\\frac{13}{3}$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    },
+    "explain": "a) (Mức 1) Đúng theo hằng đẳng thức. b) (Mức 2) Đúng. $I = \\int_0^1 (4x^2 + 4x + 1) dx = (\\frac{4}{3}x^3 + 2x^2 + x)|_0^1 = \\frac{4}{3} + 2 + 1 = \\frac{13}{3}$. c) (Mức 3) Sai. Tích phân không có tính chất $\\int f^2(x) dx = (\\int f(x) dx)^2$. Tính thử: $\\int_0^1 (2x+1) dx = 2$, bình phương lên là 4, khác $\\frac{13}{3}$. d) (Mức 4) Đúng theo Định lý giá trị trung bình của tích phân. $(2c+1)^2 = \\frac{13}{3} \\Rightarrow 2c+1 = \\sqrt{\\frac{13}{3}} \\Rightarrow c = \\frac{1}{2}(\\sqrt{\\frac{13}{3}} - 1) \\approx 0.54$, nằm trong khoảng $(0; 1)$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "DS",
+    "q": "Xét tích phân $I = \\int_0^{\\ln 2} e^{2x} dx$. Đánh giá tính đúng sai của các phát biểu sau:",
+    "items": {
+      "a": "Một nguyên hàm của hàm số $f(x) = e^{2x}$ là $\\frac{1}{2}e^{2x}$.",
+      "b": "Giá trị của tích phân $I = \\frac{3}{2}$.",
+      "c": "Nếu thực hiện phép đổi biến $t = 2x$ thì $I = \\int_0^{\\ln 2} e^t dt$.",
+      "d": "Gọi $J = \\int_0^{\\ln 2} x e^{2x} dx$. Khi đó $J = \\ln 2 - \\frac{3}{4}$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": false
+    },
+    "explain": "a) (Mức 1) Đúng. b) (Mức 2) Đúng. $I = \\frac{1}{2}e^{2x}|_0^{\\ln 2} = \\frac{1}{2}(e^{2\\ln 2} - e^0) = \\frac{1}{2}(4 - 1) = \\frac{3}{2}$. c) (Mức 3) Sai. Nếu $t=2x$ thì $dt=2dx \\Rightarrow dx=dt/2$, cận từ $0$ đến $2\\ln 2$. Tích phân phải là $\\frac{1}{2}\\int_0^{2\\ln 2} e^t dt$. d) (Mức 4) Sai. Tính $J$ bằng từng phần: $u=x, dv=e^{2x}dx \\Rightarrow du=dx, v=\\frac{1}{2}e^{2x}$. $J = \\frac{1}{2}xe^{2x}|_0^{\\ln 2} - \\int_0^{\\ln 2} \\frac{1}{2}e^{2x} dx = \\frac{1}{2}(\\ln 2)(4) - 0 - \\frac{1}{4}(4-1) = 2\\ln 2 - \\frac{3}{4}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "DS",
+    "q": "Cho hàm số $f(x) = \\begin{cases} 2x - 1 & \\text{khi } x \\ge 1 \\\\ x^2 & \\text{khi } x < 1 \\end{cases}$. Xét $I = \\int_0^2 f(x) dx$, xác định tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Hàm số $f(x)$ liên tục tại $x = 1$.",
+      "b": "Ta có thể tách tích phân $I = \\int_0^1 x^2 dx + \\int_1^2 (2x - 1) dx$.",
+      "c": "Giá trị của tích phân $I = \\frac{7}{3}$.",
+      "d": "Tích phân $\\int_0^2 [f(x)]^2 dx = \\frac{103}{15}$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) (Mức 1) Đúng. $\\lim_{x \\to 1^-} x^2 = 1$, $\\lim_{x \\to 1^+} (2x-1) = 1$, $f(1)=1$. b) (Mức 2) Đúng theo tính chất tách cận. c) (Mức 3) Đúng. $\\int_0^1 x^2 dx = \\frac{1}{3}$. $\\int_1^2 (2x-1) dx = (x^2-x)|_1^2 = 2$. Tổng là $\\frac{7}{3}$. d) (Mức 4) Sai. $\\int_0^1 x^4 dx + \\int_1^2 (4x^2 - 4x + 1) dx = \\frac{1}{5} + (\\frac{4}{3}x^3 - 2x^2 + x)|_1^2 = \\frac{1}{5} + (\\frac{32}{3}-8+2) - (\\frac{4}{3}-2+1) = \\frac{1}{5} + \\frac{14}{3} - \\frac{1}{3} = \\frac{1}{5} + \\frac{13}{3} = \\frac{68}{15}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "DS",
+    "q": "Xét tích phân $I = \\int_{-1}^2 |x| dx$. Các phát biểu sau đây đúng hay sai?",
+    "items": {
+      "a": "Ta có $|x| = x$ với mọi $x \\in [-1; 2]$.",
+      "b": "Áp dụng tính chất, $I = \\int_{-1}^0 (-x) dx + \\int_0^2 x dx$.",
+      "c": "Giá trị của $I = \\frac{5}{2}$.",
+      "d": "Cho hàm số $f(x)$ lẻ, liên tục trên đoạn $[-2; 2]$. Khi đó $\\int_{-2}^2 [f(x) + |x|] dx = 5$."
+    },
+    "correct": {
+      "a": false,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) (Mức 1) Sai. Với $x \\in [-1; 0)$ thì $|x| = -x$. b) (Mức 2) Đúng, chèn cận 0 để phá trị tuyệt đối. c) (Mức 3) Đúng. $I = (-\\frac{x^2}{2})|_{-1}^0 + (\\frac{x^2}{2})|_0^2 = \\frac{1}{2} + 2 = \\frac{5}{2}$. d) (Mức 4) Sai. Vì $f(x)$ lẻ nên $\\int_{-2}^2 f(x) dx = 0$. $\\int_{-2}^2 |x| dx = 2 \\int_0^2 x dx = 2 \\cdot \\frac{x^2}{2}|_0^2 = 4$. Vậy tổng tích phân bằng 4, không phải 5."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "DS",
+    "q": "Cho hình phẳng $(H)$ giới hạn bởi đồ thị $(C): y = -x^2 + 3x$ và trục hoành. Xét tính đúng sai của các khẳng định sau:",
+    "items": {
+      "a": "Phương trình hoành độ giao điểm của $(C)$ và trục hoành có hai nghiệm là $x=0$ và $x=3$.",
+      "b": "Diện tích của $(H)$ được tính bởi biểu thức $S = \\int_0^3 (-x^2 + 3x) dx$.",
+      "c": "Giá trị diện tích của hình phẳng $(H)$ là $S = \\frac{9}{2}$.",
+      "d": "Đường thẳng $x = 1$ chia $(H)$ thành hai phần có diện tích $S_1$ (phần bên trái) và $S_2$ (phần bên phải) sao cho $S_2 = 2S_1$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) (Mức 1) Đúng. $-x^2 + 3x = 0 \\Leftrightarrow x=0, x=3$. b) (Mức 2) Đúng. Trên $[0; 3]$, $-x^2 + 3x \\ge 0$ nên phá trị tuyệt đối giữ nguyên dấu. c) (Mức 3) Đúng. $S = (-\\frac{x^3}{3} + \\frac{3}{2}x^2)|_0^3 = -9 + \\frac{27}{2} = \\frac{9}{2}$. d) (Mức 4) Sai. $S_1 = \\int_0^1 (-x^2+3x) dx = -\\frac{1}{3} + \\frac{3}{2} = \\frac{7}{6}$. $S_2 = \\frac{9}{2} - \\frac{7}{6} = \\frac{27}{6} - \\frac{7}{6} = \\frac{20}{6} = \\frac{10}{3}$. Tỉ số $S_2 / S_1 = (10/3) / (7/6) = 20/7 \\neq 2$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "DS",
+    "q": "Xét hình phẳng $(H)$ giới hạn bởi hai đường $y = x^2 - 4x + 3$ và $y = 3 - x$. Đánh giá tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Hai đồ thị cắt nhau tại hai điểm có hoành độ $x=0$ và $x=3$.",
+      "b": "Diện tích $S$ của $(H)$ được tính bởi tích phân $S = \\int_0^3 (x^2 - 3x) dx$.",
+      "c": "Giá trị diện tích của $(H)$ là $S = \\frac{9}{2}$.",
+      "d": "Thể tích khối tròn xoay tạo thành khi quay $(H)$ quanh trục $Ox$ là $V = \\pi \\int_0^3 (x^2 - 3x)^2 dx$."
+    },
+    "correct": {
+      "a": true,
+      "b": false,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) (Mức 1) Đúng. $x^2-4x+3 = 3-x \\Leftrightarrow x^2-3x = 0 \\Leftrightarrow x=0, x=3$. b) (Mức 2) Sai. Diện tích phải tích phân hàm $|x^2-3x|$. Trên $[0; 3]$ thì $x^2-3x \\le 0$, nên $S = \\int_0^3 (3x - x^2) dx$. Biểu thức trong mệnh đề sẽ cho ra số âm. c) (Mức 3) Đúng. $S = (\\frac{3}{2}x^2 - \\frac{x^3}{3})|_0^3 = \\frac{27}{2} - 9 = \\frac{9}{2}$. d) (Mức 4) Sai. Công thức tính thể tích phải là $V = \\pi \\int_0^3 |(3-x)^2 - (x^2-4x+3)^2| dx$, tức là hiệu các bình phương, không phải bình phương của hiệu."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "DS",
+    "q": "Cho hình phẳng giới hạn bởi đường cong $y = \\sqrt{x} \\cdot e^x$, trục hoành và hai đường thẳng $x=1, x=2$ quay quanh trục $Ox$ tạo thành khối tròn xoay. Xét tính đúng sai của các khẳng định sau:",
+    "items": {
+      "a": "Thể tích khối tròn xoay được tính bởi công thức $V = \\pi \\int_1^2 (\\sqrt{x} \\cdot e^x)^2 dx$.",
+      "b": "Biểu thức dưới dấu tích phân thu gọn lại thành $x e^{2x}$.",
+      "c": "Thể tích của khối tròn xoay là $V = \\frac{\\pi}{4} (3e^4 - e^2)$.",
+      "d": "Nếu cắt khối tròn xoay này bởi mặt phẳng vuông góc với trục $Ox$ tại hoành độ $x \\in [1; 2]$, thiết diện thu được luôn là một hình elip."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) (Mức 1) Đúng theo định lý thể tích khối tròn xoay. b) (Mức 2) Đúng. Bình phương biểu thức ta được $x e^{2x}$. c) (Mức 3) Đúng. Tính $\\int_1^2 x e^{2x} dx$ bằng từng phần ($u=x, dv=e^{2x}dx \\Rightarrow du=dx, v=\\frac{1}{2}e^{2x}$). $\\frac{1}{2} x e^{2x}|_1^2 - \\frac{1}{2}\\int_1^2 e^{2x} dx = e^4 - \\frac{1}{2}e^2 - \\frac{1}{4}e^{2x}|_1^2 = e^4 - \\frac{1}{2}e^2 - \\frac{1}{4}e^4 + \\frac{1}{4}e^2 = \\frac{3}{4}e^4 - \\frac{1}{4}e^2 = \\frac{1}{4}(3e^4 - e^2)$. Thể tích nhân thêm $\\pi$. d) (Mức 4) Sai. Khối tròn xoay được sinh ra do quay quanh trục $Ox$, nên mọi thiết diện vuông góc với $Ox$ đều là hình tròn, không phải elip (trừ khi hình tròn được coi là trường hợp đặc biệt, nhưng theo thuật ngữ phổ thông, gọi là hình tròn mới chính xác tuyệt đối)."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "DS",
+    "q": "Một ô tô bắt đầu chuyển động nhanh dần đều (từ trạng thái đứng yên) với gia tốc $a(t) = 2t$ ($m/s^2$). Sau 5 giây, xe đạt đến một vận tốc nhất định và bắt đầu chuyển động thẳng đều với vận tốc đó.",
+    "items": {
+      "a": "Vận tốc của ô tô tại thời điểm $t$ (trong 5 giây đầu tiên) là $v(t) = t^2$ ($m/s$).",
+      "b": "Vận tốc của ô tô khi chuyển sang giai đoạn chuyển động thẳng đều là $25$ m/s.",
+      "c": "Quãng đường ô tô đi được trong 5 giây đầu tiên là $\\frac{125}{3}$ mét.",
+      "d": "Tổng quãng đường ô tô đi được sau 10 giây (kể từ lúc khởi hành) là 150 mét."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) (Mức 1) Đúng. $v(t) = \\int 2t dt = t^2 + C$. Xe bắt đầu chuyển động nên $v(0)=0 \\Rightarrow C=0 \\Rightarrow v(t)=t^2$. b) (Mức 2) Đúng. Tại $t=5$, $v(5) = 5^2 = 25$ (m/s). c) (Mức 3) Đúng. $S_1 = \\int_0^5 t^2 dt = \\frac{t^3}{3}|_0^5 = \\frac{125}{3}$ (m). d) (Mức 4) Sai. Quãng đường đi trong 5 giây tiếp theo (thẳng đều với $v=25$) là $S_2 = 25 \\times 5 = 125$ (m). Tổng quãng đường là $\\frac{125}{3} + 125 = \\frac{500}{3} \\approx 166.67$ (m), không phải 150 mét."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "DS",
+    "q": "Một mảnh vườn hình Elip có phương trình $\\frac{x^2}{16} + \\frac{y^2}{9} = 1$ trong hệ trục tọa độ $Oxy$. Người ta dùng hai đường thẳng $x = -2$ và $x = 2$ để chia dải giữa mảnh vườn ra trồng hoa.",
+    "items": {
+      "a": "Độ dài trục lớn của Elip là 8 mét.",
+      "b": "Nửa trên trục hoành của đường Elip có phương trình $y = 3\\sqrt{1 - \\frac{x^2}{16}}$.",
+      "c": "Toàn bộ diện tích của mảnh vườn hình Elip là $12\\pi$ ($m^2$).",
+      "d": "Diện tích dải trồng hoa ở giữa được tính bằng biểu thức $S = \\int_{-2}^2 3\\sqrt{1 - \\frac{x^2}{16}} dx$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) (Mức 1) Đúng. $a^2 = 16 \\Rightarrow a = 4$. Độ dài trục lớn $2a = 8$. b) (Mức 2) Đúng. Từ phương trình Elip ta rút ra $y^2 = 9(1 - x^2/16) \\Rightarrow y = \\pm 3\\sqrt{1 - x^2/16}$. Nửa trên là lấy dấu dương. c) (Mức 3) Đúng. Diện tích Elip là $S = \\pi a b = \\pi \\times 4 \\times 3 = 12\\pi$. d) (Mức 4) Sai. Diện tích phần trồng hoa phải là tích phân của đường cong trên trừ đường cong dưới. $S = \\int_{-2}^2 [3\\sqrt{1 - x^2/16} - (-3\\sqrt{1 - x^2/16})] dx = \\int_{-2}^2 6\\sqrt{1 - \\frac{x^2}{16}} dx$. Biểu thức trong mệnh đề bị thiếu hệ số 2."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 1,
+    "q": "Diện tích $S$ của hình phẳng giới hạn bởi đồ thị hàm số $y=f(x)$ liên tục trên đoạn $[a; b]$, trục hoành và hai đường thẳng $x=a, x=b$ được tính theo công thức nào dưới đây?",
+    "choices": [
+      "A. $S = \\\\int_a^b f(x) dx$.",
+      "B. $S = \\\\int_a^b |f(x)| dx$.",
+      "C. $S = \\\\pi \\\\int_a^b f^2(x) dx$.",
+      "D. $S = \\\\int_a^b f^2(x) dx$."
+    ],
+    "correct": 1,
+    "explain": "Theo công thức tính diện tích hình phẳng, diện tích cần tìm được tính bằng tích phân của giá trị tuyệt đối hàm số: $S = \\\\int_a^b |f(x)| dx$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 1,
+    "q": "Diện tích $S$ của hình phẳng giới hạn bởi đồ thị hai hàm số $y=f(x), y=g(x)$ liên tục trên đoạn $[a; b]$ và hai đường thẳng $x=a, x=b$ được xác định bởi công thức nào?",
+    "choices": [
+      "A. $S = \\\\int_a^b |f(x) - g(x)| dx$.",
+      "B. $S = \\\\int_a^b [f(x) - g(x)] dx$.",
+      "C. $S = \\\\int_a^b |f(x)| dx - \\\\int_a^b |g(x)| dx$.",
+      "D. $S = \\\\int_a^b [f(x) + g(x)] dx$."
+    ],
+    "correct": 0,
+    "explain": "Diện tích hình phẳng giới hạn bởi hai đường cong là trị tuyệt đối của hiệu hai hàm số dưới dấu tích phân: $S = \\\\int_a^b |f(x) - g(x)| dx$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 1,
+    "q": "Thể tích $V$ của khối tròn xoay tạo thành khi quay hình phẳng giới hạn bởi đồ thị hàm số $y=f(x)$ liên tục trên đoạn $[a; b]$, trục $Ox$ và hai đường thẳng $x=a, x=b$ xung quanh trục $Ox$ là:",
+    "choices": [
+      "A. $V = \\\\int_a^b |f(x)| dx$.",
+      "B. $V = \\\\pi \\\\int_a^b |f(x)| dx$.",
+      "C. $V = \\\\pi \\\\int_a^b f^2(x) dx$.",
+      "D. $V = \\\\int_a^b f^2(x) dx$."
+    ],
+    "correct": 2,
+    "explain": "Công thức chuẩn tính thể tích khối tròn xoay khi quay quanh trục $Ox$ là $V = \\\\pi \\\\int_a^b f^2(x) dx$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 1,
+    "q": "Nếu hàm số $f(x)$ liên tục và không âm ($f(x) \\\\ge 0$) trên đoạn $[a; b]$ thì diện tích hình phẳng giới hạn bởi đồ thị $y=f(x)$, trục $Ox$ và hai đường thẳng $x=a, x=b$ bằng:",
+    "choices": [
+      "A. $\\\\int_a^b f(x) dx$.",
+      "B. $-\\\\int_a^b f(x) dx$.",
+      "C. $\\\\pi \\\\int_a^b f(x) dx$.",
+      "D. $\\\\int_a^b f^2(x) dx$."
+    ],
+    "correct": 0,
+    "explain": "Vì $f(x) \\\\ge 0$ trên đoạn $[a; b]$ nên $|f(x)| = f(x)$. Do đó diện tích $S = \\\\int_a^b f(x) dx$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 1,
+    "q": "Một vật chuyển động thẳng có vận tốc tại thời điểm $t$ là $v(t)$ (m/s). Quãng đường vật đi được trong khoảng thời gian từ $t=a$ đến $t=b$ ($a < b$) được tính bởi công thức:",
+    "choices": [
+      "A. $S = \\\\int_a^b v(t) dt$.",
+      "B. $S = \\\\int_a^b |v(t)| dt$.",
+      "C. $S = \\\\int_a^b v'(t) dt$.",
+      "D. $S = \\\\int_a^b v^2(t) dt$."
+    ],
+    "correct": 1,
+    "explain": "Tổng quãng đường vật đi được (tính bằng tổng chiều dài quỹ đạo không quan tâm chiều) là tích phân của độ lớn vận tốc $S = \\\\int_a^b |v(t)| dt$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 1,
+    "q": "Biết hàm số $y=f(x)$ liên tục trên đoạn $[a; b]$ và có đồ thị cắt trục hoành tại duy nhất một điểm $x=c$ ($a < c < b$). Công thức tính diện tích hình phẳng giới hạn bởi đồ thị $y=f(x)$, trục hoành và hai đường thẳng $x=a, x=b$ là:",
+    "choices": [
+      "A. $S = |\\\\int_a^c f(x) dx| + |\\\\int_c^b f(x) dx|$.",
+      "B. $S = \\\\int_a^c f(x) dx + \\\\int_c^b f(x) dx$.",
+      "C. $S = |\\\\int_a^b f(x) dx|$.",
+      "D. $S = \\\\int_a^c f(x) dx - \\\\int_c^b f(x) dx$."
+    ],
+    "correct": 0,
+    "explain": "Do $f(x)$ không đổi dấu trên từng khoảng $(a; c)$ và $(c; b)$, ta có thể đưa dấu giá trị tuyệt đối ra ngoài tích phân trên từng khoảng: $S = |\\\\int_a^c f(x) dx| + |\\\\int_c^b f(x) dx|$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $f(x)$ liên tục và $f(x) \\\\le 0$ trên đoạn $[a; b]$. Diện tích hình phẳng giới hạn bởi đồ thị hàm số $y=f(x)$, trục hoành và hai đường $x=a, x=b$ được tính theo công thức:",
+    "choices": [
+      "A. $S = \\\\int_a^b f(x) dx$.",
+      "B. $S = -\\\\int_a^b f(x) dx$.",
+      "C. $S = \\\\int_b^a f^2(x) dx$.",
+      "D. $S = \\\\int_a^b f^2(x) dx$."
+    ],
+    "correct": 1,
+    "explain": "Vì $f(x) \\\\le 0$ trên $[a; b]$ nên $|f(x)| = -f(x)$, suy ra $S = \\\\int_a^b -f(x) dx = -\\\\int_a^b f(x) dx$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 1,
+    "q": "Độ dịch chuyển của một vật chuyển động thẳng với vận tốc $v(t)$ trong khoảng thời gian từ $t=a$ đến $t=b$ được tính bằng công thức nào?",
+    "choices": [
+      "A. $\\\\int_a^b v(t) dt$.",
+      "B. $\\\\int_a^b |v(t)| dt$.",
+      "C. $\\\\int_a^b v'(t) dt$.",
+      "D. $\\\\int_a^b t \\\\cdot v(t) dt$."
+    ],
+    "correct": 0,
+    "explain": "Độ dịch chuyển là vị trí lúc sau trừ đi vị trí ban đầu (có xét đến chiều chuyển động âm dương), được tính đơn giản bằng $\\\\int_a^b v(t) dt$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 1,
+    "q": "Sự thay đổi lợi nhuận của một nhà máy khi lượng sản phẩm bán ra tăng từ $a$ đến $b$ đơn vị, biết hàm lợi nhuận cận biên là $P'(x)$, được tính bằng biểu thức nào sau đây?",
+    "choices": [
+      "A. $\\\\int_a^b P(x) dx$.",
+      "B. $\\\\int_a^b P'(x) dx$.",
+      "C. $P'(b) - P'(a)$.",
+      "D. $\\\\int_a^b |P'(x)| dx$."
+    ],
+    "correct": 1,
+    "explain": "Lợi nhuận cận biên là đạo hàm của hàm lợi nhuận $P(x)$. Sự thay đổi lợi nhuận khi sản lượng tăng từ $a$ lên $b$ là $P(b) - P(a) = \\\\int_a^b P'(x) dx$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 1,
+    "q": "Thể tích khối tròn xoay sinh ra khi quay hình phẳng giới hạn bởi đồ thị $y = \\\\sqrt{x}$, trục $Ox$, và hai đường thẳng $x=0, x=1$ quanh trục $Ox$ được tính bằng tích phân nào?",
+    "choices": [
+      "A. $V = \\\\pi \\\\int_0^1 x dx$.",
+      "B. $V = \\\\int_0^1 x dx$.",
+      "C. $V = \\\\pi \\\\int_0^1 \\\\sqrt{x} dx$.",
+      "D. $V = \\\\int_0^1 \\\\sqrt{x} dx$."
+    ],
+    "correct": 0,
+    "explain": "Áp dụng công thức $V = \\\\pi \\\\int_a^b f^2(x) dx$, ta có $V = \\\\pi \\\\int_0^1 (\\\\sqrt{x})^2 dx = \\\\pi \\\\int_0^1 x dx$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 2,
+    "q": "Tính diện tích hình phẳng giới hạn bởi đồ thị hàm số $y=x^3$, trục hoành và hai đường thẳng $x=0, x=1$.",
+    "choices": [
+      "A. $1$.",
+      "B. $\\\\frac{1}{4}$.",
+      "C. $\\\\frac{1}{3}$.",
+      "D. $\\\\frac{1}{2}$."
+    ],
+    "correct": 1,
+    "explain": "Trên đoạn $[0; 1]$, hàm số $y = x^3 \\\\ge 0$. Do đó diện tích $S = \\\\int_0^1 x^3 dx = \\\\frac{x^4}{4} \\\\big|_0^1 = \\\\frac{1}{4}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 2,
+    "q": "Tính diện tích hình phẳng giới hạn bởi đồ thị hàm số $y = x^2 - 4x + 3$ và trục hoành.",
+    "choices": [
+      "A. $\\\\frac{4}{3}$.",
+      "B. $\\\\frac{2}{3}$.",
+      "C. $4$.",
+      "D. $\\\\frac{8}{3}$."
+    ],
+    "correct": 0,
+    "explain": "Hoành độ giao điểm của đồ thị và trục hoành là nghiệm của $x^2 - 4x + 3 = 0 \\\\Leftrightarrow x=1, x=3$. Trên khoảng $(1; 3)$, $x^2 - 4x + 3 < 0$. Diện tích $S = \\\\int_1^3 |x^2 - 4x + 3| dx = -\\\\int_1^3 (x^2 - 4x + 3) dx = -(\\\\frac{x^3}{3} - 2x^2 + 3x) \\\\big|_1^3 = \\\\frac{4}{3}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 2,
+    "q": "Tính diện tích hình phẳng giới hạn bởi hai đường cong $y=x^2$ và $y=x$.",
+    "choices": [
+      "A. $\\\\frac{1}{3}$.",
+      "B. $\\\\frac{1}{2}$.",
+      "C. $\\\\frac{1}{6}$.",
+      "D. $1$."
+    ],
+    "correct": 2,
+    "explain": "Phương trình hoành độ giao điểm: $x^2 = x \\\\Leftrightarrow x=0$ hoặc $x=1$. Trên khoảng $(0; 1)$, $x > x^2$. Diện tích $S = \\\\int_0^1 (x - x^2) dx = (\\\\frac{x^2}{2} - \\\\frac{x^3}{3}) \\\\big|_0^1 = \\\\frac{1}{2} - \\\\frac{1}{3} = \\\\frac{1}{6}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 2,
+    "q": "Thể tích khối tròn xoay tạo thành khi quay hình phẳng giới hạn bởi đường cong $y = e^x$, trục hoành, trục tung và đường thẳng $x=1$ xung quanh trục $Ox$ là:",
+    "choices": [
+      "A. $\\\\frac{\\\\pi (e^2 - 1)}{2}$.",
+      "B. $\\\\frac{\\\\pi (e^2 + 1)}{2}$.",
+      "C. $\\\\pi (e^2 - 1)$.",
+      "D. $\\\\pi (e - 1)$."
+    ],
+    "correct": 0,
+    "explain": "Thể tích $V = \\\\pi \\\\int_0^1 (e^x)^2 dx = \\\\pi \\\\int_0^1 e^{2x} dx = \\\\pi \\\\frac{e^{2x}}{2} \\\\big|_0^1 = \\\\frac{\\\\pi (e^2 - 1)}{2}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 2,
+    "q": "Một ô tô đang chạy với vận tốc 10 (m/s) thì tăng tốc chuyển động nhanh dần đều với gia tốc $a(t) = 2$ (m/s$^2$). Tính quãng đường ô tô đi được trong 5 giây kể từ lúc bắt đầu tăng tốc.",
+    "choices": [
+      "A. $75$ (m).",
+      "B. $50$ (m).",
+      "C. $25$ (m).",
+      "D. $100$ (m)."
+    ],
+    "correct": 0,
+    "explain": "Phương trình vận tốc $v(t) = \\\\int a(t) dt = 2t + C$. Tại $t=0$, $v(0) = 10 \\\\Rightarrow C=10$. Vậy $v(t) = 2t + 10$. Quãng đường $S = \\\\int_0^5 (2t + 10) dt = (t^2 + 10t) \\\\big|_0^5 = 25 + 50 = 75$ (m)."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 2,
+    "q": "Một vật chuyển động thẳng dọc theo một trục tọa độ với vận tốc $v(t) = 3t^2 - 6t$ (m/s). Tính tổng quãng đường vật đi được từ thời điểm $t=0$ đến $t=3$ (giây).",
+    "choices": [
+      "A. $8$ (m).",
+      "B. $9$ (m).",
+      "C. $14$ (m).",
+      "D. $4$ (m)."
+    ],
+    "correct": 0,
+    "explain": "Tổng quãng đường đi được là $S = \\\\int_0^3 |3t^2 - 6t| dt$. Vì $3t^2 - 6t \\\\le 0$ trên $[0; 2]$ và $3t^2 - 6t \\\\ge 0$ trên $[2; 3]$, ta tách thành: $S = \\\\int_0^2 -(3t^2 - 6t) dt + \\\\int_2^3 (3t^2 - 6t) dt = 4 + 4 = 8$ (m)."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 2,
+    "q": "Thể tích khối tròn xoay do hình phẳng giới hạn bởi các đường $y = x$, $y = 0$, $x = 1$, $x = 3$ quay quanh trục $Ox$ bằng:",
+    "choices": [
+      "A. $\\\\frac{26\\\\pi}{3}$.",
+      "B. $\\\\frac{26}{3}$.",
+      "C. $8\\\\pi$.",
+      "D. $\\\\frac{8\\\\pi}{3}$."
+    ],
+    "correct": 0,
+    "explain": "Công thức thể tích khối tròn xoay: $V = \\\\pi \\\\int_1^3 x^2 dx = \\\\pi \\\\left( \\\\frac{x^3}{3} \\\\right) \\\\big|_1^3 = \\\\pi \\\\left( \\\\frac{27}{3} - \\\\frac{1}{3} \\\\right) = \\\\frac{26\\\\pi}{3}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 2,
+    "q": "Hàm lợi nhuận cận biên của một sản phẩm là $P'(x) = -0.5x + 10$ (triệu đồng/sản phẩm), trong đó $x$ là số lượng sản phẩm. Sự thay đổi tổng lợi nhuận khi lượng sản phẩm bán ra tăng từ 10 lên 20 sản phẩm là:",
+    "choices": [
+      "A. $25$ triệu đồng.",
+      "B. $50$ triệu đồng.",
+      "C. $75$ triệu đồng.",
+      "D. $100$ triệu đồng."
+    ],
+    "correct": 0,
+    "explain": "Sự thay đổi lợi nhuận là $\\\\Delta P = \\\\int_{10}^{20} (-0.5x + 10) dx = (-0.25 x^2 + 10x) \\\\big|_{10}^{20} = (-100 + 200) - (-25 + 100) = 100 - 75 = 25$ (triệu đồng)."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 2,
+    "q": "Tính diện tích hình phẳng giới hạn bởi đồ thị $y = \\\\sin x$, trục hoành, trục tung và đường thẳng $x = \\\\pi$.",
+    "choices": [
+      "A. $2$.",
+      "B. $1$.",
+      "C. $0$.",
+      "D. $\\\\pi$."
+    ],
+    "correct": 0,
+    "explain": "Trên đoạn $[0; \\\\pi]$, hàm số $\\\\sin x \\\\ge 0$. Do đó diện tích là $S = \\\\int_0^{\\\\pi} \\\\sin x dx = -\\\\cos x \\\\big|_0^{\\\\pi} = -(-1) - (-1) = 2$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 2,
+    "q": "Diện tích hình phẳng giới hạn bởi đồ thị hàm số $y=e^x$, trục hoành và hai đường thẳng $x=0, x=\\\\ln 2$ là:",
+    "choices": [
+      "A. $1$.",
+      "B. $e - 1$.",
+      "C. $2$.",
+      "D. $\\\\ln 2$."
+    ],
+    "correct": 0,
+    "explain": "Hàm $e^x > 0$ với mọi $x$. Diện tích $S = \\\\int_0^{\\\\ln 2} e^x dx = e^x \\\\big|_0^{\\\\ln 2} = e^{\\\\ln 2} - e^0 = 2 - 1 = 1$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $f(x)$ liên tục trên đoạn $[a; b]$ và $F(x)$ là một nguyên hàm của $f(x)$ trên đoạn đó. Mệnh đề nào dưới đây đúng?",
+    "choices": [
+      "A. $\\\\int_a^b f(x) dx = F(a) - F(b)$.",
+      "B. $\\\\int_a^b f(x) dx = F(b) - F(a)$.",
+      "C. $\\\\int_a^b f(x) dx = F(b) + F(a)$.",
+      "D. $\\\\int_a^b f(x) dx = F'(b) - F'(a)$."
+    ],
+    "correct": 1,
+    "explain": "Theo định nghĩa tích phân (công thức Newton - Leibniz), ta có $\\\\int_a^b f(x) dx = F(b) - F(a)$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $f(x)$ liên tục trên đoạn $[a; b]$. Mệnh đề nào dưới đây sai?",
+    "choices": [
+      "A. $\\\\int_a^b f(x) dx = \\\\int_a^b f(t) dt$.",
+      "B. $\\\\int_a^b f(x) dx = -\\\\int_b^a f(x) dx$.",
+      "C. $\\\\int_a^a f(x) dx = 0$.",
+      "D. $\\\\int_a^b f(x) dx = \\\\int_a^b f(u) dx$."
+    ],
+    "correct": 3,
+    "explain": "Tích phân không phụ thuộc vào kí hiệu biến số, tức là $\\\\int_a^b f(x) dx = \\\\int_a^b f(t) dt = \\\\int_a^b f(u) du$. Do đó mệnh đề D viết sai kí hiệu vi phân (phải là $du$ chứ không phải $dx$)."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $f(x)$ liên tục trên đoạn $[a; b]$ và $c \\\\in (a; b)$. Mệnh đề nào dưới đây đúng?",
+    "choices": [
+      "A. $\\\\int_a^b f(x) dx = \\\\int_a^c f(x) dx + \\\\int_c^b f(x) dx$.",
+      "B. $\\\\int_a^b f(x) dx = \\\\int_a^c f(x) dx - \\\\int_c^b f(x) dx$.",
+      "C. $\\\\int_a^b f(x) dx = \\\\int_a^c f(x) dx \\\\cdot \\\\int_c^b f(x) dx$.",
+      "D. $\\\\int_a^b f(x) dx = \\\\int_b^c f(x) dx + \\\\int_a^c f(x) dx$."
+    ],
+    "correct": 0,
+    "explain": "Theo tính chất tách cận của tích phân: $\\\\int_a^b f(x) dx = \\\\int_a^c f(x) dx + \\\\int_c^b f(x) dx$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $f(x)$ liên tục trên đoạn $[a; b]$ và số thực $k$ tuỳ ý. Mệnh đề nào dưới đây đúng?",
+    "choices": [
+      "A. $\\\\int_a^b k f(x) dx = k \\\\int_a^b f(x) dx$.",
+      "B. $\\\\int_a^b k f(x) dx = \\\\int_a^b f(kx) dx$.",
+      "C. $\\\\int_a^b k f(x) dx = k + \\\\int_a^b f(x) dx$.",
+      "D. $\\\\int_a^b k f(x) dx = \\\\int_k^b f(x) dx$."
+    ],
+    "correct": 0,
+    "explain": "Theo tính chất của tích phân, ta có thể đưa hằng số $k$ ra ngoài dấu tích phân: $\\\\int_a^b k f(x) dx = k \\\\int_a^b f(x) dx$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hai hàm số $f(x)$ và $g(x)$ liên tục trên đoạn $[a; b]$. Mệnh đề nào dưới đây sai?",
+    "choices": [
+      "A. $\\\\int_a^b [f(x) + g(x)] dx = \\\\int_a^b f(x) dx + \\\\int_a^b g(x) dx$.",
+      "B. $\\\\int_a^b [f(x) - g(x)] dx = \\\\int_a^b f(x) dx - \\\\int_a^b g(x) dx$.",
+      "C. $\\\\int_a^b [f(x) \\\\cdot g(x)] dx = \\\\int_a^b f(x) dx \\\\cdot \\\\int_a^b g(x) dx$.",
+      "D. $\\\\int_a^b 2f(x) dx = 2 \\\\int_a^b f(x) dx$."
+    ],
+    "correct": 2,
+    "explain": "Tích phân của một tổng/hiệu bằng tổng/hiệu các tích phân, nhưng tích phân của một tích thì không bằng tích các tích phân. Khẳng định C sai."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho $f(x)$ liên tục trên $\\\\mathbb{R}$ và có một nguyên hàm là $F(x)$. Khẳng định nào sau đây đúng?",
+    "choices": [
+      "A. $\\\\int_a^b f(x) dx = F(a) - F(b)$.",
+      "B. $\\\\int_a^a f(x) dx = 1$.",
+      "C. $\\\\int_a^b f(x) dx = -\\\\int_b^a f(x) dx$.",
+      "D. $\\\\int_a^b f(x) dx = F(a) + F(b)$."
+    ],
+    "correct": 2,
+    "explain": "Theo tính chất đảo cận của tích phân, ta có $\\\\int_a^b f(x) dx = -\\\\int_b^a f(x) dx$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 1,
+    "q": "Nếu hàm số $f(x)$ có đạo hàm $f'(x)$ liên tục trên đoạn $[a; b]$ thì $\\\\int_a^b f'(x) dx$ bằng:",
+    "choices": [
+      "A. $f(b) - f(a)$.",
+      "B. $f(a) - f(b)$.",
+      "C. $f(b) + f(a)$.",
+      "D. $f'(b) - f'(a)$."
+    ],
+    "correct": 0,
+    "explain": "Vì $f(x)$ chính là một nguyên hàm của $f'(x)$ nên $\\\\int_a^b f'(x) dx = f(x) \\\\big|_a^b = f(b) - f(a)$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho $\\\\int_1^2 f(x) dx = 3$. Giá trị của $\\\\int_2^1 f(x) dx$ bằng:",
+    "choices": [
+      "A. $3$.",
+      "B. $-3$.",
+      "C. $0$.",
+      "D. $\\\\frac{1}{3}$."
+    ],
+    "correct": 1,
+    "explain": "Theo tính chất đổi cận tích phân, $\\\\int_2^1 f(x) dx = -\\\\int_1^2 f(x) dx = -3$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 1,
+    "q": "Tính tích phân $\\\\int_1^4 3 dx$.",
+    "choices": [
+      "A. $3$.",
+      "B. $9$.",
+      "C. $12$.",
+      "D. $4$."
+    ],
+    "correct": 1,
+    "explain": "Ta có $\\\\int_1^4 3 dx = 3x \\\\big|_1^4 = 3(4 - 1) = 9$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 1,
+    "q": "Giá trị của tích phân $\\\\int_3^3 (x^2 + \\\\sin x) dx$ bằng:",
+    "choices": [
+      "A. $9 + \\\\sin 3$.",
+      "B. $0$.",
+      "C. $3$.",
+      "D. $1$."
+    ],
+    "correct": 1,
+    "explain": "Tích phân có cận trên và cận dưới bằng nhau thì giá trị luôn bằng 0."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho $\\\\int_1^4 f(x) dx = 2$ và $\\\\int_1^4 g(x) dx = 3$. Tính $I = \\\\int_1^4 [f(x) - 2g(x)] dx$.",
+    "choices": [
+      "A. $I = -4$.",
+      "B. $I = -1$.",
+      "C. $I = 4$.",
+      "D. $I = 8$."
+    ],
+    "correct": 0,
+    "explain": "Ta có $I = \\\\int_1^4 f(x) dx - 2 \\\\int_1^4 g(x) dx = 2 - 2 \\\\cdot 3 = -4$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hàm số $f(x)$ liên tục trên $[0; 5]$. Nếu $\\\\int_0^3 f(x) dx = 6$ và $\\\\int_3^5 f(x) dx = 10$ thì $\\\\int_0^5 f(x) dx$ bằng:",
+    "choices": [
+      "A. $4$.",
+      "B. $-4$.",
+      "C. $60$.",
+      "D. $16$."
+    ],
+    "correct": 3,
+    "explain": "Theo tính chất nối cận của tích phân: $\\\\int_0^5 f(x) dx = \\\\int_0^3 f(x) dx + \\\\int_3^5 f(x) dx = 6 + 10 = 16$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 2,
+    "q": "Tính tích phân $I = \\\\int_0^2 2x dx$.",
+    "choices": [
+      "A. $I = 4$.",
+      "B. $I = 2$.",
+      "C. $I = 0$.",
+      "D. $I = 8$."
+    ],
+    "correct": 0,
+    "explain": "Ta có nguyên hàm của $2x$ là $x^2$. Suy ra $I = x^2 \\\\big|_0^2 = 2^2 - 0^2 = 4$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 2,
+    "q": "Tính tích phân $I = \\\\int_1^2 (x + 3) dx$.",
+    "choices": [
+      "A. $\\\\frac{61}{3}$.",
+      "B. $\\\\frac{9}{2}$.",
+      "C. $4$.",
+      "D. $\\\\frac{7}{2}$."
+    ],
+    "correct": 1,
+    "explain": "Ta có $I = \\\\left( \\\\frac{x^2}{2} + 3x \\\\right) \\\\bigg|_1^2 = \\\\left( \\\\frac{4}{2} + 6 \\\\right) - \\\\left( \\\\frac{1}{2} + 3 \\\\right) = 8 - \\\\frac{7}{2} = \\\\frac{9}{2}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 2,
+    "q": "Tích phân $\\\\int_1^e \\\\frac{1}{x} dx$ bằng:",
+    "choices": [
+      "A. $0$.",
+      "B. $1$.",
+      "C. $e$.",
+      "D. $e - 1$."
+    ],
+    "correct": 1,
+    "explain": "Ta có $\\\\int_1^e \\\\frac{1}{x} dx = \\\\ln|x| \\\\big|_1^e = \\\\ln e - \\\\ln 1 = 1 - 0 = 1$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 2,
+    "q": "Tính tích phân $I = \\\\int_0^{\\\\frac{\\\\pi}{2}} \\\\cos x dx$.",
+    "choices": [
+      "A. $I = 0$.",
+      "B. $I = -1$.",
+      "C. $I = 1$.",
+      "D. $I = \\\\frac{\\\\pi}{2}$."
+    ],
+    "correct": 2,
+    "explain": "Ta có $I = \\\\sin x \\\\big|_0^{\\\\frac{\\\\pi}{2}} = \\\\sin \\\\frac{\\\\pi}{2} - \\\\sin 0 = 1 - 0 = 1$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho $\\\\int_1^2 f(x) dx = 2$. Tính $I = \\\\int_1^2 [3f(x) - 1] dx$.",
+    "choices": [
+      "A. $I = 5$.",
+      "B. $I = 3$.",
+      "C. $I = 6$.",
+      "D. $I = 4$."
+    ],
+    "correct": 0,
+    "explain": "Ta có $I = 3 \\\\int_1^2 f(x) dx - \\\\int_1^2 1 dx = 3 \\\\cdot 2 - x \\\\big|_1^2 = 6 - (2 - 1) = 5$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 2,
+    "q": "Biết $\\\\int_1^3 f(x) dx = 5$ và $\\\\int_1^3 g(x) dx = -2$. Khi đó $\\\\int_1^3 [f(x) + g(x)] dx$ bằng:",
+    "choices": [
+      "A. $7$.",
+      "B. $-10$.",
+      "C. $3$.",
+      "D. $-3$."
+    ],
+    "correct": 2,
+    "explain": "Sử dụng tính chất tổng của tích phân: $\\\\int_1^3 [f(x) + g(x)] dx = \\\\int_1^3 f(x) dx + \\\\int_1^3 g(x) dx = 5 + (-2) = 3$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 2,
+    "q": "Tính tích phân $I = \\\\int_0^1 e^x dx$.",
+    "choices": [
+      "A. $I = e - 1$.",
+      "B. $I = e$.",
+      "C. $I = e + 1$.",
+      "D. $I = 1 - e$."
+    ],
+    "correct": 0,
+    "explain": "Nguyên hàm của $e^x$ là chính nó. Do đó $I = e^x \\\\big|_0^1 = e^1 - e^0 = e - 1$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hàm số $f(x)$ liên tục trên đoạn $[0; 2]$. Biết $F(x)$ là một nguyên hàm của $f(x)$ trên đoạn $[0; 2]$ và $F(0) = 1, F(2) = 5$. Tính $\\\\int_0^2 f(x) dx$.",
+    "choices": [
+      "A. $6$.",
+      "B. $4$.",
+      "C. $-4$.",
+      "D. $5$."
+    ],
+    "correct": 1,
+    "explain": "Theo công thức Newton - Leibniz: $\\\\int_0^2 f(x) dx = F(2) - F(0) = 5 - 1 = 4$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $f(x)$ xác định trên $K$. Hàm số $F(x)$ được gọi là nguyên hàm của $f(x)$ trên $K$ nếu:",
+    "choices": [
+      "A. $F'(x) = f(x)$ với mọi $x \\\\in K$.",
+      "B. $f'(x) = F(x)$ với mọi $x \\\\in K$.",
+      "C. $F(x) = f(x)$ với mọi $x \\\\in K$.",
+      "D. $F'(x) = f'(x)$ với mọi $x \\\\in K$."
+    ],
+    "correct": 0,
+    "explain": "Theo định nghĩa, hàm số $F(x)$ được gọi là nguyên hàm của $f(x)$ trên $K$ nếu $F'(x) = f(x)$ với mọi $x \\\\in K$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 1,
+    "q": "Khẳng định nào sau đây sai?",
+    "choices": [
+      "A. $\\\\int 0 dx = C$.",
+      "B. $\\\\int x^n dx = \\\\frac{x^{n+1}}{n+1} + C$ (với $n \\\\neq -1$).",
+      "C. $\\\\int dx = x + C$.",
+      "D. $\\\\int \\\\frac{1}{x} dx = -\\\\frac{1}{x^2} + C$."
+    ],
+    "correct": 3,
+    "explain": "Khẳng định sai là $\\\\int \\\\frac{1}{x} dx = -\\\\frac{1}{x^2} + C$. Công thức đúng phải là $\\\\int \\\\frac{1}{x} dx = \\\\ln|x| + C$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 1,
+    "q": "Họ tất cả các nguyên hàm của hàm số $f(x) = e^x$ là:",
+    "choices": [
+      "A. $e^x + C$.",
+      "B. $\\\\frac{1}{x+1}e^{x+1} + C$.",
+      "C. $e^{-x} + C$.",
+      "D. $xe^{x-1} + C$."
+    ],
+    "correct": 0,
+    "explain": "Theo bảng nguyên hàm cơ bản, $\\\\int e^x dx = e^x + C$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 1,
+    "q": "Họ nguyên hàm của hàm số $f(x) = \\\\cos x$ là:",
+    "choices": [
+      "A. $\\\\sin x + C$.",
+      "B. $-\\\\sin x + C$.",
+      "C. $\\\\cos x + C$.",
+      "D. $-\\\\cos x + C$."
+    ],
+    "correct": 0,
+    "explain": "Vì $(\\\\sin x)' = \\\\cos x$ nên $\\\\int \\\\cos x dx = \\\\sin x + C$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 1,
+    "q": "Khẳng định nào sau đây đúng với các hàm số $f(x), g(x)$ liên tục trên $K$?",
+    "choices": [
+      "A. $\\\\int [f(x) + g(x)] dx = \\\\int f(x) dx + \\\\int g(x) dx$.",
+      "B. $\\\\int [f(x) \\\\cdot g(x)] dx = \\\\int f(x) dx \\\\cdot \\\\int g(x) dx$.",
+      "C. $\\\\int \\\\frac{f(x)}{g(x)} dx = \\\\frac{\\\\int f(x) dx}{\\\\int g(x) dx}$.",
+      "D. $\\\\int [f(x) - g(x)] dx = \\\\int f(x) dx + \\\\int g(x) dx$."
+    ],
+    "correct": 0,
+    "explain": "Tính chất cơ bản của nguyên hàm: nguyên hàm của một tổng bằng tổng các nguyên hàm."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho $\\\\int f(x) dx = F(x) + C$ và $k \\\\neq 0$ là một hằng số. Khẳng định nào sau đây đúng?",
+    "choices": [
+      "A. $\\\\int k f(x) dx = k F(x) + C$.",
+      "B. $\\\\int k f(x) dx = F(x) + kC$.",
+      "C. $\\\\int k f(x) dx = \\\\frac{1}{k} F(x) + C$.",
+      "D. $\\\\int k f(x) dx = F(kx) + C$."
+    ],
+    "correct": 0,
+    "explain": "Tính chất đưa hằng số ra ngoài dấu nguyên hàm: $\\\\int k f(x) dx = k \\\\int f(x) dx = k F(x) + C$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 1,
+    "q": "Họ nguyên hàm của hàm số $f(x) = \\\\sin x$ là:",
+    "choices": [
+      "A. $\\\\cos x + C$.",
+      "B. $-\\\\cos x + C$.",
+      "C. $-\\\\sin x + C$.",
+      "D. $\\\\sin x + C$."
+    ],
+    "correct": 1,
+    "explain": "Vì $(-\\\\cos x)' = \\\\sin x$ nên $\\\\int \\\\sin x dx = -\\\\cos x + C$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 1,
+    "q": "Nguyên hàm của hàm số $f(x) = a^x$ ($a > 0, a \\\\neq 1$) là:",
+    "choices": [
+      "A. $\\\\frac{a^x}{\\\\ln a} + C$.",
+      "B. $a^x \\\\ln a + C$.",
+      "C. $a^x + C$.",
+      "D. $\\\\frac{\\\\ln a}{a^x} + C$."
+    ],
+    "correct": 0,
+    "explain": "Theo bảng nguyên hàm cơ bản, $\\\\int a^x dx = \\\\frac{a^x}{\\\\ln a} + C$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 1,
+    "q": "Biết $F(x)$ là một nguyên hàm của hàm số $f(x)$ trên $\\\\mathbb{R}$. Khẳng định nào sau đây đúng?",
+    "choices": [
+      "A. $\\\\int f'(x) dx = f(x) + C$.",
+      "B. $\\\\int f(x) dx = F'(x) + C$.",
+      "C. $\\\\int F(x) dx = f(x) + C$.",
+      "D. $\\\\int f(x) dx = f'(x) + C$."
+    ],
+    "correct": 0,
+    "explain": "Ta luôn có $\\\\int f'(x) dx = f(x) + C$ vì đạo hàm của $f(x)+C$ chính là $f'(x)$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 1,
+    "q": "Họ nguyên hàm của hàm số $f(x) = x^3$ là:",
+    "choices": [
+      "A. $\\\\frac{x^4}{4} + C$.",
+      "B. $3x^2 + C$.",
+      "C. $x^4 + C$.",
+      "D. $\\\\frac{x^3}{3} + C$."
+    ],
+    "correct": 0,
+    "explain": "Áp dụng công thức $\\\\int x^n dx = \\\\frac{x^{n+1}}{n+1} + C$ với $n = 3$, ta được $\\\\int x^3 dx = \\\\frac{x^4}{4} + C$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 2,
+    "q": "Họ tất cả các nguyên hàm của hàm số $f(x) = 2x + 3$ là:",
+    "choices": [
+      "A. $x^2 + 3x + C$.",
+      "B. $2x^2 + 3x + C$.",
+      "C. $x^2 + C$.",
+      "D. $2 + C$."
+    ],
+    "correct": 0,
+    "explain": "Ta có $\\\\int (2x + 3) dx = 2 \\\\frac{x^2}{2} + 3x + C = x^2 + 3x + C$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 2,
+    "q": "Họ nguyên hàm của hàm số $f(x) = 3x^2 - 2x + 1$ là:",
+    "choices": [
+      "A. $x^3 - x^2 + x + C$.",
+      "B. $6x - 2 + C$.",
+      "C. $x^3 - 2x^2 + x + C$.",
+      "D. $3x^3 - 2x^2 + x + C$."
+    ],
+    "correct": 0,
+    "explain": "Ta có $\\\\int (3x^2 - 2x + 1) dx = 3 \\\\frac{x^3}{3} - 2 \\\\frac{x^2}{2} + x + C = x^3 - x^2 + x + C$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 2,
+    "q": "Họ nguyên hàm của hàm số $f(x) = e^x - 4x^3$ là:",
+    "choices": [
+      "A. $e^x - x^4 + C$.",
+      "B. $e^x - 12x^2 + C$.",
+      "C. $e^x + x^4 + C$.",
+      "D. $e^x - 4x^4 + C$."
+    ],
+    "correct": 0,
+    "explain": "Ta có $\\\\int (e^x - 4x^3) dx = \\\\int e^x dx - \\\\int 4x^3 dx = e^x - x^4 + C$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hàm số $f(x) = \\\\cos 2x$. Họ nguyên hàm của hàm số $f(x)$ là:",
+    "choices": [
+      "A. $\\\\frac{1}{2}\\\\sin 2x + C$.",
+      "B. $-\\\\frac{1}{2}\\\\sin 2x + C$.",
+      "C. $2\\\\sin 2x + C$.",
+      "D. $\\\\sin 2x + C$."
+    ],
+    "correct": 0,
+    "explain": "Sử dụng công thức mở rộng $\\\\int \\\\cos(ax+b) dx = \\\\frac{1}{a}\\\\sin(ax+b) + C$, với $a=2$, ta được $\\\\frac{1}{2}\\\\sin 2x + C$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 2,
+    "q": "Họ tất cả các nguyên hàm của hàm số $f(x) = \\\\frac{1}{x+2}$ trên khoảng $(-2; +\\\\infty)$ là:",
+    "choices": [
+      "A. $\\\\ln(x+2) + C$.",
+      "B. $\\\\ln|x+2| + C$.",
+      "C. $-\\\\frac{1}{(x+2)^2} + C$.",
+      "D. $\\\\frac{1}{\\\\ln(x+2)} + C$."
+    ],
+    "correct": 0,
+    "explain": "Ta có $\\\\int \\\\frac{1}{x+2} dx = \\\\ln|x+2| + C$. Do $x > -2$ nên $x+2 > 0$, suy ra kết quả là $\\\\ln(x+2) + C$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 2,
+    "q": "Tìm nguyên hàm $F(x)$ của hàm số $f(x) = 2x$ biết $F(1) = 4$.",
+    "choices": [
+      "A. $F(x) = x^2 + 3$.",
+      "B. $F(x) = x^2 + 4$.",
+      "C. $F(x) = 2x^2 + 2$.",
+      "D. $F(x) = x^2 - 3$."
+    ],
+    "correct": 0,
+    "explain": "Ta có $F(x) = \\\\int 2x dx = x^2 + C$. Vì $F(1) = 4 \\\\Rightarrow 1^2 + C = 4 \\\\Rightarrow C = 3$. Vậy $F(x) = x^2 + 3$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 2,
+    "q": "Họ nguyên hàm của hàm số $f(x) = 2\\\\sin x - 3\\\\cos x$ là:",
+    "choices": [
+      "A. $-2\\\\cos x - 3\\\\sin x + C$.",
+      "B. $2\\\\cos x + 3\\\\sin x + C$.",
+      "C. $-2\\\\cos x + 3\\\\sin x + C$.",
+      "D. $2\\\\cos x - 3\\\\sin x + C$."
+    ],
+    "correct": 0,
+    "explain": "Ta có $\\\\int (2\\\\sin x - 3\\\\cos x) dx = 2(-\\\\cos x) - 3\\\\sin x + C = -2\\\\cos x - 3\\\\sin x + C$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 2,
+    "q": "Họ tất cả các nguyên hàm của hàm số $f(x) = (x - 2)^2$ là:",
+    "choices": [
+      "A. $\\\\frac{(x-2)^3}{3} + C$.",
+      "B. $2(x - 2) + C$.",
+      "C. $\\\\frac{(x-2)^2}{2} + C$.",
+      "D. $x^3 - 4x^2 + 4x + C$."
+    ],
+    "correct": 0,
+    "explain": "Áp dụng công thức $\\\\int (ax+b)^n dx = \\\\frac{1}{a} \\\\frac{(ax+b)^{n+1}}{n+1} + C$, ta có $\\\\int (x - 2)^2 dx = \\\\frac{(x-2)^3}{3} + C$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 2,
+    "q": "Họ nguyên hàm của hàm số $f(x) = e^{-x} + x$ là:",
+    "choices": [
+      "A. $-e^{-x} + \\\\frac{x^2}{2} + C$.",
+      "B. $e^{-x} + \\\\frac{x^2}{2} + C$.",
+      "C. $-e^{-x} + x^2 + C$.",
+      "D. $e^{-x} + 1 + C$."
+    ],
+    "correct": 0,
+    "explain": "Ta có $\\\\int (e^{-x} + x) dx = -e^{-x} + \\\\frac{x^2}{2} + C$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Nguyên hàm và tích phân",
+    "type": "TN",
+    "level": 2,
+    "q": "Họ nguyên hàm của hàm số $f(x) = \\\\frac{x^2 + 1}{x}$ trên khoảng $(0; +\\\\infty)$ là:",
+    "choices": [
+      "A. $\\\\frac{x^2}{2} + \\\\ln x + C$.",
+      "B. $1 - \\\\frac{1}{x^2} + C$.",
+      "C. $\\\\frac{x^2}{2} - \\\\ln x + C$.",
+      "D. $x + \\\\ln x + C$."
+    ],
+    "correct": 0,
+    "explain": "Ta biến đổi $f(x) = \\\\frac{x^2 + 1}{x} = x + \\\\frac{1}{x}$. Khi đó $\\\\int \\\\left( x + \\\\frac{1}{x} \\\\right) dx = \\\\frac{x^2}{2} + \\\\ln|x| + C$. Do $x > 0$ nên ta được $\\\\frac{x^2}{2} + \\\\ln x + C$."
+  },
+  {
+    "grade": "12",
     "chapter": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
     "type": "TLN",
     "level": 3,
