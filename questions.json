@@ -51,7 +51,7 @@
     "level": 4,
     "q": "Khảo sát thời gian tự học của 50 học sinh, ta có bảng tần số ghép nhóm: $[10; 20)$ có $x$ học sinh, $[20; 30)$ có $y$ học sinh, $[30; 40)$ có $z$ học sinh. Biết tứ phân vị thứ nhất $Q_1 = 15$ và tứ phân vị thứ ba $Q_3 = 33.75$. Tính giá trị của biểu thức $P = 2x + y - z$.",
     "correct": "35",
-    "explain": "Vị trí $Q_1$ là $12.5$. Do $Q_1 = 15 \\in [10; 20)$ nên $15 = 10 + \\frac{12.5}{x} \\times 10 \\Rightarrow x = 25$. Vị trí $Q_3$ là $37.5$. Do $x+y < 50$ và $Q_3 = 33.75 \\in [30; 40)$ nên $33.75 = 30 + \\frac{37.5 - (x+y)}{z} \\times 10$. Suy ra $3.75z = 375 - 10x - 10y$. Mà $x+y+z=50 \\Rightarrow x+y=50-z$. Thay vào: $3.75z = 375 - 10(50-z) \Rightarrow 3.75z = -125 + 10z \Rightarrow 6.25z = 125 \Rightarrow z = 20$. Từ đó $y = 50 - 25 - 20 = 5$. Vậy $P = 2(25) + 5 - 20 = 35$."
+    "explain": "Vị trí $Q_1$ là $12.5$. Do $Q_1 = 15 \\in [10; 20)$ nên $15 = 10 + \\frac{12.5}{x} \\times 10 \\Rightarrow x = 25$. Vị trí $Q_3$ là $37.5$. Do $x+y < 50$ và $Q_3 = 33.75 \\in [30; 40)$ nên $33.75 = 30 + \\frac{37.5 - (x+y)}{z} \\times 10$. Suy ra $3.75z = 375 - 10x - 10y$. Mà $x+y+z=50 \\Rightarrow x+y=50-z$. Thay vào: $3.75z = 375 - 10(50-z) \\Rightarrow 3.75z = -125 + 10z \\Rightarrow 6.25z = 125 \\Rightarrow z = 20$. Từ đó $y = 50 - 25 - 20 = 5$. Vậy $P = 2(25) + 5 - 20 = 35$."
   },
   {
     "grade": "12",
@@ -269,7 +269,7 @@
     "correct": "6",
     "explain": "Gọi giá trị đại diện của nhóm 2 là $a$. Khi đó giá trị đại diện của 3 nhóm là $a-d, a, a+d$. Vì tần số tỉ lệ $1, 2, 1$ (cấu trúc đối xứng) nên số trung bình $\\bar{x} = a$. Giả sử cỡ mẫu là $n=4$ với tần số thực tế là $1, 2, 1$. Phương sai $s^2 = \\frac{1(a-d-a)^2 + 2(a-a)^2 + 1(a+d-a)^2}{4} = \\frac{(-d)^2 + 0 + d^2}{4} = \\frac{2d^2}{4} = 0.5d^2$. Theo đề bài $0.5d^2 = 18 \\Rightarrow d^2 = 36$. Do $d>0$ nên $d=6$."
   },
-  {
+    {
     "grade": "12",
     "chapter": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
     "type": "DS",
