@@ -4,305 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DVK MATH - Thầy Dương Văn Kiên</title>
-    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
     <style>
-        :root { --primary: #1a73e8; --success: #34a853; --danger: #ea4335; --warning: #fbbc04; --bg: #f8f9fa; }
-        * { box-sizing: border-box; }
-        body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; margin: 0; background: var(--bg); display: flex; height: 100vh; overflow: hidden; }
-        
-        /* Loading Overlay */
-        #loading-overlay { position: fixed; inset: 0; background: rgba(255,255,255,0.95); z-index: 5000; display: none; align-items: center; justify-content: center; flex-direction: column; }
+        :root { --primary: #1a73e8; --success: #34a853; --danger: #ea4335; --bg: #f8f9fa; }
+        body { font-family: system-ui, -apple-system, sans-serif; margin: 0; background: var(--bg); display: flex; height: 100vh; overflow: hidden; }
+        #loading-overlay { position: fixed; inset: 0; background: rgba(255,255,255,0.9); z-index: 5000; display: none; align-items: center; justify-content: center; flex-direction: column; }
         .spinner { border: 4px solid #f3f3f3; border-top: 4px solid var(--primary); border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; }
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
-
-        /* Auth & Setup Screens */
-        #auth-screen, #setup-screen { position: fixed; inset: 0; background: var(--bg); z-index: 3000; display: flex; align-items: center; justify-content: center; padding: 20px; flex-direction: column; }
-        #setup-screen { z-index: 2000; display: none; overflow-y: auto; justify-content: flex-start; padding-top: 40px; }
-        .card { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); width: 100%; max-width: 500px; text-align: center; margin-bottom: 20px; }
-
-        /* Dashboard Lịch sử */
-        .history-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 10px; background: #fff; border-radius: 10px; }
-        .history-table th { text-align: left; padding: 10px; border-bottom: 2px solid #eee; }
-        .history-table td { padding: 10px; border-bottom: 1px solid #f9f9f9; }
-
-        /* Layout Làm Bài */
+        #auth-screen, #setup-screen { position: fixed; inset: 0; background: var(--bg); z-index: 3000; display: flex; align-items: center; justify-content: center; flex-direction: column; }
+        #setup-screen { z-index: 2000; display: none; overflow-y: auto; justify-content: flex-start; padding: 40px 20px; }
+        .card { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); width: 100%; max-width: 500px; text-align: center; margin-bottom: 20px; border: 1px solid #eee; }
         #sidebar { width: 280px; background: white; border-right: 1px solid #ddd; padding: 20px; display: flex; flex-direction: column; flex-shrink: 0; }
-        #main-content { flex: 1; padding: 20px; overflow-y: auto; background: var(--bg); }
-        .q-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 20px; }
+        #main-content { flex: 1; padding: 20px; overflow-y: auto; }
+        .q-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
         .q-circle { aspect-ratio: 1; border-radius: 8px; background: #eee; display: flex; align-items: center; justify-content: center; cursor: pointer; font-weight: bold; }
-        .q-circle.active { border: 2px solid var(--primary); color: var(--primary); background: #e8f0fe; }
+        .q-circle.active { border: 2px solid var(--primary); color: var(--primary); }
         .q-circle.done { background: var(--success); color: white; }
-
-        .question-paper { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); min-height: 400px; font-size: 1.1rem; line-height: 1.6; }
-        .option-item { display: flex; align-items: center; padding: 15px; border: 1px solid #eee; border-radius: 10px; margin-bottom: 10px; cursor: pointer; }
-        .option-item:hover { background: #f1f3f5; }
-        
-        .ds-btn-group { display: flex; gap: 5px; }
-        .ds-btn { padding: 8px 12px; border: 1px solid #ddd; border-radius: 5px; cursor: pointer; font-weight: bold; }
-        .ds-btn.selected-t { background: var(--success); color: white; }
-        .ds-btn.selected-f { background: var(--danger); color: white; }
-
-        #timer { font-size: 24px; font-weight: 800; color: var(--danger); text-align: right; margin-bottom: 15px; }
-        .btn { padding: 12px 20px; border-radius: 10px; border: none; cursor: pointer; font-weight: bold; }
-        .btn-finish { background: var(--danger); color: white; width: 100%; margin-top: auto; padding: 15px; font-size: 16px; }
-
+        .question-paper { background: white; padding: 25px; border-radius: 12px; min-height: 350px; font-size: 1.1rem; line-height: 1.6; border: 1px solid #eee; }
+        .option-item { display: flex; align-items: center; padding: 12px; border: 1px solid #eee; border-radius: 8px; margin-bottom: 8px; cursor: pointer; }
+        .ds-btn { padding: 6px 12px; border: 1px solid #ddd; border-radius: 5px; cursor: pointer; }
+        .selected-t { background: var(--success); color: white; }
+        .selected-f { background: var(--danger); color: white; }
+        #timer { font-size: 24px; font-weight: bold; color: var(--danger); text-align: right; }
+        .btn { padding: 12px 20px; border-radius: 8px; border: none; cursor: pointer; font-weight: bold; }
+        .btn-finish { background: var(--danger); color: white; margin-top: auto; width: 100%; }
         #result-screen { display: none; padding: 20px; text-align: center; background: white; min-height: 100vh; overflow-y: auto; }
-        .explain-box { background: #fff9c4; border-left: 5px solid var(--warning); padding: 15px; margin-top: 10px; border-radius: 5px; font-size: 0.95rem; }
         .hidden { display: none !important; }
-
-        @media (max-width: 768px) {
-            body { flex-direction: column; overflow-y: auto; height: auto; }
-            #sidebar { width: 100%; order: 2; height: auto; }
-            #main-content { order: 1; padding: 15px; min-height: 500px; }
-            .q-grid { grid-template-columns: repeat(7, 1fr); }
-        }
     </style>
 </head>
 <body>
 
-<div id="loading-overlay"><div class="spinner"></div><p style="margin-top:15px; font-weight:bold;">Đang xử lý kết quả...</p></div>
+<div id="loading-overlay"><div class="spinner"></div><p>Đang gửi bài...</p></div>
 
 <div id="auth-screen">
     <div class="card">
-        <h1 style="color:var(--primary); margin:0;">DVK MATH</h1>
-        <p style="color:#666;">Thầy Dương Văn Kiên - Luyện thi Toán</p>
-        <input type="text" id="u-name" class="btn" style="width:100%; border:2px solid #eee; margin:10px 0; text-align:center;" placeholder="Họ và tên học sinh">
-        <input type="text" id="u-class" class="btn" style="width:100%; border:2px solid #eee; margin:10px 0; text-align:center;" placeholder="Lớp (VD: 12A1)">
-        <button class="btn" style="background:var(--primary); color:white; width:100%; margin-top:15px;" onclick="saveAuth()">VÀO PHÒNG HỌC</button>
+        <h2 style="color:var(--primary)">DVK MATH</h2>
+        <input type="text" id="un" class="btn" style="width:100%; border:1px solid #ddd; margin:10px 0" placeholder="Họ và tên">
+        <input type="text" id="uc" class="btn" style="width:100%; border:1px solid #ddd; margin:10px 0" placeholder="Lớp">
+        <button class="btn" style="background:var(--primary); color:white; width:100%" onclick="login()">VÀO HỌC</button>
     </div>
 </div>
 
 <div id="setup-screen">
-    <h2 style="margin:0;">Chào <span id="hello-name" style="color:var(--primary);">...</span>!</h2>
-    <div class="card" style="margin-top:20px; max-width:600px;">
-        <h3 style="margin:0; font-size:16px; text-align:left;">📊 Lịch sử bài làm</h3>
-        <table class="history-table">
-            <thead><tr><th>Chương</th><th>Điểm</th><th>Ngày</th></tr></thead>
-            <tbody id="hist-body"></tbody>
-        </table>
-    </div>
+    <h2>Chào <span id="hello"></span>!</h2>
     <div class="card">
-        <select id="grade-sel" class="btn" style="width:100%; border:2px solid #eee; margin:5px 0;" onchange="loadChapters()">
-            <option value="">-- Chọn Khối --</option>
-            <option value="10">Lớp 10</option><option value="11">Lớp 11</option><option value="12">Lớp 12</option>
-        </select>
-        <select id="chapter-sel" class="btn" style="width:100%; border:2px solid #eee; margin:5px 0;"><option value="">-- Chọn Chương --</option></select>
-        <div style="display:flex; gap:10px; margin-top:10px;">
-            <button class="btn t-btn" style="flex:1; background:#eee;" onclick="setTime(45, this)">45 Phút</button>
-            <button class="btn t-btn" style="flex:1; background:#eee;" onclick="setTime(60, this)">60 Phút</button>
-            <button class="btn t-btn" style="flex:1; background:#eee;" onclick="setTime(90, this)">90 Phút</button>
-        </div>
-        <button class="btn" style="background:var(--success); color:white; width:100%; margin-top:20px; font-size:1.1rem;" onclick="start()">BẮT ĐẦU</button>
-        <p style="font-size:12px; color:#999; margin-top:15px; cursor:pointer;" onclick="localStorage.clear(); location.reload();">Đăng xuất</p>
+        <select id="gr" class="btn" style="width:100%; border:1px solid #ddd" onchange="loadCh()"><option value="">-- Khối --</option><option value="10">Lớp 10</option><option value="11">Lớp 11</option><option value="12">Lớp 12</option></select>
+        <select id="ch" class="btn" style="width:100%; border:1px solid #ddd; margin:10px 0"><option value="">-- Chương --</option></select>
+        <div style="display:flex; gap:10px;"><button class="btn t-btn" style="flex:1" onclick="st(45,this)">45p</button><button class="btn t-btn" style="flex:1" onclick="st(60,this)">60p</button><button class="btn t-btn" style="flex:1" onclick="st(90,this)">90p</button></div>
+        <button class="btn" style="background:var(--success); color:white; width:100%; margin-top:15px" onclick="go()">BẮT ĐẦU</button>
     </div>
 </div>
 
 <div id="sidebar" class="hidden">
-    <h3 style="margin:0 0 15px 0;">Tiến độ</h3>
-    <div class="q-grid" id="q-grid"></div>
-    <button class="btn btn-finish" onclick="finish()">NỘP BÀI</button>
+    <h3>Tiến độ</h3><div class="q-grid" id="qg"></div>
+    <button class="btn btn-finish" onclick="submit()">NỘP BÀI</button>
 </div>
 
 <div id="main-content" class="hidden">
     <div id="timer">00:00</div>
     <div class="question-paper" id="paper"></div>
-    <div style="display:flex; justify-content:space-between; margin-top:20px;">
-        <button class="btn" style="background:#ddd" onclick="nav(-1)">Trước</button>
-        <button class="btn" style="background:var(--primary); color:white" onclick="nav(1)">Tiếp theo</button>
-    </div>
+    <div style="display:flex; justify-content:space-between; margin-top:20px;"><button class="btn" onclick="nav(-1)">Trước</button><button class="btn" style="background:var(--primary); color:white" onclick="nav(1)">Tiếp</button></div>
 </div>
 
 <div id="result-screen">
-    <h1 style="color:var(--primary); margin:0;">KẾT QUẢ TỔNG HỢP</h1>
-    <div id="res-score" style="font-size:4rem; font-weight:bold; margin:10px 0;">0.00</div>
-    <p id="res-user" style="font-weight:bold;"></p>
-    <div style="max-width:800px; margin:20px auto; overflow-x:auto;">
-        <table style="width:100%; border-collapse:collapse; text-align:left;" id="res-table">
-            <thead><tr style="background:#f1f3f5;"><th style="padding:12px;">Câu</th><th style="padding:12px;">Loại</th><th style="padding:12px;">Điểm</th></tr></thead>
-            <tbody></tbody>
-        </table>
-    </div>
-    <button class="btn" style="background:var(--primary); color:white; margin:30px 0 50px 0;" onclick="location.reload()">LÀM ĐỀ KHÁC</button>
+    <h1>KẾT QUẢ: <span id="rs"></span></h1>
+    <div id="rt" style="max-width:600px; margin:auto; text-align:left"></div>
+    <button class="btn" style="background:var(--primary); color:white; margin:20px" onclick="location.reload()">LÀM ĐỀ KHÁC</button>
 </div>
 
 <script>
-    // URL Google Script của thầy
+    // 1. DÁN LINK CỦA THẦY VÀO ĐÂY
     const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzGmlL2P0x-29rCB-3wE-CoIaGjFQRdlF1IEFqK81xHYMq1q-o09V84od6EZGgU_Vu0/exec";
     
-    let allQ = [], exam = [], logs = [], cur = 0, time = 0, clock;
-    let user = JSON.parse(localStorage.getItem('dvk_user'));
+    let all = [], exam = [], ans = [], cur = 0, mins = 0, timer;
+    let user = JSON.parse(localStorage.getItem('dvk_u'));
 
-    // Khởi động KaTeX và Dữ liệu
     window.onload = () => {
-        if(user) { document.getElementById('auth-screen').style.display = 'none'; showSetup(); }
-        fetch('questions.json').then(r => r.json()).then(d => { allQ = d; });
+        if(user) { document.getElementById('auth-screen').style.display='none'; showS(); }
+        fetch('questions.json').then(r=>r.json()).then(d=>all=d);
     };
 
-    function renderMath(el) {
-        if (window.renderMathInElement) {
-            renderMathInElement(el, {
-                delimiters: [
-                    {left: "$$", right: "$$", display: true},
-                    {left: "$", right: "$", display: false},
-                    {left: "\\(", right: "\\)", display: false},
-                    {left: "\\[", right: "\\]", display: true}
-                ],
-                throwOnError: false
-            });
-        }
+    function render(el) { if(window.renderMathInElement) renderMathInElement(el, {delimiters:[{left:"$$",right:"$$",display:true},{left:"$",right:"$",display:false}]}); }
+    function login() { 
+        const n=document.getElementById('un').value, c=document.getElementById('uc').value;
+        if(!n||!c) return; user={n,c}; localStorage.setItem('dvk_u', JSON.stringify(user)); location.reload();
+    }
+    function showS() { document.getElementById('setup-screen').style.display='flex'; document.getElementById('hello').innerText=user.n; }
+    function loadCh() {
+        const g=document.getElementById('gr').value, s=document.getElementById('ch');
+        s.innerHTML = '<option value="">-- Chương --</option>';
+        [...new Set(all.filter(q=>q.grade==g).map(q=>q.chapter))].forEach(c=>s.innerHTML+=`<option value="${c}">${c}</option>`);
+    }
+    function st(m,b) { mins=m; document.querySelectorAll('.t-btn').forEach(x=>x.style.background='#eee'); b.style.background='#bbdefb'; }
+    
+    function go() {
+        const c=document.getElementById('ch').value; if(!c||!mins) return;
+        const p=all.filter(q=>q.grade==document.getElementById('gr').value && q.chapter==c);
+        exam = p.sort(()=>0.5-Math.random()).slice(0, mins==45?12:20);
+        ans = new Array(exam.length).fill(null);
+        document.getElementById('setup-screen').style.display='none';
+        document.querySelectorAll('#sidebar, #main-content').forEach(x=>x.classList.remove('hidden'));
+        let s=mins*60; timer=setInterval(()=>{ s--; document.getElementById('timer').innerText=`${Math.floor(s/60)}:${s%60<10?'0':''}${s%60}`; if(s<=0) submit(); },1000);
+        draw();
     }
 
-    function saveAuth() {
-        const n = document.getElementById('u-name').value.trim();
-        const c = document.getElementById('u-class').value.trim();
-        if(!n || !c) return alert("Vui lòng điền đủ tên và lớp!");
-        user = { name: n, class: c };
-        localStorage.setItem('dvk_user', JSON.stringify(user));
-        document.getElementById('auth-screen').style.display = 'none';
-        showSetup();
+    function draw() {
+        const q=exam[cur], p=document.getElementById('paper');
+        let h=`<b>Câu ${cur+1}:</b> ${q.q}<br><br>`;
+        if(q.type==='TN') h+=q.choices.map((c,i)=>`<div class="option-item" onclick="setT(${i})"><input type="radio" ${ans[cur]===i?'checked':''}> ${c}</div>`).join('');
+        else if(q.type==='DS') h+=Object.keys(q.items).map(k=>`<div>${k}. ${q.items[k]} <button class="ds-btn ${ans[cur]?.[k]===true?'selected-t':''}" onclick="setD('${k}',true)">Đ</button> <button class="ds-btn ${ans[cur]?.[k]===false?'selected-f':''}" onclick="setD('${k}',false)">S</button></div><br>`).join('');
+        else h+=`<input type="text" class="btn" style="border:1px solid #ddd" oninput="setL(this.value)" value="${ans[cur]||''}">`;
+        p.innerHTML=h; render(p);
+        document.getElementById('qg').innerHTML=exam.map((_,i)=>`<div class="q-circle ${i===cur?'active':''} ${ans[i]!==null?'done':''}" onclick="cur=${i};draw()">${i+1}</div>`).join('');
     }
 
-    function showSetup() {
-        document.getElementById('setup-screen').style.display = 'flex';
-        document.getElementById('hello-name').innerText = user.name;
-        const hist = JSON.parse(localStorage.getItem('dvk_hist') || '[]');
-        const b = document.getElementById('hist-body');
-        b.innerHTML = hist.length ? '' : '<tr><td colspan="3" style="text-align:center; padding:20px; color:#ccc;">Chưa có lịch sử</td></tr>';
-        hist.reverse().slice(0,5).forEach(i => {
-            b.innerHTML += `<tr><td>${i.chapter}</td><td style="color:var(--primary); font-weight:bold;">${i.score}</td><td>${i.date}</td></tr>`;
+    function setT(i){ans[cur]=i;draw();}
+    function setD(k,v){if(!ans[cur])ans[cur]={};ans[cur][k]=v;draw();}
+    function setL(v){ans[cur]=v;draw();}
+    function nav(s){cur=Math.max(0,Math.min(exam.length-1,cur+s));draw();}
+
+    async function submit() {
+        if(!confirm("Nộp bài?")) return;
+        clearInterval(timer); document.getElementById('loading-overlay').style.display='flex';
+        let s=0; exam.forEach((q,i)=>{
+            if(q.type==='TN'&&ans[i]===q.correct) s+=0.25;
+            else if(q.type==='DS'){let m=0; ["a","b","c","d"].forEach(k=>{if(ans[i]?.[k]===q.correct[k])m++;}); s+=(m===4?1:m===3?0.5:0);}
+            else if(q.type==='TLN'&&String(ans[i])==String(q.correct)) s+=0.5;
         });
-    }
-
-    function loadChapters() {
-        const g = document.getElementById('grade-sel').value;
-        const s = document.getElementById('chapter-sel');
-        s.innerHTML = '<option value="">-- Chọn Chương --</option>';
-        const list = [...new Set(allQ.filter(q => q.grade == g).map(q => q.chapter))];
-        list.sort().forEach(c => s.innerHTML += `<option value="${c}">${c}</option>`);
-    }
-
-    function setTime(m, btn) {
-        time = m;
-        document.querySelectorAll('.t-btn').forEach(b => b.style.background = '#eee');
-        btn.style.background = '#bbdefb';
-    }
-
-    function start() {
-        const c = document.getElementById('chapter-sel').value;
-        if(!c || !time) return alert("Chọn chương và thời gian!");
-        const pool = allQ.filter(q => q.grade == document.getElementById('grade-sel').value && q.chapter == c);
-        const shuf = (a) => a.sort(() => 0.5 - Math.random());
-        let n = (time == 45) ? {tn:8, ds:2, tln:4} : (time == 60) ? {tn:12, ds:3, tln:6} : {tn:16, ds:4, tln:8};
+        const res={name:user.n, class:user.c, chapter:exam[0].chapter, score:s.toFixed(2)};
+        try { await fetch(SCRIPT_URL,{method:"POST",body:JSON.stringify(res)}); } catch(e){}
         
-        exam = [...shuf(pool.filter(q => q.type==='TN')).slice(0, n.tn), ...shuf(pool.filter(q => q.type==='DS')).slice(0, n.ds), ...shuf(pool.filter(q => q.type==='TLN')).slice(0, n.tln)];
-        if(exam.length < 3) return alert("Không đủ câu hỏi!");
-        
-        logs = new Array(exam.length).fill(null);
-        document.getElementById('setup-screen').style.display = 'none';
-        document.getElementById('sidebar').classList.remove('hidden');
-        document.getElementById('main-content').classList.remove('hidden');
-        
-        let s = time * 60;
-        clock = setInterval(() => {
-            s--;
-            let mm = Math.floor(s/60), ss = s%60;
-            document.getElementById('timer').innerText = `${mm}:${ss<10?'0'+ss:ss}`;
-            if(s <= 0) { clearInterval(clock); finish(true); }
-        }, 1000);
-        show();
-    }
-
-    function show() {
-        const q = exam[cur], p = document.getElementById('paper');
-        let h = `<div style="font-weight:bold; color:var(--primary); margin-bottom:10px;">CÂU ${cur+1} (${q.type})</div>`;
-        if(q.image) h += `<img src="${q.image}" style="max-width:100%; border-radius:10px; margin:10px auto; display:block;">`;
-        h += `<div style="margin-bottom:20px;">${q.q}</div>`;
-
-        if(q.type === 'TN') {
-            h += q.choices.map((c, i) => `<div class="option-item" onclick="setTN(${i})"><input type="radio" ${logs[cur]===i?'checked':''}> <span style="margin-left:10px">${c}</span></div>`).join('');
-        } else if(q.type === 'DS') {
-            h += `<table style="width:100%">` + Object.keys(q.items).map(k => `<tr><td style="padding:10px 0;">${k}. ${q.items[k]}</td><td align="right"><div class="ds-btn-group">
-                <button class="ds-btn ${logs[cur]?.[k]===true?'selected-t':''}" onclick="setDS('${k}', true)">Đ</button>
-                <button class="ds-btn ${logs[cur]?.[k]===false?'selected-f':''}" onclick="setDS('${k}', false)">S</button>
-            </div></td></tr>`).join('') + `</table>`;
-        } else {
-            h += `<input type="text" class="btn" style="width:100%; border:2px solid var(--primary); text-align:center;" placeholder="Đáp án..." value="${logs[cur]||''}" oninput="setTLN(this.value)">`;
-        }
-        p.innerHTML = h;
-        renderMath(p);
-        
-        document.getElementById('q-grid').innerHTML = exam.map((_, i) => {
-            let ok = (logs[i] !== null && (typeof logs[i] !== 'object' || Object.keys(logs[i]).length === 4));
-            return `<div class="q-circle ${i===cur?'active':''} ${ok?'done':''}" onclick="cur=${i};show()">${i+1}</div>`;
-        }).join('');
-    }
-
-    function setTN(i) { logs[cur] = i; show(); }
-    function setDS(k, v) { if(!logs[cur]) logs[cur]={}; logs[cur][k] = v; show(); }
-    function setTLN(v) { logs[cur] = v; show(); }
-    function nav(s) { cur = Math.max(0, Math.min(exam.length-1, cur+s)); show(); }
-
-    async function finish(auto = false) {
-        if(!auto && !confirm("Bạn có muốn nộp bài?")) return;
-        clearInterval(clock);
-        document.getElementById('loading-overlay').style.display = 'flex';
-
-        let score = 0, tableRows = "";
-        exam.forEach((q, i) => {
-            let s = 0, max = (q.type==='TN'?0.25 : q.type==='DS'?1.0 : 0.5);
-            if(q.type==='TN' && logs[i] === q.correct) s = 0.25;
-            else if(q.type==='DS') {
-                let m = 0; ["a","b","c","d"].forEach(k => { if(logs[i]?.[k] === q.correct[k]) m++; });
-                s = (m===1?0.1 : m===2?0.25 : m===3?0.5 : m===4?1.0 : 0);
-            } else if(q.type==='TLN' && String(logs[i]||'').trim().replace(',','.') === String(q.correct).replace(',','.')) s = 0.5;
-            
-            score += s;
-            tableRows += `<tr onclick="toggleEx(${i})" style="cursor:pointer; border-bottom:1px solid #eee;">
-                <td style="padding:12px;">${i+1}</td><td style="padding:12px;">${q.type}</td>
-                <td style="padding:12px; font-weight:bold; color:${s===max?'green':'red'}">${s.toFixed(2)}</td>
-            </tr>
-            <tr id="ex-${i}" class="hidden"><td colspan="3" style="padding:15px; background:#fffde7;">
-                <div class="explain-box">
-                    <b>Đáp án:</b> ${q.type==='TN' ? ["A","B","C","D"][q.correct] : q.type==='DS' ? Object.entries(q.correct).map(([k,v])=>`${k}:${v?'Đ':'S'}`).join(', ') : q.correct}<br><br>
-                    ${q.explain || 'Chưa có lời giải chi tiết.'}
-                </div>
-            </td></tr>`;
-        });
-
-        const finalS = score.toFixed(2);
-        const data = { name: user.name, class: user.class, chapter: exam[0].chapter, score: finalS };
-
-        // Gửi ngầm qua Iframe Form (Bền vững nhất)
-        const f = document.createElement('form'); f.method = 'POST'; f.action = SCRIPT_URL; f.style.display = 'none';
-        const inp = document.createElement('input'); inp.name = 'formData'; inp.value = JSON.stringify(data);
-        f.appendChild(inp); document.body.appendChild(f);
-        const ifr = document.createElement('iframe'); ifr.name = 'h_ifr'; ifr.style.display = 'none';
-        document.body.appendChild(ifr); f.target = 'h_ifr'; f.submit();
-
-        const hist = JSON.parse(localStorage.getItem('dvk_hist') || '[]');
-        hist.push({ chapter: data.chapter, score: finalS, date: new Date().toLocaleDateString('vi-VN') });
-        localStorage.setItem('dvk_hist', JSON.stringify(hist));
-
-        setTimeout(() => {
-            document.getElementById('loading-overlay').style.display = 'none';
-            document.getElementById('sidebar').classList.add('hidden');
-            document.getElementById('main-content').classList.add('hidden');
-            document.getElementById('result-screen').style.display = 'block';
-            document.getElementById('res-score').innerText = finalS;
-            document.getElementById('res-user').innerText = `${user.name} - Lớp ${user.class}`;
-            document.querySelector('#res-table tbody').innerHTML = tableRows;
-            renderMath(document.getElementById('result-screen'));
-        }, 1500);
-    }
-
-    function toggleEx(i) {
-        const el = document.getElementById(`ex-${i}`);
-        el.classList.toggle('hidden');
-        if(!el.classList.contains('hidden')) renderMath(el);
+        document.getElementById('loading-overlay').style.display='none';
+        document.querySelectorAll('#sidebar, #main-content').forEach(x=>x.classList.add('hidden'));
+        document.getElementById('result-screen').style.display='block';
+        document.getElementById('rs').innerText=res.score;
+        document.getElementById('rt').innerHTML=exam.map((q,i)=>`<div style="border-bottom:1px solid #eee; padding:10px"><b>Câu ${i+1}:</b> ${q.explain||'N/A'}</div>`).join('');
+        render(document.getElementById('rt'));
     }
 </script>
 </body>
