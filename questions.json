@@ -1,6 +1,1064 @@
 [
   {
     "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TLN",
+    "level": 3,
+    "q": "Cho hai biến cố $A$ và $B$ có $P(A) = 0.5$, $P(B) = 0.6$ và xác suất của biến cố hợp $P(A \\cup B) = 0.8$. Tính xác suất có điều kiện $P(A|B)$ (nhập đáp án dưới dạng số thập phân).",
+    "correct": "0.5",
+    "explain": "Theo công thức cộng xác suất: $P(AB) = P(A) + P(B) - P(A \\cup B) = 0.5 + 0.6 - 0.8 = 0.3$. Xác suất có điều kiện cần tìm là $P(A|B) = \\frac{P(AB)}{P(B)} = \\frac{0.3}{0.6} = 0.5$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TLN",
+    "level": 3,
+    "q": "Một hộp chứa 5 viên bi xanh và 5 viên bi đỏ. Rút ngẫu nhiên lần lượt không hoàn lại 2 viên bi từ hộp. Biết rằng viên bi rút ra lần thứ nhất có màu xanh, xác suất để viên bi rút ra lần thứ hai có màu đỏ là $P$. Tính giá trị của $9P$.",
+    "correct": "5",
+    "explain": "Khi viên bi thứ nhất rút ra là màu xanh và không hoàn lại, trong hộp còn lại 9 viên bi, bao gồm 4 viên bi xanh và 5 viên bi đỏ. Xác suất rút được viên bi màu đỏ ở lần thứ hai là $P = \\frac{5}{9}$. Vậy $9P = 5$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TLN",
+    "level": 3,
+    "q": "Gieo đồng thời hai con xúc xắc cân đối và đồng chất. Biết rằng tổng số chấm xuất hiện trên hai con xúc xắc bằng 8, tính xác suất để có ít nhất một con xúc xắc xuất hiện mặt 5 chấm (nhập đáp án dưới dạng số thập phân).",
+    "correct": "0.4",
+    "explain": "Không gian mẫu thu hẹp khi tổng bằng 8 gồm các tập hợp: $(2;6), (3;5), (4;4), (5;3), (6;2)$ (tổng cộng 5 kết quả). Các kết quả có ít nhất một mặt 5 chấm là $(3;5)$ và $(5;3)$ (2 kết quả). Xác suất cần tìm là $P = \\frac{2}{5} = 0.4$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TLN",
+    "level": 3,
+    "q": "Một lớp học có 40 học sinh, trong đó có 25 nam và 15 nữ. Biết rằng có 10 nam và 5 nữ tham gia câu lạc bộ Toán học. Chọn ngẫu nhiên một học sinh. Biết rằng học sinh đó tham gia câu lạc bộ Toán học, gọi $P$ là xác suất để học sinh đó là nam. Tính giá trị của $3P$.",
+    "correct": "2",
+    "explain": "Tổng số học sinh tham gia câu lạc bộ Toán là $10 + 5 = 15$ học sinh. Số học sinh nam tham gia câu lạc bộ là 10. Xác suất có điều kiện $P = \\frac{10}{15} = \\frac{2}{3}$. Vậy $3P = 2$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TLN",
+    "level": 3,
+    "q": "Tập hợp các thẻ gồm 20 tấm thẻ được đánh số từ 1 đến 20. Rút ngẫu nhiên một thẻ. Biết rằng thẻ rút được mang số chia hết cho 3, gọi $P$ là xác suất để thẻ đó mang số chia hết cho 4. Tính giá trị của $6P$.",
+    "correct": "1",
+    "explain": "Các thẻ mang số chia hết cho 3 là $\\{3, 6, 9, 12, 15, 18\\}$ (có 6 thẻ). Trong các thẻ này, thẻ mang số chia hết cho 4 (tức là chia hết cho 12) là $\\{12\\}$ (có 1 thẻ). Xác suất $P = \\frac{1}{6}$. Do đó $6P = 1$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TLN",
+    "level": 4,
+    "q": "Cho hai biến cố $A$ và $B$ thỏa mãn $P(A) = 0.4$, $P(B) = 0.5$ và $P(A|B) = 0.3$. Gọi $P$ là xác suất của biến cố $B$ với điều kiện biến cố $A$ không xảy ra. Tính giá trị của $12P$.",
+    "correct": "7",
+    "explain": "Ta có $P(AB) = P(B)P(A|B) = 0.5 \\times 0.3 = 0.15$. Xác suất $A$ không xảy ra là $P(\\overline{A}) = 1 - 0.4 = 0.6$. Xác suất biến cố $B$ xảy ra và $A$ không xảy ra là $P(B \\cap \\overline{A}) = P(B) - P(AB) = 0.5 - 0.15 = 0.35$. Vậy $P(B|\\overline{A}) = \\frac{0.35}{0.6} = \\frac{35}{60} = \\frac{7}{12}$. Do đó $12P = 7$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TLN",
+    "level": 4,
+    "q": "Một học sinh làm bài thi trắc nghiệm gồm 3 câu hỏi độc lập. Xác suất làm đúng câu 1, câu 2 và câu 3 lần lượt là 0.6; 0.7 và 0.8. Biết rằng học sinh đó làm đúng chính xác 2 câu, gọi $P$ là xác suất để học sinh đó làm sai câu 1. Tính giá trị của $113P$.",
+    "correct": "56",
+    "explain": "Xác suất làm đúng đúng 2 câu: $P(D_1D_2S_3) + P(D_1S_2D_3) + P(S_1D_2D_3) = (0.6)(0.7)(0.2) + (0.6)(0.3)(0.8) + (0.4)(0.7)(0.8) = 0.084 + 0.144 + 0.224 = 0.452$. Xác suất làm sai câu 1 và đúng 2 câu còn lại là $0.224$. Xác suất có điều kiện $P = \\frac{0.224}{0.452} = \\frac{224}{452} = \\frac{56}{113}$. Vậy $113P = 56$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TLN",
+    "level": 4,
+    "q": "Một hộp có 3 bi đỏ và 4 bi đen. Rút lần lượt từng viên bi không hoàn lại cho đến khi rút được bi đỏ thì dừng. Biết rằng phải rút ít nhất 2 lần, tính xác suất để số lần rút là chính xác 3 lần (nhập đáp án dưới dạng số thập phân).",
+    "correct": "0.3",
+    "explain": "Phải rút ít nhất 2 lần đồng nghĩa với việc lần rút đầu tiên là bi đen: $P(\\text{ít nhất 2 lần}) = P(\\text{lần 1 Đen}) = \\frac{4}{7}$. Để rút chính xác 3 lần, lần 1 và 2 phải là đen, lần 3 là đỏ: $P(\\text{Đen, Đen, Đỏ}) = \\frac{4}{7} \\times \\frac{3}{6} \\times \\frac{3}{5} = \\frac{6}{35}$. Xác suất có điều kiện là $P = \\frac{6/35}{4/7} = \\frac{6}{20} = 0.3$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TLN",
+    "level": 4,
+    "q": "Rút ngẫu nhiên cùng lúc 2 lá bài từ bộ bài 52 lá. Biết rằng trong 2 lá bài có ít nhất 1 lá Át cơ (Ace of Hearts), gọi $P$ là xác suất để cả hai lá bài đều là chất cơ (Hearts). Tính giá trị của $17P$.",
+    "correct": "4",
+    "explain": "Tổng số cặp bài chứa lá Át cơ là $C_{51}^1 = 51$. Trong số 51 cặp này, số cặp có cả hai lá bài đều là chất cơ (tức là lá còn lại phải là một trong 12 lá cơ khác) là $C_{12}^1 = 12$. Xác suất có điều kiện $P = \\frac{12}{51} = \\frac{4}{17}$. Vậy $17P = 4$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TLN",
+    "level": 4,
+    "q": "Hai xạ thủ độc lập cùng bắn vào một mục tiêu. Xác suất bắn trúng của xạ thủ A là 0.6 và của xạ thủ B là 0.8. Biết rằng mục tiêu bị trúng đạn, gọi $P$ là xác suất để cả hai xạ thủ cùng bắn trúng. Tính giá trị của $23P$.",
+    "correct": "12",
+    "explain": "Xác suất mục tiêu không bị trúng đạn (cả hai đều trượt) là $(1-0.6)(1-0.8) = 0.4 \\times 0.2 = 0.08$. Xác suất mục tiêu bị trúng đạn là $1 - 0.08 = 0.92$. Xác suất cả hai cùng bắn trúng là $0.6 \\times 0.8 = 0.48$. Xác suất có điều kiện là $P = \\frac{0.48}{0.92} = \\frac{48}{92} = \\frac{12}{23}$. Vậy $23P = 12$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TLN",
+    "level": 5,
+    "q": "Gieo một đồng xu không cân đối 4 lần, biết xác suất ra mặt Ngửa (N) là 2/3 và Sấp (S) là 1/3. Gọi X là số lần ra mặt Ngửa. Biết rằng $X \\ge 2$, gọi $P$ là xác suất để không có 2 mặt Ngửa nào xuất hiện liền kề nhau. Tính giá trị của $6P$.",
+    "correct": "1",
+    "explain": "Ta tính xác suất $P(X \\ge 2) = P(X=2) + P(X=3) + P(X=4) = 6(\\frac{2}{3})^2(\\frac{1}{3})^2 + 4(\\frac{2}{3})^3(\\frac{1}{3}) + (\\frac{2}{3})^4 = \\frac{24+32+16}{81} = \\frac{72}{81}$. Để có $X \\ge 2$ và KHÔNG có 2 mặt Ngửa kề nhau, số lần mặt Ngửa chỉ có thể là 2 và phải nằm ở các vị trí (1,3), (1,4) hoặc (2,4) - cụ thể là NSNS, NSSN, SNSN (3 trường hợp). Xác suất biến cố này là $3 \\times (\\frac{2}{3})^2(\\frac{1}{3})^2 = \\frac{12}{81}$. Xác suất có điều kiện $P = \\frac{12/81}{72/81} = \\frac{1}{6}$. Do đó $6P = 1$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TLN",
+    "level": 5,
+    "q": "Một gia đình có 2 con. Giả sử xác suất sinh con trai và con gái là bằng nhau (1/2), sinh vào một trong 4 mùa là bằng nhau (1/4) và độc lập. Biết gia đình đó có ít nhất 1 con trai sinh vào mùa Hè, gọi $P$ là xác suất để gia đình đó có 2 con trai. Tính giá trị của $15P$.",
+    "correct": "7",
+    "explain": "Xác suất 1 đứa trẻ là con trai mùa Hè là $1/2 \\times 1/4 = 1/8$. Xác suất không phải trai mùa Hè là $7/8$. Xác suất có ít nhất 1 con trai mùa Hè là $1 - (7/8)^2 = 15/64$. Xác suất có 2 con trai và ít nhất 1 con trai mùa Hè bằng Xác suất (2 con trai) trừ Xác suất (2 con trai nhưng không bé nào sinh mùa Hè) = $1/4 - (1/2 \\times 3/4)^2 = 1/4 - 9/64 = 7/64$. Xác suất có điều kiện $P = \\frac{7/64}{15/64} = \\frac{7}{15}$. Vậy $15P = 7$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TLN",
+    "level": 5,
+    "q": "Một bài thi có 10 câu trắc nghiệm đúng/sai. Một học sinh đánh lụi toàn bộ. Biết rằng học sinh đó làm đúng chính xác 5 câu, gọi $P$ là xác suất để học sinh đó làm đúng cả 2 câu đầu tiên. Tính giá trị của $9P$.",
+    "correct": "2",
+    "explain": "Vì học sinh đánh lụi, mọi tổ hợp đáp án đều có cùng xác suất. Số cách làm đúng chính xác 5 câu trong 10 câu là $C_{10}^5 = 252$. Trong các cách đó, số cách mà 2 câu đầu đều đúng là số cách chọn 3 câu đúng trong 8 câu còn lại, tức là $C_8^3 = 56$. Xác suất có điều kiện $P = \\frac{56}{252} = \\frac{2}{9}$. Do đó $9P = 2$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TLN",
+    "level": 5,
+    "q": "Có 10 thẻ được đánh số từ 1 đến 10. Rút ngẫu nhiên đồng thời 3 thẻ. Gọi M là số lớn nhất trong 3 thẻ. Biết rằng $M \\ge 8$, gọi $P$ là xác suất để số nhỏ nhất trong 3 thẻ nhỏ hơn hoặc bằng 3. Tính giá trị của $85P$.",
+    "correct": "54",
+    "explain": "Số cách chọn 3 thẻ là $C_{10}^3 = 120$. Số cách chọn sao cho $M \\ge 8$ là tổng số cách trừ đi số cách chọn có $M \\le 7$ ($C_7^3=35$), vậy có $120 - 35 = 85$ cách. Ta tìm phần bù: chọn 3 thẻ sao cho $M \\ge 8$ và min $\\ge 4$. Tức là chọn 3 thẻ từ tập $\\{4,5,6,7,8,9,10\\}$ (7 thẻ) sao cho $M \\ge 8$. Số cách chọn 3 thẻ từ 7 thẻ này là $C_7^3=35$. Ta trừ đi trường hợp $M \\le 7$ (chỉ chọn từ $\\{4,5,6,7\\}$, có $C_4^3=4$ cách). Số cách để min $\\ge 4$ và $M \\ge 8$ là $35 - 4 = 31$. Vậy số cách thỏa mãn $M \\ge 8$ và min $\\le 3$ là $85 - 31 = 54$. Xác suất $P = \\frac{54}{85}$. Suy ra $85P = 54$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TLN",
+    "level": 5,
+    "q": "Một hộp có 3 bi trắng và 3 bi đen. Rút lần lượt từng viên bi không hoàn lại cho đến khi rút hết 3 viên bi trắng thì dừng lại. Biết rằng quá trình rút dừng lại đúng ở lần rút thứ 5, tính xác suất để viên bi rút ra đầu tiên là màu trắng (nhập đáp án dưới dạng số thập phân).",
+    "correct": "0.5",
+    "explain": "Trò chơi dừng ở lần thứ 5 tức là lần thứ 5 là bi trắng và trong 4 lần đầu tiên có đúng 2 bi trắng và 2 bi đen. Số cách xếp 2 bi trắng và 2 bi đen trong 4 lần đầu là $C_4^2 = 6$. Trong 6 cách này, số cách mà viên bi đầu tiên là bi trắng là xếp 1 bi trắng và 2 bi đen vào 3 vị trí còn lại (lần 2, 3, 4), số cách là $C_3^1 = 3$. Xác suất có điều kiện là $P = \\frac{3}{6} = 0.5$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TLN",
+    "level": 3,
+    "q": "Một nhà máy có hai dây chuyền. Dây chuyền 1 sản xuất 60% sản phẩm, dây chuyền 2 sản xuất 40% sản phẩm. Tỉ lệ phế phẩm của dây chuyền 1 là 2%, của dây chuyền 2 là 5%. Chọn ngẫu nhiên một sản phẩm từ nhà máy. Tính xác suất sản phẩm đó là phế phẩm (nhập đáp án dưới dạng số thập phân).",
+    "correct": "0.032",
+    "explain": "Gọi D là biến cố sản phẩm là phế phẩm. Áp dụng công thức xác suất toàn phần: $P(D) = P(DC_1) + P(DC_2) = 0.6 \\times 0.02 + 0.4 \\times 0.05 = 0.012 + 0.020 = 0.032$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TLN",
+    "level": 3,
+    "q": "Tỉ lệ người mắc bệnh hiếm gặp là 1%. Xét nghiệm có độ nhạy 90% (nếu mắc bệnh thì 90% dương tính) và tỉ lệ dương tính giả là 5% (nếu không mắc bệnh thì 5% dương tính). Biết một người có kết quả xét nghiệm dương tính, gọi $P$ là xác suất người đó thực sự mắc bệnh. Tính giá trị của $13P$.",
+    "correct": "2",
+    "explain": "Xác suất mắc bệnh $P(B) = 0.01$. Xác suất dương tính $P(+) = 0.01 \\times 0.9 + 0.99 \\times 0.05 = 0.009 + 0.0495 = 0.0585$. Theo công thức Bayes, xác suất thực sự mắc bệnh là $P(B|+) = \\frac{0.009}{0.0585} = \\frac{90}{585} = \\frac{2}{13}$. Vậy $13P = 2$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TLN",
+    "level": 3,
+    "q": "Có 3 hộp bi. Hộp 1 có 3 Trắng, 2 Đen. Hộp 2 có 4 Trắng, 1 Đen. Hộp 3 có 2 Trắng, 3 Đen. Chọn ngẫu nhiên một hộp (xác suất 1/3) rồi rút 1 viên bi. Tính xác suất rút được bi Trắng (nhập đáp án dưới dạng số thập phân).",
+    "correct": "0.6",
+    "explain": "Theo công thức xác suất toàn phần: $P(T) = \\frac{1}{3}P(T|H_1) + \\frac{1}{3}P(T|H_2) + \\frac{1}{3}P(T|H_3) = \\frac{1}{3}(\\frac{3}{5} + \\frac{4}{5} + \\frac{2}{5}) = \\frac{1}{3} \\times \\frac{9}{5} = \\frac{3}{5} = 0.6$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TLN",
+    "level": 3,
+    "q": "Trong bài toán 3 hộp bi ở trên (Hộp 1: 3T 2Đ, Hộp 2: 4T 1Đ, Hộp 3: 2T 3Đ). Biết rằng viên bi rút ra là màu Trắng, gọi $P$ là xác suất để viên bi đó được rút từ Hộp 2. Tính giá trị của $9P$.",
+    "correct": "4",
+    "explain": "Theo công thức Bayes: $P(H_2|T) = \\frac{P(H_2)P(T|H_2)}{P(T)} = \\frac{(1/3) \\times (4/5)}{0.6} = \\frac{4/15}{9/15} = \\frac{4}{9}$. Vậy $9P = 4$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TLN",
+    "level": 3,
+    "q": "Một sinh viên đi thi trắc nghiệm. Xác suất sinh viên thuộc bài là 0.6 (khi đó khoanh đúng 100%). Nếu không thuộc bài, sinh viên chọn ngẫu nhiên 1 trong 4 đáp án. Tính xác suất để sinh viên trả lời đúng câu hỏi đó (nhập đáp án dưới dạng số thập phân).",
+    "correct": "0.7",
+    "explain": "Xác suất trả lời đúng: $P(\\text{Đúng}) = P(\\text{Thuộc})P(\\text{Đúng}|\\text{Thuộc}) + P(\\text{Không thuộc})P(\\text{Đúng}|\\text{Không thuộc}) = 0.6 \\times 1 + 0.4 \\times 0.25 = 0.6 + 0.1 = 0.7$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TLN",
+    "level": 4,
+    "q": "Hộp I có 4 bi Trắng, 2 bi Đỏ. Hộp II có 3 bi Trắng, 3 bi Đỏ. Lấy ngẫu nhiên 1 viên bi từ Hộp I bỏ sang Hộp II, sau đó rút 1 viên bi từ Hộp II. Gọi $P$ là xác suất viên bi rút ra từ Hộp II là màu Trắng. Tính giá trị của $21P$.",
+    "correct": "11",
+    "explain": "Xác suất lấy bi Trắng từ Hộp I chuyển sang là $4/6 = 2/3$. Khi đó Hộp II có 4 Trắng, 3 Đỏ. Xác suất rút Trắng từ Hộp II lúc này là $4/7$. Xác suất lấy bi Đỏ từ Hộp I là $2/6 = 1/3$. Khi đó Hộp II có 3 Trắng, 4 Đỏ. Xác suất rút Trắng từ Hộp II lúc này là $3/7$. Theo xác suất toàn phần: $P(T_2) = \\frac{2}{3} \\times \\frac{4}{7} + \\frac{1}{3} \\times \\frac{3}{7} = \\frac{8}{21} + \\frac{3}{21} = \\frac{11}{21}$. Vậy $21P = 11$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TLN",
+    "level": 4,
+    "q": "Tiếp tục bài toán chuyển bi ở trên: Biết rằng viên bi rút ra từ Hộp II là màu Trắng, gọi $P$ là xác suất viên bi chuyển từ Hộp I sang Hộp II là màu Đỏ. Tính giá trị của $11P$.",
+    "correct": "3",
+    "explain": "Áp dụng công thức Bayes: $P(\\text{Đỏ}_1|T_2) = \\frac{P(\\text{Đỏ}_1)P(T_2|\\text{Đỏ}_1)}{P(T_2)} = \\frac{(1/3) \\times (3/7)}{11/21} = \\frac{3/21}{11/21} = \\frac{3}{11}$. Vậy $11P = 3$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TLN",
+    "level": 4,
+    "q": "Truyền tín hiệu nhị phân: Xác suất phát tín hiệu 0 là 0.4, phát tín hiệu 1 là 0.6. Do nhiễu, tín hiệu 0 bị nhận sai thành 1 với xác suất 0.1, tín hiệu 1 bị nhận sai thành 0 với xác suất 0.2. Giả sử bên thu nhận được tín hiệu 1, gọi $P$ là xác suất bên phát thực sự đã phát tín hiệu 1. Tính giá trị của $13P$.",
+    "correct": "12",
+    "explain": "Xác suất nhận được tín hiệu 1 là: $P(R_1) = P(S_0)P(R_1|S_0) + P(S_1)P(R_1|S_1) = 0.4 \\times 0.1 + 0.6 \\times 0.8 = 0.04 + 0.48 = 0.52$. Xác suất đã phát tín hiệu 1 theo công thức Bayes là $P(S_1|R_1) = \\frac{0.48}{0.52} = \\frac{48}{52} = \\frac{12}{13}$. Vậy $13P = 12$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TLN",
+    "level": 4,
+    "q": "Nhà máy có 3 phân xưởng A, B, C sản xuất tương ứng 30%, 20%, 50% sản lượng. Tỉ lệ phế phẩm tương ứng là 1%, 2%, 3%. Lấy ngẫu nhiên có hoàn lại 2 sản phẩm từ kho chung. Biết cả 2 sản phẩm đều là phế phẩm, gọi $P$ là xác suất cả 2 sản phẩm này đều do phân xưởng C sản xuất. Tính giá trị của $484P$.",
+    "correct": "225",
+    "explain": "Với 1 sản phẩm ngẫu nhiên, xác suất nó là phế phẩm là $P(D) = 0.3(0.01) + 0.2(0.02) + 0.5(0.03) = 0.022$. Biết 1 sản phẩm là phế phẩm, xác suất nó từ xưởng C là $P(C|D) = \\frac{0.5 \\times 0.03}{0.022} = \\frac{0.015}{0.022} = \\frac{15}{22}$. Vì rút 2 sản phẩm có hoàn lại độc lập, xác suất cả 2 từ C khi biết cả 2 là phế phẩm là $(\\frac{15}{22})^2 = \\frac{225}{484}$. Do đó $484P = 225$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TLN",
+    "level": 4,
+    "q": "Một bệnh nhân thực hiện xét nghiệm y tế 2 lần độc lập. Tỉ lệ mắc bệnh trong cộng đồng là 0.05. Xét nghiệm có độ nhạy 0.9 (nếu mắc bệnh thì dương tính 90%) và tỉ lệ dương tính giả 0.1. Biết cả 2 lần xét nghiệm đều cho kết quả dương tính, tính xác suất bệnh nhân thực sự mắc bệnh (nhập đáp án dưới dạng số thập phân).",
+    "correct": "0.81",
+    "explain": "Xác suất mắc bệnh $P(B) = 0.05$, không mắc bệnh là $0.95$. Cả 2 xét nghiệm đều dương tính (sự kiện $++$): $P(++|B) = 0.9^2 = 0.81$, $P(++|\\overline{B}) = 0.1^2 = 0.01$. Áp dụng Bayes: $P(B|++) = \\frac{0.05 \\times 0.81}{0.05 \\times 0.81 + 0.95 \\times 0.01} = \\frac{0.0405}{0.0405 + 0.0095} = \\frac{0.0405}{0.05} = 0.81$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TLN",
+    "level": 5,
+    "q": "Trong trò chơi có 3 cánh cửa, 1 cửa có ô tô và 2 cửa có con dê. Bạn chọn cửa số 1. Người dẫn chương trình không biết trước bên trong có gì, anh ta mở ngẫu nhiên 1 trong 2 cửa còn lại (cửa 2 hoặc 3). Rất may, anh ta mở trúng cửa có con dê (cửa số 2). Gọi $P$ là xác suất để chiếc ô tô nằm sau cửa số 3. Tính giá trị của $P$ (nhập đáp án dưới dạng số thập phân).",
+    "correct": "0.5",
+    "explain": "Xác suất ban đầu ô tô ở cửa 1, 2, 3 đều là 1/3. Xác suất người dẫn chương trình mở cửa 2 (con dê) khi ô tô ở cửa 1 là 1/2. Xác suất anh ta mở cửa 2 (con dê) khi ô tô ở cửa 2 là 0. Xác suất anh ta mở cửa 2 (con dê) khi ô tô ở cửa 3 là 1/2 (vì anh ta chọn ngẫu nhiên cửa 2 hoặc 3 và cửa 2 chắc chắn là dê). Theo Bayes: $P(Car_3 | Open_2) = \\frac{(1/3)(1/2)}{(1/3)(1/2) + (1/3)(0) + (1/3)(1/2)} = \\frac{1/6}{1/3} = 0.5$. (Đây là biến thể Monty Hall mà người dẫn chọn ngẫu nhiên, việc chuyển cửa không mang lại lợi ích)."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TLN",
+    "level": 5,
+    "q": "Trong hộp có 3 đồng xu: một đồng xu cân đối, một đồng xu có cả 2 mặt đều là Ngửa, một đồng xu lệch có xác suất ra Ngửa là 0.75. Chọn ngẫu nhiên 1 đồng xu từ hộp và tung nó 3 lần. Biết cả 3 lần đều ra mặt Ngửa, gọi $P$ là xác suất đồng xu được chọn là đồng xu 2 mặt Ngửa. Tính giá trị của $99P$.",
+    "correct": "64",
+    "explain": "Xác suất chọn mỗi đồng xu là 1/3. Xác suất tung 3 lần Ngửa nếu là đồng cân đối $P(3N|C) = 1/8$, đồng 2 mặt ngửa $P(3N|H) = 1$, đồng lệch $P(3N|L) = (3/4)^3 = 27/64$. Xác suất toàn phần có 3 lần Ngửa là $P(3N) = \\frac{1}{3}(1/8 + 1 + 27/64) = \\frac{1}{3}(\\frac{8+64+27}{64}) = \\frac{99}{192}$. Xác suất đồng xu đó là 2 mặt Ngửa (theo Bayes): $P(H|3N) = \\frac{(1/3) \\times 1}{99/192} = \\frac{64}{99}$. Vậy $99P = 64$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TLN",
+    "level": 5,
+    "q": "Hộp A có 2 bi Đỏ, 3 bi Trắng. Hộp B có 3 bi Đỏ, 2 bi Trắng. Rút ngẫu nhiên 2 viên bi từ hộp A bỏ vào hộp B. Sau đó, rút ngẫu nhiên 1 viên bi từ hộp B bỏ ngược lại hộp A. Cuối cùng, rút 1 viên bi từ hộp A. Gọi $P$ là xác suất viên bi rút ra cuối cùng là màu Đỏ. Tính giá trị của $140P$.",
+    "correct": "61",
+    "explain": "Số bi Đỏ kỳ vọng ban đầu ở A là 2. Chuyển 2 bi từ A sang B, số bi đỏ kỳ vọng chuyển đi là $2 \\times \\frac{2}{5} = 0.8$. Số bi Đỏ kỳ vọng còn lại ở A là $1.2$. Hộp B nhận 2 bi, tổng cộng B có 7 bi, số bi Đỏ kỳ vọng ở B là $3 + 0.8 = 3.8$. Chuyển 1 bi từ B về A, số bi Đỏ kỳ vọng chuyển về là $1 \\times \\frac{3.8}{7} = \\frac{3.8}{7}$. Tổng số bi Đỏ kỳ vọng lúc này ở A là $1.2 + \\frac{3.8}{7} = \\frac{12.2}{7}$. Hộp A có tổng cộng 4 bi. Xác suất rút 1 bi Đỏ từ A là $\\frac{12.2/7}{4} = \\frac{12.2}{28} = \\frac{122}{280} = \\frac{61}{140}$. Vậy $140P = 61$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TLN",
+    "level": 5,
+    "q": "Ba người A, B, C thường nói thật với xác suất 2/3 và nói dối với xác suất 1/3. Một đồng xu cân đối được tung (sắc suất Ngửa là 1/2). Người A nhìn thấy kết quả và nói nhỏ cho B. Người B nói nhỏ lại cho C. Người C công bố lớn cho mọi người biết: \"Đồng xu ra mặt Ngửa\". Gọi $P$ là xác suất thực sự đồng xu đã ra mặt Ngửa. Tính giá trị của $27P$.",
+    "correct": "14",
+    "explain": "Thông tin truyền qua 3 người độc lập có thể bị đảo ngược. Thông tin chính xác nếu có 0 hoặc 2 người nói dối. Xác suất thông tin được truyền đúng (C công bố khớp với kết quả thực): $P_{đúng} = P(0 \\text{ dối}) + P(2 \\text{ dối}) = (\\frac{2}{3})^3 + C_3^2(\\frac{1}{3})^2(\\frac{2}{3}) = \\frac{8}{27} + \\frac{6}{27} = \\frac{14}{27}$. Xác suất C nói Ngửa khi thực tế là Ngửa là 14/27. Khi thực tế là Sấp, C nói Ngửa (sai) là 13/27. Theo Bayes: $P(\\text{Ngửa thực} | \\text{C nói Ngửa}) = \\frac{(1/2)(14/27)}{(1/2)(14/27) + (1/2)(13/27)} = \\frac{14/27}{27/27} = \\frac{14}{27}$. Vậy $27P = 14$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TLN",
+    "level": 5,
+    "q": "Một chiếc hộp chứa 10 đồng xu, trong đó có $k$ đồng xu có cả 2 mặt đều là Ngửa và $10-k$ đồng xu cân đối bình thường. Số lượng $k$ được lựa chọn hoàn toàn ngẫu nhiên từ tập $\\{0, 1, 2, ..., 10\\}$ với xác suất bằng nhau. Rút ngẫu nhiên một đồng xu từ hộp và tung nó 2 lần, thấy cả 2 lần đều ra mặt Ngửa. Tính xác suất đồng xu được rút ra là đồng xu cân đối bình thường (nhập đáp án dưới dạng số thập phân).",
+    "correct": "0.2",
+    "explain": "Xác suất chọn được đồng xu 2 mặt Ngửa là $\\frac{1}{11} \\sum_{k=0}^{10} \\frac{k}{10} = \\frac{1}{110} \\frac{10 \\times 11}{2} = 0.5$. Vậy trên thực tế, sau khi số $k$ đã được lấy ngẫu nhiên, ta đang đứng trước xác suất 50% bốc được đồng cân đối và 50% bốc được đồng 2 mặt ngửa. Xác suất tung 2 lần ngửa: $P(NN) = 0.5 \\times 1 + 0.5 \\times 0.25 = 0.625$. Xác suất đồng đó là đồng cân đối (Bayes): $P(Cân | NN) = \\frac{0.5 \\times 0.25}{0.625} = \\frac{0.125}{0.625} = 0.2$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "DS",
+    "q": "Cho hai biến cố $A$ và $B$ liên quan đến một phép thử, biết rằng $P(A) = 0.5$, $P(B) = 0.4$ và xác suất của biến cố giao $P(AB) = 0.2$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Xác suất có điều kiện $P(A|B) = 0.5$.",
+      "b": "Hai biến cố $A$ và $B$ là hai biến cố độc lập.",
+      "c": "Xác suất của biến cố hợp $P(A \\cup B) = 0.7$.",
+      "d": "Xác suất để biến cố $A$ không xảy ra, biết rằng biến cố $B$ không xảy ra là $0.5$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": true
+    },
+    "explain": "a) Mức 1: $P(A|B) = \\frac{P(AB)}{P(B)} = \\frac{0.2}{0.4} = 0.5$. b) Mức 2: Vì $P(A)P(B) = 0.5 \\times 0.4 = 0.2 = P(AB)$ nên $A, B$ độc lập. c) Mức 3: $P(A \\cup B) = P(A) + P(B) - P(AB) = 0.5 + 0.4 - 0.2 = 0.7$. d) Mức 4: Xác suất cần tìm là $P(\\overline{A}|\\overline{B}) = \\frac{P(\\overline{A}\\overline{B})}{P(\\overline{B})}$. Ta có $P(\\overline{A}\\overline{B}) = 1 - P(A \\cup B) = 1 - 0.7 = 0.3$. Lại có $P(\\overline{B}) = 1 - 0.4 = 0.6$. Suy ra $P(\\overline{A}|\\overline{B}) = \\frac{0.3}{0.6} = 0.5$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "DS",
+    "q": "Một hộp chứa 5 viên bi xanh và 3 viên bi đỏ có kích thước và khối lượng giống hệt nhau. Người ta rút ngẫu nhiên không hoàn lại lần lượt 2 viên bi từ hộp. Gọi $A$ là biến cố 'Lần thứ nhất rút được viên bi màu xanh', $B$ là biến cố 'Lần thứ hai rút được viên bi màu đỏ'.",
+    "items": {
+      "a": "Xác suất của biến cố $A$ là $P(A) = \\frac{5}{8}$.",
+      "b": "Xác suất có điều kiện $P(B|A) = \\frac{3}{7}$.",
+      "c": "Xác suất để lần đầu rút bi xanh và lần sau rút bi đỏ là $\\frac{15}{56}$.",
+      "d": "Xác suất để lần thứ hai rút được bi xanh, biết rằng lần thứ nhất đã rút được bi đỏ là $\\frac{5}{8}$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) Mức 1: Trong hộp có 8 bi, 5 xanh nên $P(A) = \\frac{5}{8}$. b) Mức 2: Nếu lần 1 rút bi xanh, hộp còn 7 bi (4 xanh, 3 đỏ). Do đó $P(B|A) = \\frac{3}{7}$. c) Mức 3: $P(AB) = P(A)P(B|A) = \\frac{5}{8} \\times \\frac{3}{7} = \\frac{15}{56}$. d) Mức 4: Gọi $D_1$ là lần 1 đỏ, $X_2$ là lần 2 xanh. Khi lần 1 đỏ, hộp còn 7 bi (5 xanh, 2 đỏ). Xác suất cần tìm là $P(X_2|D_1) = \\frac{5}{7} \\neq \\frac{5}{8}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "DS",
+    "q": "Lớp 12A có 40 học sinh, trong đó có 24 nam và 16 nữ. Khảo sát về môn Toán thấy có 10 học sinh nam thích môn Toán và 8 học sinh nữ thích môn Toán. Giáo viên chọn ngẫu nhiên một học sinh. Gọi $A$ là biến cố 'Học sinh được chọn thích môn Toán', $B$ là biến cố 'Học sinh được chọn là nam'.",
+    "items": {
+      "a": "Xác suất để học sinh được chọn là nam là $P(B) = 0.6$.",
+      "b": "Xác suất để học sinh được chọn vừa là nam vừa thích môn Toán là $P(AB) = 0.25$.",
+      "c": "Xác suất học sinh đó thích môn Toán, biết rằng học sinh đó là nam là $\\frac{5}{12}$.",
+      "d": "Biết rằng học sinh được chọn không thích môn Toán, xác suất học sinh đó là nữ bằng $\\frac{5}{11}$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) Mức 1: $P(B) = \\frac{24}{40} = 0.6$. b) Mức 2: Số nam thích Toán là 10. $P(AB) = \\frac{10}{40} = 0.25$. c) Mức 3: $P(A|B) = \\frac{P(AB)}{P(B)} = \\frac{0.25}{0.6} = \\frac{5}{12}$. (Hoặc lấy số nam thích Toán chia số nam: 10/24 = 5/12). d) Mức 4: Số HS không thích Toán là $40 - (10+8) = 22$. Số HS nữ không thích Toán là $16 - 8 = 8$. Xác suất là $P(\\overline{B}|\\overline{A}) = \\frac{8}{22} = \\frac{4}{11} \\neq \\frac{5}{11}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "DS",
+    "q": "Trong một phép thử ngẫu nhiên, cho hai biến cố $A$ và $B$ có các xác suất như sau: $P(A) = 0.6$, $P(B) = 0.3$ và $P(A|B) = 0.4$.",
+    "items": {
+      "a": "Xác suất của biến cố giao $P(AB) = 0.12$.",
+      "b": "Xác suất có điều kiện $P(B|A) = 0.2$.",
+      "c": "Hai biến cố $A$ và $B$ là hai biến cố xung khắc.",
+      "d": "Xác suất để biến cố $A$ không xảy ra, biết rằng biến cố $B$ đã xảy ra là $0.8$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": false
+    },
+    "explain": "a) Mức 1: $P(AB) = P(B)P(A|B) = 0.3 \\times 0.4 = 0.12$. b) Mức 2: $P(B|A) = \\frac{P(AB)}{P(A)} = \\frac{0.12}{0.6} = 0.2$. c) Mức 3: Sai vì $P(AB) = 0.12 \\neq 0$, nên chúng không xung khắc. d) Mức 4: Xác suất cần tìm là $P(\\overline{A}|B) = 1 - P(A|B) = 1 - 0.4 = 0.6 \\neq 0.8$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "DS",
+    "q": "Một chiếc hộp chứa 10 tấm thẻ cùng loại được đánh số từ 1 đến 10. Chọn ngẫu nhiên một tấm thẻ từ hộp. Gọi $A$ là biến cố 'Rút được thẻ mang số chẵn', $B$ là biến cố 'Rút được thẻ mang số chia hết cho 3'.",
+    "items": {
+      "a": "Xác suất của biến cố $A$ là $P(A) = 0.5$.",
+      "b": "Xác suất của biến cố $B$ là $P(B) = 0.3$.",
+      "c": "Xác suất thẻ mang số chia hết cho 3, biết rằng đó là thẻ mang số chẵn là $0.2$.",
+      "d": "Nếu rút ngẫu nhiên cùng lúc 2 thẻ, biết 2 thẻ có tổng là số chẵn, xác suất để cả 2 thẻ cùng là số lẻ bằng $\\frac{4}{9}$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) Mức 1: $A = \\{2,4,6,8,10\\}$ nên $P(A) = \\frac{5}{10} = 0.5$. b) Mức 2: $B = \\{3,6,9\\}$ nên $P(B) = \\frac{3}{10} = 0.3$. c) Mức 3: $AB = \\{6\\} \\Rightarrow P(AB) = 0.1$. Khi đó $P(B|A) = \\frac{P(AB)}{P(A)} = \\frac{0.1}{0.5} = 0.2$. d) Mức 4: Tổng 2 thẻ chẵn khi cùng chẵn ($C_5^2 = 10$ cách) hoặc cùng lẻ ($C_5^2 = 10$ cách). Tổng số cách để tổng chẵn là 20. Số cách để cả 2 cùng lẻ là 10. Xác suất cần tìm là $\\frac{10}{20} = \\frac{1}{2} \\neq \\frac{4}{9}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "DS",
+    "q": "Cho hệ đầy đủ gồm hai biến cố $A_1$ và $A_2$ với $P(A_1) = 0.4$ và $P(A_2) = 0.6$. Gọi $B$ là một biến cố liên quan có các xác suất điều kiện là $P(B|A_1) = 0.2$ và $P(B|A_2) = 0.1$. Xét các khẳng định sau:",
+    "items": {
+      "a": "Xác suất của biến cố giao $A_1 B$ là $P(A_1 B) = 0.08$.",
+      "b": "Xác suất toàn phần của biến cố $B$ là $P(B) = 0.14$.",
+      "c": "Xác suất có điều kiện $P(A_1|B) = \\frac{4}{7}$.",
+      "d": "Xác suất có điều kiện $P(A_2|\\overline{B}) = \\frac{27}{43}$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": true
+    },
+    "explain": "a) Mức 1: $P(A_1 B) = P(A_1)P(B|A_1) = 0.4 \\times 0.2 = 0.08$. b) Mức 2: $P(B) = P(A_1 B) + P(A_2 B) = 0.08 + 0.6 \\times 0.1 = 0.14$. c) Mức 3: Theo công thức Bayes, $P(A_1|B) = \\frac{P(A_1 B)}{P(B)} = \\frac{0.08}{0.14} = \\frac{4}{7}$. d) Mức 4: $P(\\overline{B}) = 1 - 0.14 = 0.86$. Mặt khác $P(A_2 \\overline{B}) = P(A_2)P(\\overline{B}|A_2) = 0.6 \\times (1 - 0.1) = 0.6 \\times 0.9 = 0.54$. Do đó $P(A_2|\\overline{B}) = \\frac{0.54}{0.86} = \\frac{27}{43}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "DS",
+    "q": "Một nhà máy có hai phân xưởng cùng sản xuất một loại sản phẩm. Phân xưởng I sản xuất 60% tổng sản lượng, phân xưởng II sản xuất 40% tổng sản lượng. Tỉ lệ phế phẩm của phân xưởng I là 2%, của phân xưởng II là 3%. Chọn ngẫu nhiên một sản phẩm của nhà máy để kiểm tra.",
+    "items": {
+      "a": "Xác suất để sản phẩm chọn ra do phân xưởng I sản xuất là 0.6.",
+      "b": "Xác suất để sản phẩm chọn ra là phế phẩm của phân xưởng II là 0.012.",
+      "c": "Xác suất để sản phẩm được chọn là phế phẩm bằng 0.024.",
+      "d": "Biết sản phẩm chọn ra là chính phẩm (sản phẩm đạt chuẩn), xác suất để nó do phân xưởng I sản xuất là $\\frac{49}{82}$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) Mức 1: $P(I) = 60\\% = 0.6$. b) Mức 2: $P(II \\cap P) = P(II) \\times P(P|II) = 0.4 \\times 0.03 = 0.012$. c) Mức 3: Áp dụng công thức xác suất toàn phần: $P(P) = P(I)P(P|I) + P(II)P(P|II) = 0.6 \\times 0.02 + 0.4 \\times 0.03 = 0.012 + 0.012 = 0.024$. d) Mức 4: Gọi $C$ là biến cố chính phẩm. $P(C) = 1 - 0.024 = 0.976$. $P(I \\cap C) = 0.6 \\times (1 - 0.02) = 0.6 \\times 0.98 = 0.588$. Áp dụng công thức Bayes: $P(I|C) = \\frac{0.588}{0.976} = \\frac{147}{244} \\neq \\frac{49}{82}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "DS",
+    "q": "Tại một địa phương, tỉ lệ người mắc bệnh X là 0.5%. Một loại xét nghiệm Y có độ chính xác khá cao: đối với người mắc bệnh, xét nghiệm cho kết quả dương tính với tỉ lệ 95%; đối với người không mắc bệnh, xét nghiệm cho kết quả dương tính với tỉ lệ 5% (dương tính giả). Chọn ngẫu nhiên một người tại địa phương đó đi xét nghiệm.",
+    "items": {
+      "a": "Xác suất để người được chọn mắc bệnh X là 0.005.",
+      "b": "Xác suất để người được chọn không mắc bệnh và có kết quả xét nghiệm dương tính là 0.04975.",
+      "c": "Xác suất để người được chọn có kết quả xét nghiệm dương tính là 0.055.",
+      "d": "Biết rằng người được chọn có kết quả xét nghiệm dương tính, xác suất người đó thực sự mắc bệnh X là $\\frac{19}{218}$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    },
+    "explain": "a) Mức 1: Theo giả thiết $P(B) = 0.5\\% = 0.005$. b) Mức 2: $P(\\overline{B} \\cap +) = P(\\overline{B})P(+|\\overline{B}) = (1 - 0.005) \\times 0.05 = 0.995 \\times 0.05 = 0.04975$. c) Mức 3: Áp dụng CT xác suất toàn phần: $P(+) = P(B \\cap +) + P(\\overline{B} \\cap +) = 0.005 \\times 0.95 + 0.04975 = 0.00475 + 0.04975 = 0.0545 \\neq 0.055$. d) Mức 4: Theo công thức Bayes, xác suất cần tìm là $P(B|+) = \\frac{P(B \\cap +)}{P(+)} = \\frac{0.00475}{0.0545} = \\frac{475}{5450} = \\frac{19}{218}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "DS",
+    "q": "Có hai hộp bi: Hộp 1 chứa 3 bi xanh và 2 bi đỏ; Hộp 2 chứa 4 bi xanh và 1 bi đỏ. Lấy ngẫu nhiên 1 viên bi từ Hộp 1 chuyển sang Hộp 2. Sau đó, lấy ngẫu nhiên 1 viên bi từ Hộp 2 ra ngoài.",
+    "items": {
+      "a": "Xác suất lấy được bi xanh ở lần rút từ Hộp 1 là 0.6.",
+      "b": "Biết rằng đã chuyển 1 bi đỏ từ Hộp 1 sang Hộp 2, xác suất để lần rút thứ hai lấy được bi xanh là $\\frac{2}{3}$.",
+      "c": "Xác suất để viên bi lấy ra ở lần thứ hai là bi đỏ bằng $\\frac{7}{30}$.",
+      "d": "Biết viên bi lấy ra ở lần thứ hai là màu đỏ, xác suất viên bi lấy ra ở lần đầu tiên là màu xanh bằng $\\frac{3}{7}$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": true
+    },
+    "explain": "a) Mức 1: $P(X_1) = \\frac{3}{5} = 0.6$. b) Mức 2: Chuyển 1 bi đỏ vào Hộp 2 thì Hộp 2 có 4 xanh, 2 đỏ (tổng 6 bi). $P(X_2|D_1) = \\frac{4}{6} = \\frac{2}{3}$. c) Mức 3: Theo CT xác suất toàn phần: $P(D_2) = P(X_1)P(D_2|X_1) + P(D_1)P(D_2|D_1) = \\frac{3}{5} \\times \\frac{1}{6} + \\frac{2}{5} \\times \\frac{2}{6} = \\frac{3}{30} + \\frac{4}{30} = \\frac{7}{30}$. d) Mức 4: Theo công thức Bayes: $P(X_1|D_2) = \\frac{P(X_1)P(D_2|X_1)}{P(D_2)} = \\frac{3/30}{7/30} = \\frac{3}{7}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "DS",
+    "q": "Trong một bài thi trắc nghiệm, mỗi câu hỏi có 4 phương án trả lời và chỉ có 1 phương án đúng. Một học sinh làm bài, xác suất học sinh đó biết làm (và chọn đúng 100%) là 0.7. Nếu không biết làm, học sinh đó sẽ chọn ngẫu nhiên một phương án (xác suất chọn trúng là $\\frac{1}{4}$).",
+    "items": {
+      "a": "Xác suất để học sinh đó không biết làm câu hỏi là 0.3.",
+      "b": "Xác suất để học sinh đó không biết làm và khoanh sai câu hỏi là 0.225.",
+      "c": "Xác suất để học sinh đó trả lời đúng câu hỏi là 0.775.",
+      "d": "Biết học sinh trả lời đúng câu hỏi, xác suất học sinh đó thực sự biết làm là $\\frac{27}{31}$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) Mức 1: $P(\\text{Không biết}) = 1 - 0.7 = 0.3$. b) Mức 2: $P(\\text{Không biết} \\cap \\text{Sai}) = P(\\text{Không biết}) \\times P(\\text{Sai}|\\text{Không biết}) = 0.3 \\times (1 - 0.25) = 0.3 \\times 0.75 = 0.225$. c) Mức 3: $P(\\text{Đúng}) = P(\\text{Biết}) \\times P(\\text{Đúng}|\\text{Biết}) + P(\\text{Không biết}) \\times P(\\text{Đúng}|\\text{Không biết}) = 0.7 \\times 1 + 0.3 \\times 0.25 = 0.7 + 0.075 = 0.775$. d) Mức 4: Theo công thức Bayes: $P(\\text{Biết}|\\text{Đúng}) = \\frac{P(\\text{Biết} \\cap \\text{Đúng})}{P(\\text{Đúng})} = \\frac{0.7}{0.775} = \\frac{700}{775} = \\frac{28}{31} \\neq \\frac{27}{31}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hai biến cố $A$ và $B$ bất kì, với $P(B) > 0$. Công thức nào dưới đây là công thức tính xác suất có điều kiện của biến cố $A$ với điều kiện biến cố $B$ đã xảy ra?",
+    "choices": [
+      "A. $P(A|B) = \\\\frac{P(AB)}{P(A)}$.",
+      "B. $P(A|B) = \\\\frac{P(AB)}{P(B)}$.",
+      "C. $P(A|B) = \\\\frac{P(A)}{P(B)}$.",
+      "D. $P(A|B) = P(A) + P(B) - P(AB)$."
+    ],
+    "correct": 1,
+    "explain": "Theo định nghĩa, xác suất có điều kiện của biến cố $A$ với điều kiện biến cố $B$ đã xảy ra là $P(A|B) = \\\\frac{P(AB)}{P(B)}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 1,
+    "q": "Công thức nhân xác suất đối với hai biến cố $A$ và $B$ bất kì có $P(A) > 0$ là:",
+    "choices": [
+      "A. $P(AB) = P(A) \\\\cdot P(B|A)$.",
+      "B. $P(AB) = P(A) \\\\cdot P(B)$.",
+      "C. $P(AB) = P(A) + P(B|A)$.",
+      "D. $P(AB) = P(B) \\\\cdot P(A|B)$."
+    ],
+    "correct": 0,
+    "explain": "Từ công thức xác suất có điều kiện $P(B|A) = \\\\frac{P(AB)}{P(A)}$, suy ra công thức nhân xác suất $P(AB) = P(A) \\\\cdot P(B|A)$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 1,
+    "q": "Hai biến cố $A$ và $B$ được gọi là độc lập nếu thỏa mãn điều kiện nào sau đây?",
+    "choices": [
+      "A. $P(AB) = P(A) + P(B)$.",
+      "B. $P(A|B) = P(A)$ (với $P(B) > 0$).",
+      "C. $P(A|B) = P(B)$ (với $P(B) > 0$).",
+      "D. $P(A \\\\cup B) = P(A) \\\\cdot P(B)$."
+    ],
+    "correct": 1,
+    "explain": "Hai biến cố $A$ và $B$ độc lập khi sự xảy ra của biến cố này không làm thay đổi xác suất xảy ra của biến cố kia, tức là $P(A|B) = P(A)$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hai biến cố $A$ và $B$ thỏa mãn $P(B) = 0.4$ và $P(AB) = 0.12$. Khi đó xác suất có điều kiện $P(A|B)$ bằng:",
+    "choices": [
+      "A. $0.3$.",
+      "B. $0.48$.",
+      "C. $0.28$.",
+      "D. $0.52$."
+    ],
+    "correct": 0,
+    "explain": "Áp dụng công thức: $P(A|B) = \\\\frac{P(AB)}{P(B)} = \\\\frac{0.12}{0.4} = 0.3$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hai biến cố $A$ và $B$ thỏa mãn $P(A) = 0.5$ và $P(B|A) = 0.6$. Xác suất của biến cố giao $AB$ là:",
+    "choices": [
+      "A. $0.1$.",
+      "B. $0.3$.",
+      "C. $0.83$.",
+      "D. $1.1$."
+    ],
+    "correct": 1,
+    "explain": "Áp dụng công thức nhân xác suất: $P(AB) = P(A) \\\\cdot P(B|A) = 0.5 \\\\times 0.6 = 0.3$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hai biến cố độc lập $A$ và $B$ có $P(A) = 0.5$ và $P(B) = 0.4$. Xác suất của biến cố $AB$ bằng:",
+    "choices": [
+      "A. $0.1$.",
+      "B. $0.2$.",
+      "C. $0.9$.",
+      "D. $0.45$."
+    ],
+    "correct": 1,
+    "explain": "Vì $A$ và $B$ là hai biến cố độc lập nên $P(AB) = P(A) \\\\cdot P(B) = 0.5 \\\\times 0.4 = 0.2$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 1,
+    "q": "Nếu $A$ và $B$ là hai biến cố độc lập với $P(B) = 0.6$, thì giá trị của $P(B|A)$ bằng bao nhiêu?",
+    "choices": [
+      "A. $0.6$.",
+      "B. $0.4$.",
+      "C. $1.0$.",
+      "D. Không đủ dữ kiện."
+    ],
+    "correct": 0,
+    "explain": "Vì $A$ và $B$ độc lập nên sự xảy ra của $A$ không ảnh hưởng đến xác suất của $B$, do đó $P(B|A) = P(B) = 0.6$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 1,
+    "q": "Biết $P(A) = 0.2$, $P(B) = 0.3$ và $P(A|B) = 0.4$. Tính xác suất $P(AB)$.",
+    "choices": [
+      "A. $0.08$.",
+      "B. $0.12$.",
+      "C. $0.06$.",
+      "D. $0.7$."
+    ],
+    "correct": 1,
+    "explain": "Áp dụng công thức nhân xác suất: $P(AB) = P(B) \\\\cdot P(A|B) = 0.3 \\\\times 0.4 = 0.12$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 1,
+    "q": "Rút ngẫu nhiên lần lượt không hoàn lại 2 thẻ từ một hộp chứa 5 thẻ được đánh số từ 1 đến 5. Gọi $A$ là biến cố 'Lần thứ nhất rút được thẻ số 1', $B$ là biến cố 'Lần thứ hai rút được thẻ số 2'. Xác suất $P(B|A)$ bằng:",
+    "choices": [
+      "A. $\\\\frac{1}{5}$.",
+      "B. $\\\\frac{1}{4}$.",
+      "C. $\\\\frac{1}{20}$.",
+      "D. $\\\\frac{2}{5}$."
+    ],
+    "correct": 1,
+    "explain": "Khi biến cố $A$ đã xảy ra (thẻ số 1 đã được rút và không trả lại), trong hộp còn lại 4 thẻ (trong đó có 1 thẻ số 2). Do đó xác suất rút được thẻ số 2 ở lần thứ hai là $\\\\frac{1}{4}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 1,
+    "q": "Trong một phép thử, cho hai biến cố $A, B$ thỏa mãn $P(AB) = 0.25$ và $P(B|A) = 0.5$. Giá trị của $P(A)$ là:",
+    "choices": [
+      "A. $0.125$.",
+      "B. $0.75$.",
+      "C. $0.5$.",
+      "D. $0.2$."
+    ],
+    "correct": 2,
+    "explain": "Ta có $P(B|A) = \\\\frac{P(AB)}{P(A)} \\\\Rightarrow P(A) = \\\\frac{P(AB)}{P(B|A)} = \\\\frac{0.25}{0.5} = 0.5$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hai biến cố $A, B$ thỏa mãn $P(A) = 0.4$, $P(B) = 0.3$, $P(A|B) = 0.25$. Khi đó $P(B|A)$ bằng:",
+    "choices": [
+      "A. $0.1875$.",
+      "B. $0.48$.",
+      "C. $0.333$ (làm tròn).",
+      "D. $0.95$."
+    ],
+    "correct": 0,
+    "explain": "Ta có $P(AB) = P(B) \\\\cdot P(A|B) = 0.3 \\\\times 0.25 = 0.075$. Khi đó $P(B|A) = \\\\frac{P(AB)}{P(A)} = \\\\frac{0.075}{0.4} = 0.1875$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hai biến cố $A$ và $B$ thỏa mãn $P(A) = 0.5$, $P(B) = 0.6$, và $P(A|B) = 0.3$. Xác suất của biến cố hợp $A \\\\cup B$ là:",
+    "choices": [
+      "A. $0.8$.",
+      "B. $0.92$.",
+      "C. $0.62$.",
+      "D. $0.18$."
+    ],
+    "correct": 1,
+    "explain": "Ta có $P(AB) = P(B) \\\\cdot P(A|B) = 0.6 \\\\times 0.3 = 0.18$. Theo công thức cộng xác suất: $P(A \\\\cup B) = P(A) + P(B) - P(AB) = 0.5 + 0.6 - 0.18 = 0.92$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 2,
+    "q": "Lớp 10A có 45 học sinh, trong đó có 20 học sinh nam và 25 học sinh nữ. Trong bài kiểm tra Toán, có 22 học sinh đạt điểm giỏi (gồm 10 nam và 12 nữ). Chọn ngẫu nhiên một học sinh. Xác suất học sinh đó là nam, biết rằng học sinh đó đạt điểm giỏi là:",
+    "choices": [
+      "A. $\\\\frac{5}{11}$.",
+      "B. $\\\\frac{4}{9}$.",
+      "C. $\\\\frac{1}{2}$.",
+      "D. $\\\\frac{12}{25}$."
+    ],
+    "correct": 0,
+    "explain": "Gọi $A$ là biến cố 'Học sinh đạt điểm giỏi', $B$ là biến cố 'Học sinh nam'. Số học sinh đạt điểm giỏi là 22, trong đó số học sinh nam giỏi là 10. Xác suất cần tìm là $P(B|A) = \\\\frac{n(BA)}{n(A)} = \\\\frac{10}{22} = \\\\frac{5}{11}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 2,
+    "q": "Một hộp chứa 4 viên bi xanh, 1 viên bi đỏ và 2 viên bi vàng (cùng kích thước). Lấy ngẫu nhiên 2 viên bi từ hộp. Xác suất 2 viên bi lấy ra đều có màu vàng, biết rằng chúng có cùng màu là:",
+    "choices": [
+      "A. $\\\\frac{6}{7}$.",
+      "B. $\\\\frac{1}{21}$.",
+      "C. $\\\\frac{1}{7}$.",
+      "D. $\\\\frac{20}{21}$."
+    ],
+    "correct": 2,
+    "explain": "Gọi $A$ là biến cố '2 bi cùng màu', $B$ là biến cố '2 bi màu vàng'. Biến cố $A$ gồm 2 bi xanh hoặc 2 bi vàng (không thể 2 bi đỏ). Số cách lấy 2 bi cùng màu: $C_4^2 + C_2^2 = 6 + 1 = 7$. Số cách lấy 2 bi vàng: $C_2^2 = 1$. Xác suất cần tìm $P(B|A) = \\\\frac{n(B \\\\cap A)}{n(A)} = \\\\frac{1}{7}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hai biến cố $A, B$ thỏa mãn $P(A \\\\cup B) = 0.8$, $P(A) = 0.5$ và $P(B) = 0.4$. Xác suất có điều kiện $P(A|B)$ bằng:",
+    "choices": [
+      "A. $0.25$.",
+      "B. $0.1$.",
+      "C. $0.5$."
+    ],
+    "correct": 0,
+    "explain": "Từ công thức cộng: $P(AB) = P(A) + P(B) - P(A \\\\cup B) = 0.5 + 0.4 - 0.8 = 0.1$. Khi đó $P(A|B) = \\\\frac{P(AB)}{P(B)} = \\\\frac{0.1}{0.4} = 0.25$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hai biến cố $A$ và $B$ có $P(A) = 0.2$, $P(B) = 0.26$, và $P(B|A) = 0.7$. Xác suất $P(A|B)$ là:",
+    "choices": [
+      "A. $\\\\frac{7}{13}$.",
+      "B. $\\\\frac{6}{13}$.",
+      "C. $\\\\frac{4}{13}$.",
+      "D. $\\\\frac{9}{13}$."
+    ],
+    "correct": 0,
+    "explain": "Ta có $P(AB) = P(A) \\\\cdot P(B|A) = 0.2 \\\\times 0.7 = 0.14$. Do đó $P(A|B) = \\\\frac{P(AB)}{P(B)} = \\\\frac{0.14}{0.26} = \\\\frac{7}{13}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 2,
+    "q": "Một cuộc thi khoa học có 36 bộ câu hỏi, trong đó 20 bộ về tự nhiên và 16 bộ về xã hội. Bạn An chọn ngẫu nhiên 1 bộ (không hoàn lại), sau đó Bình chọn ngẫu nhiên 1 bộ. Xác suất Bình chọn được bộ câu hỏi về xã hội, biết rằng An đã chọn bộ câu hỏi về tự nhiên là:",
+    "choices": [
+      "A. $\\\\frac{16}{36}$.",
+      "B. $\\\\frac{16}{35}$.",
+      "C. $\\\\frac{15}{35}$.",
+      "D. $\\\\frac{20}{35}$."
+    ],
+    "correct": 1,
+    "explain": "Biết An đã chọn 1 bộ tự nhiên, số bộ câu hỏi còn lại là $36 - 1 = 35$ bộ, trong đó số bộ xã hội vẫn nguyên là 16. Do đó xác suất Bình chọn bộ xã hội là $\\\\frac{16}{35}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 2,
+    "q": "Để thử nghiệm tác dụng của thuốc X, tiến hành trên 2400 người bệnh, kết quả có 1600 người khỏi bệnh và 800 người không khỏi. Chọn ngẫu nhiên 1 người tham gia thử nghiệm thuốc X. Xác suất để người đó khỏi bệnh là:",
+    "choices": [
+      "A. $\\\\frac{1}{3}$.",
+      "B. $\\\\frac{2}{3}$.",
+      "C. $\\\\frac{1}{2}$.",
+      "D. $\\\\frac{3}{4}$."
+    ],
+    "correct": 1,
+    "explain": "Xác suất người đó khỏi bệnh, biết rằng người đó dùng thuốc X là: $P(\\\\text{Khỏi} | \\\\text{Thuốc X}) = \\\\frac{1600}{2400} = \\\\frac{2}{3}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hai biến cố $A, B$ thỏa mãn $P(B) = 0.8$, $P(A|B) = 0.7$ và $P(A|\\\\overline{B}) = 0.45$. Tính xác suất của biến cố giao $AB$.",
+    "choices": [
+      "A. $0.56$.",
+      "B. $0.15$.",
+      "C. $0.09$.",
+      "D. $0.65$."
+    ],
+    "correct": 0,
+    "explain": "Áp dụng công thức nhân xác suất: $P(AB) = P(B) \\\\cdot P(A|B) = 0.8 \\\\times 0.7 = 0.56$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 2,
+    "q": "Trong một lớp học nhạc có 60% là học sinh nữ. Biết rằng có 20% học sinh nữ học Violon. Chọn ngẫu nhiên một học sinh. Xác suất để học sinh được chọn là nữ và có học Violon bằng:",
+    "choices": [
+      "A. $0.12$.",
+      "B. $0.20$.",
+      "C. $0.80$.",
+      "D. $0.33$."
+    ],
+    "correct": 0,
+    "explain": "Gọi $A$ là biến cố 'Học sinh nữ', $B$ là biến cố 'Học Violon'. Ta có $P(A) = 0.6$, $P(B|A) = 0.2$. Cần tính $P(AB) = P(A)P(B|A) = 0.6 \\\\times 0.2 = 0.12$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 1,
+    "q": "Gọi $A$ và $\\\\overline{A}$ là hai biến cố đối nhau, $B$ là một biến cố bất kì. Công thức xác suất toàn phần đối với biến cố $B$ là:",
+    "choices": [
+      "A. $P(B) = P(A)P(B|A) + P(\\\\overline{A})P(B|\\\\overline{A})$.",
+      "B. $P(B) = P(A)P(A|B) + P(\\\\overline{A})P(\\\\overline{A}|B)$.",
+      "C. $P(B) = P(A)P(B|A) - P(\\\\overline{A})P(B|\\\\overline{A})$.",
+      "D. $P(B) = P(B)P(B|A) + P(B)P(B|\\\\overline{A})$."
+    ],
+    "correct": 0,
+    "explain": "Theo công thức xác suất toàn phần cho 2 biến cố xung khắc và vét cạn $A$ và $\\\\overline{A}$, ta có $P(B) = P(A)P(B|A) + P(\\\\overline{A})P(B|\\\\overline{A})$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 1,
+    "q": "Công thức Bayes dùng để tính xác suất có điều kiện $P(A|B)$ dựa trên các xác suất đã biết là:",
+    "choices": [
+      "A. $P(A|B) = \\\\frac{P(B) P(B|A)}{P(A)}$.",
+      "B. $P(A|B) = \\\\frac{P(A) P(B|A)}{P(B)}$.",
+      "C. $P(A|B) = \\\\frac{P(B) P(A|B)}{P(A)}$.",
+      "D. $P(A|B) = P(A) P(B|A) + P(B)$."
+    ],
+    "correct": 1,
+    "explain": "Theo định lý Bayes, $P(A|B) = \\\\frac{P(AB)}{P(B)} = \\\\frac{P(A) P(B|A)}{P(B)}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 1,
+    "q": "Biết $P(A) = 0.3$, $P(B|A) = 0.6$ và $P(B|\\\\overline{A}) = 0.2$. Xác suất của biến cố $B$ là:",
+    "choices": [
+      "A. $0.32$.",
+      "B. $0.18$.",
+      "C. $0.14$.",
+      "D. $0.8$."
+    ],
+    "correct": 0,
+    "explain": "Ta có $P(\\\\overline{A}) = 1 - P(A) = 0.7$. Áp dụng CT xác suất toàn phần: $P(B) = P(A)P(B|A) + P(\\\\overline{A})P(B|\\\\overline{A}) = 0.3 \\\\times 0.6 + 0.7 \\\\times 0.2 = 0.18 + 0.14 = 0.32$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 1,
+    "q": "Một nhà máy có hai phân xưởng. Phân xưởng I sản xuất 60% sản phẩm, phân xưởng II sản xuất 40% sản phẩm. Tỉ lệ phế phẩm của hai phân xưởng lần lượt là 5% và 2%. Chọn ngẫu nhiên 1 sản phẩm của nhà máy. Xác suất sản phẩm đó là phế phẩm bằng:",
+    "choices": [
+      "A. $0.038$.",
+      "B. $0.030$.",
+      "C. $0.07$.",
+      "D. $0.05$."
+    ],
+    "correct": 0,
+    "explain": "Gọi $A_1, A_2$ là bc sản phẩm thuộc PX 1, 2. $P(A_1)=0.6, P(A_2)=0.4$. Gọi $B$ là bc phế phẩm. $P(B) = P(A_1)P(B|A_1) + P(A_2)P(B|A_2) = 0.6 \\\\times 0.05 + 0.4 \\\\times 0.02 = 0.030 + 0.008 = 0.038$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hệ đầy đủ các biến cố $A_1, A_2$ và biến cố $B$. Biết $P(A_1)=0.4, P(B|A_1)=0.05$ và $P(B|A_2)=0.02$. Xác suất $P(B)$ bằng:",
+    "choices": [
+      "A. $0.07$.",
+      "B. $0.032$.",
+      "C. $0.028$.",
+      "D. $0.04$."
+    ],
+    "correct": 1,
+    "explain": "Ta có $P(A_2) = 1 - 0.4 = 0.6$. $P(B) = P(A_1)P(B|A_1) + P(A_2)P(B|A_2) = 0.4 \\\\times 0.05 + 0.6 \\\\times 0.02 = 0.020 + 0.012 = 0.032$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 1,
+    "q": "Biết $P(A) = 0.6$, $P(B|A) = 0.8$ và $P(B|\\\\overline{A}) = 0.4$. Tính xác suất của biến cố $B$.",
+    "choices": [
+      "A. $0.48$.",
+      "B. $0.16$.",
+      "C. $0.64$.",
+      "D. $0.8$."
+    ],
+    "correct": 2,
+    "explain": "Ta có $P(\\\\overline{A}) = 1 - 0.6 = 0.4$. Theo CT xác suất toàn phần: $P(B) = 0.6 \\\\times 0.8 + 0.4 \\\\times 0.4 = 0.48 + 0.16 = 0.64$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 1,
+    "q": "Một hệ đầy đủ gồm ba biến cố $A_1, A_2, A_3$ với $P(A_1)=0.2, P(A_2)=0.3, P(A_3)=0.5$. Một biến cố $B$ có các xác suất điều kiện là $P(B|A_1)=0.01, P(B|A_2)=0.02, P(B|A_3)=0.03$. Xác suất $P(B)$ là:",
+    "choices": [
+      "A. $0.023$.",
+      "B. $0.06$.",
+      "C. $0.015$.",
+      "D. $0.03$."
+    ],
+    "correct": 0,
+    "explain": "Áp dụng CT xác suất toàn phần: $P(B) = 0.2 \\\\times 0.01 + 0.3 \\\\times 0.02 + 0.5 \\\\times 0.03 = 0.002 + 0.006 + 0.015 = 0.023$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 1,
+    "q": "Để tính $P(A_1|B)$ bằng công thức Bayes, ta cần biết giá trị nào ở mẫu số?",
+    "choices": [
+      "A. $P(A_1)$.",
+      "B. $P(B|A_1)$.",
+      "C. $P(B)$.",
+      "D. $P(A_1 B)$."
+    ],
+    "correct": 2,
+    "explain": "Theo công thức Bayes, $P(A_1|B) = \\\\frac{P(A_1)P(B|A_1)}{P(B)}$, do đó mẫu số là $P(B)$ (xác suất toàn phần của $B$)."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 1,
+    "q": "Giả sử $P(A_1) = 0.4$, $P(B|A_1) = 0.2$, và xác suất toàn phần $P(B) = 0.1$. Giá trị của $P(A_1|B)$ bằng:",
+    "choices": [
+      "A. $0.08$.",
+      "B. $0.8$.",
+      "C. $0.5$.",
+      "D. $0.25$."
+    ],
+    "correct": 1,
+    "explain": "Áp dụng công thức Bayes: $P(A_1|B) = \\\\frac{P(A_1)P(B|A_1)}{P(B)} = \\\\frac{0.4 \\\\times 0.2}{0.1} = \\\\frac{0.08}{0.1} = 0.8$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 1,
+    "q": "Có hai hộp bi. Chọn ngẫu nhiên một hộp (xác suất chọn mỗi hộp là $0.5$), sau đó rút ngẫu nhiên một viên bi. Biết xác suất rút được bi đỏ từ hộp I là $0.6$ và từ hộp II là $0.4$. Xác suất rút được bi đỏ chung là:",
+    "choices": [
+      "A. $0.5$.",
+      "B. $1.0$.",
+      "C. $0.24$.",
+      "D. $0.48$."
+    ],
+    "correct": 0,
+    "explain": "$P(D) = P(H1)P(D|H1) + P(H2)P(D|H2) = 0.5 \\\\times 0.6 + 0.5 \\\\times 0.4 = 0.3 + 0.2 = 0.5$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 2,
+    "q": "Trong một đợt kiểm tra sức khoẻ, tỉ lệ mắc bệnh X là 0.2%. Xét nghiệm Y cho kết quả dương tính đối với người mắc bệnh X là 100% và đối với người không mắc bệnh là 6%. Chọn ngẫu nhiên 1 người, xác suất người đó có phản ứng dương tính là:",
+    "choices": [
+      "A. $0.002$.",
+      "B. $0.06188$.",
+      "C. $0.05988$.",
+      "D. $0.102$."
+    ],
+    "correct": 1,
+    "explain": "Gọi $A$ là mắc bệnh, $B$ là dương tính. $P(A)=0.002, P(\\\\overline{A})=0.998$. $P(B) = P(A)P(B|A) + P(\\\\overline{A})P(B|\\\\overline{A}) = 0.002 \\\\times 1 + 0.998 \\\\times 0.06 = 0.002 + 0.05988 = 0.06188$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 2,
+    "q": "Tiếp tục bài toán trước: Biết người đó có phản ứng dương tính, xác suất người đó thực sự mắc bệnh X (làm tròn đến hai chữ số thập phân) là:",
+    "choices": [
+      "A. $0.03$.",
+      "B. $0.06$.",
+      "C. $0.50$.",
+      "D. $0.94$."
+    ],
+    "correct": 0,
+    "explain": "Theo công thức Bayes: $P(A|B) = \\\\frac{P(A)P(B|A)}{P(B)} = \\\\frac{0.002}{0.06188} \\\\approx 0.0323 \\\\approx 0.03$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 2,
+    "q": "Một thư viện có hai phòng riêng biệt A và B. Xác suất chọn được sách Khoa học tự nhiên từ phòng A là 0.25 và từ phòng B là 0.5. Một người chọn ngẫu nhiên một phòng (xác suất bằng nhau) rồi lấy 1 quyển sách. Biết quyển sách đó là sách Khoa học tự nhiên, xác suất quyển sách đó được lấy từ phòng A là:",
+    "choices": [
+      "A. $\\\\frac{1}{2}$.",
+      "B. $\\\\frac{1}{3}$.",
+      "C. $\\\\frac{1}{4}$.",
+      "D. $\\\\frac{2}{3}$."
+    ],
+    "correct": 1,
+    "explain": "Gọi $A, B$ là biến cố chọn phòng A, B ($P(A)=P(B)=0.5$). Gọi $K$ là chọn sách KHTN. $P(K) = 0.5 \\\\times 0.25 + 0.5 \\\\times 0.5 = 0.125 + 0.25 = 0.375$. $P(A|K) = \\\\frac{0.125}{0.375} = \\\\frac{1}{3}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 2,
+    "q": "Có hai chuồng thỏ. Chuồng I có 12 con thỏ trắng và 13 con thỏ nâu. Chuồng II có 14 con thỏ trắng và 11 con thỏ nâu. Tung một con xúc xắc cân đối, nếu xuất hiện mặt 6 chấm chọn chuồng I, trái lại chọn chuồng II. Chọn ngẫu nhiên 1 con thỏ, xác suất bắt được thỏ trắng là:",
+    "choices": [
+      "A. $\\\\frac{12}{25}$.",
+      "B. $\\\\frac{14}{25}$.",
+      "C. $\\\\frac{41}{75}$.",
+      "D. $\\\\frac{26}{50}$."
+    ],
+    "correct": 2,
+    "explain": "$P(I) = \\\\frac{1}{6}, P(II) = \\\\frac{5}{6}$. Xác suất lấy thỏ trắng là $P(T) = \\\\frac{1}{6} \\\\times \\\\frac{12}{25} + \\\\frac{5}{6} \\\\times \\\\frac{14}{25} = \\\\frac{12 + 70}{150} = \\\\frac{82}{150} = \\\\frac{41}{75}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 2,
+    "q": "Tiếp tục bài toán bắt thỏ: Giả sử bắt được con thỏ trắng, tính xác suất để đó là con thỏ của chuồng II.",
+    "choices": [
+      "A. $\\\\frac{35}{41}$.",
+      "B. $\\\\frac{6}{41}$.",
+      "C. $\\\\frac{1}{6}$.",
+      "D. $\\\\frac{5}{6}$."
+    ],
+    "correct": 0,
+    "explain": "Áp dụng công thức Bayes: $P(II|T) = \\\\frac{P(II)P(T|II)}{P(T)} = \\\\frac{\\\\frac{5}{6} \\\\times \\\\frac{14}{25}}{\\\\frac{41}{75}} = \\\\frac{\\\\frac{70}{150}}{\\\\frac{82}{150}} = \\\\frac{70}{82} = \\\\frac{35}{41}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 2,
+    "q": "Một học sinh thi trắc nghiệm, xác suất biết đáp án là 0.6, xác suất không biết (phải đánh lụi 1 trong 4 đáp án) là 0.4. Xác suất để câu trả lời của học sinh này đúng là:",
+    "choices": [
+      "A. $0.6$.",
+      "B. $0.7$.",
+      "C. $0.1$.",
+      "D. $0.85$."
+    ],
+    "correct": 1,
+    "explain": "$P(\\\\text{Đúng}) = P(\\\\text{Biết}) \\\\times 1 + P(\\\\text{Không biết}) \\\\times 0.25 = 0.6 \\\\times 1 + 0.4 \\\\times 0.25 = 0.6 + 0.1 = 0.7$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 2,
+    "q": "Trong bài toán đánh trắc nghiệm trên, biết câu trả lời là đúng, xác suất để đó là câu học sinh thực sự biết đáp án là:",
+    "choices": [
+      "A. $\\\\frac{6}{7}$.",
+      "B. $\\\\frac{1}{7}$.",
+      "C. $0.6$."
+    ],
+    "correct": 0,
+    "explain": "Theo công thức Bayes: $P(\\\\text{Biết} | \\\\text{Đúng}) = \\\\frac{P(\\\\text{Biết} \\\\cap \\\\text{Đúng})}{P(\\\\text{Đúng})} = \\\\frac{0.6}{0.7} = \\\\frac{6}{7}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 2,
+    "q": "Xác suất bắn trúng đích của xạ thủ hạng I là 0.8 và của xạ thủ hạng II là 0.7. Chọn ngẫu nhiên 1 xạ thủ từ nhóm gồm 4 xạ thủ hạng I và 6 xạ thủ hạng II. Người đó bắn 1 viên trúng đích, xác suất đó là xạ thủ hạng I là:",
+    "choices": [
+      "A. $\\\\frac{16}{37}$.",
+      "B. $\\\\frac{21}{37}$.",
+      "C. $\\\\frac{16}{74}$.",
+      "D. $\\\\frac{2}{5}$."
+    ],
+    "correct": 0,
+    "explain": "$P(I)=0.4, P(II)=0.6$. $P(T) = 0.4 \\\\times 0.8 + 0.6 \\\\times 0.7 = 0.32 + 0.42 = 0.74$. Xác suất Bayes: $P(I|T) = \\\\frac{0.32}{0.74} = \\\\frac{16}{37}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 2,
+    "q": "Dự báo thời tiết cho biết xác suất ngày mai mưa là 0.2. Nếu mưa, ông A đi làm bằng xe buýt với xác suất 0.9. Nếu không mưa, ông A đi xe buýt với xác suất 0.3. Xác suất ngày mai ông A đi làm bằng xe buýt là:",
+    "choices": [
+      "A. $0.42$.",
+      "B. $0.18$.",
+      "C. $0.24$.",
+      "D. $0.5$."
+    ],
+    "correct": 0,
+    "explain": "$P(\\\\text{Buýt}) = P(\\\\text{Mưa})P(\\\\text{Buýt}|\\\\text{Mưa}) + P(\\\\text{Không Mưa})P(\\\\text{Buýt}|\\\\text{Không Mưa}) = 0.2 \\\\times 0.9 + 0.8 \\\\times 0.3 = 0.18 + 0.24 = 0.42$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Xác suất có điều kiện",
+    "type": "TN",
+    "level": 2,
+    "q": "Thùng I có 5 chính phẩm, 4 phế phẩm. Thùng II có 6 chính phẩm, 8 phế phẩm. Rút ngẫu nhiên 1 sản phẩm từ thùng I chuyển sang thùng II. Sau đó lấy 1 sản phẩm từ thùng II. Xác suất lấy được chính phẩm từ thùng II là:",
+    "choices": [
+      "A. $\\\\frac{59}{135}$.",
+      "B. $\\\\frac{35}{135}$.",
+      "C. $\\\\frac{24}{135}$.",
+      "D. $\\\\frac{11}{23}$."
+    ],
+    "correct": 0,
+    "explain": "Xác suất chuyển chính phẩm $P(C_I) = \\\\frac{5}{9}$, khi đó hộp II có 7 C, 8 P $\\\\Rightarrow P(C_{II}|C_I) = \\\\frac{7}{15}$. Xác suất chuyển phế phẩm $P(P_I) = \\\\frac{4}{9}$, hộp II có 6 C, 9 P $\\\\Rightarrow P(C_{II}|P_I) = \\\\frac{6}{15}$. Xác suất lấy được chính phẩm ở hộp II: $P = \\\\frac{5}{9} \\\\times \\\\frac{7}{15} + \\\\frac{4}{9} \\\\times \\\\frac{6}{15} = \\\\frac{35 + 24}{135} = \\\\frac{59}{135}$."
+  },
+  {
+    "grade": "12",
     "chapter": "Phương pháp tọa độ trong không gian",
     "type": "TLN",
     "level": 3,
