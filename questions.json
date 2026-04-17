@@ -32,5 +32,2520 @@
     "grade": "12",
     "chapter": "Vectơ và hệ trục tọa độ trong không gian",
     "type": "TLN", "level": 5, "q": "Câu TLN mức 5 mồi", "correct": "1"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = f(x)$ có đạo hàm trên khoảng $(a; b)$. Phát biểu nào dưới đây là đúng?",
+    "choices": [
+      "A. Nếu $f'(x) > 0$ với mọi $x \\in (a; b)$ thì hàm số $y = f(x)$ đồng biến trên khoảng $(a; b)$.",
+      "B. Nếu $f'(x) < 0$ với mọi $x \\in (a; b)$ thì hàm số $y = f(x)$ đồng biến trên khoảng $(a; b)$.",
+      "C. Nếu $f'(x) > 0$ với mọi $x \\in (a; b)$ thì hàm số $y = f(x)$ nghịch biến trên khoảng $(a; b)$.",
+      "D. Nếu $f'(x) \\ge 0$ với mọi $x \\in (a; b)$ thì hàm số $y = f(x)$ nghịch biến trên khoảng $(a; b)$."
+    ],
+    "correct": 0,
+    "explain": "Theo định lí về tính đơn điệu của hàm số: Giả sử hàm số $y = f(x)$ có đạo hàm trên khoảng $(a; b)$. Nếu $f'(x) > 0$ với mọi $x \\in (a; b)$ thì hàm số đồng biến trên khoảng $(a; b)$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Giả sử hàm số $y = f(x)$ liên tục trên khoảng $(a; b)$ chứa điểm $x_0$ và có đạo hàm trên các khoảng $(a; x_0)$ và $(x_0; b)$. Nếu $f'(x)$ đổi dấu từ âm sang dương khi $x$ đi qua $x_0$ thì:",
+    "choices": [
+      "A. $x_0$ là một điểm cực đại của hàm số.",
+      "B. $x_0$ là một điểm cực tiểu của hàm số.",
+      "C. $x_0$ không phải là điểm cực trị của hàm số.",
+      "D. Hàm số không xác định tại $x_0$."
+    ],
+    "correct": 1,
+    "explain": "Theo quy tắc tìm cực trị: Nếu $f'(x) < 0$ trên khoảng $(a; x_0)$ và $f'(x) > 0$ trên khoảng $(x_0; b)$ (tức là $f'(x)$ đổi dấu từ âm $(-)$ sang dương $(+)$ khi qua $x_0$) thì $x_0$ là một điểm cực tiểu của hàm số."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Hàm số nào dưới đây không có cực trị?",
+    "choices": [
+      "A. $y = x^4$.",
+      "B. $y = |x|$.",
+      "C. $y = -x^3 + x$.",
+      "D. $y = \\frac{2x - 1}{x + 1}$."
+    ],
+    "correct": 3,
+    "explain": "Xét hàm số $y = \\frac{2x - 1}{x + 1}$, tập xác định $D = \\mathbb{R} \\setminus \\{-1\\}$. Đạo hàm $y' = \\frac{3}{(x+1)^2} > 0$ với mọi $x \\in D$. Do $y'$ mang một dấu trên từng khoảng xác định (không đổi dấu) nên hàm số không có cực trị. Các hàm số còn lại đều có cực trị."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Khẳng định nào sau đây đúng về tính đơn điệu của hàm số $y = -x^3 + 3x^2 - 3x + 2$?",
+    "choices": [
+      "A. Hàm số đồng biến trên $\\mathbb{R}$.",
+      "B. Hàm số nghịch biến trên $\\mathbb{R}$.",
+      "C. Hàm số đồng biến trên khoảng $(1; +\\infty)$.",
+      "D. Hàm số nghịch biến trên khoảng $(-\\infty; 1)$."
+    ],
+    "correct": 1,
+    "explain": "Tập xác định $D = \\mathbb{R}$. Đạo hàm $y' = -3x^2 + 6x - 3 = -3(x^2 - 2x + 1) = -3(x - 1)^2 \\le 0$ với mọi $x \\in \\mathbb{R}$. Dấu bằng chỉ xảy ra tại một điểm $x = 1$. Do đó hàm số nghịch biến trên $\\mathbb{R}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = f(x)$ có đạo hàm $f'(x)$ thỏa mãn: $f'(x) > 0$ trên khoảng $(-\\infty; -1)$ và $(2; +\\infty)$; $f'(x) < 0$ trên khoảng $(-1; 2)$. Hàm số đã cho đạt cực đại tại điểm nào?",
+    "choices": [
+      "A. $x = -1$.",
+      "B. $x = 2$.",
+      "C. $x = 0$.",
+      "D. $x = 1$."
+    ],
+    "correct": 0,
+    "explain": "Dựa vào dấu của đạo hàm, $f'(x)$ đổi dấu từ dương $(+)$ sang âm $(-)$ khi $x$ đi qua điểm $x = -1$. Do đó, hàm số đạt cực đại tại $x = -1$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Điểm cực tiểu của đồ thị hàm số $y = x^3 + 6x^2 + 9x - 2$ có tọa độ là:",
+    "choices": [
+      "A. $(-1; -6)$.",
+      "B. $(-3; -2)$.",
+      "C. $(1; 14)$.",
+      "D. $(-1; -2)$."
+    ],
+    "correct": 0,
+    "explain": "Đạo hàm $y' = 3x^2 + 12x + 9$. Cho $y' = 0 \\Leftrightarrow x = -1$ hoặc $x = -3$. Bảng biến thiên cho thấy $y'$ đổi dấu từ âm sang dương khi qua $x = -1$ nên hàm số đạt cực tiểu tại $x = -1$. Tung độ cực tiểu $y(-1) = -1 + 6 - 9 - 2 = -6$. Tọa độ điểm cực tiểu của đồ thị là $A(-1; -6)$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Hàm số $y = \\frac{x-1}{x-2}$ nghịch biến trên khoảng nào dưới đây?",
+    "choices": [
+      "A. $\\mathbb{R} \\setminus \\{2\\}$.",
+      "B. $(-\\infty; 2) \\cup (2; +\\infty)$.",
+      "C. $(-\\infty; 2)$ và $(2; +\\infty)$.",
+      "D. $\\mathbb{R}$."
+    ],
+    "correct": 2,
+    "explain": "Tập xác định $D = \\mathbb{R} \\setminus \\{2\\}$. Đạo hàm $y' = \\frac{1 \\cdot (-2) - (-1) \\cdot 1}{(x-2)^2} = \\frac{-1}{(x-2)^2} < 0, \\forall x \\ne 2$. Vậy hàm số nghịch biến trên các khoảng $(-\\infty; 2)$ và $(2; +\\infty)$. (Lưu ý: Không dùng kí hiệu hợp $\\cup$ để kết luận khoảng đơn điệu)."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Hàm số $y = -\\frac{2x^3}{3} + x^2 + 7$ đồng biến trên khoảng nào trong các khoảng sau đây?",
+    "choices": [
+      "A. $(-\\infty; 0)$.",
+      "B. $(0; +\\infty)$.",
+      "C. $(0; 1)$.",
+      "D. $(1; +\\infty)$."
+    ],
+    "correct": 2,
+    "explain": "Đạo hàm $y' = -2x^2 + 2x$. Cho $y' = 0 \\Leftrightarrow x = 0$ hoặc $x = 1$. Lập bảng xét dấu, ta có $y' > 0 \\Leftrightarrow 0 < x < 1$. Vậy hàm số đồng biến trên khoảng $(0; 1)$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = f(x)$ có bảng xét dấu của đạo hàm như sau: $f'(x)$ đổi dấu từ âm sang dương qua $x = 2$, và dương sang âm qua $x = 5$. Hàm số đạt cực tiểu tại điểm nào?",
+    "choices": [
+      "A. $x = 2$.",
+      "B. $x = 5$.",
+      "C. $x = 0$.",
+      "D. $x = 3$."
+    ],
+    "correct": 0,
+    "explain": "Theo quy tắc tìm cực trị, khi đạo hàm $f'(x)$ đổi dấu từ âm $(-)$ sang dương $(+)$ khi qua điểm $x = 2$ thì hàm số sẽ đạt cực tiểu tại $x = 2$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Điểm cực đại của hàm số $y = x^4 - 4x^2 + 2$ là:",
+    "choices": [
+      "A. $x = 0$.",
+      "B. $x = -\\sqrt{2}$.",
+      "C. $x = \\sqrt{2}$.",
+      "D. $x = 2$."
+    ],
+    "correct": 0,
+    "explain": "Đạo hàm $y' = 4x^3 - 8x = 4x(x^2 - 2)$. Cho $y' = 0 \\Leftrightarrow x = 0$ hoặc $x = \\pm \\sqrt{2}$. Lập bảng xét dấu, $y'$ đổi dấu từ dương sang âm khi qua điểm $x = 0$. Vậy hàm số đạt cực đại tại $x = 0$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Có bao nhiêu giá trị nguyên của tham số $m$ để hàm số $y = \\frac{1}{3}x^3 - mx^2 + 4x + 2$ đồng biến trên $\\mathbb{R}$?",
+    "choices": [
+      "A. $3$.",
+      "B. $4$.",
+      "C. $5$.",
+      "D. Vô số."
+    ],
+    "correct": 2,
+    "explain": "Hàm số đồng biến trên $\\mathbb{R} \\Leftrightarrow y' = x^2 - 2mx + 4 \\ge 0, \\forall x \\in \\mathbb{R}$. Điều này tương đương với $\\Delta' = m^2 - 4 \\le 0 \\Leftrightarrow -2 \\le m \\le 2$. Vì $m \\in \\mathbb{Z}$ nên $m \\in \\{-2; -1; 0; 1; 2\\}$. Có 5 giá trị nguyên thỏa mãn."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hàm số $y = x^3 - 3(m + 1)x^2 + 3(7m - 3)x$. Có bao nhiêu giá trị nguyên của tham số $m$ để hàm số không có cực trị?",
+    "choices": [
+      "A. $3$.",
+      "B. $4$.",
+      "C. $5$.",
+      "D. $0$."
+    ],
+    "correct": 1,
+    "explain": "Đạo hàm $y' = 3x^2 - 6(m+1)x + 3(7m-3)$. Hàm số không có cực trị $\\Leftrightarrow y' \\ge 0, \\forall x \\in \\mathbb{R}$ (vì hệ số $a = 3 > 0$). Điều này tương đương $\\Delta' = 9(m+1)^2 - 9(7m-3) \\le 0 \\Leftrightarrow m^2 + 2m + 1 - 7m + 3 \\le 0 \\Leftrightarrow m^2 - 5m + 4 \\le 0 \\Leftrightarrow 1 \\le m \\le 4$. Các giá trị nguyên là $1, 2, 3, 4$. Có 4 giá trị thỏa mãn."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Biết đồ thị hàm số $y = x^3 - 3x^2 + 2ax + b$ có điểm cực tiểu là $A(2; -2)$. Tính giá trị của biểu thức $P = a + b$.",
+    "choices": [
+      "A. $P = -2$.",
+      "B. $P = 4$.",
+      "C. $P = 2$.",
+      "D. $P = 0$."
+    ],
+    "correct": 2,
+    "explain": "Ta có $y' = 3x^2 - 6x + 2a$. Hàm số đạt cực tiểu tại $A(2; -2)$ nên ta có hệ: (1) $y'(2) = 0 \\Leftrightarrow 3(2)^2 - 6(2) + 2a = 0 \\Leftrightarrow 2a = 0 \\Leftrightarrow a = 0$. (2) Đồ thị đi qua điểm $A(2; -2) \\Leftrightarrow y(2) = -2 \\Leftrightarrow 2^3 - 3(2)^2 + 2(0)(2) + b = -2 \\Leftrightarrow 8 - 12 + b = -2 \\Leftrightarrow b = 2$. Kiểm tra lại $y'' = 6x - 6 \\Rightarrow y''(2) = 6 > 0$ thỏa mãn cực tiểu. Vậy $P = a + b = 0 + 2 = 2$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Tìm tất cả các giá trị thực của tham số $m$ để hàm số $y = \\frac{x+m}{x-2}$ nghịch biến trên từng khoảng xác định của nó.",
+    "choices": [
+      "A. $m < -2$.",
+      "B. $m > -2$.",
+      "C. $m \\le -2$.",
+      "D. $m \\ge -2$."
+    ],
+    "correct": 1,
+    "explain": "Tập xác định $D = \\mathbb{R} \\setminus \\{2\\}$. Đạo hàm $y' = \\frac{1 \\cdot (-2) - 1 \\cdot m}{(x-2)^2} = \\frac{-2 - m}{(x-2)^2}$. Hàm số nghịch biến trên từng khoảng xác định $\\Leftrightarrow y' < 0, \\forall x \\in D \\Leftrightarrow -2 - m < 0 \\Leftrightarrow m > -2$ (hàm số phân thức bậc nhất trên bậc nhất không được lấy dấu bằng tại 0)."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Gọi $y_{CĐ}$ và $y_{CT}$ lần lượt là giá trị cực đại và giá trị cực tiểu của hàm số $y = \\frac{x^2 - 2x + 9}{x - 2}$. Tính hiệu $S = y_{CT} - y_{CĐ}$.",
+    "choices": [
+      "A. $S = 12$.",
+      "B. $S = 4$.",
+      "C. $S = -12$.",
+      "D. $S = -4$."
+    ],
+    "correct": 0,
+    "explain": "Đạo hàm $y' = \\frac{(2x-2)(x-2) - (x^2-2x+9)}{(x-2)^2} = \\frac{x^2 - 4x - 5}{(x-2)^2}$. Cho $y' = 0 \\Leftrightarrow x = -1$ hoặc $x = 5$. Lập bảng biến thiên, hàm số đạt cực đại tại $x = -1$ với $y_{CĐ} = -4$ và đạt cực tiểu tại $x = 5$ với $y_{CT} = 8$. Vậy $S = 8 - (-4) = 12$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hàm số $y = f(x)$ có đạo hàm $f'(x) = (x+2)(x+1)^2(x-3)$ với mọi $x \\in \\mathbb{R}$. Hàm số đã cho đạt cực tiểu tại điểm nào?",
+    "choices": [
+      "A. $x = -1$.",
+      "B. $x = 3$.",
+      "C. $x = -2$.",
+      "D. Không có điểm cực tiểu."
+    ],
+    "correct": 1,
+    "explain": "Phương trình $f'(x) = 0 \\Leftrightarrow x = -2, x = -1, x = 3$. Vì $x = -1$ là nghiệm bội chẵn (bậc 2) nên $f'(x)$ không đổi dấu khi qua $x = -1$. Lập bảng xét dấu $f'(x)$: trên $(-\\infty; -2)$ mang dấu $(+)$, $(-2; -1)$ mang dấu $(-)$, $(-1; 3)$ mang dấu $(-)$ và $(3; +\\infty)$ mang dấu $(+)$. Đạo hàm đổi dấu từ âm sang dương khi qua $x = 3$, do đó hàm số đạt cực tiểu tại $x = 3$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Có bao nhiêu số nguyên $m \\in [-5; 5]$ để hàm số $y = \\frac{mx + 2}{2x + m}$ đồng biến trên khoảng $(0; 1)$?",
+    "choices": [
+      "A. $6$.",
+      "B. $5$.",
+      "C. $4$.",
+      "D. $7$."
+    ],
+    "correct": 0,
+    "explain": "Đạo hàm $y' = \\frac{m^2 - 4}{(2x + m)^2}$. Hàm số đồng biến trên $(0; 1) \\Leftrightarrow y' > 0, \\forall x \\in (0; 1)$ và điều kiện nghiệm ở mẫu $-\\frac{m}{2} \\notin (0; 1)$.\n(1) $m^2 - 4 > 0 \\Leftrightarrow m < -2$ hoặc $m > 2$.\n(2) $-\\frac{m}{2} \\le 0 \\Leftrightarrow m \\ge 0$, hoặc $-\\frac{m}{2} \\ge 1 \\Leftrightarrow m \\le -2$.\nKết hợp hai điều kiện (1) và (2), ta được $m < -2$ hoặc $m > 2$. Vì $m$ là số nguyên thuộc đoạn $[-5; 5]$ nên $m \\in \\{-5, -4, -3, 3, 4, 5\\}$. Có tất cả 6 giá trị."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hàm số $y = f(x)$ xác định, liên tục trên $\\mathbb{R} \\setminus \\{1\\}$ và có đồ thị đi qua gốc tọa độ, nhận đường thẳng $x=1$ làm tiệm cận đứng, $y=2$ làm tiệm cận ngang và hàm số nghịch biến trên từng khoảng xác định. Đồ thị đó là của hàm số phân thức bậc nhất trên bậc nhất nào sau đây?",
+    "choices": [
+      "A. $y = \\frac{2x+1}{x-1}$.",
+      "B. $y = \\frac{2x}{x-1}$.",
+      "C. $y = \\frac{2x}{x+1}$.",
+      "D. $y = \\frac{2x}{1-x}$."
+    ],
+    "correct": 1,
+    "explain": "Đồ thị đi qua gốc tọa độ $(0;0)$ nên loại A (đi qua $(0;-1)$). Đường tiệm cận đứng là $x = 1$ nên loại C (có TCĐ $x = -1$). Đường tiệm cận ngang là $y = 2$ nên loại D (có TCN $y = -2$). Xét phương án B: $y = \\frac{2x}{x-1}$, có đạo hàm $y' = \\frac{-2}{(x-1)^2} < 0, \\forall x \\ne 1$, tức là hàm số nghịch biến trên từng khoảng xác định. Vậy phương án B thỏa mãn toàn bộ yêu cầu bài toán."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Có bao nhiêu giá trị nguyên nhỏ hơn $2025$ của tham số $m$ để hàm số $y = 2x^3 - 3x^2 - 6mx + m$ nghịch biến trên khoảng $(-1; 1)$?",
+    "choices": [
+      "A. $2022$.",
+      "B. $2023$.",
+      "C. $2024$.",
+      "D. $2025$."
+    ],
+    "correct": 1,
+    "explain": "Ta có $y' = 6x^2 - 6x - 6m$. Hàm số nghịch biến trên $(-1; 1) \\Leftrightarrow y' \\le 0, \\forall x \\in (-1; 1) \\Leftrightarrow x^2 - x - m \\le 0, \\forall x \\in (-1; 1) \\Leftrightarrow m \\ge x^2 - x, \\forall x \\in (-1; 1)$. Khảo sát hàm số $g(x) = x^2 - x$ trên $(-1; 1)$, ta có đạo hàm $g'(x) = 2x - 1 = 0 \\Leftrightarrow x = \\frac{1}{2}$. Trên khoảng $(-1; 1)$, giá trị lớn nhất của $g(x)$ là $g(-1) = 2$. Do đó để $m \\ge g(x)$ thì $m \\ge 2$. Vì $m \\in \\mathbb{Z}$ và $m < 2025$ nên $m \\in \\{2; 3; ...; 2024\\}$. Số giá trị thỏa mãn là $2024 - 2 + 1 = 2023$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Điểm cực tiểu của hàm số $y = (x^2 - 2)e^{2x}$ có hoành độ bằng:",
+    "choices": [
+      "A. $1$.",
+      "B. $-2$.",
+      "C. $0$.",
+      "D. $-1$."
+    ],
+    "correct": 0,
+    "explain": "Tập xác định $D = \\mathbb{R}$. Đạo hàm $y' = 2x \\cdot e^{2x} + (x^2 - 2) \\cdot 2e^{2x} = (2x^2 + 2x - 4)e^{2x}$. Cho $y' = 0 \\Leftrightarrow 2x^2 + 2x - 4 = 0 \\Leftrightarrow x = 1$ hoặc $x = -2$. Bảng xét dấu: trên $(-\\infty; -2)$ thì $y' > 0$; trên $(-2; 1)$ thì $y' < 0$; trên $(1; +\\infty)$ thì $y' > 0$. Đạo hàm $y'$ đổi dấu từ âm sang dương khi qua $x = 1$. Do đó, hoành độ điểm cực tiểu là $x = 1$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = f(x)$ liên tục trên đoạn $[a; b]$. Phát biểu nào dưới đây là đúng?",
+    "choices": [
+      "A. Hàm số luôn có giá trị lớn nhất và giá trị nhỏ nhất trên đoạn $[a; b]$.",
+      "B. Hàm số chỉ có giá trị lớn nhất, không có giá trị nhỏ nhất trên đoạn $[a; b]$.",
+      "C. Hàm số không có giá trị lớn nhất và giá trị nhỏ nhất trên đoạn $[a; b]$.",
+      "D. Hàm số chỉ đạt giá trị lớn nhất tại cực trị."
+    ],
+    "correct": 0,
+    "explain": "Theo định lí cơ bản: Mọi hàm số liên tục trên một đoạn $[a; b]$ đều đạt giá trị lớn nhất và giá trị nhỏ nhất trên đoạn đó."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = f(x)$ liên tục và luôn đồng biến trên đoạn $[1; 4]$. Giá trị lớn nhất của hàm số trên đoạn này bằng:",
+    "choices": [
+      "A. $f(1)$.",
+      "B. $f(4)$.",
+      "C. $f(2.5)$.",
+      "D. $\\frac{f(1)+f(4)}{2}$."
+    ],
+    "correct": 1,
+    "explain": "Vì hàm số đồng biến trên đoạn $[1; 4]$ nên $f(1) \\le f(x) \\le f(4)$ với mọi $x \\in [1; 4]$. Do đó, giá trị lớn nhất của hàm số đạt được tại điểm cuối $x = 4$, bằng $f(4)$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Giá trị lớn nhất của hàm số $y = -x^2 + 4x$ trên đoạn $[0; 3]$ là:",
+    "choices": [
+      "A. $0$.",
+      "B. $4$.",
+      "C. $3$.",
+      "D. $5$."
+    ],
+    "correct": 1,
+    "explain": "Đạo hàm $y' = -2x + 4$. Cho $y' = 0 \\Leftrightarrow x = 2 \\in [0; 3]$. Ta tính các giá trị: $y(0) = 0$, $y(2) = 4$, $y(3) = 3$. Giá trị lớn nhất là $4$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Giá trị nhỏ nhất của hàm số $y = x^3 - 3x$ trên đoạn $[0; 2]$ là:",
+    "choices": [
+      "A. $0$.",
+      "B. $-2$.",
+      "C. $2$.",
+      "D. $-3$."
+    ],
+    "correct": 1,
+    "explain": "Đạo hàm $y' = 3x^2 - 3$. Cho $y' = 0 \\Leftrightarrow x = 1$ (do $x \\in [0; 2]$). Ta tính: $y(0) = 0$, $y(1) = -2$, $y(2) = 2$. Giá trị nhỏ nhất là $-2$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Giá trị lớn nhất của hàm số $y = \\frac{2x-1}{x+1}$ trên đoạn $[0; 2]$ là:",
+    "choices": [
+      "A. $-1$.",
+      "B. $1$.",
+      "C. $3$.",
+      "D. $\\frac{1}{2}$."
+    ],
+    "correct": 1,
+    "explain": "Tập xác định của hàm số chứa đoạn $[0; 2]$. Đạo hàm $y' = \\frac{3}{(x+1)^2} > 0, \\forall x \\in [0; 2]$. Hàm số luôn đồng biến trên đoạn này, do đó GTLN là $y(2) = \\frac{3}{3} = 1$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = x^4 - 2x^2 + 3$. Giá trị lớn nhất của hàm số trên đoạn $[0; 2]$ bằng:",
+    "choices": [
+      "A. $3$.",
+      "B. $2$.",
+      "C. $11$.",
+      "D. $8$."
+    ],
+    "correct": 2,
+    "explain": "Đạo hàm $y' = 4x^3 - 4x$. Cho $y' = 0 \\Leftrightarrow x = 0$ hoặc $x = 1$ (chỉ lấy nghiệm thuộc $[0; 2]$). Tính giá trị: $y(0) = 3$, $y(1) = 2$, $y(2) = 11$. GTLN là $11$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Giá trị nhỏ nhất của hàm số $y = \\sqrt{x+3}$ trên đoạn $[1; 6]$ là:",
+    "choices": [
+      "A. $2$.",
+      "B. $3$.",
+      "C. $1$.",
+      "D. $0$."
+    ],
+    "correct": 0,
+    "explain": "Tập xác định chứa đoạn $[1; 6]$. Đạo hàm $y' = \\frac{1}{2\\sqrt{x+3}} > 0$. Hàm số đồng biến trên đoạn $[1; 6]$ nên giá trị nhỏ nhất đạt tại $x = 1$, tức là $y(1) = \\sqrt{4} = 2$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Gọi $M, m$ lần lượt là giá trị lớn nhất và giá trị nhỏ nhất của hàm số $y = x^2 - 4x + 3$ trên đoạn $[0; 3]$. Tính $M + m$.",
+    "choices": [
+      "A. $2$.",
+      "B. $3$.",
+      "C. $-1$.",
+      "D. $4$."
+    ],
+    "correct": 0,
+    "explain": "Đạo hàm $y' = 2x - 4$. Cho $y' = 0 \\Leftrightarrow x = 2 \\in [0; 3]$. Ta có $y(0) = 3$, $y(2) = -1$, $y(3) = 0$. GTLN $M = 3$, GTNN $m = -1$. Vậy $M + m = 2$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Giá trị lớn nhất của hàm số $y = \\frac{x}{x+2}$ trên đoạn $[1; 4]$ là:",
+    "choices": [
+      "A. $\\frac{1}{3}$.",
+      "B. $\\frac{2}{3}$.",
+      "C. $\\frac{1}{2}$.",
+      "D. $1$."
+    ],
+    "correct": 1,
+    "explain": "Đạo hàm $y' = \\frac{2}{(x+2)^2} > 0, \\forall x \\in [1; 4]$. Hàm số đồng biến trên đoạn này. Do đó GTLN là $y(4) = \\frac{4}{6} = \\frac{2}{3}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = f(x)$ liên tục trên đoạn $[-2; 3]$ có bảng biến thiên: $x$ đi từ $-2$ đến $1$ hàm tăng từ $-3$ lên $4$; $x$ đi từ $1$ đến $3$ hàm giảm từ $4$ xuống $1$. Giá trị lớn nhất của hàm số trên đoạn $[-2; 3]$ là:",
+    "choices": [
+      "A. $4$.",
+      "B. $-3$.",
+      "C. $1$.",
+      "D. $3$."
+    ],
+    "correct": 0,
+    "explain": "Dựa vào sự biến thiên trên đoạn $[-2; 3]$, hàm số đạt cực đại và cũng là giá trị lớn nhất tại $x = 1$ với $y = 4$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Giá trị lớn nhất của hàm số $y = \\frac{x^2 - 3x + 3}{x - 1}$ trên đoạn $\\left[-2; \\frac{1}{2}\\right]$ bằng:",
+    "choices": [
+      "A. $4$.",
+      "B. $-3$.",
+      "C. $-\\frac{7}{2}$.",
+      "D. $-\\frac{13}{3}$."
+    ],
+    "correct": 1,
+    "explain": "Đạo hàm $y' = \\frac{(2x-3)(x-1) - (x^2-3x+3)}{(x-1)^2} = \\frac{x^2-2x}{(x-1)^2}$. Cho $y' = 0 \\Leftrightarrow x = 0$ (nhận) hoặc $x = 2$ (loại). Ta tính các giá trị: $y(-2) = -\\frac{13}{3}$, $y(0) = -3$, $y(\\frac{1}{2}) = -\\frac{7}{2}$. So sánh các giá trị, GTLN là $-3$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Tìm giá trị nhỏ nhất của hàm số $y = (x^2 - 9x + 15)e^x$ trên đoạn $[0; 9]$.",
+    "choices": [
+      "A. $25e^{10}$.",
+      "B. $15e^9$.",
+      "C. $25e$.",
+      "D. $-3e^6$."
+    ],
+    "correct": 3,
+    "explain": "Đạo hàm $y' = (2x-9)e^x + (x^2-9x+15)e^x = (x^2-7x+6)e^x$. Cho $y' = 0 \\Leftrightarrow x=1$ hoặc $x=6$. Các giá trị: $y(0)=15$, $y(1)=7e$, $y(6)=-3e^6$, $y(9)=15e^9$. Giá trị nhỏ nhất là $-3e^6$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Tính giá trị lớn nhất của hàm số $y = x - \\ln x$ trên đoạn $\\left[\\frac{1}{2}; e\\right]$.",
+    "choices": [
+      "A. $1$.",
+      "B. $e - 1$.",
+      "C. $e$.",
+      "D. $\\frac{1}{2} + \\ln 2$."
+    ],
+    "correct": 1,
+    "explain": "Đạo hàm $y' = 1 - \\frac{1}{x} = \\frac{x-1}{x}$. Cho $y' = 0 \\Leftrightarrow x = 1 \\in \\left[\\frac{1}{2}; e\\right]$. Ta có $y(\\frac{1}{2}) = \\frac{1}{2} + \\ln 2$, $y(1) = 1$, $y(e) = e - 1$. So sánh ta thấy $e-1 > 1$ và $e-1 > \\frac{1}{2} + \\ln 2$. Vậy GTLN là $e - 1$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hàm số $y = \\frac{x+m}{x-1}$ với $m$ là tham số thực. Tìm giá trị của $m$ để giá trị nhỏ nhất của hàm số trên đoạn $[2; 4]$ bằng $3$.",
+    "choices": [
+      "A. $1$.",
+      "B. $-1$.",
+      "C. $5$.",
+      "D. $3$."
+    ],
+    "correct": 2,
+    "explain": "Đạo hàm $y' = \\frac{-1-m}{(x-1)^2}$.\n+ Nếu $-1-m < 0 \\Leftrightarrow m > -1$ thì $y' < 0$, hàm nghịch biến. Khi đó $\\min_{[2;4]} y = y(4) = \\frac{m+4}{3} = 3 \\Leftrightarrow m = 5$ (thỏa mãn $m > -1$).\n+ Nếu $-1-m > 0 \\Leftrightarrow m < -1$ thì $y' > 0$, hàm đồng biến. Khi đó $\\min_{[2;4]} y = y(2) = m+2 = 3 \\Leftrightarrow m = 1$ (loại vì không thỏa $m < -1$).\nVậy $m = 5$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Gọi $M, m$ lần lượt là giá trị lớn nhất và giá trị nhỏ nhất của hàm số $y = \\frac{x^2+3}{x-1}$ trên đoạn $[2; 4]$. Tính $M + m$.",
+    "choices": [
+      "A. $13$.",
+      "B. $6$.",
+      "C. $7$.",
+      "D. $\\frac{19}{3}$."
+    ],
+    "correct": 0,
+    "explain": "Đạo hàm $y' = \\frac{2x(x-1) - (x^2+3)}{(x-1)^2} = \\frac{x^2-2x-3}{(x-1)^2}$. Cho $y' = 0 \\Rightarrow x = 3 \\in [2; 4]$. Các giá trị: $y(2) = 7$, $y(3) = 6$, $y(4) = \\frac{19}{3}$. Vậy GTLN $M = 7$, GTNN $m = 6 \\Rightarrow M + m = 13$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Tìm giá trị nhỏ nhất của hàm số $y = \\frac{x^3}{3} - \\frac{3x^2}{2} + 1$ trên đoạn $[-3; 4]$.",
+    "choices": [
+      "A. $-\\frac{43}{2}$.",
+      "B. $1$.",
+      "C. $\\frac{31}{6}$.",
+      "D. $-\\frac{133}{3}$."
+    ],
+    "correct": 0,
+    "explain": "Đạo hàm $y' = x^2 - 3x$. Cho $y' = 0 \\Leftrightarrow x = 0$ hoặc $x = 3$. Tính các giá trị: $y(-3) = -9 - \\frac{27}{2} + 1 = -\\frac{43}{2}$, $y(0) = 1$, $y(3) = -\\frac{7}{2}$, $y(4) = -\\frac{5}{3}$. So sánh, ta được GTNN là $-\\frac{43}{2}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Tìm tất cả các giá trị của tham số $m$ để giá trị lớn nhất của hàm số $y = \\frac{2mx+1}{m-x}$ trên đoạn $[2; 3]$ bằng $-\\frac{1}{3}$.",
+    "choices": [
+      "A. $0$.",
+      "B. $1$.",
+      "C. $2$.",
+      "D. $-1$."
+    ],
+    "correct": 0,
+    "explain": "Hàm số viết lại thành $y = \\frac{2mx+1}{-x+m}$. Đạo hàm $y' = \\frac{2m^2 - (-1)(1)}{(m-x)^2} = \\frac{2m^2+1}{(m-x)^2} > 0, \\forall x \\ne m$. Hàm số luôn đồng biến trên các khoảng xác định. Để hàm số liên tục trên $[2; 3]$ thì $m \\notin [2; 3]$. Vì hàm đồng biến nên $\\max_{[2; 3]} y = y(3) = \\frac{6m+1}{m-3}$. Cho $\\frac{6m+1}{m-3} = -\\frac{1}{3} \\Leftrightarrow 18m+3 = -m+3 \\Leftrightarrow m=0$. Giá trị này thỏa mãn điều kiện $m \\notin [2; 3]$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Tìm giá trị nhỏ nhất của hàm số $y = \\ln(3x^2 - 4x + 6)$ trên đoạn $[-4; 3]$.",
+    "choices": [
+      "A. $\\ln 101$.",
+      "B. $\\ln 70$.",
+      "C. $\\ln 38$.",
+      "D. $\\ln \\frac{14}{3}$."
+    ],
+    "correct": 3,
+    "explain": "Đạo hàm $y' = \\frac{6x-4}{3x^2-4x+6}$. Cho $y' = 0 \\Leftrightarrow x = \\frac{2}{3} \\in [-4; 3]$. Tính các giá trị: $y(-4) = \\ln(48+16+6) = \\ln 70$, $y(\\frac{2}{3}) = \\ln\\left(3\\cdot\\frac{4}{9} - \\frac{8}{3} + 6\\right) = \\ln \\frac{14}{3}$, $y(3) = \\ln(27-12+6) = \\ln 21$. Vậy GTNN là $\\ln \\frac{14}{3}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Tìm giá trị lớn nhất của hàm số $y = \\frac{x^3}{3} - \\frac{7x^2}{2} + 6x + 3$ trên đoạn $[0; 10]$.",
+    "choices": [
+      "A. $-\\frac{41}{6}$.",
+      "B. $\\frac{535}{6}$.",
+      "C. $-15$.",
+      "D. $\\frac{139}{3}$."
+    ],
+    "correct": 3,
+    "explain": "Đạo hàm $y' = x^2 - 7x + 6$. Cho $y' = 0 \\Leftrightarrow x=1$ hoặc $x=6$. Tính giá trị: $y(0) = 3$, $y(1) = \\frac{35}{6}$, $y(6) = -15$, $y(10) = \\frac{1000}{3} - 350 + 60 + 3 = \\frac{139}{3}$. GTLN là $\\frac{139}{3}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Gọi $m$ và $M$ lần lượt là giá trị nhỏ nhất và giá trị lớn nhất của hàm số $y = \\frac{1}{2}x - \\sqrt{x+2}$ trên đoạn $[-1; 34]$. Tổng $S = 3m + M$ bằng bao nhiêu?",
+    "choices": [
+      "A. $6,5$.",
+      "B. $2$.",
+      "C. $11$.",
+      "D. $8,5$."
+    ],
+    "correct": 0,
+    "explain": "Đạo hàm $y' = \\frac{1}{2} - \\frac{1}{2\\sqrt{x+2}}$. Cho $y' = 0 \\Leftrightarrow \\sqrt{x+2} = 1 \\Leftrightarrow x = -1 \\in [-1; 34]$. Tính các giá trị tại đầu mút và cực trị: $y(-1) = -\\frac{3}{2} = -1,5$, $y(34) = 17 - 6 = 11$. Vậy $m = -1,5$ và $M = 11$. Suy ra $S = 3(-1,5) + 11 = 6,5$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Đường tiệm cận đứng của đồ thị hàm số $y = \\frac{x+1}{x-2}$ là đường thẳng có phương trình:",
+    "choices": [
+      "A. $x = -1$.",
+      "B. $y = 1$.",
+      "C. $x = 2$.",
+      "D. $y = 2$."
+    ],
+    "correct": 2,
+    "explain": "Ta có $\\lim_{x \\to 2^+} \\frac{x+1}{x-2} = +\\infty$ và $\\lim_{x \\to 2^-} \\frac{x+1}{x-2} = -\\infty$. Do đó, đường thẳng $x = 2$ là tiệm cận đứng của đồ thị hàm số."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Đường tiệm cận ngang của đồ thị hàm số $y = \\frac{3x-1}{x-2}$ là:",
+    "choices": [
+      "A. $y = 3$.",
+      "B. $x = 2$.",
+      "C. $y = 1$.",
+      "D. $x = 3$."
+    ],
+    "correct": 0,
+    "explain": "Ta có $\\lim_{x \\to \\pm\\infty} \\frac{3x-1}{x-2} = \\lim_{x \\to \\pm\\infty} \\frac{3 - \\frac{1}{x}}{1 - \\frac{2}{x}} = 3$. Vậy đường thẳng $y = 3$ là tiệm cận ngang của đồ thị hàm số."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = f(x)$ thỏa mãn $\\lim_{x \\to +\\infty} f(x) = 2$ và $\\lim_{x \\to -\\infty} f(x) = 2$. Khẳng định nào sau đây đúng?",
+    "choices": [
+      "A. Đường thẳng $x = 2$ là tiệm cận đứng của đồ thị hàm số.",
+      "B. Đường thẳng $y = 2$ là tiệm cận ngang của đồ thị hàm số.",
+      "C. Đồ thị hàm số không có tiệm cận ngang.",
+      "D. Đường thẳng $x = 2$ là tiệm cận ngang của đồ thị hàm số."
+    ],
+    "correct": 1,
+    "explain": "Theo định nghĩa, vì $\\lim_{x \\to \\pm\\infty} f(x) = 2$ nên đường thẳng $y = 2$ là tiệm cận ngang của đồ thị hàm số."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = f(x)$ xác định trên $\\mathbb{R} \\setminus \\{1\\}$ và thỏa mãn $\\lim_{x \\to 1^+} f(x) = +\\infty$. Khẳng định nào sau đây đúng?",
+    "choices": [
+      "A. Đường thẳng $x = 1$ là tiệm cận đứng của đồ thị hàm số.",
+      "B. Đường thẳng $y = 1$ là tiệm cận ngang của đồ thị hàm số.",
+      "C. Đường thẳng $x = 1$ là tiệm cận ngang của đồ thị hàm số.",
+      "D. Đồ thị hàm số không có tiệm cận đứng."
+    ],
+    "correct": 0,
+    "explain": "Theo định nghĩa tiệm cận đứng, nếu giới hạn của hàm số khi $x$ tiến tới $1^+$ (hoặc $1^-$) là vô cực thì $x = 1$ là tiệm cận đứng."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = f(x)$ thỏa mãn $\\lim_{x \\to +\\infty} [f(x) - (2x + 1)] = 0$. Khẳng định nào sau đây là đúng?",
+    "choices": [
+      "A. Đồ thị hàm số có tiệm cận ngang là $y = 2x + 1$.",
+      "B. Đồ thị hàm số có tiệm cận xiên là $y = 2x + 1$.",
+      "C. Đồ thị hàm số có tiệm cận đứng là $x = 2$.",
+      "D. Đồ thị hàm số có tiệm cận xiên là $y = 2x$."
+    ],
+    "correct": 1,
+    "explain": "Theo định nghĩa tiệm cận xiên, vì $\\lim_{x \\to +\\infty} [f(x) - (2x + 1)] = 0$ nên đường thẳng $y = 2x + 1$ là tiệm cận xiên của đồ thị hàm số."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Đường tiệm cận ngang của đồ thị hàm số $y = \\frac{2024}{x-1}$ là đường thẳng có phương trình:",
+    "choices": [
+      "A. $y = 0$.",
+      "B. $y = 2024$.",
+      "C. $x = 1$.",
+      "D. $x = 0$."
+    ],
+    "correct": 0,
+    "explain": "Ta có $\\lim_{x \\to \\pm\\infty} \\frac{2024}{x-1} = 0$. Do đó, đường thẳng $y = 0$ (trục hoành) là tiệm cận ngang của đồ thị hàm số."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Đường tiệm cận ngang của đồ thị hàm số $y = \\frac{1-3x}{x+2}$ là:",
+    "choices": [
+      "A. $y = 1$.",
+      "B. $y = -\\frac{1}{3}$.",
+      "C. $x = -2$.",
+      "D. $y = -3$."
+    ],
+    "correct": 3,
+    "explain": "Ta có $\\lim_{x \\to \\pm\\infty} \\frac{1-3x}{x+2} = \\lim_{x \\to \\pm\\infty} \\frac{\\frac{1}{x} - 3}{1 + \\frac{2}{x}} = -3$. Vậy đường thẳng $y = -3$ là tiệm cận ngang."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Đường tiệm cận xiên của đồ thị hàm số $y = \\frac{x^2+2x-2}{x+2}$ là đường thẳng có phương trình:",
+    "choices": [
+      "A. $y = x - 2$.",
+      "B. $y = x + 2$.",
+      "C. $y = x$.",
+      "D. $y = 2x$."
+    ],
+    "correct": 2,
+    "explain": "Thực hiện phép chia đa thức, ta được $y = \\frac{x(x+2) - 2}{x+2} = x - \\frac{2}{x+2}$. Vì $\\lim_{x \\to \\pm\\infty} \\frac{-2}{x+2} = 0$ nên $y = x$ là tiệm cận xiên."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = f(x)$ có bảng biến thiên cho thấy $\\lim_{x \\to -\\infty} y = 2$ và $\\lim_{x \\to 1^-} y = +\\infty$. Khẳng định nào sau đây đúng?",
+    "choices": [
+      "A. Đồ thị hàm số có tiệm cận ngang $x = 2$, tiệm cận đứng $y = 1$.",
+      "B. Đồ thị hàm số có tiệm cận ngang $y = 2$, tiệm cận đứng $x = 1$.",
+      "C. Đồ thị hàm số có tiệm cận xiên $y = 2x+1$.",
+      "D. Đồ thị hàm số chỉ có một đường tiệm cận."
+    ],
+    "correct": 1,
+    "explain": "Vì $\\lim_{x \\to -\\infty} y = 2$ nên $y = 2$ là tiệm cận ngang. Vì $\\lim_{x \\to 1^-} y = +\\infty$ nên $x = 1$ là tiệm cận đứng."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Giao điểm của hai đường tiệm cận của đồ thị hàm số $y = \\frac{2x+1}{x-1}$ có tọa độ là:",
+    "choices": [
+      "A. $I(1; 2)$.",
+      "B. $I(2; 1)$.",
+      "C. $I(-1; 2)$.",
+      "D. $I(1; -1)$."
+    ],
+    "correct": 0,
+    "explain": "Đồ thị có tiệm cận đứng $x = 1$ và tiệm cận ngang $y = 2$. Giao điểm của hai đường tiệm cận này là điểm $I(1; 2)$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Đường tiệm cận xiên của đồ thị hàm số $y = \\frac{-9x^2+6x+4}{-3x-2}$ có phương trình là:",
+    "choices": [
+      "A. $y = 3x - 4$.",
+      "B. $y = -3x + 4$.",
+      "C. $y = 3x$.",
+      "D. $y = 3x + 2$."
+    ],
+    "correct": 0,
+    "explain": "Thực hiện phép chia đa thức: $\\frac{-9x^2+6x+4}{-3x-2} = \\frac{3x(-3x-2) + 12x + 4}{-3x-2} = 3x + \\frac{-4(-3x-2) - 4}{-3x-2} = 3x - 4 - \\frac{4}{-3x-2}$. Vậy tiệm cận xiên là $y = 3x - 4$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Giao điểm của hai đường tiệm cận của đồ thị hàm số $y = \\frac{x^2-4x+7}{x-1}$ là điểm $I(a; b)$. Tính $a + b$.",
+    "choices": [
+      "A. $2$.",
+      "B. $-1$.",
+      "C. $0$.",
+      "D. $-2$."
+    ],
+    "correct": 1,
+    "explain": "Thực hiện phép chia ta có $y = \\frac{x(x-1) - 3(x-1) + 4}{x-1} = x - 3 + \\frac{4}{x-1}$. Đồ thị có tiệm cận đứng $x = 1$ và tiệm cận xiên $y = x - 3$. Thay $x=1$ vào $y=x-3$ được $y=-2$. Tọa độ giao điểm là $I(1; -2)$. Do đó $a+b = 1 + (-2) = -1$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Hai đường tiệm cận của đồ thị hàm số $y = \\frac{2x+3}{x-1}$ cùng với hai trục tọa độ tạo thành một hình chữ nhật. Diện tích của hình chữ nhật đó bằng:",
+    "choices": [
+      "A. $2$.",
+      "B. $3$.",
+      "C. $1$.",
+      "D. $6$."
+    ],
+    "correct": 0,
+    "explain": "Đồ thị có tiệm cận đứng $x = 1$ và tiệm cận ngang $y = 2$. Hai đường thẳng này cùng với hai trục tọa độ $x=0, y=0$ tạo thành hình chữ nhật có kích thước $1$ và $2$. Diện tích là $S = |1| \\cdot |2| = 2$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Đồ thị hàm số $y = \\frac{x^2-x-2}{x^2-1}$ có bao nhiêu đường tiệm cận (bao gồm cả tiệm cận đứng và tiệm cận ngang)?",
+    "choices": [
+      "A. $1$.",
+      "B. $2$.",
+      "C. $3$.",
+      "D. $4$."
+    ],
+    "correct": 1,
+    "explain": "Ta có $y = \\frac{(x+1)(x-2)}{(x-1)(x+1)}$. Tập xác định $x \\ne \\pm 1$. Rút gọn $y = \\frac{x-2}{x-1}$ (với $x \\ne -1$). \n+ Giới hạn tại vô cực: $\\lim_{x \\to \\pm\\infty} y = 1 \\Rightarrow y=1$ là TCN.\n+ Tại $x=1$: $\\lim_{x \\to 1} \\frac{x-2}{x-1} = \\infty \\Rightarrow x=1$ là TCĐ.\n+ Tại $x=-1$: $\\lim_{x \\to -1} y = \\frac{-3}{-2} = \\frac{3}{2}$ (hữu hạn, không phải TCĐ).\nVậy đồ thị có tổng cộng $2$ đường tiệm cận."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Số tiệm cận đứng của đồ thị hàm số $y = \\frac{\\sqrt{x+4}-2}{x^2+x}$ là:",
+    "choices": [
+      "A. $0$.",
+      "B. $1$.",
+      "C. $2$.",
+      "D. $3$."
+    ],
+    "correct": 1,
+    "explain": "Điều kiện $x \\ge -4$. Nghiệm của mẫu: $x^2+x=0 \\Leftrightarrow x=0$ hoặc $x=-1$.\n+ Tại $x=0$: $\\lim_{x \\to 0} \\frac{\\sqrt{x+4}-2}{x(x+1)} = \\lim_{x \\to 0} \\frac{x}{x(x+1)(\\sqrt{x+4}+2)} = \\lim_{x \\to 0} \\frac{1}{(x+1)(\\sqrt{x+4}+2)} = \\frac{1}{4}$ (hữu hạn, $x=0$ không là TCĐ).\n+ Tại $x=-1$: $\\lim_{x \\to -1} \\frac{\\sqrt{x+4}-2}{x(x+1)} = \\frac{\\sqrt{3}-2}{0} = \\infty \\Rightarrow x=-1$ là TCĐ.\nVậy đồ thị có $1$ tiệm cận đứng."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Biết đường thẳng $y = mx + m - 3$ đi qua giao điểm hai đường tiệm cận của đồ thị hàm số $y = \\frac{x+1}{x-3}$. Giá trị của $m$ là:",
+    "choices": [
+      "A. $m = 1$.",
+      "B. $m = 2$.",
+      "C. $m = 0$.",
+      "D. $m = -1$."
+    ],
+    "correct": 0,
+    "explain": "Đồ thị hàm số $y = \\frac{x+1}{x-3}$ có tiệm cận đứng $x = 3$ và tiệm cận ngang $y = 1$. Giao điểm của hai đường tiệm cận là $I(3; 1)$. Thay tọa độ $I$ vào phương trình đường thẳng: $1 = m(3) + m - 3 \\Leftrightarrow 4m = 4 \\Leftrightarrow m = 1$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Khoảng cách từ gốc tọa độ $O$ đến giao điểm hai đường tiệm cận của đồ thị hàm số $y = \\frac{2x^2-x+1}{x-1}$ bằng:",
+    "choices": [
+      "A. $2\\sqrt{2}$.",
+      "B. $\\sqrt{10}$.",
+      "C. $3$.",
+      "D. $\\sqrt{5}$."
+    ],
+    "correct": 1,
+    "explain": "Chia đa thức: $y = \\frac{2x(x-1) + x + 1}{x-1} = 2x + 1 + \\frac{2}{x-1}$. \nTiệm cận đứng: $x = 1$. Tiệm cận xiên: $y = 2x + 1$. \nGiao điểm $I$ thỏa mãn $x = 1$, thay vào TCN $y = 2(1) + 1 = 3 \\Rightarrow I(1; 3)$. \nKhoảng cách $OI = \\sqrt{1^2 + 3^2} = \\sqrt{10}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Tìm tổng tất cả các giá trị của tham số $m$ để đồ thị hàm số $y = \\frac{x-1}{x^2-mx+4}$ có đúng một đường tiệm cận đứng.",
+    "choices": [
+      "A. $5$.",
+      "B. $4$.",
+      "C. $0$.",
+      "D. $-4$."
+    ],
+    "correct": 0,
+    "explain": "Xét phương trình mẫu $g(x) = x^2-mx+4=0$ (*).\nĐồ thị có 1 TCĐ trong 2 trường hợp:\n+ TH1: (*) có nghiệm kép. $\\Delta = m^2 - 16 = 0 \\Leftrightarrow m = \\pm 4$. \n  - Nếu $m=4$, mẫu $(x-2)^2=0 \\Rightarrow x=2 \\ne 1$ (thỏa mãn 1 TCĐ).\n  - Nếu $m=-4$, mẫu $(x+2)^2=0 \\Rightarrow x=-2 \\ne 1$ (thỏa mãn 1 TCĐ).\n+ TH2: (*) có 2 nghiệm phân biệt, trong đó một nghiệm $x=1$. Thay $x=1$ vào (*): $1-m+4=0 \\Leftrightarrow m=5$. Khi đó (*) thành $x^2-5x+4=0 \n\\Leftrightarrow x=1, x=4$. Rút gọn phân thức được $\\frac{1}{x-4}$, có 1 TCĐ $x=4$ (thỏa mãn).\nVậy $m \\in \\{4; -4; 5\\}$. Tổng là $4 + (-4) + 5 = 5$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Tính diện tích hình phẳng giới hạn bởi đường tiệm cận xiên của đồ thị hàm số $y = \\frac{x^2+2x-1}{x-1}$ và hai trục tọa độ.",
+    "choices": [
+      "A. $\\frac{3}{2}$.",
+      "B. $3$.",
+      "C. $9$.",
+      "D. $\\frac{9}{2}$."
+    ],
+    "correct": 3,
+    "explain": "Thực hiện phép chia: $y = \\frac{x(x-1) + 3(x-1) + 2}{x-1} = x + 3 + \\frac{2}{x-1}$. \nĐường tiệm cận xiên là $\\Delta: y = x + 3$. \nGiao của $\\Delta$ với trục tung: $x=0 \\Rightarrow y=3$. \nGiao của $\\Delta$ với trục hoành: $y=0 \\Rightarrow x=-3$. \nDiện tích tam giác vuông tạo thành là $S = \\frac{1}{2} \\cdot |-3| \\cdot |3| = \\frac{9}{2}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Đường tiệm cận xiên của đồ thị hàm số $y = \\frac{-3x^2-30x-51}{3x+6}$ có phương trình là:",
+    "choices": [
+      "A. $y = -x - 8$.",
+      "B. $y = -x - 12$.",
+      "C. $y = x - 6$.",
+      "D. $y = -3x - 10$."
+    ],
+    "correct": 0,
+    "explain": "Rút gọn tử và mẫu cho 3: $y = \\frac{-x^2-10x-17}{x+2}$. \nChia đa thức: $\\frac{-x(x+2) - 8x - 17}{x+2} = -x + \\frac{-8(x+2) - 1}{x+2} = -x - 8 - \\frac{1}{x+2}$. \nVậy tiệm cận xiên của đồ thị hàm số là $y = -x - 8$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Đồ thị của hàm số $y = x^3 - 3x + 1$ cắt trục tung tại điểm có tọa độ là:",
+    "choices": [
+      "A. $(0; 1)$.",
+      "B. $(1; 0)$.",
+      "C. $(0; -1)$.",
+      "D. $(-1; 0)$."
+    ],
+    "correct": 0,
+    "explain": "Để tìm tọa độ giao điểm của đồ thị hàm số với trục tung, ta cho hoành độ $x = 0$. Thay $x = 0$ vào phương trình hàm số ta được $y = 0^3 - 3(0) + 1 = 1$. Vậy đồ thị cắt trục tung tại điểm có tọa độ $(0; 1)$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Đường cong có dạng hình chữ \"N\" (nhánh cuối cùng bên phải hướng lên trên) là đặc trưng của đồ thị hàm số nào dưới đây?",
+    "choices": [
+      "A. $y = x^3 - 3x$.",
+      "B. $y = -x^3 + 3x$.",
+      "C. $y = x^4 - 2x^2$.",
+      "D. $y = \\frac{x-1}{x+1}$."
+    ],
+    "correct": 0,
+    "explain": "Đường cong có dạng chữ \"N\" là đồ thị của hàm số đa thức bậc ba $y = ax^3 + bx^2 + cx + d$. Vì nhánh cuối cùng bên phải hướng lên trên nên hệ số $a > 0$. Trong các phương án, chỉ có hàm số $y = x^3 - 3x$ thỏa mãn."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Đồ thị hàm số $y = \\frac{2x - 1}{x + 1}$ cắt trục hoành tại điểm có hoành độ là:",
+    "choices": [
+      "A. $x = \\frac{1}{2}$.",
+      "B. $x = -1$.",
+      "C. $x = 2$.",
+      "D. $x = -\\frac{1}{2}$."
+    ],
+    "correct": 0,
+    "explain": "Để tìm hoành độ giao điểm với trục hoành, ta cho $y = 0 \\Leftrightarrow \\frac{2x - 1}{x + 1} = 0 \\Leftrightarrow 2x - 1 = 0 \\Leftrightarrow x = \\frac{1}{2}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = ax^3 + bx^2 + cx + d$ có đồ thị là một đường cong. Nếu nhánh cuối cùng bên phải của đồ thị hướng xuống dưới, khẳng định nào sau đây đúng về dấu của hệ số $a$?",
+    "choices": [
+      "A. $a < 0$.",
+      "B. $a > 0$.",
+      "C. $a = 0$.",
+      "D. $a \\ge 0$."
+    ],
+    "correct": 0,
+    "explain": "Nhánh cuối cùng bên phải của đồ thị hàm số bậc ba $y = ax^3 + bx^2 + cx + d$ hướng xuống dưới khi và chỉ khi giới hạn của hàm số khi $x \\to +\\infty$ bằng $-\\infty$, điều này xảy ra khi hệ số $a < 0$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Giao điểm của hai đường tiệm cận của đồ thị hàm số $y = \\frac{x - 2}{x + 1}$ là điểm $I$. Tọa độ của điểm $I$ là:",
+    "choices": [
+      "A. $I(-1; 1)$.",
+      "B. $I(1; -1)$.",
+      "C. $I(1; 1)$.",
+      "D. $I(-1; -2)$."
+    ],
+    "correct": 0,
+    "explain": "Đồ thị hàm số $y = \\frac{x - 2}{x + 1}$ có tiệm cận đứng là đường thẳng $x = -1$ (nghiệm của mẫu) và tiệm cận ngang là đường thẳng $y = 1$ (hệ số $x$ trên tử chia hệ số $x$ dưới mẫu). Giao điểm của hai đường tiệm cận là $I(-1; 1)$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Đường cong gồm hai nhánh phân biệt rời nhau, nhận giao điểm của hai đường tiệm cận làm tâm đối xứng là dạng đồ thị của hàm số nào sau đây?",
+    "choices": [
+      "A. $y = \\frac{ax+b}{cx+d} \\ (c \\ne 0, ad - bc \\ne 0)$.",
+      "B. $y = ax^3 + bx^2 + cx + d \\ (a \\ne 0)$.",
+      "C. $y = ax^4 + bx^2 + c \\ (a \\ne 0)$.",
+      "D. $y = \\frac{ax^2+bx+c}{dx+e} \\ (a, d \\ne 0)$."
+    ],
+    "correct": 0,
+    "explain": "Đồ thị của hàm số phân thức bậc nhất trên bậc nhất $y = \\frac{ax+b}{cx+d}$ luôn gồm hai nhánh phân biệt và nhận giao điểm của hai đường tiệm cận (đứng và ngang) làm tâm đối xứng của đồ thị."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = f(x)$ có bảng biến thiên: $x$ đi từ $-\\infty$ đến $1$, $y$ tăng từ $-\\infty$ đến $3$; $x$ đi từ $1$ đến $+\\infty$, $y$ giảm từ $3$ đến $-\\infty$. Tọa độ điểm cực đại của đồ thị hàm số là:",
+    "choices": [
+      "A. $(1; 3)$.",
+      "B. $(3; 1)$.",
+      "C. $(0; 3)$.",
+      "D. $(1; 0)$."
+    ],
+    "correct": 0,
+    "explain": "Dựa vào sự biến thiên, hàm số tăng rồi giảm qua điểm $x = 1$, do đó hàm số đạt cực đại tại $x = 1$, giá trị cực đại tương ứng là $y = 3$. Tọa độ điểm cực đại của đồ thị là $(1; 3)$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Tâm đối xứng của đồ thị hàm số bậc ba $y = ax^3 + bx^2 + cx + d \\ (a \\ne 0)$ là điểm uốn của đồ thị. Hoành độ của điểm uốn này là nghiệm của phương trình nào dưới đây?",
+    "choices": [
+      "A. $y'' = 0$.",
+      "B. $y' = 0$.",
+      "C. $y = 0$.",
+      "D. $y''' = 0$."
+    ],
+    "correct": 0,
+    "explain": "Theo tính chất đồ thị hàm số bậc ba, đồ thị luôn nhận điểm uốn làm tâm đối xứng. Hoành độ điểm uốn được tìm bằng cách giải phương trình đạo hàm cấp hai $y'' = 0$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Số giao điểm của đồ thị hàm số $y = x^3 - 3x$ với trục hoành là:",
+    "choices": [
+      "A. $3$.",
+      "B. $2$.",
+      "C. $1$.",
+      "D. $0$."
+    ],
+    "correct": 0,
+    "explain": "Phương trình hoành độ giao điểm của đồ thị với trục hoành là $x^3 - 3x = 0 \\Leftrightarrow x(x^2 - 3) = 0 \\Leftrightarrow x = 0$ hoặc $x = \\pm \\sqrt{3}$. Phương trình có 3 nghiệm phân biệt nên đồ thị cắt trục hoành tại 3 điểm."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Đồ thị hàm số $y = \\frac{x^2 - 2x + 2}{x - 1}$ cắt trục tung tại điểm có tung độ bằng:",
+    "choices": [
+      "A. $-2$.",
+      "B. $2$.",
+      "C. $-1$.",
+      "D. $0$."
+    ],
+    "correct": 0,
+    "explain": "Giao điểm với trục tung là điểm có hoành độ $x = 0$. Thay $x = 0$ vào hàm số, ta được $y = \\frac{0^2 - 2(0) + 2}{0 - 1} = \\frac{2}{-1} = -2$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Tâm đối xứng của đồ thị hàm số $y = x^3 - 3x^2 + 2$ là điểm $I(a; b)$. Tính $a + b$.",
+    "choices": [
+      "A. $1$.",
+      "B. $2$.",
+      "C. $0$.",
+      "D. $-1$."
+    ],
+    "correct": 0,
+    "explain": "Tâm đối xứng của hàm đa thức bậc ba là điểm uốn. Ta có $y' = 3x^2 - 6x$ và $y'' = 6x - 6$. Cho $y'' = 0 \\Leftrightarrow x = 1$. Thay $x = 1$ vào hàm số ta được $y = 1^3 - 3(1)^2 + 2 = 0$. Vậy tâm đối xứng là $I(1; 0)$, suy ra $a = 1, b = 0 \\Rightarrow a + b = 1$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hàm số $y = \\frac{ax + b}{cx + d}$ có đồ thị nhận trục tung làm tiệm cận đứng và trục hoành làm tiệm cận ngang. Khẳng định nào sau đây đúng?",
+    "choices": [
+      "A. $a = 0, d = 0$.",
+      "B. $b = 0, c = 0$.",
+      "C. $a = 0, b = 0$.",
+      "D. $c = 0, d = 0$."
+    ],
+    "correct": 0,
+    "explain": "Đồ thị hàm số có tiệm cận đứng là đường thẳng $x = -\\frac{d}{c}$. Vì nhận trục tung ($x = 0$) làm tiệm cận đứng nên $-\\frac{d}{c} = 0 \\Rightarrow d = 0$. Đường tiệm cận ngang là $y = \\frac{a}{c}$. Nhận trục hoành ($y = 0$) làm tiệm cận ngang nên $\\frac{a}{c} = 0 \\Rightarrow a = 0$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hàm số $y = f(x)$ có đồ thị là đường cong đi qua gốc tọa độ, đạt cực đại tại điểm $(0; 0)$ và đạt cực tiểu tại điểm $(2; -4)$. Phương trình $f(x) = m$ có đúng 3 nghiệm thực phân biệt khi và chỉ khi:",
+    "choices": [
+      "A. $-4 < m < 0$.",
+      "B. $m > 0$.",
+      "C. $m < -4$.",
+      "D. $-4 \\le m \\le 0$."
+    ],
+    "correct": 0,
+    "explain": "Số nghiệm của phương trình $f(x) = m$ chính là số giao điểm của đồ thị hàm số $y = f(x)$ và đường thẳng $y = m$ nằm ngang. Dựa vào các điểm cực trị, đồ thị có sóng giới hạn từ $y_{CT} = -4$ đến $y_{CĐ} = 0$. Để đường thẳng $y = m$ cắt đồ thị tại đúng 3 điểm phân biệt thì nó phải nằm giữa cực tiểu và cực đại, tức là $-4 < m < 0$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Giao điểm hai đường tiệm cận của đồ thị hàm số phân thức $y = \\frac{x^2 - 3x + 3}{x - 1}$ là điểm $I$. Tọa độ điểm $I$ là:",
+    "choices": [
+      "A. $(1; -1)$.",
+      "B. $(1; 1)$.",
+      "C. $(-1; 1)$.",
+      "D. $(1; 2)$."
+    ],
+    "correct": 0,
+    "explain": "Chia đa thức: $y = \\frac{x(x - 1) - 2(x - 1) + 1}{x - 1} = x - 2 + \\frac{1}{x - 1}$. Từ đó, đồ thị hàm số có tiệm cận đứng là $x = 1$ và tiệm cận xiên là $y = x - 2$. Tọa độ giao điểm $I$ của hai đường tiệm cận là nghiệm của hệ $\\begin{cases} x = 1 \\\\ y = x - 2 \\end{cases} \\Rightarrow I(1; -1)$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Số giao điểm của đồ thị hàm số $y = x^3 - 3x^2 + 2x$ và đồ thị parabol $y = x^2 - x$ là:",
+    "choices": [
+      "A. $3$.",
+      "B. $2$.",
+      "C. $1$.",
+      "D. $0$."
+    ],
+    "correct": 0,
+    "explain": "Phương trình hoành độ giao điểm của hai đồ thị: $x^3 - 3x^2 + 2x = x^2 - x \\Leftrightarrow x^3 - 4x^2 + 3x = 0 \\Leftrightarrow x(x^2 - 4x + 3) = 0 \\Leftrightarrow x = 0, x = 1, x = 3$. Hệ phương trình có 3 nghiệm phân biệt nên hai đồ thị cắt nhau tại 3 điểm."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hàm số $y = \\frac{mx - 1}{x - m}$. Tìm tất cả các giá trị của tham số $m$ để đồ thị hàm số đã cho không có đường tiệm cận đứng.",
+    "choices": [
+      "A. $m = \\pm 1$.",
+      "B. $m = 1$.",
+      "C. $m = -1$.",
+      "D. Không tồn tại $m$."
+    ],
+    "correct": 0,
+    "explain": "Đồ thị hàm số phân thức bậc nhất trên bậc nhất không có tiệm cận đứng khi hàm số bị suy biến (tử và mẫu triệt tiêu nhau, trở thành hàm hằng). Điều kiện là định thức $ad - bc = 0 \\Leftrightarrow m(-m) - (-1)(1) = 0 \\Leftrightarrow -m^2 + 1 = 0 \\Leftrightarrow m = \\pm 1$. (Khi $m=1, y=1 \\ (x \\ne 1)$; khi $m=-1, y=-1 \\ (x \\ne -1)$, đồ thị là đường thẳng bị khoét một điểm)."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Gọi $M, N$ là các giao điểm của đường thẳng $y = x + 1$ và đường cong $y = \\frac{2x + 4}{x - 1}$. Hoành độ trung điểm $I$ của đoạn thẳng $MN$ là:",
+    "choices": [
+      "A. $1$.",
+      "B. $2$.",
+      "C. $-1$.",
+      "D. $-2$."
+    ],
+    "correct": 0,
+    "explain": "Phương trình hoành độ giao điểm: $x + 1 = \\frac{2x + 4}{x - 1}$ (điều kiện $x \\ne 1$). Suy ra $(x + 1)(x - 1) = 2x + 4 \\Leftrightarrow x^2 - 1 = 2x + 4 \\Leftrightarrow x^2 - 2x - 5 = 0$. Phương trình này luôn có hai nghiệm phân biệt $x_1, x_2$. Theo định lí Vi-ét, $x_1 + x_2 = 2$. Hoành độ trung điểm $I$ là $x_I = \\frac{x_1 + x_2}{2} = \\frac{2}{2} = 1$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hàm số $y = ax^3 + bx^2 + cx + d \\ (a \\ne 0)$ có đồ thị là đường cong nhận trục tung làm trục cắt tại điểm có tung độ dương. Điểm cực đại có hoành độ âm và điểm cực tiểu có hoành độ dương lớn hơn trị tuyệt đối của hoành độ điểm cực đại. Nhánh bên phải của đồ thị hướng lên. Có bao nhiêu số dương trong các hệ số $a, b, c, d$?",
+    "choices": [
+      "A. $2$.",
+      "B. $3$.",
+      "C. $1$.",
+      "D. $0$."
+    ],
+    "correct": 0,
+    "explain": "1) Nhánh phải hướng lên $\\Rightarrow a > 0$. 2) Cắt Oy tại tung độ dương $\\Rightarrow d > 0$. 3) Phương trình $y' = 3ax^2 + 2bx + c = 0$ có 2 nghiệm $x_1 < 0 < x_2$ với $|x_1| < x_2$. Do đó tổng 2 nghiệm $x_1 + x_2 = -\\frac{2b}{3a} > 0 \\Rightarrow b < 0$ (vì $a > 0$). Tích 2 nghiệm $x_1x_2 = \\frac{c}{3a} < 0 \\Rightarrow c < 0$. Vậy trong 4 số chỉ có 2 số dương là $a$ và $d$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Phương trình tiếp tuyến của đồ thị hàm số $y = \\frac{x + 2}{x - 1}$ tại điểm có hoành độ $x_0 = 2$ là:",
+    "choices": [
+      "A. $y = -3x + 10$.",
+      "B. $y = -3x + 4$.",
+      "C. $y = 3x - 2$.",
+      "D. $y = -3x + 2$."
+    ],
+    "correct": 0,
+    "explain": "Tọa độ tiếp điểm: Với $x_0 = 2 \\Rightarrow y_0 = \\frac{2 + 2}{2 - 1} = 4$. Đạo hàm $y' = \\frac{1 \\cdot (-1) - 1 \\cdot 2}{(x - 1)^2} = \\frac{-3}{(x - 1)^2}$. Hệ số góc của tiếp tuyến tại $x_0 = 2$ là $k = y'(2) = \\frac{-3}{(2 - 1)^2} = -3$. Phương trình tiếp tuyến: $y = -3(x - 2) + 4 \\Leftrightarrow y = -3x + 6 + 4 \\Leftrightarrow y = -3x + 10$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Đường thẳng $y = -x + m$ luôn cắt đồ thị hàm số $y = \\frac{2x - 1}{x + 1}$ tại hai điểm phân biệt với mọi giá trị của tham số $m$. Tính hoành độ trung điểm $I$ của đoạn thẳng nối hai giao điểm khi $m = 3$.",
+    "choices": [
+      "A. $0$.",
+      "B. $1$.",
+      "C. $\\frac{1}{2}$.",
+      "D. $-1$."
+    ],
+    "correct": 0,
+    "explain": "Phương trình hoành độ giao điểm: $-x + m = \\frac{2x - 1}{x + 1} \\Leftrightarrow (-x + m)(x + 1) = 2x - 1 \\Leftrightarrow -x^2 - x + mx + m = 2x - 1 \\Leftrightarrow x^2 - (m - 3)x - m - 1 = 0 \\ (*)$. Với $m = 3$, phương trình (*) trở thành $x^2 - 4 = 0$, phương trình có hai nghiệm $x_1, x_2$ thỏa mãn $x_1 + x_2 = 0$. Hoành độ trung điểm $I$ là $x_I = \\frac{x_1 + x_2}{2} = 0$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Một vật chuyển động theo quy luật $s(t) = -t^3 + 6t^2$, với $t$ (giây) là thời gian, $s$ (mét) là quãng đường. Vận tốc tức thời của vật tại thời điểm $t$ được tính bằng công thức nào?",
+    "choices": [
+      "A. $v(t) = -3t^2 + 12t$.",
+      "B. $v(t) = -t^2 + 6t$.",
+      "C. $v(t) = -6t + 12$.",
+      "D. $v(t) = -t^3 + 6t^2$."
+    ],
+    "correct": 0,
+    "explain": "Vận tốc tức thời của vật tại thời điểm $t$ là đạo hàm bậc nhất của quãng đường theo thời gian: $v(t) = s'(t) = -3t^2 + 12t$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Giả sử chi phí (nghìn đồng) để sản xuất $x$ sản phẩm được cho bởi hàm số $C(x) = 1000 + 20x - 0,1x^2$. Hàm chi phí biên $C'(x)$ là:",
+    "choices": [
+      "A. $C'(x) = 1000 + 20x$.",
+      "B. $C'(x) = 20 - 0,2x$.",
+      "C. $C'(x) = 20 - 0,1x$.",
+      "D. $C'(x) = -0,2x$."
+    ],
+    "correct": 1,
+    "explain": "Chi phí biên là đạo hàm bậc nhất của hàm tổng chi phí: $C'(x) = (1000 + 20x - 0,1x^2)' = 20 - 0,2x$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Một chất điểm chuyển động có phương trình vận tốc $v(t) = 3t^2 - 2t$ (m/s). Gia tốc tức thời của chất điểm tại thời điểm $t = 2$ (s) là:",
+    "choices": [
+      "A. $10 \\text{ m/s}^2$.",
+      "B. $8 \\text{ m/s}^2$.",
+      "C. $14 \\text{ m/s}^2$.",
+      "D. $12 \\text{ m/s}^2$."
+    ],
+    "correct": 0,
+    "explain": "Gia tốc là đạo hàm của vận tốc: $a(t) = v'(t) = 6t - 2$. Tại $t = 2$, gia tốc là $a(2) = 6(2) - 2 = 10 \\text{ m/s}^2$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Sự lây lan của một loại virus được mô hình hóa bởi hàm số $N(t) = -t^3 + 12t^2$, trong đó $N$ là số người nhiễm bệnh và $t$ là thời gian (tuần). Hàm số biểu diễn tốc độ truyền bệnh tại thời điểm $t$ là:",
+    "choices": [
+      "A. $-3t^2 + 24t$.",
+      "B. $-t^3 + 12t^2$.",
+      "C. $-6t + 24$.",
+      "D. $3t^2 - 24t$."
+    ],
+    "correct": 0,
+    "explain": "Tốc độ truyền bệnh tại thời điểm $t$ chính là tốc độ thay đổi tức thời của số người nhiễm bệnh, được tính bằng đạo hàm $N'(t) = -3t^2 + 24t$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số doanh thu $R(x)$ và hàm số chi phí $C(x)$ khi sản xuất và bán ra $x$ sản phẩm. Hàm lợi nhuận $P(x)$ được tính bởi công thức nào dưới đây?",
+    "choices": [
+      "A. $P(x) = R(x) + C(x)$.",
+      "B. $P(x) = C(x) - R(x)$.",
+      "C. $P(x) = R(x) - C(x)$.",
+      "D. $P(x) = \\frac{R(x)}{C(x)}$."
+    ],
+    "correct": 2,
+    "explain": "Trong kinh tế học, lợi nhuận thu được bằng tổng doanh thu trừ đi tổng chi phí sản xuất: $P(x) = R(x) - C(x)$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Nhiệt độ $T$ ($^\\circ\\text{C}$) của một phòng lạnh sau $t$ phút kể từ khi bật máy điều hòa được cho bởi công thức $T(t) = 28 - 0,5t$. Tốc độ thay đổi nhiệt độ của phòng tại thời điểm $t$ là:",
+    "choices": [
+      "A. $28^\\circ\\text{C/phút}$.",
+      "B. $0,5^\\circ\\text{C/phút}$.",
+      "C. $-0,5^\\circ\\text{C/phút}$.",
+      "D. $-28^\\circ\\text{C/phút}$."
+    ],
+    "correct": 2,
+    "explain": "Tốc độ thay đổi nhiệt độ là đạo hàm của hàm nhiệt độ theo thời gian: $T'(t) = -0,5$. Dấu trừ thể hiện nhiệt độ đang giảm $0,5^\\circ\\text{C}$ mỗi phút."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Số dân của một thị trấn sau $t$ năm kể từ năm 2000 được mô tả bởi hàm số $N(t) = \\frac{25t + 10}{t + 5}$ (nghìn người). Số dân của thị trấn này vào năm 2000 là:",
+    "choices": [
+      "A. $10$ nghìn người.",
+      "B. $2$ nghìn người.",
+      "C. $5$ nghìn người.",
+      "D. $25$ nghìn người."
+    ],
+    "correct": 1,
+    "explain": "Năm 2000 ứng với thời điểm ban đầu $t = 0$. Số dân khi đó là $N(0) = \\frac{25(0) + 10}{0 + 5} = \\frac{10}{5} = 2$ (nghìn người)."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Một vật chuyển động có phương trình quãng đường $s(t) = 2t^3 - 3t^2 + t$ (mét). Vận tốc của vật tại thời điểm ban đầu ($t = 0$) là:",
+    "choices": [
+      "A. $0$ m/s.",
+      "B. $2$ m/s.",
+      "C. $-3$ m/s.",
+      "D. $1$ m/s."
+    ],
+    "correct": 3,
+    "explain": "Phương trình vận tốc $v(t) = s'(t) = 6t^2 - 6t + 1$. Vận tốc ban đầu đạt được tại thời điểm $t = 0$ là $v(0) = 1$ (m/s)."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Hàm chi phí trung bình $\\overline{C}(x)$ để sản xuất $x$ sản phẩm được xác định từ hàm tổng chi phí $C(x)$ theo công thức nào dưới đây?",
+    "choices": [
+      "A. $\\overline{C}(x) = C'(x)$.",
+      "B. $\\overline{C}(x) = \\frac{C(x)}{x}$.",
+      "C. $\\overline{C}(x) = x \\cdot C(x)$.",
+      "D. $\\overline{C}(x) = C(x) - x$."
+    ],
+    "correct": 1,
+    "explain": "Theo định nghĩa trong kinh tế học, chi phí trung bình cho mỗi sản phẩm bằng tổng chi phí chia cho số lượng sản phẩm được sản xuất: $\\overline{C}(x) = \\frac{C(x)}{x}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm lợi nhuận $P(x) = -x^2 + 100x - 50$ (nghìn đồng) khi bán $x$ sản phẩm. Lợi nhuận biên tại mức sản xuất $x = 10$ là:",
+    "choices": [
+      "A. $80$ nghìn đồng.",
+      "B. $850$ nghìn đồng.",
+      "C. $100$ nghìn đồng.",
+      "D. $20$ nghìn đồng."
+    ],
+    "correct": 0,
+    "explain": "Lợi nhuận biên là đạo hàm của hàm lợi nhuận: $P'(x) = -2x + 100$. Tại $x = 10$, lợi nhuận biên là $P'(10) = -2(10) + 100 = 80$ nghìn đồng."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Một vật được phóng thẳng đứng lên trên từ mặt đất với phương trình độ cao $h(t) = 20t - 5t^2$, trong đó $t$ (giây) là thời gian và $h$ (mét) là khoảng cách tới mặt đất. Độ cao lớn nhất mà vật có thể đạt được là:",
+    "choices": [
+      "A. $10$ m.",
+      "B. $15$ m.",
+      "C. $20$ m.",
+      "D. $25$ m."
+    ],
+    "correct": 2,
+    "explain": "Vật đạt độ cao lớn nhất khi vận tốc tức thời bằng 0. Ta có $v(t) = h'(t) = 20 - 10t$. Cho $v(t) = 0 \\Leftrightarrow 20 - 10t = 0 \\Leftrightarrow t = 2$ (s). Thay $t = 2$ vào phương trình độ cao ta được $h(2) = 20(2) - 5(2)^2 = 40 - 20 = 20$ (m)."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Sự lây lan của một loại bệnh được mô hình hóa bởi hàm số $f(t) = 45t^2 - t^3$ ($0 \\le t \\le 25$), trong đó $f(t)$ là số người nhiễm bệnh kể từ ngày đầu tiên đến ngày thứ $t$. Tốc độ truyền bệnh lớn nhất vào ngày thứ mấy?",
+    "choices": [
+      "A. $10$.",
+      "B. $15$.",
+      "C. $20$.",
+      "D. $30$."
+    ],
+    "correct": 1,
+    "explain": "Tốc độ truyền bệnh là đạo hàm $v(t) = f'(t) = 90t - 3t^2$. Để tốc độ truyền bệnh lớn nhất, ta tìm cực đại của $v(t)$. Xét $v'(t) = 90 - 6t = 0 \\Leftrightarrow t = 15$. Vì $v''(t) = -6 < 0$, hàm số $v(t)$ đạt GTLN tại $t = 15$. Vậy tốc độ truyền bệnh lớn nhất vào ngày thứ 15."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Một cơ sở sản xuất có hàm tổng chi phí $C(x) = 400 + 4x + 0,01x^2$ (triệu đồng) khi sản xuất $x$ sản phẩm ($x > 0$). Chi phí trung bình cho mỗi sản phẩm đạt giá trị nhỏ nhất khi số lượng sản phẩm $x$ bằng bao nhiêu?",
+    "choices": [
+      "A. $100$.",
+      "B. $200$.",
+      "C. $300$.",
+      "D. $400$."
+    ],
+    "correct": 1,
+    "explain": "Hàm chi phí trung bình $\\overline{C}(x) = \\frac{C(x)}{x} = \\frac{400}{x} + 4 + 0,01x$. Đạo hàm $\\overline{C}'(x) = -\\frac{400}{x^2} + 0,01$. Cho $\\overline{C}'(x) = 0 \\Leftrightarrow \\frac{400}{x^2} = 0,01 \\Leftrightarrow x^2 = 40000 \\Leftrightarrow x = 200$ (do $x > 0$). Qua bảng biến thiên, $\\overline{C}(x)$ đạt cực tiểu tại $x = 200$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Khi nuôi cá trong hồ, trọng lượng trung bình của mỗi con cá sau một vụ phụ thuộc vào mật độ cá $n$ (số con/đơn vị diện tích) bởi công thức $P(n) = 480 - 20n$ (gam). Để tổng trọng lượng cá thu hoạch trên mỗi đơn vị diện tích là lớn nhất, ta cần thả bao nhiêu con cá?",
+    "choices": [
+      "A. $10$.",
+      "B. $12$.",
+      "C. $14$.",
+      "D. $24$."
+    ],
+    "correct": 1,
+    "explain": "Tổng trọng lượng cá thu hoạch trên mỗi đơn vị diện tích là $W(n) = n \\cdot P(n) = n(480 - 20n) = 480n - 20n^2$. Đạo hàm $W'(n) = 480 - 40n$. Cho $W'(n) = 0 \\Leftrightarrow 40n = 480 \\Leftrightarrow n = 12$. Bảng biến thiên cho thấy $W(n)$ đạt cực đại tại $n = 12$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Nồng độ $C$ của một loại thuốc trong máu sau $t$ giờ tiêm vào cơ thể được cho bởi công thức $C(t) = \\frac{t}{t^2 + 1}$ (mg/L). Nồng độ thuốc trong máu đạt mức cao nhất sau bao nhiêu giờ?",
+    "choices": [
+      "A. $0,5$ giờ.",
+      "B. $1$ giờ.",
+      "C. $1,5$ giờ.",
+      "D. $2$ giờ."
+    ],
+    "correct": 1,
+    "explain": "Đạo hàm $C'(t) = \\frac{1(t^2+1) - t(2t)}{(t^2+1)^2} = \\frac{1-t^2}{(t^2+1)^2}$. Cho $C'(t) = 0 \\Leftrightarrow 1-t^2 = 0 \\Leftrightarrow t = 1$ (do thời gian $t \\ge 0$). Dựa vào bảng biến thiên, hàm số đạt cực đại tại $t = 1$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Một nhà máy sản xuất độc quyền một loại sản phẩm. Biết hàm doanh thu $R(x) = 2000x - x^2$ và hàm chi phí $C(x) = x^2 + 1440x + 50$ (đơn vị: nghìn đồng), với $x$ là số lượng sản phẩm. Lợi nhuận của nhà máy đạt giá trị lớn nhất khi sản xuất bao nhiêu sản phẩm?",
+    "choices": [
+      "A. $140$.",
+      "B. $280$.",
+      "C. $1400$.",
+      "D. $560$."
+    ],
+    "correct": 0,
+    "explain": "Hàm lợi nhuận $P(x) = R(x) - C(x) = (2000x - x^2) - (x^2 + 1440x + 50) = -2x^2 + 560x - 50$. Đạo hàm $P'(x) = -4x + 560$. Cho $P'(x) = 0 \\Leftrightarrow 4x = 560 \\Leftrightarrow x = 140$. Bảng biến thiên chứng tỏ $P(x)$ đạt GTLN tại $x = 140$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Một chất điểm chuyển động theo phương trình $s(t) = -\\frac{1}{3}t^3 + 6t^2$, trong đó $t$ (giây) là khoảng thời gian tính từ lúc bắt đầu và $s$ (mét) là quãng đường. Tại thời điểm vật đạt vận tốc lớn nhất, gia tốc của vật bằng bao nhiêu?",
+    "choices": [
+      "A. $0 \\text{ m/s}^2$.",
+      "B. $6 \\text{ m/s}^2$.",
+      "C. $12 \\text{ m/s}^2$.",
+      "D. $36 \\text{ m/s}^2$."
+    ],
+    "correct": 0,
+    "explain": "Vận tốc $v(t) = s'(t) = -t^2 + 12t$. Gia tốc $a(t) = v'(t) = -2t + 12$. Vận tốc đạt giá trị lớn nhất khi $v'(t) = 0 \\Leftrightarrow -2t + 12 = 0 \\Leftrightarrow t = 6$. Tại thời điểm $t=6$, gia tốc $a(6) = v'(6) = 0 \\text{ m/s}^2$. (Thực tế, tại điểm cực trị thì đạo hàm của đại lượng đó bằng 0)."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Dân số của một thị trấn sau $t$ năm kể từ năm 2000 được mô tả bởi hàm số $N(t) = \\frac{25t + 10}{t + 5}$ (nghìn người). Khẳng định nào sau đây là đúng về sự phát triển dân số của thị trấn này khi thời gian trôi qua đủ lâu ($t \\to +\\infty$)?",
+    "choices": [
+      "A. Dân số tăng không có giới hạn.",
+      "B. Dân số giảm dần về 0.",
+      "C. Dân số luôn tăng nhưng tiệm cận và không vượt quá $25$ nghìn người.",
+      "D. Dân số ổn định ở mức $10$ nghìn người."
+    ],
+    "correct": 2,
+    "explain": "Đạo hàm $N'(t) = \\frac{25(5) - 10(1)}{(t+5)^2} = \\frac{115}{(t+5)^2} > 0, \\forall t \\ge 0$, nên dân số luôn tăng. Mặt khác, $\\lim_{t \\to +\\infty} N(t) = \\lim_{t \\to +\\infty} \\frac{25t + 10}{t + 5} = 25$. Do đó, đồ thị có tiệm cận ngang $N=25$, nghĩa là dân số luôn tăng nhưng không vượt quá mức $25$ nghìn người."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Một khách sạn có 50 phòng. Hiện tại, nếu giá cho thuê là 400 nghìn đồng/phòng/ngày thì cả 50 phòng đều được thuê hết. Cứ mỗi lần tăng giá thêm 20 nghìn đồng/phòng thì sẽ có thêm 2 phòng bị bỏ trống. Để doanh thu trong ngày là lớn nhất, khách sạn cần đặt giá phòng mới là bao nhiêu?",
+    "choices": [
+      "A. $450$ nghìn đồng.",
+      "B. $500$ nghìn đồng.",
+      "C. $420$ nghìn đồng.",
+      "D. $480$ nghìn đồng."
+    ],
+    "correct": 0,
+    "explain": "Gọi $x$ là số lần tăng giá 20 nghìn đồng ($x > 0$). Giá phòng mới là $400 + 20x$ (nghìn đồng). Số phòng được thuê là $50 - 2x$. Doanh thu $R(x) = (400 + 20x)(50 - 2x) = 20000 + 200x - 40x^2$. Đạo hàm $R'(x) = 200 - 80x = 0 \\Leftrightarrow x = 2,5$. Tại $x = 2,5$, doanh thu đạt GTLN. Giá phòng khi đó là $400 + 20(2,5) = 450$ nghìn đồng."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TN",
+    "level": 2,
+    "q": "Năng lượng tiêu hao $E(v)$ của một loài cá khi bơi ngược dòng nước với vận tốc $v$ (km/h) được cho bởi công thức $E(v) = c \\frac{v^3}{v - 6}$ ($v > 6$), trong đó $c > 0$ là một hằng số. Vận tốc $v$ để năng lượng tiêu hao là ít nhất bằng:",
+    "choices": [
+      "A. $6$ km/h.",
+      "B. $9$ km/h.",
+      "C. $12$ km/h.",
+      "D. $15$ km/h."
+    ],
+    "correct": 1,
+    "explain": "Đạo hàm $E'(v) = c \\frac{3v^2(v - 6) - v^3(1)}{(v - 6)^2} = c \\frac{2v^3 - 18v^2}{(v - 6)^2} = c \\frac{2v^2(v - 9)}{(v - 6)^2}$. Cho $E'(v) = 0 \\Leftrightarrow v = 0$ (loại do $v > 6$) hoặc $v = 9$. Bảng xét dấu cho thấy đạo hàm đổi dấu từ âm sang dương tại $v=9$, do đó $E(v)$ đạt giá trị nhỏ nhất tại vận tốc $9$ km/h."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Cho hàm số $f(x) = x^3 - 3x + 91$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Đạo hàm của hàm số là $f'(x) = 3x^2 - 3$.",
+      "b": "Phương trình $f'(x) = 0$ có tập nghiệm là $S = \\{1\\}$.",
+      "c": "Hàm số đạt cực đại tại $x = -1$ và giá trị cực đại bằng $93$.",
+      "d": "Đường thẳng đi qua hai điểm cực trị của đồ thị hàm số có phương trình $y = -2x + 91$."
+    },
+    "correct": {
+      "a": true,
+      "b": false,
+      "c": true,
+      "d": true
+    },
+    "explain": "a) (Mức 1) Đạo hàm $f'(x) = 3x^2 - 3$ đúng.\nb) (Mức 2) Phương trình $f'(x) = 0 \\Leftrightarrow x = \\pm 1$ nên tập nghiệm là $S = \\{-1; 1\\}$, mệnh đề sai.\nc) (Mức 3) Lập bảng xét dấu, $f'(x)$ đổi dấu từ dương sang âm tại $x = -1$ nên đây là điểm cực đại. Tính $f(-1) = 93$, mệnh đề đúng.\nd) (Mức 4) Lấy $y$ chia cho $y'$, phần dư là phương trình đường thẳng qua hai cực trị. Ta có công thức nhanh $y = \\left( d - \\frac{bc}{9a} \\right) + \\left( \\frac{2c}{3} - \\frac{2b^2}{9a} \\right)x$. Thay hệ số $a=1, b=0, c=-3, d=91$ vào được $y = -2x + 91$, mệnh đề đúng."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Cho hàm số $f(x) = \\frac{x^2 - x + 1}{x - 1}$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Tập xác định của hàm số là $D = \\mathbb{R} \\setminus \\{1\\}$.",
+      "b": "Đạo hàm của hàm số là $f'(x) = \\frac{x^2 - 2x}{(x - 1)^2}$.",
+      "c": "Hàm số đạt cực đại tại $x = 2$.",
+      "d": "Trên khoảng $(1; +\\infty)$, phương trình $f(x) = m$ có đúng 2 nghiệm phân biệt khi và chỉ khi $m > 3$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    },
+    "explain": "a) (Mức 1) Điều kiện $x - 1 \\ne 0 \\Leftrightarrow x \\ne 1$. Mệnh đề đúng.\nb) (Mức 2) Ta có $f'(x) = \\frac{(2x-1)(x-1) - (x^2-x+1)}{(x-1)^2} = \\frac{x^2-2x}{(x-1)^2}$. Mệnh đề đúng.\nc) (Mức 3) $f'(x) = 0 \\Leftrightarrow x=0$ hoặc $x=2$. Qua $x=2$, đạo hàm đổi dấu từ âm sang dương nên $x=2$ là điểm cực tiểu. Mệnh đề sai.\nd) (Mức 4) Trên $(1; +\\infty)$, hàm số giảm từ $+\\infty$ xuống giá trị cực tiểu $f(2) = 3$, rồi tăng lên $+\\infty$. Để phương trình $f(x) = m$ có đúng 2 nghiệm trên khoảng này thì đường thẳng $y=m$ phải cắt đồ thị tại 2 điểm, tức là $m > 3$. Mệnh đề đúng."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Cho hàm số $y = x^3 - 6x^2 + 9x - 1$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Đạo hàm của hàm số là $y' = 3x^2 - 12x + 9$.",
+      "b": "Hàm số nghịch biến trên khoảng $(1; 3)$.",
+      "c": "Đồ thị hàm số có điểm cực đại là $(3; -1)$.",
+      "d": "Phương trình $x^3 - 6x^2 + 9x - 1 - m = 0$ có ba nghiệm thực phân biệt $x_1, x_2, x_3$ thì $x_1^2 + x_2^2 + x_3^2 < 18$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": false
+    },
+    "explain": "a) (Mức 1) Đạo hàm là $y' = 3x^2 - 12x + 9$. Mệnh đề đúng.\nb) (Mức 2) $y' < 0 \\Leftrightarrow 3x^2 - 12x + 9 < 0 \\Leftrightarrow 1 < x < 3$. Mệnh đề đúng.\nc) (Mức 3) $y' = 0 \\Leftrightarrow x=1$ hoặc $x=3$. Hàm số đạt cực đại tại $x=1$, đạt cực tiểu tại $x=3$. Điểm $(3; -1)$ là điểm cực tiểu của đồ thị hàm số, không phải điểm cực đại. Mệnh đề sai.\nd) (Mức 4) Theo định lí Vi-ét cho phương trình bậc ba, nếu phương trình có 3 nghiệm thì: $x_1+x_2+x_3=6$ và $x_1x_2+x_2x_3+x_3x_1=9$. Khi đó $x_1^2+x_2^2+x_3^2 = (x_1+x_2+x_3)^2 - 2(x_1x_2+x_2x_3+x_3x_1) = 6^2 - 2(9) = 18$. Giá trị này luôn bằng 18, không thể nhỏ hơn 18. Mệnh đề sai."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Cho hàm số $f(x) = \\frac{2x^2 + 2x + 5}{2x + 1}$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Tập xác định của hàm số là $D = \\mathbb{R} \\setminus \\left\\{-\\frac{1}{2}\\right\\}$.",
+      "b": "Đạo hàm của hàm số là $f'(x) = \\frac{4(x^2 + x - 2)}{(2x + 1)^2}$.",
+      "c": "Hàm số đạt cực đại tại $x = 1$.",
+      "d": "Gọi $A, B$ là hai điểm cực trị của đồ thị hàm số. Khoảng cách từ gốc tọa độ $O$ đến đường thẳng $AB$ bằng $\\sqrt{5}$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": false
+    },
+    "explain": "a) (Mức 1) Mẫu số $2x + 1 \\ne 0 \\Leftrightarrow x \\ne -\\frac{1}{2}$. Mệnh đề đúng.\nb) (Mức 2) $f'(x) = \\frac{(4x+2)(2x+1) - 2(2x^2+2x+5)}{(2x+1)^2} = \\frac{4(x^2+x-2)}{(2x+1)^2}$. Mệnh đề đúng.\nc) (Mức 3) $f'(x) = 0 \\Leftrightarrow x^2+x-2 = 0 \\Leftrightarrow x=1$ hoặc $x=-2$. Lập bảng biến thiên, hàm số đạt cực đại tại $x=-2$ và cực tiểu tại $x=1$. Mệnh đề sai.\nd) (Mức 4) Phương trình đường thẳng đi qua hai điểm cực trị của hàm phân thức bậc 2/bậc 1 là $y = \\frac{u'}{v'} = \\frac{4x+2}{2} = 2x+1$. Đường thẳng $AB$ có phương trình $2x - y + 1 = 0$. Khoảng cách từ $O(0;0)$ đến $AB$ là $d = \\frac{|1|}{\\sqrt{2^2+(-1)^2}} = \\frac{\\sqrt{5}}{5}$. Mệnh đề sai vì độ dài không bằng $\\sqrt{5}$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Cho hàm số $y = \\frac{1}{3}x^3 - mx^2 + (m^2 - 4)x + 3$ (với $m$ là tham số thực). Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Tập xác định của hàm số là $D = \\mathbb{R}$.",
+      "b": "Đạo hàm của hàm số là $y' = x^2 - 2mx + m^2 - 4$.",
+      "c": "Khi $m = 3$, hàm số đạt cực đại tại điểm $x = 1$.",
+      "d": "Có đúng 5 giá trị nguyên của tham số $m$ để hàm số đồng biến trên khoảng $(0; +\\infty)$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) (Mức 1) Hàm đa thức luôn xác định trên $\\mathbb{R}$. Mệnh đề đúng.\nb) (Mức 2) $y' = x^2 - 2mx + m^2 - 4$. Mệnh đề đúng.\nc) (Mức 3) Với $m=3$, $y' = x^2 - 6x + 5 = 0 \\Leftrightarrow x=1$ hoặc $x=5$. Xét $y'' = 2x - 6$, $y''(1) = -4 < 0$ nên $x=1$ là điểm cực đại. Mệnh đề đúng.\nd) (Mức 4) Hàm số đồng biến trên $(0; +\\infty) \\Leftrightarrow y' \\ge 0 \\quad \\forall x > 0$. Ta có phương trình $y'=0$ có hai nghiệm là $x_1 = m-2$ và $x_2 = m+2$. Để $y' \\ge 0$ trên $(0; +\\infty)$ thì nghiệm lớn nhất phải nhỏ hơn hoặc bằng 0, tức là $m+2 \\le 0 \\Leftrightarrow m \\le -2$. Vậy có vô số giá trị nguyên của $m$ thỏa mãn. Mệnh đề sai."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Cho hàm số $f(x) = x^4 - 4x^2 + 3$. Khảo sát hàm số trên đoạn $[0; 4]$, xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Đạo hàm của hàm số là $f'(x) = 4x^3 - 8x$.",
+      "b": "Phương trình $f'(x) = 0$ trên đoạn $[0; 4]$ có hai nghiệm là $x = 0$ và $x = \\sqrt{2}$.",
+      "c": "Giá trị lớn nhất của hàm số trên đoạn $[0; 4]$ bằng $195$.",
+      "d": "Tổng giá trị lớn nhất và giá trị nhỏ nhất của hàm số trên đoạn $[0; 4]$ bằng $196$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) (Mức 1) Đạo hàm $f'(x) = 4x^3 - 8x$. Mệnh đề đúng.\nb) (Mức 2) $f'(x) = 0 \\Leftrightarrow 4x(x^2 - 2) = 0 \\Leftrightarrow x=0$ hoặc $x=\\pm \\sqrt{2}$. Trên đoạn $[0; 4]$ chỉ có hai nghiệm $x=0$ và $x=\\sqrt{2}$. Mệnh đề đúng.\nc) (Mức 3) Tính giá trị $f(0) = 3$, $f(\\sqrt{2}) = -1$, $f(4) = 4^4 - 4(4^2) + 3 = 195$. Giá trị lớn nhất là 195. Mệnh đề đúng.\nd) (Mức 4) Giá trị nhỏ nhất là $-1$, lớn nhất là $195$. Tổng của chúng là $195 + (-1) = 194$, không phải 196. Mệnh đề sai."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Cho hàm số $f(x) = \\frac{2x - 1}{x + 1}$ xét trên đoạn $[0; 2]$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Hàm số liên tục và xác định trên đoạn $[0; 2]$.",
+      "b": "Hàm số đồng biến trên đoạn $[0; 2]$.",
+      "c": "Giá trị nhỏ nhất của hàm số trên đoạn $[0; 2]$ bằng $1$.",
+      "d": "Có đúng hai giá trị nguyên của tham số $m$ để phương trình $f(x) = m$ có nghiệm trên đoạn $[0; 2]$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": false
+    },
+    "explain": "a) (Mức 1) Tập xác định $D = \\mathbb{R} \\setminus \\{-1\\}$, chứa đoạn $[0; 2]$. Mệnh đề đúng.\nb) (Mức 2) $f'(x) = \\frac{3}{(x+1)^2} > 0 \\quad \\forall x \\in [0; 2]$. Hàm số đồng biến. Mệnh đề đúng.\nc) (Mức 3) Do hàm đồng biến nên GTNN đạt tại $x=0$, $f(0) = -1$. Mệnh đề sai.\nd) (Mức 4) GTLN là $f(2) = 1$, GTNN là $f(0) = -1$. Tập giá trị trên đoạn này là $[-1; 1]$. Để phương trình $f(x)=m$ có nghiệm thì $m \\in [-1; 1]$. Có 3 giá trị nguyên là $-1, 0, 1$. Mệnh đề sai."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Ông An muốn xây một cái bể chứa nước lớn dạng một khối hộp chữ nhật không nắp có thể tích bằng $288 \\, \\text{m}^3$. Đáy bể là hình chữ nhật có chiều dài gấp đôi chiều rộng. Giá thuê nhân công để xây bể là $500.000$ đồng/m$^2$. Gọi chiều rộng đáy bể là $x$ (m) ($x > 0$), và $h$ (m) là chiều cao của bể. Xét tính đúng sai của các mệnh đề:",
+    "items": {
+      "a": "Chiều cao của bể được biểu diễn theo $x$ là $h = \\frac{144}{x^2}$.",
+      "b": "Diện tích toàn phần của bể (không nắp) là $S(x) = 2x^2 + \\frac{864}{x}$.",
+      "c": "Hàm số $S(x)$ đạt giá trị nhỏ nhất khi $x = 6$.",
+      "d": "Chi phí thấp nhất để trả cho nhân công xây dựng bể đó là $100$ triệu đồng."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) (Mức 1) Thể tích $V = 2x \\cdot x \\cdot h = 2x^2h = 288 \\Rightarrow h = \\frac{144}{x^2}$. Mệnh đề đúng.\nb) (Mức 2) Diện tích bể (không nắp) bằng diện tích đáy cộng diện tích xung quanh: $S(x) = 2x^2 + 2(x+2x)h = 2x^2 + 6xh = 2x^2 + 6x \\cdot \\frac{144}{x^2} = 2x^2 + \\frac{864}{x}$. Mệnh đề đúng.\nc) (Mức 3) $S'(x) = 4x - \\frac{864}{x^2} = 0 \\Rightarrow 4x^3 = 864 \\Rightarrow x^3 = 216 \\Rightarrow x = 6$. Lập bảng biến thiên ta có $S(x)$ đạt GTNN tại $x = 6$. Mệnh đề đúng.\nd) (Mức 4) $S(6) = 2(6^2) + \\frac{864}{6} = 216$ (m$^2$). Chi phí là $216 \\times 500.000 = 108.000.000$ đồng (108 triệu đồng), không phải 100 triệu đồng. Mệnh đề sai."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Cho hàm số $f(x) = \\sqrt{4x - x^2}$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Tập xác định của hàm số là $D = [0; 4]$.",
+      "b": "Đạo hàm của hàm số là $f'(x) = \\frac{2 - x}{\\sqrt{4x - x^2}}$ với mọi $x \\in (0; 4)$.",
+      "c": "Giá trị lớn nhất của hàm số trên tập xác định bằng $4$.",
+      "d": "Phương trình $f(x) = m$ có đúng $3$ giá trị nguyên của tham số $m$ để phương trình có hai nghiệm phân biệt."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": false
+    },
+    "explain": "a) (Mức 1) Điều kiện $4x - x^2 \\ge 0 \\Leftrightarrow 0 \\le x \\le 4$. Mệnh đề đúng.\nb) (Mức 2) $f'(x) = \\frac{(4x-x^2)'}{2\\sqrt{4x-x^2}} = \\frac{4-2x}{2\\sqrt{4x-x^2}} = \\frac{2-x}{\\sqrt{4x-x^2}}$. Mệnh đề đúng.\nc) (Mức 3) $f'(x) = 0 \\Leftrightarrow x = 2$. $f(2) = \\sqrt{8-4} = 2$. $f(0)=0, f(4)=0$. GTLN là $2$. Mệnh đề sai.\nd) (Mức 4) Tập giá trị của hàm số là $[0; 2]$. Để phương trình $f(x)=m$ có 2 nghiệm phân biệt thì đồ thị giao tại 2 điểm, tức là $m \\in [0; 2)$. Các giá trị nguyên của $m$ là $0, 1$. Chỉ có 2 giá trị nguyên, không phải 3. Mệnh đề sai."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Sự lây lan của một loại virus ở một địa phương có thể được mô hình hoá bằng hàm số $N(t) = -t^3 + 12t^2$ với $0 \\le t \\le 12$, trong đó $N$ là số người bị nhiễm bệnh (tính bằng trăm người) và $t$ là thời gian (tuần). Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Số người bị nhiễm bệnh tại thời điểm $t = 12$ tuần là $0$ người.",
+      "b": "Tốc độ truyền bệnh là đạo hàm của hàm số $N(t)$, có công thức $N'(t) = -3t^2 + 24t$.",
+      "c": "Số người tối đa bị nhiễm bệnh ở địa phương đó là $256$ trăm người.",
+      "d": "Virus sẽ lây lan nhanh nhất ở tuần thứ 6."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) (Mức 1) Thay $t = 12$ vào, $N(12) = -(12^3) + 12(12^2) = 0$. Mệnh đề đúng.\nb) (Mức 2) Đạo hàm mô tả tốc độ thay đổi tức thời, $N'(t) = -3t^2 + 24t$. Mệnh đề đúng.\nc) (Mức 3) Để tìm số người bệnh tối đa, xét $N'(t) = 0 \\Leftrightarrow -3t^2 + 24t = 0 \\Leftrightarrow t=0$ hoặc $t=8$. GTLN đạt tại $t=8$, $N(8) = -8^3 + 12(8^2) = 256$ (trăm người). Mệnh đề đúng.\nd) (Mức 4) Tốc độ lây lan nhanh nhất tương đương tìm GTLN của hàm tốc độ $v(t) = N'(t) = -3t^2 + 24t$. Xét đạo hàm $v'(t) = -6t + 24 = 0 \\Leftrightarrow t = 4$. Vậy virus lây lan nhanh nhất vào tuần thứ 4, không phải tuần thứ 6. Mệnh đề sai."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Cho hàm số $y = \\frac{2x-1}{x+1}$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Đường thẳng $x = -1$ là tiệm cận đứng của đồ thị hàm số.",
+      "b": "Đường thẳng $y = 2$ là tiệm cận ngang của đồ thị hàm số.",
+      "c": "Giao điểm của hai đường tiệm cận là điểm $I(-1; 2)$.",
+      "d": "Đường thẳng $y = -x + 2$ là một trục đối xứng của đồ thị hàm số."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) (Mức 1) $\\lim_{x \\to -1^+} \\frac{2x-1}{x+1} = -\\infty$ nên $x = -1$ là TCĐ. (Đúng)\nb) (Mức 2) $\\lim_{x \\to \\pm\\infty} \\frac{2x-1}{x+1} = 2$ nên $y = 2$ là TCN. (Đúng)\nc) (Mức 3) Giao của TCĐ và TCN là tâm đối xứng $I(-1; 2)$. (Đúng)\nd) (Mức 4) Các trục đối xứng của đồ thị hàm phân thức bậc 1/bậc 1 là đường thẳng đi qua $I(-1; 2)$ và có hệ số góc bằng $1$ hoặc $-1$. Phương trình trục đối xứng là $y = 1(x+1)+2 = x+3$ và $y = -1(x+1)+2 = -x+1$. Đường thẳng $y = -x+2$ không phải là trục đối xứng. (Sai)"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Cho hàm số $y = \\frac{x^2 - 3x + 4}{x - 1}$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Đường thẳng $x = 1$ là đường tiệm cận đứng của đồ thị hàm số.",
+      "b": "Đường thẳng $y = x - 2$ là đường tiệm cận xiên của đồ thị hàm số.",
+      "c": "Diện tích tam giác giới hạn bởi đường tiệm cận xiên và hai trục tọa độ bằng $2$.",
+      "d": "Tích khoảng cách từ một điểm $M$ bất kì trên đồ thị hàm số đến hai đường tiệm cận của nó luôn bằng $2$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) (Mức 1) $\\lim_{x \\to 1} y = \\infty$ nên $x = 1$ là TCĐ. (Đúng)\nb) (Mức 2) Ta có $y = x - 2 + \\frac{2}{x-1}$. Vì $\\lim_{x \\to \\pm\\infty} \\frac{2}{x-1} = 0$ nên $y = x - 2$ là TCX. (Đúng)\nc) (Mức 3) Đường TCX $y = x - 2$ cắt trục tung tại $(0; -2)$ và cắt trục hoành tại $(2; 0)$. Diện tích tam giác tạo thành là $S = \\frac{1}{2} \\cdot 2 \\cdot 2 = 2$. (Đúng)\nd) (Mức 4) Lấy $M(x_0; y_0) \\in (C)$. Khoảng cách đến TCĐ $\\Delta_1: x-1=0$ là $d_1 = |x_0 - 1|$. Khoảng cách đến TCX $\\Delta_2: x - y - 2 = 0$ là $d_2 = \\frac{|x_0 - y_0 - 2|}{\\sqrt{2}} = \\frac{|\\frac{2}{x_0 - 1}|}{\\sqrt{2}}$. Tích $d_1 \\cdot d_2 = |x_0 - 1| \\cdot \\frac{2}{|x_0 - 1|\\sqrt{2}} = \\sqrt{2} \\ne 2$. (Sai)"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Cho hàm số $y = f(x)$ xác định trên $\\mathbb{R} \\setminus \\{1\\}$ và thoả mãn $\\lim_{x \\to \\pm\\infty} f(x) = 2$, $\\lim_{x \\to 1^+} f(x) = +\\infty$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Đường thẳng $y = 2$ là tiệm cận ngang của đồ thị hàm số.",
+      "b": "Đường thẳng $x = 1$ là tiệm cận đứng của đồ thị hàm số.",
+      "c": "Nếu $\\lim_{x \\to -\\infty} [f(x) - (-x+1)] = 0$ thì đường thẳng $y = -x+1$ là tiệm cận xiên.",
+      "d": "Một đồ thị hàm số nếu đã có tiệm cận ngang thì không thể có tiệm cận xiên."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) (Mức 1) Theo định nghĩa, $\\lim_{x \\to \\pm\\infty} f(x) = 2$ nên $y=2$ là TCN. (Đúng)\nb) (Mức 2) Giới hạn một bên tại $x=1$ tiến tới vô cực nên $x=1$ là TCĐ. (Đúng)\nc) (Mức 3) Đây chính xác là định nghĩa của đường tiệm cận xiên. (Đúng)\nd) (Mức 4) Một đồ thị có thể có tiệm cận ngang ở nhánh $+\\infty$ và tiệm cận xiên ở nhánh $-\\infty$ (ví dụ hàm chứa căn thức $y = \\sqrt{x^2+1} + x$). (Sai)"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Cho hàm số $y = \\frac{\\sqrt{x^2+1}}{x}$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Tập xác định của hàm số là $D = \\mathbb{R} \\setminus \\{0\\}$.",
+      "b": "Đường thẳng $x = 0$ là tiệm cận đứng của đồ thị hàm số.",
+      "c": "Đồ thị hàm số chỉ có duy nhất một đường tiệm cận ngang là $y = 1$.",
+      "d": "Đồ thị hàm số có tất cả 3 đường tiệm cận."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    },
+    "explain": "a) (Mức 1) Biểu thức trong căn luôn dương, mẫu số khác 0 nên $x \\ne 0$. (Đúng)\nb) (Mức 2) $\\lim_{x \\to 0^+} \\frac{\\sqrt{x^2+1}}{x} = +\\infty$ nên $x=0$ là TCĐ. (Đúng)\nc) (Mức 3) Ta có $\\lim_{x \\to +\\infty} y = 1$ và $\\lim_{x \\to -\\infty} y = -1$. Đồ thị có hai tiệm cận ngang là $y = 1$ và $y = -1$. (Sai)\nd) (Mức 4) Có 1 TCĐ và 2 TCN, tổng số đường tiệm cận là 3. (Đúng)"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Để loại bỏ $p\\%$ chất gây ô nhiễm khỏi khí thải nhà máy, người ta ước tính chi phí cần bỏ ra là $C(p) = \\frac{300p}{100 - p}$ (triệu đồng). Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Hàm số mô hình trên có tập xác định phù hợp với thực tế là $0 \\le p < 100$.",
+      "b": "Để loại bỏ được $50\\%$ chất gây ô nhiễm, nhà máy cần chi ra $300$ triệu đồng.",
+      "c": "Đồ thị hàm số $C(p)$ có đường tiệm cận đứng là $p = 100$.",
+      "d": "Nếu nhà máy có nguồn ngân sách vô hạn (rất lớn), họ có thể loại bỏ hoàn toàn $100\\%$ chất gây ô nhiễm."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) (Mức 1) Tỉ lệ phần trăm $p$ phải lớn hơn hoặc bằng 0 và nhỏ hơn 100 (do mẫu khác 0). (Đúng)\nb) (Mức 2) Thay $p=50$ vào: $C(50) = 300(50)/(100-50) = 300$ triệu đồng. (Đúng)\nc) (Mức 3) $\\lim_{p \\to 100^-} C(p) = +\\infty$, nên $p=100$ là TCĐ. (Đúng)\nd) (Mức 4) Về mặt toán học, vì $p=100$ là đường tiệm cận đứng, chi phí sẽ tiến tới vô cực khi $p$ tiến tới 100. Do đó, trên thực tế không thể đạt được mức loại bỏ $100\\%$ tuyệt đối dù ngân sách lớn cỡ nào. (Sai)"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Cho hàm số $y = x^3 - 3x^2 + 2$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Đạo hàm của hàm số là $y' = 3x^2 - 6x$.",
+      "b": "Đồ thị hàm số cắt trục tung tại điểm có tung độ bằng $2$.",
+      "c": "Phương trình tiếp tuyến của đồ thị hàm số tại tâm đối xứng là $y = -3x + 3$.",
+      "d": "Phương trình $x^3 - 3x^2 + m = 0$ có 3 nghiệm phân biệt khi và chỉ khi $0 < m < 4$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": true
+    },
+    "explain": "a) (Mức 1) $y' = 3x^2 - 6x$. (Đúng)\nb) (Mức 2) Cho $x=0 \\Rightarrow y=2$. Giao với Oy tại $(0; 2)$. (Đúng)\nc) (Mức 3) $y'' = 6x - 6 = 0 \\Leftrightarrow x=1 \\Rightarrow y=0$. Tâm uốn (đối xứng) là $I(1; 0)$. Hệ số góc tiếp tuyến là $y'(1) = -3$. PTTT: $y = -3(x-1) + 0 = -3x + 3$. (Đúng)\nd) (Mức 4) Viết lại: $x^3 - 3x^2 + 2 = 2 - m$. Xét hàm $f(x) = x^3 - 3x^2 + 2$ có cực đại $y_{CD} = 2$ (tại $x=0$) và cực tiểu $y_{CT} = -2$ (tại $x=2$). Để PT có 3 nghiệm thì $-2 < 2-m < 2 \\Leftrightarrow 0 < m < 4$. (Đúng)"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Cho hàm số $y = \\frac{x-1}{x+1}$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Tập xác định của hàm số là $D = \\mathbb{R} \\setminus \\{-1\\}$.",
+      "b": "Đạo hàm của hàm số là $y' = \\frac{2}{(x+1)^2}$.",
+      "c": "Hàm số đồng biến trên toàn bộ tập xác định $D$.",
+      "d": "Giao điểm của hai đường tiệm cận của đồ thị hàm số nằm trên đường thẳng $y = -x$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    },
+    "explain": "a) (Mức 1) Điều kiện $x+1 \\ne 0 \\Leftrightarrow x \\ne -1$. (Đúng)\nb) (Mức 2) $y' = \\frac{1 \\cdot 1 - (-1) \\cdot 1}{(x+1)^2} = \\frac{2}{(x+1)^2}$. (Đúng)\nc) (Mức 3) Hàm số đồng biến trên TỪNG KHOẢNG XÁC ĐỊNH là $(-\\infty; -1)$ và $(-1; +\\infty)$. Không được nói đồng biến trên $D$ hoặc dùng ký hiệu hợp $\\cup$. (Sai)\nd) (Mức 4) TCĐ: $x = -1$, TCN: $y = 1$. Giao điểm là $I(-1; 1)$. Tọa độ $I$ thỏa mãn phương trình $y = -x$ vì $1 = -(-1)$. (Đúng)"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Cho đồ thị hàm số $y = ax^3 + bx^2 + cx + d$ có điểm cực đại là $(0; 4)$ và điểm cực tiểu là $(2; 0)$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Hệ số tự do $d = 4$.",
+      "b": "Hệ số $a > 0$.",
+      "c": "Hệ số $b < 0$ và $c = 0$.",
+      "d": "Hàm số $g(x) = f(|x|)$ có đúng 5 điểm cực trị."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) (Mức 1) Đồ thị qua $(0; 4) \\Rightarrow d = 4$. (Đúng)\nb) (Mức 2) Vì điểm cực tiểu nằm bên phải điểm cực đại ($x_{CT}=2 > x_{CD}=0$), nhánh cuối đồ thị sẽ đi lên $\\Rightarrow a > 0$. (Đúng)\nc) (Mức 3) $y' = 3ax^2 + 2bx + c$. Có 2 nghiệm $x=0, x=2 \\Rightarrow c=0$ và $x_1+x_2 = 2 \\Rightarrow -\\frac{2b}{3a} = 2 \\Rightarrow b = -3a < 0$. (Đúng)\nd) (Mức 4) Số điểm cực trị của $f(|x|)$ bằng $2k + 1$, với $k$ là số điểm cực trị DƯƠNG của $f(x)$. Hàm $f(x)$ chỉ có 1 cực trị dương là $x=2$. Vậy số cực trị của $g(x)$ là $2(1) + 1 = 3$. (Sai)"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Cho hàm số $y = \\frac{x^2 - 2x - 3}{x - 2}$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Đạo hàm của hàm số là $y' = \\frac{x^2 - 4x + 7}{(x-2)^2}$.",
+      "b": "Hàm số đã cho không có cực trị.",
+      "c": "Đồ thị hàm số có tiệm cận xiên là đường thẳng $y = x - 2$.",
+      "d": "Khoảng cách từ tâm đối xứng của đồ thị đến đường thẳng $x + y + 1 = 0$ bằng $\\frac{5\\sqrt{2}}{2}$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    },
+    "explain": "a) (Mức 1) $y' = \\frac{(2x-2)(x-2) - (x^2-2x-3)}{(x-2)^2} = \\frac{x^2-4x+7}{(x-2)^2}$. (Đúng)\nb) (Mức 2) Phương trình $y' = 0 \\Leftrightarrow x^2-4x+7 = 0$ vô nghiệm ($\\Delta = -12 < 0$). Do đó hàm số không có cực trị. (Đúng)\nc) (Mức 3) Chia đa thức: $\\frac{x^2-2x-3}{x-2} = x - \\frac{3}{x-2}$. Vậy TCX là $y = x$. Ý c khẳng định $y = x-2$ là sai. (Sai)\nd) (Mức 4) TCĐ: $x = 2$, TCX: $y = x$. Tâm đối xứng $I(2; 2)$. Khoảng cách $d(I, \\Delta) = \\frac{|2 + 2 + 1|}{\\sqrt{1^2+1^2}} = \\frac{5}{\\sqrt{2}} = \\frac{5\\sqrt{2}}{2}$. (Đúng)"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Cho hàm số $y = f(x)$ xác định trên $\\mathbb{R}$ và có đạo hàm $f'(x) = x(x-1)^2(x+2)$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Phương trình $f'(x) = 0$ có 3 nghiệm phân biệt là $x=0, x=1, x=-2$.",
+      "b": "Hàm số đạt cực tiểu tại điểm $x = 0$.",
+      "c": "Giá trị $f(1)$ là giá trị cực đại của hàm số.",
+      "d": "Hàm số $g(x) = f(1-x)$ đồng biến trên khoảng $(1; 3)$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    },
+    "explain": "a) (Mức 1) Các nghiệm làm $f'(x)=0$ rõ ràng là $0, 1, -2$. (Đúng)\nb) (Mức 2) Bảng xét dấu $f'(x)$: âm trên $(-2; 0)$, dương trên $(0; 1)$ và $(1; +\\infty)$. Đạo hàm đổi dấu từ âm sang dương tại $x=0$ nên đây là điểm cực tiểu. (Đúng)\nc) (Mức 3) Tại $x=1$ (nghiệm bội chẵn), đạo hàm không đổi dấu nên $x=1$ không phải là điểm cực trị. (Sai)\nd) (Mức 4) $g'(x) = -f'(1-x)$. Để $g(x)$ đồng biến thì $g'(x) > 0 \\Leftrightarrow f'(1-x) < 0$. Nhìn vào dấu $f'$, $f'(u) < 0 \\Leftrightarrow -2 < u < 0$. Thay $u = 1-x \\Rightarrow -2 < 1-x < 0 \\Leftrightarrow 1 < x < 3$. Vậy $g(x)$ đồng biến trên $(1; 3)$. (Đúng)"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Một chất điểm chuyển động theo phương trình $s(t) = -t^3 + 6t^2$, trong đó $t$ (giây) là khoảng thời gian từ lúc bắt đầu, $s$ (mét) là quãng đường đi được. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Phương trình vận tốc tức thời của chất điểm là $v(t) = -3t^2 + 12t$.",
+      "b": "Phương trình gia tốc tức thời của chất điểm là $a(t) = -6t + 12$.",
+      "c": "Vật đạt vận tốc lớn nhất tại thời điểm $t = 3$ (s).",
+      "d": "Quãng đường vật đi được từ lúc bắt đầu đến khi gia tốc bằng $0$ là $16$ mét."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    },
+    "explain": "a) (Mức 1) $v(t) = s'(t) = -3t^2 + 12t$. (Đúng)\nb) (Mức 2) $a(t) = v'(t) = -6t + 12$. (Đúng)\nc) (Mức 3) Vận tốc lớn nhất khi $v'(t) = 0 \\Leftrightarrow a(t) = 0 \\Leftrightarrow -6t + 12 = 0 \\Leftrightarrow t = 2$ (s). Tại $t=3$ là sai. (Sai)\nd) (Mức 4) Gia tốc bằng $0$ khi $t = 2$. Thay $t = 2$ vào phương trình quãng đường: $s(2) = -(2)^3 + 6(2)^2 = -8 + 24 = 16$ (m). (Đúng)"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Một xưởng sản xuất có hàm tổng chi phí là $C(x) = 0,01x^2 + 4x + 400$ (nghìn đồng), trong đó $x$ là số lượng sản phẩm. Giả sử xưởng bán hết sản phẩm với giá cố định là $20$ nghìn đồng/sản phẩm. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Hàm doanh thu của xưởng là $R(x) = 20x$.",
+      "b": "Hàm lợi nhuận của xưởng là $P(x) = -0,01x^2 + 16x - 400$.",
+      "c": "Chi phí trung bình để sản xuất một sản phẩm đạt mức thấp nhất khi xưởng sản xuất 200 sản phẩm.",
+      "d": "Để đạt được lợi nhuận lớn nhất, xưởng cần sản xuất $1000$ sản phẩm."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) (Mức 1) Doanh thu = Giá bán $\\times$ Số lượng $= 20x$. (Đúng)\nb) (Mức 2) Lợi nhuận $P(x) = R(x) - C(x) = 20x - (0,01x^2 + 4x + 400) = -0,01x^2 + 16x - 400$. (Đúng)\nc) (Mức 3) Chi phí trung bình $\\overline{C}(x) = \\frac{C(x)}{x} = 0,01x + 4 + \\frac{400}{x}$. Đạo hàm $\\overline{C}'(x) = 0,01 - \\frac{400}{x^2} = 0 \\Leftrightarrow x^2 = 40000 \\Leftrightarrow x = 200$. (Đúng)\nd) (Mức 4) Lợi nhuận lớn nhất khi $P'(x) = 0 \\Leftrightarrow -0,02x + 16 = 0 \\Leftrightarrow x = 800$. Khẳng định $x=1000$ là sai. (Sai)"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Sự lây lan của một loại virus được mô hình hoá bằng hàm số $N(t) = \\frac{5000}{1 + 4e^{-0,5t}}$, trong đó $N(t)$ là số người nhiễm bệnh và $t$ là thời gian (tính bằng tháng) kể từ khi phát hiện ca bệnh đầu tiên. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Tại thời điểm ban đầu ($t=0$), số người bị nhiễm bệnh là $1000$ người.",
+      "b": "Giới hạn $\\lim_{t \\to +\\infty} N(t) = 5000$ cho biết số người nhiễm bệnh tối đa không thể vượt quá $5000$ người.",
+      "c": "Đạo hàm bậc nhất của hàm số $N'(t)$ biểu thị tốc độ lây lan của bệnh tại thời điểm $t$.",
+      "d": "Bệnh lây lan với tốc độ nhanh nhất khi số lượng người bị nhiễm bệnh đạt ngưỡng $5000$ người."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) (Mức 1) $N(0) = \\frac{5000}{1 + 4e^0} = \\frac{5000}{5} = 1000$. (Đúng)\nb) (Mức 2) Giới hạn của mô hình logistic khi $t \\to +\\infty$ chính là sức chứa tối đa của quần thể. (Đúng)\nc) (Mức 3) Trong các bài toán thực tế, đạo hàm của hàm số mô tả sự thay đổi của đại lượng, ở đây là tốc độ truyền bệnh. (Đúng)\nd) (Mức 4) Theo tính chất của đường cong logistic, tốc độ tăng trưởng đạt lớn nhất khi giá trị hàm số bằng một nửa sức chứa tối đa. Nghĩa là bệnh lây lan nhanh nhất khi số người nhiễm bệnh là $2500$ người. (Sai)"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Người ta muốn cắt một tấm bìa hình vuông cạnh $12$ cm để làm một chiếc hộp không nắp. Bằng cách cắt ở bốn góc bốn hình vuông nhỏ bằng nhau cạnh là $x$ (cm) và gấp lên, thể tích của hộp được tạo thành kí hiệu là $V(x)$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Điều kiện thực tế của $x$ là $0 < x < 6$.",
+      "b": "Hàm số biểu diễn thể tích chiếc hộp là $V(x) = 4x^3 - 48x^2 + 144x$.",
+      "c": "Đạo hàm của thể tích là $V'(x) = 12x^2 - 96x + 144$.",
+      "d": "Để chiếc hộp có thể tích lớn nhất, người ta phải cắt bỏ các hình vuông nhỏ với cạnh $x = 6$ (cm)."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) (Mức 1) Cạnh hộp bị gấp lên từ 2 phía nên $12 - 2x > 0 \\Leftrightarrow x < 6$. (Đúng)\nb) (Mức 2) Diện tích đáy là $(12-2x)^2$, chiều cao là $x$. Vậy $V(x) = x(12-2x)^2 = x(144 - 48x + 4x^2) = 4x^3 - 48x^2 + 144x$. (Đúng)\nc) (Mức 3) $V'(x) = 12x^2 - 96x + 144$. (Đúng)\nd) (Mức 4) Giải $V'(x) = 0 \\Leftrightarrow 12(x^2 - 8x + 12) = 0 \\Leftrightarrow x=2$ hoặc $x=6$. Vì $0 < x < 6$, ta nhận $x=2$. Tại $x=6$ thể tích hộp bằng $0$. Vậy cắt $x=2$ mới lớn nhất. Khẳng định cắt $x=6$ là sai. (Sai)"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "DS",
+    "q": "Nồng độ $C(t)$ (mg/L) của một loại thuốc trong máu sau $t$ phút tiêm vào cơ thể được tính theo công thức $C(t) = \\frac{30t}{t^2+2}$ (với $t \\ge 0$). Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Tại thời điểm ban đầu ($t = 0$), nồng độ thuốc trong máu bằng $0$.",
+      "b": "Sau $1$ phút tiêm, nồng độ thuốc trong máu là $10$ mg/L.",
+      "c": "Tốc độ thay đổi nồng độ thuốc trong máu là $C'(t) = \\frac{60 - 30t^2}{(t^2+2)^2}$.",
+      "d": "Nồng độ thuốc trong máu đạt mức cao nhất sau đúng $2$ phút kể từ lúc tiêm."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) (Mức 1) Thay $t=0$ vào ta có $C(0) = 0/2 = 0$. (Đúng)\nb) (Mức 2) Thay $t=1$ vào ta có $C(1) = 30(1)/(1+2) = 10$. (Đúng)\nc) (Mức 3) $C'(t) = \\frac{30(t^2+2) - 30t(2t)}{(t^2+2)^2} = \\frac{30t^2 + 60 - 60t^2}{(t^2+2)^2} = \\frac{60 - 30t^2}{(t^2+2)^2}$. (Đúng)\nd) (Mức 4) Nồng độ cao nhất khi $C'(t) = 0 \\Leftrightarrow 60 - 30t^2 = 0 \\Leftrightarrow t^2 = 2 \\Leftrightarrow t = \\sqrt{2} \\approx 1,41$ (phút). Khẳng định nồng độ cao nhất tại $t=2$ là sai. (Sai)"
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 3,
+    "q": "Có bao nhiêu giá trị nguyên của tham số $m$ để hàm số $y = \\frac{m}{3}x^3 - 2mx^2 + (3m+5)x$ đồng biến trên $\\mathbb{R}$?",
+    "correct": "6",
+    "explain": "Đạo hàm $y' = mx^2 - 4mx + 3m + 5$. \n+ TH1: $m=0 \\Rightarrow y' = 5 > 0, \\forall x \\in \\mathbb{R}$ (Nhận $m=0$).\n+ TH2: $m \\ne 0$. Hàm số đồng biến trên $\\mathbb{R} \\Leftrightarrow m > 0$ và $\\Delta' = 4m^2 - m(3m+5) \\le 0 \\Leftrightarrow m^2 - 5m \\le 0 \\Leftrightarrow 0 < m \\le 5$.\nKết hợp lại ta được $m \\in \\{0, 1, 2, 3, 4, 5\\}$. Có 6 giá trị nguyên thỏa mãn."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 3,
+    "q": "Đồ thị hàm số $y = x^3 - 3x^2 + 2ax + b$ đạt cực tiểu tại điểm $A(2; -2)$. Tính giá trị của biểu thức $S = a + b$.",
+    "correct": "2",
+    "explain": "Đạo hàm $y' = 3x^2 - 6x + 2a$. Hàm số đạt cực tiểu tại $A(2; -2)$ nên $y'(2) = 0 \\Leftrightarrow 12 - 12 + 2a = 0 \\Leftrightarrow a = 0$. Mặt khác, đồ thị đi qua $A(2; -2)$ nên $2^3 - 3(2)^2 + 2(0)(2) + b = -2 \\Leftrightarrow 8 - 12 + b = -2 \\Leftrightarrow b = 2$. Vậy $S = 0 + 2 = 2$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 3,
+    "q": "Sự lây lan của một loại dịch bệnh được mô hình hóa bởi hàm số $N(t) = -t^3 + 12t^2$ (trong đó $N$ là số người nhiễm bệnh tính bằng trăm người, $t$ là thời gian tính bằng tuần). Tốc độ truyền bệnh lớn nhất đạt được vào tuần thứ mấy?",
+    "correct": "4",
+    "explain": "Tốc độ truyền bệnh là đạo hàm của hàm số lượng người bệnh: $v(t) = N'(t) = -3t^2 + 24t$. Để tốc độ này lớn nhất, ta tìm cực đại của $v(t)$. Ta có $v'(t) = -6t + 24 = 0 \\Leftrightarrow t = 4$. Do hệ số $a = -3 < 0$, $v(t)$ đạt giá trị lớn nhất tại $t=4$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 3,
+    "q": "Biết đồ thị hàm số $y = \\frac{x^2 - 2x - 7}{x - 4}$ có hai điểm cực trị là $A$ và $B$. Tính bình phương độ dài đoạn thẳng $AB$ (tức là $AB^2$).",
+    "correct": "20",
+    "explain": "Ta có $y' = \\frac{(2x-2)(x-4) - (x^2-2x-7)}{(x-4)^2} = \\frac{x^2-8x+15}{(x-4)^2}$. Cho $y' = 0 \\Leftrightarrow x = 3$ hoặc $x = 5$. \nTọa độ các điểm cực trị: $A(3; 4)$ và $B(5; 8)$. \nĐộ dài $AB^2 = (5-3)^2 + (8-4)^2 = 4 + 16 = 20$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 3,
+    "q": "Một xưởng mộc sản xuất $x$ tủ gỗ mỗi tuần $(1 \\le x \\le 20)$. Tổng chi phí sản xuất là $C(x) = x^3 - 3x^2 - 20x + 500$ (nghìn đồng). Xưởng bán mỗi chiếc tủ với giá cố định là $220$ nghìn đồng. Tính lợi nhuận tối đa xưởng mộc có thể thu được trong một tuần (đơn vị: nghìn đồng).",
+    "correct": "1200",
+    "explain": "Hàm doanh thu $R(x) = 220x$. Hàm lợi nhuận $P(x) = R(x) - C(x) = -x^3 + 3x^2 + 240x - 500$. \nĐạo hàm $P'(x) = -3x^2 + 6x + 240$. Cho $P'(x) = 0 \\Leftrightarrow x^2 - 2x - 80 = 0 \\Leftrightarrow x = 10$ (nhận) hoặc $x = -8$ (loại).\nLợi nhuận lớn nhất đạt tại $x=10$. Khi đó $P(10) = -1000 + 300 + 2400 - 500 = 1200$ (nghìn đồng)."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 4,
+    "q": "Cho hàm số $y = x^3 - 3(m+1)x^2 + 3(7m-3)x$. Tính tổng tất cả các giá trị nguyên của tham số $m$ để hàm số KHÔNG có cực trị.",
+    "correct": "10",
+    "explain": "Đạo hàm $y' = 3x^2 - 6(m+1)x + 3(7m-3)$. Hàm số không có cực trị $\\Leftrightarrow y' \\ge 0, \\forall x \\in \\mathbb{R}$ (vì hệ số $a=3>0$).\nĐiều kiện $\\Delta' = 9(m+1)^2 - 9(7m-3) \\le 0 \\Leftrightarrow m^2 + 2m + 1 - 7m + 3 \\le 0 \\Leftrightarrow m^2 - 5m + 4 \\le 0 \\Leftrightarrow 1 \\le m \\le 4$.\nCác giá trị nguyên của $m$ là $1, 2, 3, 4$. Tổng bằng $1 + 2 + 3 + 4 = 10$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 4,
+    "q": "Cho hàm số $y = f(x)$ xác định trên $\\mathbb{R}$ và có đạo hàm $f'(x) = (x-1)(x^2-2)(x^4-4)$. Hỏi hàm số $y = f(x)$ có tất cả bao nhiêu điểm cực trị?",
+    "correct": "1",
+    "explain": "Phân tích đạo hàm thành nhân tử: $f'(x) = (x-1)(x-\\sqrt{2})(x+\\sqrt{2})(x^2-2)(x^2+2) = (x-1)(x-\\sqrt{2})^2(x+\\sqrt{2})^2(x^2+2)$. \nTa thấy các nghiệm $x = \\pm\\sqrt{2}$ là nghiệm bội chẵn nên $f'(x)$ không đổi dấu khi đi qua chúng. Chỉ có nghiệm $x=1$ là nghiệm bội lẻ. Vậy hàm số có đúng 1 điểm cực trị."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 4,
+    "q": "Doanh số bán hàng của một sản phẩm công nghệ tuân theo đường cong logistic $f(t) = \\frac{5000}{1 + 5e^{-t}}$, trong đó $t$ là thời gian tính bằng năm. Tốc độ bán hàng được đo bằng đạo hàm $f'(t)$. Khi tốc độ bán hàng đạt mức tối đa, giá trị của biểu thức $e^t$ bằng bao nhiêu?",
+    "correct": "5",
+    "explain": "Tốc độ bán hàng $v(t) = f'(t) = \\frac{25000e^{-t}}{(1 + 5e^{-t})^2}$. Ta cần tìm $t$ để $v(t)$ đạt cực đại. \nXét $v'(t) = f''(t) = 25000 \\cdot \\frac{-e^{-t}(1+5e^{-t})^2 - e^{-t} \\cdot 2(1+5e^{-t})(-5e^{-t})}{(1+5e^{-t})^4}$. \nCho $v'(t) = 0 \\Leftrightarrow - (1+5e^{-t}) + 10e^{-t} = 0 \\Leftrightarrow 5e^{-t} = 1 \\Leftrightarrow e^t = 5$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 4,
+    "q": "Có bao nhiêu giá trị nguyên dương của tham số $m$ nhỏ hơn $2025$ để hàm số $y = 2x^3 - 3x^2 - 6mx + m$ nghịch biến trên khoảng $(-1; 1)$?",
+    "correct": "2023",
+    "explain": "Đạo hàm $y' = 6x^2 - 6x - 6m$. Hàm nghịch biến trên $(-1; 1) \\Leftrightarrow y' \\le 0, \\forall x \\in (-1; 1) \\Leftrightarrow x^2 - x - m \\le 0 \\Leftrightarrow m \\ge x^2 - x, \\forall x \\in (-1; 1)$. \nXét hàm $g(x) = x^2 - x$ trên $(-1; 1)$, ta có cực đại $g(-1) = 2$. Suy ra $m \\ge 2$. \nVì $m$ nguyên dương và $m < 2025$ nên $m \\in \\{2, 3, \\dots, 2024\\}$. Có tất cả $2023$ giá trị."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 4,
+    "q": "Tìm giá trị thực dương của tham số $m$ (làm tròn đến chữ số thập phân thứ nhất) để đồ thị hàm số $y = -x^3 + 3mx + 1$ có hai điểm cực trị $A, B$ sao cho tam giác $OAB$ vuông tại $O$ (với $O$ là gốc tọa độ).",
+    "correct": "0.5",
+    "explain": "Đạo hàm $y' = -3x^2 + 3m = 0 \\Leftrightarrow x = \\pm\\sqrt{m}$ (do $m>0$).\nCác điểm cực trị: $A(\\sqrt{m}; 1+2m\\sqrt{m})$ và $B(-\\sqrt{m}; 1-2m\\sqrt{m})$.\nTam giác $OAB$ vuông tại $O \\Leftrightarrow \\vec{OA} \\cdot \\vec{OB} = 0 \\Leftrightarrow -m + (1+2m\\sqrt{m})(1-2m\\sqrt{m}) = 0 \\Leftrightarrow -m + 1 - 4m^3 = 0$.\nGiải phương trình $4m^3 + m - 1 = 0$, ta thu được nghiệm duy nhất $m = 0.5$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 5,
+    "q": "Một doanh nghiệp độc quyền bán $x$ sản phẩm thu được tổng doanh thu là $f(x) = 2000x - x^2$ (chục nghìn đồng) và tốn chi phí sản xuất $g(x) = x^2 + 1440x + 50$. Nhà nước đánh thuế phụ thu $t$ (chục nghìn đồng) trên mỗi sản phẩm bán ra. Tìm mức thuế $t$ để nhà nước thu được TỔNG SỐ TIỀN THUẾ từ doanh nghiệp này là lớn nhất.",
+    "correct": "280",
+    "explain": "Lợi nhuận của doanh nghiệp sau thuế là $P(x) = f(x) - g(x) - tx = -2x^2 + (560-t)x - 50$. \nDoanh nghiệp tối đa hóa lợi nhuận khi $P'(x) = -4x + 560 - t = 0 \\Leftrightarrow x = \\frac{560-t}{4}$.\nTổng tiền thuế nhà nước thu được là $T(t) = t \\cdot x = t \\cdot \\frac{560-t}{4} = \\frac{1}{4}(560t - t^2)$.\nĐể $T(t)$ lớn nhất, đạo hàm $T'(t) = \\frac{1}{4}(560 - 2t) = 0 \\Leftrightarrow t = 280$ (chục nghìn đồng)."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 5,
+    "q": "Hai con tàu thủy cùng ở trên một vĩ tuyến và cách nhau 5 hải lý. Tàu A di chuyển thẳng hướng Nam với vận tốc 6 hải lý/giờ. Cùng lúc, tàu B di chuyển hướng thẳng về VỊ TRÍ BAN ĐẦU của tàu A với vận tốc 7 hải lý/giờ. Biết thời gian để khoảng cách giữa hai con tàu là ngắn nhất có dạng phân số tối giản $\\frac{a}{b}$ (giờ). Tính tổng $a + b$.",
+    "correct": "24",
+    "explain": "Giả sử tàu A ban đầu ở $O(0,0)$ và tàu B ở $B_0(5,0)$. \nSau thời gian $t$ giờ, tọa độ tàu A là $A_t(0, -6t)$. Tàu B di chuyển về $O(0,0)$ với vận tốc 7, nên quãng đường B đi là $7t$, tọa độ tàu B là $B_t(5-7t, 0)$.\nBình phương khoảng cách hai tàu: $D(t)^2 = (5-7t)^2 + (-6t)^2 = 85t^2 - 70t + 25$.\n$D(t)$ nhỏ nhất khi hàm bậc hai đạt đỉnh: $t = \\frac{70}{2 \\cdot 85} = \\frac{7}{17}$ (giờ). \nVậy $a = 7, b = 17 \\Rightarrow a + b = 24$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 5,
+    "q": "Công ty dầu khí muốn làm một đường ống dẫn từ vị trí $A$ trên bờ biển đến giàn khoan $B$ trên biển. Biết khoảng cách ngắn nhất từ $B$ vào bờ biển là $BH = 6$ km và $AH = 9$ km. Chi phí làm đường ống trên đất liền là $50.000$ USD/km và trên biển là $130.000$ USD/km. Công ty dự định nối ống từ $A$ thẳng đến một điểm $C$ trên bờ đoạn $AH$, rồi nối từ $C$ thẳng ra $B$. Tính độ dài đoạn $AC$ (km) để tổng chi phí là thấp nhất.",
+    "correct": "6.5",
+    "explain": "Đặt đoạn $CH = x$ ($0 \\le x \\le 9$). Khi đó đoạn $AC = 9 - x$ và đoạn $CB = \\sqrt{x^2 + 6^2} = \\sqrt{x^2 + 36}$.\nTổng chi phí: $f(x) = 50(9-x) + 130\\sqrt{x^2+36}$.\nĐạo hàm $f'(x) = -50 + \\frac{130x}{\\sqrt{x^2+36}}$. Cho $f'(x) = 0 \\Leftrightarrow 130x = 50\\sqrt{x^2+36} \\Leftrightarrow 13x = 5\\sqrt{x^2+36}$.\nBình phương 2 vế: $169x^2 = 25(x^2 + 36) \\Leftrightarrow 144x^2 = 900 \\Leftrightarrow x^2 = 6.25 \\Leftrightarrow x = 2.5$.\nVậy độ dài đoạn $AC$ cần làm là $AC = 9 - 2.5 = 6.5$ km."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 5,
+    "q": "Có bao nhiêu giá trị nguyên của tham số $m$ thuộc đoạn $[-10; 10]$ để hàm số $y = \\frac{x^3}{3} - (m-1)x^2 + (m^2-4)x - 1$ có hai điểm cực trị $x_1, x_2$ cùng mang dấu âm (tức là $x_1 < x_2 < 0$)?",
+    "correct": "8",
+    "explain": "Đạo hàm $y' = x^2 - 2(m-1)x + m^2 - 4$. Hàm số có hai cực trị âm $\\Leftrightarrow y'=0$ có hai nghiệm âm phân biệt.\nĐiều kiện: \n1) $\\Delta' > 0 \\Leftrightarrow (m-1)^2 - (m^2-4) > 0 \\Leftrightarrow -2m + 5 > 0 \\Leftrightarrow m < 2.5$.\n2) $S < 0 \\Leftrightarrow 2(m-1) < 0 \\Leftrightarrow m < 1$.\n3) $P > 0 \\Leftrightarrow m^2 - 4 > 0 \\Leftrightarrow m < -2$ hoặc $m > 2$.\nGiao các điều kiện ta được: $m < -2$.\nVì $m \\in [-10; 10]$ nên $m \\in \\{-10, -9, \\dots, -3\\}$. Có tất cả 8 giá trị."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 5,
+    "q": "Một con thuyền đang bị trôi dạt trên một dòng sông chảy thẳng về phía Bắc với tốc độ $5$ km/h. Thuyền khởi động động cơ và cố gắng di chuyển thẳng về một bến cảng $A$ nằm cách điểm xuất phát $1000$ km về phía Đông. Động cơ thuyền có khả năng chạy với tốc độ định mức $20$ km/h. Do tác động của dòng nước, quỹ đạo thực tế của thuyền tạo thành hàm tọa độ $x(t) = 20t$ và $y(t) = 5t$. Tại thời điểm khoảng cách từ thuyền đến bến $A$ là ngắn nhất, hoành độ của thuyền được viết dưới dạng phân số tối giản $\\frac{a}{b}$. Tính $a - b$.",
+    "correct": "15983",
+    "explain": "Hệ trục tọa độ với điểm xuất phát là gốc $O(0,0)$, bến $A(1000, 0)$. Tọa độ thuyền sau $t$ giờ là $M(20t, 5t)$.\nBình phương khoảng cách $MA^2 = D(t) = (1000 - 20t)^2 + (5t)^2 = 10^6 - 40000t + 400t^2 + 25t^2 = 425t^2 - 40000t + 10^6$.\nĐể $D(t)$ đạt giá trị nhỏ nhất, $t = \\frac{-(-40000)}{2 \\times 425} = \\frac{40000}{850} = \\frac{800}{17}$ (giờ).\nHoành độ của thuyền tại thời điểm đó là $x = 20t = 20 \\times \\frac{800}{17} = \\frac{16000}{17}$ (km).\nTa có phân số $\\frac{a}{b} = \\frac{16000}{17}$ tối giản $\\Rightarrow a = 16000, b = 17$. Hiệu số $a - b = 16000 - 17 = 15983$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 3,
+    "q": "Một phân xưởng sản xuất $x$ sản phẩm mỗi ngày. Biết rằng giá bán của mỗi sản phẩm là $P(x) = 100 - 0,01x$ (nghìn đồng) và tổng chi phí sản xuất $x$ sản phẩm là $C(x) = 50x + 10000$ (nghìn đồng). Để lợi nhuận thu được trong một ngày là lớn nhất, phân xưởng cần sản xuất bao nhiêu sản phẩm?",
+    "correct": "2500",
+    "explain": "Lợi nhuận $L(x) = \\text{Doanh thu} - \\text{Chi phí} = x(100 - 0,01x) - (50x + 10000) = -0,01x^2 + 50x - 10000$. Đạo hàm $L'(x) = -0,02x + 50$. Cho $L'(x) = 0 \\Leftrightarrow x = 2500$. Vì hệ số $a = -0,01 < 0$ nên $L(x)$ đạt giá trị lớn nhất tại $x = 2500$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 3,
+    "q": "Nồng độ $C(t)$ (mg/L) của một loại thuốc trong máu sau $t$ giờ tiêm được cho bởi công thức $C(t) = \\frac{30t}{t^2+4}$ (với $t \\ge 0$). Nồng độ thuốc trong máu đạt mức cao nhất sau bao nhiêu giờ kể từ lúc tiêm?",
+    "correct": "2",
+    "explain": "Đạo hàm $C'(t) = \\frac{30(t^2+4) - 30t(2t)}{(t^2+4)^2} = \\frac{120 - 30t^2}{(t^2+4)^2}$. Cho $C'(t) = 0 \\Leftrightarrow 120 - 30t^2 = 0 \\Leftrightarrow t^2 = 4 \\Leftrightarrow t = 2$ (do $t \\ge 0$). Qua bảng biến thiên, $C(t)$ đạt GTLN tại $t = 2$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 3,
+    "q": "Một người cắt một đoạn dây thép dài $60$ dm thành hai đoạn. Đoạn dây thứ nhất được uốn thành một hình vuông có cạnh $a$ (dm), đoạn dây thứ hai được uốn thành một đường tròn có bán kính $r$ (dm). Để tổng diện tích của hình vuông và hình tròn là nhỏ nhất thì tỉ số $\\frac{a}{r}$ bằng bao nhiêu?",
+    "correct": "2",
+    "explain": "Gọi chiều dài đoạn uốn hình vuông là $x$, đoạn uốn hình tròn là $60-x$. Cạnh hình vuông $a = \\frac{x}{4}$, bán kính đường tròn $r = \\frac{60-x}{2\\pi}$. Tổng diện tích $S(x) = \\frac{x^2}{16} + \\frac{(60-x)^2}{4\\pi}$. Đạo hàm $S'(x) = \\frac{x}{8} - \\frac{60-x}{2\\pi} = 0 \\Leftrightarrow \\pi x = 240 - 4x \\Leftrightarrow x = \\frac{240}{\\pi+4}$. Khi đó $a = \\frac{60}{\\pi+4}$ và $r = \\frac{60 - \\frac{240}{\\pi+4}}{2\\pi} = \\frac{30}{\\pi+4}$. Vậy tỉ số $\\frac{a}{r} = \\frac{60}{30} = 2$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 3,
+    "q": "Tính tổng tất cả các giá trị nguyên của tham số $m \\in [-10; 10]$ sao cho giá trị nhỏ nhất của hàm số $f(x) = x^3 - 3x + m$ trên đoạn $[0; 2]$ là một số dương.",
+    "correct": "52",
+    "explain": "Đạo hàm $f'(x) = 3x^2 - 3 = 0 \\Leftrightarrow x = 1 \\in [0; 2]$. Ta có $f(0) = m, f(1) = m-2, f(2) = m+2$. Giá trị nhỏ nhất trên đoạn $[0; 2]$ là $m-2$. Yêu cầu bài toán: $m-2 > 0 \\Leftrightarrow m > 2$. Vì $m$ nguyên thuộc $[-10; 10]$ nên $m \\in \\{3, 4, 5, \\dots, 10\\}$. Tổng các giá trị là $3+4+\\dots+10 = 52$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 3,
+    "q": "Biết rằng giá trị lớn nhất của hàm số $y = \\frac{x + m^2}{x - 1}$ trên đoạn $[2; 4]$ bằng $6$. Tính bình phương của $m$.",
+    "correct": "4",
+    "explain": "Tập xác định $D = \\mathbb{R} \\setminus \\{1\\}$, chứa đoạn $[2; 4]$. Đạo hàm $y' = \\frac{-1 - m^2}{(x-1)^2} < 0, \\forall x \\in [2; 4]$. Hàm số luôn nghịch biến trên đoạn $[2; 4]$. Do đó, giá trị lớn nhất đạt được tại $x = 2$, tức là $\\max y = y(2) = 2 + m^2$. Theo giả thiết $2 + m^2 = 6 \\Leftrightarrow m^2 = 4$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 4,
+    "q": "Một khách sạn có $50$ phòng cho thuê. Hiện tại, nếu giá thuê mỗi phòng là $400$ nghìn đồng/ngày thì cả $50$ phòng đều có khách. Khảo sát cho thấy, cứ mỗi lần tăng giá thuê thêm $20$ nghìn đồng thì sẽ có thêm $2$ phòng bị bỏ trống. Khách sạn thu được doanh thu tối đa trong ngày là bao nhiêu nghìn đồng?",
+    "correct": "20250",
+    "explain": "Gọi $x$ là số lần tăng giá $20$ nghìn đồng ($x \\ge 0$). Giá thuê mới là $400 + 20x$, số phòng được thuê là $50 - 2x$. Doanh thu $R(x) = (400 + 20x)(50 - 2x) = 20000 + 200x - 40x^2$. $R'(x) = 200 - 80x = 0 \\Leftrightarrow x = 2,5$. Doanh thu tối đa là $R(2,5) = (400 + 50)(50 - 5) = 450 \\times 45 = 20250$ (nghìn đồng)."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 4,
+    "q": "Một nhà máy cần xây một bể chứa nước hình hộp chữ nhật không có nắp đậy, thể tích là $36 \\text{ m}^3$. Biết đáy bể là một hình chữ nhật có chiều dài gấp đôi chiều rộng. Chi phí vật liệu xây dựng tỉ lệ thuận với diện tích các mặt của bể. Hỏi chiều cao của bể bằng bao nhiêu mét để chi phí vật liệu xây dựng là thấp nhất?",
+    "correct": "2",
+    "explain": "Gọi chiều rộng đáy là $x$, chiều dài là $2x$, chiều cao là $h$. Thể tích $V = 2x^2h = 36 \\Leftrightarrow h = \\frac{18}{x^2}$. Diện tích vật liệu cần dùng: $S = 2x^2 + 2(x+2x)h = 2x^2 + 6xh = 2x^2 + \\frac{108}{x}$. $S'(x) = 4x - \\frac{108}{x^2} = 0 \\Leftrightarrow 4x^3 = 108 \\Leftrightarrow x^3 = 27 \\Leftrightarrow x = 3$. Chiều cao cần tìm là $h = \\frac{18}{3^2} = 2$ (m)."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 4,
+    "q": "Doanh số bán hàng của một sản phẩm công nghệ tuân theo đường cong logistic $f(t) = \\frac{5000}{1 + 5e^{-t}}$, trong đó $t$ là thời gian tính bằng năm kể từ khi phát hành. Tốc độ bán hàng được đo bằng đạo hàm $f'(t)$. Khi tốc độ bán hàng đạt mức tối đa, giá trị của biểu thức $e^t$ bằng bao nhiêu?",
+    "correct": "5",
+    "explain": "Tốc độ bán hàng $v(t) = f'(t) = \\frac{25000e^{-t}}{(1+5e^{-t})^2}$. Để tìm cực đại của $v(t)$, ta giải $v'(t) = 0$. $v'(t) = 25000 \\cdot \\frac{-e^{-t}(1+5e^{-t})^2 - e^{-t} \\cdot 2(1+5e^{-t})(-5e^{-t})}{(1+5e^{-t})^4}$. Tử số bằng $0 \\Leftrightarrow - (1+5e^{-t}) + 10e^{-t} = 0 \\Leftrightarrow 5e^{-t} = 1 \\Leftrightarrow e^t = 5$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 4,
+    "q": "Hai con tàu đang ở cùng một vĩ tuyến và cách nhau $5$ hải lí. Tàu A chạy theo hướng Nam với vận tốc $6$ hải lí/giờ, cùng lúc đó tàu B chạy hướng về vị trí ban đầu của tàu A với vận tốc $7$ hải lí/giờ. Thời gian (giờ) kể từ lúc xuất phát đến khi khoảng cách giữa hai tàu là ngắn nhất có dạng phân số tối giản $\\frac{a}{b}$. Tính tổng $a + b$.",
+    "correct": "24",
+    "explain": "Giả sử tàu A ở $O(0,0)$ và tàu B ở $(5,0)$. Tọa độ sau $t$ giờ: $A(0, -6t)$ và $B(5-7t, 0)$. Khoảng cách bình phương: $D^2(t) = (-6t)^2 + (5-7t)^2 = 36t^2 + 25 - 70t + 49t^2 = 85t^2 - 70t + 25$. $D^2(t)$ là tam thức bậc hai, đạt GTNN tại $t = \\frac{-(-70)}{2 \\cdot 85} = \\frac{70}{170} = \\frac{7}{17}$. Vậy $a = 7, b = 17 \\Rightarrow a + b = 24$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 4,
+    "q": "Biết rằng có đúng một giá trị dương của tham số $m$ để giá trị lớn nhất của hàm số $f(x) = |x^4 - 2x^2 + m|$ trên đoạn $[-1; 2]$ bằng $11$. Giá trị $m$ đó bằng bao nhiêu?",
+    "correct": "3",
+    "explain": "Xét $g(x) = x^4 - 2x^2 + m$. Trên $[-1; 2]$, $g'(x) = 4x^3 - 4x = 0 \\Leftrightarrow x = 0$ hoặc $x = 1$. Các giá trị: $g(-1) = m-1, g(0) = m, g(1) = m-1, g(2) = m+8$. Suy ra $\\min g(x) = m-1$ và $\\max g(x) = m+8$. Giá trị lớn nhất của $f(x) = |g(x)|$ là $\\max\\{|m-1|, |m+8|\\}$. Vì $m > 0$ nên $m+8 > 0$ và $m+8 > m-1$. Hơn nữa $m+8 - (-(m-1)) = 2m+7 > 0 \\Rightarrow |m+8| > |m-1|$. Vậy $\\max f(x) = m+8$. Theo đề $m+8 = 11 \\Leftrightarrow m=3$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 5,
+    "q": "Một người chèo thuyền xuất phát từ điểm $A$ trên bờ một con sông thẳng rộng $3$ km, muốn đến điểm $B$ nằm trên bờ đối diện và cách điểm đối diện của $A$ một khoảng $8$ km xuôi dòng. Biết vận tốc chèo thuyền là $6$ km/h và vận tốc chạy bộ trên bờ là $10$ km/h. Để thời gian di chuyển là ngắn nhất, người đó cần cập bờ tại một điểm $C$ cách điểm đối diện của $A$ bao nhiêu km?",
+    "correct": "2.25",
+    "explain": "Gọi $x$ là khoảng cách từ điểm đối diện $A$ đến điểm cập bờ $C$ ($0 \\le x \\le 8$). Quãng đường chèo thuyền: $\\sqrt{x^2+9}$. Quãng đường chạy bộ: $8-x$. Thời gian tổng cộng: $t(x) = \\frac{\\sqrt{x^2+9}}{6} + \\frac{8-x}{10}$. Đạo hàm $t'(x) = \\frac{x}{6\\sqrt{x^2+9}} - \\frac{1}{10} = 0 \\Leftrightarrow 10x = 6\\sqrt{x^2+9} \\Leftrightarrow 100x^2 = 36(x^2+9) \\Leftrightarrow 64x^2 = 324 \\Leftrightarrow x^2 = \\frac{324}{64} = \\frac{81}{16} \\Leftrightarrow x = 2,25$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 5,
+    "q": "Một công ty muốn làm một đường ống dẫn từ vị trí $A$ trên bờ biển đến giàn khoan $B$ trên biển. Khoảng cách ngắn nhất từ $B$ vào bờ biển là $BH = 6$ km và $AH = 9$ km. Chi phí làm đường ống trên đất liền là $50$ nghìn USD/km và trên biển là $130$ nghìn USD/km. Công ty dự định nối ống từ $A$ thẳng đến một điểm $C$ trên bờ đoạn $AH$, rồi nối từ $C$ thẳng ra $B$. Tính độ dài đoạn $AC$ (km) để tổng chi phí là thấp nhất.",
+    "correct": "6.5",
+    "explain": "Đặt $CH = x$ ($0 \\le x \\le 9$). Đoạn $AC = 9 - x$ và đoạn $CB = \\sqrt{x^2 + 36}$. Tổng chi phí $f(x) = 50(9-x) + 130\\sqrt{x^2+36}$. Đạo hàm $f'(x) = -50 + \\frac{130x}{\\sqrt{x^2+36}} = 0 \\Leftrightarrow 130x = 50\\sqrt{x^2+36} \\Leftrightarrow 13x = 5\\sqrt{x^2+36}$. Bình phương hai vế: $169x^2 = 25(x^2 + 36) \\Leftrightarrow 144x^2 = 900 \\Leftrightarrow x^2 = 6,25 \\Leftrightarrow x = 2,5$. Độ dài đoạn $AC = 9 - x = 9 - 2,5 = 6,5$ (km)."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 5,
+    "q": "Một ông chủ nhà muốn làm một cái thang để nó đứng dưới đất vươn qua một hàng rào và tựa vào ngôi nhà. Biết hàng rào cao $8$ mét được đặt song song và cách bức tường của ngôi nhà một khoảng bằng $1$ mét. Bình phương chiều dài ngắn nhất của cây thang là bao nhiêu (mét vuông)?",
+    "correct": "125",
+    "explain": "Gọi $\\alpha$ là góc tạo bởi cái thang và mặt đất. Chiều dài thang $L(\\alpha) = \\frac{1}{\\cos\\alpha} + \\frac{8}{\\sin\\alpha}$. Để $L$ min, đạo hàm $L'(\\alpha) = \\frac{\\sin\\alpha}{\\cos^2\\alpha} - \\frac{8\\cos\\alpha}{\\sin^2\\alpha} = 0 \\Leftrightarrow \\frac{\\sin^3\\alpha}{\\cos^3\\alpha} = 8 \\Leftrightarrow \\tan^3\\alpha = 8 \\Leftrightarrow \\tan\\alpha = 2$. Khi $\\tan\\alpha = 2$, ta có $\\sin\\alpha = \\frac{2}{\\sqrt{5}}$ và $\\cos\\alpha = \\frac{1}{\\sqrt{5}}$. Do đó $L_{\\min} = \\frac{1}{1/\\sqrt{5}} + \\frac{8}{2/\\sqrt{5}} = \\sqrt{5} + 4\\sqrt{5} = 5\\sqrt{5}$. Bình phương chiều dài là $(5\\sqrt{5})^2 = 125$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 5,
+    "q": "Một doanh nghiệp độc quyền bán $x$ sản phẩm thu được tổng doanh thu là $f(x) = 2000x - x^2$ (chục nghìn đồng) và tốn chi phí sản xuất $g(x) = x^2 + 1440x + 50$. Nhà nước đánh thuế phụ thu $t$ (chục nghìn đồng) trên mỗi sản phẩm bán ra. Tìm mức thuế $t$ để nhà nước thu được TỔNG SỐ TIỀN THUẾ từ doanh nghiệp này là lớn nhất.",
+    "correct": "280",
+    "explain": "Lợi nhuận của DN sau thuế: $P(x) = f(x) - g(x) - tx = -2x^2 + (560-t)x - 50$. DN sản xuất lượng $x$ để $P(x)$ max, tức là $P'(x) = -4x + 560 - t = 0 \\Leftrightarrow x = \\frac{560-t}{4}$. Tổng tiền thuế Nhà nước thu được là $T(t) = t \\cdot x = \\frac{560t - t^2}{4}$. $T(t)$ là hàm bậc hai theo $t$, đạt GTLN khi $t = \\frac{-560}{2(-1)} = 280$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 5,
+    "q": "Tìm tổng tất cả các giá trị của tham số $m$ sao cho giá trị lớn nhất của hàm số $f(x) = |x^3 - 3x^2 + m|$ trên đoạn $[0; 3]$ bằng $5$.",
+    "correct": "4",
+    "explain": "Xét hàm số bên trong $g(x) = x^3 - 3x^2 + m$. Trên đoạn $[0; 3]$, $g'(x) = 3x^2 - 6x = 0 \\Leftrightarrow x = 0$ hoặc $x = 2$. Các giá trị: $g(0) = m$, $g(2) = m-4$, $g(3) = m$. Vậy trên $[0; 3]$, $\\min g(x) = m-4$ và $\\max g(x) = m$. Giá trị lớn nhất của $f(x)$ là $\\max\\{|m|, |m-4|\\} = 5$. \n+ TH1: $|m| = 5$ và $|m| \\ge |m-4|$. Nếu $m=5 \\Rightarrow 5 \\ge 1$ (thỏa mãn). Nếu $m=-5 \\Rightarrow 5 \\ge 9$ (loại). \n+ TH2: $|m-4| = 5$ và $|m-4| \\ge |m|$. Nếu $m-4 = 5 \\Rightarrow m=9 \\Rightarrow 5 \\ge 9$ (loại). Nếu $m-4 = -5 \\Rightarrow m=-1 \\Rightarrow 5 \\ge |-1| = 1$ (thỏa mãn). \nVậy $m \\in \\{-1; 5\\}$. Tổng các giá trị là $4$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 3,
+    "q": "Tìm giá trị của tham số $m$ để đường tiệm cận ngang của đồ thị hàm số $y = \\frac{2025x - 1}{mx + 2}$ là đường thẳng $y = 5$.",
+    "correct": "405",
+    "explain": "Đường tiệm cận ngang của đồ thị hàm phân thức bậc nhất trên bậc nhất $y = \\frac{ax+b}{cx+d}$ là $y = \\frac{a}{c}$. Do đó ta có $\\frac{2025}{m} = 5 \\Leftrightarrow m = \\frac{2025}{5} = 405$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 3,
+    "q": "Tính diện tích hình chữ nhật tạo bởi hai đường tiệm cận của đồ thị hàm số $y = \\frac{3x + 5}{x - 4}$ và hai trục tọa độ.",
+    "correct": "12",
+    "explain": "Đồ thị hàm số có tiệm cận đứng $x = 4$ và tiệm cận ngang $y = 3$. Hai đường tiệm cận này cùng với các trục toạ độ $x = 0, y = 0$ tạo thành một hình chữ nhật có kích thước là $4$ và $3$. Diện tích hình chữ nhật là $S = 4 \\times 3 = 12$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 3,
+    "q": "Đồ thị hàm số $y = \\frac{2x^2 - 5x + 4}{x - 1}$ có một đường tiệm cận xiên là $\\Delta: y = f(x)$. Tính giá trị của $f(2)$.",
+    "correct": "1",
+    "explain": "Thực hiện phép chia đa thức: $y = \\frac{2x(x - 1) - 3(x - 1) + 1}{x - 1} = 2x - 3 + \\frac{1}{x - 1}$. Suy ra đường tiệm cận xiên là $\\Delta: y = 2x - 3$. Vậy $f(x) = 2x - 3 \\Rightarrow f(2) = 2(2) - 3 = 1$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 3,
+    "q": "Biết đường tiệm cận xiên của đồ thị hàm số $y = \\frac{x^2 + mx + 1}{x - 2}$ đi qua điểm $A(1; 5)$. Giá trị của tham số $m$ bằng bao nhiêu?",
+    "correct": "2",
+    "explain": "Ta có $y = \\frac{x(x - 2) + (m + 2)(x - 2) + 2m + 5}{x - 2} = x + m + 2 + \\frac{2m + 5}{x - 2}$. Đường tiệm cận xiên là $y = x + m + 2$. Vì nó đi qua $A(1; 5)$ nên $5 = 1 + m + 2 \\Leftrightarrow m = 2$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 3,
+    "q": "Bình phương khoảng cách từ gốc tọa độ $O$ đến giao điểm hai đường tiệm cận của đồ thị hàm số $y = \\frac{3x^2 - 2x + 1}{x - 1}$ bằng bao nhiêu?",
+    "correct": "17",
+    "explain": "Thực hiện phép chia đa thức, ta được $y = 3x + 1 + \\frac{2}{x - 1}$. Đồ thị có tiệm cận đứng là $x = 1$, tiệm cận xiên là $y = 3x + 1$. Giao điểm $I$ của hai tiệm cận có hoành độ $x = 1$, tung độ $y = 3(1) + 1 = 4$. Vậy $I(1; 4)$. Bình phương khoảng cách $OI^2 = 1^2 + 4^2 = 17$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 4,
+    "q": "Có bao nhiêu giá trị nguyên dương của tham số $m$ để đồ thị hàm số $y = \\frac{x - 3}{x^2 - mx + 16}$ có đúng một đường tiệm cận đứng?",
+    "correct": "1",
+    "explain": "Để hàm số có đúng 1 tiệm cận đứng, phương trình mẫu $g(x) = x^2 - mx + 16 = 0$ (1) phải có nghiệm kép, hoặc có 2 nghiệm phân biệt trong đó 1 nghiệm là $x=3$.\n- TH1: (1) có nghiệm kép $\\Leftrightarrow \\Delta = m^2 - 64 = 0 \\Leftrightarrow m = 8$ (do $m > 0$). Nghiệm kép là $x = 4 \\ne 3$ (nhận).\n- TH2: (1) có nghiệm $x = 3 \\Rightarrow 3^2 - 3m + 16 = 0 \\Rightarrow 3m = 25 \\Rightarrow m = 25/3$ (loại vì không phải số nguyên).\nVậy chỉ có 1 giá trị nguyên dương là $m = 8$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 4,
+    "q": "Tìm giá trị thực dương của tham số $m$ để giao điểm của hai đường tiệm cận của đồ thị hàm số $y = \\frac{mx^2 - x + 1}{x - m}$ nằm trên parabol $(P): y = x^2 + 3$.",
+    "correct": "2",
+    "explain": "Thực hiện phép chia: $y = \\frac{mx(x - m) + (m^2 - 1)x + 1}{x - m} = mx + m^2 - 1 + \\frac{m^3 - m + 1}{x - m}$.\nTiệm cận đứng $x = m$, tiệm cận xiên $y = mx + m^2 - 1$. Giao điểm là $I(m; 2m^2 - 1)$.\n$I \\in (P) \\Leftrightarrow 2m^2 - 1 = m^2 + 3 \\Leftrightarrow m^2 = 4$. Do $m > 0$ nên $m = 2$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 4,
+    "q": "Tính diện tích tam giác tạo bởi đường tiệm cận xiên của đồ thị hàm số $y = \\frac{x^2 + 2x - 1}{x - 2}$ và hai trục tọa độ.",
+    "correct": "8",
+    "explain": "Ta có $y = \\frac{x(x - 2) + 4(x - 2) + 7}{x - 2} = x + 4 + \\frac{7}{x - 2}$.\nĐường tiệm cận xiên là $\\Delta: y = x + 4$. Đường thẳng này cắt trục $Oy$ tại $A(0; 4)$ và cắt trục $Ox$ tại $B(-4; 0)$.\nDiện tích tam giác $OAB$ là $S = \\frac{1}{2} OA \\cdot OB = \\frac{1}{2} \\cdot 4 \\cdot |-4| = 8$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 4,
+    "q": "Tổng số đường tiệm cận đứng và tiệm cận ngang của đồ thị hàm số $y = \\frac{\\sqrt{x^2 - 16}}{x^2 - 5x + 4}$ là bao nhiêu?",
+    "correct": "2",
+    "explain": "Tập xác định: $x^2 - 16 \\ge 0 \\Leftrightarrow x \\ge 4$ hoặc $x \\le -4$. Mẫu khác 0 $\\Rightarrow x \\ne 1, x \\ne 4$. TXĐ: $D = (-\\infty; -4] \\cup (4; +\\infty)$.\n- Khi $x \\to \\pm\\infty$, $y \\to 0$. Ta có 1 đường tiệm cận ngang $y = 0$.\n- Nghiệm của mẫu là $x=1, x=4$. $x=1 \\notin D$ nên không xét. Tại $x=4$, $\\lim_{x \\to 4^+} \\frac{\\sqrt{x-4}\\sqrt{x+4}}{(x-1)(x-4)} = \\lim_{x \\to 4^+} \\frac{\\sqrt{x+4}}{(x-1)\\sqrt{x-4}} = +\\infty$. Do đó $x = 4$ là 1 đường tiệm cận đứng. Tổng số tiệm cận là 2."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 4,
+    "q": "Đồ thị hàm số $y = \\frac{2x + \\sqrt{x^2 + 1}}{x - 1}$ có hai đường tiệm cận ngang. Tính khoảng cách giữa hai đường tiệm cận ngang đó.",
+    "correct": "2",
+    "explain": "Tính giới hạn tại vô cực:\n- Khi $x \\to +\\infty$, $y = \\frac{2x + x\\sqrt{1 + 1/x^2}}{x(1 - 1/x)} \to 3$. Tiệm cận ngang $y = 3$.\n- Khi $x \\to -\\infty$, $\\sqrt{x^2+1} = -x\\sqrt{1 + 1/x^2}$, nên $y = \\frac{2x - x\\sqrt{1 + 1/x^2}}{x(1 - 1/x)} \to 1$. Tiệm cận ngang $y = 1$.\nKhoảng cách giữa hai đường này là $3 - 1 = 2$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 5,
+    "q": "Hàm chi phí trung bình để sản xuất $x$ trăm sản phẩm của một nhà máy là $f(x) = \\frac{3x^2 + 4x + 10}{x}$ (triệu đồng). Đồ thị hàm số $f(x)$ có tiệm cận xiên là đường thẳng $\\Delta$. Mức sản xuất $x$ bằng bao nhiêu (trăm sản phẩm) để khoảng cách từ điểm biểu diễn chi phí trung bình trên đồ thị đến đường tiệm cận xiên $\\Delta$ bằng $\\frac{\\sqrt{10}}{10}$?",
+    "correct": "10",
+    "explain": "Hàm số viết lại $f(x) = 3x + 4 + \\frac{10}{x}$. Tiệm cận xiên $\\Delta: y = 3x + 4 \\Leftrightarrow 3x - y + 4 = 0$.\nĐiểm $M\\left(x; 3x + 4 + \\frac{10}{x}\\right)$ nằm trên đồ thị. Khoảng cách từ $M$ đến $\\Delta$ là $d = \\frac{|3x - (3x + 4 + 10/x) + 4|}{\\sqrt{3^2 + (-1)^2}} = \\frac{|-10/x|}{\\sqrt{10}} = \\frac{10}{x\\sqrt{10}} = \\frac{\\sqrt{10}}{x}$.\nTheo giả thiết, $d = \\frac{\\sqrt{10}}{10} \\Rightarrow \\frac{\\sqrt{10}}{x} = \\frac{\\sqrt{10}}{10} \\Rightarrow x = 10$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 5,
+    "q": "Sự phát triển dân số của một loài sinh vật tuân theo mô hình logistic $P(t) = \\frac{a}{2 + 3e^{-0.5t}}$, trong đó $t$ là thời gian (năm). Biết rằng đường tiệm cận ngang của đồ thị hàm số biểu thị sức chứa tối đa của môi trường và bằng $5000$ cá thể. Quần thể sinh vật tại thời điểm ban đầu ($t = 0$) có bao nhiêu cá thể?",
+    "correct": "2000",
+    "explain": "Sức chứa tối đa của môi trường chính là giới hạn của $P(t)$ khi $t \\to +\\infty$. Ta có $\\lim_{t \\to +\\infty} P(t) = \\frac{a}{2 + 0} = \\frac{a}{2}$.\nTheo đề bài, $\\frac{a}{2} = 5000 \\Rightarrow a = 10000$. Mô hình trở thành $P(t) = \\frac{10000}{2 + 3e^{-0.5t}}$.\nTại thời điểm ban đầu $t = 0$, dân số là $P(0) = \\frac{10000}{2 + 3e^0} = \\frac{10000}{5} = 2000$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 5,
+    "q": "Tìm giá trị dương của tham số $m$ để khoảng cách từ giao điểm của hai đường tiệm cận của đồ thị hàm số $y = \\frac{x^2 - x + 1}{x - m}$ đến đường thẳng $3x - 4y + 1 = 0$ bằng $2$.",
+    "correct": "3",
+    "explain": "Thực hiện phép chia: $y = x + m - 1 + \\frac{m^2 - m + 1}{x - m}$. Đồ thị có tiệm cận đứng $x = m$ và tiệm cận xiên $y = x + m - 1$. Giao điểm là $I(m; 2m - 1)$.\nKhoảng cách từ $I$ đến đường thẳng $d: 3x - 4y + 1 = 0$ là:\n$d(I, d) = \\frac{|3m - 4(2m - 1) + 1|}{\\sqrt{3^2 + (-4)^2}} = \\frac{|-5m + 5|}{5} = |-m + 1|$.\nTa có $|-m + 1| = 2 \\Leftrightarrow -m + 1 = 2 \\Rightarrow m = -1$ (loại vì $m > 0$), hoặc $-m + 1 = -2 \\Rightarrow m = 3$. Từ quá trình nháp sai, phương trình là $I(m; m-1)$ thì $d = |-m+5|/5$. Sửa lại $I(m, 2m-1)$. Vậy $|-m+1|=2 \\Rightarrow m=3$. Phù hợp."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 5,
+    "q": "Theo Thuyết tương đối hẹp, khối lượng tương đối tính của một hạt di chuyển với vận tốc $v$ được cho bởi $m(v) = \\frac{m_0}{\\sqrt{1 - v^2/c^2}}$, trong đó $m_0$ là khối lượng nghỉ, $c$ là vận tốc ánh sáng. Biết động năng của hạt là $K(v) = (m(v) - m_0)c^2$. Để động năng bằng 3 lần năng lượng nghỉ ($3m_0c^2$), tỉ số $\\left(\\frac{v}{c}\\right)^2$ có dạng phân số tối giản $\\frac{a}{b}$. Tính $a + b$.",
+    "correct": "31",
+    "explain": "Năng lượng nghỉ là $E_0 = m_0 c^2$. Theo đề bài $K(v) = 3m_0 c^2 \\Rightarrow (m(v) - m_0)c^2 = 3m_0 c^2 \\Rightarrow m(v) = 4m_0$.\nThay vào công thức khối lượng: $\\frac{m_0}{\\sqrt{1 - (v/c)^2}} = 4m_0 \\Rightarrow \\sqrt{1 - (v/c)^2} = \\frac{1}{4} \\Rightarrow 1 - \\left(\\frac{v}{c}\\right)^2 = \\frac{1}{16} \\Rightarrow \\left(\\frac{v}{c}\\right)^2 = \\frac{15}{16}$.\nPhân số tối giản $\\frac{a}{b} = \\frac{15}{16}$, suy ra $a = 15, b = 16$. Tổng $a + b = 31$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 5,
+    "q": "Cho hàm số $f(x) = \\sqrt{x^2 - 8x} - x$. Tiệm cận ngang của đồ thị hàm số khi $x \\to +\\infty$ là đường thẳng $y = a$. Tiệm cận xiên của đồ thị hàm số khi $x \\to -\\infty$ là đường thẳng $y = cx + d$. Tính tổng $S = a + c + d$.",
+    "correct": "-2",
+    "explain": "- Tìm TCN khi $x \\to +\\infty$: $y = \\lim_{x \\to +\\infty} (\\sqrt{x^2 - 8x} - x) = \\lim_{x \\to +\\infty} \\frac{-8x}{\\sqrt{x^2 - 8x} + x} = \\frac{-8}{1 + 1} = -4$. Vậy $a = -4$.\n- Tìm TCX khi $x \\to -\\infty$: Hệ số góc $c = \\lim_{x \\to -\\infty} \\frac{f(x)}{x} = \\lim_{x \\to -\\infty} \\left( -\\sqrt{1 - \\frac{8}{x}} - 1 \\right) = -2$.\nHệ số tự do $d = \\lim_{x \\to -\\infty} (f(x) - cx) = \\lim_{x \\to -\\infty} (\\sqrt{x^2 - 8x} + x) = \\lim_{x \\to -\\infty} \\frac{-8x}{\\sqrt{x^2 - 8x} - x}$. Rút $x$ ra (lưu ý $x < 0$ nên $\\sqrt{x^2} = -x$): $d = \\frac{-8}{-1 - 1} = 4$.\nVậy $S = -4 + (-2) + 4 = -2$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 3,
+    "q": "Một loại vi khuẩn được cấy vào môi trường dinh dưỡng, khối lượng của nó sau $t$ giờ được mô hình hóa bởi hàm số $M(t) = -t^3 + 15t^2 + 10$ (mg) với $t > 0$. Tốc độ phát triển khối lượng của vi khuẩn lớn nhất vào giờ thứ mấy?",
+    "correct": "5",
+    "explain": "Tốc độ phát triển khối lượng của vi khuẩn là đạo hàm của hàm khối lượng: $v(t) = M'(t) = -3t^2 + 30t$. Để tốc độ này lớn nhất, ta tìm điểm cực đại của $v(t)$. Xét $v'(t) = -6t + 30 = 0 \\Leftrightarrow t = 5$. Do hệ số $a = -3 < 0$, parabol $v(t)$ đạt đỉnh và cũng là giá trị lớn nhất tại $t = 5$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 3,
+    "q": "Công suất $P$ (đơn vị W) của một mạch điện được cung cấp bởi một nguồn pin $12\\text{V}$ được cho bởi công thức $P(I) = 12I - 0,5I^2$, với $I$ (đơn vị A) là cường độ dòng điện. Tìm công suất tối đa của mạch điện (đơn vị W).",
+    "correct": "72",
+    "explain": "Ta khảo sát hàm số $P(I) = 12I - 0,5I^2$ với $I > 0$. Đạo hàm $P'(I) = 12 - I$. Cho $P'(I) = 0 \\Leftrightarrow I = 12$. Lập bảng biến thiên, ta thấy hàm số đạt giá trị lớn nhất tại $I = 12$. Công suất tối đa là $P(12) = 12(12) - 0,5(12)^2 = 144 - 72 = 72$ (W)."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 3,
+    "q": "Nồng độ $C(t)$ (mg/L) của một loại thuốc trong máu sau $t$ giờ tiêm được cho bởi công thức $C(t) = \\frac{40t}{t^2+9}$ (với $t \\ge 0$). Nồng độ thuốc trong máu đạt mức cao nhất sau bao nhiêu giờ kể từ lúc tiêm?",
+    "correct": "3",
+    "explain": "Đạo hàm $C'(t) = \\frac{40(t^2+9) - 40t(2t)}{(t^2+9)^2} = \\frac{360 - 40t^2}{(t^2+9)^2}$. Cho $C'(t) = 0 \\Leftrightarrow 360 - 40t^2 = 0 \\Leftrightarrow t^2 = 9$. Do $t \\ge 0$ nên $t = 3$. Lập bảng biến thiên, $C'(t)$ đổi dấu từ dương sang âm tại $t = 3$, do đó hàm số đạt giá trị lớn nhất tại $t = 3$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 3,
+    "q": "Tổng chi phí sản xuất $x$ sản phẩm của một nhà máy là $C(x) = 0,01x^2 + 4x + 10000$ (nghìn đồng). Để chi phí trung bình cho mỗi sản phẩm là thấp nhất thì nhà máy cần sản xuất bao nhiêu sản phẩm?",
+    "correct": "1000",
+    "explain": "Hàm chi phí trung bình là $\\overline{C}(x) = \\frac{C(x)}{x} = 0,01x + 4 + \\frac{10000}{x}$ (với $x > 0$). Đạo hàm $\\overline{C}'(x) = 0,01 - \\frac{10000}{x^2}$. Cho $\\overline{C}'(x) = 0 \\Leftrightarrow x^2 = 1000000 \\Leftrightarrow x = 1000$. Dựa vào bảng biến thiên, $\\overline{C}(x)$ đạt cực tiểu tại $x = 1000$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 3,
+    "q": "Một vật chuyển động có phương trình quãng đường $s(t) = \\frac{1}{3}t^3 - 3t^2 + 25t + 2$ (mét), với $t$ (giây) là khoảng thời gian tính từ lúc bắt đầu chuyển động. Trong $10$ giây đầu tiên, vật đạt vận tốc nhỏ nhất là bao nhiêu m/s?",
+    "correct": "16",
+    "explain": "Phương trình vận tốc $v(t) = s'(t) = t^2 - 6t + 25$. Khảo sát hàm số $v(t)$ trên đoạn $[0; 10]$. $v'(t) = 2t - 6 = 0 \\Leftrightarrow t = 3 \\in [0; 10]$. Tại $t = 3$, $v(3) = 3^2 - 6(3) + 25 = 16$. So sánh với các giá trị đầu mút, vận tốc nhỏ nhất là $16$ m/s."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 4,
+    "q": "Khi nuôi cá trong hồ, một nhà sinh vật học nhận thấy rằng: Nếu trên mỗi đơn vị diện tích của mặt hồ có $n$ con cá thì trung bình mỗi con cá sau một vụ cân nặng $P(n) = 600 - 15n$ (gam). Hỏi phải thả bao nhiêu con cá trên một đơn vị diện tích mặt hồ để sau một vụ thu hoạch được tổng khối lượng cá nhiều nhất?",
+    "correct": "20",
+    "explain": "Tổng khối lượng cá thu hoạch trên một đơn vị diện tích là $W(n) = n \\cdot P(n) = n(600 - 15n) = 600n - 15n^2$. Đạo hàm $W'(n) = 600 - 30n$. Cho $W'(n) = 0 \\Leftrightarrow 30n = 600 \\Leftrightarrow n = 20$. Đây là hàm bậc hai có hệ số $a = -15 < 0$ nên đạt giá trị lớn nhất tại đỉnh $n = 20$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 4,
+    "q": "Cần thiết kế một hộp bằng tôn dạng hình trụ không có nắp đậy, có thể tích bằng $125\\pi \\text{ cm}^3$. Bán kính đáy của hình trụ bằng bao nhiêu xentimét để dùng ít nguyên liệu nhất (tức là diện tích toàn phần nhỏ nhất)?",
+    "correct": "5",
+    "explain": "Gọi bán kính đáy là $R$ và chiều cao là $h$. Thể tích $V = \\pi R^2h = 125\\pi \\Rightarrow h = \\frac{125}{R^2}$. Diện tích toàn phần (không nắp) là $S = \\pi R^2 + 2\\pi Rh = \\pi R^2 + 2\\pi R \\cdot \\frac{125}{R^2} = \\pi R^2 + \\frac{250\\pi}{R}$. Đạo hàm $S'(R) = 2\\pi R - \\frac{250\\pi}{R^2}$. Cho $S'(R) = 0 \\Leftrightarrow 2\\pi R^3 = 250\\pi \\Leftrightarrow R^3 = 125 \\Leftrightarrow R = 5$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 4,
+    "q": "Một rạp hát bán vé với giá $200$ nghìn đồng/vé thì có $1000$ khán giả đến xem. Trung bình, cứ mỗi lần tăng giá vé thêm $10$ nghìn đồng thì số khán giả sẽ giảm đi $50$ người; ngược lại, nếu giảm giá vé $10$ nghìn đồng thì số khán giả tăng thêm $50$ người. Ngoài ra, mỗi khán giả đến rạp còn đem lại cho rạp hát $20$ nghìn đồng lợi nhuận từ các dịch vụ đi kèm. Rạp hát nên định giá vé là bao nhiêu nghìn đồng để tổng số tiền thu được (gồm tiền vé và dịch vụ) là lớn nhất?",
+    "correct": "190",
+    "explain": "Gọi $x$ là số lần tăng giá $10$ nghìn đồng ($x \\in \\mathbb{Z}$). Giá vé mới: $200 + 10x$. Số lượng khán giả: $1000 - 50x$. Doanh thu từ mỗi khán giả (vé + dịch vụ): $(200 + 10x) + 20 = 220 + 10x$. Tổng doanh thu $f(x) = (220 + 10x)(1000 - 50x) = -500x^2 - 1000x + 220000$. Hàm bậc hai đạt cực đại tại $x = \\frac{-(-1000)}{2 \\cdot (-500)} = -1$. Giá vé tối ưu là $200 + 10(-1) = 190$ (nghìn đồng)."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 4,
+    "q": "Từ một tấm bìa hình chữ nhật có kích thước $24$ cm và $45$ cm, người ta cắt đi ở bốn góc bốn hình vuông bằng nhau có cạnh là $x$ (cm) rồi gấp lên để tạo thành một chiếc hộp không nắp. Thể tích của chiếc hộp đạt giá trị lớn nhất khi $x$ bằng bao nhiêu?",
+    "correct": "5",
+    "explain": "Thể tích hộp là $V(x) = x(24 - 2x)(45 - 2x) = 4x^3 - 138x^2 + 1080x$, với điều kiện $0 < x < 12$. Đạo hàm $V'(x) = 12x^2 - 276x + 1080 = 12(x^2 - 23x + 90)$. Cho $V'(x) = 0 \\Leftrightarrow x = 5$ hoặc $x = 18$ (loại vì $18 > 12$). Lập bảng biến thiên, hàm số đạt giá trị lớn nhất tại $x = 5$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 4,
+    "q": "Công ty du lịch chào giá một tour như sau: Nếu có đúng $40$ khách đăng ký thì giá vé là $500$ nghìn đồng/người. Nếu có nhiều hơn $40$ khách, cứ thêm $1$ khách thì giá vé của TẤT CẢ hành khách sẽ được giảm $10$ nghìn đồng. Để công ty thu được tổng doanh thu lớn nhất, cần có đúng bao nhiêu khách hàng tham gia tour?",
+    "correct": "45",
+    "explain": "Gọi $x$ là số khách tăng thêm ($x \\ge 0$). Tổng số khách là $40 + x$. Giá vé cho mỗi người là $500 - 10x$. Doanh thu $R(x) = (40 + x)(500 - 10x) = -10x^2 + 100x + 20000$. Hàm bậc hai đạt cực đại tại $x = \\frac{-100}{2 \\cdot (-10)} = 5$. Tổng số khách hàng mang lại doanh thu cao nhất là $40 + 5 = 45$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 5,
+    "q": "Một hòn đảo ở vị trí $A$ cách bờ biển thẳng $3$ km. Một người chèo thuyền từ $A$ vào bờ tại điểm $M$, sau đó đi bộ dọc theo bờ biển đến điểm $B$ cách điểm gần nhất trên bờ của $A$ (gọi là $H$) một khoảng $8$ km. Biết vận tốc chèo thuyền là $6$ km/h và vận tốc đi bộ là $10$ km/h. Để thời gian di chuyển từ $A$ đến $B$ là ngắn nhất, khoảng cách $HM$ bằng bao nhiêu km? (Viết kết quả dưới dạng số thập phân).",
+    "correct": "2.25",
+    "explain": "Đặt $HM = x$ ($0 \\le x \\le 8$). Quãng đường chèo thuyền là $AM = \\sqrt{x^2 + 9}$, thời gian chèo là $\\frac{\\sqrt{x^2+9}}{6}$. Quãng đường đi bộ $MB = 8 - x$, thời gian đi là $\\frac{8-x}{10}$. Tổng thời gian $t(x) = \\frac{\\sqrt{x^2+9}}{6} + \\frac{8-x}{10}$. Đạo hàm $t'(x) = \\frac{x}{6\\sqrt{x^2+9}} - \\frac{1}{10} = 0 \\Leftrightarrow 10x = 6\\sqrt{x^2+9} \\Leftrightarrow 5x = 3\\sqrt{x^2+9}$. Bình phương hai vế: $25x^2 = 9(x^2+9) \\Leftrightarrow 16x^2 = 81 \\Leftrightarrow x = \\frac{9}{4} = 2,25$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 5,
+    "q": "Năng lượng tiêu hao $E(v)$ của một loài cá khi bơi ngược dòng nước với vận tốc $v$ (km/h) được cho bởi công thức $E(v) = c \\frac{v^3}{v - 4}$ ($v > 4$), trong đó $c > 0$ là một hằng số. Vận tốc $v$ để năng lượng tiêu hao là ít nhất bằng bao nhiêu km/h?",
+    "correct": "6",
+    "explain": "Ta tính đạo hàm: $E'(v) = c \\frac{3v^2(v-4) - v^3(1)}{(v-4)^2} = c \\frac{2v^3 - 12v^2}{(v-4)^2} = c \\frac{2v^2(v-6)}{(v-4)^2}$. Cho $E'(v) = 0 \\Leftrightarrow v = 0$ (loại do $v > 4$) hoặc $v = 6$. Qua bảng xét dấu, $E'(v)$ đổi dấu từ âm sang dương tại $v = 6$. Vậy cá bơi với vận tốc $6$ km/h sẽ tốn ít năng lượng nhất."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 5,
+    "q": "Cần xây một bể chứa nước không nắp dạng khối hộp chữ nhật có thể tích $V = 36 \\text{ m}^3$. Biết đáy bể là một hình chữ nhật có chiều dài gấp đôi chiều rộng. Hỏi chiều cao của bể bằng bao nhiêu mét để tổng diện tích bề mặt (gồm đáy và các mặt xung quanh) là nhỏ nhất?",
+    "correct": "2",
+    "explain": "Gọi chiều rộng đáy là $x$, chiều dài là $2x$, chiều cao là $h$. Thể tích $V = 2x^2h = 36 \\Rightarrow h = \\frac{18}{x^2}$. Diện tích toàn phần không nắp $S = 2x^2 + 2(x+2x)h = 2x^2 + 6xh = 2x^2 + 6x\\left(\\frac{18}{x^2}\\right) = 2x^2 + \\frac{108}{x}$. Đạo hàm $S'(x) = 4x - \\frac{108}{x^2} = 0 \\Leftrightarrow 4x^3 = 108 \\Leftrightarrow x^3 = 27 \\Leftrightarrow x = 3$. Khi đó chiều cao tối ưu là $h = \\frac{18}{3^2} = 2$ m."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 5,
+    "q": "Một cái thang được dựng đứng dưới đất vươn qua một bức tường rào để tựa vào một tòa nhà. Biết tường rào cao $27$ mét và cách tòa nhà một khoảng $8$ mét. Gọi $L$ là chiều dài ngắn nhất của cái thang có thể đặt được như vậy. Giá trị của biểu thức $L^2$ bằng bao nhiêu?",
+    "correct": "2197",
+    "explain": "Gọi $\\alpha$ là góc tạo bởi cái thang và mặt đất. Chiều dài thang được tính bằng $L(\\alpha) = \\frac{8}{\\cos\\alpha} + \\frac{27}{\\sin\\alpha}$. Hàm số đạt giá trị nhỏ nhất khi $\\tan\\alpha = \\sqrt{\\frac{27}{8}} = \\frac{3}{2}$. Hoặc áp dụng công thức tổng quát tối ưu bài toán cái thang qua tường rào, chiều dài ngắn nhất là $L_{\\min} = (a^{2/3} + b^{2/3})^{3/2}$. Thay $a = 8, b = 27$ ta được $L_{\\min} = (8^{2/3} + 27^{2/3})^{3/2} = (4 + 9)^{3/2} = 13^{3/2}$. Vậy $L^2 = 13^3 = 2197$."
+  },
+  {
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "type": "TLN",
+    "level": 5,
+    "q": "Một bóng đèn được treo ngay phía trên tâm của một chiếc bàn tròn có bán kính $3$ m. Cường độ sáng $I$ tại mép bàn được tính bởi công thức $I = k \\frac{\\sin \\alpha}{s^2}$, trong đó $k$ là hằng số dương, $s$ là khoảng cách từ bóng đèn đến mép bàn, và $\\alpha$ là góc tạo bởi tia sáng và mặt bàn. Bóng đèn cần treo ở độ cao $h$ (m) so với mặt bàn bằng bao nhiêu để cường độ sáng tại mép bàn là lớn nhất? Gọi $h_0$ là độ cao tối ưu đó, tính giá trị của biểu thức $2h_0^2$.",
+    "correct": "9",
+    "explain": "Ta có $s = \\sqrt{h^2+3^2}$ và $\\sin\\alpha = \\frac{h}{s} = \\frac{h}{\\sqrt{h^2+9}}$. Thay vào công thức, $I(h) = k \\frac{h}{(h^2+9)^{3/2}}$. Đạo hàm $I'(h) = k \\frac{1 \\cdot (h^2+9)^{3/2} - h \\cdot \\frac{3}{2}(h^2+9)^{1/2} \\cdot 2h}{(h^2+9)^3} = k \\frac{h^2+9 - 3h^2}{(h^2+9)^{5/2}} = k \\frac{9 - 2h^2}{(h^2+9)^{5/2}}$. Cho $I'(h) = 0 \\Leftrightarrow 9 - 2h^2 = 0 \\Leftrightarrow h = \\frac{3}{\\sqrt{2}}$. Vậy $h_0 = \\frac{3}{\\sqrt{2}}$, suy ra $h_0^2 = 4,5$. Giá trị $2h_0^2 = 2 \\times 4,5 = 9$."
   }
 ]
