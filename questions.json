@@ -2513,40 +2513,7 @@
     "q": "Một bóng đèn được treo ngay phía trên tâm của một chiếc bàn tròn có bán kính $3$ m. Cường độ sáng $I$ tại mép bàn được tính bởi công thức $I = k \\frac{\\sin \\alpha}{s^2}$, trong đó $k$ là hằng số dương, $s$ là khoảng cách từ bóng đèn đến mép bàn, và $\\alpha$ là góc tạo bởi tia sáng và mặt bàn. Bóng đèn cần treo ở độ cao $h$ (m) so với mặt bàn bằng bao nhiêu để cường độ sáng tại mép bàn là lớn nhất? Gọi $h_0$ là độ cao tối ưu đó, tính giá trị của biểu thức $2h_0^2$.",
     "correct": "9",
     "explain": "Ta có $s = \\sqrt{h^2+3^2}$ và $\\sin\\alpha = \\frac{h}{s} = \\frac{h}{\\sqrt{h^2+9}}$. Thay vào công thức, $I(h) = k \\frac{h}{(h^2+9)^{3/2}}$. Đạo hàm $I'(h) = k \\frac{1 \\cdot (h^2+9)^{3/2} - h \\cdot \\frac{3}{2}(h^2+9)^{1/2} \\cdot 2h}{(h^2+9)^3} = k \\frac{h^2+9 - 3h^2}{(h^2+9)^{5/2}} = k \\frac{9 - 2h^2}{(h^2+9)^{5/2}}$. Cho $I'(h) = 0 \\Leftrightarrow 9 - 2h^2 = 0 \\Leftrightarrow h = \\frac{3}{\\sqrt{2}}$. Vậy $h_0 = \\frac{3}{\\sqrt{2}}$, suy ra $h_0^2 = 4,5$. Giá trị $2h_0^2 = 2 \\times 4,5 = 9$."
-  },
-{
-    "grade": "12",
-    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
-    "type": "TN", "level": 1,
-    "q": "Câu TN mức 1 mồi", "choices": ["A. 1", "B. 2", "C. 3", "D. 4"], "correct": 0
-  },
-  {
-    "grade": "12",
-    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
-    "type": "TN", "level": 2,
-    "q": "Câu TN mức 2 mồi", "choices": ["A. 1", "B. 2", "C. 3", "D. 4"], "correct": 0
-  },
-  {
-    "grade": "12",
-    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
-    "type": "DS",
-    "q": "Câu DS mồi",
-    "items": {"a": "Ý 1", "b": "Ý 2", "c": "Ý 3", "d": "Ý 4"}, "correct": {"a": true, "b": true, "c": true, "d": true}
-  },
-  {
-    "grade": "12",
-    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
-    "type": "TLN", "level": 3, "q": "Câu TLN mức 3 mồi", "correct": "1"
-  },
-  {
-    "grade": "12",
-    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
-    "type": "TLN", "level": 4, "q": "Câu TLN mức 4 mồi", "correct": "1"
-  },
-  {
-    "grade": "12",
-    "chapter": "Vectơ và hệ trục tọa độ trong không gian",
-    "type": "TLN", "level": 5, "q": "Câu TLN mức 5 mồi", "correct": "1"
   }
+
 
 ]
