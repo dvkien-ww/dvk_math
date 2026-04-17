@@ -55,8 +55,8 @@
         .explain-box { background: #fff9db; border-left: 4px solid var(--warning); padding: 15px; margin: 10px 0; border-radius: 8px; text-align: left; }
         .hidden { display: none !important; }
         
-        /* Loading overlay */
         #loading-overlay { position: fixed; inset: 0; background: rgba(255,255,255,0.8); z-index: 4000; display: none; align-items: center; justify-content: center; flex-direction: column; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
     </style>
 </head>
 <body>
@@ -86,9 +86,9 @@
         <select id="grade-sel" onchange="updateChapters()"><option value="">-- Chọn Khối --</option><option value="10">Lớp 10</option><option value="11">Lớp 11</option><option value="12">Lớp 12</option></select>
         <select id="chapter-sel"><option value="">-- Chọn Chương --</option></select>
         <div style="display: flex; gap: 8px; margin: 10px 0;">
-            <button class="btn" style="flex:1; border: 1px solid #ddd;" onclick="selectTime(45, this)">45 Phút</button>
-            <button class="btn" style="flex:1; border: 1px solid #ddd;" onclick="selectTime(60, this)">60 Phút</button>
-            <button class="btn" style="flex:1; border: 1px solid #ddd;" onclick="selectTime(90, this)">90 Phút</button>
+            <button class="btn" id="t45" style="flex:1; border: 1px solid #ddd;" onclick="selectTime(45, this)">45 Phút</button>
+            <button class="btn" id="t60" style="flex:1; border: 1px solid #ddd;" onclick="selectTime(60, this)">60 Phút</button>
+            <button class="btn" id="t90" style="flex:1; border: 1px solid #ddd;" onclick="selectTime(90, this)">90 Phút</button>
         </div>
         <button class="btn-start" style="background: var(--primary); color: white;" onclick="startQuiz()">BẮT ĐẦU</button>
         <button class="btn" style="background: transparent; color: #888; font-size: 12px;" onclick="logout()">Đổi tài khoản</button>
@@ -113,8 +113,14 @@
 <div id="result-screen">
     <h1 style="color: var(--primary);">KẾT QUẢ</h1>
     <h2 id="final-score" style="font-size: 3rem; margin: 10px 0;">0.00</h2>
-    <p id="result-user-info"></p>
-    <div id="result-detail" style="max-width: 800px; margin: 20px auto;"></div>
+    <p id="result-user-info" style="font-weight: 600;"></p>
+    <p style="color: #666; font-size: 13px;">(Bấm vào từng câu để xem lời giải chi tiết)</p>
+    <div style="max-width: 800px; margin: 20px auto; text-align: left;">
+        <table style="width: 100%; border-collapse: collapse;" id="result-table-body">
+            <thead><tr style="background:#f1f3f5"><th style="padding:10px; border:1px solid #ddd">Câu</th><th style="padding:10px; border:1px solid #ddd">Loại</th><th style="padding:10px; border:1px solid #ddd">Điểm</th></tr></thead>
+            <tbody></tbody>
+        </table>
+    </div>
     <button class="btn" style="background: var(--primary); color: white; margin: 30px 0;" onclick="location.reload()">LÀM ĐỀ KHÁC</button>
 </div>
 
@@ -123,10 +129,28 @@
     let allQuestions = [], examSet = [], answers = [], currentIdx = 0, selectedMinutes = 0, timer;
     let currentUser = JSON.parse(localStorage.getItem('dvk_user'));
 
+    const labels = ["A.", "B.", "C.", "D."];
+
     window.onload = () => {
         if(currentUser) { document.getElementById('auth-screen').style.display = 'none'; showSetup(); }
-        fetch('questions.json').then(r => r.json()).then(data => { allQuestions = data; });
+        fetch('questions.json').then(r => r.json()).then(data => { 
+            allQuestions = data; 
+        });
     };
+
+    function renderMath(el) {
+        if(window.renderMathInElement) {
+            renderMathInElement(el, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false},
+                    {left: "\\(", right: "\\)", display: false},
+                    {left: "\\[", right: "\\]", display: true}
+                ],
+                throwOnError: false
+            });
+        }
+    }
 
     function handleAuth() {
         const name = document.getElementById('user-name').value.trim();
@@ -165,8 +189,8 @@
 
     function selectTime(m, btn) {
         selectedMinutes = m;
-        document.querySelectorAll('.btn').forEach(b => b.style.borderColor = '#ddd');
-        btn.style.borderColor = 'var(--primary)';
+        document.querySelectorAll('#t45, #t60, #t90').forEach(b => b.style.background = 'white');
+        btn.style.background = '#e8f0fe';
     }
 
     function startQuiz() {
@@ -214,7 +238,7 @@
         }
         paper.innerHTML = html;
         renderSidebar();
-        if(window.renderMathInElement) renderMathInElement(paper, { delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}] });
+        renderMath(paper);
     }
 
     function saveTN(i) { answers[currentIdx] = i; showQuestion(); }
@@ -235,42 +259,56 @@
         document.getElementById('loading-overlay').style.display = 'flex';
 
         let score = 0;
+        let resultHtml = "";
         examSet.forEach((q, i) => {
-            if(q.type === 'TN' && answers[i] === q.correct) score += 0.25;
+            let s = 0, maxP = (q.type === "TN") ? 0.25 : (q.type === "DS" ? 1.0 : 0.5);
+            if(q.type === 'TN' && answers[i] === q.correct) s = 0.25;
             else if(q.type === 'DS') {
                 let m = 0; ["a","b","c","d"].forEach(k => { if(answers[i]?.[k] === q.correct[k]) m++; });
-                score += (m===1)?0.1 : (m===2)?0.25 : (m===3)?0.5 : (m===4)?1.0 : 0;
-            } else if(q.type === 'TLN' && String(answers[i]||'').trim() === String(q.correct)) score += 0.5;
+                s = (m===1)?0.1 : (m===2)?0.25 : (m===3)?0.5 : (m===4)?1.0 : 0;
+            } else if(q.type === 'TLN' && String(answers[i]||'').trim().replace(',','.') === String(q.correct).replace(',','.')) s = 0.5;
+            
+            score += s;
+            resultHtml += `<tr onclick="toggleExplain(${i})" style="cursor:pointer; border-bottom:1px solid #eee">
+                <td style="padding:10px">${i+1}</td><td style="padding:10px">${q.type}</td>
+                <td style="padding:10px; font-weight:bold; color:${s===maxP?'green':'red'}">${s.toFixed(2)}</td>
+            </tr>
+            <tr id="ex-${i}" class="hidden"><td colspan="3" style="padding:10px; background:#fff9db">
+                <div class="explain-box"><strong>Đáp án đúng:</strong> ${getCorrectStr(q)}<br><br>${q.explain || 'Chưa có giải thích.'}</div>
+            </td></tr>`;
         });
 
         const finalScore = score.toFixed(2);
         const resultData = { name: currentUser.name, class: currentUser.class, chapter: examSet[0].chapter, score: finalScore };
 
-        // 1. Gửi về Google Sheets
         try {
             await fetch(SCRIPT_URL, { method: "POST", mode: "no-cors", headers: { "Content-Type": "application/json" }, body: JSON.stringify(resultData) });
         } catch(e) { console.error("Lỗi gửi điểm:", e); }
 
-        // 2. Lưu lịch sử máy khách
         const history = JSON.parse(localStorage.getItem('dvk_history') || '[]');
         history.push({ chapter: resultData.chapter, score: finalScore, date: new Date().toLocaleString('vi-VN') });
         localStorage.setItem('dvk_history', JSON.stringify(history));
 
-        // 3. Hiển thị kết quả
         document.getElementById('loading-overlay').style.display = 'none';
         document.getElementById('sidebar').classList.add('hidden');
         document.getElementById('main-content').classList.add('hidden');
         document.getElementById('result-screen').style.display = 'block';
         document.getElementById('final-score').innerText = finalScore;
         document.getElementById('result-user-info').innerText = `${currentUser.name} - Lớp ${currentUser.class} - ${resultData.chapter}`;
+        document.querySelector("#result-table-body tbody").innerHTML = resultHtml;
+    }
+
+    function getCorrectStr(q) {
+        if(q.type === 'TN') return labels[q.correct];
+        if(q.type === 'DS') return Object.entries(q.correct).map(([k,v])=>`${k}:${v?'Đ':'S'}`).join(', ');
+        return q.correct;
     }
 
     function toggleExplain(id) {
         const el = document.getElementById(`ex-${id}`);
         el.classList.toggle('hidden');
-        if(!el.classList.contains('hidden')) renderMathInElement(el, { delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}] });
+        if(!el.classList.contains('hidden')) renderMath(el);
     }
 </script>
-<style> @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } } </style>
 </body>
 </html>
