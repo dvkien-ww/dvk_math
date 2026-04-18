@@ -202,14 +202,11 @@
     function startQuiz() {
         const chapter = document.getElementById('chapter-sel').value;
         if(!chapter || !selectedMinutes) return alert("Vui lòng chọn chương và thời gian!");
-        
         const pool = allQuestions.filter(q => q.grade == document.getElementById('grade-sel').value && q.chapter == chapter);
         const shuffle = (arr) => arr.sort(() => 0.5 - Math.random());
         let cfg = (selectedMinutes == 45) ? { tn1: 4, tn2: 4, ds: 2, tln3: 2, tln4: 1, tln5: 1 } : (selectedMinutes == 60) ? { tn1: 6, tn2: 6, ds: 3, tln3: 3, tln4: 2, tln5: 1 } : { tn1: 8, tn2: 8, ds: 4, tln3: 4, tln4: 2, tln5: 2 };
-
         const pick = (t, l, n) => shuffle(pool.filter(q => q.type === t && q.level == l)).slice(0, n);
         examSet = [...pick('TN', 1, cfg.tn1), ...pick('TN', 2, cfg.tn2), ...shuffle(pool.filter(q => q.type === 'DS')).slice(0, cfg.ds), ...pick('TLN', 3, cfg.tln3), ...pick('TLN', 4, cfg.tln4), ...pick('TLN', 5, cfg.tln5)];
-        
         if(examSet.length === 0) return alert("Chương này chưa đủ dữ liệu câu hỏi!");
         answers = new Array(examSet.length).fill(null);
         document.getElementById('setup-screen').style.display = 'none';
@@ -224,7 +221,6 @@
         let html = `<div class="badge-row"><div class="type-badge">PHẦN ${q.type === 'TN' ? 'I' : q.type === 'DS' ? 'II' : 'III'}</div></div>`;
         if(q.image) html += `<img src="${q.image}" style="max-width:100%; margin-bottom:15px; border-radius:8px;">`;
         html += `<div style="font-size:1.1rem; font-weight:500; margin-bottom:20px;">Câu ${currentIdx + 1}: ${q.q}</div>`;
-
         if(q.type === 'TN') {
             html += `<div style="display:flex; flex-direction:column; gap:8px;">` + q.choices.map((c, i) => {
                 let txt = c.replace(/^[A-D]\.\s*/, '');
@@ -240,8 +236,7 @@
                     <button class="ds-btn ${answers[currentIdx]?.[k] === false ? 'selected-f' : ''}" onclick="saveDS('${k}', false)">S</button>
                 </div></td></tr>`).join('') + `</table>`;
         } else if(q.type === 'TLN') {
-            html += `<input type="text" class="input-style" style="text-align:center; max-width:300px; display:block; margin: 0 auto; border:2px solid var(--primary);" 
-                    placeholder="Nhập đáp án..." value="${answers[currentIdx] || ''}" oninput="saveTLN(this.value)">`;
+            html += `<input type="text" class="input-style" style="text-align:center; max-width:300px; display:block; margin: 0 auto; border:2px solid var(--primary);" placeholder="Nhập đáp án..." value="${answers[currentIdx] || ''}" oninput="saveTLN(this.value)">`;
         }
         paper.innerHTML = html;
         renderSidebar();
@@ -275,7 +270,6 @@
         let total = 0, achieved = 0;
         const tbody = document.querySelector("#result-detail tbody");
         tbody.innerHTML = "";
-
         examSet.forEach((q, i) => {
             let maxP = (q.type === "TN") ? 0.25 : (q.type === "DS" ? 1.0 : 0.5), s = 0;
             if(q.type === "TN" && answers[i] === q.correct) s = 0.25;
@@ -287,12 +281,9 @@
             tbody.innerHTML += `<tr onclick="toggleExplain(${i})" style="cursor:pointer; border-bottom:1px solid #eee;"><td style="padding:12px">${i+1}</td><td style="padding:12px">${q.type}</td><td style="padding:12px; font-weight:bold; color:${s===maxP?'green':'red'}">${s.toFixed(2)}</td></tr>
             <tr id="ex-${i}" class="hidden"><td colspan="3" style="padding:0 12px"><div class="explain-box"><strong>Đúng:</strong> ${getCorrectStr(q)}<br><br>${q.explain || "Chưa có giải thích."}</div></td></tr>`;
         });
-
-        // Lưu lịch sử
         const history = JSON.parse(localStorage.getItem('dvk_history') || '[]');
         history.push({ chapter: examSet[0].chapter, score: achieved.toFixed(2), date: new Date().toLocaleString('vi-VN', {hour:'2-digit', minute:'2-digit', day:'2-digit', month:'2-digit'}) });
         localStorage.setItem('dvk_history', JSON.stringify(history));
-
         document.getElementById('sidebar').classList.add('hidden');
         document.getElementById('main-content').classList.add('hidden');
         document.getElementById('result-screen').style.display = 'block';
