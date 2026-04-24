@@ -13882,21 +13882,6 @@
     "chapter": "Chương 8. Các quy tắc tính xác suất",
     "type": "TN",
     "level": 2,
-    "q": "Sử dụng dữ kiện câu trước, biến cố $F$: Gia đình đó có cả ti vi và máy vi tính được biểu diễn bằng kí hiệu nào?",
-    "choices": [
-      "A. $F = M \\cup N$",
-      "B. $F = MN$",
-      "C. $F = \\overline{M} \\cup \\overline{N}$",
-      "D. $F = \\overline{MN}$"
-    ],
-    "correct": 1,
-    "explain": "Từ và thể hiện việc cả hai biến cố cùng xảy ra, tức là phép giao. Vậy biến cố có cả ti vi và máy tính là $F = M \\cap N$, hay viết gọn là $F = MN$."
-  },
-  {
-    "grade": "11",
-    "chapter": "Chương 8. Các quy tắc tính xác suất",
-    "type": "TN",
-    "level": 2,
     "q": "Gieo một con xúc xắc cân đối. Gọi $A$ là biến cố Xuất hiện mặt có số chấm chẵn, $B$ là biến cố Xuất hiện mặt có số chấm chia hết cho 3. Tập hợp các kết quả thuận lợi cho biến cố giao $AB$ là:",
     "choices": [
       "A. $\\{6\\}$",
@@ -14152,21 +14137,6 @@
     "chapter": "Chương 8. Các quy tắc tính xác suất",
     "type": "TN",
     "level": 2,
-    "q": "Từ dữ kiện bài trước, xác suất để chọn được học sinh không thích cả bóng chuyền và bóng rổ là:",
-    "choices": [
-      "A. $\\frac{7}{20}$",
-      "B. $\\frac{14}{40}$",
-      "C. Cả A và B đều đúng",
-      "D. $\\frac{19}{40}$"
-    ],
-    "correct": 2,
-    "explain": "Số học sinh thích ít nhất một môn là $n(A \\cup B) = 26$. Số học sinh không thích môn nào là $40 - 26 = 14$. Xác suất là $\\frac{14}{40} = \\frac{7}{20}$."
-  },
-  {
-    "grade": "11",
-    "chapter": "Chương 8. Các quy tắc tính xác suất",
-    "type": "TN",
-    "level": 2,
     "q": "Một hộp có 10 thẻ được đánh số từ 1 đến 10. Chọn ngẫu nhiên 1 thẻ. Tính xác suất để lấy được thẻ ghi số lớn hơn 6 hoặc là số nguyên tố.",
     "choices": [
       "A. $0,7$",
@@ -14341,21 +14311,6 @@
     ],
     "correct": 2,
     "explain": "Xác suất cả hai động cơ hỏng là $(1 - 0,8)(1 - 0,7) = 0,2 \\cdot 0,3 = 0,06$. Xác suất ít nhất một động cơ tốt là $1 - 0,06 = 0,94$."
-  },
-  {
-    "grade": "11",
-    "chapter": "Chương 8. Các quy tắc tính xác suất",
-    "type": "TN",
-    "level": 2,
-    "q": "Từ bài toán trên, xác suất để có đúng một động cơ chạy tốt là:",
-    "choices": [
-      "A. $0,56$",
-      "B. $0,38$",
-      "C. $0,94$",
-      "D. $0,50$"
-    ],
-    "correct": 1,
-    "explain": "Xác suất đúng 1 động cơ tốt là $P(I)P(\\overline{II}) + P(\\overline{I})P(II) = 0,8 \\cdot 0,3 + 0,2 \\cdot 0,7 = 0,24 + 0,14 = 0,38$."
   },
   {
     "grade": "11",
@@ -25609,15 +25564,6 @@
     "chapter": "Chương 6: Xác suất có điều kiện",
     "type": "TLN",
     "level": 3,
-    "q": "Trong bài toán 3 hộp bi ở trên (Hộp 1: 3T 2Đ, Hộp 2: 4T 1Đ, Hộp 3: 2T 3Đ). Biết rằng viên bi rút ra là màu Trắng, gọi $P$ là xác suất để viên bi đó được rút từ Hộp 2. Tính giá trị của $9P$.",
-    "correct": "4",
-    "explain": "Theo công thức Bayes: $P(H_2|T) = \\frac{P(H_2)P(T|H_2)}{P(T)} = \\frac{(1/3) \\times (4/5)}{0.6} = \\frac{4/15}{9/15} = \\frac{4}{9}$. Vậy $9P = 4$."
-  },
-  {
-    "grade": "12",
-    "chapter": "Chương 6: Xác suất có điều kiện",
-    "type": "TLN",
-    "level": 3,
     "q": "Một sinh viên đi thi trắc nghiệm. Xác suất sinh viên thuộc bài là 0.6 (khi đó khoanh đúng 100%). Nếu không thuộc bài, sinh viên chọn ngẫu nhiên 1 trong 4 đáp án. Tính xác suất để sinh viên trả lời đúng câu hỏi đó (nhập đáp án dưới dạng số thập phân).",
     "correct": "0.7",
     "explain": "Xác suất trả lời đúng: $P(\\text{Đúng}) = P(\\text{Thuộc})P(\\text{Đúng}|\\text{Thuộc}) + P(\\text{Không thuộc})P(\\text{Đúng}|\\text{Không thuộc}) = 0.6 \\times 1 + 0.4 \\times 0.25 = 0.6 + 0.1 = 0.7$."
@@ -25630,15 +25576,6 @@
     "q": "Hộp I có 4 bi Trắng, 2 bi Đỏ. Hộp II có 3 bi Trắng, 3 bi Đỏ. Lấy ngẫu nhiên 1 viên bi từ Hộp I bỏ sang Hộp II, sau đó rút 1 viên bi từ Hộp II. Gọi $P$ là xác suất viên bi rút ra từ Hộp II là màu Trắng. Tính giá trị của $21P$.",
     "correct": "11",
     "explain": "Xác suất lấy bi Trắng từ Hộp I chuyển sang là $4/6 = 2/3$. Khi đó Hộp II có 4 Trắng, 3 Đỏ. Xác suất rút Trắng từ Hộp II lúc này là $4/7$. Xác suất lấy bi Đỏ từ Hộp I là $2/6 = 1/3$. Khi đó Hộp II có 3 Trắng, 4 Đỏ. Xác suất rút Trắng từ Hộp II lúc này là $3/7$. Theo xác suất toàn phần: $P(T_2) = \\frac{2}{3} \\times \\frac{4}{7} + \\frac{1}{3} \\times \\frac{3}{7} = \\frac{8}{21} + \\frac{3}{21} = \\frac{11}{21}$. Vậy $21P = 11$."
-  },
-  {
-    "grade": "12",
-    "chapter": "Chương 6: Xác suất có điều kiện",
-    "type": "TLN",
-    "level": 4,
-    "q": "Tiếp tục bài toán chuyển bi ở trên: Biết rằng viên bi rút ra từ Hộp II là màu Trắng, gọi $P$ là xác suất viên bi chuyển từ Hộp I sang Hộp II là màu Đỏ. Tính giá trị của $11P$.",
-    "correct": "3",
-    "explain": "Áp dụng công thức Bayes: $P(\\text{Đỏ}_1|T_2) = \\frac{P(\\text{Đỏ}_1)P(T_2|\\text{Đỏ}_1)}{P(T_2)} = \\frac{(1/3) \\times (3/7)}{11/21} = \\frac{3/21}{11/21} = \\frac{3}{11}$. Vậy $11P = 3$."
   },
   {
     "grade": "12",
@@ -26371,21 +26308,6 @@
     "chapter": "Chương 6: Xác suất có điều kiện",
     "type": "TN",
     "level": 2,
-    "q": "Tiếp tục bài toán trước: Biết người đó có phản ứng dương tính, xác suất người đó thực sự mắc bệnh X (làm tròn đến hai chữ số thập phân) là:",
-    "choices": [
-      "A. $0.03$.",
-      "B. $0.06$.",
-      "C. $0.50$.",
-      "D. $0.94$."
-    ],
-    "correct": 0,
-    "explain": "Theo công thức Bayes: $P(A|B) = \\frac{P(A)P(B|A)}{P(B)} = \\frac{0.002}{0.06188} \\approx 0.0323 \\approx 0.03$."
-  },
-  {
-    "grade": "12",
-    "chapter": "Chương 6: Xác suất có điều kiện",
-    "type": "TN",
-    "level": 2,
     "q": "Một thư viện có hai phòng riêng biệt A và B. Xác suất chọn được sách Khoa học tự nhiên từ phòng A là 0.25 và từ phòng B là 0.5. Một người chọn ngẫu nhiên một phòng (xác suất bằng nhau) rồi lấy 1 quyển sách. Biết quyển sách đó là sách Khoa học tự nhiên, xác suất quyển sách đó được lấy từ phòng A là:",
     "choices": [
       "A. $\\frac{1}{2}$.",
@@ -26416,21 +26338,6 @@
     "chapter": "Chương 6: Xác suất có điều kiện",
     "type": "TN",
     "level": 2,
-    "q": "Tiếp tục bài toán bắt thỏ: Giả sử bắt được con thỏ trắng, tính xác suất để đó là con thỏ của chuồng II.",
-    "choices": [
-      "A. $\\frac{35}{41}$.",
-      "B. $\\frac{6}{41}$.",
-      "C. $\\frac{1}{6}$.",
-      "D. $\\frac{5}{6}$."
-    ],
-    "correct": 0,
-    "explain": "Áp dụng công thức Bayes: $P(II|T) = \\frac{P(II)P(T|II)}{P(T)} = \\frac{\\frac{5}{6} \\times \\frac{14}{25}}{\\frac{41}{75}} = \\frac{\\frac{70}{150}}{\\frac{82}{150}} = \\frac{70}{82} = \\frac{35}{41}$."
-  },
-  {
-    "grade": "12",
-    "chapter": "Chương 6: Xác suất có điều kiện",
-    "type": "TN",
-    "level": 2,
     "q": "Một học sinh thi trắc nghiệm, xác suất biết đáp án là 0.6, xác suất không biết (phải đánh lụi 1 trong 4 đáp án) là 0.4. Xác suất để câu trả lời của học sinh này đúng là:",
     "choices": [
       "A. $0.6$.",
@@ -26440,20 +26347,6 @@
     ],
     "correct": 1,
     "explain": "$P(\\text{Đúng}) = P(\\text{Biết}) \\times 1 + P(\\text{Không biết}) \\times 0.25 = 0.6 \\times 1 + 0.4 \\times 0.25 = 0.6 + 0.1 = 0.7$."
-  },
-  {
-    "grade": "12",
-    "chapter": "Chương 6: Xác suất có điều kiện",
-    "type": "TN",
-    "level": 2,
-    "q": "Trong bài toán đánh trắc nghiệm trên, biết câu trả lời là đúng, xác suất để đó là câu học sinh thực sự biết đáp án là:",
-    "choices": [
-      "A. $\\frac{6}{7}$.",
-      "B. $\\frac{1}{7}$.",
-      "C. $0.6$."
-    ],
-    "correct": 0,
-    "explain": "Theo công thức Bayes: $P(\\text{Biết} | \\text{Đúng}) = \\frac{P(\\text{Biết} \\cap \\text{Đúng})}{P(\\text{Đúng})} = \\frac{0.6}{0.7} = \\frac{6}{7}$."
   },
   {
     "grade": "12",
@@ -30318,15 +30211,6 @@
     "q": "Một cửa hàng thống kê độ tuổi của 100 khách hàng thành 3 nhóm: $[0; 30)$ có $x$ người, $[30; 60)$ có $40$ người, $[60; 90)$ có $y$ người (với $x, y \\in \\mathbb{N}, x+y=60$). Giá trị lớn nhất có thể đạt được của khoảng tứ phân vị của mẫu số liệu ghép nhóm này là bao nhiêu?",
     "correct": "40",
     "explain": "Hàm $\\Delta_Q$ theo $x$. Với $25 \\le x \\le 35$, $Q_1$ nằm trong nhóm $[0; 30)$ và $Q_3$ nằm trong nhóm $[60; 90)$. Ta có $Q_1 = \\frac{25}{x} \\times 30 = \\frac{750}{x}$ và $Q_3 = 60 + \\frac{75 - x - 40}{60-x} \\times 30 = 60 + \\frac{35-x}{60-x} \\times 30$. Khảo sát hàm số $f(x) = 60 + 30\\frac{35-x}{60-x} - \\frac{750}{x}$, ta tìm được cực đại tại $x = 30$. Khi $x=30$, $Q_1 = 25$ và $Q_3 = 65$, dẫn tới $\\Delta_Q = 40$. Các trường hợp khác $x < 25$ hoặc $x > 35$ cho kết quả nhỏ hơn."
-  },
-  {
-    "grade": "12",
-    "chapter": "Chương 3: Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
-    "type": "TLN",
-    "level": 5,
-    "q": "Trong cùng điều kiện của bài toán trước (100 khách hàng chia làm 3 nhóm $[0; 30)$ có $x$ người, $[30; 60)$ có $40$ người, $[60; 90)$ có $y$ người, $x+y=60$). Giá trị nhỏ nhất có thể đạt được của khoảng tứ phân vị của mẫu số liệu ghép nhóm này là bao nhiêu?",
-    "correct": "28.75",
-    "explain": "Tương tự, xét $\\Delta_Q(x)$. Khi $x=0$, $y=60$, $Q_1$ ở vị trí 25 thuộc nhóm $[30; 60)$, $Q_1 = 30 + \\frac{25}{40} \\times 30 = 48.75$. $Q_3$ ở vị trí 75 thuộc nhóm $[60; 90)$, $Q_3 = 60 + \\frac{75-40}{60} \\times 30 = 77.5$. $\\Delta_Q = 77.5 - 48.75 = 28.75$. Hàm số này đạt giá trị nhỏ nhất tại các biên $x=0$ hoặc $x=60$ mang lại $\\Delta_Q = 28.75$."
   },
   {
     "grade": "12",
