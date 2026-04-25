@@ -16,284 +16,217 @@
         body { display: flex; flex-direction: column; }
         
         #app-header { background: white; padding: 12px 20px; border-bottom: 1px solid #dadce0; display: flex; justify-content: space-between; align-items: center; z-index: 4000; flex-shrink: 0; }
-        #app-header h1 { margin: 0; color: var(--primary); font-size: 18px; font-weight: 800; }
-        
+        #app-header h1 { margin: 0; color: var(--primary); font-size: 20px; font-weight: 800; }
+        #app-header p { margin: 0; font-size: 10px; color: #5f6368; font-weight: bold; text-transform: uppercase; }
+
         #auth-screen { position: fixed; inset: 0; background: var(--bg); z-index: 5000; display: flex; align-items: center; justify-content: center; padding: 20px; }
-        .auth-card { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); width: 100%; max-width: 380px; text-align: center; }
-        
-        #main-container { flex: 1; display: flex; overflow: hidden; position: relative; }
-        #setup-screen { position: absolute; inset: 0; background: white; z-index: 2000; display: none; flex-direction: column; align-items: center; overflow-y: auto; padding: 20px; }
+        .auth-card { background: white; padding: 40px; border-radius: 24px; box-shadow: 0 10px 40px rgba(0,0,0,0.08); width: 100%; max-width: 400px; text-align: center; }
+
+        #main-container { flex: 1; display: flex; overflow: hidden; position: relative; flex-direction: row; }
+        #setup-screen { position: absolute; inset: 0; background: white; z-index: 2000; display: none; flex-direction: column; align-items: center; overflow-y: auto; padding: 30px 20px; }
+        .dashboard-section { width: 100%; max-width: 650px; background: #fff; border: 1px solid #e0e0e0; border-radius: 16px; padding: 20px; margin-bottom: 25px; }
         
         #sidebar { width: 280px; background: white; border-right: 1px solid #dadce0; padding: 20px; display: flex; flex-direction: column; flex-shrink: 0; overflow-y: auto; }
         #main-content { flex: 1; padding: 25px; overflow-y: auto; background: var(--bg); }
-        
-        .q-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin-bottom: 20px; }
-        .q-circle { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; background: #f1f3f4; border-radius: 10px; cursor: pointer; font-weight: 600; font-size: 13px; transition: 0.2s; }
-        .q-circle.active { border: 2px solid var(--primary); color: var(--primary); background: #e8f0fe; }
-        .q-circle.done { background: var(--success); color: white; }
-        
-        .question-paper { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); min-height: 350px; }
-        .option-item { padding: 12px 15px; border: 1px solid #eee; border-radius: 10px; margin-bottom: 10px; cursor: pointer; transition: 0.2s; }
-        .option-item:hover { background: #f8f9fa; }
-        .option-item.selected { background: #e8f0fe; border-color: var(--primary); }
-        
-        #result-screen, #theory-screen { display: none; position: fixed; inset: 0; background: var(--bg); z-index: 6000; overflow-y: auto; padding: 20px; }
-        .card-full { max-width: 800px; margin: 0 auto; background: white; border-radius: 20px; padding: 25px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
-        .res-box { padding: 15px; border-radius: 10px; border: 1px solid #eee; font-size: 14px; margin-top: 10px; line-height: 1.6; }
-        
-        .btn { padding: 12px 20px; border-radius: 12px; border: none; font-weight: 600; cursor: pointer; transition: 0.2s; }
-        .btn-primary { background: var(--primary); color: white; }
-        .btn-finish { background: var(--danger); color: white; width: 100%; margin-top: auto; }
-        .input-style { width: 100%; padding: 12px; border: 2px solid #eee; border-radius: 10px; margin-bottom: 15px; font-size: 16px; }
         .hidden { display: none !important; }
 
+        .q-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-bottom: 20px; }
+        .q-circle { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; background: #f1f3f4; border-radius: 12px; cursor: pointer; font-weight: 600; font-size: 14px; }
+        .q-circle.active { border: 2px solid var(--primary); color: var(--primary); background: #e8f0fe; }
+        .q-circle.done { background: var(--success); color: white; }
+
+        .question-paper { background: white; padding: 25px; border-radius: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); min-height: 350px; }
+        .option-item { display: flex; align-items: center; padding: 14px; border: 1px solid #dadce0; border-radius: 12px; margin-bottom: 10px; cursor: pointer; }
+        
+        #result-screen, #theory-screen { display: none; position: absolute; inset: 0; width: 100%; height: 100%; overflow-y: auto; background: var(--bg); padding: 30px 20px; z-index: 4500; }
+        .result-card, .theory-card { max-width: 850px; margin: 0 auto; background: white; border-radius: 20px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+        .res-item { border-bottom: 1px solid #eee; padding: 20px 0; text-align: left; }
+        .res-box { padding: 12px; border-radius: 10px; border: 1px solid #eee; font-size: 14px; margin-top: 10px; line-height: 1.6; }
+        .explain-box { margin-top: 15px; padding: 15px; background: #fff9db; border-radius: 10px; border-left: 5px solid var(--warning); font-size: 14px; white-space: pre-wrap; }
+        
+        .contact-info { margin-top: 30px; padding: 20px; border-top: 1px dashed #ccc; font-size: 13px; color: #666; text-align: center; }
+        .btn { padding: 12px 24px; border-radius: 12px; border: none; font-weight: 600; cursor: pointer; transition: 0.2s; }
+        .btn-primary { background: var(--primary); color: white; }
+        .btn-theory { background: var(--warning); color: #000; margin-top: 10px; }
+        .btn-finish { background: var(--danger); color: white; width: 100%; margin-top: auto; padding: 15px; flex-shrink: 0; }
+        .input-style { width: 100%; padding: 12px; border: 2px solid #eee; border-radius: 12px; margin-bottom: 15px; }
+
         @media (max-width: 768px) {
-            #main-container { flex-direction: column; overflow-y: auto; }
-            #sidebar { width: 100%; order: 2; border: none; border-top: 1px solid #ddd; padding: 15px; }
-            #main-content { width: 100%; order: 1; padding: 15px; flex: none; }
-            .q-grid { grid-template-columns: repeat(6, 1fr); }
+            #main-container { flex-direction: column; overflow-y: auto; height: auto; }
+            #sidebar { width: 100%; order: 2; border-right: none; border-top: 1px solid #dadce0; height: auto; padding: 20px; overflow: visible; }
+            #main-content { width: 100%; order: 1; padding: 15px; flex: none; overflow: visible; }
+            .q-grid { grid-template-columns: repeat(6, 1fr); gap: 8px; }
+            .btn-finish { margin-top: 20px; position: relative; bottom: 0; }
+            .question-paper { min-height: auto; padding: 20px; }
+            #app-header h1 { font-size: 18px; }
         }
     </style>
 </head>
 <body>
 
 <header id="app-header">
-    <div>
-        <h1>DVK MATH</h1>
-        <p style="margin:0; font-size:10px; color:#666; font-weight:bold">THẦY DƯƠNG VĂN KIÊN</p>
-    </div>
-    <div id="header-user" style="font-size: 11px; text-align: right;"></div>
+    <div><h1>DVK MATH</h1><p>THẦY DƯƠNG VĂN KIÊN</p></div>
+    <div id="header-user" style="font-size: 12px; color: #5f6368; text-align: right;"></div>
 </header>
 
 <div id="auth-screen">
     <div class="auth-card">
-        <h2 style="color:var(--primary); margin-bottom:20px">ĐĂNG NHẬP</h2>
-        <input type="text" id="user-name" class="input-style" placeholder="Họ và tên học sinh">
-        <input type="text" id="user-class" class="input-style" placeholder="Lớp (Ví dụ: 12A1)">
-        <button class="btn btn-primary" style="width:100%" onclick="handleAuth()">VÀO ÔN TẬP</button>
-        <p style="margin-top:15px; font-size:12px; color:#888">Hệ thống ôn tập Toán THPT chuyên sâu</p>
+        <h2 style="color: var(--primary); margin: 0;">DVK MATH</h2>
+        <p style="margin-bottom: 25px; color: #666;">Hệ thống luyện đề trực tuyến</p>
+        <input type="text" id="user-name" class="input-style" placeholder="Họ và tên">
+        <input type="text" id="user-class" class="input-style" placeholder="Lớp">
+        <button class="btn btn-primary" style="width: 100%;" onclick="handleAuth()">VÀO ÔN TẬP</button>
     </div>
 </div>
 
 <div id="main-container">
     <div id="setup-screen">
-        <h2 id="hello-name">Chào mừng bạn!</h2>
-        <div style="width:100%; max-width:400px; text-align:center">
-            <select id="grade-sel" class="input-style" onchange="updateChapters()">
-                <option value="">-- Chọn Khối --</option>
-                <option value="10">Lớp 10</option>
-                <option value="11">Lớp 11</option>
-                <option value="12">Lớp 12</option>
-            </select>
+        <h2 style="margin-bottom: 5px; color: var(--primary);">Chào <span id="hello-name">...</span>!</h2>
+        <div class="dashboard-section">
+            <h4 style="margin-top: 0;">Lịch sử làm bài</h4>
+            <table style="width: 100%; border-collapse: collapse; font-size: 14px;"><tbody id="history-body"></tbody></table>
+        </div>
+        <div style="width: 100%; max-width: 400px; text-align: center;">
+            <select id="grade-sel" class="input-style" onchange="updateChapters()"><option value="">-- Chọn Khối --</option><option value="10">Lớp 10</option><option value="11">Lớp 11</option><option value="12">Lớp 12</option></select>
             <select id="chapter-sel" class="input-style"><option value="">-- Chọn Chương --</option></select>
             <select id="time-sel" class="input-style">
                 <option value="45">Thời gian: 45 Phút</option>
                 <option value="60">Thời gian: 60 Phút</option>
                 <option value="90">Thời gian: 90 Phút</option>
             </select>
-            <button class="btn btn-primary" style="width:100%; margin-bottom:10px" onclick="startQuiz()">BẮT ĐẦU LÀM BÀI</button>
-            <button class="btn" style="width:100%; background:var(--warning); color:black" onclick="showTheory()">XEM LÝ THUYẾT</button>
+            <button class="btn btn-primary" style="width: 100%; padding: 15px;" onclick="startQuiz()">BẮT ĐẦU</button>
+            <button class="btn btn-theory" style="width: 100%; padding: 15px;" onclick="showTheory()">XEM LÝ THUYẾT</button>
             
             <div style="margin-top:30px; font-size:13px; color:#666; border-top:1px solid #eee; padding-top:15px">
                 Số lượt truy cập hệ thống: <br>
-                <img src="https://counter9.optistats.ovh/private/freecounterstat.php?tpgd=4&tkp=1&stp=8&fnt=10&dtp=1&id=DVK_MATH_NEW" border="0" style="margin-top:8px; height:22px;">
+                <img src="https://counter10.optistats.ovh/private/freecounterstat.php?tpgd=4&tkp=1&stp=8&fnt=10&dtp=1&id=DVK_MATH_FINAL" title="Free Counter" Alt="web counter" border="0" style="margin-top:10px; height:25px;" />
             </div>
+
+            <div class="contact-info">Phản hồi Zalo: <b>09786237631</b></div>
         </div>
     </div>
 
     <div id="theory-screen">
-        <div class="card-full">
-            <h2 id="theory-title" style="color:var(--primary); text-align:center"></h2>
-            <div id="theory-content" style="line-height:1.8; margin:20px 0; font-size:15px"></div>
-            <center><button class="btn btn-primary" onclick="closeTheory()">ĐÓNG LÝ THUYẾT</button></center>
+        <div class="theory-card">
+            <h2 id="theory-title" style="color:var(--primary);text-align:center"></h2>
+            <div id="theory-content" style="line-height:1.8;margin:20px 0;white-space:pre-wrap;font-size:15px"></div>
+            <center><button class="btn btn-primary" onclick="closeTheory()">QUAY LẠI</button></center>
         </div>
     </div>
 
     <div id="sidebar" class="hidden">
-        <div id="timer" style="font-size:28px; font-weight:800; color:var(--danger); text-align:center; margin-bottom:20px">00:00</div>
+        <div id="timer" style="font-size:24px; font-weight:800; color:var(--danger); text-align:center; margin-bottom:20px;">00:00</div>
         <div class="q-grid" id="q-grid"></div>
         <button class="btn btn-finish" onclick="confirmFinish()">NỘP BÀI</button>
     </div>
 
     <div id="main-content" class="hidden">
         <div class="question-paper" id="paper"></div>
-        <div style="display:flex; justify-content:space-between; margin-top:20px">
-            <button class="btn" style="background:#e0e0e0" onclick="move(-1)">Câu trước</button>
-            <button class="btn btn-primary" onclick="move(1)">Câu tiếp theo</button>
+        <div style="display: flex; justify-content: space-between; margin-top: 25px; padding-bottom: 20px;">
+            <button class="btn" style="background: #e0e0e0;" onclick="move(-1)">Trước</button>
+            <button class="btn btn-primary" onclick="move(1)">Tiếp theo</button>
         </div>
     </div>
 
     <div id="result-screen">
-        <div class="card-full">
-            <div style="text-align:center; margin-bottom:30px">
-                <h2 style="color:var(--primary); margin:0">KẾT QUẢ BÀI LÀM</h2>
-                <div id="final-score" style="font-size:50px; font-weight:900; color:var(--success); margin:10px 0">0.0</div>
-                <p id="res-info" style="font-weight:600; color:#444"></p>
-                <button class="btn btn-primary" onclick="location.reload()">LÀM ĐỀ KHÁC</button>
+        <div class="result-card">
+            <div style="text-align:center; margin-bottom:30px;">
+                <h2 style="color: var(--primary); margin: 0;">KẾT QUẢ BÀI LÀM</h2>
+                <div id="final-score" style="font-size: 48px; font-weight: 900; margin: 10px 0;">0.0</div>
+                <p id="res-info" style="color: #666;"></p>
+                <button class="btn btn-primary" onclick="location.reload()">LÀM ĐỀ MỚI</button>
             </div>
             <div id="result-details"></div>
+            <div class="contact-info">Email: <b>kiensupham@gmail.com</b> | Zalo: <b>09786237631</b></div>
         </div>
     </div>
 </div>
 
 <script>
-    let allQ = [], allT = [], examSet = [], answers = [], currentIdx = 0, timer;
+    let allQuestions = [], allTheory = [], examSet = [], answers = [], currentIdx = 0, timer;
     const labels = ["A", "B", "C", "D"];
     let currentUser = JSON.parse(localStorage.getItem('dvk_user'));
 
-    window.onload = () => {
-        if(currentUser) { document.getElementById('auth-screen').style.display='none'; showSetup(); }
+    window.onload = () => { 
+        if(currentUser) { document.getElementById('auth-screen').style.display='none'; showSetup(); } 
         Promise.all([
             fetch('questions.json').then(r => r.json()),
             fetch('theory.json').then(r => r.json()).catch(() => [])
-        ]).then(([q, t]) => { allQ = q; allT = t; });
+        ]).then(([q, t]) => { allQuestions = q; allTheory = t; }); 
     };
 
-    function handleAuth() {
-        const n = document.getElementById('user-name').value.trim();
-        const c = document.getElementById('user-class').value.trim();
-        if(!n || !c) return alert("Vui lòng nhập tên và lớp!");
-        currentUser = { name: n, class: c };
-        localStorage.setItem('dvk_user', JSON.stringify(currentUser));
-        document.getElementById('auth-screen').style.display = 'none';
-        showSetup();
-    }
+    function handleAuth() { const name = document.getElementById('user-name').value; const cls = document.getElementById('user-class').value; if(!name || !cls) return alert("Vui lòng điền đủ thông tin!"); currentUser = { name, class: cls }; localStorage.setItem('dvk_user', JSON.stringify(currentUser)); document.getElementById('auth-screen').style.display = 'none'; showSetup(); }
+    function showSetup() { document.getElementById('setup-screen').style.display = 'flex'; document.getElementById('hello-name').innerText = currentUser.name; document.getElementById('header-user').innerHTML = `<b>${currentUser.name}</b><br>${currentUser.class}`; renderHistory(); }
+    function renderHistory() { const history = JSON.parse(localStorage.getItem('dvk_history') || '[]'); const body = document.getElementById('history-body'); body.innerHTML = history.length ? '' : '<tr><td style="text-align:center; padding:10px; color:#999;">Trống</td></tr>'; history.reverse().slice(0,5).forEach(h => { body.innerHTML += `<tr style="border-bottom:1px solid #f1f1f1;"><td style="padding:10px 0;">${h.chapter}</td><td align="right"><b>${h.score}</b></td><td align="right" style="color:#888; font-size:11px;">${h.date}</td></tr>`; }); }
+    function updateChapters() { const grade = document.getElementById('grade-sel').value; const sel = document.getElementById('chapter-sel'); sel.innerHTML = '<option value="">-- Chọn Chương --</option>'; const chapters = [...new Set(allQuestions.filter(q => q.grade == grade).map(q => q.chapter))]; chapters.forEach(c => { if(c) sel.innerHTML += `<option value="${c}">${c}</option>`; }); }
 
-    function showSetup() {
-        document.getElementById('setup-screen').style.display = 'flex';
-        document.getElementById('hello-name').innerText = "Chào " + currentUser.name + "!";
-        document.getElementById('header-user').innerHTML = `<b>${currentUser.name}</b><br>Lớp: ${currentUser.class}`;
-    }
-
-    function updateChapters() {
-        const g = document.getElementById('grade-sel').value;
-        const s = document.getElementById('chapter-sel');
-        s.innerHTML = '<option value="">-- Chọn Chương --</option>';
-        const chapters = [...new Set(allQ.filter(q => q.grade == g).map(q => q.chapter))];
-        chapters.forEach(c => { if(c) s.innerHTML += `<option value="${c}">${c}</option>`; });
-    }
-
-    // FIX LÝ THUYẾT: XỬ LÝ DÍNH CHỮ VÀ XUỐNG DÒNG
     function showTheory() {
-        const g = document.getElementById('grade-sel').value;
-        const c = document.getElementById('chapter-sel').value;
-        if(!c) return alert("Vui lòng chọn chương!");
-        const t = allT.find(x => x.grade == g && x.chapter == c);
-        const d = document.getElementById('theory-content');
-        document.getElementById('theory-title').innerText = c;
-        
-        if (t) {
-            let clean = t.content
-                .replace(/forall/g, '\\forall ')
-                .replace(/exists/g, '\\exists ')
-                .replace(/cup/g, '\\cup ')
-                .replace(/cap/g, '\\cap ')
-                .replace(/inK/g, '\\in K')
-                .replace(/max_D/g, '\\max_D ')
-                .replace(/\\\\n/g, '<br>')
-                .replace(/\\n/g, '<br>');
-            d.innerHTML = clean;
-        } else { d.innerHTML = "Nội dung đang được thầy cập nhật..."; }
-        
+        const grade = document.getElementById('grade-sel').value, chapter = document.getElementById('chapter-sel').value;
+        if(!chapter) return alert("Hãy chọn khối và chương!");
+        const theory = allTheory.find(t => t.grade == grade && t.chapter == chapter), div = document.getElementById('theory-content');
+        document.getElementById('theory-title').innerText = chapter;
+        // BỘ LỌC TỰ ĐỘNG SỬA LỖI HIỂN THỊ DÍNH CHỮ 
+        if(theory) {
+            let clean = theory.content.replace(/forall/g, '\\forall ').replace(/inK/g, '\\in K').replace(/max_D/g, '\\max_D ').replace(/\\\\n/g, '<br>').replace(/\\n/g, '<br>');
+            div.innerHTML = clean;
+        } else { div.innerHTML = "Nội dung lý thuyết chương này đang được thầy cập nhật..."; }
         document.getElementById('theory-screen').style.display = 'block';
-        if(window.renderMathInElement) renderMathInElement(d, { delimiters: [{left: "$$", right: "$$", display: true}, {left: "$", right: "$", display: false}] });
+        if(window.renderMathInElement) renderMathInElement(div, { delimiters: [{left: "$$", right: "$$", display: true}, {left: "$", right: "$", display: false}] });
     }
-
     function closeTheory() { document.getElementById('theory-screen').style.display = 'none'; }
 
     function startQuiz() {
-        const c = document.getElementById('chapter-sel').value, g = document.getElementById('grade-sel').value, m = parseInt(document.getElementById('time-sel').value);
-        if(!c) return alert("Chọn chương học!");
-        const p = allQ.filter(q => q.grade == g && q.chapter == c);
-        const s = (x) => x.sort(() => 0.5 - Math.random());
-        let cfg = (m==45) ? {tn:8, ds:2, tln:4} : (m==60) ? {tn:12, ds:4, tln:6} : {tn:16, ds:8, tln:6};
-        
-        examSet = [...s(p.filter(q=>q.type=='TN')).slice(0,cfg.tn), ...s(p.filter(q=>q.type=='DS')).slice(0,cfg.ds), ...s(p.filter(q=>q.type=='TLN')).slice(0,cfg.tln)];
-        if(examSet.length === 0) return alert("Dữ liệu chương này đang trống!");
-        
+        const chapter = document.getElementById('chapter-sel').value, grade = document.getElementById('grade-sel').value, selectedMinutes = parseInt(document.getElementById('time-sel').value);
+        if(!chapter) return alert("Chọn chương!");
+        const pool = allQuestions.filter(q => q.grade == grade && q.chapter == chapter);
+        let cfg = (selectedMinutes == 45) ? { tn: 8, ds: 2, tln: 4 } : (selectedMinutes == 60) ? { tn: 12, ds: 4, tln: 6 } : { tn: 16, ds: 8, tln: 6 };
+        const shuffle = (arr) => arr.sort(() => 0.5 - Math.random());
+        examSet = [...shuffle(pool.filter(q => q.type === 'TN')).slice(0, cfg.tn), ...shuffle(pool.filter(q => q.type === 'DS')).slice(0, cfg.ds), ...shuffle(pool.filter(q => q.type === 'TLN')).slice(0, cfg.tln)];
+        if(examSet.length === 0) return alert("Dữ liệu chương này đang cập nhật!");
         answers = new Array(examSet.length).fill(null);
         document.getElementById('setup-screen').style.display = 'none';
         document.getElementById('sidebar').classList.remove('hidden');
         document.getElementById('main-content').classList.remove('hidden');
-        initTimer(m * 60);
+        initTimer(selectedMinutes * 60);
         showQuestion();
     }
 
     function showQuestion() {
-        const q = examSet[currentIdx], p = document.getElementById('paper');
-        let h = `<div style="font-size:1.2rem; margin-bottom:20px"><b>Câu ${currentIdx+1}:</b> ${q.q}</div>`;
-        
-        if(q.type=='TN') {
-            h += q.choices.map((c,i) => `<div class="option-item ${answers[currentIdx]===i?'selected':''}" onclick="saveTN(${i})"><b>${labels[i]}.</b> ${c}</div>`).join('');
-        } else if(q.type=='DS') {
-            h += `<table width="100%">` + Object.keys(q.items).map(k => `
-                <tr>
-                    <td style="padding:12px 0; border-bottom:1px solid #eee"><b>${k}.</b> ${q.items[k]}</td>
-                    <td align="right" style="border-bottom:1px solid #eee">
-                        <button class="btn" onclick="saveDS('${k}',true)" style="background:${answers[currentIdx]?.[k]===true?'var(--success)':'#f1f3f4'}; color:${answers[currentIdx]?.[k]===true?'white':'black'}">Đ</button>
-                        <button class="btn" onclick="saveDS('${k}',false)" style="background:${answers[currentIdx]?.[k]===false?'var(--danger)':'#f1f3f4'}; color:${answers[currentIdx]?.[k]===false?'white':'black'}">S</button>
-                    </td>
-                </tr>`).join('') + `</table>`;
-        } else {
-            h += `<input type="text" class="input-style" placeholder="Điền đáp án số..." value="${answers[currentIdx]||''}" oninput="saveTLN(this.value)">`;
-        }
-        p.innerHTML = h;
-        renderSidebar();
-        if(window.renderMathInElement) renderMathInElement(p, {delimiters:[{left:"$$",right:"$$",display:true},{left:"$",right:"$",display:false}]});
+        const q = examSet[currentIdx], paper = document.getElementById('paper');
+        let html = `<div style="font-size:1.1rem; margin-bottom:20px;"><b>Câu ${currentIdx + 1} (${q.type === 'TN' ? 'Trắc nghiệm' : q.type === 'DS' ? 'Đúng/Sai' : 'Trả lời ngắn'}):</b> ${q.q}</div>`;
+        if(q.type === 'TN') { html += q.choices.map((c, i) => `<div class="option-item" onclick="saveTN(${i})"><input type="radio" ${answers[currentIdx]===i?'checked':''}> ${c}</div>`).join(''); } 
+        else if(q.type === 'DS') { html += `<table style="width:100%;">` + Object.keys(q.items).map(k => `<tr><td style="padding:10px 0;"><b>${k}.</b> ${q.items[k]}</td><td align="right"><button class="btn" onclick="saveDS('${k}',true)" style="background:${answers[currentIdx]?.[k]===true?'var(--success)':'#eee'}">Đ</button> <button class="btn" onclick="saveDS('${k}',false)" style="background:${answers[currentIdx]?.[k]===false?'var(--danger)':'#eee'}">S</button></td></tr>`).join('') + `</table>`; } 
+        else if(q.type === 'TLN') { html += `<input type="text" class="input-style" placeholder="Nhập đáp án..." value="${answers[currentIdx]||''}" oninput="saveTLN(this.value)">`; }
+        paper.innerHTML = html; renderSidebar();
+        if(window.renderMathInElement) renderMathInElement(paper, { delimiters: [{left: "$$", right: "$$", display: true}, {left: "$", right: "$", display: false}] });
     }
 
     function saveTN(i) { answers[currentIdx] = i; showQuestion(); }
-    function saveDS(k,v) { if(!answers[currentIdx]) answers[currentIdx] = {}; answers[currentIdx][k] = v; showQuestion(); }
+    function saveDS(k, v) { if(!answers[currentIdx]) answers[currentIdx]={}; answers[currentIdx][k]=v; showQuestion(); }
     function saveTLN(v) { answers[currentIdx] = v; renderSidebar(); }
-    function move(s) { currentIdx = Math.max(0, Math.min(examSet.length-1, currentIdx+s)); showQuestion(); window.scrollTo(0,0); }
-    function renderSidebar() { document.getElementById('q-grid').innerHTML = examSet.map((_,i) => `<div class="q-circle ${i===currentIdx?'active':''} ${answers[i]!==null?'done':''}" onclick="currentIdx=${i};showQuestion()">${i+1}</div>`).join(''); }
-
-    function initTimer(s) {
-        timer = setInterval(() => {
-            s--;
-            let mm = Math.floor(s/60), ss = s%60;
-            document.getElementById('timer').innerText = `${mm}:${ss<10?'0'+ss:ss}`;
-            if(s<=0) { clearInterval(timer); confirmFinish(); }
-        }, 1000);
-    }
+    function move(s) { currentIdx = Math.max(0, Math.min(examSet.length - 1, currentIdx + s)); showQuestion(); window.scrollTo(0,0); }
+    function renderSidebar() { document.getElementById('q-grid').innerHTML = examSet.map((_, i) => `<div class="q-circle ${i===currentIdx?'active':''} ${answers[i]!==null?'done':''}" onclick="currentIdx=${i};showQuestion()">${i+1}</div>`).join(''); }
+    function initTimer(sec) { timer = setInterval(() => { sec--; let m = Math.floor(sec/60), s = sec%60; document.getElementById('timer').innerText = `${m}:${s<10?'0'+s:s}`; if(sec<=0) confirmFinish(); }, 1000); }
 
     function confirmFinish() {
-        if(!confirm("Xác nhận nộp bài?")) return;
+        if(!confirm("Bạn muốn nộp bài?")) return;
         clearInterval(timer);
-        let score = 0, total = 0;
-        const detail = document.getElementById('result-details');
-        detail.innerHTML = "";
-
+        let score = 0, totalScore = 0; const container = document.getElementById('result-details'); container.innerHTML = "";
         examSet.forEach((q, i) => {
-            let qScore = 0, maxQ = (q.type=='TN')?0.25:(q.type=='DS')?1.0:0.5;
-            if(q.type=='TN' && answers[i]===q.correct) qScore = 0.25;
-            else if(q.type=='TLN' && String(answers[i]).trim() === String(q.correct)) qScore = 0.5;
-            else if(q.type=='DS') {
-                let count = 0; ["a","b","c","d"].forEach(k => { if(answers[i]?.[k] === q.correct[k]) count++; });
-                qScore = (count==4)?1.0:(count==3)?0.5:(count==2)?0.25:0;
-            }
-            score += qScore; total += maxQ;
-
-            let userAns = q.type=='DS' ? Object.keys(q.items).map(k => {
-                let u = answers[i]?.[k], col = (u===q.correct[k])?'green':'red';
-                return `<b>${k}.</b> ${q.items[k]} <b style="color:${col}">(${(u===true?'Đ':u===false?'S':'_')})</b>`;
-            }).join('<br>') : (answers[i]!==null ? (q.type=='TN'?labels[answers[i]]:answers[i]) : 'Trống');
-
-            detail.innerHTML += `
-                <div class="res-box">
-                    <b>Câu ${i+1} (${qScore}đ):</b> ${q.q}
-                    <div style="background:#f8f9fa; padding:10px; border-radius:5px; margin-top:5px"><b>Bạn chọn:</b><br>${userAns}</div>
-                    <div style="color:var(--success); margin-top:5px"><b>Đáp án đúng:</b> ${q.type==='DS'?Object.entries(q.correct).map(([k,v])=>`${k}:${v?'Đ':'S'}`).join(', '):(q.type==='TN'?labels[q.correct]:q.correct)}</div>
-                    <div style="font-style:italic; font-size:13px; color:#666; margin-top:5px">Giải thích: ${q.explain.replace(/\\\\n/g, '<br>')}</div>
-                </div>`;
+            let qScore = 0, maxQ = (q.type==='TN')?0.25 : (q.type==='DS')?1.0 : 0.5;
+            if(q.type==='TN' && answers[i]===q.correct) qScore = 0.25;
+            else if(q.type==='TLN' && String(answers[i]).trim()===String(q.correct)) qScore = 0.5;
+            else if(q.type==='DS') { let cnt = 0; ["a","b","c","d"].forEach(k => { if(answers[i]?.[k]===q.correct[k]) cnt++; }); qScore = (cnt===4)?1:(cnt===3)?0.5:(cnt===2)?0.25:0; }
+            score += qScore; totalScore += maxQ;
+            let userAnsStr = q.type === 'DS' ? Object.keys(q.items).map(k => {
+                let u = answers[i]?.[k], display = (u === true) ? "Đ" : (u === false ? "S" : "_"), color = (u === q.correct[k]) ? "green" : "red";
+                return `<b>${k}:</b> ${q.items[k]} <b style="color:${color}">(${display})</b>`;
+            }).join('<br>') : (q.type==='TN'?(labels[answers[i]]||'Trống'):(answers[i]||'Trống'));
+            container.innerHTML += `<div class="res-item"><div style="display:flex; justify-content:space-between; margin-bottom:10px;"><b>Câu ${i+1} (${q.type})</b> <b style="color:${qScore>0?'green':'red'}">${qScore.toFixed(2)}đ</b></div><div style="margin-bottom:10px">${q.q}</div><div class="res-box" style="background:#f8f9fa"><b>Bạn chọn:</b><br>${userAnsStr}</div><div class="res-box" style="background:#e6fffa; border-color:#b2f5ea"><b>Đáp án đúng:</b> ${q.type==='DS'?Object.entries(q.correct).map(([k,v])=>`${k}:${v?'Đ':'S'}`).join(', '):(q.type==='TN'?labels[q.correct]:q.correct)}</div><div class="explain-box"><b>Giải thích:</b> ${q.explain.replace(/\\\\n/g, '<br>').replace(/\\n/g, '<br>')}</div></div>`;
         });
-
-        document.getElementById('sidebar').classList.add('hidden');
-        document.getElementById('main-content').classList.add('hidden');
-        document.getElementById('result-screen').style.display = 'block';
-        document.getElementById('final-score').innerText = score.toFixed(2) + " / " + total.toFixed(2);
-        document.getElementById('res-info').innerText = `${currentUser.name} - Lớp ${currentUser.class}`;
-        if(window.renderMathInElement) renderMathInElement(detail, {delimiters:[{left:"$$",right:"$$",display:true},{left:"$",right:"$",display:false}]});
+        document.getElementById('sidebar').classList.add('hidden'); document.getElementById('main-content').classList.add('hidden'); document.getElementById('result-screen').style.display='block'; document.getElementById('final-score').innerText = score.toFixed(2) + " / " + totalScore.toFixed(2); document.getElementById('res-info').innerText = `${currentUser.name} - Lớp ${currentUser.class}`;
+        const history = JSON.parse(localStorage.getItem('dvk_history') || '[]'); history.push({ chapter: examSet[0].chapter, score: score.toFixed(2), date: new Date().toLocaleDateString() }); localStorage.setItem('dvk_history', JSON.stringify(history));
+        if(window.renderMathInElement) renderMathInElement(container, { delimiters: [{left: "$$", right: "$$", display: true}, {left: "$", right: "$", display: false}] });
     }
 </script>
 </body>
